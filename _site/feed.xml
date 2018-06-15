@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Fab City Global Initiative</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 15 Jun 2018 14:32:01 +0200</pubDate>
+    <lastBuildDate>Fri, 15 Jun 2018 14:32:01 +0200</lastBuildDate>
+    <generator>Jekyll v3.8.1</generator>
+    
+      <item>
+        <title>Fab 14 tickets available now</title>
+        <description>
+</description>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2014/07/18/post2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/07/18/post2/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Fab Academy Registrations now open</title>
+        <description>
+</description>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2014/07/18/post1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/07/18/post1/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

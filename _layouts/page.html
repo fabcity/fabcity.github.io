@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  {% include fixed/head.html %}
+
+
+    <body id="page-top" class="index" onload="loaded()">
+    <video autoplay loop muted poster="/img/backgrounds/home-bg-img.jpg" id="background-video" data-aos="fade-up">
+        <source src="/img/backgrounds/home-bg-video.mp4" type="video/mp4">
+    </video>
+
+        
+    {% include fixed/navbar.html %}
+
+    <div class="page-content">
+    	<section id="{{ page.id }}" data-aos="fade-up">  
+    		<div class="container standard">
+        		<div class="sub-container">
+                    <!--Section-Intro Template -->
+                    <div id="{{ page.id }}-intro">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h2 class="page-heading">{{ page.title }}</h2>
+                            </div>
+                        </div>
+                    </div> <!--close section-intro-->
+                </div><!-- close sub-container --> 
+            </div> <!-- close container -->
+
+            {% if page.hasdescription == true %}
+            <div class="container standard" style="background-color: #e5e3ea;">
+                <div class="sub-container">             
+                        <div class="row">
+                            <div class="col-md-12 body-text">
+                                {% for p in page.description %}
+                                <p class="page-text"> {{ p.paragraph }} </p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-12 down-arrow-space">
+                                <img class="arrow" src="/img/icons/down_icon.svg"/>
+                            </div>
+                        </div>
+                </div><!-- close sub-container --> 
+            </div> <!-- close container -->
+             {% endif %}
+
+    		{{ content }}
+
+		</section>
+    </div><!--close page-content-->
+    
+ 
+    {% include modules/subscribe.html %}
+    {% include fixed/footer.html %}
+    {% include modals.html %}
+    {% include fixed/js.html %}
+
+
+    </body>
+</html>

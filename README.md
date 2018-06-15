@@ -1,10 +1,11 @@
-#Fab City Redesign
+Fab Foundation
 
 ----
 
-Repo for the new Fab City website. 
+Repo for the new Fab Foundation website. 
 
-Beta. 
+Beta. In development.
+
 
 --questions
 

@@ -1,0 +1,45 @@
+id: academany
+background: transparent
+hastopbanner: false
+topbanner: 
+hascarousel: false
+carouselbackground: 
+carousel:
+  - img: ''
+    url: ''
+haslogo: true
+logo: scopes.svg
+height: 25px
+hastitle: true
+title: "Digital fabrication has the potential to transform k-12 education." 
+hassubtitle: true
+subtitle: "With the SCOPES-DF project, the Fab Foundation is bringing together fabbers, makers, and educators to deepen our understanding of the “what”, “how” and “why” of STEM disciplines."
+haslargeimg: true
+largeimg: kidglasses-low-res.jpg
+hasbuttons: true
+buttons:
+  - title: "Learn More"
+    url: ''
+    color: clear
+hasslidermenu: false
+slides:
+  - title: ""
+    url: ''
+    img: 
+    logo: 
+    color: f0434f
+  - title: ""
+    url: ''
+    img: 
+    logo: 
+    color: 57bf81
+  - title: ""
+    url: ''
+    img: 
+    logo: 
+    color: 9b6dbb
+hasaccordionmenu: false
+hasprojectgallery: false 
+projects:
+  - title: ""
+    img: 

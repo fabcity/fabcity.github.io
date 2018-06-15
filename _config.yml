@@ -1,0 +1,28 @@
+url: 
+baseurl: 
+
+# Site settings
+title: The Fab City Global Initiative
+logo: 
+email: your-email@domain.com
+description: ""
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/
+  - title: facebook
+    url: https://www.facebook.com/
+  - title: youtube
+    url: https://www.youtube.com/user/f
+
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: ""
+  - line: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty

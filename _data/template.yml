@@ -1,0 +1,23 @@
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: "195adc"
+  secondary: "ef4d59"
+  secondary-dark: "333"
+  light: "f7f5ff"
+  dark: "f2f0fa"
+  darkgrays: "e5e3ea"
+  muted: "777"
+  whites: "fdfdfd"
+  blacks: "000"
+  reds: "f44e5a" 
+  darkreds: "e84854"
+  blues: "0343c2"
+  lightblues: "195adc" 
+  darkblues: "144aba"
+  greens: "44aa7d"
+  bodytext: "041024"
+
+# Font Families
+font:
+  primary: 'Roboto, "Helvetica Neue",Helvetica,Arial,sans-serif'
+  secondary: 'Karla, "Helvetica Neue", Helvetica,Arial,sans-serif'

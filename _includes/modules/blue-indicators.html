@@ -1,0 +1,27 @@
+<!--Standard section template -->
+<section id="{{ include.texts.id }}" class="no-margin">    
+    <div class="container">
+        <div class="sub-container">
+
+            <div class="row text-center">
+
+                {% for indicator in include.texts.indicators %}
+                <div class="col-md-3 indicator-box" data-aos="fade-up">
+                    <span class="indicator-img">
+                        <div class="icon"> <img src="/img/icons/{{ indicator.icon }}.svg">
+                        </div>
+                    </span>
+                    <h2 class="h2-inverted">{{ indicator.number }}</h2>
+                    <p class="p-inverted">{{ indicator.description }}</p>
+                </div>
+                {% endfor %}
+
+            </div>
+
+            
+
+
+        </div><!-- close sub-container --> 
+    </div> <!-- close container -->
+</section>
+
