@@ -475,11 +475,12 @@ a.active {
     font-weight: 500;
     letter-spacing: 1.5px;
     color: #fff;
-    margin: 0px 0.5px;
-    padding: 13px 25px;
+    margin: 0px 0px;
+    padding: 10px 25px;
     margin-bottom: 5px;
-    font-size: 0.65em;
+    font-size: 0.5em;
     font-family: 'Inter UI', sans-serif;;
+    background-color: #333333;
 
 }
 
@@ -789,6 +790,30 @@ fieldset[disabled] .btn-xl.active {
     left: 0;
 }
 
+.brand-box {
+    position: fixed;
+    top: 17px;
+    right: 20px;
+    height: 40px;
+    width: 200px;
+}
+
+.brand-box .brand {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    display: inline;
+}
+
+.brand-box .brand img {
+    height: 100%;
+}
+
+.brand-box .button {
+    padding: 4px;
+}
 
 
 
