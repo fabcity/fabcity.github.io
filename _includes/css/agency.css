@@ -42,6 +42,10 @@ section .page {
     padding: 0px;
 }
 
+.frame {
+    padding: 20px;
+}
+
 .container {
     padding-left: 130px;
     padding-right: 130px;
@@ -715,20 +719,16 @@ fieldset[disabled] .btn-xl.active {
 @media (min-width: 768px) {
 
     .navbar-default {
-        padding: 10% 0 0;
+        margin: 10% 0 0;
         border: 0;
         background-color: white;
         width: 130px;
     }
 
     .navbar-default .nav li a { 
-         color: #{{ site.data.template.color.blacks }};
-    }
-
-    .navbar-nav li a {
-        padding-top: 0px;
-        padding-bottom: 10px;
-        font-size: 0.85em;
+        padding: 5px 0px;
+        margin-left: 20px;
+        color: #{{ site.data.template.color.blacks }};
     }
 
     .navbar-default .nav li a:hover,
