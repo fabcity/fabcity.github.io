@@ -1,6 +1,6 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: "195adc"
+  primary: "333333"
   secondary: "ef4d59"
   secondary-dark: "333"
   light: "f7f5ff"
@@ -8,7 +8,7 @@ color:
   darkgrays: "e5e3ea"
   muted: "777"
   whites: "fdfdfd"
-  blacks: "000"
+  blacks: "333333"
   reds: "f44e5a" 
   darkreds: "e84854"
   blues: "0343c2"
@@ -19,5 +19,5 @@ color:
 
 # Font Families
 font:
-  primary: 'Roboto, "Helvetica Neue",Helvetica,Arial,sans-serif'
+  primary: "'Inter UI', sans-serif;"
   secondary: 'Karla, "Helvetica Neue", Helvetica,Arial,sans-serif'
