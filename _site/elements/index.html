@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>The Fab City Global Initiative</title>
-    <meta name="viewport" content="width=device-width">
+        <!-- Behavioral Meta Data -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <meta name="description" content="">
     <link rel="canonical" href="http://localhost:4000/elements/">
 
@@ -20,19 +23,12 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!--Slow Appear -->
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-
-
-    <script type="text/javascript" src="/js/demoUtils.js"></script>
-
     <script type="text/javascript">
         var myScroll;
         function loaded() {
             myScroll = new IScroll('#slideshow1');
         }
     </script>
-
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -324,6 +320,10 @@
 
     <!-- Slow Appear -->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script type="text/javascript" src="/js/demoUtils.js"></script>
+
+    <!-- Parallax -->
+    <script src="/js/parallax.min.js"></script>
 
 
    <script type="text/javascript">
@@ -348,6 +348,13 @@
         function closeNav() {
             document.getElementById("myNav").style.height = "0%";
         }
+    </script>
+
+
+    <script>
+        // Parallax.js
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
     </script>
 
 

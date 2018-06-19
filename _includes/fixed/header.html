@@ -2,41 +2,8 @@
 
 
 <header>
-
-    <video autoplay loop muted poster="/img/backgrounds/bg_scopes.jpg" id="background-video" data-aos="fade-up">
-        <!--<source src="/img/backgrounds/home-bg-video.mp4" type="video/mp4">-->
-        <source src="/img/backgrounds/new_clip_matte.mp4" type="video/mp4">
-    </video>
-
     
     <div class="container">
-        <div class="intro-box" data-aos="fade-up">
-
-            <div class="statements">
-                <div class="intro-heading">Bridging the digital divide.</div>
-                <div class="intro-sub-heading">Design / Fabricate / Share</div>
-                <div class="intro-mission">Our mission is to provide access to the tools, the knowledge and the financial means to educate, innovate and invent using technology and digital fabrication to allow anyone to make (almost) anything.</div>
-                <a href="/" class="page-scroll btn btn-blue no-margin">Become a partner</a>
-            </div>  
-      
-        
-            <div class="highlights" data-aos="fade-up">
-                {% for post in site.posts %}
-                {% if post.highlight == true %}
-                <div class="highlight box-grow">
-                     <div class="col-md-3 img"> </div>
-                     <div class="col-md-9 text"> 
-                        <div class="title">{{ post.title }} </div>
-                        <div class="caption"><div class="latest-caption">Join us for the biggest conference on digital fabrication.</div>
-                        </div>
-                     </div>
-                </div>
-                {% endif %}
-                {% endfor %}
-                <h6 class="more link-grow" > More news > </div>
-            </div><!-- close highlights-->
-
-        </div> <!-- close intro-box-->
     </div> <!--close container-->  
 
 </header>

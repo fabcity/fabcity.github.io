@@ -27,6 +27,10 @@
 
     <!-- Slow Appear -->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script type="text/javascript" src="/js/demoUtils.js"></script>
+
+    <!-- Parallax -->
+    <script src="{{ "/js/parallax.min.js" | prepend: site.baseurl }}"></script>
 
 
    <script type="text/javascript">
@@ -51,4 +55,11 @@
         function closeNav() {
             document.getElementById("myNav").style.height = "0%";
         }
+    </script>
+
+
+    <script>
+        // Parallax.js
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
     </script>
