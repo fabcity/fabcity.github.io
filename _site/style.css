@@ -1106,56 +1106,39 @@ header .intro-text .intro-lead-in {
 
 /*// TWITTER LANDING SECTION //*/
 
-#twitter {
-    background-color: #0343c2;
-    padding-top: 0px;
-    padding-bottom: 40px;
-    margin-top: -280px;
-    color: #fdfdfd;
-} 
-
-#twitter .container {
-    padding-top: 70px;
+.twitter-space {
+    margin-top: 30px;
+    padding: 30px;
+    border: solid 1px #d6d6d6;
+    color: #333333;
 }
 
-#twitter .twitter-space {
-    margin-top: 0px;
-    z-index: 0;
-    float: right;
-    margin-bottom: 10px;
-
-}
-
-#twitter .twitter-space a {
-     color: #fdfdfd;
-}
-
-#twitter .twitter-space .tweet-box {
-    width: 400px;
-    float: right;
-    padding: 40px;
-    text-align: right;
-}
-
-#twitter .twitter-space .tweet-box .icon {
-    font-size: 1.2em;
-    margin-bottom: 50px;
-}
-
-#twitter .twitter-space .tweet-box .tweet {
-    font-family: Karla, "Helvetica Neue", Helvetica,Arial,sans-serif;
-    font-size: 14.6px;
-    line-height: 21px;
-    margin: 0 0 70px;
-}
-
-#twitter .twitter-space .tweet-box h6 {
-    text-align: right;
-}
-
-#twitter .twitter-space .tweet-box  a:hover {
+.twitter-space a {
+    color: #000;
     text-decoration: none;
 }
+
+.twitter-space .tweet-box {
+
+}
+
+.twitter-space .tweet-box .icon {
+    font-size: 1.2em;
+}
+
+.twitter-space .tweet-box .tweet {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.twitter-space .tweet-box h6 {
+}
+
+.twitter-space .tweet-box  a:hover {
+
+}
+
+
 
 /*// TWITTER SUBPAGE SECTION //*/
 #twitter-page  {
