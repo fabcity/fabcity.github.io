@@ -1,7 +1,6 @@
 {% include css/bootstrap.min.css %}
 {% include css/agency.css %}
-{% include css/parallax.css %}
-{% include css/parallax-js.css %}
+
 {{ content }}
 
 
