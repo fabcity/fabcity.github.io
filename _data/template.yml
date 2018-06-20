@@ -6,7 +6,7 @@ color:
   secondary-dark: "333"
   light: "f7f5ff"
   dark: "f2f0fa"
-  darkgrays: "e5e3ea"
+  darkgrays: "#7f7f7c"
   muted: "777"
   whites: "ffffff"
   blacks: "000"

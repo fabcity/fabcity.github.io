@@ -546,7 +546,7 @@ fieldset[disabled] .btn-clear.active {
 .btn-gray {
     font-weight: 800;
     color: #041024;
-    background-color: #e5e3ea;
+    background-color: ##7f7f7c;
 }
 
 .btn-gray:hover,
@@ -847,6 +847,72 @@ header .intro-text .intro-lead-in {
     background-color: crimson;
 }
 
+
+
+/* COUNTDOWN */
+
+
+.countdown {
+    width: auto;
+    float: right;
+    position: relative;
+    min-height: 1px;
+    /*background-color: crimson;*/
+}
+
+
+
+@media (min-width: 992px){
+    .countdown {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 767px){
+.countdown {
+        font-size: 3.8em;
+    }
+}
+
+
+.countdown {
+    display: inline-flex;
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*background-color: crimson;*/
+}
+
+.countdown div {
+    padding: 20px 0px 20px 20px;
+}
+
+.countdown div span {
+    padding-top: 10px;
+    font-weight: 600;
+    color: ;
+    display:block;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    /*color: #7f7f7c; */
+}
+
+.countdown-box .description {
+    float: right;
+    text-align: right;
+    padding-top: 20px;
+    border-top: solid 1px #d6d6d6;
+
+}
+
+
+
+
+
+
+
+
+/*SUBSCRIBE*/
 
 
 
