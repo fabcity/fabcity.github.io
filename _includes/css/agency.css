@@ -37,6 +37,10 @@ body {
 
 }
 
+.container.absolute {
+    position: absolute;
+}
+
 
 section {
     /*background-color: blue;*/
@@ -44,6 +48,10 @@ section {
     z-index: 100;
     margin: 0px;
     min-height: 600px;
+}
+
+#intro {
+
 }
 
 
@@ -86,10 +94,10 @@ section {
 
 header {
     /*height:900px;*/
-    background-color: #e0dada;
-    position: absolute;
-    top: 0;
+    /*background-color: #e0dada;*/
+    position: relative;
     z-index: 0;
+    min-height: 650px;
 }
 
 header .intro-text {
@@ -137,13 +145,13 @@ header .intro-text .intro-lead-in {
     background-color: crimson;
 }
 
-.bg-imgs .bg-3 {
+.bg-3 {
     position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 280px;
+    margin-left: 450px;
+    width: 260px;
     height: 400px;
     background-color: crimson;
+    z-index: -1000;
 }
 
 
