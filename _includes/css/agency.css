@@ -26,21 +26,6 @@ body {
     background-color: transparent; 
 }
 
-section {
-    background-color: transparent;
-    position:relative;
-    z-index: 100;
-    margin: 0px 0px 80px 0px;
-}
-
-
-section.section-page {
-    margin: 0px;
-}
-
-section .page {
-    padding: 0px;
-}
 
 .frame {
     padding: 20px;
@@ -52,11 +37,15 @@ section .page {
 
 }
 
-.container.standard {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: transparent;
+
+section {
+    /*background-color: blue;*/
+    position:relative;
+    z-index: 100;
+    margin: 0px;
+    min-height: 600px;
 }
+
 
 .no-margin {
     margin-top: 0px;
@@ -92,11 +81,70 @@ section .page {
 }
 
 
-.sub-container {
-    padding: 0px 60px;
+/*// HEADER //*/
+
+
+header {
+    /*height:900px;*/
+    background-color: #e0dada;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+header .intro-text {
+    padding-top: 240px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 33px;
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
 }
 
 
+.bg-imgs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1000;
+    /*background-color: crimson;*/
+    height: 100%;
+    width: 100%;
+}
+
+.bg-imgs .bg-1 {
+    position: absolute;
+    left: 100px;
+    top:0px;
+    margin-top: 370px;
+    width: 280px;
+    height: 200px;
+    background-color: crimson;
+}
+
+.bg-imgs .bg-2 {
+    position: absolute;
+    right: -20px;
+    margin-top: 100px;
+    width: 280px;
+    height: 200px;
+    background-color: crimson;
+}
+
+.bg-imgs .bg-3 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 280px;
+    height: 400px;
+    background-color: crimson;
+}
 
 
 /*TEXT DEFINITIONS */
@@ -206,13 +254,17 @@ p {
 
 }
 
+section .section-texts {
+    margin-top: 200px;
+}
 
-section h3.section-heading {
+
+section .section-heading {
     line-height: 25px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.04em;
     margin-bottom: 40px;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.5px;
 }
 
 section p.section-subheading {
@@ -698,10 +750,12 @@ fieldset[disabled] .btn-xl.active {
     position: fixed;
     right: 0;
     left: 0;
+    z-index: 1000;
 }
 
 .brand-box {
     position: fixed;
+    z-index: 1000;
     top: 17px;
     right: 20px;
     height: 40px;
@@ -787,59 +841,6 @@ fieldset[disabled] .btn-xl.active {
 
 
 
-/*// HEADER //*/
-
-
-header {
-    height:900px;
-}
-
-header .intro-text {
-    padding-top: 240px;
-    padding-bottom: 50px;
-}
-
-header .intro-text .intro-lead-in {
-    font-weight: 600;
-    margin-bottom: 25px;
-    font-size: 22px;
-    letter-spacing: 2px;
-    line-height: 33px;
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-}
-
-
-.header-imgs {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index:-1000;
-    /*background-color: crimson;*/
-    height: 100%;
-    width: 100%;
-}
-
-.header-imgs .bg-1 {
-    position: absolute;
-    left: 100px;
-    top:0px;
-    margin-top: 370px;
-    width: 280px;
-    height: 200px;
-    background-color: crimson;
-}
-
-.header-imgs .bg-2 {
-    position: absolute;
-    right: -20px;
-    margin-top: 100px;
-    width: 280px;
-    height: 200px;
-    background-color: crimson;
-}
-
-
 
 /* COUNTDOWN */
 
@@ -901,9 +902,6 @@ header .intro-text .intro-lead-in {
 
 
 
-
-
-
 /*SUBSCRIBE*/
 
 
@@ -919,60 +917,6 @@ header .intro-text .intro-lead-in {
 }
 
 
-
-
-
-/*To DELETE */
-
-#impact-numbers {
-    /*background-color: #{{ site.data.template.color.blues }};*/
-    background-color: transparent;
-    /*
-    padding-bottom: 40px;
-    padding-top: 70px;
-    */
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-
-#impact-numbers .container {
-   /*background-color: #{{ site.data.template.color.blues }};*/
-    background-color: #023eb3;
-    padding: 80px 0px;
-} 
-
-
-#academany-full {
-    margin-bottom: 0px;
-
-}
-
-#academany-full .container {
-    padding-bottom: 0px;
-}
-
-
-#academany-courses .container {
-    padding-top: 0px;
-
-}
-
-
-
-.section-logo {
-    height:45px;
-    background-repeat: no-repeat;
-    margin-left: 15px;
-    margin-bottom: 20px;
-}
-
-#bluediv{
-    position:absolute;
-    margin-top: 700px;
-    z-index:-500;
-    height: 700px;
-    background-color: #0343c2;
-}
 
 /*// HORIZONTAL SLIDER //*/
 
