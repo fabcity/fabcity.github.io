@@ -22,7 +22,7 @@
 
 html {
     -ms-touch-action: none;
-    background-color: #000; 
+    background-color: #ffffff; 
 }
 
 
@@ -31,7 +31,7 @@ body {
     font-family: 'Inter UI', sans-serif;;
     color: #041024;
     transition: all 0.4s ease;
-    background-color: #000; 
+    background-color: transparent; 
 }
 
 section {
@@ -63,22 +63,7 @@ section .page {
 .container.standard {
     padding-top: 60px;
     padding-bottom: 60px;
-    /*background-color: #f7f5ff;*/
-    background-color: #f2f0fa;
-}
-
-.dark-gray {
-    background-color: #e5e3ea;
-}
-
-#academany .container {
-     background-color: #f2f0fa;
-}
-
-
-
-.dark {
-     background-color: #f0edfa;
+    background-color: transparent;
 }
 
 .no-margin {
@@ -196,7 +181,7 @@ h6 {
 .h6-inverted {
     font-weight: 500;
     letter-spacing: 1.6px;
-    color: #fdfdfd;
+    color: #ffffff;
 }
 
 p {
@@ -260,73 +245,6 @@ section h2.page-heading {
 .down-arrow-space .arrow {
     height: 15px;
 
-}
-
-
-/*SLOW APPEAR*/
-/*
-.item {
-  width: 200px;
-  height: 200px;
-  margin: 50px auto;
-  padding-top: 75px;
-  background: #ccc;
-  text-align: center;
-  color: #FFF;
-  font-size: 3em;
-}
-*/
-
-
-
-.vignette {
-   /* background-color: white;*/
-    display: flex;
-    padding-bottom: 40px;
-}
-
-.vignette .texts {
-    /*background-color: white;*/
-}
-
-.vignette-img {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: top center;
-    webkit-background-size: 50%;
-    -moz-background-size: 50%;
-    background-size: 50%;
-    -o-background-size: 50%;
-    padding: 0px;
-}
-
-.vignette .img .icon {
-    color: green;
-    line-height: inherit;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.vignette-lead {
-    margin-bottom: 20px;
-    text-transform: none;
-    font-size: 1.01em;
-    font-weight: 400;
-    /* font-weight: 500; */
-    line-height: 24px;
-    text-align: left;
-}
-
-.vignette-body {
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 0.81em;
-    line-height: 19px;
-    font-weight: 400;
-    letter-spacing: 0.3px;
 }
 
 
@@ -422,7 +340,7 @@ a.active {
     -o-background-size: cover;
     position: relative;
     width: 100%;
-    background-color: #fdfdfd;
+    background-color: #ffffff;
 
 }
 
@@ -454,7 +372,7 @@ a.active {
 
 
 .bg-light-gray {
-    background-color: #fdfdfd;
+    background-color: #ffffff;
 }
 
 .bg-blue {
@@ -528,7 +446,7 @@ fieldset[disabled] .btn-blue.active {
 
 /*POR BORRAR*/
 .btn-blue .badge {
-    color: #fdfdfd;
+    color: #ffffff;
     background-color: #fff;
 }
 
@@ -730,7 +648,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         margin: 10% 0 0;
         border: 0;
-        background-color: white;
+        background-color: transparent;
         width: 130px;
     }
 
@@ -848,7 +766,7 @@ fieldset[disabled] .btn-xl.active {
     text-transform: uppercase;
     transition: 0.3s;
     letter-spacing: 2.5px;
-    color: #fdfdfd;
+    color: #ffffff;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -882,11 +800,10 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     height:900px;
-    background-color: #fdfdfd; 
 }
 
 header .intro-text {
-    padding-top: 300px;
+    padding-top: 240px;
     padding-bottom: 50px;
 }
 
@@ -899,6 +816,37 @@ header .intro-text .intro-lead-in {
     text-transform: uppercase;
     font-family: 'Inter UI', sans-serif;;
 }
+
+
+.header-imgs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1000;
+    /*background-color: crimson;*/
+    height: 100%;
+    width: 100%;
+}
+
+.header-imgs .bg-1 {
+    position: absolute;
+    left: 100px;
+    top:0px;
+    margin-top: 370px;
+    width: 280px;
+    height: 200px;
+    background-color: crimson;
+}
+
+.header-imgs .bg-2 {
+    position: absolute;
+    right: -20px;
+    margin-top: 100px;
+    width: 280px;
+    height: 200px;
+    background-color: crimson;
+}
+
 
 
 
@@ -1023,7 +971,7 @@ header .intro-text .intro-lead-in {
     -o-background-size: cover;
     position: relative;
     width: 100%;
-    background-color: #fdfdfd;
+    background-color: #ffffff;
 }
 
 .element-logo {
@@ -1041,6 +989,59 @@ header .intro-text .intro-lead-in {
     height:15px;
     margin: 3px;
 }
+
+
+.vignette {
+   /* background-color: white;*/
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.vignette .texts {
+    /*background-color: white;*/
+}
+
+.vignette-img {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top center;
+    webkit-background-size: 50%;
+    -moz-background-size: 50%;
+    background-size: 50%;
+    -o-background-size: 50%;
+    padding: 0px;
+}
+
+.vignette .img .icon {
+    color: green;
+    line-height: inherit;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.vignette-lead {
+    margin-bottom: 20px;
+    text-transform: none;
+    font-size: 1.01em;
+    font-weight: 400;
+    /* font-weight: 500; */
+    line-height: 24px;
+    text-align: left;
+}
+
+.vignette-body {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 0.81em;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+
 
 
 /*/ Expandable accordion /*/
@@ -1170,7 +1171,7 @@ header .intro-text .intro-lead-in {
     background-color: #0343c2;
     padding-top: 0px;
     /*padding-bottom: 400px;*/
-    color: #fdfdfd;
+    color: #ffffff;
 } 
 
 #twitter-page .container {
@@ -1183,7 +1184,7 @@ header .intro-text .intro-lead-in {
 }
 
 #twitter-page .twitter-space a {
-     color: #fdfdfd;
+     color: #ffffff;
 }
 
 #twitter-page .twitter-space .tweet-box {
@@ -1458,7 +1459,7 @@ header .intro-text .intro-lead-in {
 .projects-module {
     /*background-color: #0343c2;*/
     padding-top: 0px;
-    color: #fdfdfd;
+    color: #ffffff;
 }
 
 
@@ -1474,7 +1475,7 @@ header .intro-text .intro-lead-in {
 }
 
 .projects-module .project-card a {
-     color: #fdfdfd;
+     color: #ffffff;
 }
 
 .projects-module .project-card .project-text {
