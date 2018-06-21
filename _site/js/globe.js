@@ -18,7 +18,7 @@ $(document).ready(function() {
       for (var i = 0; i < data.labs.length; i++) {
         var item = data.labs[i];
         if ( item.latitude && item.longitude ) {
-          WE.marker([item.latitude,item.longitude], 'img/lab.png', 15, 15).addTo(earth);
+          WE.marker([item.latitude,item.longitude], 'img/general/lab.png', 15, 15).addTo(earth);
         }
       }
     });

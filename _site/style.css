@@ -990,10 +990,9 @@ fieldset[disabled] .btn-xl.active {
 
 
 #fabcity {
-  padding: 0px 0px 0px 0px;
-  background: #222;
+  padding: 0px;
+  background: white;
   width: 100%;
-  margin-left: -25px;
 }
 
 .fabcity {
