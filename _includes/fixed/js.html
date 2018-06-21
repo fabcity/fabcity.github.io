@@ -1,69 +1,197 @@
- <!-- jQuery Version 1.11.0 -->
-    <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
+<!-- jQuery Version 1.11.0 -->
+<script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
-    <!--<script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>-->
+<!-- Plugin JavaScript -->
+<script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
+<!--<script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>-->
 
-    <!-- Contact Form JavaScript -->
-    <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
+<!-- Contact Form JavaScript -->
+<script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
 
-    <!--Iscroll for horizontal slide menus-->
-    <script src="{{ "/js/iscroll.js" | prepend: site.baseurl }}"></script>
-    
-    <!--Twitter call for last tweet home mosaic-->
-    <script src="{{ "/js/twitter-call.js" | prepend: site.baseurl }}"></script>
+<!--Iscroll for horizontal slide menus-->
+<script src="{{ "/js/iscroll.js" | prepend: site.baseurl }}"></script>
 
-    <!--Twitter call for last tweet home mosaic-->
-    <script src="{{ "/js/twitter-call-academany.js" | prepend: site.baseurl }}"></script>
+<!--Twitter call for last tweet home mosaic-->
+<script src="{{ "/js/twitter-call.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Slow Appear -->
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script type="text/javascript" src="/js/demoUtils.js"></script>
+<!--Twitter call for last tweet home mosaic-->
+<script src="{{ "/js/twitter-call-academany.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Parallax -->
-    <script src="{{ "/js/parallax.min.js" | prepend: site.baseurl }}"></script>
+<!-- Slow Appear -->
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript" src="/js/demoUtils.js"></script>
 
-    <!-- Countdown -->
-    <script src="{{ "/js/jquery.countdown.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/countdown.js" | prepend: site.baseurl }}"></script>
+<!-- Parallax -->
+<script src="{{ "/js/parallax.min.js" | prepend: site.baseurl }}"></script>
+
+<!-- Countdown -->
+<script src="{{ "/js/jquery.countdown.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/countdown.js" | prepend: site.baseurl }}"></script>
 
 
-   <script type="text/javascript">
-    $('.carousel').carousel({
+<!--Globe -->
+<script src="https://www.webglearth.com/v2/api.js" data-turbolinks-track="true"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js" data-turbolinks-track="true"></script>
+<script src="{{ "/js/globe.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/map.js" | prepend: site.baseurl }}"></script>
+
+<script type="text/javascript">
+window.map_markers = []
+window.markers = []
+window.places = []
+var place = null;
+var marker = null;
+place = [41.3909267, 2.1673073];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>BARCELONA</b><p>Pledged in 2014</p>", {maxWidth: 100}).openPopup();
+marker = L.marker(place);
+window.map_markers.push(marker);
+marker.bindPopup("<b>BARCELONA</b><p>Pledged in 2014</p>");
+place = [42.337487, -71.0678];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>BOSTON</b><p>Pledged in 2015</p>", {maxWidth: 100}).openPopup();
+marker = L.marker(place);
+window.map_markers.push(marker);
+marker.bindPopup("<b>BOSTON</b><p>Pledged in 2015</p>");
+place = [42.387745, -71.098598];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>SOMERVILLE</b><p>Pledged in 2015</p>", {maxWidth: 100}).openPopup();
+marker = L.marker(place);
+window.map_markers.push(marker);
+marker.bindPopup("<b>SOMERVILLE</b><p>Pledged in 2015</p>");
+place = [42.373762, -71.109562];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>CAMBRIDGE</b><p>Pledged in 2015</p>", {maxWidth: 100}).openPopup();
+marker = L.marker(place);
+window.map_markers.push(marker);
+marker.bindPopup("<b>CAMBRIDGE</b><p>Pledged in 2015</p>");
+place = [-26.1782598, 28.29638];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>EKURHULENI</b><p>Pledged in 2015</p>", {maxWidth: 100}).openPopup();
+marker = L.marker(place);
+window.map_markers.push(marker);
+marker.bindPopup("<b>EKURHULENI</b><p>Pledged in 2015</p>");
+place = [10.5415985, 76.1302717];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>KERALA</b><p>Pledged in 2015</p>", {maxWidth: 100}).openPopup();
+marker = L.marker(place);
+window.map_markers.push(marker);
+marker.bindPopup("<b>KERALA</b><p>Pledged in 2015</p>");
+place = [42.3207845, 43.3713615];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>GEORGIA</b><p>Pledged in 2015</p>", {maxWidth: 100}).openPopup();
+marker = L.marker(place);
+window.map_markers.push(marker);
+marker.bindPopup("<b>GEORGIA</b><p>Pledged in 2015</p>");
+place = [22.548819, 114.051819];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>SHENZHEN</b><p>Pledged in 2015</p>", {maxWidth: 100}).openPopup();
+place = [52.379189, 4.899431];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>AMSTERDAM</b><p>Pledged in 2016</p>", {maxWidth: 100}).openPopup();
+place = [43.6047, 1.4442];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>TOUOUSE</b><p>Pledged in 2016</p>", {maxWidth: 100}).openPopup();
+place = [43.6047, 1.4442];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>OCCITANE REGION</b><p>Pledged in 2016</p>", {maxWidth: 100}).openPopup();
+place = [48.8566, 2.3522];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>PARIS</b><p>Pledged in 2016</p>", {maxWidth: 100}).openPopup();
+place = [27.5142, 90.4336];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>BHUTAN</b><p>Pledged in 2016</p>", {maxWidth: 100}).openPopup();
+place = [38.5816, -121.4944];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>SACRAMENTO</b><p>Pledged in 2016</p>", {maxWidth: 100}).openPopup();
+place = [-33.4489, -70.6693];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>SANTIAGO</b><p>Pledged in 2016</p>", {maxWidth: 100}).openPopup();
+place = [42.3314, -83.0458];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>DETROIT</b><p>Pledged in 2016</p>", {maxWidth: 100}).openPopup();
+place = [48.2330, -4.2900];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>BREST</b><p>Pledged in 2017</p>", {maxWidth: 100}).openPopup();
+place = [-25.2500, -49.1500];
+marker = WE.marker(place, 'img/general/lab.png', 5, 5);
+window.markers.push(marker);
+window.places.push(place);
+marker.bindPopup("<b>CURITIBA</b><p>Pledged in 2017</p>", {maxWidth: 100}).openPopup();
+</script>
+
+
+
+
+<script type="text/javascript">
+$('.carousel').carousel({
     interval: 2500 //changes the speed
-    })
-    </script>
+})
+</script>
 
 
-    <script type="text/javascript">
-        AOS.init({
-            duration: 1200,
-        })
-    </script>
+<script type="text/javascript">
+AOS.init({
+    duration: 1200,
+})
+</script>
 
 
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-        }
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
 
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-        }
-    </script>
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
 
 
-    <script>
+<script>
         // Parallax.js
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
-    </script>
+        </script>

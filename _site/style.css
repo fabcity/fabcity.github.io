@@ -984,6 +984,282 @@ fieldset[disabled] .btn-xl.active {
 }
 
 
+/* GLOBE */
+
+/*/----- GLOBE SECTION ----/*/
+
+
+#fabcity {
+  padding: 0px 0px 0px 0px;
+  background: #222;
+  width: 100%;
+  margin-left: -25px;
+}
+
+.fabcity {
+  min-height: 750px;
+  padding-bottom: 0px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 750px;
+}
+
+.holy-grail globe {
+}
+
+.holy-grail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.holy-grail ul li {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  line-height: 1.5em;
+  text-shadow: 1px 1px 1px #eee;
+  font-weight: bold;
+}
+
+@media(min-width:992px) {
+  .holy-grail ul li {
+    font-size: 1.3em;
+  }
+}
+
+.holy-grail-body {
+  display: flex;
+  flex: 1;
+  height: 750px;
+}
+
+.holy-grail-content {
+  flex: 1;
+  background: #ffc94e;
+}
+
+.holy-grail-nav, .holy-grail-sidebar {
+  /* 12em is the width of the columns */
+  margin-left: -150px;
+  z-index: 100;
+  flex: 0 0 300px;
+  background: #eee;
+}
+
+.holy-grail-body {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+
+@media(min-width:767px) {
+  .holy-grail-body {
+    padding-top: 0px;
+  }
+
+  .holy-grail-nav, .holy-grail-sidebar {
+    /* 12em is the width of the columns */
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .city-list {
+    padding-top: 70px;
+  }
+}
+
+.holy-grail-nav {
+  /* put the nav on the left */
+  order: -1;
+  background: #85d6e4;
+}
+
+
+.logo-container {
+  margin-top: -30px;
+  margin-left: 24%;
+}
+
+
+#logo {
+  height: 100px;
+}
+
+
+@media(min-width:992px) {
+  .logo-container {
+   margin-top: -70px;
+  }
+}
+
+
+
+.button {
+  position: absolute;
+  top: 10px;
+  background: #003C8D;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 22px;
+  color: #FFF;
+}
+.button.globe {
+  right: 10px;
+}
+.button.map {
+  right: 60px;
+}
+
+.dot {
+  color: #FFEA00;
+  background-image: url("img/general/lab.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  padding-right: 15px;
+  padding-left: 5px;
+}
+
+.map .dot {
+  color: #FF00F6;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  z-index: 10000;
+  text-align: center;
+  padding-top: 20px;
+  background: yellow image-url('img/button.png') center center no-repeat;
+  display: none;
+}
+#map {
+  height: 100%;
+  background: #051321;
+}
+#earth_div {
+  cursor: grab;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*background: #000 url(http://api.ning.com/files/mcK-mv3mgQU7b*vqNKN333coxqiXS5C0jKXjHvR-4uVTyfI*6ersXCQ4fiH46n7yyxeMpL549itUZC*OoWUp8IEG5UvxAiac/stars.jpg?width=737&height=304);*/
+  position: absolute !important;
+}
+#earth_div span {
+  color: #590917 !important;
+}
+#earth_div span {
+  color: #777 !important;
+}
+#earth_div:active {
+  cursor: grabbing;
+}
+
+.we-pp-wrapper {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.5em;
+  background: rgba(227, 24, 60, 0.85) !important;
+  box-shadow: none !important;
+  color: #FFF !important;
+  border-radius: 8px !important;
+  height: 40px;
+}
+.we-pp-wrapper b {
+  color: #111 !important;
+  font-size: 1em !important;
+
+}
+
+.we-pp-tip {
+  background: rgba(227, 24, 60, 0.85) !important;
+}
+
+.we-pp-content {
+  margin: 5px !important;
+  font-size: 0.5em !important;
+}
+
+.we-pp-content p {
+  margin: 0px !important;
+  color: #efefef;
+  font-size: 0.7em !important;
+}
+
+.we-pp-close {
+  display: none !important;
+}
+
+.we-pm-icon {
+  pointer-events: none;
+  width: 15px;
+  height: 15px;
+  margin-left: -3px;
+  margin-top: -5px;
+  background-image: url("/img/general/lab.png");
+  color: yellow;
+  z-index: 99;
+  background-size: 15px 15px;
+}
+
+.we-pp {
+  pointer-events: none;
+}
+
+#legend {
+  background: #222222;
+  padding: 0px 0px;
+  border-radius: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: #F0F0F0;
+  font-size: 0px;
+}
+
+
+@media(min-width:767px) {
+  #legend {
+    background: rgba(17, 17, 17, 0.8);
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: #F0F0F0;
+    font-size: 13px;
+  }
+}
+
+.we-pp:nth-child(1) {
+  background: green !important;
+}
+
+
+
+.city-quote {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 5px;
+  padding: 30px 30px 0px 40px;
+}
+
+
+
 /*SUBSCRIBE*/
 
 
