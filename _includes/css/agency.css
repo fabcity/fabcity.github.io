@@ -127,6 +127,15 @@ header .intro-text .intro-lead-in {
     z-index: -1000;
 }
 
+.bg-plain.large {
+    position: absolute;
+    margin-left: 0px;
+    width: 100%;
+    height: 300px;
+    background-color: #01a158;
+    z-index: -1000;
+}
+
 .bg-imgs {
     position: absolute;
     top: 0;
@@ -192,6 +201,15 @@ header .intro-text .intro-lead-in {
     margin-top: 40px;
 }
 
+.front-2 {
+    width: 250px;
+    height: 250px;
+    background-color: crimson;
+    float:left;
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
 
 /*TEXT DEFINITIONS */
 
@@ -203,7 +221,7 @@ h5,
 h6 {
     text-transform: uppercase;
     font-weight: 500;
-    margin-bottom: 0px; 
+    margin: 0px; 
     font-family: {{ site.data.template.font.primary }}; 
     color: #{{ site.data.template.color.blacks }};
 }
@@ -293,6 +311,10 @@ section .quote {
 
 section .number{
     padding-top: 60px;
+}
+
+section .claim{
+    padding-top: 40px;
 }
 
 
