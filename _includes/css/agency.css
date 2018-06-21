@@ -116,6 +116,17 @@ header .intro-text .intro-lead-in {
 }
 
 
+/*// BACKGROUND-IMAGES //*/
+
+.bg-plain {
+    position: absolute;
+    margin-left: 0px;
+    width: 500px;
+    height: 300px;
+    background-color: #e62339;
+    z-index: -1000;
+}
+
 .bg-imgs {
     position: absolute;
     top: 0;
@@ -163,6 +174,25 @@ header .intro-text .intro-lead-in {
     z-index: -1000;
 }
 
+.bg-5 {
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 260px;
+    width: 300px;
+    height: 200px;
+    background-color: crimson;
+    z-index: -1000;
+}
+
+.front-1 {
+    width: 300px;
+    height: 260px;
+    background-color: crimson;
+    float:left;
+    margin-top: 40px;
+}
+
+
 /*TEXT DEFINITIONS */
 
 h1,
@@ -172,16 +202,21 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 0px; 
-    letter-spacing: 0.7px; 
     font-family: {{ site.data.template.font.primary }}; 
     color: #{{ site.data.template.color.blacks }};
 }
 
+h1 {
+    font-size: 1.7em;
+}
+
 
 h2 {
-    font-size: 1.1em;
+    font-size: 1.4em;
+    line-height: 28px;
+    letter-spacing: 1.6px; 
 }
 
 
@@ -206,39 +241,12 @@ h6 {
     letter-spacing: 1.1px;
 }
 
-
-.h2-inverted {
-    font-weight: 500;
-    letter-spacing: 1.7px;
+.inverted {
     color: #{{ site.data.template.color.light }}; 
 
 }
 
-.h3-inverted {
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: #{{ site.data.template.color.light }};
-}
 
-.h4-inverted {
-    letter-spacing: 1.2px;
-    font-weight: 700;
-    line-height: 25px;
-    color: #{{ site.data.template.color.light }}; 
-}
-
-.h5-inverted {
-    letter-spacing: 1.7px;
-    font-weight: 500;
-    line-height: 25px;
-    color: #{{ site.data.template.color.light }}; 
-}
-
-.h6-inverted {
-    font-weight: 500;
-    letter-spacing: 1.6px;
-    color: #{{ site.data.template.color.whites }};
-}
 
 p {
     font-size: 14px;
@@ -270,18 +278,23 @@ p {
 
 }
 
-section .section-texts {
+section .quote-box {
     margin-top: 200px;
 }
 
 
-section .section-heading {
+section .quote {
     line-height: 25px;
     font-weight: 500;
     font-size: 1.04em;
     margin-bottom: 40px;
     letter-spacing: 0.5px;
 }
+
+section .number{
+    padding-top: 60px;
+}
+
 
 section p.section-subheading {
     margin-bottom: 40px;
@@ -2058,12 +2071,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
+    background: #f7efef;
 }
 
 ::selection {
     text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
+    background: #f7efef;
 }
 
 img::selection {
@@ -2075,7 +2088,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #ffffff;
+    webkit-tap-highlight-color: #f7efef;
 }
 
 
