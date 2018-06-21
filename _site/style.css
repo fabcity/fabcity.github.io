@@ -162,6 +162,14 @@ header .intro-text .intro-lead-in {
     z-index: -1000;
 }
 
+.bg-4 {
+    position: absolute;
+    margin-left: 800px;
+    width: 260px;
+    height: 300px;
+    background-color: crimson;
+    z-index: -1000;
+}
 
 /*TEXT DEFINITIONS */
 
@@ -383,8 +391,8 @@ a.active {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    position: relative;
-    width: 100%;
+    /*position: relative;*/
+    /*width: 100%;*/
 }
 
 .img-large {
