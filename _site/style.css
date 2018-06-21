@@ -97,6 +97,14 @@ section {
 }
 
 
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
 /*// HEADER //*/
 
 
@@ -257,6 +265,12 @@ h1 {
     font-size: 1.7em;
 }
 
+.xl {
+    font-size: 8em;
+    color: #f7f7f7;
+    margin-left: 120px;
+}
+
 
 h2 {
     font-size: 1.4em;
@@ -303,25 +317,8 @@ p {
     font-size: 0.8em;
 }
 
-.p-inverted {
-    font-size: 13px;
-    font-weight: 300;
-    letter-spacing: 1.2px;
-    color: #f7f5ff; 
-}
 
-.body-text {
-    margin-bottom: 20px;
-    text-align: left;
 
-}
-
-.body-text .page-text {
-    font-size: 0.94em;
-    line-height: 25px;
-    letter-spacing: 0.18px; 
-
-}
 
 section .quote-box {
     margin-top: 200px;
@@ -618,12 +615,12 @@ fieldset[disabled] .btn-red.active {
 /*CLEAR*/
 
 .btn-clear {
-    border: solid 1.5px #0343c2;
-    color: #144aba;
+    border: solid 1.5px #d6d6d6;
+    color: #000;
     font-weight: 900;
     background: transparent;
     /* Old browsers */
-    background: linear-gradient(to left, transparent 50%, #0343c2 50%);
+    background: linear-gradient(to left, transparent 50%, #d6d6d6 50%);
     background-size: 200% 100%;
     background-position:right bottom;
     transition:all 0.4s ease;
@@ -634,8 +631,8 @@ fieldset[disabled] .btn-red.active {
 .btn-clear:active,
 .btn-clear.active,
 .open .dropdown-toggle.btn-clear {
+    color: #000;
     /*border: solid 1.5px #144aba;*/
-    color: #f7f5ff;
     background-position:left bottom;
 }
 
@@ -977,7 +974,14 @@ fieldset[disabled] .btn-xl.active {
 }
 
 
+/*CLAIMS*/
+ .services  ul{
+    list-style: none;
+ }
 
+.services  ul li{
+    padding-bottom: 30px;
+}
 
 
 /*SUBSCRIBE*/
