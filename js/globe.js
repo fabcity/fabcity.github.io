@@ -60,6 +60,18 @@ $(document).ready(function() {
 
       doAnimation();
 
+      function onMouseWheel(event) {
+        console.log("Mouse X Y :: ", event.x, event.y);
+
+        if (event.x > 720 && event.x < 1180 && event.y > 120 && event.y < 330) {
+            event.preventDefault();
+            if (overRenderer) {
+                zoom(event.wheelDeltaY * 0.3);
+            }
+        }
+        return false;
+    }
+
       function goto() {
         $('aside li').removeClass('active')
         // if (i == window.places.length) {
