@@ -131,7 +131,6 @@ header .intro-text .intro-lead-in {
     margin-left: 0px;
     width: 500px;
     height: 300px;
-    background-color: #e62339;
     z-index: -1000;
 }
 
@@ -139,9 +138,21 @@ header .intro-text .intro-lead-in {
     position: absolute;
     margin-left: 0px;
     width: 100%;
-    height: 300px;
-    background-color: #01a158;
+    height: 400px;
     z-index: -1000;
+}
+
+.red {
+    background-color: #e62339;
+}
+
+.green {
+    background-color: #01a158;
+}
+
+.blue {
+    background-color: #23398d;
+
 }
 
 .bg-imgs {
@@ -218,6 +229,14 @@ header .intro-text .intro-lead-in {
     margin-right: 70px;
 }
 
+.front-3 {
+    width: 470px;
+    height: 250px;
+    background-color: crimson;
+    float:left;
+    margin-top: 40px;
+    margin-right: 0px;
+}
 
 /*TEXT DEFINITIONS */
 
