@@ -246,6 +246,22 @@ header .intro-text .intro-lead-in {
     margin-right: 0px;
 }
 
+.bg-partners {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: -1000;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+    margin-top: -50px;
+}
+
 /*TEXT DEFINITIONS */
 
 h1,
