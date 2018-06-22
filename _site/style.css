@@ -255,7 +255,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0px; 
     font-family: 'Inter UI', sans-serif;; 
     color: #000;
@@ -300,11 +300,15 @@ h6 {
     letter-spacing: 1.1px;
 }
 
-.inverted {
+.h-inverted {
+    font-weight: 500;
     color: #f7f5ff; 
 
 }
 
+.p-inverted {
+    color: #f7f5ff; 
+}
 
 
 p {
@@ -324,6 +328,9 @@ section .quote-box {
     margin-top: 200px;
 }
 
+section .quote-title {
+    margin-bottom: 40px;
+}
 
 section .quote {
     line-height: 25px;
@@ -850,7 +857,7 @@ fieldset[disabled] .btn-xl.active {
     height: 100%;
 }
 
-.brand-box .button {
+.brand-box .button-top {
     padding: 4px;
 }
 
@@ -1017,7 +1024,6 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .holy-grail ul li {
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   list-style-type: none;
   text-transform: uppercase;
   font-size: 0.7em;
@@ -1760,8 +1766,8 @@ fieldset[disabled] .btn-xl.active {
 .sponsor {
     position: relative;
     display: inline-block;
-    width: 2em;
-    height: 2em;
+    width: 180px;
+    height: 80px;
     line-height: 2em;
     vertical-align: middle;
     font-size: 7em;    
