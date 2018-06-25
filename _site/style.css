@@ -139,6 +139,16 @@ header .intro-text .intro-lead-in {
     font-family: 'Inter UI', sans-serif;;
 }
 
+.claim-1 {
+    padding-bottom: 190px;
+}
+
+@media (min-width: 768px){
+    .claim-1 {
+    padding-bottom: 0px;
+    }
+}
+
 
 /*// BACKGROUND-IMAGES //*/
 
@@ -181,7 +191,7 @@ header .intro-text .intro-lead-in {
     width: 100%;
 }
 
-.bg-imgs .bg-1 {
+.bg-1 {
     position: absolute;
     left: 40px;
     top:0px;
@@ -192,7 +202,7 @@ header .intro-text .intro-lead-in {
 }
 
 @media (min-width: 768px){
-    .bg-imgs .bg-1 {
+    .bg-1 {
         left: 100px;
         width: 280px;
         margin-top: 370px;
@@ -200,7 +210,7 @@ header .intro-text .intro-lead-in {
 }
 
 
-.bg-imgs .bg-2 {
+.bg-2 {
     position: absolute;
     right: -20px;
     margin-top: 100px;
@@ -211,7 +221,7 @@ header .intro-text .intro-lead-in {
 }
 
 @media (min-width: 768px){
-    .bg-imgs .bg-2 {
+    .bg-2 {
         display: block;
     }
 }
@@ -227,7 +237,7 @@ header .intro-text .intro-lead-in {
 }
 
 @media (min-width: 768px){
-    .bg-imgs .bg-3 {
+    .bg-3 {
         display: block;
     }
 }
@@ -257,19 +267,23 @@ header .intro-text .intro-lead-in {
     background-color: crimson;
     float:left;
     margin-top: 40px;
+    display: none;
 }
 
+@media (min-width: 768px){
+    .front-1 {
+        display: block;
+    }
+}
+
+
 .front-2 {
-    width: 250px;
     height: 250px;
     background-color: crimson;
-    float:left;
     margin-top: 40px;
-    margin-right: 70px;
 }
 
 .front-3 {
-    width: 470px;
     height: 250px;
     background-color: crimson;
     float:left;
@@ -1027,6 +1041,22 @@ fieldset[disabled] .btn-xl.active {
 
 
 /*CLAIMS*/
+
+#claim-3 {
+    min-height: 900px;
+}
+
+@media (min-width: 768px){
+    #claim-3 {
+        min-height: 600px;
+    }
+}
+
+
+
+
+
+
  .services  ul{
     list-style: none;
  }
@@ -1793,9 +1823,16 @@ fieldset[disabled] .btn-xl.active {
 
 /*SPONSORS MODULE */
 
-#sponsors {
-    background-color: transparent;
+#partners {
+    min-height: 780px;
 }
+
+@media (min-width: 768px){
+    #partners {
+        min-height: 600px;
+    }
+}
+
 
 #sponsors .container {
     background-color: #ffffff;
