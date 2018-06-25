@@ -32,9 +32,22 @@ body {
 }
 
 .container {
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
+@media (min-width: 768px){
+    .container {
+        width: 100%;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 100%;
+    }
 }
 
 .container.absolute {
@@ -74,18 +87,6 @@ section {
     padding-left: 0px;
     padding-right: 0px;
 
-}
-
-@media (min-width: 768px){
-    .container {
-        width: 100%;
-    }
-}
-
-@media (min-width: 992px){
-    .container {
-        width: 100%;
-    }
 }
 
 
@@ -746,7 +747,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: white;
 }
 
 
@@ -755,23 +756,27 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #{{ site.data.template.color.primary }};
-    background-color: #{{ site.data.template.color.primary }};
+    margin-right: 0px;
+    margin-left: 40px;
+    border-radius: 0px;
+    float: left;
+    border-color: transparent;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #{{ site.data.template.color.blacks }};
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #{{ site.data.template.color.lightgrays }};
 }
 
 .navbar-default .nav li a {
     font-weight: 600;
     letter-spacing: 0px;
-    color: #fff;
+    color: #{{ site.data.template.color.blacks }};
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -866,9 +871,15 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .brand-box .button-top {
-    padding: 4px;
+    padding-top: 6px;
+    display: none;
 }
 
+@media (min-width: 768px){
+    .brand-box .button-top {
+        display: block;
+    }
+}
 
 
 /*NEW NAVBAR */
@@ -2440,7 +2451,6 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #f7efef;
 }
-
 
 
 
