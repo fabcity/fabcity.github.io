@@ -1376,7 +1376,7 @@ fieldset[disabled] .btn-xl.active {
 
 .slidewrapper .slideshow{
     position: relative;
-    height: 320px;
+    height: 360px;
     width: 100%;
     overflow: hidden;
     margin-bottom: 20px; 
@@ -1393,10 +1393,9 @@ fieldset[disabled] .btn-xl.active {
     margin: 0px;
     padding: 0px;
     float:left;
-    height: 300px;
+    height: 360px;
     width: 250px;
-    margin: 0px 20px 0px 0px;
-    box-shadow: 5px 10px 18px #00000026;
+    margin: 0px 80px 0px 0px;
     background-color: #f7f5ff;
     position: relative;
 }
