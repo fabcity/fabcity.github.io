@@ -79,3 +79,4 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+_site/feed.xml
