@@ -5,9 +5,20 @@
                 <h2 class="quote-title">Partner Projects</h2>
                 <p></p>
             </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
         </div>
+        <div class="row slidewrapper">
+            <div id="slideshow1" class="slideshow">
+                <div class="list">
+
+                    {% for slide in include.texts.slides %}
+                    <div class="element">
+                        <div class="element-img" style="background-image: url('/img/general/{{ slide.img }}');"> </div>
+                    </div>
+                    {% endfor %}
+
+                </div> <!-- close list -->
+            </div> <!-- close slideshow1 -->
+        </div>  <!-- close slidewrapper -->  
     </div><!-- close container-->
 
 </section>

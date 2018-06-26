@@ -1365,9 +1365,13 @@ fieldset[disabled] .btn-xl.active {
 
 /*// HORIZONTAL SLIDER //*/
 
+#partner-projects {
+    min-height: 800px;
+}
+
 .slidewrapper {
     margin: 0px -0px;
-
+    margin-right: -140px;
 }
 
 .slidewrapper .slideshow{
@@ -1387,10 +1391,10 @@ fieldset[disabled] .btn-xl.active {
 
 .slidewrapper .slideshow .list .element {
     margin: 0px;
-    padding: 25px;
+    padding: 0px;
     float:left;
     height: 300px;
-    width: 350px;
+    width: 250px;
     margin: 0px 20px 0px 0px;
     box-shadow: 5px 10px 18px #00000026;
     background-color: #f7f5ff;
@@ -1405,8 +1409,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .element-img {
-    height:200px;
-    width: 270px;
+    height: 100%;
     background-repeat: no-repeat;
     margin-left: 0px;
     background-attachment: scroll;
