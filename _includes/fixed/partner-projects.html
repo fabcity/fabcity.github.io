@@ -12,7 +12,14 @@
 
                     {% for slide in include.texts.slides %}
                     <div class="element">
-                        <div class="element-img" style="background-image: url('/img/general/{{ slide.img }}');"> </div>
+                        <div class="element-img" style="background-image: url('/img/general/{{ slide.img }}');"> 
+                        </div>
+                        <div class="element-name">
+                            <h3 class="smallcaps">{{ slide.title }}</h3>
+                        </div>
+                        <div class="element-description">
+                            <p class="small">{{ slide.description }}</p>
+                        </div>
                     </div>
                     {% endfor %}
 

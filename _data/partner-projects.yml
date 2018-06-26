@@ -1,10 +1,13 @@
 slides:
   - title: "Smart Citizen"
+    description: "This is a descriptive text about the project."
     url: ''
     img: 'smart-citizen.jpg'
   - title: "Making Sense"
+    description: "This is a descriptive text about the project."
     url: ''
     img: 'making-sense.jpg'
   - title: "Open Source Beehives"
+    description: "This is a descriptive text about the project."
     url: ''
     img: 'beehives.jpg'
