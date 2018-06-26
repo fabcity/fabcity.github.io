@@ -390,6 +390,44 @@
 
 
 
+<!--Standard carousel or banner template -->
+<section id="carousel">  
+    <div class="container">
+        
+        <div class="row text-center banner">
+            <div class="img-large banner-img" style="background-image: url('/img/general/summit-banner.png');"></div>
+        </div>
+        
+
+        
+
+
+        </div><!-- close sub-container --> 
+    </div> <!-- close container -->
+
+</section>
+
+
+<script type="text/javascript">
+  ;(function(ns){
+    var _iscroll = null;
+    ns.init = function(){
+        _iscroll = new IScroll('#slideshow1',{
+            scrollX: true,
+            freeScroll: true
+        });
+    }
+  })(this.slideshow1 = {});
+  (function(){
+    if(window.addEventListener){
+        window.addEventListener('load',slideshow1.init,false);
+    } else{
+        window.attachEvent('onload',slideshow1.init); //IE
+    }
+  })();
+</script>
+
+
     
 
     <!-- jQuery Version 1.11.0 -->

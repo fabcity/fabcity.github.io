@@ -1,0 +1,8 @@
+id: carousel
+isbanner: true
+banner: 'summit-banner.png'
+iscarousel: false
+carouselbackground: 'summit-banner.png'
+carousel:
+  - img: 'summit-banner.png'
+    url: ''

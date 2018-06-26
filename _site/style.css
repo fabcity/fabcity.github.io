@@ -534,7 +534,7 @@ a.active {
 
 .banner {
     margin-left: 0px;
-    margin-right: 0px;   
+    margin-right: -140px;   
     margin-bottom: 40px; 
 }
 
@@ -543,7 +543,7 @@ a.active {
 }
 
 .banner-img {
-    height: 370px;
+    height: 270px;
     background-color: #f1434f;
     background-repeat: no-repeat;
      background-attachment: scroll;
