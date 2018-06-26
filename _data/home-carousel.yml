@@ -1,7 +1,6 @@
-id: carousel
-isbanner: true
+isbanner: false
 banner: 'summit-banner.png'
-iscarousel: false
+iscarousel: true
 carouselbackground: 'summit-banner.png'
 carousel:
   - img: 'summit-banner.png'

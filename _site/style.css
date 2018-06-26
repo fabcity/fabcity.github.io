@@ -535,7 +535,6 @@ a.active {
 .banner {
     margin-left: 0px;
     margin-right: -140px;   
-    margin-bottom: 40px; 
 }
 
 .banner.standalone {
@@ -1560,6 +1559,20 @@ fieldset[disabled] .btn-xl.active {
 
 /* Carousel */
 
+#carousel {
+    min-height: 270px;
+    margin-bottom: 80px;
+}
+
+@media (min-width: 768px){
+    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+        margin-top: 0px;
+    }
+}
+
+
+
+
 .carousel-control.right, .carousel-control.left { 
     background-image: none;
     background-image: none;
@@ -1572,10 +1585,6 @@ fieldset[disabled] .btn-xl.active {
     width: 8%;
     opacity: 1;
     text-shadow: none;
-}
-
-.carousel-inner {
-    height: 370px;
 }
 
 /*// TWITTER LANDING SECTION //*/
