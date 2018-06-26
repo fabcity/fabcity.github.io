@@ -261,6 +261,17 @@ header .intro-text .intro-lead-in {
     z-index: -1000;
 }
 
+
+.bg-6 {
+    position: absolute;
+    right: 0px;
+    margin-top: 60px;
+    width: 600px;
+    height: 600px;
+    z-index: -1000;
+    background-position: top left;
+}
+
 .front-1 {
     width: 300px;
     height: 260px;
