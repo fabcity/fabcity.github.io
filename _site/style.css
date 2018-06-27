@@ -1390,10 +1390,29 @@ fieldset[disabled] .btn-xl.active {
 }
 
 #mc_embed_signup .mc-field-group {
-    width: 50%;
+    width: 100%;
     min-height: 50px;
 }
 
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    text-indent: 2%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    /* color: #f1f1f1; */
+    font-weight: 500;
+    opacity: .3;
+}
+
+#mc_embed_signup input {
+    border: 1px solid #ABB0B2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 0px;
+    font-family: 'Inter UI', sans-serif;;
+}
 
 /*// HORIZONTAL SLIDER //*/
 
