@@ -1431,6 +1431,27 @@ fieldset[disabled] .btn-xl.active {
     background-color:  #f7efef;
 }
 
+#mc_embed_signup div#mce-responses {
+    padding: 0em .5em 0em .5em;
+    width: 100%;
+    margin: 0%;
+}
+
+#mc_embed_signup #mce-success-response {
+    color: #333333;
+}
+
+#mc_embed_signup div.response {
+    margin: 1em 0;
+    padding: 1em .5em .5em 0;
+    font-weight: 600;
+    float: left;
+    top: -1.5em;
+    z-index: 1;
+    width: 100%;
+    text-transform: uppercase;
+}
+
 /*// HORIZONTAL SLIDER //*/
 
 #partner-projects {
