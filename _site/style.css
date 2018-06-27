@@ -445,6 +445,10 @@ section h2.page-heading {
     font-weight: 600;
 }
 
+.small-title {
+    margin-bottom: 30px;
+}
+
 .down-arrow-space {
     height: 15px;
 }
@@ -1372,11 +1376,6 @@ fieldset[disabled] .btn-xl.active {
 
 #subscribe {
     min-height: 200px;
-    margin: 0px 20px;
-}
-
-#subscribe .subscribe-message {
-    margin-bottom: 20px;
 }
 
 #mc_embed_signup{
@@ -2467,19 +2466,23 @@ section#contact .text-danger {
 }
 
 footer {
-    padding: 25px 0;
-    text-align: center;
-    background-color: #000;
     position: relative;
 }
 
-footer span.copyright {
-    text-transform: uppercase;
+footer p {
+    margin-bottom: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+footer .brand {
+    width: 50px;
+}
+
+footer .copyright {
     text-transform: none;
     line-height: 40px;
-    color: #f9f5ff;
     font-size: 0.8em;
-    letter-spacing: 1px;
 }
 
 footer ul.quicklinks {

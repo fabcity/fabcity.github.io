@@ -1,21 +1,48 @@
 <footer>
-    <div class="container">
-        <div class="sub-container">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <!--
-                <div class="col-md-6">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                -->
+    <div class="container absolute">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="small-title">Location</h4>
             </div>
         </div>
-    </div> 
+        <div class="row" style="padding-bottom: 50px;">
+            <div class="col-md-6">
+                <p>Institute for Advanced Architecture of Catalonia </p> 
+                <p>Fab Lab Barcelona<p>
+                <p>Barcelona<p>
+                <p>Pujades 102, 08005<p>
+            </div>
+            <div class="col-md-6">
+                    <div class= "brand">
+                        <img src="/img/logos/fabcity.svg"> 
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="small-title">Powered by:</h4>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 50px;">
+            <div class="col-md-6">
+                <p>Fab Lab Barcelona </p> 
+                <p>MIT's CBA<p>
+                <p>IAAC<p>
+                <p>Fab Foundation<p>
+            </div>
+            <div class="col-md-6">
+                <p>The Initiative </p> 
+                <p>The Collective<p>
+                <p>Partner Cities<p>
+                <p>Fab City Summit<p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</p>
+            </div>
+        </div>
+            
+    </div>
 </footer>
