@@ -25,7 +25,7 @@
                 {% for event in include.texts.events %}
                 <div class="bottom-element">
                     <img class="timeline-logo" src="{{ site.baseurl }}/img/roadmap/{{ event.img }}">
-                    <h4>{{ event.title }}</h4>
+                    <h4>{{ event.year }} &nbsp; {{ event.title }}</h4>
                     <p class="small">{{ event.description }}</p>
                 </div>
                 {% endfor %}
