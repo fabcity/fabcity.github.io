@@ -391,14 +391,17 @@ p {
 }
 
 
-
-
 section .quote-box {
     margin-top: 200px;
 }
 
 section .quote-title {
     margin-bottom: 40px;
+}
+
+section .quote-subtitle {
+    margin-bottom: 20px;
+    line-height: 20px;
 }
 
 section .quote {
