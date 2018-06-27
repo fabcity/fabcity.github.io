@@ -2621,6 +2621,72 @@ body {
 }
 
 
+/*TIMELINE */
+
+.line {
+  width: 100%;
+  background: blue;
+  margin: 50px 0;
+  height: 5px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom {
+  padding-left: 50px;
+}
+
+.top .top-element,
+.bottom .bottom-element {
+  padding: 0 25px;
+  position: relative;
+}
+
+.top-element:before,
+.bottom-element:before {
+  content: "I";
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background: #C33900;
+  color: white;
+  position: absolute;
+  left: 0;
+}
+
+.top-element:before {
+  bottom: -63px;
+}
+
+.bottom-element:before {
+  top: -63px;
+}
+
+.top-element:after,
+.bottom-element:after {
+  content: "";
+  height: 50px;
+  width: 2px;
+  background: #8ACCC6;
+  position: absolute;
+}
+
+.top-element:after {
+  left: 10px;
+  bottom: -40px;
+}
+
+.bottom-element:after {
+  left: 10px;
+  top: -40px;
+}
+
 
 
 
