@@ -395,7 +395,9 @@ p {
 }
 
 .small {
-    font-size: 0.8em;
+    font-weight: 500;
+    font-size: 0.76em;
+    line-height: 16px;
 }
 
 
@@ -2655,12 +2657,6 @@ body {
     margin-top: -40px;
 }
 
-.top .top-element p,
-.bottom .bottom-element p {
-    font-weight: 500;
-    font-size: 0.76em;
-    line-height: 16px;
-}
 
 .top-element:before,
 .bottom-element:before {
