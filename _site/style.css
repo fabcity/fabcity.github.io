@@ -1415,24 +1415,20 @@ fieldset[disabled] .btn-xl.active {
 }
 
 #mc_embed_signup .button {
-    clear: both;
     background-color: transparent;
     border: 0 none;
     border-radius: 0px;
-    transition: all 0.23s ease-in-out 0s;
     color: #000000;
-    cursor: pointer;
-    display: inline-block;
     font-size: 30px;
     font-weight: normal;
     line-height: 0px;
     margin: 10px 20px;
     padding: 0px;
     text-align: right;
-    text-decoration: none;
-    vertical-align: top;
-    white-space: nowrap;
-    width: auto;
+}
+
+#mc_embed_signup .button:hover {
+    background-color:  #f7efef;
 }
 
 /*// HORIZONTAL SLIDER //*/
