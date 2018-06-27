@@ -2634,8 +2634,24 @@ body {
 
 .top .top-element,
 .bottom .bottom-element {
-      padding: 0 25px 0px 0px;
-      position: relative;
+    padding: 0 25px 0px 0px;
+    position: relative;
+}
+
+.top .top-element h4,
+.bottom .bottom-element h4 {
+    text-transform: none;
+    font-weight: 600;
+    font-size: 0.78em;
+    margin-bottom: 15px;
+    margin-top: -40px;
+}
+
+.top .top-element p,
+.bottom .bottom-element p {
+    font-weight: 500;
+    font-size: 0.76em;
+    line-height: 16px;
 }
 
 .top-element:before,
@@ -2675,11 +2691,18 @@ body {
     bottom: -40px;
 }
 
+/*
 .bottom-element:after {
     left: 10px;
     top: -40px;
 }
+*/
 
-
+.bottom-element .timeline-logo {
+    height:60px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: -220px;
+}
 
 
