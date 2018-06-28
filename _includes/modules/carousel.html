@@ -13,12 +13,12 @@
 
                 <div class="carousel-inner">
                     <div class="item active">
-                      <img src="/img/general/{{ include.texts.carouselbackground }}" alt="">
+                      <img src="{{ site.baseurl }}/img/general/{{ include.texts.carouselbackground }}" alt="">
                     </div>
 
                     {% for image in include.texts.carousel %}
                     <div class="item">
-                      <img src="/img/general/{{ image.img }}" alt="">
+                      <img src="{{ site.baseurl }}/img/general/{{ image.img }}" alt="">
                     </div>
                     {% endfor %}
                 </div>
