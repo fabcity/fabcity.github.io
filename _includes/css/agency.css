@@ -415,6 +415,21 @@ fieldset[disabled] .btn-clear.active {
 }
 
 /*/---BACKGROUND IMGS DEFINITIONS ---/*/
+.deep-1 {
+    position: absolute;
+    left: 600px;
+    top:-30px;
+    width: 400px;
+    height: 250px;
+}
+
+.deep-2 {
+    position: absolute;
+    left: 0px;
+    margin-top: 260px;
+    width: 200px;
+    height: 250px;
+}
 
 .bg-1 {
     position: absolute;
@@ -423,7 +438,6 @@ fieldset[disabled] .btn-clear.active {
     margin-top: 330px;
     width: 100%;
     height: 200px;
-    background-color: crimson;
 }
 
 @media (min-width: 768px){
@@ -441,7 +455,6 @@ fieldset[disabled] .btn-clear.active {
     margin-top: 100px;
     width: 280px;
     height: 200px;
-    background-color: crimson;
     display: none;
 }
 
@@ -456,7 +469,6 @@ fieldset[disabled] .btn-clear.active {
     margin-left: 450px;
     width: 260px;
     height: 400px;
-    background-color: crimson;
     z-index: -1000;
     display: none;
 }
@@ -472,7 +484,6 @@ fieldset[disabled] .btn-clear.active {
     margin-left: 800px;
     width: 260px;
     height: 300px;
-    background-color: crimson;
     z-index: -1000;
 }
 
@@ -482,7 +493,6 @@ fieldset[disabled] .btn-clear.active {
     margin-top: 260px;
     width: 300px;
     height: 200px;
-    background-color: crimson;
     z-index: -1000;
 }
 
@@ -500,7 +510,6 @@ fieldset[disabled] .btn-clear.active {
 .front-1 {
     width: 300px;
     height: 260px;
-    background-color: crimson;
     float:left;
     margin-top: 40px;
     display: none;
@@ -515,13 +524,11 @@ fieldset[disabled] .btn-clear.active {
 
 .front-2 {
     height: 250px;
-    background-color: crimson;
     margin-top: 40px;
 }
 
 .front-3 {
     height: 250px;
-    background-color: crimson;
     float:left;
     margin-top: 40px;
     margin-right: 0px;
@@ -741,6 +748,7 @@ header .intro-text .intro-lead-in {
     padding: 0px;
     border: none
     color: #{{ site.data.template.color.primary }};
+    background-color: white;
 }
 
 @media (min-width: 768px){
@@ -757,6 +765,7 @@ header .intro-text .intro-lead-in {
 .twitter-space a {
     color: #{{ site.data.template.color.blacks }};
     text-decoration: none;
+    cursor: pointer;
 }
 
 .twitter-space .tweet-box {
