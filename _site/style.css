@@ -908,6 +908,7 @@ header .intro-text .intro-lead-in {
 .holy-grail-content {
   flex: 1;
   background: #ffc94e;
+  /*background: white;*/
 }
 
 .holy-grail-nav, .holy-grail-sidebar {
@@ -1120,6 +1121,9 @@ header .intro-text .intro-lead-in {
 
 
 /*/--- THE COLLECTIVE SECTION ---/*/
+#collective {
+    min-height: 860px;
+}
 
 .profile-box {
     height: 300px;
