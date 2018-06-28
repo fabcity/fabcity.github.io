@@ -1,8 +1,7 @@
-Fab Foundation
-
+New Fab City Website
 ----
 
-Repo for the new Fab Foundation website. 
+Repo for the new Fab City website. 
 
 Beta. In development.
 
