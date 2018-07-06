@@ -13,4 +13,4 @@ color:
 # Font Families
 font:
   primary: "'Inter UI', sans-serif;"
-  secondary: 'Karla, "Helvetica Neue", Helvetica,Arial,sans-serif'
+  secondary: "'Oswald', 'Helvetica Neue', Helvetica,Arial,sans-serif'"
