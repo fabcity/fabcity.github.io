@@ -509,17 +509,7 @@ fieldset[disabled] .btn-clear.active {
     margin-right: 0px;
 }
 
-
-/*
-.bg-4 {
-    position: absolute;
-    margin-left: 800px;
-    width: 260px;
-    height: 300px;
-    z-index: -1000;
-}
-*/
-
+/**/
 .bg-5 {
     position: absolute;
     margin-left: 700px;
@@ -539,8 +529,6 @@ fieldset[disabled] .btn-clear.active {
     z-index: -1000;
     background-position: top left;
 }
-
-
 
 
 
@@ -757,6 +745,25 @@ header .intro-text .intro-lead-in {
 .cities {
     text-align: right;
     margin-left: 60%;
+}
+
+/*//  MANIFESTO //*/
+.manifesto-title {
+    font-weight: 700;
+    margin-bottom: 0px;
+    font-size: 10em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    line-height: 140px;
+}
+
+.fab {
+    margin-left: 18%;
+}
+
+.manifesto {
+    margin-left: 12%;
 }
 
 /*// HEADER TWITTER SPACE //*/
