@@ -106,7 +106,7 @@ section {
     position:relative;
     z-index: 100;
     margin: 0px;
-    min-height: 600px;
+    min-height: 500px;
 }
 
 .no-margin {
@@ -149,7 +149,7 @@ h6 {
     text-transform: uppercase;
     font-weight: 600;
     margin: 0px; 
-    font-family: {{ site.data.template.font.primary }}; 
+    font-family: 'Oswald', sans-serif; 
     color: #{{ site.data.template.color.blacks }};
 }
 
@@ -159,7 +159,8 @@ h6 {
 
 
 h1 {
-    font-size: 1.7em;
+    font-size: 1.9em;
+    letter-spacing: 4px;
 }
 
 .xl {
@@ -210,7 +211,7 @@ h6 {
 
 p {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 23px;
     margin: 0 0 30px;
 }
 
@@ -247,7 +248,7 @@ section .number{
 }
 
 section .claim{
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 
@@ -474,18 +475,17 @@ fieldset[disabled] .btn-clear.active {
 
 .bg-1 {
     right: 0;
+    top: 70px;
     width: 350px;
     height: 250px;
 }
 
 
 .bg-2 {
-    position: absolute;
-    right: -20px;
-    margin-top: 100px;
-    width: 280px;
-    height: 200px;
-    display: none;
+    left: 70%;
+    top: -90px;
+    width: 230px;
+    height: 340px;
 }
 
 @media (min-width: 768px){
