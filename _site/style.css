@@ -512,12 +512,21 @@ fieldset[disabled] .btn-clear.active {
 
 
 .bg-4 {
+    height: 250px;
+    float:left;
+    margin-right: 0px;
+}
+
+
+/*
+.bg-4 {
     position: absolute;
     margin-left: 800px;
     width: 260px;
     height: 300px;
     z-index: -1000;
 }
+*/
 
 .bg-5 {
     position: absolute;
@@ -539,29 +548,9 @@ fieldset[disabled] .btn-clear.active {
     background-position: top left;
 }
 
-.front-1 {
-    width: 300px;
-    height: 260px;
-    float:left;
-    margin-top: 40px;
-    display: none;
-}
-
-@media (min-width: 768px){
-    .front-1 {
-        display: block;
-    }
-}
 
 
 
-
-.front-3 {
-    height: 250px;
-    float:left;
-    margin-top: 40px;
-    margin-right: 0px;
-}
 
 .bg-partners {
     position: absolute;
