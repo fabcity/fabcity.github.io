@@ -213,6 +213,7 @@ h6 {
 }
 
 .p-inverted {
+    letter-spacing: 0.3px;
     color: #f7f5ff; 
 }
 

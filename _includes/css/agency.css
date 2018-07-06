@@ -205,6 +205,7 @@ h6 {
 }
 
 .p-inverted {
+    letter-spacing: 0.3px;
     color: #{{ site.data.template.color.light }}; 
 }
 
