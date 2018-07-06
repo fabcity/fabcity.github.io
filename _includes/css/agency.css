@@ -465,37 +465,17 @@ fieldset[disabled] .btn-clear.active {
 }
 
 /*/---BACKGROUND IMGS DEFINITIONS ---/*/
-.deep-1 {
-    position: absolute;
-    left: 600px;
-    top:-30px;
-    width: 400px;
-    height: 250px;
-}
 
-.deep-2 {
-    position: absolute;
-    left: 0px;
-    margin-top: 260px;
-    width: 200px;
-    height: 250px;
+.bg-img {
+     position: absolute;
+     z-index: -1000;
+
 }
 
 .bg-1 {
-    position: absolute;
-    left: 40px;
-    top:0px;
-    margin-top: 330px;
-    width: 100%;
-    height: 200px;
-}
-
-@media (min-width: 768px){
-    .bg-1 {
-        left: 100px;
-        width: 280px;
-        margin-top: 370px;
-    }
+    right: 0;
+    width: 350px;
+    height: 250px;
 }
 
 
@@ -877,7 +857,6 @@ header .intro-text .intro-lead-in {
 .countdown div span {
     padding-top: 10px;
     font-weight: 600;
-    color: ;
     display:block;
     text-transform: uppercase;
     font-size: 0.5em;
@@ -892,6 +871,9 @@ header .intro-text .intro-lead-in {
 
 }
 
+.countdown-box .description p {
+    font-weight: 500;
+}
 
 /*/--- CLAIMS ---/*/
 
