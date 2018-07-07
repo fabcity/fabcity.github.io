@@ -213,6 +213,7 @@ h6 {
 }
 
 .p-inverted {
+    font-weight: 400;
     letter-spacing: 0.3px;
     color: #f7f5ff; 
 }
@@ -220,7 +221,8 @@ h6 {
 
 p {
     font-size: 14px;
-    line-height: 23px;
+    font-weight: 500;
+    line-height: 20px;
     margin: 0 0 30px;
 }
 
@@ -786,7 +788,12 @@ header .intro-text .intro-lead-in {
 
 
 /*// Partner cities /*/
-.map-content {
+
+#partner-cities {
+    min-height: 800px;
+}
+
+#partner-cities .map-content {
     padding: 30px 30px 10px;
     margin-top: 500px;
     background-color: white;
