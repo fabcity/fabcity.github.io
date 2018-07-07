@@ -112,3 +112,28 @@ collectivemembers:
   - name: "Asger Nørregaard Rasmussen" 
     position: "Community lead at Underboren and Project Manager at Copenhagen Maker"
     img: 'Asger_Norregaard_Rasmussen.png'
+projects:
+  - title: "Smart Citizen"
+    description: "Tools for citizen action in environmental monitoring and methodologies for community engagement and co-creation."
+    url: 'https://smartcitizen.me/'
+    img: 'smart-citizen.jpg'
+  - title: "Making Sense"
+    description: "A tool-kit for community activism and participatory sensing to include citizens’ voices in decision making processes."
+    url: 'http://making-sense.eu/'
+    img: 'making-sense.jpg'
+  - title: "Materiom"
+    description: "Enabling everyone, everywhere to participate in the next generation of materials."
+    url: 'http://www.materiom.org/'
+    img: 'materiom.png'
+  - title: "REMODEL, Danish Design Centre"
+    description: "Together with international and Danish experts, the Danish Design Centre explores how to design competitive business models for manufacturing companies based on open source principles."
+    url: 'https://danskdesigncenter.dk/en/remodel'
+    img: 'remodel.png'
+  - title: "Made Again Challenge, Poblenou Barcelona"
+    description: "The first Fab City Prototype in collaboration with SPACE10 and IKEA"
+    url: 'https://www.youtube.com/watch?v=roOaf8bXoRE'
+    img: 'madeagain.png'
+  - title: "ManifatturaMilano"
+    description: "A Fab City Ecosystem Integrating Design, Social Innovation, Making And New Urban Manufacturing"
+    url: 'http://www.manifattura.milano.it/'
+    img: 'manifattura.png'

@@ -6,28 +6,24 @@
                 <p></p>
             </div>
         </div>
-        <div class="row slidewrapper">
-            <div id="slideshow1" class="slideshow">
-                <div class="list">
 
-                    {% for slide in include.texts.slides %}
-                    <div class="element">
-                        <div class="element-img" style="background-image: url('{{ site.baseurl }}/img/general/{{ slide.img }}');"> 
-                        </div>
-                        <div class="element-name">
-                            <h3 class="smallcaps">{{ slide.title }}</h3>
-                        </div>
-                        <div class="element-description">
-                            <p class="small">{{ slide.description }}</p>
-                        </div>
+        <div class="row">
+            {% for project in site.data.home-texts.projects %}
+                <div class="col-md-4 col-sm-6 project-box">
+                    <a href="{{ project.url }}" target="_blank" style="text-decoration: none;">
+                     <div class="project-img img-cover" style="background-image: url('{{ site.baseurl }}/img/general/{{ project.img }}');">
                     </div>
-                    {% endfor %}
+                    
+                    <div class="project-caption">
+                        <h4 class="project-title">{{ project.title }}</h4>
+                        <p class="small project-description">{{ project.description }}</p>
+                    </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div> <!-- close row -->
 
-                </div> <!-- close list -->
-            </div> <!-- close slideshow1 -->
-        </div>  <!-- close slidewrapper -->  
     </div><!-- close container-->
-
 </section>
 
 
