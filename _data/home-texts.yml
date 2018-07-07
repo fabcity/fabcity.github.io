@@ -40,6 +40,9 @@ collectivemembers:
   - name: "Tomas Diez"
     position: "Director and co-founder at Fab Lab Barcelona. Co-director at the Institute for Advanced Architecture of Catalonia"
     img: 'TomasDiez.png'
+  - name: "Liz Corbin" 
+    position: "Institute of Making; UCL." 
+    img: 'Liz_Corbin.png'
   - name: "Thomas Ermacora"
     position: "Architect/Urbanist & Tech Angel. Founder of Machines Room and Clear Village. Xprize Resident Futurist."
     img: 'thomas_Ermacora.png'
@@ -61,9 +64,6 @@ collectivemembers:
   - name: "Egbert Fransen"
     position: "Founder and director of Pakhuis de Zwijger." 
     img: 'Egbert_Fransen.png'
-  - name: "Liz Corbin" 
-    position: "Institute of Making; UCL." 
-    img: 'Liz_Corbin.png'
   - name: "Nat Hunter" 
     position: "Director, FANDCO, London." 
     img: 'Nat_Hunter.png'
