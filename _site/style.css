@@ -539,6 +539,12 @@ fieldset[disabled] .btn-clear.active {
 }
 
 
+.bg-map {
+    top: 0px;
+    width: 80%;
+    height: auto;
+}
+
 
 .bg-partners {
     position: absolute;
@@ -756,6 +762,10 @@ header .intro-text .intro-lead-in {
 }
 
 /*//  MANIFESTO //*/
+#manifesto{
+    min-height: 800px;
+}
+
 .manifesto-title {
     font-weight: 700;
     margin-bottom: 0px;
@@ -774,6 +784,21 @@ header .intro-text .intro-lead-in {
     margin-left: 12%;
 }
 
+
+/*// Partner cities /*/
+.map-content {
+    padding: 30px 30px 10px;
+    margin-top: 500px;
+    background-color: white;
+}
+
+#partner-cities ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#partner-cities ul li {
+}
 /*// HEADER TWITTER SPACE //*/
 
 .twitter-space {

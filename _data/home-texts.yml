@@ -13,6 +13,25 @@ manifesto:
   - claim: 
 whatwedo: "Fab City strategies and ethos comprise a diverse range of pilots, toolkits, information systems and insights that are being implemented through four transversal fields of focus for impacting and inducing long-term change in the present and future of cities."
 whatwedobtn: "What we do"
+citiestext: "Fab City has been initiated by the Institute for Advanced Architecture of Catalonia, MIT Center for Bits and Atoms and the Fab Foundation; its operation is adjacent to the 1500+ strong Fab Lab network, using it as a global infrastructure and knowledge source to challenge cities to produce everything they consume by 2054. Cities are encouraged to join the growing network of Fab City locations, once a year at the Fab City Summit."
+cities:
+  - name: Barcelona
+  - name: Ekurhuleni
+  - name: Amsterdam
+  - name: Bhutan
+  - name: Brest
+  - name: Cambridge
+  - name: Shenzhen
+  - name: Boston
+  - name: Kerala
+  - name: Toulouse
+  - name: Sacramento
+  - name: Curitiba
+  - name: Paris
+  - name: Somerville
+  - name: Occitanie
+  - name: Santiago de Chile
+  - name: Detroit
 partnerstitle: "Our Partners"
 partnerstext: "The Fab City global initiative is an effort of a group of leaders, organizations and projects dedicated to explore present and future of key fields for the development of productive cities such as digital fabrication, future information systems, intelligent materials, provenance and resource traceability, urban agriculture, alternative currencies and collective citizen empowerment."
 collectivetitle: "The Collective"
