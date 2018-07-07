@@ -1192,13 +1192,17 @@ header .intro-text .intro-lead-in {
 
 /*/--- THE COLLECTIVE SECTION ---/*/
 #collective {
-    min-height: 860px;
+    min-height: 3400px;
 }
 
-.profile-box {
-    height: 300px;
-    background-color: crimson;
+.member-box {
+    height: 350px;
+    padding-left: 0px;
+    padding-right: 30px;
+}
 
+.member-img {
+    margin-bottom:10px;
 }
 
 

@@ -10,10 +10,21 @@
         </div>
 
         <div class="row no-side-margin">
-            <div class="col-md-3 profile-box img-cover" style="background-image: url('{{ site.baseurl }}/img/general/mara_balestrini_color.jpg');">
-            </div>
-            <div class="col-md-3 profile-box img-cover" style="background-image: url('{{ site.baseurl }}/img/general/justyna_swat_color.jpg'); margin-top: 180px; margin-left: -40px;">
-            </div>
+            {% for member in site.data.home-texts.collectivemembers %}
+                <div class="col-md-4 col-sm-6 member-box">
+                    <img src="{{ site.baseurl }}/img/collective/{{ member.img }} " class="img-responsive img-centered member-img">
+                    
+                    <div class="portfolio-caption">
+                        <h4>{{ member.name }}</h4>
+                        <p class="small">{{ member.position }}</p>
+                    </div>
+                </div>
+                <!--
+                <div class="col-md-3 profile-box img-cover" style="background-image: url('{{ site.baseurl }}/img/collective/{{ member.img }}');">
+                    <h1> {{ member.name }} </h1>
+                </div>
+                -->
+            {% endfor %}
         </div>
 
     </div><!-- close container-->
