@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-  {% include fixed/head.html %}
-
-
+   {% include fixed/head.html %}
     <body id="page-top" class="index" onload="loaded()">
-        
+    <div id="frame">
+        <div class="top-left-corner"></div>
+        <div class="top-right-corner"></div>
+        <div class="bottom-left-corner"></div>
+        <div class="bottom-right-corner"></div>
+    </div>  
     {% include fixed/navbar.html %}
-
     
     <header id="{{ page.id }}">  
     	<div class="container">
@@ -19,7 +21,6 @@
                 </div>
             </div> <!--close section-intro-->
         </div> <!-- close container -->
-
         {% if page.hasdescription == true %}
         <div class="container">
             <div class="row">
@@ -33,18 +34,12 @@
                 </div>
             </div>
         </div> <!-- close container -->
-         {% endif %}
+        {% endif %}
 
     	{{ content }}
 
         <div class="bg-plain page-header-bg blue"></div>
         <div class="bg-img page-header-bg-img img-cover" style="background-image: url('{{ site.baseurl }}/img/general/{{ page.headerimg }}');"></div>
-        <div id="frame">
-            <div class="top-left-corner"></div>
-            <div class="top-right-corner"></div>
-            <div class="bottom-left-corner"></div>
-            <div class="bottom-right-corner"></div>
-        </div>
     </header>
     
  

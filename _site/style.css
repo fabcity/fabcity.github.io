@@ -186,11 +186,11 @@ h2 {
 
 
 h3 {
-    font-size: 0.96em; 
+    font-size: 1.2em; 
 }
 
 h4 {
-    font-size: 0.85em; 
+    font-size: 0.98em; 
 }
 
 
@@ -562,6 +562,20 @@ fieldset[disabled] .btn-clear.active {
     background-size: contain;
     -o-background-size: contain;
     margin-top: -80px;
+}
+
+.bg-global-1 {
+    left: 70%;
+    top: -90px;
+    width: 230px;
+    height: 340px;
+}
+
+.bg-global-2 {
+    right: 0;
+    top: 70px;
+    width: 400px;
+    height: 350px;
 }
 
 /*/--- PLAIN BACKGROUNDS ---/*/
