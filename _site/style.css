@@ -578,6 +578,13 @@ fieldset[disabled] .btn-clear.active {
     height: 350px;
 }
 
+.bg-makers{
+    right: 0;
+    top: 0px;
+    width: 100%;
+    height: 270px;
+}
+
 /*/--- PLAIN BACKGROUNDS ---/*/
 
 .bg-plain {
