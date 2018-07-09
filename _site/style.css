@@ -582,6 +582,24 @@ fieldset[disabled] .btn-clear.active {
     z-index: -1000;
 }
 
+.page-header-bg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 400px;
+    height: 250px;
+    z-index: -1000;
+}
+
+.page-header-bg-img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 400px;
+    height: 250px;
+    z-index: -1000;
+}
+
 .red {
     background-color: #e62339;
 }
@@ -1428,6 +1446,12 @@ footer ul.quicklinks {
     line-height: 40px;
 }
 
+
+/*/ SUBPAGES /*/
+header .page-header {
+    margin-top: 200px;
+
+}
 
 
 /*TIMELINE */

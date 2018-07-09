@@ -5,56 +5,52 @@
 
 
     <body id="page-top" class="index" onload="loaded()">
-    <video autoplay loop muted poster="/img/backgrounds/home-bg-img.jpg" id="background-video" data-aos="fade-up">
-        <source src="/img/backgrounds/home-bg-video.mp4" type="video/mp4">
-    </video>
-
         
     {% include fixed/navbar.html %}
 
-    <div class="page-content">
-    	<section id="{{ page.id }}" data-aos="fade-up">  
-    		<div class="container standard">
-        		<div class="sub-container">
-                    <!--Section-Intro Template -->
-                    <div id="{{ page.id }}-intro">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <h2 class="page-heading">{{ page.title }}</h2>
-                            </div>
-                        </div>
-                    </div> <!--close section-intro-->
-                </div><!-- close sub-container --> 
-            </div> <!-- close container -->
+    
+    <header id="{{ page.id }}">  
+    	<div class="container">
+            <div id="{{ page.id }}-intro" class="page-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="page-heading">{{ page.title }}</h2>
+                    </div>
+                </div>
+            </div> <!--close section-intro-->
+        </div> <!-- close container -->
 
-            {% if page.hasdescription == true %}
-            <div class="container standard" style="background-color: #e5e3ea;">
-                <div class="sub-container">             
-                        <div class="row">
-                            <div class="col-md-12 body-text">
-                                {% for p in page.description %}
-                                <p class="page-text"> {{ p.paragraph }} </p>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-md-12 down-arrow-space">
-                                <img class="arrow" src="/img/icons/down_icon.svg"/>
-                            </div>
-                        </div>
-                </div><!-- close sub-container --> 
-            </div> <!-- close container -->
-             {% endif %}
+        {% if page.hasdescription == true %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 body-text">
+                    {% for p in page.description %}
+                    <p class="page-text"> {{ p.paragraph }} </p>
+                    {% endfor %}
+                </div>
+                <div class="col-md-12">
+                    <a href="{{ site.baseurl }}/documents/whitepaper.pdf" class="page-scroll btn btn-clear" target="_blank">Download White Paper</a>
+                </div>
+            </div>
+        </div> <!-- close container -->
+         {% endif %}
 
-    		{{ content }}
+    	{{ content }}
 
-		</section>
-    </div><!--close page-content-->
+        <div class="bg-plain page-header-bg blue"></div>
+        <div class="bg-img page-header-bg-img img-cover" style="background-image: url('{{ site.baseurl }}/img/general/{{ page.headerimg }}');"></div>
+        <div id="frame">
+            <div class="top-left-corner"></div>
+            <div class="top-right-corner"></div>
+            <div class="bottom-left-corner"></div>
+            <div class="bottom-right-corner"></div>
+        </div>
+    </header>
     
  
-    {% include modules/subscribe.html %}
+    {% include fixed/get-involved.html %}
+    {% include fixed/subscribe.html %}
     {% include fixed/footer.html %}
-    {% include modals.html %}
     {% include fixed/js.html %}
 
 
