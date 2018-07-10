@@ -106,7 +106,13 @@ section {
     position:relative;
     z-index: 100;
     margin: 0px;
-    min-height: 500px;
+    min-height: 700px;
+}
+
+@media (min-width : 480px) {
+    section {
+        min-height: 500px;
+    }
 }
 
 .no-margin {
@@ -223,7 +229,6 @@ p {
     font-size: 0.76em;
     line-height: 16px;
 }
-
 
 section .quote-box {
     margin-top: 200px;
@@ -477,13 +482,6 @@ fieldset[disabled] .btn-clear.active {
      position: absolute;
      z-index: -1000;
 
-}
-
-.bg-1 {
-    right: 0;
-    top: 70px;
-    width: 350px;
-    height: 250px;
 }
 
 
@@ -806,9 +804,193 @@ header .intro-text .intro-lead-in {
     margin-left: 60%;
 }
 
-/*//  MANIFESTO //*/
-#manifesto{
+/*// INTRO SECTION //*/
+#intro .intro-quote {
+    margin-top: 430px;
+}
+@media (min-width : 480px) {
+    #intro .intro-quote {
+        margin-top: 130px;
+    }
+}
+
+#intro .bg {
+    right: 0;
+    top: 70px;
+    width: 350px;
+    height: 250px;
+}
+
+/*// CLAIM 1 //*/
+
+#claim-1 .claim .claim-text {
+    margin-top:200px;
+}
+
+@media (min-width : 480px) {
+    #claim-1 .claim .claim-text {
+        margin-top: 0px;
+    }
+}
+
+/*// CLAIM 2 //*/
+
+#claim-2 {
     margin-bottom: 100px;
+}
+
+@media (min-width : 480px) {
+    #claim-2 {
+        margin-bottom: 200px;
+    }
+}
+
+/*// CLAIM 3 //*/
+
+
+/*// PARTNER CITIES /*/
+
+#partner-cities {
+    
+}
+
+#partner-cities .map-content {
+    padding: 30px 30px 10px;
+    margin-top: 200px;
+    background-color: white;
+}
+
+
+    #partner-cities .map-content {
+        margin-top: 500px;
+    }
+}
+
+#partner-cities ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#partner-cities ul li {
+}
+
+/*//  OUR PARTNERS //*/
+
+#partners {
+
+}
+
+#sponsors .container {
+    background-color: #ffffff;
+}
+
+.sponsor-div {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.sponsor-img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    /*filter: grayscale(100%);*/
+}
+
+.sponsor-img:hover, .sponsor-img:active, .sponsor-img:hover:focus {
+    filter: grayscale(0%);
+}
+
+.sponsor-row {
+    padding-bottom: 30px;
+}
+
+.sponsors-title {
+    margin-bottom: 80px;
+}
+
+.sponsor {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 80px;
+    line-height: 2em;
+    vertical-align: middle;
+    font-size: 7em;    
+}
+
+/*//  THE COLLECTIVE //*/
+
+#collective {
+    margin-bottom: 100px;  
+}
+
+.member-box {
+    height: 310px;
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+.member-img {
+    margin-bottom:10px;
+}
+
+.member-caption h4 {
+    margin-bottom: 10px;
+}
+
+/*//  PARTNER PROJECTS //*/
+
+
+/*/--- PARTNER PROJECTS SLIDER ---/*/
+
+#partner-projects {
+    margin-bottom: 100px;
+}
+
+.project-box {
+    height: 500px;
+}
+
+.project-img {
+    width: 300px;
+    height: 360px; 
+    margin-bottom: 20px;   
+}
+
+@media (min-width : 480px) {
+    .project-img {
+        width: 230px;
+    }
+}
+
+.project-caption {
+
+}
+
+.project-title {
+    margin-bottom: 10px;
+}
+
+.project-description {
+    margin-bottom: 10px;
+}
+
+
+
+/*//  MANIFESTO //*/
+
+#manifesto{
+    margin-bottom: 0px;
+}
+
+@media (min-width : 480px) {
+    #manifesto{
+        margin-bottom: 100px;
+    }
 }
 
 .manifesto-title {
@@ -852,25 +1034,6 @@ header .intro-text .intro-lead-in {
 }
 
 
-/*// Partner cities /*/
-
-#partner-cities {
-    
-}
-
-#partner-cities .map-content {
-    padding: 30px 30px 10px;
-    margin-top: 500px;
-    background-color: white;
-}
-
-#partner-cities ul {
-    padding-left: 0px;
-    list-style: none;
-}
-
-#partner-cities ul li {
-}
 /*// HEADER TWITTER SPACE //*/
 
 .twitter-space {
@@ -1249,25 +1412,6 @@ header .intro-text .intro-lead-in {
 }
 
 
-/*/--- THE COLLECTIVE SECTION ---/*/
-#collective {
-    margin-bottom: 100px;  
-}
-
-.member-box {
-    height: 310px;
-    padding-left: 0px;
-    padding-right: 30px;
-}
-
-.member-img {
-    margin-bottom:10px;
-}
-
-.member-caption h4 {
-    margin-bottom: 10px;
-}
-
 
 /*/--- SUBSCRIBE FORM SECTION ---/*/
 
@@ -1349,34 +1493,6 @@ header .intro-text .intro-lead-in {
     text-transform: uppercase;
 }
 
-/*/--- PARTNER PROJECTS SLIDER ---/*/
-
-#partner-projects {
-    margin-bottom: 100px;
-}
-
-.project-box {
-    height: 500px;
-}
-
-.project-img {
-    width: 230px;
-    height: 360px; 
-    margin-bottom: 20px;   
-}
-
-.project-caption {
-
-}
-
-.project-title {
-    margin-bottom: 10px;
-}
-
-.project-description {
-    margin-bottom: 10px;
-}
-
 /*/--- BANNERS CAROUSEL SECTION ---/*/
 
 #carousel {
@@ -1404,56 +1520,6 @@ header .intro-text .intro-lead-in {
     text-shadow: none;
 }
 
-
-/*/---SPONSORS MODULE ---/*/
-
-#partners {
-
-}
-
-
-
-#sponsors .container {
-    background-color: #ffffff;
-}
-
-.sponsor-div {
-    height: 70px;
-    margin-bottom: 10px;
-}
-
-.sponsor-img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    /*filter: grayscale(100%);*/
-}
-
-.sponsor-img:hover, .sponsor-img:active, .sponsor-img:hover:focus {
-    filter: grayscale(0%);
-}
-
-.sponsor-row {
-    padding-bottom: 30px;
-}
-
-.sponsors-title {
-    margin-bottom: 80px;
-}
-
-.sponsor {
-    position: relative;
-    display: inline-block;
-    width: 180px;
-    height: 80px;
-    line-height: 2em;
-    vertical-align: middle;
-    font-size: 7em;    
-}
 
 /*--- FOOTER ---*/
 
