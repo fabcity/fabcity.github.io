@@ -592,7 +592,8 @@ fieldset[disabled] .btn-clear.active {
 
 .bg-plain {
     position: absolute;
-    margin-left: 0px;
+    top:0;
+    left:0;    
     width: 500px;
     height: 300px;
     z-index: -1000;
@@ -807,7 +808,7 @@ header .intro-text .intro-lead-in {
 
 /*//  MANIFESTO //*/
 #manifesto{
-    min-height: 800px;
+    margin-bottom: 100px;
 }
 
 .manifesto-title {
@@ -854,7 +855,7 @@ header .intro-text .intro-lead-in {
 /*// Partner cities /*/
 
 #partner-cities {
-    min-height: 800px;
+    
 }
 
 #partner-cities .map-content {
@@ -968,20 +969,6 @@ header .intro-text .intro-lead-in {
 
 /*/--- CLAIMS ---/*/
 
-#claim-3 {
-    min-height: 900px;
-}
-
-@media (min-width: 768px){
-    #claim-3 {
-        min-height: 600px;
-    }
-}
-
-#claim-4 {
-    min-height: 500px;
-}
-
  #claim-4 .services  ul{
     list-style: none;
  }
@@ -990,6 +977,14 @@ header .intro-text .intro-lead-in {
     padding-bottom: 30px;
 
 }
+
+ #claim-4 .xl-title {
+    position: absolute;
+    z-index: -100;
+    left:0;
+    top: 0;
+ }
+
 
 /*/--- GLOBE SECTION ---/*/
 
@@ -1256,7 +1251,7 @@ header .intro-text .intro-lead-in {
 
 /*/--- THE COLLECTIVE SECTION ---/*/
 #collective {
-    min-height: 3400px;
+    margin-bottom: 100px;  
 }
 
 .member-box {
@@ -1357,7 +1352,7 @@ header .intro-text .intro-lead-in {
 /*/--- PARTNER PROJECTS SLIDER ---/*/
 
 #partner-projects {
-    min-height: 1400px;
+    margin-bottom: 100px;
 }
 
 .project-box {
@@ -1365,7 +1360,7 @@ header .intro-text .intro-lead-in {
 }
 
 .project-img {
-    width: 250px;
+    width: 230px;
     height: 360px; 
     margin-bottom: 20px;   
 }
@@ -1413,14 +1408,9 @@ header .intro-text .intro-lead-in {
 /*/---SPONSORS MODULE ---/*/
 
 #partners {
-    min-height: 780px;
+
 }
 
-@media (min-width: 768px){
-    #partners {
-        min-height: 600px;
-    }
-}
 
 
 #sponsors .container {
