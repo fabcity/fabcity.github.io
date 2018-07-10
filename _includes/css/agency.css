@@ -338,6 +338,9 @@ a.active {
 /*CLEAR BUTTON OPTION*/
 
 .btn-clear {
+    font-size: 0.62em;
+    letter-spacing: 1.4px;
+    padding: 10px 15px;
     border: solid 1.5px #d6d6d6;
     color: #{{ site.data.template.color.blacks }};
     font-weight: 900;
@@ -1466,6 +1469,21 @@ header .page-header {
 
 }
 
+/*/ FULL STACK */
+.full-stack-list ul {
+    list-style: none;
+}
+.full-stack-list ul li {
+    margin-bottom: 10px;
+}
+
+.full-stack-list h1 {
+    display:inline;
+}
+.full-stack-list p {
+    display:inline;
+    font-size: 13.6px;
+}
 
 /*TIMELINE */
 
