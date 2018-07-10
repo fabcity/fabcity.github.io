@@ -243,7 +243,7 @@ section .quote {
     font-weight: 500;
     font-size: 1.04em;
     margin-bottom: 40px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
 }
 
 section .number{
@@ -805,7 +805,7 @@ header .intro-text .intro-lead-in {
 .manifesto-title {
     font-weight: 700;
     margin-bottom: 0px;
-    font-size: 10em;
+    font-size: 10.6em;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
@@ -818,6 +818,28 @@ header .intro-text .intro-lead-in {
 
 .manifesto {
     margin-left: 12%;
+}
+
+.manifesto-content{
+    margin-top: 40px;
+}
+
+.manifesto-content .claim{
+    height: 270px;
+}
+
+.manifesto-box ul {
+    list-style: none;
+    margin-left: 0px;
+}
+
+.manifesto-box h2 {
+    margin-bottom: 10px;
+}
+
+.manifesto-box p {
+    font-size: 12px;
+    line-height: 18px;
 }
 
 

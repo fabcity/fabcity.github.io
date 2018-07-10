@@ -13,9 +13,17 @@
             <div class="row no-side-margin manifesto-title manifesto">
                 Manifesto
             </div>
+            <div class="row manifesto-content">
+                {% for claim in site.data.home-texts.manifesto %}
+                    <div class="col-sm-3 col-md-4 claim">
+                        <h2>{{ claim.number }} {{ claim.title }}</h2>
+                        <p>{{ claim.content }}</p>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
+
     </div> <!--close container-->
 </section>
-
 
 
