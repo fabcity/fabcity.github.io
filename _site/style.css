@@ -1260,7 +1260,7 @@ header .intro-text .intro-lead-in {
 }
 
 .member-box {
-    height: 350px;
+    height: 310px;
     padding-left: 0px;
     padding-right: 30px;
 }
@@ -1269,6 +1269,9 @@ header .intro-text .intro-lead-in {
     margin-bottom:10px;
 }
 
+.member-caption h4 {
+    margin-bottom: 10px;
+}
 
 
 /*/--- SUBSCRIBE FORM SECTION ---/*/
