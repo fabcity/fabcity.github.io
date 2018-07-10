@@ -598,6 +598,14 @@ fieldset[disabled] .btn-clear.active {
     height: 300px;
     z-index: -1000;
 }
+.bg-plain-page {
+    position: absolute;
+    top:0;
+    right:20px;    
+    width: 500px;
+    height: 300px;
+    z-index: -1000;
+}
 
 .bg-plain.large {
     position: absolute;
