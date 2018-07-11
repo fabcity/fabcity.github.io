@@ -565,7 +565,7 @@ fieldset[disabled] .btn-clear.active {
 }
 
 .bg-global-2 {
-    right: 0;
+    right: -120;
     top: 0px;
     width: 400px;
     height: 350px;
@@ -1572,7 +1572,7 @@ header .page-header {
 }
 
 .global-context-intro{
-    margin-top: 500px;
+    margin-top: 250px;
 }
 
 @media (min-width : 480px) {
@@ -1580,6 +1580,18 @@ header .page-header {
         margin-top: 0px;
     }
 }
+
+section .locality-title {
+    margin-top: 100px;
+
+}
+
+@media (min-width : 480px) { 
+    section .locality-title {
+        margin-top: 200px;
+    }
+}
+
 /*/ FULL STACK */
 .full-stack-list ul {
     list-style: none;
