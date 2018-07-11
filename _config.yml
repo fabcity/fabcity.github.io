@@ -4,25 +4,21 @@ baseurl:
 # Site settings
 title: Fab City Global Initiative
 tagline: "Locally productive, globally connected cities"
-logo: 
-email: your-email@domain.com
+email: info@fablabbcn.org
 description: ""
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: https://twitter.com/
+    url: https://twitter.com/fabcityglobal
   - title: facebook
-    url: https://www.facebook.com/
-  - title: youtube
-    url: https://www.youtube.com/user/f
-
+    url: https://www.facebook.com/fabcityglobal/
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: ""
-  - line: ""
+  - line: "Calle Pujades 102"
+  - line: "Poble Nou, Barcelona 08005 Spain"
 
 # Build settings
 markdown: kramdown
