@@ -11,3 +11,7 @@ events:
     title: 'Fab11 International Fab Lab Conference'
     description: "The Fab City becomes a global initiative / The cities of Boston, Ekurhuleni, Cambridge, Shenzhen, Somerville join / The state of Kerala (India) joins / The country of Georgia joins"
     img: 'fab11.jpg'
+  - year: "2015"
+    title: 'Amsterdam Fab City Campus'
+    description: "Europe by People: The Netherlands host the presidency of the European Union / The first Fab City experts summit in Amsterdam / The City of Amsterdam commits to the Fab City global initiative-"
+    img: 'fabcity_amsterdam.png'

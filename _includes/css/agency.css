@@ -1606,10 +1606,18 @@ section .locality-title {
     min-height: 400px;
 }
 
+#roadmap .roadmap-box {
+    background-color: transparent;
+    overflow-x: auto;
+    white-space: nowrap;
+    height: 300px;
+    overflow-y: hidden;
+}
+
 .line {
     width: 100%;
     background: #333333;
-    margin: 50px 0;
+    margin: 70px 0;
     height: 1px;
 }
 
@@ -1620,7 +1628,7 @@ section .locality-title {
 }
 
 .bottom {
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 .top .top-element,
@@ -1654,11 +1662,11 @@ section .locality-title {
 }
 
 .top-element:before {
-    bottom: -55px;
+    bottom: -75px;
 }
 
 .bottom-element:before {
-    top: -55px;
+    top: -75px;
 }
 
 .top-element:after,
@@ -1682,11 +1690,16 @@ section .locality-title {
 }
 */
 
-.bottom-element .timeline-logo {
+.bottom-element .text-box {
+    width: 200px;
+    white-space: normal;
+}
+
+.bottom-element .text-box .timeline-logo {
     height:60px;
     margin-left: 0px;
     margin-bottom: 0px;
-    margin-top: -220px;
+    margin-top: -250px;
 }
 
 
