@@ -163,7 +163,6 @@ h6 {
     text-transform: none;
 }
 
-
 h1 {
     font-size: 1.9em;
     letter-spacing: 4px;
@@ -175,13 +174,11 @@ h1 {
     margin-left: 120px;
 }
 
-
 h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: 28px;
     letter-spacing: 0.3px; 
 }
-
 
 h3 {
     font-size: 1.2em; 
@@ -215,7 +212,6 @@ h6 {
     letter-spacing: 0.3px;
     color: #{{ site.data.template.color.light }}; 
 }
-
 
 p {
     font-size: 14px;
@@ -259,7 +255,6 @@ section .claim{
     padding-top: 20px;
 }
 
-
 section p.section-subheading {
     margin-bottom: 40px;
     text-transform: none;
@@ -269,11 +264,9 @@ section p.section-subheading {
     line-height: 24px;
 }
 
-section h2.page-heading {
-    line-height: 25px;
-    font-size: 1.2em;
-    letter-spacing: 1.1px;
-    font-weight: 600;
+.page-heading {
+    font-size: 1.9em;
+    line-height: 35px;
 }
 
 .small-title {
@@ -285,7 +278,6 @@ section h2.page-heading {
 }
 .down-arrow-space .arrow {
     height: 15px;
-
 }
 
 
