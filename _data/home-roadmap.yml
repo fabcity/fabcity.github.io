@@ -15,3 +15,15 @@ events:
     title: 'Amsterdam Fab City Campus'
     description: "Europe by People: The Netherlands host the presidency of the European Union / The first Fab City experts summit in Amsterdam / The City of Amsterdam commits to the Fab City global initiative-"
     img: 'fabcity_amsterdam.png'
+  - year: "2016"
+    title: 'Shenzhen: The silicon valley of Hardware'
+    description: "12th International Fab Lab Conference / Cities joining the Fab City global initiative: Detroit, Paris, Santiago de Chile, Bhutan, Occitanie, Sacramento, Toulouse."
+    img: 'fab12.png'
+  - year: "2017"
+    title: 'Chile. Fab13: Fabricating Society'
+    description: "13th International Fab Lab Conference: Fab13: Fabricating Society / Fab City Campus Santiago de Chile / Fab City Summit Copenhagen"
+    img: 'fab13.png'
+  - year: "2018"
+    title: 'France. Fab14: Fabricating Resilience'
+    description: "14th International Fab Lab Conference: Fab14: Fabricating Resilience / Fab City Campus Parc de La Villete / Fab City Summit Paris"
+    img: 'fab14.png'

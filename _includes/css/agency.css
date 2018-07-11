@@ -1612,10 +1612,11 @@ section .locality-title {
     white-space: nowrap;
     height: 300px;
     overflow-y: hidden;
+    margin-right: -100px;
 }
 
 .line {
-    width: 100%;
+    width: 1500px;
     background: #333333;
     margin: 70px 0;
     height: 1px;
@@ -1701,7 +1702,6 @@ section .locality-title {
     margin-bottom: 0px;
     margin-top: -250px;
 }
-
 
 
 /*/--HIGHLIGHT ---/*/
