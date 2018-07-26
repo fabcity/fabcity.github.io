@@ -53,14 +53,25 @@ cities:
   - name: Shenzhen
   - name: Boston
   - name: Kerala
+  - name: Georgia
   - name: Toulouse
   - name: Sacramento
   - name: Curitiba
   - name: Paris
   - name: Somerville
-  - name: Occitanie
+  - name: Occitanie Region
   - name: Santiago de Chile
   - name: Detroit
+  - name: Kamakura
+  - name: Puebla
+  - name: Velsen
+  - name: Sorocaba
+  - name: Mexico City
+  - name: Seoul
+  - name: Zagreb
+  - name: Oakland
+  - name: AUVERGNE-RHÔNE-ALPES
+  - name: Belo-Horizonte
 partnerstitle: "Our Partners"
 partnerstext: "The Fab City global initiative is an effort of a group of leaders, organizations and projects dedicated to explore present and future of key fields for the development of productive cities such as digital fabrication, future information systems, intelligent materials, provenance and resource traceability, urban agriculture, alternative currencies and collective citizen empowerment."
 collectivetitle: "The Collective"
