@@ -112,6 +112,11 @@ body {
     position: absolute;
 }
 
+.container.container-outlined {
+    padding: 30px 0px 0px;
+    border: solid 4px #e21826;
+}
+
 section {
     position:relative;
     z-index: 100;
@@ -305,7 +310,7 @@ a.active {
 }
 
 a {
-    color: #;
+    color: #e21826;
 
 }
 
@@ -341,6 +346,12 @@ a.active {
     background-color: #18a537;
 }
 
+.red {
+    background-color: #e21826;
+    color: #000;
+    font-weight: 400;
+}
+
 .yellow {
     background-color: #ffef19;
     color: #000;
@@ -368,7 +379,7 @@ a.active {
 .btn-grayactive,
 .open .dropdown-toggle.btn-gray {
     color: #f7f5ff;
-    background-color: #;
+    background-color: #e21826;
 }
 
 
@@ -772,13 +783,6 @@ a.active {
     z-index: -1000;
 }
 
-.red {
-    background-color: #e62339;
-}
-
-.green {
-    background-color: #01a158;
-}
 
 
 

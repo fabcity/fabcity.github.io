@@ -104,6 +104,11 @@ body {
     position: absolute;
 }
 
+.container.container-outlined {
+    padding: 30px 0px 0px;
+    border: solid 4px #{{ site.data.template.color.reds }};
+}
+
 section {
     position:relative;
     z-index: 100;
@@ -331,6 +336,12 @@ a.active {
 
 .green {
     background-color: #{{ site.data.template.color.greens }};
+}
+
+.red {
+    background-color: #{{ site.data.template.color.reds }};
+    color: #000;
+    font-weight: 400;
 }
 
 .yellow {
@@ -764,13 +775,6 @@ a.active {
     z-index: -1000;
 }
 
-.red {
-    background-color: #e62339;
-}
-
-.green {
-    background-color: #01a158;
-}
 
 
 
