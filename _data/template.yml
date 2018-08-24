@@ -9,8 +9,12 @@ color:
   whites: "ffffff"
   blacks: "000"
   bodytext: "041024"
+  blues: "140468"
+  yellows: "ffef19"
+  greens: "18a537"
 
 # Font Families
 font:
-  primary: "'Inter UI', sans-serif;"
-  secondary: "'Oswald', 'Helvetica Neue', Helvetica,Arial,sans-serif'"
+  #primary: "'Inter UI', sans-serif;"
+  primary: 'Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif'
+  secondary: 'Muli, "Helvetica Neue", sans-serif'

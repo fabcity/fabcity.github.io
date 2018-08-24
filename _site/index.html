@@ -21,16 +21,20 @@
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
+
+    <!-- Slider CSS
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 
 
-
+<!--
     <script type="text/javascript">
         var myScroll;
         function loaded() {
             myScroll = new IScroll('#slideshow1');
         }
     </script>
-
+-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,31 +65,26 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="/#intro">The Initiative</a>
-                </li>
-                <li>
                     <a class="page-scroll" href="/about" target="_blank">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="/#partner-cities">Partner Cities</a>
+                    <a class="page-scroll" href="/#partner-cities">Cities</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="/#collective">The Collective</a>
+                    <a class="page-scroll" href="/#collective"> Collective</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="/#partner-projects">Partner Projects</a>
+                    <a class="page-scroll" href="/#partner-projects">Projects</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="https://summit.fabcity.paris/" target="_blank">Fab City Summit</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/#subscribe">Contact</a>
+                    <a class="page-scroll" href="https://summit.fabcity.paris/" target="_blank">Summit</a>
                 </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
 </nav>
 
+<!--
 <div class="brand-box">
     <div class= "brand">
         <a href="/">
@@ -97,12 +96,18 @@
     </div>
 </div>
 
+-->
+
 
     <body id="page-top" class="index" onload="loaded()">
 
 
     <header>
+
+    <video loop muted autoplay playsinline id="video"></video>
+
     <div class="container">
+        
         <div class="intro-text">
            <div class="intro-lead-in">
             <div class="row no-side-margin">
@@ -118,786 +123,548 @@
                 cities
             </div>
         </div>
+        
+        
         <div class="countdown-box">
-			<div id="countdown" class="col-xs-12 col-sm-12 col-md-12">
+			<div id="countdown" class="col-xs-12 col-sm-12 col-md-12 no-side-padding">
 				<div class="countdown styled"></div>
 			</div>
-			<div class="col-md-6 description">
-				  <p>By 2054 cities will need to produce everything they consume.</p>
+			<div class="col-md-7 description no-side-padding">
+				  <p>Until cities produce everything they consume.</p>
 			</div>
 		</div>
-    </div> <!--close container-->
-
-    <div id="frame">
-        <div class="top-left-corner"></div>
-        <div class="top-right-corner"></div>
-        <div class="bottom-left-corner"></div>
-        <div class="bottom-right-corner"></div>
-    </div>
-
+    </div> 
 </header>
 
 
-<section id="intro" style="margin-bottom: 70px;">
-    <div class="container">
-    	<div class="row">
-            <div class="col-md-6 intro-quote">
-                <p class="quote">We are a collective of citizens, researchers, policy makers, teachers, developers and entrepreneurs working on bringing back production to cities.</p>
-                <a href="/documents/whitepaper.pdf" class="page-scroll btn btn-clear" target="_blank">Download the Whitepaper</a>
-            </div>
-        </div>
-    </div><!-- close container-->
 
-    <div class="bg-img bg img-cover" style="background-image: url('/img/general/1.jpg');"></div>
+
+<section id="intro">
+    <div class="container">
+        <div class="quote-box">
+            <p class="quote">Currently, cities occupy <span>2%</span> of the earth's surface to house 1/2 of world population</p>
+            <p class="quote">The are responsible for <span>67%</span> of global energy consumption</p>
+            <p class="quote">and <span>70%</span> of global waste generation</p>
+            <p class="quote">in 2050, it is expected that <span>2/3</span> of the global population will live in cities.</p>
+            <p class="quote-highlight text-center">We are shifting the paradigm PITO to DIDO to enable cities to produce everything they consume by 2054</p>
+        </div>
+        <div class= "img-block blue img-right">
+            <!--<div class="bg-plain blue"></div>-->
+            <div class="img-medium img-cover" style="background-image: url('/uploads/city-panorama.jpg');">
+        </div>
+    </div> <!--close container -->
 </section>
 
 
 
 
-<section id="claim-1">
+<section id="fabcity-challenge">
     <div class="container">
-    	<div class="row">
-            <div class="col-md-6 number">
-                <h2 class="h-inverted">01</h2>
+        <div class="row no-side-margin section-row">
+            
+             <div class= "col-md-6 no-side-padding">
+                <img class="img-left" src="/uploads/challenge.jpg">
             </div>
-        </div>
-        <div class="row claim">
-            <div class="col-xs-12 col-sm-4 col-md-4 claim-4">
-                <h1 class="h-inverted">Cities are linear trash machines</h1>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-4"></div>
-            <div class="col-xs-12 col-sm-4 col-md-4 claim-text">
-                <p>We research and test concepts and prototypes that seek to change production paradigms from Product-In, Trash-Out models to Data-In Data-Out spiral sustainable ecosystems.</p>
-            </div>
-        </div>
-    </div><!-- close container-->
+            <div class="col-md-6 section-texts float-right">
+                <div class="row no-side-margin">
+                    
+                    <div class="col-md-12 no-side-padding">
+                        <h1 class="section-title">Fab City Challenge</h1>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-md-12 no-side-padding">
+                        <p class="section-description">Fab City Global Initiative challenges the current industrial paradigm of Product-in Trash-out, by advocating for the return of manufacture to cities supported by a Data-in Data-out urban model. It  comprises a network of 28 cities, a core team of collective members and is governed by a foundation, all working to change the urban paradigm of yesterday, and make the cities of tomorrow.</p>
+                    </div>
+                    
 
-    <div class="bg-plain red">
-    <div class="bg-img bg-2 img-cover" style="background-image: url('/img/general/2.jpg');"></div>
-</section>
-
-
-
-
-<section id="claim-2">
-    <div class="container">
-        <div class="row">
-            <div class="com-md-8"> </div>
-            <div class="col-md-4 number" style="float: right;">
-                <h2 class="h-inverted">02</h2>
-            </div>
-        </div>
-        <div class="row claim">
-            <div class="col-md-4">
-                <p class="p-inverted">The Fab City initiative works in parallel to the international Fab Lab network, a network of over 1000 digital fabrication laboratories researching the future of materials, citizenship, manufacturing and entrepreneurship.</p>
-            </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <h1 class="h-inverted">We can design locally, make globally</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 bg-3 img-cover" style="background-image: url('/img/general/3.jpg');"></div>
-            <div class="col-xs-4 col-sm-4 col-md-4 bg-3 img-cover" style="background-image: url('/img/general/4.jpg');"></div>
-            <div class="col-xs-4 col-sm-4 col-md-4 bg-3 img-cover" style="background-image: url('/img/general/5.jpg'); margin-right: 0px;"></div>
-        </div>
-    </div><!-- close container-->
-
-    <div class="bg-plain large green">
-
-</section>
-
-
-
-
-<section id="claim-3" style="margin-bottom:150px;">
-    <div class="container">
-    	<div class="row">
-            <div class="col-md-6 number">
-                <h2 class="h-inverted">03</h2>
-            </div>
-        </div>
-        <div class="row claim">
-            <div class="col-md-4">
-                <h1 class="h-inverted">Smart Citi<strike>es</strike>zens</h1>
-            </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <p>We work with government, industry and society to enable citizen centric bottom-up urban planning and technology deployment for smarter cities.</p>
-            </div>
-        </div>
-        <div class="row">
-        	<div class="col-xs-12 col-sm-6 col-md-5 bg-4 img-cover" style="background-image: url('/img/general/6.jpg'); margin-right: 10px;"></div>
-            <div class="col-xs-0 col-md-2"> </div>
-            <div class="col-xs-12 col-sm-6 col-md-5 bg-4 img-cover" style="background-image: url('/img/general/7.jpg'); margin-right: 0px; float: right;"></div>
-        </div>
-    </div><!-- close container-->
-
-    <div class="bg-plain blue"></div>
-</section>
-
-
-
-
-<section id="claim-4">
-    <div class="container">
-        <div class="row" style="padding-top: 100px;">
-            <div class="col-md-4 services">
-                <ul>
-                    <li><h1>Research</h1> </li>
-                    <li><h1>Technology</h1> </li>
-                    <li><h1>Community</h1> </li>
-                    <li><h1>Incubation</h1> </li>
-                </ul>
-            </div>
-            <div class="col-md-4 right">
-                <p>Fab City strategies and ethos comprise a diverse range of pilots, toolkits, information systems and insights that are being implemented through four transversal fields of focus for impacting and inducing long-term change in the present and future of cities.</p>
-                <a href="/about" class="page-scroll btn btn-clear" target="_blank">About the Initiative</a>
-            </div>
-        </div>
-    </div><!-- close container-->
-
-    <div class="xl-title"><h1 class="xl"> What we do </h1></div>
-</section>
-
-
-
-
-<section id="manifesto">
-     <div class="container">
-        <div class="manifesto-box">
-            <div class="row no-side-margin manifesto-title" style="padding-left: 40px;">
-                The
-            </div>
-            <div class="row no-side-margin manifesto-title fab">
-                Fab
-            </div>
-            <div class="row no-side-margin manifesto-title">
-                City
-            </div>
-            <div class="row no-side-margin manifesto-title manifesto">
-                Manifesto
-            </div>
-            <div class="row" style="margin-top:40px; text-align: right;">
-                <div class="col-md-12">
-                    <a href="/documents/Manifesto.pdf" class="page-scroll btn btn-clear" target="_blank">Read and Download the Manifesto</a>
+                    
+                    <div class="button-area">
+                        <div class="col-md-12 no-side-padding text-right">
+                            <p class="action"> Read the</p> 
+                        </div>
+                        <div class="col-md-12 no-side-padding text-right">
+                        
+                            <a href="uploads/whitepaper.pdf" class="page-scroll btn blue" target="_blank">White Paper</a>
+                        
+                        </div>
+                        <div class="col-md-12 no-side-padding">
+                            <a href="uploads/whitepaper.pdf"><div class="" style="width: 19px; height: 17px; float:right;"><img src="/uploads/download-icon.png"></div></a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-            <!--
-            <div class="row manifesto-content">
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>1 Ecological</h2>
-                        <p>We take an integrated approach to environmental stewardship, working towards a zero-emission future while also preserving biodiversity, rebalancing the nutrient cycle, and sustaining natural resources.</p>
-                    </div>
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>2 Inclusive</h2>
-                        <p>We promote equitable and inclusive policy co-design, through the development of a Commons Approach, regardless of age, gender, income-levels and capabilities.</p>
-                    </div>
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>3 Glocalism</h2>
-                        <p>We support the efficient and shared use of all local available resources in a circular economy approach, to build a productive and vibrant city.</p>
-                    </div>
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>4 Participatory</h2>
-                        <p> We engage with all stakeholders in decision-making processes and empower citizens to take ownership of innovation and change-making.</p>
-                    </div>
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>5 Economic Growth & Employment</h2>
-                        <p>We support sustainable urban economic growth by investing in building the skills, infrastructure and policy frameworks needed for the 21st century, thanks to a thorough consideration of social and environmental externalities and the implementation of the polluter pays principle.</p>
-                    </div>
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>6 Locally Productive</h2>
-                        <p>We support the efficient and shared use of all local available resources in a circular economy approach, to build a productive and vibrant city.</p>
-                    </div>
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>7 People-Centered</h2>
-                        <p>We give priority to people and culture over technology, so that the city can become a living and resilient ecosystem. Autonomous vehicles, digital tools, artificial intelligence and robotic machines must be placed at the service of the people’s well-being and expectations.</p>
-                    </div>
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>8 Holistic</h2>
-                        <p>We address urban issues in all their dimension and interde- pendencies to build sustainable, resilient and inclusive cities for everyone.</p>
-                    </div>
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>9 Open source Philosophy</h2>
-                        <p>We foster a Digital Commons Approach that adheres to open source principles and values open data, in order to stimulate innovation and develop shared solutions between cities and territories.</p>
-                    </div>
-                
-                    <div class="col-sm-3 col-md-4 claim">
-                        <h2>10 Experimental</h2>
-                        <p>In order to meet the principles just outlined, we actively support the research, experimentation and deployment of innovation which includes but is not limited to: low impact supply chains; distributed production; renewable energy and smart grids; sustainable food and urban agriculture; recycling and reuse of materials, sustainable resource management for energy, food and materials.</p>
-                    </div>
-                
-            </div>
-            -->
-        </div>
-
-    </div> <!--close container-->
+            
+        </div><!--close section content row -->    
+    </div> <!--close container -->
 </section>
 
 
 
-<!-- Fab City Globe Section -->
 
-<section id="partner-cities">
-   <div class="bg-img" style="margin-left: 40px;">
-    <img class="bg-map" src="/img/general/map-cities.png"></div>
-
+<section id="values-vision">
     <div class="container">
-        <div class="row map-content">
-            <div class="col-md-4">
-                <p class="small">Fab City has been initiated by the Institute for Advanced Architecture of Catalonia, MIT Center for Bits and Atoms and the Fab Foundation; its operation is adjacent to the 1500+ strong Fab Lab network, using it as a global infrastructure and knowledge source to challenge cities to produce everything they consume by 2054. Cities are encouraged to join the growing network of Fab City locations, once a year at the Fab City Summit.</p>
-            </div>
-            <div class="col-md-2">
-            </div>
-             <div class="col-md-6">
-                <h1 style="margin-bottom: 20px;">Partner Cities/States</h1>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Barcelona</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Ekurhuleni</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Amsterdam</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Bhutan</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Brest</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Cambridge</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Shenzhen</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Boston</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Kerala</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Georgia</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Toulouse</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Sacramento</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Curitiba</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Paris</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Somerville</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Occitanie Region</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Santiago de Chile</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Detroit</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Kamakura</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Puebla</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Velsen</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Sorocaba</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Mexico City</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Seoul</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Zagreb</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Oakland</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">AUVERGNE-RHÔNE-ALPES</h3></div>
-                
-                 <div class="col-xs-6 col-sm-4 col-md-4 no-side-padding" style="padding-right:10px;"><h3 style="margin-bottom: 3px;">Belo-Horizonte</h3></div>
-                
-            </div>
-        </div>
-    </div><!-- close container-->
-<!--
-    <div class="xl-title"><h1 class="xl"> What we do </h1></div>-->
-</section>
+        <div class="row no-side-margin section-row">
+            
+            <div class="col-md-6 section-texts float-left">
+                <div class="row no-side-margin">
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <h1 class="section-title">Values & Vision</h1>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">We manifest our values and vision as a community of practice.</p>
+                    </div>
+                    
 
-<section id="partners">
-    <div class="container absolute">
-        <div class="row quote-box">
-            <div class="col-md-4">
-                <h2 class="quote-title">Our Partners</h2>
-                <p>The Fab City global initiative is an effort of a group of leaders, organizations and projects dedicated to explore present and future of key fields for the development of productive cities such as digital fabrication, future information systems, intelligent materials, provenance and resource traceability, urban agriculture, alternative currencies and collective citizen empowerment.</p>
+                    
+                    <div class="button-area">
+                        <div class="col-md-12 no-side-padding text-right">
+                            <p class="action"> Read the</p> 
+                        </div>
+                        <div class="col-md-12 no-side-padding text-right">
+                        
+                            <a href="uploads/whitepaper.pdf" class="page-scroll btn yellow" target="_blank">Manifesto</a>
+                        
+                        </div>
+                        <div class="col-md-12 no-side-padding">
+                            <a href="uploads/whitepaper.pdf"><div class="" style="width: 19px; height: 17px; float:right;"><img src="/uploads/download-icon.png"></div></a>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="col-md-8 text-center">
-                <div class="bg-partners" style="background-image: url('/img/general/hex-bg.svg');"></div>
+            <div class= "col-md-6 no-side-padding">
+                <img class="img-right" src="/uploads/values.png">
+            </div>
 
-                <div class="col-md-12" style="margin-top: 40px;">
-                    <span class="sponsor">
-                        <div class="icon"><img class="sponsor-img" src="/img/logos/iaac.png"> </div>
-                    </span>
-                </div>
-                <div class="col-md-12">
-                    <span class="sponsor">
-                        <div class="icon"><img class="sponsor-img" src="/img/logos/fabfoundation.svg"> </div>
-                    </span>
-                </div>
-                <div class="col-md-12">
-                    <span class="sponsor">
-                        <div class="icon"><img class="sponsor-img" src="/img/logos/logoCBA.jpg"> </div>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div><!-- close container-->
+            
+        </div><!--close section content row -->    
+    </div> <!--close container -->
 </section>
 
 
 
 
-<section id="collective">
+<section id="approach">
     <div class="container">
-        <div class="row quote-box">
-            <div class="col-md-4">
-                <h2 class="quote-title">The Collective</h2>
-                <p>A core group of experts and enthusiasts advocate for the Fab City initiative globally, they are the Fab City Collective. Each invest resources to progress and champion the Fab City goals in their respective fields.</p>
-            </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-        </div>
+        <div class="row no-side-margin section-row">
+            
+            <div class="col-md-6 section-texts float-left">
+                <div class="row no-side-margin">
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <h1 class="section-title">Our Approach</h1>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">We apply our vision and values in a full stack model. From the local to the global, we work across multiple layers of practice and deployment, scaling the FabLab approach to a city and systems level.</p>
+                    </div>
+                    
 
+                    
+                    <div class="button-area">
+                        <div class="col-md-12 no-side-padding text-right">
+                            <p class="action"> See the</p> 
+                        </div>
+                        <div class="col-md-12 no-side-padding text-right">
+                        
+                            <a href="uploads/" class="page-scroll btn green" target="_blank">Full Stack</a>
+                        
+                        </div>
+                        <div class="col-md-12 no-side-padding">
+                            <a href="uploads/"><div class="" style="width: 19px; height: 17px; float:right;"><img src="/uploads/download-icon.png"></div></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class= "col-md-6 no-side-padding">
+                <img class="img-right" src="/uploads/approach.jpg">
+            </div>
+
+            
+        </div><!--close section content row -->    
+    </div> <!--close container -->
+</section>
+
+
+
+
+<section id="prototype-the-city">
+    <div class="container">
         <div class="row no-side-margin">
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/TomasDiez.png " class="img-responsive img-centered member-img">
+            <div class="col-md-6 project-gallery-texts float-left">
+                <div class="row no-side-margin">
                     
-                    <div class="member-caption">
-                        <h4>Tomas Diez</h4>
-                        <p class="small">Director and co-founder at Fab Lab Barcelona. Co-director at the Institute for Advanced Architecture of Catalonia</p>
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">Prototype the city</p>
                     </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Liz_Corbin.png " class="img-responsive img-centered member-img">
                     
-                    <div class="member-caption">
-                        <h4>Liz Corbin</h4>
-                        <p class="small">Institute of Making; UCL.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Julie_Hjort.png " class="img-responsive img-centered member-img">
                     
-                    <div class="member-caption">
-                        <h4>Julie Hjort</h4>
-                        <p class="small">Program Director; Danish Design Centre.</p>
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">We engage in action-research directly in the city by prototyping and deploying strategies across localities in our network.</p>
                     </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Christian_Villum.png " class="img-responsive img-centered member-img">
                     
-                    <div class="member-caption">
-                        <h4>Christian Villum</h4>
-                        <p class="small">Director of Digital & Future Thinking; Danish Design Centre.</p>
-                    </div>
                 </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Vasilis_Nairos.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Vasilis Niaros</h4>
-                        <p class="small">Researcher Coordinator at P2P Foundation.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Daniel_Heltzel.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Daniel Heltzel</h4>
-                        <p class="small">Fab Lab Berlin International Relations. Responsible Research & Innovation strategy and Innovation Facilitation.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Karen_Van_Der_Moolen.jpg " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Karen van der Moolen</h4>
-                        <p class="small">Program Developer at Waag Society.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Egbert_Fransen.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Egbert Fransen</h4>
-                        <p class="small">Founder and director of Pakhuis de Zwijger.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/thomas_Ermacora.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Thomas Ermacora</h4>
-                        <p class="small">Architect/Urbanist & Tech Angel. Founder of Machines Room and Clear Village. Xprize Resident Futurist.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Nat_Hunter.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Nat Hunter</h4>
-                        <p class="small">Director, FANDCO, London.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Gareth_Owen_Lloyd.jpg " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Gareth Owen Lloyd</h4>
-                        <p class="small">Director of Maker Projects FANDCO.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/James_Tooze.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>James Tooze</h4>
-                        <p class="small">Senior Tutor & Researcher - Royal College of Art, London.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Vincent_Guimas.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Vincent Guimas</h4>
-                        <p class="small">Co-founder at Fab City Grand Paris Association and Les Arts Codés, Nouvelle Fabrique and ArsLonga.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Francesco_Cingolani.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Francesco Cingolani</h4>
-                        <p class="small">Fab City Grand Paris Association and Volumes co-founder. Design by Data founder and director (École des Ponts ParisTech).</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Minh_Manh_Nguyen.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Minh Manh Nguyen</h4>
-                        <p class="small">President of Fab City Grand Paris; Co-founder of WoMa.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Chris_Monaghan.jpg " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Chris Monaghan</h4>
-                        <p class="small">Co-Founder and Innovation Director at Metabolic.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Massimo_Menichinelli.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Massimo Menichinelli</h4>
-                        <p class="small">Researcher at Fab Lab Barcelona - IAAC.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Massimo_Bianchini.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Massimo Bianchini</h4>
-                        <p class="small">Polifactory, Department of Design, Politecnico di Milano.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Stefano_Maffei.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Stefano Maffei</h4>
-                        <p class="small">Polifactory, Department of Design, Politecnico di Milano.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Tsewang_Lhundup.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Tsewang Lhundup</h4>
-                        <p class="small">Director at Fab Lab Bhutan.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/mara_balestrini.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Mara Balestrini</h4>
-                        <p class="small">CEO at Ideas for Change. Research fellow at IAAC and Fab Lab Barcelona.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Indy_Johar.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Indy Johar</h4>
-                        <p class="small">Co-founder of 00. Senior Innovation Associate with the Young Foundation and Visiting Professor at the University of Sheffield.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Daniel_Charny.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Daniel Charny</h4>
-                        <p class="small">Creative Director at From Now On and Professor of Design at Kingston University.</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Mikkel_Holst.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Mikkel Holst</h4>
-                        <p class="small">Co-founder of Underbroen and Acting Head of Creative Growth at City of Copenhagen</p>
-                    </div>
-                </div>
-            
-                <div class="col-xs-6 col-sm-4 col-md-3 member-box">
-                    <img src="/img/collective/Asger_Norregaard_Rasmussen.png " class="img-responsive img-centered member-img">
-                    
-                    <div class="member-caption">
-                        <h4>Asger Nørregaard Rasmussen</h4>
-                        <p class="small">Community lead at Underboren and Project Manager at Copenhagen Maker</p>
-                    </div>
-                </div>
-            
-        </div>
-
-    </div><!-- close container-->
-
-</section>
-
-
-
-
-<section id="partner-projects">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2 class="quote-title">Partner Projects</h2>
-                <p></p>
             </div>
         </div>
 
-        <div class="row">
+        <!--project slider-->
+        <div class="slidewrapper">
             
-                <div class="col-md-4 col-sm-6 project-box">
-                    <a href="https://smartcitizen.me/" target="_blank" style="text-decoration: none;">
-                     <div class="project-img img-cover" style="background-image: url('/img/general/smart-citizen.jpg');">
+                    <div class="project-box">
+                        <a href="https://danskdesigncenter.dk/en/remodel" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">REMODEL, Danish Design Centre</p>
+                        </div>
+                        </a>
                     </div>
-                    
-                    <div class="project-caption">
-                        <h4 class="project-title">Smart Citizen</h4>
-                        <p class="small project-description">Tools for citizen action in environmental monitoring and methodologies for community engagement and co-creation.</p>
-                    </div>
-                    </a>
-                </div>
             
-                <div class="col-md-4 col-sm-6 project-box">
-                    <a href="http://making-sense.eu/" target="_blank" style="text-decoration: none;">
-                     <div class="project-img img-cover" style="background-image: url('/img/general/making-sense.jpg');">
+                    <div class="project-box">
+                        <a href="https://smartcitizen.me/" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">Smart Citizen</p>
+                        </div>
+                        </a>
                     </div>
-                    
-                    <div class="project-caption">
-                        <h4 class="project-title">Making Sense</h4>
-                        <p class="small project-description">A tool-kit for community activism and participatory sensing to include citizens’ voices in decision making processes.</p>
-                    </div>
-                    </a>
-                </div>
             
-                <div class="col-md-4 col-sm-6 project-box">
-                    <a href="http://www.materiom.org/" target="_blank" style="text-decoration: none;">
-                     <div class="project-img img-cover" style="background-image: url('/img/general/materiom.png');">
+                    <div class="project-box">
+                        <a href="http://making-sense.eu/" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">Making Sense</p>
+                        </div>
+                        </a>
                     </div>
-                    
-                    <div class="project-caption">
-                        <h4 class="project-title">Materiom</h4>
-                        <p class="small project-description">Enabling everyone, everywhere to participate in the next generation of materials.</p>
-                    </div>
-                    </a>
-                </div>
             
-                <div class="col-md-4 col-sm-6 project-box">
-                    <a href="https://danskdesigncenter.dk/en/remodel" target="_blank" style="text-decoration: none;">
-                     <div class="project-img img-cover" style="background-image: url('/img/general/remodel.png');">
+                    <div class="project-box">
+                        <a href="https://danskdesigncenter.dk/en/remodel" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">REMODEL, Danish Design Centre</p>
+                        </div>
+                        </a>
                     </div>
-                    
-                    <div class="project-caption">
-                        <h4 class="project-title">REMODEL, Danish Design Centre</h4>
-                        <p class="small project-description">Together with international and Danish experts, the Danish Design Centre explores how to design competitive business models for manufacturing companies based on open source principles.</p>
-                    </div>
-                    </a>
-                </div>
             
-                <div class="col-md-4 col-sm-6 project-box">
-                    <a href="https://www.youtube.com/watch?v=roOaf8bXoRE" target="_blank" style="text-decoration: none;">
-                     <div class="project-img img-cover" style="background-image: url('/img/general/madeagain.png');">
+                    <div class="project-box">
+                        <a href="https://smartcitizen.me/" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">Smart Citizen</p>
+                        </div>
+                        </a>
                     </div>
-                    
-                    <div class="project-caption">
-                        <h4 class="project-title">Made Again Challenge, Poblenou Barcelona</h4>
-                        <p class="small project-description">The first Fab City Prototype in collaboration with SPACE10 and IKEA</p>
-                    </div>
-                    </a>
-                </div>
             
-                <div class="col-md-4 col-sm-6 project-box">
-                    <a href="http://www.manifattura.milano.it/" target="_blank" style="text-decoration: none;">
-                     <div class="project-img img-cover" style="background-image: url('/img/general/manifattura.png');">
+                    <div class="project-box">
+                        <a href="http://making-sense.eu/" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">Making Sense</p>
+                        </div>
+                        </a>
                     </div>
-                    
-                    <div class="project-caption">
-                        <h4 class="project-title">ManifatturaMilano</h4>
-                        <p class="small project-description">A Fab City Ecosystem Integrating Design, Social Innovation, Making And New Urban Manufacturing</p>
-                    </div>
-                    </a>
-                </div>
             
-        </div> <!-- close row -->
+        </div>
 
-    </div><!-- close container-->
-</section>
-
-
-
-
-<!--Standard carousel or banner template -->
-<section id="carousel">  
-    <div class="container">
-        
-
-        
-        <div class="row text-center banner">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="/img/general/summit-banner.png" alt="">
-                    </div>
-
+            <!--
+            <div id="slideshow1" class="slideshow">
+                <div class="list">
                     
-                    <div class="item">
-                      <img src="/img/general/summit-banner.png" alt="">
+                    <div class="project-box">
+                        <a href="https://danskdesigncenter.dk/en/remodel" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">REMODEL, Danish Design Centre</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="project-box">
+                        <a href="https://smartcitizen.me/" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">Smart Citizen</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="project-box">
+                        <a href="http://making-sense.eu/" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">Making Sense</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="project-box">
+                        <a href="https://danskdesigncenter.dk/en/remodel" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">REMODEL, Danish Design Centre</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="project-box">
+                        <a href="https://smartcitizen.me/" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">Smart Citizen</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="project-box">
+                        <a href="http://making-sense.eu/" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('/uploads/remodel.png');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">Making Sense</p>
+                        </div>
+                        </a>
                     </div>
                     
                 </div>
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" style="font-size: 22px;"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" style="font-size: 22px;"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div> 
-        </div>
-        
+        </div>  <!-- close slidewrapper -->  
 
-
-        </div><!-- close sub-container --> 
-    </div> <!-- close container -->
-
+    </div> <!--close container -->
 </section>
 
 
-<script type="text/javascript">
-  ;(function(ns){
-    var _iscroll = null;
-    ns.init = function(){
-        _iscroll = new IScroll('#slideshow1',{
-            scrollX: true,
-            freeScroll: true
-        });
-    }
-  })(this.slideshow1 = {});
-  (function(){
-    if(window.addEventListener){
-        window.addEventListener('load',slideshow1.init,false);
-    } else{
-        window.attachEvent('onload',slideshow1.init); //IE
-    }
-  })();
-</script>
 
 
-<section id="get-involved">
-    <div class="container absolute">
-        <div class="row quote-box">
-            <div class="col-md-4">
-                <h2 class="quote-title">CALL TO ACTION —WHAT’S NEXT?</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <a href="/documents/Manifesto.pdf" target="_blank"><h4 class="quote-subtitle">ACTION 1: DOWNLOAD AND SHARE THE FAB CITY MANIFESTO &rarr; </h4></a>
-                <a href="/documents/Fab_City_Commitment_2018.pdf" target="_blank"><h4 class="quote-subtitle">ACTION 2: JOIN YOUR CITY TO THE FAB CITY NETWORK &rarr; </h4></a>
-                <a href="https://www.fablabs.io/signin" target="_blank"><h4 class="quote-subtitle">ACTION 3: JOIN THE FAB LAB NETWORK &rarr; </h4></a>
-            </div>
-            <div class="col-md-5 text-right">
-               <a href="mailto:info@fablabbcn.org" target="_blank"><h4 class="quote-subtitle">Email</h4></a>
-                <a href="https://twitter.com/fabcityglobal?lang=en"><h4 class="quote-subtitle" target="_blank">Twitter</h4></a>
-                <a href="https://www.facebook.com/fabcityglobal/" target="_blank"><h4 class="quote-subtitle">Facebook</h4></a>
-                <a href="https://github.com/fabcity" target="_blank"><h4 class="quote-subtitle">Github</h4></a>
-            </div>
-        </div>
-    </div><!-- close container-->
 
-    <div class="img-cover bg-6" style="background-image: url('/img/general/map.png');"></div>
+
+
+
+<section id="common-knowledge">
+    <div class="container">
+        <div class="row no-side-margin section-row">
+            
+            <div class="col-md-6 section-texts float-left">
+                <div class="row no-side-margin">
+                    
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">Common knowledge</p>
+                    </div>
+                    
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">As a global network, we are connected through the knowledge we share, across common tools and platforms.</p>
+                    </div>
+                    
+
+                    
+                    <div class="button-area">
+                        <div class="col-md-12 no-side-padding text-right">
+                            <p class="action"> Download the</p> 
+                        </div>
+                        <div class="col-md-12 no-side-padding text-right">
+                        
+                            <a href="uploads/" class="page-scroll btn green" target="_blank">Slide Deck</a>
+                        
+                        </div>
+                        <div class="col-md-12 no-side-padding">
+                            <a href="uploads/"><div class="" style="width: 19px; height: 17px; float:right;"><img src="/uploads/download-icon.png"></div></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class= "col-md-6 no-side-padding">
+                <img class="img-right" src="/uploads/common-knowledge.jpg">
+            </div>
+
+            
+        </div><!--close section content row -->    
+    </div> <!--close container -->
 </section>
 
 
- <!--
-  <div class="col-md-6">
-      <ul class="list-inline social-buttons">
-          
-          <li><a href="https://twitter.com/fabcityglobal"><i class="fa fa-twitter"></i></a>
-          </li>
-          
-          <li><a href="https://www.facebook.com/fabcityglobal/"><i class="fa fa-facebook"></i></a>
-          </li>
-          
-      </ul>
-  </div>
---> 
+
+
+<section id="documentation">
+    <div class="container">
+        <div class="row no-side-margin">
+            <div class="col-md-5 project-gallery-texts float-left">
+                <div class="row no-side-margin">
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">Documentation</p>
+                    </div>
+                    
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">Findings from prototyping and action-research are documented and shared openly.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row no-side-margin">
+            <div class="col-md-6 documentation-box text-right">
+                <p class="documentation-link">blog.</p>
+            </div>
+            <div class="col-md-6 text-left">
+                <p class="documentation-link">Twitter.</p>
+            </div>
+        </div>
+    </div> <!--close container -->
+</section>
+
+
+
+
+
+
+
+
+<section id="fab-city-foundation">
+    <div class="container">
+        <div class="row no-side-margin">
+            <div class="col-md-5 float-left">
+                <div class="row no-side-margin">
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">Fab City Foundation</p>
+                    </div>
+                    
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">Fab City was founded by key partners in 2014. In 2018 the Fab City Foundation was founded.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-3">
+               <img class="sponsor-img" src="/uploads/logoCBA.jpg">
+                <img class="sponsor-img" src="/uploads/fabfoundation.svg">
+                <img class="sponsor-img" src="/uploads/iaac.png">
+            </div>
+            <div class="col-md-4 text-right">
+
+                    <p class="action"> Governance <br></p> 
+                    <a href="uploads/" class="page-scroll btn blue" target="_blank">Model</a>
+
+            </div>
+        </div>
+        <div class="row no-side-margin">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div> <!--close container -->
+</section>
+
+<section id="join">
+    <div class="container">
+        <div class="row no-side-margin section-row">
+            
+             <div class= "col-md-6 no-side-padding">
+                <img class="img-left" src="/uploads/join.jpg">
+            </div>
+            <div class="col-md-6 section-texts float-right">
+                <div class="row no-side-margin">
+                    
+                    <div class="col-md-12 no-side-padding">
+                        <h1 class="section-title">Join</h1>
+                    </div>
+                    
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">Citizens, communities, spaces, machines & tools</p>
+                    </div>
+                    
+                    
+                    <div class="col-md-12 no-side-padding">
+                        <p class="section-description">We collaborate with experts and enthusiasts to share the potential of productivity in cities through research, internships, FabLabs, partnerships, workshops and toolkits.</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </div>
+            
+        </div><!--close section content row -->    
+    </div> <!--close container -->
+</section>
+
+
+
+
+<section id="fab-city-network">
+    <div class="container">
+        <div class="row no-side-margin section-row">
+            
+            <div class="col-md-6 section-texts float-left">
+                <div class="row no-side-margin">
+                    
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">Join your city to the Fab City Network</p>
+                    </div>
+                    
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">We welcome new member cities once a year at the annual Fab City event. To see the process and your eligibility, take our quiz!</p>
+                    </div>
+                    
+
+                    
+                    <div class="button-area">
+                        <div class="col-md-12 no-side-padding text-right">
+                            <p class="action"> Take the</p> 
+                        </div>
+                        <div class="col-md-12 no-side-padding text-right">
+                        
+                            <a href="uploads/" class="page-scroll btn green" target="_blank">Quiz</a>
+                        
+                        </div>
+                        <div class="col-md-12 no-side-padding">
+                            <a href="uploads/"><div class="" style="width: 19px; height: 17px; float:right;"><img src="/uploads/download-icon.png"></div></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class= "col-md-6 no-side-padding">
+                <img class="img-right" src="/uploads/network.jpg">
+            </div>
+
+            
+        </div><!--close section content row -->    
+    </div> <!--close container -->
+</section>
+
+
+
 
 
 <section id="subscribe">
-  <div class="container absolute">
+  <div class="container">
 
     <div class="row small-title">
       <div class="col-md-12">
@@ -951,53 +718,39 @@
   </div><!--close container-->
 </section>  
 <footer>
-    <div class="container absolute">
-        <div class="row">
-            <div class="col-md-12">
-                <h4 class="small-title">Location</h4>
-            </div>
-        </div>
-        <div class="row" style="padding-bottom: 50px;">
-            <div class="col-md-6">
-                <p>Institute for Advanced Architecture of Catalonia </p> 
+    <div class="container">
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-4">
+                <p class="footer-title">Location</p>
+                <p >Institute for Advanced Architecture of Catalonia </p> 
                 <p>Fab Lab Barcelona<p>
                 <p>Barcelona<p>
                 <p>Pujades 102, 08005<p>
             </div>
-            <div class="col-md-6">
-                    <div class= "brand">
-                        <img src="/img/logos/fabcity.svg"> 
-                    </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h4 class="small-title">Powered by:</h4>
-            </div>
-        </div>
-        <div class="row" style="padding-bottom: 50px;">
-            <div class="col-md-6">
+            <div class="col-md-4">
+                <p class="footer-title">Powered by:</p>
                 <a class="page-scroll" href="https://fablabbcn.org/" target="_blank"><p>Fab Lab Barcelona </p></a>
                 <a class="page-scroll" href="http://cba.mit.edu/" target="_blank"><p>MIT's CBA<p></a>
                 <a class="page-scroll" href="https://iaac.net/" target="_blank"><p>IAAC<p></a>
                 <a class="page-scroll" href="http://www.fabfoundation.org/" target="_blank"><p>Fab Foundation<p></a>
             </div>
-            <div class="col-md-6">
-                <a class="page-scroll" href="/#intro"><p>The Initiative </p></a>
-                <a class="page-scroll" href="/#partner-cities"><p>Partner Cities</p></a>
-                <a class="page-scroll" href="/#collective"><p>The Collective</p></a>
-                <a class="page-scroll" href="https://summit.fabcity.paris/" target="_blank"><p>Fab City Summit</p></a>
-            </div>
         </div>
-
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <p class="copyright">Copyright &copy; Fab City Global Initiative 2018</p>
             </div>
         </div>
             
     </div>
 </footer>
+
+<!--
+<div class="col-md-6">
+        <div class= "brand">
+            <img src="/img/logos/fabcity.svg"> 
+        </div>
+</div>
+-->
 
     
 
@@ -1019,8 +772,9 @@
 <!-- Custom Theme JavaScript -->
 <script src="/js/agency.js"></script>
 
-<!--Iscroll for horizontal slide menus-->
+<!--Iscroll for horizontal slide menus
 <script src="/js/iscroll.js"></script>
+-->
 
 <!--Twitter call for last tweet home mosaic-->
 <script src="/js/twitter-call.js"></script>
@@ -1045,6 +799,18 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js" data-turbolinks-track="true"></script>
 <script src="/js/globe.js"></script>
 <script src="/js/map.js"></script>
+
+<!--slider-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+$('.slidewrapper').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+</script>
+
+
 
 <script type="text/javascript">
 window.map_markers = []
@@ -1192,12 +958,91 @@ function closeNav() {
 }
 </script>
 
-
+<!--
 <script>
 // Parallax.js
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
 </script>
+
+P5_GlAOCHyE
+dd4Lnrn26oI
+-->
+
+<script type="text/javascript">
+
+var vid = "n3CisWgyBDY",
+    streams,
+    video_focused = true,
+    video_tag = $("#video"),
+    video_obj = video_tag.get(0);
+$.getJSON("https://query.yahooapis.com/v1/public/yql", {
+    q: "select * from csv where url='https://www.youtube.com/get_video_info?video_id=" + vid + "'",
+    format: "json"
+}, function(data) {
+    if (data.query.results && !data.query.results.row.length) {
+        streams = parse_youtube_meta(data.query.results.row.col0);
+        video_tag.attr({
+            src: streams['1080p'] || streams['720p'] || streams['360p']
+        });
+
+        document.addEventListener("visibilitychange", function() {
+            video_focused = !video_focused ? video_obj.play() : video_obj.pause();
+        });
+    } else {
+            $('pre').text('YQL request error...');
+    }
+});
+
+function parse_youtube_meta(rawdata) {
+    var data = parse_str(rawdata),
+        streams = (data.url_encoded_fmt_stream_map + ',' + data.adaptive_fmts).split(','),
+        result = {};
+    $.each(streams, function(n, s) {
+        var stream = parse_str(s),
+            itag = stream.itag * 1,
+            quality = false,
+            itag_map = {
+                18: '360p',
+                22: '720p',
+                37: '1080p',
+                38: '3072p',
+                82: '360p3d',
+                83: '480p3d',
+                84: '720p3d',
+                85: '1080p3d',
+                133: '240pna',
+                134: '360pna',
+                135: '480pna',
+                136: '720pna',
+                137: '1080pna',
+                264: '1440pna',
+                298: '720p60',
+                299: '1080p60na',
+                160: '144pna',
+                139: "48kbps",
+                140: "128kbps",
+                141: "256kbps"
+            };
+        //if (stream.type.indexOf('o/mp4') > 0) console.log(stream);
+        if (itag_map[itag]) result[itag_map[itag]] = stream.url;
+    });
+    return result;
+};
+
+function parse_str(str) {
+    return str.split('&').reduce(function(params, param) {
+        var paramSplit = param.split('=').map(function(value) {
+            return decodeURIComponent(value.replace('+', ' '));
+        });
+        params[paramSplit[0]] = paramSplit[1];
+        return params;
+    }, {});
+}
+
+</script>
+
+
 
 
 

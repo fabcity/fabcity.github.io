@@ -1,0 +1,35 @@
+<section id="{{ include.texts.id }}">
+    <div class="container">
+        <div class="row no-side-margin">
+            <div class="col-md-5 project-gallery-texts float-left">
+                <div class="row no-side-margin">
+                    {% if include.texts.hastitle == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">{{ include.texts.title }}</p>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hasdescription == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">{{ include.texts.description }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="row no-side-margin">
+            <div class="col-md-6 documentation-box text-right">
+                <p class="documentation-link">blog.</p>
+            </div>
+            <div class="col-md-6 text-left">
+                <p class="documentation-link">Twitter.</p>
+            </div>
+        </div>
+    </div> <!--close container -->
+</section>
+
+
+
+
+
+
+

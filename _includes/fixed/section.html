@@ -1,0 +1,97 @@
+<section id="{{ include.texts.id }}">
+    <div class="container">
+        <div class="row no-side-margin section-row">
+            {% if include.texts.orientation == 'normal' %}
+            <div class="col-md-6 section-texts float-left">
+                <div class="row no-side-margin">
+                    {% if include.texts.haslargetitle == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <h1 class="section-title">{{ include.texts.largetitle }}</h1>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hassmalltitle == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">{{ include.texts.smalltitle }}</p>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hasdescription == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">{{ include.texts.description }}</p>
+                    </div>
+                    {% endif %}
+
+                    {% if include.texts.hasbutton == true %}
+                    <div class="button-area">
+                        <div class="col-md-12 no-side-padding text-right">
+                            <p class="action"> {{ include.texts.buttonaction }}</p> 
+                        </div>
+                        <div class="col-md-12 no-side-padding text-right">
+                        {% if include.texts.sectioncolor == 'blue' %}
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn blue" target="_blank">{{ include.texts.buttontitle }}</a>
+                        {% elsif include.texts.sectioncolor == 'yellow' %}
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn yellow" target="_blank">{{ include.texts.buttontitle }}</a>
+                        {% else %}
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn green" target="_blank">{{ include.texts.buttontitle }}</a>
+                        {% endif %}
+                        </div>
+                        <div class="col-md-12 no-side-padding">
+                            <a href="{{ include.texts.buttonlink }}"><div class="" style="width: 19px; height: 17px; float:right;"><img src="{{ site.baseurl }}/uploads/download-icon.png"></div></a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class= "col-md-6 no-side-padding">
+                <img class="img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
+            </div>
+
+            {% else %}
+             <div class= "col-md-6 no-side-padding">
+                <img class="img-left" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
+            </div>
+            <div class="col-md-6 section-texts float-right">
+                <div class="row no-side-margin">
+                    {% if include.texts.haslargetitle == true %}
+                    <div class="col-md-12 no-side-padding">
+                        <h1 class="section-title">{{ include.texts.largetitle }}</h1>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hassmalltitle == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">{{ include.texts.smalltitle }}</p>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hasdescription == true %}
+                    <div class="col-md-12 no-side-padding">
+                        <p class="section-description">{{ include.texts.description }}</p>
+                    </div>
+                    {% endif %}
+
+                    {% if include.texts.hasbutton == true %}
+                    <div class="button-area">
+                        <div class="col-md-12 no-side-padding text-right">
+                            <p class="action"> {{ include.texts.buttonaction }}</p> 
+                        </div>
+                        <div class="col-md-12 no-side-padding text-right">
+                        {% if include.texts.sectioncolor == 'blue' %}
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn blue" target="_blank">{{ include.texts.buttontitle }}</a>
+                        {% elsif include.texts.sectioncolor == 'yellow'  %}
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn yellow" target="_blank">{{ include.texts.buttontitle }}</a>
+                        {% else %}
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn green" target="_blank">{{ include.texts.buttontitle }}</a>
+                        {% endif %}
+                        </div>
+                        <div class="col-md-12 no-side-padding">
+                            <a href="{{ include.texts.buttonlink }}"><div class="" style="width: 19px; height: 17px; float:right;"><img src="{{ site.baseurl }}/uploads/download-icon.png"></div></a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+        </div><!--close section content row -->    
+    </div> <!--close container -->
+</section>
+
+
+

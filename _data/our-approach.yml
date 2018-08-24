@@ -1,0 +1,14 @@
+id: "approach"
+orientation: normal
+sectioncolor: green
+image: 'approach.jpg'
+haslargetitle: true
+largetitle: 'Our Approach'
+hassmalltitle: false
+smalltitle: ''
+hasdescription: true
+description: "We apply our vision and values in a full stack model. From the local to the global, we work across multiple layers of practice and deployment, scaling the FabLab approach to a city and systems level."
+hasbutton: true
+buttonaction: "See the"
+buttontitle: "Full Stack"
+buttonlink: "uploads/"

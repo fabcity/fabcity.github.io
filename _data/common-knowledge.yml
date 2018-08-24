@@ -1,0 +1,14 @@
+id: "common-knowledge"
+orientation: normal
+sectioncolor: 'green'
+image: 'common-knowledge.jpg'
+haslargetitle: false
+smalltitle: ''
+hassmalltitle: true
+smalltitle: 'Common knowledge'
+hasdescription: true
+description: "As a global network, we are connected through the knowledge we share, across common tools and platforms."
+hasbutton: true
+buttonaction: "Download the"
+buttontitle: "Slide Deck"
+buttonlink: "uploads/"

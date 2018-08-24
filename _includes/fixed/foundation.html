@@ -1,0 +1,35 @@
+<section id="{{ include.texts.id }}">
+    <div class="container">
+        <div class="row no-side-margin">
+            <div class="col-md-5 float-left">
+                <div class="row no-side-margin">
+                    {% if include.texts.hastitle == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">{{ include.texts.title }}</p>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hasdescription == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">{{ include.texts.description }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3">
+               <img class="sponsor-img" src="{{ site.baseurl }}/uploads/logoCBA.jpg">
+                <img class="sponsor-img" src="{{ site.baseurl }}/uploads/fabfoundation.svg">
+                <img class="sponsor-img" src="{{ site.baseurl }}/uploads/iaac.png">
+            </div>
+            <div class="col-md-4 text-right">
+
+                    <p class="action"> {{ include.texts.buttonaction }} <br></p> 
+                    <a href="{{ include.texts.buttonlink }}" class="page-scroll btn blue" target="_blank">{{ include.texts.buttontitle }}</a>
+
+            </div>
+        </div>
+        <div class="row no-side-margin">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div> <!--close container -->
+</section>

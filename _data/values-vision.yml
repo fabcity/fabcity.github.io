@@ -1,0 +1,14 @@
+id: "values-vision"
+orientation: normal
+sectioncolor: yellow
+image: 'values.png'
+haslargetitle: true
+largetitle: 'Values & Vision'
+hassmalltitle: false
+smalltitle: ''
+hasdescription: true
+description: "We manifest our values and vision as a community of practice."
+hasbutton: true
+buttonaction: "Read the"
+buttontitle: "Manifesto"
+buttonlink: "uploads/whitepaper.pdf"

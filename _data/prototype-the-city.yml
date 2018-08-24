@@ -1,0 +1,24 @@
+id: "prototype-the-city"
+hastitle: true
+title: 'Prototype the city'
+hasdescription: true
+description: "We engage in action-research directly in the city by prototyping and deploying strategies across localities in our network."
+projects:
+  - title: "REMODEL, Danish Design Centre"
+    url: 'https://danskdesigncenter.dk/en/remodel'
+    img: 'remodel.png'
+  - title: "Smart Citizen"
+    url: 'https://smartcitizen.me/'
+    img: 'remodel.png'
+  - title: "Making Sense"
+    url: 'http://making-sense.eu/'
+    img: 'remodel.png'
+  - title: "REMODEL, Danish Design Centre"
+    url: 'https://danskdesigncenter.dk/en/remodel'
+    img: 'remodel.png'
+  - title: "Smart Citizen"
+    url: 'https://smartcitizen.me/'
+    img: 'remodel.png'
+  - title: "Making Sense"
+    url: 'http://making-sense.eu/'
+    img: 'remodel.png'
