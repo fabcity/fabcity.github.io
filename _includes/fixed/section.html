@@ -2,20 +2,20 @@
     <div class="container">
         <div class="row no-side-margin section-row">
             {% if include.texts.orientation == 'normal' %}
-            <div class="col-md-6 section-texts float-left">
+            <div class="col-sm-6 col-md-6 section-texts float-left">
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
-                    <div class="col-md-8 no-side-padding">
+                    <div class="col-sm-8 col-md-8 no-side-padding">
                         <h1 class="section-title">{{ include.texts.largetitle }}</h1>
                     </div>
                     {% endif %}
                     {% if include.texts.hassmalltitle == true %}
-                    <div class="col-md-8 no-side-padding">
+                    <div class="col-sm-8 col-md-8 no-side-padding">
                         <p class="section-small-title">{{ include.texts.smalltitle }}</p>
                     </div>
                     {% endif %}
                     {% if include.texts.hasdescription == true %}
-                    <div class="col-md-8 no-side-padding">
+                    <div class="col-sm-8 col-md-8 no-side-padding">
                         <p class="section-description">{{ include.texts.description }}</p>
                     </div>
                     {% endif %}
@@ -41,15 +41,15 @@
                     {% endif %}
                 </div>
             </div>
-            <div class= "col-md-6 no-side-padding">
+            <div class= "col-sm-6 col-md-6 no-side-padding">
                 <img class="img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
             </div>
 
             {% else %}
-             <div class= "col-md-6 no-side-padding">
+             <div class= "col-sm-6 col-md-6 no-side-padding">
                 <img class="img-left" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
             </div>
-            <div class="col-md-6 section-texts float-right">
+            <div class="col-sm-6 col-md-6 section-texts float-right">
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
                     <div class="col-md-12 no-side-padding">

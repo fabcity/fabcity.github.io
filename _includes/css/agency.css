@@ -77,8 +77,8 @@ body {
 
 .container {
 /*padding-left: 40px;
-    padding-right: 40px;*/
-    overflow: hidden;
+    padding-right: 40px;
+    overflow: hidden;*/
 }
 
 
@@ -1011,7 +1011,14 @@ section .project-gallery-texts {
 }
 
 
+/*// GLOBAL INITIATIVE //*/
+.globe-img {
+    margin-left: -70px;
+}
 
+.cities-list {
+    list-style: none;
+}
 
 /* TO DELETE ////*/
 
