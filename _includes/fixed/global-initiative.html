@@ -29,14 +29,24 @@
                     <p class="section-description">{{ include.texts.description }}</p>
                 </div>
                 <div class="col-md-12 no-side-padding">
-                    <div class="col-md-6 no-side-padding text-right">
-                        <ul class="cities-list">
-                            <li>Barcelona </li>
-                        </ul> 
+                    <div class="col-md-6 no-side-padding">
+                         {% for city in include.texts.cities %}
+                             {% if city.place == 'left' %}
+                            <ul class="cities-list">
+                                <li class="cities-left">{{ city.name }} </li>
+                            </ul> 
+                            {% endif %}
+                        {% endfor %}
                     </div>
-                    <div class="col-md-6 no-side-padding text-left">
+                    <div class="col-md-6 no-side-padding">
                         <ul class="cities-list">
-                            <li>Belo-Horizonte </li>
+                        {% for city in include.texts.cities %}
+                            {% if city.place == 'right' %}
+                            <ul class="cities-list">
+                                <li class="cities-right">{{ city.name }} </li>
+                            </ul> 
+                            {% endif %}
+                        {% endfor %}
                         </ul>
                     </div>
 

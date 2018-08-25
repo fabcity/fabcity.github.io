@@ -7,3 +7,8 @@ hassmalltitle: true
 smalltitle: 'Fab City Network'
 hasdescription: true
 description: "Core to the initiative is a network of cities, regions and countries that have pledged to work towards producing everything they consume by 2054. Citizens, FabLabs and City officials collaborate locally to implement new urban models through interventions in governance and policy."
+cities:
+  - name: "Barcelona"
+    place: left
+  - name: "Belo-Horizonte"
+    place: right

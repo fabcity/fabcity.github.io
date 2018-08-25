@@ -239,6 +239,15 @@ p {
     margin-bottom: 10px;
 }
 
+.text-right {
+    text-align: right;
+
+}
+
+.text-left {
+    text-align: left;
+}
+
 /* To delete */
 
 section .quote-title {
@@ -1018,6 +1027,21 @@ section .project-gallery-texts {
 
 .cities-list {
     list-style: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+.cities-left {
+    text-align: right;
+    padding-right: 8px;
+}
+
+.cities-right {
+    text-align: left;
+    padding-left: 8px;
 }
 
 /* TO DELETE ////*/
