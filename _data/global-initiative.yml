@@ -10,5 +10,57 @@ description: "Core to the initiative is a network of cities, regions and countri
 cities:
   - name: "Barcelona"
     place: left
+  - name: "Zagreb"
+    place: left
+  - name: "Bhutan"
+    place: left
+  - name: "Shenzhen"
+    place: left
+  - name: "Georgia"
+    place: left
+  - name: "Curitiba"
+    place: left
+  - name: "Occitanie Region"
+    place: left
+  - name: "Puebla"
+    place: left
+  - name: "Mexico City"
+    place: left
+  - name: "Auvergne-Rhône-Alpes"
+    place: left
+  - name: "Amsterdam"
+    place: left
+  - name: "Cambridge"
+    place: left
+  - name: "Kerala"
+    place: left
+  - name: "Sacramento"
+    place: left
   - name: "Belo-Horizonte"
+    place: right
+  - name: "Ekurhuleni"
+    place: right
+  - name: "Brest"
+    place: right
+  - name: "Boston"
+    place: right
+  - name: "Toulouse"
+    place: right
+  - name: "Paris"
+    place: right
+  - name: "Santiago de Chile"
+    place: right
+  - name: "Velsen"
+    place: right
+  - name: "Seoul"
+    place: right
+  - name: "Oakland"
+    place: right
+  - name: "Somerville"
+    place: right
+  - name: "Detroit"
+    place: right
+  - name: "Kamakura"
+    place: right
+  - name: "Sorocaba"
     place: right

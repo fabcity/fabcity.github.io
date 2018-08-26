@@ -1027,6 +1027,7 @@ section .project-gallery-texts {
 
 .cities-list {
     list-style: none;
+    font-size: 14px;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
