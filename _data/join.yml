@@ -15,3 +15,6 @@ hasbutton: false
 buttonaction: ""
 buttontitle: ""
 buttonlink: ""
+hasextraaction: false
+extraaction: ''
+extraactionlink: ''

@@ -678,7 +678,7 @@ section .quote-box .quote-highlight {
     font-size: 23px;
     line-height: 32px;
     padding: 20px;
-    margin-right: -80px;
+    margin-right: -70px;
     margin-bottom: 0px;
     font-weight: 400;
     font-family: {{ site.data.template.font.primary }};
@@ -697,7 +697,7 @@ section .float-left {
 }
 
 section .section-row {
-    display: flex;
+    /*display: flex;*/
 }
 
 section .section-texts {
@@ -720,14 +720,29 @@ section .section-small-title {
     font-family: {{ site.data.template.font.primary }};
 }
 
-s    font-size: 16px;
-    
+section .section-description {
+    font-size: 16px;
 }
 
 section .button-area {
     position: absolute;
     bottom: 0;
     right: 15px;
+}
+
+section .extra-action {
+    float: right;
+    margin-top: 15px;
+}
+
+section .extra-action a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding-bottom: 3px;
+    background: linear-gradient(to right, rgb(255,239,25) 0%, rgb(255,239,25) 100%);
+    background-size: 1px 3px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
 }
 
 

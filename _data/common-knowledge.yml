@@ -15,3 +15,6 @@ hasbutton: true
 buttonaction: "Download the"
 buttontitle: "Slide Deck"
 buttonlink: "uploads/"
+hasextraaction: false
+extraaction: ''
+extraactionlink: ''

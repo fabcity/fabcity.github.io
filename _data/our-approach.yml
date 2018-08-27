@@ -15,3 +15,6 @@ hasbutton: true
 buttonaction: "See the"
 buttontitle: "Full Stack"
 buttonlink: "uploads/"
+hasextraaction: false
+extraaction: ''
+extraactionlink: ''

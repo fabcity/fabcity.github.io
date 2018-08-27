@@ -1,5 +1,6 @@
 <section id="{{ include.texts.id }}">
     <div class="container">
+        <!--Orientation 'normal' text first, photo after-->
         <div class="row no-side-margin section-row">
             {% if include.texts.orientation == 'normal' %}
             <div class="col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;">
@@ -43,7 +44,6 @@
                     {% endif %}
                 </div>
             </div>
-
             <div class= "col-sm-6 col-md-6 no-side-padding">
                 {% if include.texts.hascolorbg == true %}
                     {% if include.texts.sectioncolor == 'blue' %}
@@ -58,8 +58,18 @@
                 {% endif %}
                 <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
             </div>
-           
-            {% else %}
+        </div>
+        {% if include.texts.hasextraaction == true %}
+            <div class="row no-side-margin text-right">
+                <div class= "col-sm-2 col-md-2 extra-action">
+                    <a href="">{{ include.texts.extraaction }}</a>
+                </div>
+            </div>
+        {% endif %}
+        {% else %}
+
+        <!--Orientation 'inverted' photo first, text after-->
+        <div class="row no-side-margin section-row">
              <div class= "col-sm-6 col-md-6 no-side-padding">
                 {% if include.texts.hascolorbg == true %}
                     {% if include.texts.sectioncolor == 'blue' %}
@@ -116,8 +126,8 @@
                     {% endif %}
                 </div>
             </div>
-            {% endif %}
-        </div><!--close section content row -->    
+        </div><!--close section content row --> 
+        {% endif %}   
     </div> <!--close container -->
 </section>
 

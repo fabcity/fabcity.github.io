@@ -15,3 +15,6 @@ hasbutton: true
 buttonaction: "Read the"
 buttontitle: "Manifesto"
 buttonlink: "uploads/whitepaper.pdf"
+hasextraaction: true
+extraaction: 'To check out more photos...'
+extraactionlink: ''
