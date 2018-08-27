@@ -1,18 +1,28 @@
-<section id="intro">
+<section id="{{ include.texts.id }}">
     <div class="container">
-        <div class="quote-box">
-            <p class="quote">Currently, cities occupy <span>2%</span> of the earth's surface to house 1/2 of world population</p>
-            <p class="quote">The are responsible for <span>67%</span> of global energy consumption</p>
-            <p class="quote">and <span>70%</span> of global waste generation</p>
-            <p class="quote">in 2050, it is expected that <span>2/3</span> of the global population will live in cities.</p>
-            <p class="quote-highlight text-center">We are shifting the paradigm PITO to DIDO to enable cities to produce everything they consume by 2054</p>
+        <div class="col-sm-6 col-md-6 section-texts float-left quote-box"  style="height: {{ include.texts.imgheight }}px;">
+            <div class="row no-side-margin">
+                <p class="quote">Currently, cities occupy <span>2%</span> of the earth's surface to house 1/2 of world population</p>
+                <p class="quote">The are responsible for <span>67%</span> of global energy consumption</p>
+                <p class="quote">and <span>70%</span> of global waste generation</p>
+                <p class="quote">in 2050, it is expected that <span>2/3</span> of the global population will live in cities.</p>
+                <p class="quote-highlight text-center">We are shifting the paradigm PITO to DIDO to enable cities to produce everything they consume by 2054</p>
+            </div>
         </div>
-        <div class= "img-block blue img-right">
-            <!--<div class="bg-plain blue"></div>-->
-            <div class="img-medium img-cover" style="background-image: url('{{ site.baseurl }}/uploads/city-panorama.jpg');">
+
+        <div class= "col-sm-6 col-md-6 no-side-padding">
+            {% if include.texts.sectioncolor == 'blue' %}
+                <div class="plain-bg blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+            {% elsif include.texts.sectioncolor == 'yellow' %}
+                <div class="plain-bg yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+            {% elsif include.texts.sectioncolor == 'red' %}
+                <div class="plain-bg red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+            {% else %}
+                <div class="plain-bg green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+            {% endif %}
+            <img class="section-img img-right" src="{{ site.baseurl }}/uploads/city-panorama.jpg">
         </div>
+
     </div> <!--close container -->
 </section>
-
-
 

@@ -1,7 +1,10 @@
 id: "join"
 orientation: inverted
 sectioncolor: 'green'
+hascolorbg: true
 image: 'join.jpg'
+imgwidth: '342'
+imgheight: '513'
 haslargetitle: true
 largetitle: 'Join'
 hassmalltitle: true

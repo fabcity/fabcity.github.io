@@ -1,7 +1,10 @@
 id: "approach"
 orientation: normal
 sectioncolor: green
+hascolorbg: true
 image: 'approach.jpg'
+imgwidth: '494'
+imgheight: '396'
 haslargetitle: true
 largetitle: 'Our Approach'
 hassmalltitle: false

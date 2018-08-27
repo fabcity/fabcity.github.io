@@ -1,7 +1,10 @@
 id: "values-vision"
 orientation: normal
 sectioncolor: yellow
+hascolorbg: false
 image: 'values.png'
+imgwidth: '477'
+imgheight: '530'
 haslargetitle: true
 largetitle: 'Values & Vision'
 hassmalltitle: false

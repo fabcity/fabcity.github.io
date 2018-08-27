@@ -1,7 +1,10 @@
 id: "common-knowledge"
 orientation: normal
 sectioncolor: 'green'
+hascolorbg: true
 image: 'common-knowledge.jpg'
+imgwidth: '586'
+imgheight: '391'
 haslargetitle: false
 smalltitle: ''
 hassmalltitle: true

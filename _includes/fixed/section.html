@@ -2,20 +2,20 @@
     <div class="container">
         <div class="row no-side-margin section-row">
             {% if include.texts.orientation == 'normal' %}
-            <div class="col-sm-6 col-md-6 section-texts float-left">
+            <div class="col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;">
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
-                    <div class="col-sm-8 col-md-8 no-side-padding">
+                    <div class="col-md-12 no-side-padding">
                         <h1 class="section-title">{{ include.texts.largetitle }}</h1>
                     </div>
                     {% endif %}
                     {% if include.texts.hassmalltitle == true %}
-                    <div class="col-sm-8 col-md-8 no-side-padding">
+                    <div class="col-md-8 no-side-padding">
                         <p class="section-small-title">{{ include.texts.smalltitle }}</p>
                     </div>
                     {% endif %}
                     {% if include.texts.hasdescription == true %}
-                    <div class="col-sm-8 col-md-8 no-side-padding">
+                    <div class="col-md-12 no-side-padding">
                         <p class="section-description">{{ include.texts.description }}</p>
                     </div>
                     {% endif %}
@@ -28,8 +28,10 @@
                         <div class="col-md-12 no-side-padding text-right">
                         {% if include.texts.sectioncolor == 'blue' %}
                             <a href="{{ include.texts.buttonlink }}" class="page-scroll btn blue" target="_blank">{{ include.texts.buttontitle }}</a>
-                        {% elsif include.texts.sectioncolor == 'yellow' %}
+                        {% elsif include.texts.sectioncolor == 'yellow'  %}
                             <a href="{{ include.texts.buttonlink }}" class="page-scroll btn yellow" target="_blank">{{ include.texts.buttontitle }}</a>
+                        {% elsif include.texts.sectioncolor == 'red'  %}
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn red" target="_blank">{{ include.texts.buttontitle }}</a>
                         {% else %}
                             <a href="{{ include.texts.buttonlink }}" class="page-scroll btn green" target="_blank">{{ include.texts.buttontitle }}</a>
                         {% endif %}
@@ -41,15 +43,39 @@
                     {% endif %}
                 </div>
             </div>
-            <div class= "col-sm-6 col-md-6 no-side-padding">
-                <img class="img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
-            </div>
 
+            <div class= "col-sm-6 col-md-6 no-side-padding">
+                {% if include.texts.hascolorbg == true %}
+                    {% if include.texts.sectioncolor == 'blue' %}
+                        <div class="plain-bg plain-bg-right blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    {% elsif include.texts.sectioncolor == 'yellow' %}
+                        <div class="plain-bg plain-bg-right yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    {% elsif include.texts.sectioncolor == 'red' %}
+                        <div class="plain-bg plain-bg-right red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    {% else %}
+                        <div class="plain-bg plain-bg-right green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    {% endif %}
+                {% endif %}
+                <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
+            </div>
+           
             {% else %}
              <div class= "col-sm-6 col-md-6 no-side-padding">
-                <img class="img-left" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
+                {% if include.texts.hascolorbg == true %}
+                    {% if include.texts.sectioncolor == 'blue' %}
+                        <div class="plain-bg plain-bg-left blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    {% elsif include.texts.sectioncolor == 'yellow' %}
+                        <div class="plain-bg plain-bg-left yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    {% elsif include.texts.sectioncolor == 'red' %}
+                        <div class="plain-bg plain-bg-left red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    {% else %}
+                        <div class="plain-bg plain-bg-left green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    {% endif %}
+                {% endif %}
+
+                <img class="section-img img-left" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
             </div>
-            <div class="col-sm-6 col-md-6 section-texts float-right">
+            <div class="col-sm-6 col-md-6 section-texts float-right" style="height: {{ include.texts.imgheight }}px;">
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
                     <div class="col-md-12 no-side-padding">
