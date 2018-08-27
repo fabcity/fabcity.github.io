@@ -1,6 +1,7 @@
 id: "intro"
 sectioncolor: 'blue'
-image: 'challenge.jpg'
+hascolorbg: true
+image: 'city-panorama.jpg'
 imgwidth: '492'
 imgheight: '535'
 haslargetitle: true

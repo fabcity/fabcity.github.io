@@ -11,16 +11,18 @@
         </div>
 
         <div class= "col-sm-6 col-md-6 no-side-padding">
-            {% if include.texts.sectioncolor == 'blue' %}
-                <div class="plain-bg blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
-            {% elsif include.texts.sectioncolor == 'yellow' %}
-                <div class="plain-bg yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
-            {% elsif include.texts.sectioncolor == 'red' %}
-                <div class="plain-bg red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
-            {% else %}
-                <div class="plain-bg green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+            {% if include.texts.hascolorbg == true %}
+                {% if include.texts.sectioncolor == 'blue' %}
+                    <div class="plain-bg plain-bg-right blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                {% elsif include.texts.sectioncolor == 'yellow' %}
+                    <div class="plain-bg plain-bg-right yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                {% elsif include.texts.sectioncolor == 'red' %}
+                    <div class="plain-bg plain-bg-right red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                {% else %}
+                    <div class="plain-bg plain-bg-right green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                {% endif %}
             {% endif %}
-            <img class="section-img img-right" src="{{ site.baseurl }}/uploads/city-panorama.jpg">
+            <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
         </div>
 
     </div> <!--close container -->
