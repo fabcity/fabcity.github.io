@@ -67,7 +67,6 @@
             </div>
         {% endif %}
         {% else %}
-
         <!--Orientation 'inverted' photo first, text after-->
         <div class="row no-side-margin section-row">
             <div class= "col-sm-6 col-md-6 no-side-padding">
@@ -139,8 +138,22 @@
                     <a href="">{{ include.texts.extraaction }}</a>
                 </div>
             </div>
+        {% endif %}  <!-- Endif Extra Action Button -->
+        {% endif %}  <!-- Endif Orientation condition -->
+
+        {% if include.texts.hasdivisionline == true %}
+            <div class="row no-side-margin text-center" style="margin-top: 110px">
+                {% if include.texts.sectioncolor == 'blue' %}
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="504px" height="24px"><path d="M0 12 L504 12" style="fill:none; stroke:rgb(20, 4, 104);stroke-width:4;"></path></svg>
+                {% elsif include.texts.sectioncolor == 'yellow'  %}
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="504px" height="24px"><path d="M0 12 L504 12" style="fill:none; stroke:rgb(255,239,25);stroke-width:4;"></path></svg>
+                {% elsif include.texts.sectioncolor == 'red'  %}
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="504px" height="24px"><path d="M0 12 L504 12" style="fill:none; stroke:rgb(193,15,24);stroke-width:4;"></path></svg>
+                {% else %}
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="504px" height="24px"><path d="M0 12 L504 12" style="fill:none; stroke:rgb(24,165,55);stroke-width:4;"></path></svg>
+            </div>
+            {% endif %}
         {% endif %}
-        {% endif %}   
     </div> <!--close container -->
 </section>
 

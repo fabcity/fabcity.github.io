@@ -18,3 +18,4 @@ buttonlink: "uploads/whitepaper.pdf"
 hasextraaction: true
 extraaction: 'To check out more photos...'
 extraactionlink: ''
+hasdivisionline: true
