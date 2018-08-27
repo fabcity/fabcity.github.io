@@ -739,7 +739,6 @@ section .button-area {
 }
 
 section .extra-action {
-    float: right;
     margin-top: 15px;
 }
 

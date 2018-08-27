@@ -61,7 +61,7 @@
         </div>
         {% if include.texts.hasextraaction == true %}
             <div class="row no-side-margin text-right">
-                <div class= "col-sm-2 col-md-2 extra-action">
+                <div class= "col-sm-2 col-md-2 extra-action" style="float: right;">
                     <a href="">{{ include.texts.extraaction }}</a>
                 </div>
             </div>
@@ -70,7 +70,7 @@
 
         <!--Orientation 'inverted' photo first, text after-->
         <div class="row no-side-margin section-row">
-             <div class= "col-sm-6 col-md-6 no-side-padding">
+            <div class= "col-sm-6 col-md-6 no-side-padding">
                 {% if include.texts.hascolorbg == true %}
                     {% if include.texts.sectioncolor == 'blue' %}
                         <div class="plain-bg plain-bg-left blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
@@ -99,7 +99,13 @@
                     {% endif %}
                     {% if include.texts.hasdescription == true %}
                     <div class="col-md-12 no-side-padding">
-                        <p class="section-description">{{ include.texts.description }}</p>
+                        <div class="col-md-2">
+                            <div style="left: 0px; top: 0px; width: 42px; height: 24px; z-index: 131;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(20,4,104);stroke-width:4"></path></svg>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="section-description">{{ include.texts.description }}</p>
+                        </div>
                     </div>
                     {% endif %}
 
@@ -127,6 +133,13 @@
                 </div>
             </div>
         </div><!--close section content row --> 
+        {% if include.texts.hasextraaction == true %}
+            <div class="row no-side-margin text-left">
+                <div class= "col-sm-2 col-md-2 extra-action" style="float: left;">
+                    <a href="">{{ include.texts.extraaction }}</a>
+                </div>
+            </div>
+        {% endif %}
         {% endif %}   
     </div> <!--close container -->
 </section>
