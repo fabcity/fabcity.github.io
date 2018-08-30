@@ -9,38 +9,29 @@
 <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
 <!--<script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>-->
 
-<!-- Contact Form JavaScript -->
-<script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
 
-<!--Iscroll for horizontal slide menus
-<script src="{{ "/js/iscroll.js" | prepend: site.baseurl }}"></script>
--->
 
-<!--Twitter call for last tweet home mosaic
-<script src="{{ "/js/twitter-call.js" | prepend: site.baseurl }}"></script>-->
+<!--Parallax -->
 
-
-<!-- Slow Appear -->
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script type="text/javascript" src="{{ "/js/demoutils.js" | prepend: site.baseurl }}"></script>
-
-<!-- Parallax 
-<script src="{{ "/js/parallax.min.js" | prepend: site.baseurl }}"></script>-->
+<script src="{{ "/js/skrollr.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+</script>
 
 <!-- Countdown -->
 <script src="{{ "/js/jquery.countdown.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/countdown.js" | prepend: site.baseurl }}"></script>
 
 
-<!--Globe -->
+<!--Globe 
 <script src="https://www.webglearth.com/v2/api.js" data-turbolinks-track="true"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js" data-turbolinks-track="true"></script>
 <script src="{{ "/js/globe.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/map.js" | prepend: site.baseurl }}"></script>
+-->
 
 <!--slider-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -54,7 +45,6 @@ $('.slidewrapper').slick({
 
 
 
-
 <script type="text/javascript">
 $('.carousel').carousel({
     interval: 3000 //changes the speed
@@ -62,12 +52,15 @@ $('.carousel').carousel({
 </script>
 
 
+<!--Old ff stuff? Slow Appear 
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript" src="{{ "/js/demoutils.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
 AOS.init({
     duration: 1200,
 })
 </script>
-
 
 <script>
 function openNav() {
@@ -78,19 +71,9 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 </script>
-
-<!--
-<script>
-// Parallax.js
-var scene = document.getElementById('scene');
-var parallax = new Parallax(scene);
-</script>
-
-P5_GlAOCHyE
-dd4Lnrn26oI
-29V4HKJpBOY
-7pU_VWZoAMk
 -->
+
+<!--Youtube video -->
 
 <script type="text/javascript">
 
@@ -166,7 +149,7 @@ function parse_str(str) {
 </script>
 
 
-
+<!--Cities script test -->
 <script>
     $('.item div').hide();
 

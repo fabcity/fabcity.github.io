@@ -1,50 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-   {% include fixed/head.html %}
-    <body id="page-top" class="index" onload="loaded()">
-    <div id="frame">
-        <div class="top-left-corner"></div>
-        <div class="top-right-corner"></div>
-        <div class="bottom-left-corner"></div>
-        <div class="bottom-right-corner"></div>
-    </div>  
-    {% include fixed/navbar.html %}
-    
-    <header id="{{ page.id }}">  
-    	<div class="container">
-            <div id="{{ page.id }}-intro" class="page-header">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="page-heading" style="font-size: 1.7em;">{{ page.title }}</h2>
-                    </div>
-                </div>
-            </div> <!--close section-intro-->
-        </div> <!-- close container -->
-        {% if page.hasdescription == true %}
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 body-text">
-                    {% for p in page.description %}
-                    <p class="page-text"> {{ p.paragraph }} </p>
-                    {% endfor %}
-                </div>
-                <div class="col-md-12">
-                    <a href="{{ site.baseurl }}/documents/whitepaper.pdf" class="page-scroll btn btn-clear" target="_blank">Download White Paper</a>
-                </div>
-            </div>
-        </div> <!-- close container -->
-        {% endif %}
+  {% include fixed/head.html %}
+  {% include fixed/navbar.html %}
 
-        <div class="bg-plain-page page-header-bg blue"></div>
-        <div class="bg-img page-header-bg-img img-cover" style="background-image: url('{{ site.baseurl }}/img/general/{{ page.headerimg }}');"></div>
-    </header>
-    
+
+    <body id="page-top" class="index" onload="loaded()">
+
+
     {{ content }}
- 
-    {% include fixed/get-involved.html %}
-    {% include fixed/subscribe.html %}
-    {% include fixed/footer.html %}
+    
+
     {% include fixed/js.html %}
 
 
