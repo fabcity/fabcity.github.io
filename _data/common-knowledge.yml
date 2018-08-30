@@ -1,7 +1,7 @@
 id: "common-knowledge"
 orientation: normal
 sectioncolor: 'green'
-hascolorbg: false
+hascolorbg: true
 image: 'common-knowledge.jpg'
 imgwidth: '586'
 imgheight: '391'

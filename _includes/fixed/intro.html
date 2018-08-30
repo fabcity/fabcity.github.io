@@ -13,13 +13,13 @@
         <div class= "col-sm-6 col-md-6 no-side-padding">
             {% if include.texts.hascolorbg == true %}
                 {% if include.texts.sectioncolor == 'blue' %}
-                    <div class="plain-bg plain-bg-right blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    <div class="plain-bg plain-bg-right blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
                 {% elsif include.texts.sectioncolor == 'yellow' %}
-                    <div class="plain-bg plain-bg-right yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    <div class="plain-bg plain-bg-right yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
                 {% elsif include.texts.sectioncolor == 'red' %}
-                    <div class="plain-bg plain-bg-right red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    <div class="plain-bg plain-bg-right red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
                 {% else %}
-                    <div class="plain-bg plain-bg-right green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                    <div class="plain-bg plain-bg-right green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
                 {% endif %}
             {% endif %}
             <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">

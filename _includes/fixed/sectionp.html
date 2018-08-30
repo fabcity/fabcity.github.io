@@ -47,13 +47,13 @@
             <div class= "col-sm-6 col-md-6 no-side-padding">
                 {% if include.texts.hascolorbg == true %}
                     {% if include.texts.sectioncolor == 'blue' %}
-                        <div class="plain-bg plain-bg-right blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                        <div class="plain-bg plain-bg-right blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-top="margin-top: 10px;" data-bottom="margin-top: 50px;"> </div>
                     {% elsif include.texts.sectioncolor == 'yellow' %}
-                        <div class="plain-bg plain-bg-right yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                        <div class="plain-bg plain-bg-right yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-top="margin-top: 10px;" data-bottom="margin-top: 50px;"> </div>
                     {% elsif include.texts.sectioncolor == 'red' %}
-                        <div class="plain-bg plain-bg-right red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                        <div class="plain-bg plain-bg-right red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-top="margin-top: 10px;" data-bottom="margin-top: 50px;"> </div>
                     {% else %}
-                        <div class="plain-bg plain-bg-right green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                        <div class="plain-bg plain-bg-right green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 10px;" data-top="margin-top: 30px;"> </div>
                     {% endif %}
                 {% endif %}
                 <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
@@ -72,15 +72,13 @@
             <div class= "col-sm-6 col-md-6 no-side-padding">
                 {% if include.texts.hascolorbg == true %}
                     {% if include.texts.sectioncolor == 'blue' %}
-                        <div class="plain-bg plain-bg-left blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-0="margin-top: 10px;" data-500="margin-top: 50px;"> </div>
-                        <!--
-                        <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>-->
+                        <div class="plain-bg plain-bg-left blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-top="margin-top: 10px;" data-bottom="margin-top: 50px;"> </div>
                     {% elsif include.texts.sectioncolor == 'yellow' %}
-                        <div class="plain-bg plain-bg-left yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                        <div class="plain-bg plain-bg-left yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-top="margin-top: 10px;" data-bottom="margin-top: 50px;"> </div>
                     {% elsif include.texts.sectioncolor == 'red' %}
-                        <div class="plain-bg plain-bg-left red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                        <div class="plain-bg plain-bg-left red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-0="margin-top: 10px;" data-top="margin-top: 10px;" data-bottom="margin-top: 50px;"> </div>
                     {% else %}
-                        <div class="plain-bg plain-bg-left green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"> </div>
+                        <div class="plain-bg plain-bg-left green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-top="margin-top: 10px;" data-bottom="margin-top: 50px;"> </div>
                     {% endif %}
                 {% endif %}
 
