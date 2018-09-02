@@ -1158,4 +1158,5 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #f7efef;
+    height: auto !important; 
 }
