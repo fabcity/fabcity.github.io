@@ -18,18 +18,20 @@
         </div>
 
         <!--project slider-->
-        <div class="slidewrapper">
-            {% for project in include.texts.projects %}
-                    <div class="project-box">
-                        <a href="{{ project.url }}" target="_blank">
-                        <div class="project-img img-cover" style="background-image: url('{{ site.baseurl }}/uploads/{{ project.img }}');">
+        <div class="row no-side-margin">
+            <div class="slidewrapper">
+                {% for project in include.texts.projects %}
+                        <div class="project-box">
+                            <a href="{{ project.url }}" target="_blank">
+                            <div class="project-img img-cover" style="background-image: url('{{ site.baseurl }}/uploads/{{ project.img }}');">
+                            </div>
+                            <div class="project-caption">
+                                <a class="project-title">{{ project.title }}</a>
+                            </div>
+                            </a>
                         </div>
-                        <div class="project-caption">
-                            <p class="project-title">{{ project.title }}</p>
-                        </div>
-                        </a>
-                    </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
 
             <!--

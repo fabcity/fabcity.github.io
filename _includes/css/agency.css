@@ -28,13 +28,13 @@ body {
 
 @media (min-width: 768px){
     .container {
-        width: 1024px;
+        width: 96%px;
     }
 }
 
 @media (min-width: 992px){
     .container {
-        width: 1024px;
+        
     }
 }
 
@@ -205,7 +205,7 @@ a.active {
 }
 
 a {
-    color: #{{ site.data.template.color.reds }};
+    color: #{{ site.data.template.color.blacks }};
 
 }
 
@@ -213,8 +213,14 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #{{ site.data.template.color.blues }};
-
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding-bottom: 3px;
+    background: linear-gradient(to right, rgb(24,165,55) 0%, rgb(24,165,55) 100%);
+    background-size: 1px 3px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    cursor: pointer;
 }
 
 /*/--- BUTTON DEFINITIONS ---/*/
@@ -752,7 +758,7 @@ section .project-gallery-texts {
 
 .slidewrapper {
     margin: 0px -0px;
-    margin-left: 200px;
+    margin-left: 20%;
 }
 
 .slidewrapper .slideshow{
@@ -774,11 +780,13 @@ section .project-gallery-texts {
 .project-box {
     width: 165px;
     float: left;
-    /*margin-right: 70px;*/
+    padding-right: 100px;
+    padding-bottom: 5px;
 }
 
 .project-box a {
     text-decoration: none;
+    font-weight: 700px;
 }
 
 .project-img {
@@ -791,6 +799,30 @@ section .project-gallery-texts {
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 600;
+}
+
+.slick-prev {
+    background-color: black;
+    background: url('{{ site.baseurl }}/uploads/prev-arrow.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 45%;
+}
+
+.slick-next{
+    background-color: black;
+    background: url('{{ site.baseurl }}/uploads/next-arrow.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 45%;
+}
+
+.slick-list {
+    padding-left: 40px;
+}
+
+.slick-next {
+    right: 0px;
 }
 
 /*// DOCUMENTATION //*/
