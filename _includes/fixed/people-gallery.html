@@ -1,0 +1,64 @@
+<section id="{{ include.texts.id }}">
+    <div class="container">
+        <div class="row no-side-margin">
+            <div class="col-md-6 project-gallery-texts float-left">
+                <div class="row no-side-margin">
+                    {% if include.texts.hastitle == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">{{ include.texts.title }}</p>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hasdescription == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">{{ include.texts.description }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!--project slider-->
+        <div class="row no-side-margin">
+            <div class="slidewrapper">
+                {% for member in include.texts.members %}
+                        <div class="project-box">
+                            <a href="{{ member.url }}" target="_blank">
+                            <div class="project-img img-cover" style="background-image: url('{{ site.baseurl }}/uploads/{{ member.img }}');">
+                            </div>
+                            <div class="project-caption">
+                                <a class="project-title underline">{{ member.name }}</a>
+                                <p class="project-subtitle">{{ member.position }}</p>
+                            </div>
+                            </a>
+                        </div>
+                {% endfor %}
+            </div>
+        </div>
+
+            <!--
+            <div id="slideshow1" class="slideshow">
+                <div class="list">
+                    {% for project in include.texts.projects %}
+                    <div class="project-box">
+                        <a href="{{ project.url }}" target="_blank">
+                        <div class="project-img img-cover" style="background-image: url('{{ site.baseurl }}/uploads/{{ project.img }}');">
+                        </div>
+                        <div class="project-caption">
+                            <p class="project-title">{{ project.title }}</p>
+                        </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div> 
+        </div>  <!-- close slidewrapper -->  
+
+    </div> <!--close container -->
+</section>
+
+
+
+
+
+
+

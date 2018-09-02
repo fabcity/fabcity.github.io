@@ -962,6 +962,10 @@ section .project-gallery-texts {
     padding-bottom: 5px;
 }
 
+.project-box:hover, .project-box:focus, .project-box:active, .project-box:visited {
+    outline: 0;
+}
+
 .project-box a {
     text-decoration: none;
     font-weight: 700px;
@@ -977,6 +981,13 @@ section .project-gallery-texts {
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 600;
+}
+
+.project-subtitle {
+    font-weight: 400;
+    font-size: 13px;
+    color: black;
+    line-height: 18px;
 }
 
 .slick-prev {
