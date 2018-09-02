@@ -206,13 +206,25 @@ a.active {
 
 a {
     color: #{{ site.data.template.color.blacks }};
-
+    cursor: pointer;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
+    text-decoration: none;
+    color: #{{ site.data.template.color.blacks }};
+}
+
+.underline {
+    color: #{{ site.data.template.color.blacks }};
+}
+
+.underline:hover,
+.underline:focus,
+.underline:active,
+.underline.active {
     text-decoration: none;
     color: rgb(0,0,0);
     padding-bottom: 3px;

@@ -372,13 +372,25 @@ a.active {
 
 a {
     color: #000;
-
+    cursor: pointer;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
+    text-decoration: none;
+    color: #000;
+}
+
+.underline {
+    color: #000;
+}
+
+.underline:hover,
+.underline:focus,
+.underline:active,
+.underline.active {
     text-decoration: none;
     color: rgb(0,0,0);
     padding-bottom: 3px;
