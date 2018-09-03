@@ -246,32 +246,34 @@ a.active {
     font-weight: 300;
     font-family: {{ site.data.template.font.primary }};
     background-color: #{{ site.data.template.color.blacks }};
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s;
+}
+
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+    color: #fff;
+    border-bottom: solid 2px black;
 }
 
 .blue {
     /*background-color: #{{ site.data.template.color.blues }};*/
     background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.blues }} 50%);
     background-size: 200% 100%;
-    transition:all 0.4s ease;
     border: solid 1.5px #{{ site.data.template.color.whites }};
 }
 
-.blue:hover,
-.blue:focus,
-.blue:active,
-.blue.active,
-.open .dropdown-toggle.blue {
-    color: #{{ site.data.template.color.lightgrays }};
-}
 
 .green {
     /*background-color: #{{ site.data.template.color.greens }};*/
     background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.greens }} 50%);
     background-size: 200% 100%;
-    transition:all 0.4s ease;
     border: solid 1.5px #{{ site.data.template.color.whites }};
 }
 
@@ -279,7 +281,6 @@ a.active {
     /*background-color: #{{ site.data.template.color.reds }};*/
     background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.reds }} 50%);
     background-size: 200% 100%;
-    transition:all 0.4s ease;
     border: solid 1.5px #{{ site.data.template.color.whites }};
     color: #000;
     font-weight: 400;
@@ -289,34 +290,17 @@ a.active {
     /*background-color: #{{ site.data.template.color.yellows }};*/
     background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.yellows }} 50%);
     background-size: 200% 100%;
-    transition:all 0.4s ease;
     border: solid 1.5px #{{ site.data.template.color.whites }};
     color: #000;
     font-weight: 400;
 }
 
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-    outline: 0;
-}
-
-
-/*GRAY BUTTON OPTION*/
-.btn-gray {
-    font-weight: 800;
-    color: #{{ site.data.template.color.bodytext }};
-    background-color: #{{ site.data.template.color.darkgrays }};
-}
-
-.btn-gray:hover,
-.btn-gray:focus,
-.btn-gray:active,
-.btn-grayactive,
-.open .dropdown-toggle.btn-gray {
-    color: #{{ site.data.template.color.light }};
-    background-color: #{{ site.data.template.color.reds }};
+.yellow:hover,
+.yellow:focus,
+.yellow:active,
+.yellow.active,
+.yellow:active:focus {
+    color: black;
 }
 
 
@@ -546,10 +530,17 @@ a.active {
     right: 2%;
     z-index: -1000;
 }
-
 .bg-blue {
    background-color: #{{ site.data.template.color.blues }};
-
+}
+.bg-green {
+   background-color: #{{ site.data.template.color.greens }};
+}
+.bg-yellow {
+   background-color: #{{ site.data.template.color.yellows }};
+}
+.bg-red {
+   background-color: #{{ site.data.template.color.reds }};
 }
 
 /* to delete? */

@@ -15,6 +15,7 @@ hasbutton: true
 buttonaction: "Read the"
 buttontitle: "White Paper"
 buttonlink: "uploads/whitepaper.pdf"
+hasdownload: true
 hasextraaction: false
 extraaction: ''
 extraactionlink: ''

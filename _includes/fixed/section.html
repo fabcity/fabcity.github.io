@@ -124,9 +124,11 @@
                             <a href="{{ include.texts.buttonlink }}" class="page-scroll btn green" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% endif %}
                         </div>
+                        {% if include.texts.hasdownload == true %}
                         <div class="col-md-12 no-side-padding">
                             <a href="{{ include.texts.buttonlink }}"><div class="" style="width: 19px; height: 17px; float:right;"><img src="{{ site.baseurl }}/uploads/download-icon.png"></div></a>
                         </div>
+                        {% endif %}
                     </div>
                     {% endif %}
                 </div>

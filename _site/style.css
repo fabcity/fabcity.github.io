@@ -412,32 +412,34 @@ a.active {
     font-weight: 300;
     font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #000;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s;
+}
+
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+    color: #fff;
+    border-bottom: solid 2px black;
 }
 
 .blue {
     /*background-color: #140468;*/
     background: linear-gradient(to right, transparent 50%, #140468 50%);
     background-size: 200% 100%;
-    transition:all 0.4s ease;
     border: solid 1.5px #ffffff;
 }
 
-.blue:hover,
-.blue:focus,
-.blue:active,
-.blue.active,
-.open .dropdown-toggle.blue {
-    color: #f7efef;
-}
 
 .green {
     /*background-color: #18a537;*/
     background: linear-gradient(to right, transparent 50%, #18a537 50%);
     background-size: 200% 100%;
-    transition:all 0.4s ease;
     border: solid 1.5px #ffffff;
 }
 
@@ -445,7 +447,6 @@ a.active {
     /*background-color: #e21826;*/
     background: linear-gradient(to right, transparent 50%, #e21826 50%);
     background-size: 200% 100%;
-    transition:all 0.4s ease;
     border: solid 1.5px #ffffff;
     color: #000;
     font-weight: 400;
@@ -455,34 +456,17 @@ a.active {
     /*background-color: #ffef19;*/
     background: linear-gradient(to right, transparent 50%, #ffef19 50%);
     background-size: 200% 100%;
-    transition:all 0.4s ease;
     border: solid 1.5px #ffffff;
     color: #000;
     font-weight: 400;
 }
 
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-    outline: 0;
-}
-
-
-/*GRAY BUTTON OPTION*/
-.btn-gray {
-    font-weight: 800;
-    color: #041024;
-    background-color: #;
-}
-
-.btn-gray:hover,
-.btn-gray:focus,
-.btn-gray:active,
-.btn-grayactive,
-.open .dropdown-toggle.btn-gray {
-    color: #f7f5ff;
-    background-color: #e21826;
+.yellow:hover,
+.yellow:focus,
+.yellow:active,
+.yellow.active,
+.yellow:active:focus {
+    color: black;
 }
 
 
@@ -712,10 +696,17 @@ a.active {
     right: 2%;
     z-index: -1000;
 }
-
 .bg-blue {
    background-color: #140468;
-
+}
+.bg-green {
+   background-color: #18a537;
+}
+.bg-yellow {
+   background-color: #ffef19;
+}
+.bg-red {
+   background-color: #e21826;
 }
 
 /* to delete? */
