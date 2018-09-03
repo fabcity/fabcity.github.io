@@ -760,12 +760,12 @@ section .quote-box .quote-highlight {
  .float-right {
     padding-left: 20px;
     float: left;
-     padding-right: 0px;
+    padding-right: 0px;
 }
 
  .float-left {
     padding-right: 100px;
-    float: right;
+    float: left;
 }
 
  .section-row {
