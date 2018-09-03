@@ -871,6 +871,11 @@ section .project-gallery-texts {
     border-right: solid 4px #{{ site.data.template.color.greens }};
 }
 
+.documentation-texts {
+    position: absolute;
+}
+
+
 .documentation-link {
     font-size: 18px;
     font-weight: 400;
