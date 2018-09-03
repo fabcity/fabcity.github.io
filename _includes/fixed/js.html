@@ -9,17 +9,19 @@
 <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
 <!--<script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>-->
 
-
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
 
-
-<!--Parallax -->
-
+<!--Parallax Scrolling animations -->
 <script src="{{ "/js/skrollr.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
     var s = skrollr.init();
-</script>
+    </script>-->
+    <script type="text/javascript">
+    skrollr.init({
+        forceHeight: false
+    });
+    </script>
 
 <!-- Countdown -->
 <script src="{{ "/js/jquery.countdown.js" | prepend: site.baseurl }}"></script>
@@ -44,36 +46,13 @@ $('.slidewrapper').slick({
 </script>
 
 
-
+<!--Carousel-->
 <script type="text/javascript">
 $('.carousel').carousel({
     interval: 3000 //changes the speed
 })
 </script>
 
-
-<!--Old ff stuff? Slow Appear 
-
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script type="text/javascript" src="{{ "/js/demoutils.js" | prepend: site.baseurl }}"></script>
-<script type="text/javascript">
-AOS.init({
-    duration: 1200,
-})
-</script>
-
-<script>
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
-</script>
-7pU_VWZoAMk
-Akd_Bl2tm_k
--->
 
 <!--Youtube video -->
 
@@ -168,3 +147,26 @@ function parse_str(str) {
     });
 </script>
 
+
+<!--Old ff stuff? Slow Appear 
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript" src="{{ "/js/demoutils.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+AOS.init({
+    duration: 1200,
+})
+</script>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+7pU_VWZoAMk
+Akd_Bl2tm_k
+-->

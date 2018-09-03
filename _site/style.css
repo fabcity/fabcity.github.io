@@ -401,7 +401,7 @@ a.active {
     cursor: pointer;
 }
 
-/*/--- BUTTON DEFINITIONS ---/*/
+/*/--- BUTTONS ---/*/
 
 .btn {
     padding: 5px 5px 5px 60px;
@@ -418,21 +418,45 @@ a.active {
 }
 
 .blue {
-    background-color: #140468;
+    /*background-color: #140468;*/
+    background: linear-gradient(to right, transparent 50%, #140468 50%);
+    background-size: 200% 100%;
+    transition:all 0.4s ease;
+    border: solid 1.5px #ffffff;
+}
+
+.blue:hover,
+.blue:focus,
+.blue:active,
+.blue.active,
+.open .dropdown-toggle.blue {
+    color: #f7efef;
 }
 
 .green {
-    background-color: #18a537;
+    /*background-color: #18a537;*/
+    background: linear-gradient(to right, transparent 50%, #18a537 50%);
+    background-size: 200% 100%;
+    transition:all 0.4s ease;
+    border: solid 1.5px #ffffff;
 }
 
 .red {
-    background-color: #e21826;
+    /*background-color: #e21826;*/
+    background: linear-gradient(to right, transparent 50%, #e21826 50%);
+    background-size: 200% 100%;
+    transition:all 0.4s ease;
+    border: solid 1.5px #ffffff;
     color: #000;
     font-weight: 400;
 }
 
 .yellow {
-    background-color: #ffef19;
+    /*background-color: #ffef19;*/
+    background: linear-gradient(to right, transparent 50%, #ffef19 50%);
+    background-size: 200% 100%;
+    transition:all 0.4s ease;
+    border: solid 1.5px #ffffff;
     color: #000;
     font-weight: 400;
 }
@@ -689,8 +713,8 @@ a.active {
     z-index: -1000;
 }
 
-.blue {
-    background-color: #140468;
+.bg-blue {
+   background-color: #140468;
 
 }
 
@@ -885,7 +909,7 @@ section .section-row {
 }
 
 section .section-texts {
-    background-color: aqua;
+    background-color: transparent;
     height: auto;
 }
 
@@ -937,6 +961,7 @@ section .project-gallery-texts {
 .slidewrapper {
     margin: 0px -0px;
     margin-left: 20%;
+
 }
 
 .slidewrapper .slideshow{

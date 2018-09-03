@@ -235,7 +235,7 @@ a.active {
     cursor: pointer;
 }
 
-/*/--- BUTTON DEFINITIONS ---/*/
+/*/--- BUTTONS ---/*/
 
 .btn {
     padding: 5px 5px 5px 60px;
@@ -252,21 +252,45 @@ a.active {
 }
 
 .blue {
-    background-color: #{{ site.data.template.color.blues }};
+    /*background-color: #{{ site.data.template.color.blues }};*/
+    background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.blues }} 50%);
+    background-size: 200% 100%;
+    transition:all 0.4s ease;
+    border: solid 1.5px #{{ site.data.template.color.whites }};
+}
+
+.blue:hover,
+.blue:focus,
+.blue:active,
+.blue.active,
+.open .dropdown-toggle.blue {
+    color: #{{ site.data.template.color.lightgrays }};
 }
 
 .green {
-    background-color: #{{ site.data.template.color.greens }};
+    /*background-color: #{{ site.data.template.color.greens }};*/
+    background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.greens }} 50%);
+    background-size: 200% 100%;
+    transition:all 0.4s ease;
+    border: solid 1.5px #{{ site.data.template.color.whites }};
 }
 
 .red {
-    background-color: #{{ site.data.template.color.reds }};
+    /*background-color: #{{ site.data.template.color.reds }};*/
+    background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.reds }} 50%);
+    background-size: 200% 100%;
+    transition:all 0.4s ease;
+    border: solid 1.5px #{{ site.data.template.color.whites }};
     color: #000;
     font-weight: 400;
 }
 
 .yellow {
-    background-color: #{{ site.data.template.color.yellows }};
+    /*background-color: #{{ site.data.template.color.yellows }};*/
+    background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.yellows }} 50%);
+    background-size: 200% 100%;
+    transition:all 0.4s ease;
+    border: solid 1.5px #{{ site.data.template.color.whites }};
     color: #000;
     font-weight: 400;
 }
@@ -523,8 +547,8 @@ a.active {
     z-index: -1000;
 }
 
-.blue {
-    background-color: #{{ site.data.template.color.blues }};
+.bg-blue {
+   background-color: #{{ site.data.template.color.blues }};
 
 }
 
@@ -719,7 +743,7 @@ section .section-row {
 }
 
 section .section-texts {
-    background-color: aqua;
+    background-color: transparent;
     height: auto;
 }
 
@@ -771,6 +795,7 @@ section .project-gallery-texts {
 .slidewrapper {
     margin: 0px -0px;
     margin-left: 20%;
+
 }
 
 .slidewrapper .slideshow{
