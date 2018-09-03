@@ -3,7 +3,7 @@
         <!--Orientation 'normal' text first, photo after-->
         <div class="row no-side-margin section-row">
             {% if include.texts.orientation == 'normal' %}
-            <div class="col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;">
+            <div class="col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-top="margin-top: 0px;">
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
                     <div class="col-md-12 no-side-padding">
@@ -22,19 +22,19 @@
                     {% endif %}
 
                     {% if include.texts.hasbutton == true %}
-                    <div class="button-area">
+                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-100-center-top="margin-bottom: 0px;">
                         <div class="col-md-12 no-side-padding text-right">
                             <p class="action"> {{ include.texts.buttonaction }}</p> 
                         </div>
                         <div class="col-md-12 no-side-padding text-right">
                         {% if include.texts.sectioncolor == 'blue' %}
-                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn blue" target="_blank" data-bottom="background-position:left bottom;" data-200-center-center="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn blue" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% elsif include.texts.sectioncolor == 'yellow'  %}
-                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn yellow" target="_blank" data-bottom="background-position:left bottom;" data-200-center-center="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn yellow" target="_blank" data-bottom="background-position:left bottom;" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% elsif include.texts.sectioncolor == 'red'  %}
-                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn red" target="_blank" data-bottom="background-position:left bottom;" data-200-center-center="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn red" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% else %}
-                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn green" target="_blank" data-bottom="background-position:left bottom;" data-200-center-center="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn green" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% endif %}
                         </div>
                         <div class="col-md-12 no-side-padding">
@@ -44,16 +44,16 @@
                     {% endif %}
                 </div>
             </div>
-            <div class= "col-sm-6 col-md-6 no-side-padding">
+            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-top-center="margin-top: 0px;">
                 {% if include.texts.hascolorbg == true %}
                     {% if include.texts.sectioncolor == 'blue' %}
-                        <div class="plain-bg plain-bg-right bg-blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                        <div class="plain-bg plain-bg-right bg-blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                     {% elsif include.texts.sectioncolor == 'yellow' %}
-                        <div class="plain-bg plain-bg-right yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                        <div class="plain-bg plain-bg-right bg-yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                     {% elsif include.texts.sectioncolor == 'red' %}
-                        <div class="plain-bg plain-bg-right red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                        <div class="plain-bg plain-bg-right bg-red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                     {% else %}
-                        <div class="plain-bg plain-bg-right green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                        <div class="plain-bg plain-bg-right bg-reen" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                     {% endif %}
                 {% endif %}
                 <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
@@ -69,22 +69,22 @@
         {% else %}
         <!--Orientation 'inverted' photo first, text after-->
         <div class="row no-side-margin section-row">
-            <div class= "col-sm-6 col-md-6 no-side-padding">
+            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-top-center="margin-top: 0px;">
                 {% if include.texts.hascolorbg == true %}
                     {% if include.texts.sectioncolor == 'blue' %}
-                        <div class="plain-bg plain-bg-left bg-blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                        <div class="plain-bg plain-bg-left bg-blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                     {% elsif include.texts.sectioncolor == 'yellow' %}
-                        <div class="plain-bg plain-bg-left yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                        <div class="plain-bg plain-bg-left bg-yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;"data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
                     {% elsif include.texts.sectioncolor == 'red' %}
-                        <div class="plain-bg plain-bg-left red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                        <div class="plain-bg plain-bg-left bg-red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                     {% else %}
-                        <div class="plain-bg plain-bg-left green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                        <div class="plain-bg plain-bg-left bg-green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                     {% endif %}
                 {% endif %}
 
                 <img class="section-img img-left" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
             </div>
-            <div class="col-sm-6 col-md-6 section-texts float-right" style="height: {{ include.texts.imgheight }}px;">
+            <div class="col-sm-6 col-md-6 section-texts float-right" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-top="margin-top: 0px;">
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
                     <div class="col-md-12 no-side-padding">
@@ -109,19 +109,19 @@
                     {% endif %}
 
                     {% if include.texts.hasbutton == true %}
-                    <div class="button-area">
+                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-100-center-top="margin-bottom: 0px;">
                         <div class="col-md-12 no-side-padding text-right">
                             <p class="action"> {{ include.texts.buttonaction }}</p> 
                         </div>
                         <div class="col-md-12 no-side-padding text-right">
                         {% if include.texts.sectioncolor == 'blue' %}
-                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn blue" target="_blank" data-bottom="background-position:left bottom;" data-200-center-center="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn blue" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% elsif include.texts.sectioncolor == 'yellow'  %}
-                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn yellow" target="_blank" data-bottom="background-position:left bottom;" data-200-center-center="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn yellow" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% elsif include.texts.sectioncolor == 'red'  %}
-                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn red" target="_blank" data-bottom="background-position:left bottom;" data-200-center-center="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn red" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% else %}
-                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn green" target="_blank" data-bottom="background-position:left bottom;" data-200-center-center="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
+                            <a href="{{ include.texts.buttonlink }}" class="page-scroll btn green" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% endif %}
                         </div>
                         <div class="col-md-12 no-side-padding">
@@ -142,9 +142,9 @@
         {% endif %}  <!-- Endif Orientation condition -->
 
         {% if include.texts.hasdivisionline == true %}
-            <div class="row no-side-margin text-center" style="margin-top: 110px">
+            <div class="row no-side-margin text-center" style="margin-top: 110px" data-bottom="margin-top: 400px;" data-top-top="margin-top: 110px;">
                 {% if include.texts.sectioncolor == 'blue' %}
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="504px" height="24px"><path d="M0 12 L504 12" style="fill:none; stroke:rgb(20, 4, 104);stroke-width:4;"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="504px" height="24px"><path d="M0 12 L504 12" style="fill:none; stroke-width:4;" data-bottom="stroke:rgb(255, 255, 255);" data-0-center-center=" stroke:rgb(20, 4, 104);"></path></svg>
                 {% elsif include.texts.sectioncolor == 'yellow'  %}
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="504px" height="24px"><path d="M0 12 L504 12" style="fill:none; stroke:rgb(255,239,25);stroke-width:4;"></path></svg>
                 {% elsif include.texts.sectioncolor == 'red'  %}

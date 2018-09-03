@@ -1,25 +1,25 @@
 <section id="{{ include.texts.id }}">
     <div class="container">
         <div class="col-sm-6 col-md-6 section-texts float-left quote-box"  style="height: {{ include.texts.imgheight }}px;">
-            <div class="row no-side-margin">
+            <div class="row no-side-margin" data-bottom-top="margin-top: 600px;" data-top="margin-top: 0px;">
                 <p class="quote" data-bottom="opacity: 0.3;" data-0-center-center="opacity:1;">Currently, cities occupy <span>2%</span> of the earth's surface to house 1/2 of world population</p>
                 <p class="quote" data-bottom="opacity: 0;" data-0-center-center="opacity:1;">The are responsible for <span>67%</span> of global energy consumption</p>
                 <p class="quote" data-bottom="opacity: 0;" data-0-center-center="opacity:1;">and <span>70%</span> of global waste generation</p>
                 <p class="quote" data-bottom="opacity: 0;" data-0-center-center="opacity:1;">in 2050, it is expected that <span>2/3</span> of the global population will live in cities.</p>
-                <p class="quote-highlight text-center" data-150-center-center="opacity: 0;" data-top="opacity:1;">We are shifting the paradigm PITO to DIDO to enable cities to produce everything they consume by 2054</p>
+                <p class="quote-highlight text-center" data-150-center-center="opacity: 0;" data-center-bottom="opacity:1;">We are shifting the paradigm PITO to DIDO to enable cities to produce everything they consume by 2054</p>
             </div>
         </div>
 
-        <div class= "col-sm-6 col-md-6 no-side-padding">
+        <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-top="margin-top: 0px;">
             {% if include.texts.hascolorbg == true %}
                 {% if include.texts.sectioncolor == 'blue' %}
-                    <div class="plain-bg plain-bg-right blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                    <div class="plain-bg plain-bg-right bg-blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                 {% elsif include.texts.sectioncolor == 'yellow' %}
-                    <div class="plain-bg plain-bg-right yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                    <div class="plain-bg plain-bg-right bg-yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                 {% elsif include.texts.sectioncolor == 'red' %}
-                    <div class="plain-bg plain-bg-right red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                    <div class="plain-bg plain-bg-right bg-red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                 {% else %}
-                    <div class="plain-bg plain-bg-right green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom="margin-top: 30px;" data-top="margin-top: -30px;"> </div>
+                    <div class="plain-bg plain-bg-right bg-green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
                 {% endif %}
             {% endif %}
             <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
