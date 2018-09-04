@@ -802,6 +802,14 @@ header {
     min-height: 700px;
     background-color: black;
     color: white;
+    background-attachment: scroll;
+    background-image: url('/uploads/fallback.jpg');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 video {
