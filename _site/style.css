@@ -1137,11 +1137,20 @@ section .project-gallery-texts {
 
 .city-info {
     position: absolute;
-    padding: 20px 20px 20px 40px;
+    /*padding: 20px 20px 20px 40px;*/
     bottom:0;
     width: 100%;
     height: 200px;
     background-color: white;
+    opacity: 0;
+    -webkit-transition: all ease .7s;
+    -moz-transition: all ease .7s;
+    transition: all ease .7s;
+}
+
+.city-info.collapse.in {
+    opacity: 1;
+
 }
 
 .cities-list {
