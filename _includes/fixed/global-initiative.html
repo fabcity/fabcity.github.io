@@ -13,8 +13,8 @@
             </div>
         </div><!--close section content row -->  
         <div class="row">
-            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 600px;" data-top="margin-top: -50px;">
-                <img class="img-left globe-img" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
+            <div class= "col-sm-6 col-md-6 no-side-padding">
+                <img data-bottom-top="margin-top: 600px;" data-top="margin-top: -50px;" class="img-left globe-img" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
 
                 <div class="city-info collapse" id="demo">
                     <div class="row no-side-margin city-card">
@@ -45,7 +45,7 @@
                     <p class="section-description">{{ include.texts.description }}</p>
                 </div>
                 <div class="col-md-12 no-side-padding">
-                    <div class="col-md-6 no-side-padding">
+                    <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
                         <ul class="cities-list">
                             <!--
                             <li class="cities-left"><a class="" data-toggle="collapse" href="#barcelona" role="button" aria-expanded="true" aria-controls="barcelona">Barcelona </a></li>-->
@@ -56,7 +56,7 @@
                         {% endfor %}
                         </ul> 
                     </div>
-                    <div class="col-md-6 no-side-padding">
+                    <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
                         <ul class="cities-list">
                         {% for city in include.texts.cities %}
                             {% if city.place == 'right' %}
