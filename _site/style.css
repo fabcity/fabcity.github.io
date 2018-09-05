@@ -1163,6 +1163,20 @@ section .project-gallery-texts {
     -webkit-padding-start: 0px;
 }
 
+.cities-list a:hover,
+.cities-list a:focus
+{
+    color: aqua;
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding-bottom: 3px;
+    background: linear-gradient(to right, rgb(193,15,24) 0%, rgb(193,15,24) 100%);
+    background-size: 1px 3px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+
+
 .cities-left {
     text-align: right;
     padding-right: 8px;
