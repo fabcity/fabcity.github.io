@@ -10,10 +10,19 @@ description: "Core to the initiative is a network of cities, regions and countri
 cities:
   - name: "Barcelona"
     place: left
+    id: "barcelona"
+    country: Spain
+    strategicfocus: "policy and governance"
+    orgtype: "Consortium"
+    org: "Fab Lab Barcelona | IAAC | Barcelona City Council"
   - name: "Zagreb"
     place: left
+    id: "zagreb"
+    country: Croatia
   - name: "Bhutan"
     place: left
+    id: "bhutan"
+    country: Bhutan
   - name: "Shenzhen"
     place: left
   - name: "Georgia"

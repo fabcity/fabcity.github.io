@@ -16,19 +16,21 @@
             <div class= "col-sm-6 col-md-6 no-side-padding">
                 <img data-bottom-top="margin-top: 600px;" data-top="margin-top: -50px;" class="img-left globe-img" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
 
-                <div class="city-info collapse" id="demo">
+                {% for city in include.texts.cities %}
+                <div class="city-info collapse" id="{{ city.id }}">
                     <div class="row no-side-margin city-card">
                         <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Barcelona, Spain</p>
+                            <p class="city-name">{{ city.name }}, {{ city.country }}</p>
                             <p class="focus">Strategic focus: policy and governance </p>
                             <p class="org-type">Consortium</p>
                             <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
                         </div>
                         <div class="col-md-4 no-side-padding">
-                            <img src="{{ site.baseurl }}/uploads/bcn-thumb.png">
+                            <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
                         </div>
                     </div>
                 </div>
+                {% endfor %}
 
             </div>
 
@@ -51,7 +53,7 @@
                             <li class="cities-left"><a class="" data-toggle="collapse" href="#barcelona" role="button" aria-expanded="true" aria-controls="barcelona">Barcelona </a></li>-->
                          {% for city in include.texts.cities %}
                              {% if city.place == 'left' %}
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">{{ city.name }} </a></li>
+                                <li class="cities-left"><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
                             {% endif %}
                         {% endfor %}
                         </ul> 
