@@ -494,7 +494,8 @@ a.active {
     border-radius: 0px;
     float: right;
     border: solid 2px transparent;
-    background-color: #f9f8f8;
+   /*background-color: #f9f8f8;*/
+    background-color: transparent;
     padding: 12px 10px;
 }
 .navbar-default .navbar-toggle:hover, 
@@ -888,74 +889,91 @@ pre {
 }
 
 header .intro-text {
-    padding-top: 90px;
-    /*padding-bottom: 220px;*/
+    padding-top: 50px;
+    padding-bottom: 0px ;
 }
-
-@media (min-width: 768px){ 
-    header .intro-text {
-       
-    }
-}
-
 header .intro-text .intro-lead-in {
     font-weight: 600;
-    font-size: 4.6em;
-    /*letter-spacing: 6px;*/
-    line-height: 80px;
+    font-size: 4em;
+    line-height: 73px;
     text-transform: uppercase;
     font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 768px){
+    header .intro-text {
+        padding-top: 90px;
+    } 
+    header .intro-text .intro-lead-in {
+        font-size: 4.6em;
+        line-height: 80px;
+    }
 }
 
 /*/--- COUNTDOWN ---/*/
 
 .countdown {
     width: auto;
-    float: right;
+    float: left;
     position: relative;
     min-height: 1px;
     display: inline-flex;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 0px;
-    margin-right: 60px;
-    font-size: 2.8em;
+    margin-right: 0px;
+    font-size: 2.4em;
+    font-weight: 300;
+    font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.countdown div {
+    padding: 0px 14px 15px 0px;
+}
+.countdown div span {
+    padding-top: 0px;
+    font-weight: 300;
+    display: block;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+.countdown-box .description {
+    float: left;
+    text-align: left;
+    padding-top: 20px;
+    margin-right: 0px;
+    line-height: ;
+}
+.countdown-box .description p {
+    line-height: 34px;
+    font-size: 2em;
+    letter-spacing: 1px;
     font-weight: 300;
     font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
 @media (min-width: 767px){
-.countdown {
+    .countdown {
+         margin-top: 0px;
+        float: right;
         font-size: 42px;
+        margin-right: 60px;
+    }
+    .countdown div {
+        padding: 0px 0px 20px 40px;
+    }
+    .countdown div span {
+        font-size: 26px;
+    }
+    .countdown-box .description {
+        float: right;
+        text-align: right;
+        padding-top: 30px;
+        margin-right: 60px;
+    }
+    .countdown-box .description p {
+        line-height: 20px;
     }
 }
 
-.countdown div {
-    padding: 0px 0px 20px 40px;
-}
-
-.countdown div span {
-    padding-top: 0px;
-    font-weight: 300;
-    display: block;
-    text-transform: uppercase;
-    font-size: 26px;
-    /*padding-left: 30px;*/
-}
-
-.countdown-box .description {
-    float: right;
-    text-align: right;
-    padding-top: 30px;
-    margin-right: 60px;
-}
-
-.countdown-box .description p {
-    font-size: 2em;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
 /*// INTRO QUOTES //*/
 section .quote-box {
