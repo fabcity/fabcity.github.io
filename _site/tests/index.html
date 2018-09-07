@@ -311,14 +311,34 @@
 
 <!--Parallax Scrolling animations -->
 <script src="/js/skrollr.js"></script>
-    <!--<script type="text/javascript">
-    var s = skrollr.init();
-    </script>-->
-    <script type="text/javascript">
+
+<!--
+<script type="text/javascript">
+skrollr.init({
+    forceHeight: false,
+});
+</script>
+-->
+
+<script type="text/javascript">
+$(function () {
+  // initialize skrollr if the window width is large enough
+  if ($(window).width() > 767) {
     skrollr.init({
-        forceHeight: false
+    forceHeight: false,
     });
-    </script>
+  }
+
+  // disable skrollr if the window is resized below 768px wide
+  $(window).on('resize', function () {
+    if ($(window).width() <= 767) {
+      skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+    }
+  });
+});
+</script>
+
+
 
 <!-- Countdown -->
 <script src="/js/jquery.countdown.js"></script>
@@ -336,13 +356,13 @@ $('.slidewrapper').slick({
 </script>
 
 
-<!--Carousel-->
+<!--Carousel
 <script type="text/javascript">
 $('.carousel').carousel({
     interval: 3000 //changes the speed
 })
 </script>
-
+-->
 
 <!--Youtube video -->
 
@@ -417,24 +437,6 @@ function parse_str(str) {
     }, {});
 }
 
-</script>
-
-
-<!--Cities script test -->
-<script>
-    $('.item div').hide();
-
-    $('.item a').click(function(e){
-        
-        e.preventDefault();
-        // hide all span
-        var $this = $(this).parent().find('div');
-        $(".item div").not($this).hide();
-        
-        // here is what I want to do
-        $this.toggle();
-        
-    });
 </script>
 
 
