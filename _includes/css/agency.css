@@ -600,7 +600,14 @@ a.active {
 }
 
 .plain-bg {
-    position: absolute;
+    display: none;
+}
+
+@media (min-width: 768px){
+    .plain-bg {
+        position: absolute;
+        display: block;
+    }
 }
 
 .plain-bg-left {
@@ -824,8 +831,8 @@ section .quote-box .quote span {
     font-size: 39px;
 }
 section .quote-box .quote-highlight {
-    float: right;
-    width: 380px;
+    float: left;
+    width: 350px;
     font-size: 23px;
     line-height: 32px;
     padding: 20px;
@@ -836,6 +843,14 @@ section .quote-box .quote-highlight {
     border: solid 4px #{{ site.data.template.color.blues }}; 
 }
 
+@media (min-width: 768px){
+    section .quote-box .quote-highlight {
+         float: right;
+         width: 380px;
+    }
+}
+
+
 /*// STANDARD SECTION MODULE //*/
 
  .float-right {
@@ -845,7 +860,7 @@ section .quote-box .quote-highlight {
 }
 
  .float-left {
-    padding-right: 100px;
+    padding-right: 30px;
     float: left;
 }
 
@@ -857,6 +872,12 @@ section .quote-box .quote-highlight {
     background-color: white;
     height: auto;
     padding-top:50px;
+}
+
+@media (min-width: 768px){
+    .float-left {
+        padding-right: 100px;
+    }
 }
 
 @media (min-width: 992px){
@@ -1485,4 +1506,16 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #f7efef;
     height: auto !important; 
+}
+
+
+/*// Specific Section Styling //*/
+#intro {
+    margin-bottom: 210px;
+}
+
+@media (min-width: 768px){
+    #intro {
+        margin-bottom: 0px;
+    }
 }
