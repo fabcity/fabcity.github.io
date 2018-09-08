@@ -910,7 +910,6 @@ header .intro-text .intro-lead-in {
 }
 
 /*/--- COUNTDOWN ---/*/
-
 .countdown {
     width: auto;
     float: left;
@@ -949,7 +948,6 @@ header .intro-text .intro-lead-in {
     font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
 @media (min-width: 767px){
     .countdown {
          margin-top: 0px;
@@ -974,14 +972,12 @@ header .intro-text .intro-lead-in {
     }
 }
 
-
 /*// INTRO QUOTES //*/
 section .quote-box {
     background-color: transparent; 
     float: left;
     margin-top: 5px;
 }
-
 section .quote-box .quote {
     line-height: 25px;
     font-weight: 400;
@@ -990,11 +986,9 @@ section .quote-box .quote {
     padding-bottom: 15px;
     font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 section .quote-box .quote span {
     font-size: 39px;
 }
-
 section .quote-box .quote-highlight {
     float: right;
     width: 380px;
@@ -1007,7 +1001,6 @@ section .quote-box .quote-highlight {
     font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
     border: solid 4px #140468; 
 }
-
 
 /*// STANDARD SECTION MODULE //*/
 

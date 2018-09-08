@@ -744,7 +744,6 @@ header .intro-text .intro-lead-in {
 }
 
 /*/--- COUNTDOWN ---/*/
-
 .countdown {
     width: auto;
     float: left;
@@ -783,7 +782,6 @@ header .intro-text .intro-lead-in {
     font-family: {{ site.data.template.font.primary }};
 }
 
-
 @media (min-width: 767px){
     .countdown {
          margin-top: 0px;
@@ -808,14 +806,12 @@ header .intro-text .intro-lead-in {
     }
 }
 
-
 /*// INTRO QUOTES //*/
 section .quote-box {
     background-color: transparent; 
     float: left;
     margin-top: 5px;
 }
-
 section .quote-box .quote {
     line-height: 25px;
     font-weight: 400;
@@ -824,11 +820,9 @@ section .quote-box .quote {
     padding-bottom: 15px;
     font-family: {{ site.data.template.font.primary }};
 }
-
 section .quote-box .quote span {
     font-size: 39px;
 }
-
 section .quote-box .quote-highlight {
     float: right;
     width: 380px;
@@ -841,7 +835,6 @@ section .quote-box .quote-highlight {
     font-family: {{ site.data.template.font.primary }};
     border: solid 4px #{{ site.data.template.color.blues }}; 
 }
-
 
 /*// STANDARD SECTION MODULE //*/
 
