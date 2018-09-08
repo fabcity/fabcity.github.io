@@ -432,14 +432,15 @@ a.active {
     background: linear-gradient(to right, transparent 50%, #140468 50%);
     background-size: 200% 100%;
     border: solid 1.5px #ffffff;
+    background-position: right bottom;
 }
-
 
 .green {
     /*background-color: #18a537;*/
     background: linear-gradient(to right, transparent 50%, #18a537 50%);
     background-size: 200% 100%;
     border: solid 1.5px #ffffff;
+    background-position: right bottom;
 }
 
 .red {
@@ -449,6 +450,7 @@ a.active {
     border: solid 1.5px #ffffff;
     color: #000;
     font-weight: 400;
+    background-position: right bottom;
 }
 
 .yellow {
@@ -458,6 +460,7 @@ a.active {
     border: solid 1.5px #ffffff;
     color: #000;
     font-weight: 400;
+    background-position: right bottom;
 }
 
 .yellow:hover,
@@ -1084,9 +1087,15 @@ section .section-description {
 }
 
 section .button-area {
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 15px;
+}
+
+@media (min-width: 768px){
+    section .button-area {
+        position: absolute;
+    }
 }
 
 section .extra-action {

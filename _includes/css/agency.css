@@ -266,14 +266,15 @@ a.active {
     background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.blues }} 50%);
     background-size: 200% 100%;
     border: solid 1.5px #{{ site.data.template.color.whites }};
+    background-position: right bottom;
 }
-
 
 .green {
     /*background-color: #{{ site.data.template.color.greens }};*/
     background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.greens }} 50%);
     background-size: 200% 100%;
     border: solid 1.5px #{{ site.data.template.color.whites }};
+    background-position: right bottom;
 }
 
 .red {
@@ -283,6 +284,7 @@ a.active {
     border: solid 1.5px #{{ site.data.template.color.whites }};
     color: #000;
     font-weight: 400;
+    background-position: right bottom;
 }
 
 .yellow {
@@ -292,6 +294,7 @@ a.active {
     border: solid 1.5px #{{ site.data.template.color.whites }};
     color: #000;
     font-weight: 400;
+    background-position: right bottom;
 }
 
 .yellow:hover,
@@ -918,9 +921,15 @@ section .section-description {
 }
 
 section .button-area {
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 15px;
+}
+
+@media (min-width: 768px){
+    section .button-area {
+        position: absolute;
+    }
 }
 
 section .extra-action {
