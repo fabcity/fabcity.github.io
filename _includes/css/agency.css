@@ -1132,7 +1132,8 @@ section .project-gallery-texts {
 }
 
 .globe-img {
-    margin-left: -70px;
+    margin-left: -100px;
+    width: 750px;
     /*position: absolute;*/
 }
 
