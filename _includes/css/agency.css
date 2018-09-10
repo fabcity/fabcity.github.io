@@ -1554,8 +1554,9 @@ footer p {
 }
 
 
-footer .brand {
-    width: 50px;
+footer .footer-brand {
+    width: 80px;
+    float: right;
 }
 
 footer .copyright {
