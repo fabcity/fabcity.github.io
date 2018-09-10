@@ -1206,12 +1206,6 @@ section .project-gallery-texts {
     border-right: solid 4px #18a537;
 }
 
-.documentation-texts {
-    
-
-}
-
-
 .documentation-link {
     font-size: 18px;
     font-weight: 400;
@@ -1221,10 +1215,10 @@ section .project-gallery-texts {
 /* MEDIUM POSTS*/
 
 .post-box {
-    background-color: #18a537;
     height: 350px;
-    margin: 0px 15px;
+    margin: 0px 25px 20px 0px;
     position: relative;
+    background-color: #18a537;
 }
 
 .post-box .post-img {
@@ -1281,6 +1275,18 @@ section .project-gallery-texts {
     font-size: 11px;
     margin-bottom: 0px;
     font-weight: 700;
+}
+
+/* TWITTER MODULE*/
+.twitter-box {
+    float: right;
+    background-color: transparent;
+    height: 700px;
+    overflow-y: scroll;
+}
+.twitter-box .icon {
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
 
 /*// GLOBAL INITIATIVE //*/
