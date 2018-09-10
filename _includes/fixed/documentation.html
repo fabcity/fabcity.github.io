@@ -16,18 +16,24 @@
                 </div>
             </div>
         </div>
-        <div class="row no-side-margin" data-bottom-top="margin-top: 700px;" data-top="margin-top: 0px;">
-            <div class="col-md-6 documentation-box text-right">
-                <p class="documentation-link">blog.</p>
+        <div class="row no-side-margin">
+            {% for post in site.posts limit:3 %}
+            <div class="col-xs-6 col-sm-3 col-md-3 no-side-padding post-box">
+            <a href="{{ post.link }}" target="_blank">
+                <div class="post-img" style="background-image: url('{{ site.baseurl }}/{{ post.thumbnail }}');"> </div>
+                <div class="post-caption">
+                    <p class="post-title">{{ post.title }}</p>
+                    <div class="row no-side-margin">    
+                        <div class="col-md-3 post-author" style="background-image: url('{{ site.baseurl }}/{{ post.authorthumb }}');"> </div>
+                        <div class="col-md-9">
+                            <p class= "author-name"> {{ post.author }}</p>
+                            <p class= "post-date"> {{ post.date-text }}</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
             </div>
-            <div class="col-md-6 text-left">
-                <p class="documentation-link">Twitter.</p>
-            </div>
-        </div>
-
-        <div class="row no-side-margin text-center" style="margin-top: 40px;">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="504px" height="24px"><path d="M0 12 L504 12" style="fill:none; stroke:rgb(24,165,55);stroke-width:4;"></path></svg>
-            </div>
+            {% endfor %}
         </div>
     </div> <!--close container -->
 </section>

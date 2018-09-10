@@ -911,7 +911,7 @@ header .intro-text .intro-lead-in {
 }
 @media (min-width: 768px){
     header .intro-text {
-        padding-top: 90px;
+        padding-top: 50px;
     } 
     header .intro-text .intro-lead-in {
         font-size: 4.6em;
@@ -1207,7 +1207,8 @@ section .project-gallery-texts {
 }
 
 .documentation-texts {
-    position: absolute;
+    
+
 }
 
 
@@ -1217,6 +1218,70 @@ section .project-gallery-texts {
     padding-top: 125px;
 }
 
+/* MEDIUM POSTS*/
+
+.post-box {
+    background-color: #18a537;
+    height: 350px;
+    margin: 0px 15px;
+    position: relative;
+}
+
+.post-box .post-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 0px;
+}
+
+.post-box .post-caption {
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    right: -40px;
+    width: 100%;
+    padding: 13px;
+}
+
+.post-box .post-caption .post-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 65px;
+}
+
+.post-box .post-caption .post-author {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.author-name {
+    font-size: 14.3px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.post-date {
+    font-size: 11px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
 
 /*// GLOBAL INITIATIVE //*/
 .globe-area {
@@ -1499,7 +1564,6 @@ section .project-gallery-texts {
     margin-bottom: 0px;
     margin-top: -250px;
 }
-
 
 /*/--- SUBSCRIBE FORM SECTION ---/*/
 
