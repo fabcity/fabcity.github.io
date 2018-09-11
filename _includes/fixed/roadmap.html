@@ -6,10 +6,6 @@
                     <div class="col-md-12 no-side-padding">
                         <h1 data-bottom="opacity: 0;" data-0-center-center="opacity:1;" class="section-title">Our Roadmap</h1>
                     </div>
-                    <!--
-                    <div class="col-md-8 no-side-padding">
-                        <p class="section-small-title">A long term challenge based on short term actions.</p>
-                    </div>-->
                     <div class="col-md-8 no-side-padding">
                         <p data-bottom="opacity: 0;" data-0-center-center="opacity:1;" class="section-description">We’re building our roadmap through action research and experimentation, in collaboration with our growing network of supporters. </p>
                     </div>
@@ -28,7 +24,7 @@
                     {% for event in include.texts.events %}
                     <div class="bottom-element">
                         <div class="text-box">
-                            <img class="timeline-logo" src="{{ site.baseurl }}/img/roadmap/{{ event.img }}">
+                            <img class="timeline-logo" src="{{ site.baseurl }}/uploads/{{ event.img }}">
                             <h4>{{ event.year }} &nbsp; {{ event.title }}</h4>
                             <p class="small">{{ event.description }}</p>
                         </div>
