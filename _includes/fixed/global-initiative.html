@@ -36,9 +36,9 @@
                         <div class="row no-side-margin city-card">
                             <div class="col-md-8 no-side-padding">
                                 <p class="city-name">{{ city.name }}, {{ city.country }}</p>
-                                <p class="focus">Strategic focus: policy and governance </p>
-                                <p class="org-type">Consortium</p>
-                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                                <p class="focus">{{ city.strategicfocus }}</p>
+                                <p class="org-type">{{ city.orgtype }}</p>
+                                <p class="org-name">{{ city.org }}</p>
                             </div>
                             <div class="col-md-4 no-side-padding">
                                 <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
