@@ -1270,6 +1270,20 @@ section .project-gallery-texts {
     right: 0px;
 }
 
+/*// COMMON KNOWLEDGE SECTION //*/
+.logo-box {
+    height: 70px;
+    margin-right: 30px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+
 /*// DOCUMENTATION //*/
 
 .documentation-box {
