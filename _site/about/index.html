@@ -42,6 +42,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
   <!-- Navigation -->
@@ -49,24 +50,15 @@
 
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <!--
-            <div class= "brand">
-                <a href="/">
-                    <img src="/img/logos/fabcity.svg"> 
-                </a>
-            </div>
-            -->
             <div class="navbar-logo">
                 <a href="/"><img src="/uploads/fabcity.svg"></a>
             </div>
-
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!--<a class="navbar-brand page-scroll" href="#page-top">Fab City Global Initiative</a>-->
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,43 +69,29 @@
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/fabcity-challenge" target="_blank">The Challenge</a>
+                    <a class="page-scroll" href="/#fabcity-challenge" target="_blank">The Challenge</a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/values-vision" target="_blank">Values and Vision</a>
+                    <a class="page-scroll" href="/#values-vision" target="_blank">Values and Vision</a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/approach" target="_blank">Our Approach</a>
+                    <a class="page-scroll" href="/#our-approach" target="_blank">Our Approach</a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/global-initiative" target="_blank">Global Initiative</a>
+                    <a class="page-scroll" href="/#global-initiative" target="_blank">Global Initiative</a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/subscribe" target="_blank">Contact Us</a>
+                    <a class="page-scroll" href="/#subscribe" target="_blank">Contact Us</a>
                 </li>
                 
             </ul>
         </div>
         <!-- /.navbar-collapse -->
 </nav>
-
-<!--
-<div class="brand-box">
-    <div class= "brand">
-        <a href="/">
-            <img src="/img/logos/fabcity.svg"> 
-        </a>
-    </div>
-    <div class="button-top">
-        <a href="/#get-involved" class="page-scroll btn">Get Involved</a>
-    </div>
-</div>
-
--->
 
 
     <body id="page-top" class="index" onload="loaded()">
@@ -123,15 +101,15 @@
     
 
     <!-- jQuery Version 1.11.0 -->
-<script src="/js/jquery-1.11.0.js"></script>
+<!--<script src="/js/jquery-1.11.0.js"></script>-->
 
 <!-- Bootstrap Core JavaScript -->
 <script src="/js/bootstrap.min.js"></script>
 
-<!-- Plugin JavaScript -->
+<!-- Plugin JavaScript 
 <script src="/js/jquery.easing.min.js"></script>
 <script src="/js/classie.js"></script>
-<!--<script src="/js/cbpAnimatedHeader.js"></script>-->
+<script src="/js/cbpAnimatedHeader.js"></script>-->
 
 <!-- Custom Theme JavaScript -->
 <script src="/js/agency.js"></script>
@@ -256,6 +234,14 @@ function parse_str(str) {
         return params;
     }, {});
 }
+</script>
+
+
+<script type="text/javascript">
+    var $myGroup = $('#myGroup');
+    $myGroup.on('show','.collapse', function() {
+        $myGroup.find('.collapse.in').collapse('hide');
+    });
 </script>
 
 

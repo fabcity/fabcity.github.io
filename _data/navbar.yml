@@ -1,11 +1,11 @@
 sections:
   - title: "The Challenge"
-    link: 'fabcity-challenge'
+    link: '#fabcity-challenge'
   - title: "Values and Vision"
-    link: 'values-vision'   
+    link: '#values-vision'   
   - title: "Our Approach"
-    link: 'approach'
+    link: '#our-approach'
   - title: "Global Initiative"
-    link: 'global-initiative'
+    link: '#global-initiative'
   - title: "Contact Us"
-    link: 'subscribe' 
+    link: '#subscribe' 

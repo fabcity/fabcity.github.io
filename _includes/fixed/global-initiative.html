@@ -12,68 +12,111 @@
                 </div>
             </div>
         </div><!--close section content row -->  
+        <div id="myGroup">
+            <div class="row">
+                <div class= "col-sm-6 col-md-6 no-side-padding">
+                    <img data-bottom-top="margin-top: 600px;" data-top="margin-top: -130px;" class="img-left globe-img" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
+
+                    <div class="city-info collapse in" id="barcelona">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Barcelona, Spain</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    {% for city in include.texts.cities %}
+                    <div class="city-info collapse" id="{{ city.id }}">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">{{ city.name }}, {{ city.country }}</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+                <div class="col-md-2">
+                </div>
+                <div class="col-sm-4 col-md-4 section-texts">
+                    {% if include.texts.hassmalltitle == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">{{ include.texts.smalltitle }}</p>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hasdescription == true %}
+                    <div class="col-md-12 no-side-padding" style="margin-bottom: 60px;">
+                        <p class="section-description">{{ include.texts.description }}</p>
+                    </div>
+                    <div class="col-md-12 no-side-padding">
+                        <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
+                            <ul class="cities-list">
+                                <li class="cities-left"><a class="" data-toggle="collapse" href="#barcelona" role="button" aria-expanded="true" aria-controls="barcelona">Barcelona</a></li>
+
+                                
+                                 {% for city in include.texts.cities %}
+                                     {% if city.place == 'left' %}
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                                
+
+                            </ul> 
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
+                            <ul class="cities-list">
+                            {% for city in include.texts.cities %}
+                                {% if city.place == 'right' %}
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                        </div>
+
+                    </div>
+                    {% endif %}
+                </div>
+            </div>  <!-- row-->
+        </div>
+
+        <!--
         <div class="row">
-            <div class= "col-sm-6 col-md-6 no-side-padding">
-                <img data-bottom-top="margin-top: 600px;" data-top="margin-top: -50px;" class="img-left globe-img" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
-
-                {% for city in include.texts.cities %}
-                <div class="city-info collapse" id="{{ city.id }}">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">{{ city.name }}, {{ city.country }}</p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
+            <div id="myGroup">
+            <button class="btn dropdown" data-toggle="collapse" data-target="#keys"><i class="icon-chevron-right"></i> Keys  <span class="badge badge-info pull-right">X</span></button>
+            <button class="btn dropdown" data-toggle="collapse" data-target="#attrs"><i class="icon-chevron-right"></i> Attributes</button>
+            <button class="btn dropdown" data-toggle="collapse" data-target="#edit"><i class="icon-chevron-right"></i> Edit Details</button>
+            
+                <div class="collapse indent" id="keys">
+                    keys
                 </div>
-                {% endfor %}
-
+            
+                <div class="collapse indent" id="attrs">
+                    attrs
+                </div>
+            
+                <div class="collapse" id="edit">
+                    edit
+                </div>
             </div>
-
-            <div class="col-md-2">
-            </div>
-            <div class="col-sm-4 col-md-4 section-texts">
-                {% if include.texts.hassmalltitle == true %}
-                <div class="col-md-8 no-side-padding">
-                    <p class="section-small-title">{{ include.texts.smalltitle }}</p>
-                </div>
-                {% endif %}
-                {% if include.texts.hasdescription == true %}
-                <div class="col-md-12 no-side-padding" style="margin-bottom: 60px;">
-                    <p class="section-description">{{ include.texts.description }}</p>
-                </div>
-                <div class="col-md-12 no-side-padding">
-                    <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
-                        <ul class="cities-list">
-                            <!--
-                            <li class="cities-left"><a class="" data-toggle="collapse" href="#barcelona" role="button" aria-expanded="true" aria-controls="barcelona">Barcelona </a></li>-->
-                         {% for city in include.texts.cities %}
-                             {% if city.place == 'left' %}
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
-                            {% endif %}
-                        {% endfor %}
-                        </ul> 
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
-                        <ul class="cities-list">
-                        {% for city in include.texts.cities %}
-                            {% if city.place == 'right' %}
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">{{ city.name }} </a></li>
-                            {% endif %}
-                        {% endfor %}
-                        </ul>
-                    </div>
-
-                </div>
-                {% endif %}
-            </div>
-        </div>  <!-- row-->
+        </div>
+    -->
 
     </div> <!--close container -->
 </section>
+
+
 
 

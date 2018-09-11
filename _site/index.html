@@ -42,6 +42,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
   <!-- Navigation -->
@@ -49,24 +50,15 @@
 
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <!--
-            <div class= "brand">
-                <a href="/">
-                    <img src="/img/logos/fabcity.svg"> 
-                </a>
-            </div>
-            -->
             <div class="navbar-logo">
                 <a href="/"><img src="/uploads/fabcity.svg"></a>
             </div>
-
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!--<a class="navbar-brand page-scroll" href="#page-top">Fab City Global Initiative</a>-->
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,23 +69,23 @@
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/fabcity-challenge" target="_blank">The Challenge</a>
+                    <a class="page-scroll" href="/#fabcity-challenge" target="_blank">The Challenge</a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/values-vision" target="_blank">Values and Vision</a>
+                    <a class="page-scroll" href="/#values-vision" target="_blank">Values and Vision</a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/approach" target="_blank">Our Approach</a>
+                    <a class="page-scroll" href="/#our-approach" target="_blank">Our Approach</a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/global-initiative" target="_blank">Global Initiative</a>
+                    <a class="page-scroll" href="/#global-initiative" target="_blank">Global Initiative</a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="/subscribe" target="_blank">Contact Us</a>
+                    <a class="page-scroll" href="/#subscribe" target="_blank">Contact Us</a>
                 </li>
                 
             </ul>
@@ -101,22 +93,8 @@
         <!-- /.navbar-collapse -->
 </nav>
 
-<!--
-<div class="brand-box">
-    <div class= "brand">
-        <a href="/">
-            <img src="/img/logos/fabcity.svg"> 
-        </a>
-    </div>
-    <div class="button-top">
-        <a href="/#get-involved" class="page-scroll btn">Get Involved</a>
-    </div>
-</div>
 
--->
-
-
-    <body id="page-top" class="index" onload="loaded()">
+    <body id="page-top" class="index">
 
 
     <header>
@@ -315,7 +293,7 @@
 
 
 
-<section id="approach">
+<section id="our-approach">
     <div class="container">
         <!--Orientation 'normal' text first, photo after-->
         <div class="row no-side-margin section-row">
@@ -430,7 +408,7 @@
 <section id="documentation">
     <div class="container">
         <div class="row no-side-margin">
-            <div class="col-md-5 float-left" data-bottom-top="margin-top: 400px;" data-top="margin-top: 0px;">
+            <div class="col-md-5 float-left" data-bottom-top="margin-top: 300px;" data-top="margin-top: 0px;">
                 <div class="row no-side-margin">
                     
                     <div class="col-md-8 no-side-padding">
@@ -564,612 +542,635 @@
                 </div>
             </div>
         </div><!--close section content row -->  
+        <div id="myGroup">
+            <div class="row">
+                <div class= "col-sm-6 col-md-6 no-side-padding">
+                    <img data-bottom-top="margin-top: 600px;" data-top="margin-top: -130px;" class="img-left globe-img" src="/uploads/map-cities.png">
+
+                    <div class="city-info collapse in" id="barcelona">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Barcelona, Spain</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="city-info collapse" id="zagreb">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Zagreb, Croatia</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="bhutan">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Bhutan, Bhutan</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="shenzhen">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Shenzhen, China</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="georgia">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Georgia, Georgia</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="Curitiba">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Curitiba, Brasil</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="occitanie">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Occitanie Region, France</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="puebla">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Puebla, Mexico</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="mexico-df">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Mexico City, Mexico</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="auvergne">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Auvergne-Rhône-Alpes, France</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="amsterdam">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Amsterdam, Netherlands</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="cambridge">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Cambridge, USA</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="kerala">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Kerala, India</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="sacramento">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Sacramento, USA</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="belohorizonte">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Belo-Horizonte, Brasil</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="ekurhuleni">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Ekurhuleni, South Africa</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="Brest">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Brest, France</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="boston">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Boston, USA</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="toulouse">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Toulouse, France</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="paris">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Paris, France</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="santiago">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Santiago de Chile, Chile</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="velsen">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Velsen, Netherlands</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="seoul">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Seoul, South Korea</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="oakland">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Oakland, USA</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="somerville">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Somerville, USA</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="detroit">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Detroit, USA</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="kamakura">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Kamakura, Japan</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="city-info collapse" id="sorocaba">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Sorocaba, Brasil</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="/uploads/bcn-thumb.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div class="col-md-2">
+                </div>
+                <div class="col-sm-4 col-md-4 section-texts">
+                    
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">Fab City Network</p>
+                    </div>
+                    
+                    
+                    <div class="col-md-12 no-side-padding" style="margin-bottom: 60px;">
+                        <p class="section-description">Core to the initiative is a network of cities, regions and countries that have pledged to work towards producing everything they consume by 2054. Citizens, FabLabs and City officials collaborate locally to implement new urban models through interventions in governance and policy.</p>
+                    </div>
+                    <div class="col-md-12 no-side-padding">
+                        <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
+                            <ul class="cities-list">
+                                <li class="cities-left"><a class="" data-toggle="collapse" href="#barcelona" role="button" aria-expanded="true" aria-controls="barcelona">Barcelona</a></li>
+
+                                
+                                 
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#zagreb" role="button" aria-expanded="false" aria-controls="zagreb">Zagreb</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#bhutan" role="button" aria-expanded="false" aria-controls="bhutan">Bhutan</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#shenzhen" role="button" aria-expanded="false" aria-controls="shenzhen">Shenzhen</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#georgia" role="button" aria-expanded="false" aria-controls="georgia">Georgia</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#Curitiba" role="button" aria-expanded="false" aria-controls="Curitiba">Curitiba</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#occitanie" role="button" aria-expanded="false" aria-controls="occitanie">Occitanie Region</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#puebla" role="button" aria-expanded="false" aria-controls="puebla">Puebla</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#mexico-df" role="button" aria-expanded="false" aria-controls="mexico-df">Mexico City</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#auvergne" role="button" aria-expanded="false" aria-controls="auvergne">Auvergne-Rhône-Alpes</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#amsterdam" role="button" aria-expanded="false" aria-controls="amsterdam">Amsterdam</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#cambridge" role="button" aria-expanded="false" aria-controls="cambridge">Cambridge</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#kerala" role="button" aria-expanded="false" aria-controls="kerala">Kerala</a></li>
+                                    
+                                
+                                     
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#sacramento" role="button" aria-expanded="false" aria-controls="sacramento">Sacramento</a></li>
+                                    
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                     
+                                
+                                
+
+                            </ul> 
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
+                            <ul class="cities-list">
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#belohorizonte" role="button" aria-expanded="false" aria-controls="belohorizonte">Belo-Horizonte</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#ekurhuleni" role="button" aria-expanded="false" aria-controls="ekurhuleni">Ekurhuleni</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#Brest" role="button" aria-expanded="false" aria-controls="Brest">Brest</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#boston" role="button" aria-expanded="false" aria-controls="boston">Boston</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#toulouse" role="button" aria-expanded="false" aria-controls="toulouse">Toulouse</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#paris" role="button" aria-expanded="false" aria-controls="paris">Paris</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#santiago" role="button" aria-expanded="false" aria-controls="santiago">Santiago de Chile</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#velsen" role="button" aria-expanded="false" aria-controls="velsen">Velsen</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#seoul" role="button" aria-expanded="false" aria-controls="seoul">Seoul</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#oakland" role="button" aria-expanded="false" aria-controls="oakland">Oakland</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#somerville" role="button" aria-expanded="false" aria-controls="somerville">Somerville</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#detroit" role="button" aria-expanded="false" aria-controls="detroit">Detroit</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#kamakura" role="button" aria-expanded="false" aria-controls="kamakura">Kamakura</a></li>
+                                
+                            
+                                
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#sorocaba" role="button" aria-expanded="false" aria-controls="sorocaba">Sorocaba</a></li>
+                                
+                            
+                            </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>  <!-- row-->
+        </div>
+
+        <!--
         <div class="row">
-            <div class= "col-sm-6 col-md-6 no-side-padding">
-                <img data-bottom-top="margin-top: 600px;" data-top="margin-top: -50px;" class="img-left globe-img" src="/uploads/map-cities.png">
-
-                
-                <div class="city-info collapse" id="barcelona">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Barcelona, Spain</p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
+            <div id="myGroup">
+            <button class="btn dropdown" data-toggle="collapse" data-target="#keys"><i class="icon-chevron-right"></i> Keys  <span class="badge badge-info pull-right">X</span></button>
+            <button class="btn dropdown" data-toggle="collapse" data-target="#attrs"><i class="icon-chevron-right"></i> Attributes</button>
+            <button class="btn dropdown" data-toggle="collapse" data-target="#edit"><i class="icon-chevron-right"></i> Edit Details</button>
+            
+                <div class="collapse indent" id="keys">
+                    keys
                 </div>
-                
-                <div class="city-info collapse" id="zagreb">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Zagreb, Croatia</p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
+            
+                <div class="collapse indent" id="attrs">
+                    attrs
                 </div>
-                
-                <div class="city-info collapse" id="bhutan">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Bhutan, Bhutan</p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
+            
+                <div class="collapse" id="edit">
+                    edit
                 </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Shenzhen, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Georgia, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Curitiba, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Occitanie Region, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Puebla, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Mexico City, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Auvergne-Rhône-Alpes, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Amsterdam, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Cambridge, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Kerala, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Sacramento, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Belo-Horizonte, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Ekurhuleni, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Brest, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Boston, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Toulouse, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Paris, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Santiago de Chile, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Velsen, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Seoul, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Oakland, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Somerville, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Detroit, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Kamakura, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="city-info collapse" id="">
-                    <div class="row no-side-margin city-card">
-                        <div class="col-md-8 no-side-padding">
-                            <p class="city-name">Sorocaba, </p>
-                            <p class="focus">Strategic focus: policy and governance </p>
-                            <p class="org-type">Consortium</p>
-                            <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
-                        </div>
-                        <div class="col-md-4 no-side-padding">
-                            <img style="float: right;" src="/uploads/bcn-thumb.png">
-                        </div>
-                    </div>
-                </div>
-                
-
             </div>
-
-            <div class="col-md-2">
-            </div>
-            <div class="col-sm-4 col-md-4 section-texts">
-                
-                <div class="col-md-8 no-side-padding">
-                    <p class="section-small-title">Fab City Network</p>
-                </div>
-                
-                
-                <div class="col-md-12 no-side-padding" style="margin-bottom: 60px;">
-                    <p class="section-description">Core to the initiative is a network of cities, regions and countries that have pledged to work towards producing everything they consume by 2054. Citizens, FabLabs and City officials collaborate locally to implement new urban models through interventions in governance and policy.</p>
-                </div>
-                <div class="col-md-12 no-side-padding">
-                    <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
-                        <ul class="cities-list">
-                            <!--
-                            <li class="cities-left"><a class="" data-toggle="collapse" href="#barcelona" role="button" aria-expanded="true" aria-controls="barcelona">Barcelona </a></li>-->
-                         
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#barcelona" role="button" aria-expanded="false" aria-controls="barcelona">Barcelona</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#zagreb" role="button" aria-expanded="false" aria-controls="zagreb">Zagreb</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#bhutan" role="button" aria-expanded="false" aria-controls="bhutan">Bhutan</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Shenzhen</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Georgia</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Curitiba</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Occitanie Region</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Puebla</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Mexico City</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Auvergne-Rhône-Alpes</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Amsterdam</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Cambridge</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Kerala</a></li>
-                            
-                        
-                             
-                                <li class="cities-left"><a class="" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="">Sacramento</a></li>
-                            
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                             
-                        
-                        </ul> 
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
-                        <ul class="cities-list">
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Belo-Horizonte </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Ekurhuleni </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Brest </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Boston </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Toulouse </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Paris </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Santiago de Chile </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Velsen </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Seoul </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Oakland </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Somerville </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Detroit </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Kamakura </a></li>
-                            
-                        
-                            
-                                <li class="cities-right"><a class="" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">Sorocaba </a></li>
-                            
-                        
-                        </ul>
-                    </div>
-
-                </div>
-                
-            </div>
-        </div>  <!-- row-->
+        </div>
+    -->
 
     </div> <!--close container -->
 </section>
 
 
 
+
+
 <section id="fab-city-foundation">
-    <div class="container container-outlined" data-bottom-top="margin-top: 400px;" data-top="margin-top: 0px;">
+    <div class="container container-outlined" data-bottom-top="margin-top: 300px;" data-top="margin-top: 0px;">
         <div class="row no-side-margin">
             <div class="col-md-5 float-left">
                 <div class="row no-side-margin">
@@ -1272,7 +1273,7 @@
 <section id="roadmap">
     <div class="container">
         <div class="row" style="margin-bottom:40px;">
-            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: px;" data-bottom-top="margin-top: 600px;" data-top="margin-top: 0px;">
+            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: px;" data-bottom-top="margin-top: 400px;" data-top="margin-top: 0px;">
                 <div class="row no-side-margin">
                     <div class="col-md-12 no-side-padding">
                         <h1 data-bottom="opacity: 0;" data-0-center-center="opacity:1;" class="section-title">Our Roadmap</h1>
@@ -2000,15 +2001,15 @@
     
 
     <!-- jQuery Version 1.11.0 -->
-<script src="/js/jquery-1.11.0.js"></script>
+<!--<script src="/js/jquery-1.11.0.js"></script>-->
 
 <!-- Bootstrap Core JavaScript -->
 <script src="/js/bootstrap.min.js"></script>
 
-<!-- Plugin JavaScript -->
+<!-- Plugin JavaScript 
 <script src="/js/jquery.easing.min.js"></script>
 <script src="/js/classie.js"></script>
-<!--<script src="/js/cbpAnimatedHeader.js"></script>-->
+<script src="/js/cbpAnimatedHeader.js"></script>-->
 
 <!-- Custom Theme JavaScript -->
 <script src="/js/agency.js"></script>
@@ -2133,6 +2134,14 @@ function parse_str(str) {
         return params;
     }, {});
 }
+</script>
+
+
+<script type="text/javascript">
+    var $myGroup = $('#myGroup');
+    $myGroup.on('show','.collapse', function() {
+        $myGroup.find('.collapse.in').collapse('hide');
+    });
 </script>
 
 

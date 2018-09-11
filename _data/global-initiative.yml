@@ -8,68 +8,192 @@ smalltitle: 'Fab City Network'
 hasdescription: true
 description: "Core to the initiative is a network of cities, regions and countries that have pledged to work towards producing everything they consume by 2054. Citizens, FabLabs and City officials collaborate locally to implement new urban models through interventions in governance and policy."
 cities:
-  - name: "Barcelona"
-    place: left
-    id: "barcelona"
-    country: Spain
-    strategicfocus: "policy and governance"
-    orgtype: "Consortium"
-    org: "Fab Lab Barcelona | IAAC | Barcelona City Council"
   - name: "Zagreb"
     place: left
     id: "zagreb"
     country: Croatia
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Bhutan"
     place: left
     id: "bhutan"
     country: Bhutan
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Shenzhen"
     place: left
+    id: "shenzhen"
+    country: China
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Georgia"
     place: left
+    id: "georgia"
+    country: Georgia
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Curitiba"
     place: left
+    id: "Curitiba"
+    country: Brasil
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Occitanie Region"
     place: left
+    id: "occitanie"
+    country: France
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Puebla"
     place: left
+    id: "puebla"
+    country: Mexico
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Mexico City"
     place: left
+    id: "mexico-df"
+    country: Mexico
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Auvergne-Rhône-Alpes"
     place: left
+    id: "auvergne"
+    country: France
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Amsterdam"
     place: left
+    id: "amsterdam"
+    country: Netherlands
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Cambridge"
     place: left
+    id: "cambridge"
+    country: USA
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Kerala"
     place: left
+    id: "kerala"
+    country: India
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Sacramento"
     place: left
+    id: "sacramento"
+    country: USA
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Belo-Horizonte"
     place: right
+    id: "belohorizonte"
+    country: Brasil
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Ekurhuleni"
     place: right
+    id: "ekurhuleni"
+    country: South Africa
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Brest"
     place: right
+    id: "Brest"
+    country: France
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Boston"
     place: right
+    id: "boston"
+    country: USA
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Toulouse"
     place: right
+    id: "toulouse"
+    country: France
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Paris"
     place: right
+    id: "paris"
+    country: France
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Santiago de Chile"
     place: right
+    id: "santiago"
+    country: Chile
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Velsen"
     place: right
+    id: "velsen"
+    country: Netherlands
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Seoul"
     place: right
+    id: "seoul"
+    country: South Korea
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Oakland"
     place: right
+    id: "oakland"
+    country: USA
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Somerville"
     place: right
+    id: "somerville"
+    country: USA
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Detroit"
     place: right
+    id: "detroit"
+    country: USA
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Kamakura"
     place: right
+    id: "kamakura"
+    country: Japan
+    strategicfocus: ""
+    orgtype: ""
+    org: ""
   - name: "Sorocaba"
     place: right
+    id: "sorocaba"
+    country: Brasil
+    strategicfocus: ""
+    orgtype: ""
+    org: ""

@@ -1394,9 +1394,11 @@ section .project-gallery-texts {
     padding-left: 8px;
 }
 
+.cities-demo a {
+}
 
 
-/*// PARTNER CITIES /*/
+/*// PARTNER CITIES /
 
 #partner-cities {
     
@@ -1419,8 +1421,10 @@ section .project-gallery-texts {
     list-style: none;
 }
 
+
 #partner-cities ul li {
 }
+*/
 
 /*//  OUR PARTNERS //*/
 
