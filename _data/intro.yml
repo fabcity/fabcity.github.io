@@ -1,9 +1,9 @@
 id: "intro"
 sectioncolor: 'blue'
 hascolorbg: true
-image: 'city-panorama.jpg'
-imgwidth: '492'
-imgheight: '535'
+image: 'quote-image.jpg'
+imgwidth: '464'
+imgheight: '640'
 haslargetitle: true
 largetitle: 'Fab City Challenge'
 hassmalltitle: false
