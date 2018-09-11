@@ -1,0 +1,22 @@
+id: "events"
+orientation: inverted
+sectioncolor: 'red'
+hascolorbg: true
+image: 'events.jpg'
+imgwidth: '428'
+imgheight: '358'
+haslargetitle: false
+largetitle: ''
+hassmalltitle: true
+smalltitle: 'Events'
+hasdescription: true
+description: "Local and global Fab City events are hosted the world over. Find a local event or host one."
+hasbutton: false
+buttonaction: ""
+buttontitle: ""
+buttonlink: ""
+hasdownload: false
+hasextraaction: false
+extraaction: ''
+extraactionlink: ''
+hasdivisionline: false
