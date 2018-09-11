@@ -1009,6 +1009,7 @@ section .quote-box .quote {
 }
 section .quote-box .quote span {
     font-size: 39px;
+    font-weight: 500;
 }
 section .quote-box .quote-highlight {
     float: left;
