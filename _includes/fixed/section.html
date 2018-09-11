@@ -99,8 +99,18 @@
                     {% if include.texts.hasdescription == true %}
                     <div class="col-md-12 no-side-padding">
                         <div class="col-md-2">
+                            {% if include.texts.sectioncolor == 'blue' %}
                             <div style="left: 0px; top: 0px; width: 42px; height: 24px; z-index: 131;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(20,4,104);stroke-width:4"></path></svg>
                             </div>
+                            {% elsif include.texts.sectioncolor == 'red' %}
+                            <div style="left: 0px; top: 0px; width: 42px; height: 24px; z-index: 131;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(226,24,38);stroke-width:4"></path></svg>
+                            </div>
+                            {% elsif include.texts.sectioncolor == 'green' %}
+                            <div style="left: 0px; top: 0px; width: 42px; height: 24px; z-index: 131;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(24,165,55);stroke-width:4"></path></svg>
+                            </div>
+                            {% else %}
+                            <div style="left: 0px; top: 0px; width: 42px; height: 24px; z-index: 131;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(255,239,25);stroke-width:4"></path></svg>
+                            {% endif %}
                         </div>
                         <div class="col-md-10">
                             <p data-0-bottom-top="opacity: 0;" data-0-center-top="opacity:1;" class="section-description">{{ include.texts.description }}</p>
