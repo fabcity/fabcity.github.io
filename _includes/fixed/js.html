@@ -12,6 +12,23 @@
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
 
+
+
+<!-- Countdown -->
+<script src="{{ "/js/jquery.countdown.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/countdown.js" | prepend: site.baseurl }}"></script>
+
+
+<!--slider-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+$('.slidewrapper').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+</script>
+
 <!--Parallax Scrolling animations -->
 <script src="{{ "/js/skrollr.js" | prepend: site.baseurl }}"></script>
 
@@ -31,23 +48,6 @@ $(function () {
       skrollr.init().destroy(); // skrollr.init() returns the singleton created above
     }
   });
-});
-</script>
-
-
-
-<!-- Countdown -->
-<script src="{{ "/js/jquery.countdown.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/countdown.js" | prepend: site.baseurl }}"></script>
-
-
-<!--slider-->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
-$('.slidewrapper').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
 });
 </script>
 
