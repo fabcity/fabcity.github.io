@@ -1,30 +1,39 @@
 <section id="{{ include.texts.id }}">
     <div class="container">
-        <div class="col-sm-6 col-md-6 section-texts float-left quote-box"  style="height: {{ include.texts.imgheight }}px;">
-            <div class="row no-side-margin" data-bottom-top="margin-top: 600px;" data-top="margin-top: 0px;">
-                <p class="quote" data-bottom="opacity: 0.3;" data-0-center-center="opacity:1;">Currently, cities occupy <span>2%</span> of the earth's surface to house 1/2 of world population </p>
-                <p class="quote" data-bottom="opacity: 0;" data-0-center-center="opacity:1;">Yet, they are responsible for <span>67%</span> of global energy consumption</p>
-                <p class="quote" data-bottom="opacity: 0;" data-0-center-center="opacity:1;">and generate <span>70%</span> of global waste generation</p>
-                <p class="quote" data-bottom="opacity: 0;" data-0-center-center="opacity:1;" style="margin-bottom: 185px;">in <span>2050</span>, it is expected that <span>2/3</span> of the global population will live in cities.</p>
-                <p class="quote" data-bottom="opacity: 0;" data-0-center-center="opacity:1;">Under this current system of consumption, we’d need the resources of three planets to sustain life on earth...like that’s even an option.</p>
-                <!--
-                <p class="quote-highlight text-center" data-150-center-center="opacity: 0; margin-top: 100px;" data-center-bottom="opacity:1; margin-top: 0px;">We are shifting the paradigm PITO to DIDO to enable cities to produce everything they consume by 2054</p>-->
-            </div>
-        </div>
 
-        <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-top="margin-top: 0px;">
-            {% if include.texts.hascolorbg == true %}
-                {% if include.texts.sectioncolor == 'blue' %}
-                    <div class="plain-bg plain-bg-right bg-blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
-                {% elsif include.texts.sectioncolor == 'yellow' %}
-                    <div class="plain-bg plain-bg-right bg-yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
-                {% elsif include.texts.sectioncolor == 'red' %}
-                    <div class="plain-bg plain-bg-right bg-red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
-                {% else %}
-                    <div class="plain-bg plain-bg-right bg-green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
+        <div class="row no-side-margin intro-box">
+            <div class="col-sm-6 col-md-6 section-texts float-left quote-box"  style="height: {{ include.texts.imgheight }}px;">
+                <div class="row no-side-margin" data-bottom-top="margin-top: 600px;" data-top="margin-top: 0px;">
+                    {% for quote in include.texts.quotes %}
+                        <p class="quote" data-bottom="opacity: 0.3;" data-0-center-center="opacity:1;">{{ quote.text }}</p>
+                    {% endfor %}
+                    <p class="quote" data-bottom="opacity: 0;" data-0-center-center="opacity:1;" style="margin-top: 185px;">{{ include.texts.conclusion }}</p>
+                </div>
+            </div> <!--close quote-box-->
+
+            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-top="margin-top: 0px;">
+                {% if include.texts.hascolorbg == true %}
+                    {% if include.texts.sectioncolor == 'blue' %}
+                        <div class="plain-bg plain-bg-right bg-blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
+                    {% elsif include.texts.sectioncolor == 'yellow' %}
+                        <div class="plain-bg plain-bg-right bg-yellow" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
+                    {% elsif include.texts.sectioncolor == 'red' %}
+                        <div class="plain-bg plain-bg-right bg-red" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
+                    {% else %}
+                        <div class="plain-bg plain-bg-right bg-green" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
+                    {% endif %}
                 {% endif %}
-            {% endif %}
-            <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
+                <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
+            </div>
+        </div><!--close intro-box-->
+
+        <div class="row no-side-margin text-center">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center quote-highlight">
+                <p data-150-center-center="opacity: 0;" data-center-bottom="opacity:1;" style="margin-top: 30px;">So how can we make cities more sustainable and <br> livable to ensure our future?</p>
+                <p class="bigger">We are shifting the paradigm <a href="">PITO to DIDO</a> to enable cities to produce everything they consume by 2054</p>
+            </div>
+            <div class="col-md-2"></div>
         </div>
 
     </div> <!--close container -->

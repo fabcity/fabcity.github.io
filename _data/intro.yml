@@ -4,13 +4,9 @@ hascolorbg: true
 image: 'quote-image.jpg'
 imgwidth: '464'
 imgheight: '640'
-haslargetitle: true
-largetitle: 'Fab City Challenge'
-hassmalltitle: false
-smalltitle: ''
-hasdescription: true
-description: "Fab City Global Initiative challenges the current industrial paradigm of Product-in Trash-out, by advocating for the return of manufacture to cities supported by a Data-in Data-out urban model. It  comprises a network of 28 cities, a core team of collective members and is governed by a foundation, all working to change the urban paradigm of yesterday, and make the cities of tomorrow."
-hasbutton: true
-buttonaction: "Read the"
-buttontitle: "White Paper"
-buttonlink: "uploads/whitepaper.pdf"
+quotes:
+  - text: "Currently, cities occupy <span>2%</span> of the earth's surface to house 1/2 of world population"
+  - text: "Yet, they are responsible for <span>67%</span> of global energy consumption"
+  - text: "and generate <span>70%</span> of global waste generation"
+  - text: "in <span>2050</span>, it is expected that <span>2/3</span> of the global population will live in cities."
+conclusion: "Under this current system of consumption, we’d need the resources of three planets to sustain life on earth...like that’s even an option."

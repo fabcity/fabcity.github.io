@@ -994,12 +994,17 @@ header .intro-text .intro-lead-in {
 }
 
 /*// INTRO QUOTES //*/
-section .quote-box {
+
+.intro-box {
+    margin-bottom: 80px;
+}
+
+.quote-box {
     background-color: transparent; 
     float: left;
     margin-top: 5px;
 }
-section .quote-box .quote {
+.quote-box .quote {
     line-height: 26px;
     font-weight: 400;
     font-size: 19px;
@@ -1007,26 +1012,41 @@ section .quote-box .quote {
     padding-bottom: 15px;
     font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-section .quote-box .quote span {
+.quote-box .quote span {
     font-size: 39px;
 }
-section .quote-box .quote-highlight {
-    float: left;
-    width: 350px;
-    font-size: 23px;
-    line-height: 32px;
+
+.quote-highlight {
     padding: 20px;
-    margin-right: -70px;
-    margin-bottom: 0px;
-    font-weight: 400;
-    font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
     border: solid 4px #140468; 
 }
 
+.quote-highlight p {
+    font-size: 23px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.quote-highlight p.bigger {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.quote-highlight a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 6px;
+    font-weight: 300;
+    background: linear-gradient(to right, rgb(20,4,104) 0%, rgb(20,4,104) 100%);
+    background-size: 100%;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+
 @media (min-width: 768px){
-    section .quote-box .quote-highlight {
-         float: right;
-         width: 380px;
+    .quote-highlight {
+         
     }
 }
 
