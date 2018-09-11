@@ -7,18 +7,12 @@ projects:
   - title: "REMODEL, Danish Design Centre"
     url: 'https://danskdesigncenter.dk/en/remodel'
     img: 'remodel.png'
-  - title: "Smart Citizen"
-    url: 'https://smartcitizen.me/'
-    img: 'remodel.png'
-  - title: "Making Sense"
-    url: 'http://making-sense.eu/'
-    img: 'remodel.png'
-  - title: "REMODEL, Danish Design Centre"
-    url: 'https://danskdesigncenter.dk/en/remodel'
-    img: 'remodel.png'
-  - title: "Smart Citizen"
-    url: 'https://smartcitizen.me/'
-    img: 'remodel.png'
-  - title: "Making Sense"
-    url: 'http://making-sense.eu/'
-    img: 'remodel.png'
+  - title: "Made Again Challenge, Poblenou BCN"
+    url: 'https://www.youtube.com/watch?v=roOaf8bXoRE'
+    img: 'made-again.jpg'
+  - title: "Manifattura Milano"
+    url: 'https://www.manifattura.milano.it/'
+    img: 'manifattura.jpg'
+  - title: "DiD Foundation, Diseño Distribuido"
+    url: 'http://www.fundaciondid.cl/'
+    img: 'did.png'
