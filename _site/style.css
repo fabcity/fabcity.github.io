@@ -1000,7 +1000,7 @@ section .quote-box {
     margin-top: 5px;
 }
 section .quote-box .quote {
-    line-height: 25px;
+    line-height: 30px;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0.3px;
@@ -1118,6 +1118,46 @@ section .extra-action a{
     color: rgb(0,0,0);
     padding-bottom: 3px;
     background: linear-gradient(to right, rgb(255,239,25) 0%, rgb(255,239,25) 100%);
+    background-size: 1px 3px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+
+a.underlined-blue{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding-bottom: 3px;
+    background: linear-gradient(to right, rgb(20,4,104) 0%, rgb(20,4,104) 100%);
+    background-size: 1px 3px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+
+a.underlined-yellow{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding-bottom: 3px;
+    background: linear-gradient(to right, rgb(255,239,25) 0%, rgb(255,239,25) 100%);
+    background-size: 1px 3px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+
+a.underlined-green {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding-bottom: 3px;
+    background: linear-gradient(to right, rgb(24,165,55) 0%, rgb(24,165,55) 100%);
+    background-size: 1px 3px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+
+a.underlined-red {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding-bottom: 3px;
+    background: linear-gradient(to right, rgb(226,24,38) 0%, rgb(226,24,38) 100%);
     background-size: 1px 3px;
     background-position: 0 100%;
     background-repeat: repeat-x;
