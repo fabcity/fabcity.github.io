@@ -1113,6 +1113,20 @@ section .section-small-title {
     font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+section .intro-line {
+    float: left;
+    left: 0px;
+    top: 0px;
+    width: 42px;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-left: -50px;
+}
+
+section .intro-line.line-right {
+    margin-left: 0px;
+}
+
 section .section-description {
     font-size: 16px;
 }
