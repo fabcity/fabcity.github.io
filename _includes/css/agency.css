@@ -850,6 +850,17 @@ header .intro-text .intro-lead-in {
     font-size: 39px;
 }
 
+.quote-box .quote.emphasis {
+    margin-top: 0px;
+}
+
+@media (min-width: 768px){
+    .quote-box .quote.emphasis {
+        margin-top: 0px;
+    }
+}
+
+
 .quote-highlight {
     padding: 20px;
     border: solid 4px #{{ site.data.template.color.blues }}; 
@@ -888,9 +899,10 @@ header .intro-text .intro-lead-in {
 /*// STANDARD SECTION MODULE //*/
 
  .float-right {
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 30px;
     float: left;
-    padding-right: 0px;
+    
 }
 
  .float-left {
@@ -911,6 +923,9 @@ header .intro-text .intro-lead-in {
 @media (min-width: 768px){
     .float-left {
         padding-right: 100px;
+    }
+    .float-right {
+        padding-left: 20px;
     }
 }
 
@@ -1701,12 +1716,4 @@ body {
 
 
 /*// Specific Section Styling //*/
-#intro {
-    margin-bottom: 210px;
-}
 
-@media (min-width: 768px){
-    #intro {
-        margin-bottom: 0px;
-    }
-}
