@@ -1205,6 +1205,9 @@ section .project-gallery-texts {
 .slidewrapper {
     margin: 0px -0px;
     margin-left: 20%;
+
+}
+.slide-green {
     background: linear-gradient(to right, rgb(24, 165, 54) 0%, rgb(24, 165, 54) 100%);
     background-size: 200px 138px;
     background-repeat: no-repeat;
