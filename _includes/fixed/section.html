@@ -3,7 +3,7 @@
         <!--Orientation 'normal' text first, photo after-->
         <div class="row no-side-margin section-row">
             {% if include.texts.orientation == 'normal' %}
-            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-top="margin-top: 0px;">
+            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
 
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
@@ -35,7 +35,7 @@
                     {% endif %}
 
                     {% if include.texts.hasbutton == true %}
-                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-100-center-top="margin-bottom: 0px;">
+                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-80-center-top="margin-bottom: 0px;">
                         <div class="col-md-12 no-side-padding text-right">
                             <p class="action"> {{ include.texts.buttonaction }}</p> 
                         </div>
@@ -96,7 +96,7 @@
                 {% endif %}
                 <img class="section-img img-left" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-right" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-top="margin-top: 0px;">
+            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-right" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
                     <div class="col-md-12 no-side-padding">
@@ -136,7 +136,7 @@
                     {% endif %}
 
                     {% if include.texts.hasbutton == true %}
-                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-100-center-top="margin-bottom: 0px;">
+                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-80-center-top="margin-bottom: 0px;">
                         <div class="col-md-12 no-side-padding text-right">
                             <p class="action"> {{ include.texts.buttonaction }}</p> 
                         </div>
