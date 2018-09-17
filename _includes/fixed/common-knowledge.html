@@ -71,15 +71,17 @@
             </div>
         </div> <!-- Close row -->
         <div class="row">
-            <div class="col-md-6 no-side-padding" style="float: right; margin-top: 30px;">
+            <div class="col-xs-6 col-sm-6 col-md-6"></div>
+            <div class="col-xs-12 col-sm-6 col-md-6 no-side-padding" style="margin-top: 30px;">
                 <p style="font-size: 16px; margin-bottom: 20px;">Platforms:</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 no-side-padding" style="float: right; margin-top: 0px;">
+            
+            <div class="col-xs-12 col-md-6 no-side-padding" style="float: right; margin-top: 0px;">
                 {% for platform in include.texts.platforms %}
                 <a href="{{ platform.logo }}" target="_blank">
-                <div class="col-md-2 logo-box" style="background-image: url('{{ site.baseurl }}/uploads/{{ platform.logo }}');">
+                <div class="col-xs-2 col-sm-2 col-md-2 logo-box" style="background-image: url('{{ site.baseurl }}/uploads/{{ platform.logo }}');">
                 </div>
                  </a>
                 {% endfor %}
