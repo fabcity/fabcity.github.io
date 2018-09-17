@@ -768,8 +768,15 @@ a.active {
 }
 
 .section-img {
-    position: absolute;
+    position: relative;
 }
+
+@media (min-width: 768px){
+    .section-img {
+        position: absolute;
+    }
+}
+
 
 .img-right {
     float: right;
@@ -1479,8 +1486,16 @@ section .project-gallery-texts {
 }
 
 .city-info.collapse.in {
-    opacity: 1;
+    opacity: 0;
 }
+
+@media (min-width: 768px){
+    .city-info.collapse.in {
+        opacity: 1;
+    }
+}
+
+
 
 .cities-list {
     list-style: none;
@@ -1618,8 +1633,15 @@ section .project-gallery-texts {
     white-space: nowrap;
     height: 300px;
     overflow-y: hidden;
-    float: right;
+    float: unset;
 }
+
+@media (min-width: 768px){
+    #roadmap .roadmap-box {
+        float: right;
+    }
+}
+
 
 .line {
     width: 1500px;
