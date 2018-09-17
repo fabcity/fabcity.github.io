@@ -669,7 +669,7 @@ a.active {
     margin-bottom: 40px;
     height: 300px;
     background-repeat: no-repeat;
-     background-attachment: scroll;
+    background-attachment: scroll;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -1031,7 +1031,6 @@ a.underlined-red {
     background-repeat: repeat-x;
 }
 
-
 /*// PROJECT GALLERY MODULE //*/
 section .project-gallery-texts {
     margin-bottom: 20px;
@@ -1040,7 +1039,12 @@ section .project-gallery-texts {
 .slidewrapper {
     margin: 0px -0px;
     margin-left: 20%;
-
+    background: linear-gradient(to right, rgb(24, 165, 54) 0%, rgb(24, 165, 54) 100%);
+    background-size: 200px 138px;
+    background-repeat: no-repeat;
+    -webkit-transition: all ease .1s;
+    -moz-transition: all ease .1s;
+    transition: all ease .1s;
 }
 
 .slidewrapper .slideshow{
