@@ -1053,9 +1053,9 @@ section .project-gallery-texts {
 
 .slidewrapper {
     margin: 0px -0px;
-    margin-left: 20%;
-
+    margin-left: 0%;
 }
+
 .slide-green {
     background: linear-gradient(to right, rgb(24, 165, 54) 0%, rgb(24, 165, 54) 100%);
     background-size: 200px 138px;
@@ -1084,7 +1084,7 @@ section .project-gallery-texts {
 .project-box {
     width: 165px;
     float: left;
-    padding-right: 100px;
+    padding-right: 10px;
     padding-bottom: 5px;
 }
 
@@ -1098,7 +1098,7 @@ section .project-gallery-texts {
 }
 
 .project-img {
-    width: 165px;
+    width: 100px;
     height: 165px; 
     margin-bottom: 20px;   
 }
@@ -1138,6 +1138,18 @@ section .project-gallery-texts {
 
 .slick-next {
     right: 0px;
+}
+
+@media (min-width: 768px){
+    .slidewrapper {
+    margin-left: 20%;
+    }
+    .project-img {
+        width: 165px;
+    }
+    .project-box {
+        padding-right: 100px;
+    }
 }
 
 /*// COMMON KNOWLEDGE SECTION //*/
