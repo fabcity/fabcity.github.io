@@ -471,6 +471,95 @@ a.active {
     color: black;
 }
 
+/* SHARE BUTTON*/
+
+.share-row {
+    list-style: none;
+    float: right;
+}
+
+.share-row li {
+    display: inline;
+    width: 19px; 
+    height: 17px; 
+    padding-left: 24px;
+}
+
+#btn-share {
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+#btn-share:hover,
+#btn-share:focus,
+#btn-share:active,
+#btn-share.active,
+#btn-share:active:focus {
+    outline: 0;
+}
+#btn-share .popover {
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+}
+#btn-share .popover .popover-content {
+  width: 156px;
+  height: 49px;
+  margin: 0;
+  padding: 0;
+}
+#btn-share .popover .popover-content .btn-media {
+  width: 78px;
+  height: 49px;
+  line-height: 49px;
+  float: left;
+  color: #000;
+  text-align: center;
+  background: #f3f3f3;
+}
+#btn-share .popover .popover-content .btn-media.twitter {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#btn-share .popover .popover-content .btn-media.google-plus {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+#btn-share .popover .popover-content .btn-media.facebook {
+  border-left: 1px solid #f3f3f3;
+  border-right: 1px solid #f3f3f3;
+}
+#btn-share .popover .popover-content .btn-media.facebook:before {
+  position: absolute;
+  top: -10px;
+  margin-left: -32px;
+  content: "";
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 10px solid #f3f3f3;
+
+}
+#btn-share .popover .popover-content .btn-media:hover,
+#btn-share .popover .popover-content .btn-media:focus {
+  background: #ececec;
+  -webkit-transition: background ease .35s;
+  -moz-transition: background ease .35s;
+  transition: background ease .35s;
+}
+#btn-share .popover .popover-content .btn-media:hover.facebook:after,
+#btn-share .popover .popover-content .btn-media:focus.facebook:after {
+  border-top-color: #264356;
+}
+#btn-share .popover .popover-content .btn-media i {
+  font-size: 30px;
+  line-height: 49px;
+}
+
+.popover.bottom {
+    margin-top: 16px;
+}
 
 /*/--- NAVBAR ---//*/
 

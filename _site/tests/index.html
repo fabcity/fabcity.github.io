@@ -135,7 +135,18 @@
                         </div>
                         
                         <div class="col-md-12 no-side-padding">
-                            <a href="uploads/whitepaper.pdf"><div class="" style="width: 19px; height: 17px; float:right;"><img src="/uploads/download-icon.png"></div></a>
+                            <ul class="share-row">
+                                <li><a target="_blank" href="uploads/whitepaper.pdf"><img src="/uploads/download-icon.png"></a></li>
+                                <li><button type="button" id="btn-share" data-container="body" data-toggle="popover" data-placement="bottom"><img src="/uploads/share-icon.png"></button></li>
+                            <ul>
+                            <span id="popoverExampleHiddenContent" class="hidden">
+                                <a target="_blank" href="uploads/whitepaper.pdf" class="btn-media twitter">
+                                <i class="fa fa-twitter"></i>
+                                </a>
+                                <a target="_blank" href="uploads/whitepaper.pdf" class="btn-media facebook">
+                                <i class="fa fa-facebook"></i>
+                                </a>
+                            </span>
                         </div>
                         
                     </div>
@@ -143,6 +154,7 @@
                 </div>
             </div>
         </div><!--close section content row --> 
+
           <!-- Endif Extra Action Button -->
           <!-- Endif Orientation condition -->
 
@@ -154,7 +166,6 @@
         
     </div> <!--close container -->
 </section>
-
 
 
 
@@ -220,7 +231,6 @@
 
 
 
-
 <section id="our-approach">
     <div class="container">
         <!--Orientation 'normal' text first, photo after-->
@@ -273,7 +283,6 @@
         
     </div> <!--close container -->
 </section>
-
 
 
 
@@ -422,6 +431,39 @@ function parse_str(str) {
         $myGroup.find('.collapse.in').collapse('hide');
     });
 </script>
+
+
+<script type="text/javascript">
+// default init
+//$(function () {
+//  $('[data-toggle="popover"]').popover()
+//})
+
+$("#btn-share").popover({
+  html : true, 
+  container : '#btn-share',
+  content: function() {
+    return $('#popoverExampleHiddenContent').html();
+  },
+  template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
+});
+
+$(document).click(function (event) {
+            // hide share button popover
+        if (!$(event.target).closest('#btn-share').length) {
+            $('#btn-share').popover('hide')
+        }
+    });
+
+$("a.twitter").attr("href", "https://twitter.com/home?status=" + window.location.href);
+$("a.facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + window.location.href);
+/*
+$("a.google-plus").attr("href", "https://plus.google.com/share?url=" + window.location.href);*/
+
+</script>
+
+
+
 
 
 
