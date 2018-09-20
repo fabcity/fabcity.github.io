@@ -15,6 +15,7 @@ hasbutton: false
 buttonaction: ""
 buttontitle: ""
 buttonlink: ""
+filename:
 hasdownload: false
 hasextraaction: false
 extraaction: ''
