@@ -297,6 +297,15 @@ a.active {
     background-position: right bottom;
 }
 
+.black {
+    /*background-color: #{{ site.data.template.color.yellows }};*/
+    background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.blacks }} 50%);
+    background-size: 200% 100%;
+    border: solid 1.5px #{{ site.data.template.color.whites }};
+    color: #fff;
+    background-position: right bottom;
+}
+
 .yellow:hover,
 .yellow:focus,
 .yellow:active,

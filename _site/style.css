@@ -463,6 +463,15 @@ a.active {
     background-position: right bottom;
 }
 
+.black {
+    /*background-color: #ffef19;*/
+    background: linear-gradient(to right, transparent 50%, #000 50%);
+    background-size: 200% 100%;
+    border: solid 1.5px #ffffff;
+    color: #fff;
+    background-position: right bottom;
+}
+
 .yellow:hover,
 .yellow:focus,
 .yellow:active,
