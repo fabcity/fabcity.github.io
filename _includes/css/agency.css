@@ -1377,7 +1377,7 @@ section .project-gallery-texts {
 
 .globe-img {
     margin-left: -60px;
-    width: 640px;
+    width: 700px;
     /*position: absolute;*/
 }
 
@@ -1391,7 +1391,7 @@ section .project-gallery-texts {
 .city-info {
     position: absolute;
     padding: 0px !important;
-    bottom:0;
+    bottom: 80px;
     width: 100%;
     height: auto;
     background-color: white;
@@ -1403,6 +1403,7 @@ section .project-gallery-texts {
 
 .city-info .city-card {
     padding: 20px;
+    padding: 30px;
 }
 
 .city-info .city-card .city-name {
@@ -1421,6 +1422,15 @@ section .project-gallery-texts {
 .city-info .city-card .org-type {
     font-size: 15px;
     margin-bottom: 0px;
+}
+
+.city-info .city-card .card-close {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 29px;
+    line-height: 25px;
+    padding-right: 8px;
 }
 
 .city-info.collapse.in {

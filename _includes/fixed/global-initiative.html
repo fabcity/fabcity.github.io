@@ -14,7 +14,7 @@
         </div><!--close section content row -->  
         <div id="myGroup">
             <div class="row">
-                <div class= "col-sm-6 col-md-6 no-side-padding">
+                <div class= "col-sm-7 col-md-7 no-side-padding">
                     <img data-bottom-top="margin-top: 600px;" data-top="margin-top: 0px;" class="img-left globe-img" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
 
                     <div class="city-info collapse in" id="barcelona">
@@ -28,6 +28,7 @@
                             <div class="col-md-4 no-side-padding">
                                 <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
                             </div>
+                            <a class="card-close" data-toggle="collapse" href="#barcelona">&times;</a> 
                         </div>
                     </div>
 
@@ -43,13 +44,14 @@
                             <div class="col-md-4 no-side-padding">
                                 <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
                             </div>
-                        </div>
+                            <a class="card-close" data-toggle="collapse" href="#{{ city.id }}">&times;</a> 
+                        </div> <!--close row-->
                     </div>
                     {% endfor %}
 
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-1">
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 section-texts">
                     {% if include.texts.hassmalltitle == true %}
