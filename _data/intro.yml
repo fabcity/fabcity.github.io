@@ -1,14 +1,9 @@
 id: "intro"
 sectioncolor: 'blue'
 hascolorbg: true
-image: 'quote-image.jpg'
-imgwidth: '464'
-imgheight: '640'
+image: 'intro-city.jpg'
+imgwidth: '473'
+imgheight: '343'
 quotes:
-  - text: "Currently, cities occupy <span>2%</span> of the earth's surface to house 1/2 of world population"
-  - text: "Yet, they are responsible for <span>67%</span> of global energy consumption"
-  - text: "and generate <span>70%</span> of global waste generation"
-  - text: "in <span>2050</span>, it is expected that <span>2/3</span> of the global population will live in cities."
-conclusion: "Under this current system of consumption, we’d need the resources of three planets to sustain life on earth...like that’s even an option."
-claim1: "So how can we make cities more sustainable and <br> livable to ensure our future?"
-claim2: 'We are shifting the paradigm <a href="/uploads/pito-dido.png" target="_blank">PITO to DIDO</a> to enable cities to produce everything they consume by 2054'
+  - text: "By 2050 70% of us will live in cities."
+conclusion: "This rapid urbanization presents a grand challenge as well a system-changing opportunity."

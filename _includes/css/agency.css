@@ -944,15 +944,21 @@ header .intro-text .intro-lead-in {
     margin-top: 5px;
 }
 .quote-box .quote {
-    line-height: 26px;
+    font-size: 31px;
+    line-height: 39px;
     font-weight: 400;
-    font-size: 19px;
     letter-spacing: 0.3px;
     padding-bottom: 15px;
     font-family: {{ site.data.template.font.primary }};
+    /*
+    -webkit-transition: all ease .1s;
+    -moz-transition: all ease .1s;
+    transition: all ease .1s;
+    */
 }
 .quote-box .quote span {
-    font-size: 39px;
+    /*font-size: 39px;*/
+    font-weight: 700;
 }
 
 .quote-box .quote.emphasis {
@@ -961,7 +967,7 @@ header .intro-text .intro-lead-in {
 
 @media (min-width: 768px){
     .quote-box .quote.emphasis {
-        margin-top: 170px;
+        margin-top: 0px;
     }
 }
 
