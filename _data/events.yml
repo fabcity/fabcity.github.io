@@ -17,6 +17,12 @@ buttontitle: ""
 buttonlink: ""
 filename:
 hasdownload: false
+haslogos: false
+logostitle:
+logos:
+  - name: ""
+    logo: ''
+    url: ""
 hasextraaction: false
 extraaction: ''
 extraactionlink: ''

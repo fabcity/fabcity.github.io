@@ -1456,7 +1456,8 @@ section .project-gallery-texts {
 }
 
 .cities-list a:hover,
-.cities-list a:focus
+.cities-list a:focus,
+.cities-list a:active
 {
     color: aqua;
     text-decoration: none;

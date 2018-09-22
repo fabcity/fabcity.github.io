@@ -17,6 +17,12 @@ buttontitle: "White Paper"
 buttonlink: "uploads/whitepaper.pdf"
 filename: "whitepaper.pdf"
 hasdownload: true
+haslogos: false
+logostitle:
+logos:
+  - name: ""
+    logo: ''
+    url: ""
 hasextraaction: false
 extraaction: ''
 extraactionlink: ''

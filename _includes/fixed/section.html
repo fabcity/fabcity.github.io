@@ -90,7 +90,27 @@
                 {% endif %}
                 <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
             </div>
+        </div> <!-- close section-row-->
+
+        {% if include.texts.haslogos == true %}
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6"></div>
+            <div class="col-xs-12 col-sm-6 col-md-6 no-side-padding" style="margin-top: 30px;">
+                <p style="font-size: 16px; margin-bottom: 20px;">{{ include.texts.logostitle }}</p>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 no-side-padding" style="float: right; margin-top: 0px;">
+                {% for organization in include.texts.logos %}
+                <a href="{{ organization.url }}" target="_blank">
+                <div class="col-xs-2 col-sm-2 col-md-2 logo-box" style="background-image: url('{{ site.baseurl }}/uploads/{{ organization.logo }}');">
+                </div>
+                 </a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
         {% if include.texts.hasextraaction == true %}
             <div class="row no-side-margin text-right">
                 <div class= "col-sm-2 col-md-2 extra-action" style="float: right;">
@@ -197,7 +217,6 @@
                 </div>
             </div>
         </div><!--close section content row --> 
-
         {% if include.texts.hasextraaction == true %}
             <div class="row no-side-margin text-left">
                 <div class= "col-sm-2 col-md-2 extra-action" style="float:left;">

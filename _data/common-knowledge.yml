@@ -15,7 +15,10 @@ hasbutton: true
 buttonaction: "Access the"
 buttontitle: "Slide Deck"
 buttonlink: ""
-platforms:
+hasdownload: true
+haslogos: true
+logostitle: "Platforms:"
+logos:
   - name: "Distributed Design"
     logo: did_logo.png
     url: "http://distributeddesign.eu/"
@@ -28,3 +31,7 @@ platforms:
   - name: "Smart Citizen"
     logo: smart-citizen-logo.png
     url: "https://smartcitizen.me/"
+hasextraaction: false
+extraaction: ''
+extraactionlink: ''
+hasdivisionline: false

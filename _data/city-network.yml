@@ -16,3 +16,13 @@ buttonaction: "Take the"
 buttontitle: "Quiz"
 buttonlink: "uploads/"
 hasdownload: false
+haslogos: false
+logostitle:
+logos:
+  - name: ""
+    logo: ''
+    url: ""
+hasextraaction: false
+extraaction: ''
+extraactionlink: ''
+hasdivisionline: false

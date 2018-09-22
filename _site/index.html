@@ -88,6 +88,7 @@
 
     <body id="page-top" class="index">
 
+    <!--facebook share button API call-->
     <div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
@@ -96,7 +97,7 @@
 		  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.1';
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-
+	<!--end fb-->
 
     <header>
 
@@ -271,7 +272,6 @@
                 </div>
             </div>
         </div><!--close section content row --> 
-
           <!-- Endif Extra Action Button -->
           <!-- Endif Orientation condition -->
 
@@ -346,7 +346,10 @@
                 
                 <img class="section-img img-right" src="/uploads/values.png">
             </div>
-        </div>
+        </div> <!-- close section-row-->
+
+        
+
         
             <div class="row no-side-margin text-right">
                 <div class= "col-sm-2 col-md-2 extra-action" style="float: right;">
@@ -431,7 +434,10 @@
                 
                 <img class="section-img img-right" src="/uploads/approach.jpg">
             </div>
-        </div>
+        </div> <!-- close section-row-->
+
+        
+
         
           <!-- Endif Orientation condition -->
 
@@ -523,7 +529,9 @@
     <div class="container">
         <!--Orientation 'normal' text first, photo after-->
         <div class="row no-side-margin section-row">
+            
             <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: 391px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
+
                 <div class="row no-side-margin">
                     
                     
@@ -532,7 +540,6 @@
                         <div class="intro-line"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(24,165,55);stroke-width:4"></path></svg>
                         </div>
                         
-
                         <p class="section-small-title">Common knowledge</p>
                     </div>
                     
@@ -541,8 +548,9 @@
                         <p data-bottom="opacity: 0;" data-0-center-center="opacity:1;" class="section-description">As a global network, we are connected through the knowledge we share, across common tools and platforms.</p>
                     </div>
                     
+
                     
-                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-100-center-top="margin-bottom: 0px;">
+                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-80-center-top="margin-bottom: 0px;">
                         <div class="col-md-12 no-side-padding text-right">
                             <p class="action"> Access the</p> 
                         </div>
@@ -551,14 +559,33 @@
                             <a href="" class="page-scroll btn green" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">Slide Deck</a>
                         
                         </div>
+                        <!--
                         <div class="col-md-12 no-side-padding">
                             <a href=""><div class="" style="width: 19px; height: 17px; float:right;"><img src="/uploads/download-icon.png"></div></a>
                         </div>
+                        -->
+
+                        
+                        <div class="col-md-12 no-side-padding">
+                            <ul class="share-row">
+                                <li><a target="_blank" href=""><img src="/uploads/download-icon.png"></a></li>
+                                <li><button type="button" id="btn-share" data-container="body" data-toggle="popover" data-placement="bottom"><img src="/uploads/share-icon.png"></button></li>
+                            <ul>
+                            <span id="popoverExampleHiddenContent" class="hidden">
+                                <a target="_blank" class="btn-media twitter" href="https://twitter.com/share?url=https%3A%2F%2Ffab.city%2Fuploads%2F&via=fabcityglobal&related=twitterapi%2Ctwitter&hashtags=fabcity">
+                                <i class="fa fa-twitter"></i>
+                                </a>
+                                <a target="_blank" href="" class="btn-media facebook">
+                                <i class="fa fa-facebook"></i>
+                                </a>
+                            </span>
+                        </div>
+                        
                     </div>
                     
                 </div> <!--close row-->
             </div><!--close section-texts-->
-            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-top-center="margin-top: 0px;">
+            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;">
                 
                     
                         <div class="plain-bg plain-bg-right bg-reen" style="width: 586px; height: 391px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
@@ -566,7 +593,9 @@
                 
                 <img class="section-img img-right" src="/uploads/common-knowledge.jpg">
             </div>
-        </div> <!-- Close row -->
+        </div> <!-- close section-row-->
+
+        
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6"></div>
             <div class="col-xs-12 col-sm-6 col-md-6 no-side-padding" style="margin-top: 30px;">
@@ -574,25 +603,24 @@
             </div>
         </div>
         <div class="row">
-            
             <div class="col-xs-12 col-md-6 no-side-padding" style="float: right; margin-top: 0px;">
                 
-                <a href="did_logo.png" target="_blank">
+                <a href="http://distributeddesign.eu/" target="_blank">
                 <div class="col-xs-2 col-sm-2 col-md-2 logo-box" style="background-image: url('/uploads/did_logo.png');">
                 </div>
                  </a>
                 
-                <a href="fablabsio-logo.png" target="_blank">
+                <a href="https://www.fablabs.io/labs" target="_blank">
                 <div class="col-xs-2 col-sm-2 col-md-2 logo-box" style="background-image: url('/uploads/fablabsio-logo.png');">
                 </div>
                  </a>
                 
-                <a href="materiom-logo.svg" target="_blank">
+                <a href="http://www.materiom.org/" target="_blank">
                 <div class="col-xs-2 col-sm-2 col-md-2 logo-box" style="background-image: url('/uploads/materiom-logo.svg');">
                 </div>
                  </a>
                 
-                <a href="smart-citizen-logo.png" target="_blank">
+                <a href="https://smartcitizen.me/" target="_blank">
                 <div class="col-xs-2 col-sm-2 col-md-2 logo-box" style="background-image: url('/uploads/smart-citizen-logo.png');">
                 </div>
                  </a>
@@ -600,9 +628,13 @@
             </div>
         </div>
         
+
+        
+          <!-- Endif Orientation condition -->
+
+        
     </div> <!--close container -->
 </section>
-
 
 
 
@@ -1754,78 +1786,6 @@
     </div> <!--close container -->
 </section>
 
-<section id="join">
-    <div class="container">
-        <!--Orientation 'normal' text first, photo after-->
-        <div class="row no-side-margin section-row">
-            
-        <!--Orientation 'inverted' photo first, text after-->
-        <div class="row no-side-margin section-row">
-            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;">
-                
-                    
-                        <div class="plain-bg plain-bg-left bg-red" style="width: 342px; height: 513px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
-                    
-                
-                <img class="section-img img-left" src="/uploads/join.jpg">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-right" style="height: 513px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
-                <div class="row no-side-margin">
-                    
-                    <div class="col-md-12 no-side-padding">
-                        <h1 data-0-bottom-top="opacity: 0;" data-0-center-top="opacity:1;" class="section-title">Join</h1>
-                    </div>
-                    
-                    
-                    <div class="col-md-12 no-side-padding">
-                        <div class="col-md-2 no-side-padding">
-                            
-                            <div class="intro-line line-right"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(226,24,38);stroke-width:4"></path></svg>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-8 no-side-padding">
-                            <p class="section-small-title">Citizens, communities, spaces, machines & tools</p>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-md-12 no-side-padding">
-                        <div class="col-md-2 no-side-padding">
-                        </div>
-                        
-                        <div class="col-md-10 no-side-padding">
-                            <p data-0-bottom-top="opacity: 0;" data-0-center-top="opacity:1;" class="section-description">We collaborate with experts and enthusiasts to share the potential of productivity in cities through research, internships, FabLabs, partnerships, workshops and toolkits.</p>
-                        </div>
-                    </div>
-                    
-
-                    
-                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-80-center-top="margin-bottom: 0px;">
-                        <div class="col-md-12 no-side-padding text-right">
-                            <p class="action"> Send us an</p> 
-                        </div>
-                        <div class="col-md-12 no-side-padding text-right">
-                        
-                            <a href="" class="page-scroll btn red" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">Enquiry</a>
-                        
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        </div><!--close section content row --> 
-
-          <!-- Endif Extra Action Button -->
-          <!-- Endif Orientation condition -->
-
-        
-    </div> <!--close container -->
-</section>
-
-
-
 <section id="roadmap">
     <div class="container">
         <div class="row" style="margin-bottom:40px;">
@@ -1918,6 +1878,77 @@
 
 
 
+<section id="join">
+    <div class="container">
+        <!--Orientation 'normal' text first, photo after-->
+        <div class="row no-side-margin section-row">
+            
+        <!--Orientation 'inverted' photo first, text after-->
+        <div class="row no-side-margin section-row">
+            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;">
+                
+                    
+                        <div class="plain-bg plain-bg-left bg-red" style="width: 342px; height: 513px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
+                    
+                
+                <img class="section-img img-left" src="/uploads/join.jpg">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-right" style="height: 513px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
+                <div class="row no-side-margin">
+                    
+                    <div class="col-md-12 no-side-padding">
+                        <h1 data-0-bottom-top="opacity: 0;" data-0-center-top="opacity:1;" class="section-title">Join</h1>
+                    </div>
+                    
+                    
+                    <div class="col-md-12 no-side-padding">
+                        <div class="col-md-2 no-side-padding">
+                            
+                            <div class="intro-line line-right"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(226,24,38);stroke-width:4"></path></svg>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-8 no-side-padding">
+                            <p class="section-small-title">Citizens, communities, spaces, machines & tools</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-12 no-side-padding">
+                        <div class="col-md-2 no-side-padding">
+                        </div>
+                        
+                        <div class="col-md-10 no-side-padding">
+                            <p data-0-bottom-top="opacity: 0;" data-0-center-top="opacity:1;" class="section-description">We collaborate with experts and enthusiasts to share the potential of productivity in cities through research, internships, FabLabs, partnerships, workshops and toolkits.</p>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-80-center-top="margin-bottom: 0px;">
+                        <div class="col-md-12 no-side-padding text-right">
+                            <p class="action"> Send us an</p> 
+                        </div>
+                        <div class="col-md-12 no-side-padding text-right">
+                        
+                            <a href="" class="page-scroll btn red" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">Enquiry</a>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div><!--close section content row --> 
+          <!-- Endif Extra Action Button -->
+          <!-- Endif Orientation condition -->
+
+        
+    </div> <!--close container -->
+</section>
+
+
+
 <section id="fab-city-network">
     <div class="container">
         <!--Orientation 'normal' text first, photo after-->
@@ -1971,7 +2002,10 @@
                 
                 <img class="section-img img-right" src="/uploads/network.jpg">
             </div>
-        </div>
+        </div> <!-- close section-row-->
+
+        
+
         
           <!-- Endif Orientation condition -->
 
@@ -2027,7 +2061,6 @@
                 </div>
             </div>
         </div><!--close section content row --> 
-
           <!-- Endif Extra Action Button -->
           <!-- Endif Orientation condition -->
 
@@ -2089,6 +2122,21 @@
 
 
     </div><!--close row-->
+  </div><!--close container-->
+</section>  
+<section id="collaborators">
+  <div class="container">
+
+    <div class="row small-title">
+      <div class="col-md-12">
+        <h4>Collaborators </h4>
+      </div>
+    </div>
+
+    <div class="row">
+    
+    </div><!--close row-->
+    
   </div><!--close container-->
 </section>  
 <footer>
@@ -2307,9 +2355,6 @@ $("a.google-plus").attr("href", "https://plus.google.com/share?url=" + window.lo
 
 
 </script>
-
-
-
 
 
 

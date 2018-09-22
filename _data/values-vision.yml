@@ -17,6 +17,12 @@ buttontitle: "Manifesto"
 buttonlink: "uploads/Manifesto.pdf"
 filename: "manifesto.pdf"
 hasdownload: true
+haslogos: false
+logostitle:
+logos:
+  - name: ""
+    logo: ''
+    url: ""
 hasextraaction: true
 extraaction: 'To check out more photos...'
 extraactionlink: ''
