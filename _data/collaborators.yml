@@ -1,13 +1,25 @@
-collaborators:
-  - name: "Distributed Design"
-    logo: did_logo.png
-    url: "http://distributeddesign.eu/"
-  - name: "Fablabs.io"
-    logo: fablabsio-logo.png
-    url: "https://www.fablabs.io/labs"
-  - name: "Materiom"
-    logo: materiom-logo.svg
-    url: "http://www.materiom.org/"
-  - name: "Smart Citizen"
-    logo: smart-citizen-logo.png
-    url: "https://smartcitizen.me/"
+logos:
+  - name: "UNIDO"
+    logo: unido-logo.png
+    url: "https://www.unido.org/"
+  - name: "Space10"
+    logo: space10-logo.png
+    url: "https://space10.io/"
+  - name: "Paris City Council"
+    logo: paris-logo.png
+    url: "https://www.paris.fr/"
+  - name: "Barcelona City Council"
+    logo: ajuntament-barcelona.svg
+    url: "https://ajuntament.barcelona.cat/ca/"
+  - name: "Dansk Design Center"
+    logo: ddc-logo.png
+    url: "https://danskdesigncenter.dk/"
+  - name: "Fab Foundation"
+    logo: fabfoundation.svg
+    url: "http://fabfoundation.org/"
+  - name: "Pakhuis de Zwijger"
+    logo: pakhuis-de-zwijger-logo.jpg
+    url: "https://dezwijger.nl/"
+  - name: "Waag"
+    logo: waag-logo.png 
+    url: "https://waag.org/en/home"
