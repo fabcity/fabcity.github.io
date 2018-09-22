@@ -8,12 +8,12 @@ imgheight: '513'
 haslargetitle: true
 largetitle: 'Join'
 hassmalltitle: true
-smalltitle: 'Citizens, communities, spaces, machines & tools'
+smalltitle: 'Join the Fab City Network'
 hasdescription: true
-description: "We collaborate with experts and enthusiasts to share the potential of productivity in cities through research, internships, FabLabs, partnerships, workshops and toolkits."
+description: 'Become a partner or collaborator. Is your city ready to join the Fab City network? Take our quiz! <br> <span><i class="far fa-envelope"></i></i><i class="fab fa-telegram-plane"></i><i class="fab fa-facebook-f"></i><i class="fab fa-github"></i></span>'
 hasbutton: true
-buttonaction: "Send us an"
-buttontitle: "Enquiry"
+buttonaction: "Take the"
+buttontitle: "Quiz"
 buttonlink: ""
 filename:
 hasdownload: false
