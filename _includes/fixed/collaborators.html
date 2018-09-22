@@ -6,14 +6,14 @@
       </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-md-12" style="">
+        <div class="col-xs-12 col-md-12">
             {% for organization in include.texts.logos %}
             <a href="{{ organization.url }}" target="_blank">
-            <div class="col-xs-2 col-sm-2 col-md-2 logo-box" style="background-image: url('{{ site.baseurl }}/uploads/{{ organization.logo }}');">
+            <div class="col-xs-2 col-sm-2 col-md-2 logo-box" style="background-image: url('{{ site.baseurl }}/uploads/{{ organization.logo }}'); margin-bottom: 50px;">
             </div>
              </a>
             {% endfor %}
         </div>
      </div>
   </div><!--close container-->
-</section>  
+</section>

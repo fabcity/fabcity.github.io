@@ -4,7 +4,6 @@
         <div class="row no-side-margin section-row">
             {% if include.texts.orientation == 'normal' %}
             <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
-
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
                     <div class="col-md-12 no-side-padding">
@@ -33,7 +32,6 @@
                         <p data-bottom="opacity: 0;" data-0-center-center="opacity:1;" class="section-description">{{ include.texts.description }}</p>
                     </div>
                     {% endif %}
-
                     {% if include.texts.hasbutton == true %}
                     <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-80-center-top="margin-bottom: 0px;">
                         <div class="col-md-12 no-side-padding text-right">
@@ -55,7 +53,6 @@
                             <a href="{{ include.texts.buttonlink }}"><div class="" style="width: 19px; height: 17px; float:right;"><img src="{{ site.baseurl }}/uploads/download-icon.png"></div></a>
                         </div>
                         -->
-
                         {% if include.texts.hasdownload == true %}
                         <div class="col-md-12 no-side-padding">
                             <ul class="share-row">
@@ -91,7 +88,6 @@
                 <img class="section-img img-right" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
             </div>
         </div> <!-- close section-row-->
-
         {% if include.texts.haslogos == true %}
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6"></div>
@@ -110,7 +106,6 @@
             </div>
         </div>
         {% endif %}
-
         {% if include.texts.hasextraaction == true %}
             <div class="row no-side-margin text-right">
                 <div class= "col-sm-2 col-md-2 extra-action" style="float: right;">
@@ -173,7 +168,6 @@
                         </div>
                     </div>
                     {% endif %}
-
                     {% if include.texts.hasbutton == true %}
                     <div class="button-area" data-bottom-top="margin-bottom: -100px;" data-80-center-top="margin-bottom: 0px;">
                         <div class="col-md-12 no-side-padding text-right">
@@ -204,11 +198,9 @@
                                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffab.city%2Fdocuments%2Fwhitepaper.pdf&amp;src=sdkpreparse" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false" class="btn-media facebook">
                                 <i class="fa fa-facebook"></i>
                                 </a>
-
                                 <!--
                                 <div class="fb-share-button" data-href="https://fab.city/documents/whitepaper.pdf" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffab.city%2Fdocuments%2Fwhitepaper.pdf&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
                                 -->
-
                             </span>
                         </div>
                         {% endif %}
@@ -225,7 +217,6 @@
             </div>
         {% endif %}  <!-- Endif Extra Action Button -->
         {% endif %}  <!-- Endif Orientation condition -->
-
         {% if include.texts.hasdivisionline == true %}
             <div class="row no-side-margin text-center" data-bottom="margin-top: 300px;" data-top-top="margin-top: 0px;">
                 {% if include.texts.sectioncolor == 'blue' %}
@@ -241,5 +232,3 @@
         {% endif %}
     </div> <!--close container -->
 </section>
-
-
