@@ -911,6 +911,19 @@ a.active {
     height: 535px;
 }
 
+.element-intro{
+    left:0;
+    height: 350px; 
+    background-color: rgb(20, 4, 104);
+    display: none;
+}
+
+@media (min-width: 1200px){
+    .element-intro{
+        display: unset;
+    }
+}
+
 /*/--- PLAIN BACKGROUNDS ---/*/
 
 .bg-plain {
