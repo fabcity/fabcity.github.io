@@ -3,6 +3,17 @@
         <!--Orientation 'normal' text first, photo after-->
         <div class="row no-side-margin section-row">
             {% if include.texts.orientation == 'normal' %}
+            {% if include.texts.hasleftcolorblock == true %}
+                {% if include.texts.sectioncolor == 'blue' %}
+                    <div class="plain-bg left-color-block bg-blue" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="width: 10px" data-center="width: 40px;"> </div>
+                {% elsif include.texts.sectioncolor == 'red' %}
+                     <div class="plain-bg left-color-block bg-red" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="width: 10px" data-center="width: 40px;"> </div>
+                {% elsif include.texts.sectioncolor == 'green' %}
+                     <div class="plain-bg left-color-block bg-green" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="width: 10px" data-center="width: 40px;"> </div>
+                {% else %}
+                     <div class="plain-bg left-color-block bg-yellow" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="width: 10px" data-center="width: 40px;"> </div>
+                {% endif %}
+            {% endif %}
             <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}

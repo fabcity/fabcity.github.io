@@ -27,3 +27,4 @@ hasextraaction: true
 extraaction: 'To check out more photos...'
 extraactionlink: ''
 hasdivisionline: true
+hasleftcolorblock: false

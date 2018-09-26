@@ -27,3 +27,4 @@ hasextraaction: false
 extraaction: ''
 extraactionlink: ''
 hasdivisionline: true
+hasleftcolorblock: false

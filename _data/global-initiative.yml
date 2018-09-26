@@ -15,6 +15,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Bhutan"
     place: left
     id: "bhutan"
@@ -22,6 +23,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Shenzhen"
     place: left
     id: "shenzhen"
@@ -29,6 +31,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Georgia"
     place: left
     id: "georgia"
@@ -36,6 +39,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Curitiba"
     place: left
     id: "Curitiba"
@@ -43,6 +47,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Occitanie Region"
     place: left
     id: "occitanie"
@@ -50,6 +55,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Puebla"
     place: left
     id: "puebla"
@@ -57,6 +63,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Mexico City"
     place: left
     id: "mexico-df"
@@ -64,6 +71,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Auvergne-Rhône-Alpes"
     place: left
     id: "auvergne"
@@ -71,6 +79,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Amsterdam"
     place: left
     id: "amsterdam"
@@ -78,6 +87,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Cambridge"
     place: left
     id: "cambridge"
@@ -85,6 +95,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Kerala"
     place: left
     id: "kerala"
@@ -92,6 +103,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Sacramento"
     place: left
     id: "sacramento"
@@ -99,6 +111,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Belo-Horizonte"
     place: right
     id: "belohorizonte"
@@ -106,6 +119,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Ekurhuleni"
     place: right
     id: "ekurhuleni"
@@ -113,6 +127,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Brest"
     place: right
     id: "Brest"
@@ -120,6 +135,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Boston"
     place: right
     id: "boston"
@@ -127,6 +143,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Toulouse"
     place: right
     id: "toulouse"
@@ -134,6 +151,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Paris"
     place: right
     id: "paris"
@@ -141,6 +159,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Santiago de Chile"
     place: right
     id: "santiago"
@@ -148,6 +167,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Velsen"
     place: right
     id: "velsen"
@@ -155,6 +175,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Seoul"
     place: right
     id: "seoul"
@@ -162,6 +183,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Oakland"
     place: right
     id: "oakland"
@@ -169,6 +191,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Somerville"
     place: right
     id: "somerville"
@@ -176,6 +199,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Detroit"
     place: right
     id: "detroit"
@@ -183,6 +207,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Kamakura"
     place: right
     id: "kamakura"
@@ -190,6 +215,7 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined:
   - name: "Sorocaba"
     place: right
     id: "sorocaba"
@@ -197,3 +223,4 @@ cities:
     strategicfocus: ""
     orgtype: ""
     org: ""
+    joined: 
