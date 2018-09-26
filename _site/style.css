@@ -1370,8 +1370,8 @@ section .project-gallery-texts {
     transition: all ease .7s;
 }
 .city-info .city-card {
-    padding: 20px;
     padding: 30px;
+    padding-left: 60px;
 }
 .city-info .city-card .city-name {
     font-size: 32px;
@@ -1389,8 +1389,12 @@ section .project-gallery-texts {
     margin-bottom: 0px;
 }
 .city-info .city-card .joined-date {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 0px;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    margin-left: -40px;
+    margin-top: 80px;
     color: #e21826; 
 }
 .city-info .city-card .card-close {
