@@ -59,11 +59,6 @@
                             <a href="{{ include.texts.buttonlink }}" class="page-scroll btn green" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                         {% endif %}
                         </div>
-                        <!--
-                        <div class="col-md-12 no-side-padding">
-                            <a href="{{ include.texts.buttonlink }}"><div class="" style="width: 19px; height: 17px; float:right;"><img src="{{ site.baseurl }}/uploads/download-icon.png"></div></a>
-                        </div>
-                        -->
                         {% if include.texts.hasdownload == true %}
                         <div class="col-md-12 no-side-padding">
                             <ul class="share-row">
@@ -85,6 +80,15 @@
                 </div> <!--close row-->
             </div><!--close section-texts-->
             <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;">
+                {% if include.texts.hasiconbox == true %}
+                <div class="icon-box" style="top: 310px;">
+                    <ul>
+                        <li>{{ include.texts.iconboxtitle }}: </li>
+                        <li><i class="fab fa-telegram-plane"></i></li>
+                        <li><i class="fab fa-slack"></i></li>
+                    </ul>
+                </div>
+                {% endif %}
                 {% if include.texts.hascolorbg == true %}
                     {% if include.texts.sectioncolor == 'blue' %}
                         <div class="plain-bg plain-bg-right bg-blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
@@ -209,9 +213,6 @@
                                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffab.city%2Fdocuments%2Fwhitepaper.pdf&amp;src=sdkpreparse" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false" class="btn-media facebook">
                                 <i class="fa fa-facebook"></i>
                                 </a>
-                                <!--
-                                <div class="fb-share-button" data-href="https://fab.city/documents/whitepaper.pdf" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffab.city%2Fdocuments%2Fwhitepaper.pdf&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
-                                -->
                             </span>
                         </div>
                         {% endif %}

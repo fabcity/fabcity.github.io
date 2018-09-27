@@ -36,3 +36,9 @@ extraaction: ''
 extraactionlink: ''
 hasdivisionline: false
 hasleftcolorblock: false
+hasiconbox: true
+iconboxtitle: "Tools"
+icons:
+  - name: ""
+    img: 
+    url: ""
