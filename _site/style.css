@@ -1625,6 +1625,7 @@ section .project-gallery-texts {
     font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #mc_embed_signup .button {
+    font-family: sans-serif;
     background-color: transparent;
     border: 0 none;
     border-radius: 0px;
@@ -1632,7 +1633,7 @@ section .project-gallery-texts {
     font-size: 30px;
     font-weight: normal;
     line-height: 0px;
-    margin: 10px 20px;
+    margin: 25px 20px;
     padding: 0px;
     text-align: right;
 }
