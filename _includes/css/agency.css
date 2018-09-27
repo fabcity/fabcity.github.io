@@ -1459,20 +1459,20 @@ section .project-gallery-texts {
     font-family: {{ site.data.template.font.primary }};
 }
 #mc_embed_signup .button {
-    font-family: sans-serif;
-    background-color: transparent;
+    background-color: #d8d8d8;
     border: 0 none;
     border-radius: 0px;
-    color: #000000;
+    color: #ffffff;
     font-size: 30px;
     font-weight: normal;
     line-height: 0px;
-    margin: 25px 20px;
-    padding: 0px;
+    margin: 0px;
+    padding: 41px 30px;
     text-align: right;
+    font-weight: 200;
 }
 #mc_embed_signup .button:hover {
-    background-color:  #f7efef;
+    background-color:  #000;
 }
 
 #mc_embed_signup div#mce-responses {
