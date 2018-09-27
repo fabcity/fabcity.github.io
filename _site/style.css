@@ -1691,13 +1691,6 @@ footer {
     color: #ffffff; 
     background-color: #000; 
 }
-footer .footer-title {
-    font-size: 21px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #ffffff; 
-}
 footer a {
     color: #ffffff; 
 }
@@ -1706,6 +1699,19 @@ footer p {
     font-size: 0.7em;
     font-weight: 400;
     color: #ffffff; 
+}
+footer .footer-title {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ffffff; 
+}
+footer .footer-link { 
+    font-size: 21px;
+    font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+    font-weight: 400;
 }
 footer .footer-brand {
     width: 80px;

@@ -1525,13 +1525,6 @@ footer {
     color: #{{ site.data.template.color.whites }}; 
     background-color: #{{ site.data.template.color.blacks }}; 
 }
-footer .footer-title {
-    font-size: 21px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: {{ site.data.template.font.primary }};
-    color: #{{ site.data.template.color.whites }}; 
-}
 footer a {
     color: #{{ site.data.template.color.whites }}; 
 }
@@ -1540,6 +1533,19 @@ footer p {
     font-size: 0.7em;
     font-weight: 400;
     color: #{{ site.data.template.color.whites }}; 
+}
+footer .footer-title {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: {{ site.data.template.font.primary }};
+    color: #{{ site.data.template.color.whites }}; 
+}
+footer .footer-link { 
+    font-size: 21px;
+    font-family: {{ site.data.template.font.primary }};
+    margin-bottom: 10px;
+    font-weight: 400;
 }
 footer .footer-brand {
     width: 80px;
