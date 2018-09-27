@@ -20,7 +20,7 @@ haslogos: true
 logostitle: "Platforms:"
 logos:
   - name: "Distributed Design"
-    logo: did_logo.png
+    logo: ddmp-logo.png
     url: "http://distributeddesign.eu/"
   - name: "Fablabs.io"
     logo: fablabsio-logo.png
