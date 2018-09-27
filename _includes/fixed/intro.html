@@ -1,8 +1,8 @@
-<section id="{{ include.texts.id }}" style="padding-top: 100px;">
+<section id="intro">
     <div class="container">
         <div class="row no-side-margin intro-box">
              <div class="plain-bg left-color-block bg-blue" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="width: 10px" data-center="width: 40px;"> </div>
-            <div class="col-sm-6 col-md-6 section-texts float-left quote-box"  style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
+            <div class="col-sm-6 col-md-6 section-texts float-left quote-box"  style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 40px;">
                 <div class="row no-side-margin" data-bottom-bottom="opacity: 0;" data-100-top-top="opacity:1;">
                     {% for quote in include.texts.quotes %}
                     <p class="quote">{{ quote.text }}</p>

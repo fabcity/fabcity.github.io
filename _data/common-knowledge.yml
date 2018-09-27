@@ -6,7 +6,6 @@ image: 'common-knowledge.jpg'
 imgwidth: '586'
 imgheight: '391'
 haslargetitle: false
-smalltitle: ''
 hassmalltitle: true
 smalltitle: 'Common knowledge'
 hasdescription: true
@@ -16,6 +15,12 @@ buttonaction: "Access the"
 buttontitle: "Slide Deck"
 buttonlink: ""
 hasdownload: true
+hasiconbox: true
+iconboxtitle: "Tools"
+icons:
+  - name: ""
+    img: 
+    url: ""
 haslogos: true
 logostitle: "Platforms:"
 logos:
@@ -36,9 +41,3 @@ extraaction: ''
 extraactionlink: ''
 hasdivisionline: false
 hasleftcolorblock: false
-hasiconbox: true
-iconboxtitle: "Tools"
-icons:
-  - name: ""
-    img: 
-    url: ""
