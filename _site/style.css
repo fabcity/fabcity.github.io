@@ -194,7 +194,7 @@ body {
 }
 @media (min-width: 1200px){
     .container {
-        width: 1024px;
+        width: 90%;
     }
 }
 .container.container-outlined {
@@ -741,6 +741,7 @@ a.active {
 }
 .section-img {
     position: relative;
+    max-width: 100%;
 }
 
 @media (min-width: 768px){
@@ -749,10 +750,10 @@ a.active {
     }
 }
 .img-right {
-    float: right;
+    right: 0;
 }
 .img-left {
-    float: left;
+    left: 0;
 }
 .plain-bg {
     display: none;
@@ -764,12 +765,12 @@ a.active {
     }
 }
 .plain-bg-left {
-    margin-left: -10px;
+    left: -10px;
     margin-top: 10px;
 }
 .plain-bg-right {
-    margin-left: 10px;
     margin-top: 10px;
+    right: -10px;
 }
 .img-medium {
     position: absolute;
