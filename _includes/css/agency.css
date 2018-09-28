@@ -1004,16 +1004,21 @@ section .project-gallery-texts {
     margin-bottom: 20px;
 }
 .slidewrapper {
-    margin: 0px -0px;
-    margin-left: 0%;
+    margin: 0px 0px;
+    margin-left: 5%;
 }
 .slide-green {
     background: linear-gradient(to right, rgb(24, 165, 54) 0%, rgb(24, 165, 54) 100%);
-    background-size: 200px 138px;
+    background-size: 0px;
     background-repeat: no-repeat;
     -webkit-transition: all ease .1s;
     -moz-transition: all ease .1s;
     transition: all ease .1s;
+}
+@media (min-width: 768px){
+    .slide-green {
+        background-size: 200px 138px;
+    }
 }
 .slidewrapper .slideshow{
     position: relative;
@@ -1076,7 +1081,7 @@ section .project-gallery-texts {
     padding-left: 40px;
 }
 .slick-next {
-    right: 0px;
+    /*right: 0px;*/
 }
 @media (min-width: 768px){
     .slidewrapper {
