@@ -197,7 +197,7 @@ body {
         width: 90%;
     }
 }
-.container.container-outlined {
+.container-outlined {
     padding: 30px 0px 0px;
     border: solid 4px #e21826;
 }
