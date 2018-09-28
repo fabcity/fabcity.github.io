@@ -1035,7 +1035,7 @@ header .intro-text .intro-lead-in {
     padding-left: 0px;
     float: left }
  .section-row {
-    /*display: flex;*/
+    overflow-x: hidden;
 }
 .section-texts {
     background-color: white;
@@ -1826,6 +1826,9 @@ body {
 }
 #intro {
     padding-top: 100px;
+}
+.intro-box {
+    overflow-x: hidden;
 }
 @media (min-width: 768px){
     #intro {
