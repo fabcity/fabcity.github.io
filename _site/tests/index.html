@@ -34,15 +34,16 @@
 <nav class="navbar navbar-default navbar-fixed-top">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <div class="navbar-logo">
-                <a href="/"><img src="/uploads/fabcity.svg"></a>
-            </div>
+
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <div class="navbar-logo">
+                <a href="/"><img src="/uploads/fabcity.svg"></a>
+            </div>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -87,7 +88,7 @@
             
         <!--Orientation 'inverted' photo first, text after-->
         <div class="row no-side-margin section-row">
-            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;">
+            <div class= "col-xs-12 col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;">
                 
                     
                         <div class="plain-bg plain-bg-left bg-blue" style="width: 492px; height: 520px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>
@@ -161,7 +162,7 @@
         <div class="row no-side-margin section-row">
             
             
-            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: 530px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
+            <div id="sectiontexts" class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: 530px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
                 <div class="row no-side-margin">
                     
                     <div class="col-md-12 no-side-padding">
@@ -204,7 +205,7 @@
                     
                 </div> <!--close row-->
             </div><!--close section-texts-->
-            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;" style="height: 530px;">
+            <div class= "col-xs-12 col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;" style="height: 530px;">
                 
                 
                 <img class="section-img img-right" src="/uploads/values.png">
@@ -237,7 +238,7 @@
                      <div class="plain-bg left-color-block bg-green" style="height: 396px;" data-bottom-top="width: 10px" data-center="width: 40px;"> </div>
                 
             
-            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: 396px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
+            <div id="sectiontexts" class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: 396px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
                 <div class="row no-side-margin">
                     
                     <div class="col-md-12 no-side-padding">
@@ -267,7 +268,7 @@
                                 <li><button type="button" id="btn-share" data-container="body" data-toggle="popover" data-placement="bottom"><img src="/uploads/share-icon.png"></button></li>
                             <ul>
                             <span id="popoverExampleHiddenContent" class="hidden">
-                                <a target="_blank" class="btn-media twitter" href="https://twitter.com/share?url=https%3A%2F%2Ffab.city%2Fuploads%2Fwhitepaper.pdf&via=fabcityglobal&related=twitterapi%2Ctwitter&hashtags=fabcity">
+                                <a target="_blank" class="btn-media twitter" href="https://twitter.com/share?url=https%3A%2F%2Ffab.city%2Fuploads%2FFullstack.pdf&via=fabcityglobal&related=twitterapi%2Ctwitter&hashtags=fabcity">
                                 <i class="fa fa-twitter"></i>
                                 </a>
                                 <a target="_blank" href="uploads/" class="btn-media facebook">
@@ -280,7 +281,7 @@
                     
                 </div> <!--close row-->
             </div><!--close section-texts-->
-            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;" style="height: 396px;">
+            <div class= "col-xs-12 col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;" style="height: 396px;">
                 
                 
                     
@@ -343,13 +344,22 @@ $(function () {
 });
 </script>
 
-<!--Carousel
-<script type="text/javascript">
-$('.carousel').carousel({
-    interval: 3000 //changes the speed
-})
+<script>
+    $(window).load(function() {
+        var viewportWidth = $(window).width();
+        if (viewportWidth < 767) {
+            $(".section-texts").css("height", "auto");
+            $(".section-img-box").css("height", "auto");
+        }
+     });
+    $(window).resize(function () {
+        var viewportWidth = $(window).width();
+        if (viewportWidth < 767) {
+            $(".section-texts").css("height", "auto");
+            $(".section-img-box").css("height", "auto");
+        }
+    });
 </script>
--->
 
 <!--Youtube video -->
 <script type="text/javascript">
@@ -461,6 +471,7 @@ $("a.facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + w
 /*
 $("a.google-plus").attr("href", "https://plus.google.com/share?url=" + window.location.href);*/
 </script>
+
 
 
 

@@ -367,10 +367,10 @@ a.active {
     max-height: 100%;
 }
 .navbar-default .navbar-logo {
-    float: left;
+    float: right;
     background-color: transparent;
     margin-top: 15px;
-    margin-left: 5px;
+    margin-right: 10px;
     height: 50px;
     width: 50px;
 }
@@ -873,7 +873,11 @@ header .intro-text .intro-lead-in {
 .section-texts {
     background-color: white;
     height: auto;
-    padding-top:50px;
+    padding-top: 50px;
+}
+
+.auto{
+    height: auto!important;
 }
 @media (min-width: 768px){
     .float-left {
@@ -1639,7 +1643,11 @@ body {
     margin: 25px 20px 0px 0px;
 
 }
-
 #intro {
-    padding-top: 200px;
+    padding-top: 100px;
+}
+@media (min-width: 768px){
+    #intro {
+        padding-top: 200px;
+    }
 }

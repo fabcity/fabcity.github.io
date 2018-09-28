@@ -14,7 +14,7 @@
                      <div class="plain-bg left-color-block bg-yellow" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="width: 10px" data-center="width: 40px;"> </div>
                 {% endif %}
             {% endif %}
-            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
+            <div id="sectiontexts" class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 600px;" data-50-top="margin-top: 0px;">
                 <div class="row no-side-margin">
                     {% if include.texts.haslargetitle == true %}
                     <div class="col-md-12 no-side-padding">
@@ -79,7 +79,7 @@
                     {% endif %}
                 </div> <!--close row-->
             </div><!--close section-texts-->
-            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;" style="height: {{ include.texts.imgheight }}px;">
+            <div class= "col-xs-12 col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;" style="height: {{ include.texts.imgheight }}px;">
                 {% if include.texts.hasiconbox == true %}
                 <div class="icon-box" style="top: 310px;">
                     <ul>
@@ -131,7 +131,7 @@
         {% else %}
         <!--Orientation 'inverted' photo first, text after-->
         <div class="row no-side-margin section-row">
-            <div class= "col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;">
+            <div class= "col-xs-12 col-sm-6 col-md-6 no-side-padding" data-bottom-top="margin-top: 200px;" data-50-top="margin-top: 0px;">
                 {% if include.texts.hascolorbg == true %}
                     {% if include.texts.sectioncolor == 'blue' %}
                         <div class="plain-bg plain-bg-left bg-blue" style="width: {{ include.texts.imgwidth }}px; height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 80px;" data-top="margin-top: -40px;"> </div>

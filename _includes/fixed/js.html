@@ -43,13 +43,22 @@ $(function () {
 });
 </script>
 
-<!--Carousel
-<script type="text/javascript">
-$('.carousel').carousel({
-    interval: 3000 //changes the speed
-})
+<script>
+    $(window).load(function() {
+        var viewportWidth = $(window).width();
+        if (viewportWidth < 767) {
+            $(".section-texts").css("height", "auto");
+            $(".section-img-box").css("height", "auto");
+        }
+     });
+    $(window).resize(function () {
+        var viewportWidth = $(window).width();
+        if (viewportWidth < 767) {
+            $(".section-texts").css("height", "auto");
+            $(".section-img-box").css("height", "auto");
+        }
+    });
 </script>
--->
 
 <!--Youtube video -->
 <script type="text/javascript">
@@ -161,3 +170,4 @@ $("a.facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + w
 /*
 $("a.google-plus").attr("href", "https://plus.google.com/share?url=" + window.location.href);*/
 </script>
+
