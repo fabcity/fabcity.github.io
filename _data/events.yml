@@ -11,10 +11,10 @@ hassmalltitle: true
 smalltitle: 'Events'
 hasdescription: true
 description: "Local and global Fab City events are hosted the world over. Find a local event or host one."
-hasbutton: false
-buttonaction: ""
-buttontitle: ""
-buttonlink: ""
+hasbutton: true
+buttonaction: "Fab City"
+buttontitle: "Summit"
+buttonlink: "https://summit.fabcity.paris/"
 filename:
 hasdownload: false
 haslogos: false
