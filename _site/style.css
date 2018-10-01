@@ -189,12 +189,13 @@ body {
 @media (min-width: 768px){
     .container {
         width: 96%;
-        /*padding-right: 80px;*/
+        padding-right: 67px;
     }
 }
 @media (min-width: 1200px){
     .container {
         width: 90%;
+        padding-right: 67px;
     }
 }
 .container-outlined {

@@ -6,7 +6,7 @@ image: 'values.png'
 imgwidth: '477'
 imgheight: '530'
 haslargetitle: true
-largetitle: 'Values & Vision'
+largetitle: 'Values & <br> Vision'
 hassmalltitle: false
 smalltitle: ''
 hasdescription: true
