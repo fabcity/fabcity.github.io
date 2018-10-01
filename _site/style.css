@@ -1036,7 +1036,7 @@ header .intro-text .intro-lead-in {
     float: left }
  .section-row {
     overflow-x: hidden;
-    overflow-y: visible;
+    overflow-y: hidden;
 }
 .section-texts {
     background-color: white;
