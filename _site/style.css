@@ -1036,8 +1036,6 @@ header .intro-text .intro-lead-in {
     padding-left: 0px;
     float: left }
  .section-row {
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 .section-texts {
     background-color: white;
