@@ -1216,7 +1216,7 @@ section .project-gallery-texts {
 .city-info {
     position: absolute;
     padding: 0px !important;
-    bottom: 80px;
+    bottom: 100px;
     width: 100%;
     height: auto;
     background-color: white;
