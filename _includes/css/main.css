@@ -808,7 +808,7 @@ header .intro-text .intro-lead-in {
 }
 .quote-box .quote {
     font-size: 55px;
-    line-height: 55px;
+    line-height: 70px;
     font-weight: 400;
     letter-spacing: 0.3px;
     padding-bottom: 15px;
@@ -825,29 +825,16 @@ header .intro-text .intro-lead-in {
         margin-top: 0px;
     }
 }
-.quote-highlight {
-    padding: 20px;
-    border: solid 4px #{{ site.data.template.color.blues }}; 
-}
-.quote-highlight p {
-    font-size: 23px;
-    line-height: 32px;
-    font-weight: 400;
-    font-family: {{ site.data.template.font.primary }};
-}
-.quote-highlight p.bigger {
-    font-size: 32px;
-    line-height: 38px;
-}
-.quote-highlight a {
-    text-decoration: none;
-    color: white;
-    padding: 2px 6px;
-    font-weight: 300;
-    background: linear-gradient(to right, rgb(20,4,104) 0%, rgb(20,4,104) 100%);
-    background-size: 100%;
-    background-position: 0 100%;
-    background-repeat: repeat-x;
+.quote-box .quote.emphasis span {
+    color: #000;
+    background: linear-gradient(to right, transparent 50%, #{{ site.data.template.color.whites }} 50%);
+    background-size: 200% 80%;
+    background-repeat: no-repeat;
+    border: none;
+    background-position: right bottom;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s;
 }
 
 /*// STANDARD SECTION MODULE //*/
