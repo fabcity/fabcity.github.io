@@ -1226,7 +1226,7 @@ section .project-gallery-texts {
     padding-left: 40px;
 }
 .slick-next {
-    /*right: 0px;*/
+    right: 0px;
 }
 @media (min-width: 768px){
     .slidewrapper {
