@@ -811,12 +811,12 @@ header .intro-text .intro-lead-in {
 }
 .quote-box {
     background-color: transparent; 
-    float: left;
+    text-align: center;
     margin-top: 5px;
 }
 .quote-box .quote {
-    font-size: 31px;
-    line-height: 39px;
+    font-size: 55px;
+    line-height: 55px;
     font-weight: 400;
     letter-spacing: 0.3px;
     padding-bottom: 15px;
@@ -870,8 +870,6 @@ header .intro-text .intro-lead-in {
     padding-left: 0px;
     float: left }
  .section-row {
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 .section-texts {
     background-color: white;
@@ -1661,13 +1659,15 @@ body {
 
 }
 #intro {
-    padding-top: 100px;
+    background-color: #000;
+    color: #fff;
+    padding: 200px 0px;
 }
 .intro-box {
-    overflow-x: hidden;
+    margin-bottom: 0px;
 }
 @media (min-width: 768px){
     #intro {
-        padding-top: 200px;
+        /*padding-top: 00px;*/
     }
 }
