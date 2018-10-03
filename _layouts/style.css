@@ -1,6 +1,6 @@
 {% include css/bootstrap.min.css %}
 {% include css/slick.css %}
-{% include css/agency.css %}
+{% include css/main.css %}
 
 
 {{ content }}
