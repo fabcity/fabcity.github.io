@@ -15,8 +15,8 @@ hasbutton: true
 buttonaction: "Read the"
 buttontitle: "White Paper"
 buttonlink: "uploads/whitepaper.pdf"
-filename: "whitepaper.pdf"
 hasdownload: true
+filename: "whitepaper.pdf"
 haslogos: false
 logostitle:
 logos:

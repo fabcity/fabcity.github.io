@@ -15,8 +15,8 @@ hasbutton: true
 buttonaction: "Take the"
 buttontitle: "Quiz"
 buttonlink: ""
-filename:
 hasdownload: false
+filename:
 haslogos: false
 logostitle:
 logos:

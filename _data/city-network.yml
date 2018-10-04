@@ -14,8 +14,8 @@ description: "We welcome new member cities once a year at the annual Fab City ev
 hasbutton: true
 buttonaction: "Take the"
 buttontitle: "Quiz"
-buttonlink: "uploads/"
 hasdownload: false
+buttonlink: "uploads/"
 haslogos: false
 logostitle:
 logos:

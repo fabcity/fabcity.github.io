@@ -15,8 +15,8 @@ hasbutton: true
 buttonaction: "Fab City"
 buttontitle: "Summit"
 buttonlink: "https://summit.fabcity.paris/"
-filename:
 hasdownload: false
+filename:
 haslogos: false
 logostitle:
 logos:

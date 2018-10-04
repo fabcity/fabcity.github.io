@@ -15,8 +15,8 @@ hasbutton: true
 buttonaction: "Read the"
 buttontitle: "Manifesto"
 buttonlink: "uploads/Manifesto.pdf"
-filename: "manifesto.pdf"
 hasdownload: true
+filename: "manifesto.pdf"
 haslogos: false
 logostitle:
 logos:
