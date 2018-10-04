@@ -967,6 +967,16 @@ a.underlined-red {
     background-position: 0 100%;
     background-repeat: repeat-x;
 }
+a.underlined-white {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding-bottom: 3px;
+    background: linear-gradient(to right, rgb(255,255,255) 0%, rgb(255,255,255) 100%);
+    background-size: 1px 3px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+
 .division-line {
     margin-top: 80px;
 
@@ -1613,6 +1623,13 @@ body {
 
 /*Video*/
 
+#video-loop {
+    padding-bottom: 120px;
+    background-color:#{{ site.data.template.color.blacks }};
+}
+#video-loop a {
+    color: white;
+}
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -1620,6 +1637,7 @@ body {
     height: 0;
     overflow: hidden; 
     max-width: 100%;
+    margin-bottom: 40px;
 }
 .videoWrapper iframe {
     position: absolute;
@@ -1628,7 +1646,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 
 /*/ Individual section styling */
 #join span i{
@@ -1639,7 +1656,7 @@ body {
 #intro {
     background-color: #000;
     color: #fff;
-    padding: 200px 0px;
+    padding: 200px 0px 80px 0px;
 }
 .intro-box {
     margin-bottom: 0px;
@@ -1648,4 +1665,8 @@ body {
     #intro {
         /*padding-top: 00px;*/
     }
+}
+
+#fabcity-challenge{
+    margin-top: 100px;
 }
