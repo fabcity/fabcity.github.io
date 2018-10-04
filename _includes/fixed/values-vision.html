@@ -118,7 +118,15 @@
         {% if include.texts.hasextraaction == true %}
             <div class="row no-side-margin text-right">
                 <div class= "col-sm-2 col-md-2 extra-action" style="float: right;">
-                    <a href="">{{ include.texts.extraaction }}</a>
+                    {% if include.texts.sectioncolor == 'blue' %}
+                    <a class="underlined-blue" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
+                    {% elsif include.texts.sectioncolor == 'yellow' %}
+                    <a class="underlined-yellow" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
+                    {% elsif include.texts.sectioncolor == 'red' %}
+                    <a class="underlined-red" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
+                    {% else %}
+                    <a class="underlined-green" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
+                    {% endif %}
                 </div>
             </div>
         {% endif %} <!-- Endif hasextraaction -->

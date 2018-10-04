@@ -1,0 +1,4 @@
+videofile: 'webcut_mediumres.mp4'
+fallbackimg: 'loop-fallback.jpg'
+action: "Watch the full video &#8594;"
+videourl: 'https://www.youtube.com/'

@@ -927,7 +927,6 @@ section .extra-action a{
     text-decoration: none;
     color: rgb(0,0,0);
     padding-bottom: 3px;
-    background: linear-gradient(to right, rgb(255,239,25) 0%, rgb(255,239,25) 100%);
     background-size: 1px 3px;
     background-position: 0 100%;
     background-repeat: repeat-x;
