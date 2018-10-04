@@ -29,7 +29,7 @@ logos:
     logo: ddmp-logo.png
     url: "http://distributeddesign.eu/"
   - name: "Fablabs.io"
-    logo: fablabsio-logo.png
+    logo: fablabsio-logo.svg
     url: "https://www.fablabs.io/labs"
   - name: "Materiom"
     logo: materiom-logo.svg
