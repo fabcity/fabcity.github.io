@@ -16,8 +16,8 @@ buttontitle: "Slide Deck"
 buttonlink: ""
 hasdownload: true
 filename:
-hasiconbox: true
-iconboxtitle: "Tools"
+hasiconbox: false
+iconboxtitle: ""
 icons:
   - name: ""
     img: 
