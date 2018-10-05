@@ -13,8 +13,8 @@ description: "As a global network, we are connected through the knowledge we sha
 hasbutton: true
 buttonaction: "Access the"
 buttontitle: "Slide Deck"
-buttonlink: ""
-hasdownload: true
+buttonlink: "https://github.com/fabcity/toolkit/blob/master/Outreach%20-%20Fab%20City%20Presentation.pdf"
+hasdownload: false
 filename:
 hasiconbox: false
 iconboxtitle: ""

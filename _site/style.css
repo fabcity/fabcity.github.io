@@ -1824,6 +1824,9 @@ body {
     color: #fff;
     padding: 200px 0px 80px 0px;
 }
+#intro .section-texts {
+    background-color: #000;
+}
 .intro-box {
     margin-bottom: 0px;
 }
