@@ -3,8 +3,8 @@ orientation: normal
 sectioncolor: 'green'
 hascolorbg: false
 image: 'common-knowledge.jpg'
-imgwidth: '586'
-imgheight: '391'
+imgwidth: '533'
+imgheight: '389'
 haslargetitle: false
 hassmalltitle: true
 smalltitle: 'Common knowledge'

@@ -24,10 +24,12 @@
                 <div class="col-md-12"><img class="sponsor-img" src="{{ site.baseurl }}/uploads/iaac.png"></div>
             </div>
             <div class="col-md-3 text-right">
+                {% if include.texts.hasbutton == true %}
                 <div style="padding-top: 100px;">
                     <p class="action"> {{ include.texts.buttonaction }} <br></p> 
                     <a href="{{ include.texts.buttonlink }}" class="page-scroll btn red" target="_blank" data-bottom-top="background-position:left bottom; margin-top:" data-200-center-top="background-position:right bottom;">{{ include.texts.buttontitle }}</a>
                 </div>
+                {% endif %}
             </div>
         </div>
         <div class="row no-side-margin">
