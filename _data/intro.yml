@@ -1,0 +1,8 @@
+sectioncolor: 'blue'
+hascolorbg: true
+image: 'intro-city.jpg'
+imgwidth: '473'
+imgheight: '343'
+quotes:
+  - text: "By 2054 70% of us will live in cities."
+conclusion: "This rapid urbanization presents a grand challenge as well a system-changing <span>opportunity.</span>"

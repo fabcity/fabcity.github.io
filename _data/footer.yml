@@ -1,0 +1,25 @@
+links:
+  - title: "Summit"
+    url: 'https://summit.fabcity.paris/'
+  - title: "Events"
+    url: ''
+  - title: "Publications"
+    url: ''
+  - title: "Toolkits"
+    url: ''
+  - title: "Github"
+    url: ''
+address:
+  - line: "Institute for Advanced Architecture of Catalonia"
+  - line: "Fab Lab Barcelona"
+  - line: "Barcelona"
+  - line: "Pujades 102, 08005"
+poweredby:
+  - org: "Fab Lab Barcelona"
+    url: 'https://fablabbcn.org/'
+  - org: "MIT's CBA"
+    url: 'http://cba.mit.edu/'
+  - org: "IAAC"
+    url: 'https://iaac.net/'
+  - org: "Fab Foundation"
+    url: 'http://www.fabfoundation.org/'

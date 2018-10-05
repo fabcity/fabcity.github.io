@@ -1,40 +1,34 @@
 <section id="roadmap">
     <div class="container">
         <div class="row" style="margin-bottom:40px;">
-            <div class="col-md-4">
-                <h2 class="quote-title">Our Roadmap</h2>
-                <p>A long term challenge based on short term actions. </p>
-            </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-        </div>
-
-        <div class="row no-side-margin roadmap-box">  
-             
-            <div class="line"></div>
-            <div class="bottom">
-                {% for event in include.texts.events %}
-                <div class="bottom-element">
-                    <div class="text-box">
-                        <img class="timeline-logo" src="{{ site.baseurl }}/img/roadmap/{{ event.img }}">
-                        <h4>{{ event.year }} &nbsp; {{ event.title }}</h4>
-                        <p class="small">{{ event.description }}</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 200px;" data-top="margin-top: 0px;">
+                <div class="row no-side-margin">
+                    <div class="col-md-12 no-side-padding">
+                        <h1 data-bottom="opacity: 0;" data-0-center-center="opacity:1;" class="section-title">Our Roadmap</h1>
+                    </div>
+                    <div class="col-md-8 no-side-padding">
+                        <p data-bottom="opacity: 0;" data-0-center-center="opacity:1;" class="section-description">We’re building our roadmap through action research and experimentation, in collaboration with our growing network of supporters. </p>
                     </div>
                 </div>
-                {% endfor %}
             </div>
-        
+            <div class="col-md-6">
+            </div>
         </div>
-
-        <div class="col-md-6" style="margin-top: 60px;">
-            <p>{{ site.data.about-texts.quote6 }}</p>
+        <div class="row no-side-margin">  
+            <div class="col-md-9 roadmap-box">
+                <div class="line"></div>
+                <div class="bottom">
+                    {% for event in include.texts.events %}
+                    <div class="bottom-element">
+                        <div class="text-box">
+                            <img class="timeline-logo" src="{{ site.baseurl }}/uploads/{{ event.img }}">
+                            <h4>{{ event.year }} &nbsp; {{ event.title }}</h4>
+                            <p class="small">{{ event.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-
     </div><!-- close container-->
-
 </section>
-
-
-
-
-

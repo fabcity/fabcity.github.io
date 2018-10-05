@@ -3,17 +3,19 @@ layout: default
 ---
 
 {% include fixed/header.html %}
-{% include fixed/intro.html %}
-{% include fixed/claim-1.html %}
-{% include fixed/claim-2.html %}
-{% include fixed/claim-3.html %}
-{% include fixed/claim-4.html %}
-{% include fixed/manifesto.html %}
-{% include fixed/partner-cities.html %}
-{% include fixed/partners.html %}
-{% include fixed/collective.html %}
-{% include fixed/partner-projects.html %}
-{% include fixed/carousel.html texts=site.data.home-carousel %}
-{% include fixed/get-involved.html %}
+{% include fixed/intro.html texts=site.data.intro %}
+{% include fixed/video-loop.html texts=site.data.video-loop %}
+{% include fixed/section.html texts=site.data.challenge %}
+{% include fixed/values-vision.html texts=site.data.values-vision %}
+{% include fixed/section.html texts=site.data.our-approach %}
+{% include fixed/project-gallery.html texts=site.data.prototype-the-city %}
+{% include fixed/section.html texts=site.data.common-knowledge %}
+{% include fixed/documentation.html texts=site.data.documentation %}
+{% include fixed/global-initiative.html texts=site.data.global-initiative %}
+{% include fixed/people-gallery.html texts=site.data.collective %}
+{% include fixed/foundation.html texts=site.data.foundation %}
+{% include fixed/roadmap.html texts=site.data.roadmap %}
+{% include fixed/section.html texts=site.data.join %}
 {% include fixed/subscribe.html %}
-{% include fixed/footer.html %}
+{% include fixed/collaborators.html texts=site.data.collaborators %}
+{% include fixed/footer.html texts=site.data.footer %}

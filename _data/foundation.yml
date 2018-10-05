@@ -1,0 +1,10 @@
+id: "fab-city-foundation"
+sectioncolor: 'red'
+hastitle: true
+title: 'Fab City Foundation'
+hasdescription: true
+description: "Fab City was founded by key partners in 2014. In 2018 the Fab City Foundation was founded."
+hasbutton: false
+buttonaction: "Governance"
+buttontitle: "Model"
+buttonlink: "uploads/"

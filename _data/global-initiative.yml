@@ -1,0 +1,226 @@
+id: "global-initiative"
+sectioncolor: 'red'
+image: 'map-cities.png'
+haslargetitle: true
+largetitle: 'A global initiative'
+hassmalltitle: true
+smalltitle: 'Fab City Network'
+hasdescription: true
+description: "Core to the initiative is a network of cities, regions and countries that have pledged to work towards producing everything they consume by 2054. Citizens, FabLabs and City officials collaborate locally to implement new urban models through interventions in governance and policy."
+cities:
+  - name: "Zagreb"
+    place: left
+    id: "zagreb"
+    country: Croatia
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Bhutan"
+    place: left
+    id: "bhutan"
+    country: Bhutan
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Ministry of Education | Ministry of Labour and Human Resources | Royal University of Bhutan | Ministry of Agriculture | Fablab Bhutan"
+    joined:
+  - name: "Shenzhen"
+    place: left
+    id: "shenzhen"
+    country: China
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Shenzhen Open Innovation Lab | Shenzhen Industrial Design Association"
+    joined:
+  - name: "Georgia"
+    place: left
+    id: "georgia"
+    country: Georgia
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "LEPL. Georgia's innovation and technology agency"
+    joined:
+  - name: "Curitiba"
+    place: left
+    id: "Curitiba"
+    country: Brasil
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Agência Curitiba | We Fab | Curitiba City Hall | iCities"
+    joined:
+  - name: "Occitanie Region"
+    place: left
+    id: "occitanie"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Puebla"
+    place: left
+    id: "puebla"
+    country: Mexico
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Mexico City"
+    place: left
+    id: "mexico-df"
+    country: Mexico
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Auvergne-Rhône-Alpes"
+    place: left
+    id: "auvergne"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Amsterdam"
+    place: left
+    id: "amsterdam"
+    country: Netherlands
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Waag Society | Fab Lab Amsterdam | Pakhuis de Zwijger | Metabolic"
+    joined:
+  - name: "Cambridge"
+    place: left
+    id: "cambridge"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Kerala"
+    place: left
+    id: "kerala"
+    country: India
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Kerala Startup Mission"
+    joined:
+  - name: "Sacramento"
+    place: left
+    id: "sacramento"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Belo-Horizonte"
+    place: right
+    id: "belohorizonte"
+    country: Brasil
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Ekurhuleni"
+    place: right
+    id: "ekurhuleni"
+    country: South Africa
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Brest"
+    place: right
+    id: "Brest"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Brest Métropol | ADEUPa | UBO Open Factory"
+    joined:
+  - name: "Boston"
+    place: right
+    id: "boston"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Toulouse"
+    place: right
+    id: "toulouse"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Paris"
+    place: right
+    id: "paris"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Fab City Grand Paris Association | City Council of Paris"
+    joined:
+  - name: "Santiago de Chile"
+    place: right
+    id: "santiago"
+    country: Chile
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Fab Lab Santiago | SE Santiago | Escuela de Diseño UC | Distributed Design Foundation"
+    joined:
+  - name: "Velsen"
+    place: right
+    id: "velsen"
+    country: Netherlands
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Seoul"
+    place: right
+    id: "seoul"
+    country: South Korea
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Oakland"
+    place: right
+    id: "oakland"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Somerville"
+    place: right
+    id: "somerville"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "FabVille"
+    joined:
+  - name: "Detroit"
+    place: right
+    id: "detroit"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Kamakura"
+    place: right
+    id: "kamakura"
+    country: Japan
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+  - name: "Sorocaba"
+    place: right
+    id: "sorocaba"
+    country: Brasil
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 

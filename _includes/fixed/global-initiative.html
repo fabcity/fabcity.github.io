@@ -1,0 +1,112 @@
+<section id="{{ include.texts.id }}">
+    <div class="container">
+        <div class="row no-side-margin section-row">
+            <div class="plain-bg" style="height: 190px; background-color: rgb(193,15,24); margin-left: -40px;" data-bottom-top="margin-top: 400px; width: 10px" data-top="margin-top:0px; width: 555px;"> </div>
+            <div class="col-sm-6 col-md-6 section-texts float-left" data-bottom-top="margin-top: 400px;" data-top="margin-top: 0px;">
+                <div class="row no-side-margin">
+                    {% if include.texts.haslargetitle == true %}
+                    <div class="col-md-10 no-side-padding">
+                        <h1 class="section-title">{{ include.texts.largetitle }}</h1>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div><!--close section content row -->  
+        <div id="myGroup">
+            <div class="row">
+                <div class= "col-sm-7 col-md-7 no-side-padding">
+                    <img class="img-left globe-img" src="{{ site.baseurl }}/uploads/{{ include.texts.image }}">
+
+                    <div class="city-info collapse in" id="barcelona">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">Barcelona, Spain</p>
+                                <p class="focus">Strategic focus: policy and governance </p>
+                                <p class="org-type">Consortium</p>
+                                <p class="org-name">Fab Lab Barcelona | IAAC | Barcelona City Council</p>
+                                <p class="joined-date">41.3851°N 2.1734°E &nbsp;| &nbsp; Joined 2014</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
+                            </div>
+                            <a class="card-close" data-toggle="collapse" href="#barcelona">&times;</a> 
+                        </div>
+                    </div>
+                    {% for city in include.texts.cities %}
+                    <div class="city-info collapse" id="{{ city.id }}">
+                        <div class="row no-side-margin city-card">
+                            <div class="col-md-8 no-side-padding">
+                                <p class="city-name">{{ city.name }}, {{ city.country }}</p>
+                                <p class="focus">{{ city.strategicfocus }}</p>
+                                <p class="org-type">{{ city.orgtype }}</p>
+                                <p class="org-name">{{ city.org }}</p>
+                                <p class="joined-date">Joined {{ city.joined }}</p>
+                            </div>
+                            <div class="col-md-4 no-side-padding">
+                                <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
+                            </div>
+                            <a class="card-close" data-toggle="collapse" href="#{{ city.id }}">&times;</a> 
+                        </div> <!--close row-->
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 section-texts">
+                    {% if include.texts.hassmalltitle == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-small-title">{{ include.texts.smalltitle }}</p>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hasdescription == true %}
+                    <div class="col-md-12 no-side-padding" style="margin-bottom: 60px;">
+                        <p class="section-description">{{ include.texts.description }}</p>
+                    </div>
+                    <div class="col-md-12 no-side-padding">
+                        <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
+                            <ul class="cities-list">
+                                <li class="cities-left"><a class="" data-toggle="collapse" href="#barcelona" role="button" aria-expanded="true" aria-controls="barcelona">Barcelona</a></li>
+                                 {% for city in include.texts.cities %}
+                                     {% if city.place == 'left' %}
+                                        <li class="cities-left"><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul> 
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
+                            <ul class="cities-list">
+                            {% for city in include.texts.cities %}
+                                {% if city.place == 'right' %}
+                                    <li class="cities-left"><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>  <!-- row-->
+        </div>
+        <!--
+        <div class="row">
+            <div id="myGroup">
+            <button class="btn dropdown" data-toggle="collapse" data-target="#keys"><i class="icon-chevron-right"></i> Keys  <span class="badge badge-info pull-right">X</span></button>
+            <button class="btn dropdown" data-toggle="collapse" data-target="#attrs"><i class="icon-chevron-right"></i> Attributes</button>
+            <button class="btn dropdown" data-toggle="collapse" data-target="#edit"><i class="icon-chevron-right"></i> Edit Details</button>
+            
+                <div class="collapse indent" id="keys">
+                    keys
+                </div>
+            
+                <div class="collapse indent" id="attrs">
+                    attrs
+                </div>
+            
+                <div class="collapse" id="edit">
+                    edit
+                </div>
+            </div>
+        </div>
+        -->
+    </div> <!--close container -->
+</section>
