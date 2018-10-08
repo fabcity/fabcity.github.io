@@ -18,11 +18,18 @@ body {
 }
 .container {
     width: 98%;
+    padding-right: 0px;
 }
 @media (min-width: 768px){
     .container {
         width: 96%;
-        padding-right: 67px;
+        padding-right: 10px;
+    }
+}
+@media (min-width: 1025px){
+    .container {
+        width: 96%;
+        padding-right: 30px;
     }
 }
 @media (min-width: 1200px){
@@ -586,7 +593,7 @@ a.active {
 .plain-bg {
     display: none;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
     .plain-bg {
         position: absolute;
         display: block;
@@ -855,11 +862,24 @@ header .intro-text .intro-lead-in {
     height: auto;
     padding-top: 50px;
 }
-
 .auto{
     height: auto!important;
 }
-@media (min-width: 768px){
+@media (min-width: 767px){
+    .float-left {
+        padding-right: 30px;
+    }
+    .float-right {
+        padding-left: 20px;
+    }
+    .section-texts {
+        padding-top: 0px;
+    }
+}
+@media (min-width: 1024px){
+    .section-texts {
+        padding-top: 50px;
+    }
     .float-left {
         padding-right: 100px;
     }
@@ -915,7 +935,7 @@ section .button-area {
     bottom: 0;
     right: 15px;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
     section .button-area {
         position: absolute;
     }
