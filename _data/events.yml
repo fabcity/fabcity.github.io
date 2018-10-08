@@ -2,7 +2,7 @@ id: "events"
 orientation: inverted
 sectioncolor: 'red'
 hascolorbg: true
-image: 'events.jpg'
+image: 'uploads/events.jpg'
 imgwidth: '428'
 imgheight: '358'
 haslargetitle: false

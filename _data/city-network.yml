@@ -2,7 +2,7 @@ id: "fab-city-network"
 orientation: normal
 sectioncolor: 'red'
 hascolorbg: true
-image: 'network.jpg'
+image: 'uploads/network.jpg'
 imgwidth: '540'
 imgheight: '462'
 haslargetitle: false

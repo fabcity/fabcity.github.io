@@ -2,7 +2,7 @@ id: "fabcity-challenge"
 orientation: inverted
 sectioncolor: 'blue'
 hascolorbg: true
-image: 'challenge.jpg'
+image: 'uploads/challenge.jpg'
 imgwidth: '492'
 imgheight: '520'
 haslargetitle: true

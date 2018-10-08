@@ -2,7 +2,7 @@ id: "common-knowledge"
 orientation: normal
 sectioncolor: 'green'
 hascolorbg: false
-image: 'common-knowledge.jpg'
+image: 'uploads/common-knowledge.jpg'
 imgwidth: '533'
 imgheight: '389'
 haslargetitle: false

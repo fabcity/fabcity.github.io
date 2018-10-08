@@ -66,11 +66,8 @@
                         <div class="col-md-12 no-side-padding">
                             <ul class="share-row">
                                 <li><a target="_blank" href="{{ include.texts.buttonlink }}"><img src="{{ site.baseurl }}/uploads/download-icon.png"></a></li>
-                                <!--
                                 <li><button type="button" id="btn-share" data-container="body" data-toggle="popover" data-placement="bottom"><img src="{{ site.baseurl }}/uploads/share-icon.png"></button></li>
-                                -->
                             <ul>
-                            <!--
                             <span id="popoverExampleHiddenContent" class="hidden">
                                 <a target="_blank" class="btn-media twitter" href="https://twitter.com/share?url=https%3A%2F%2Ffab.city%2Fuploads%2F{{ include.texts.filename }}&via=fabcityglobal&related=twitterapi%2Ctwitter&hashtags=fabcity">
                                 <i class="fa fa-twitter"></i>
@@ -79,7 +76,6 @@
                                 <i class="fa fa-facebook"></i>
                                 </a>
                             </span>
-                        -->
                         </div>
                         {% endif %}
                     </div>
@@ -122,15 +118,7 @@
         {% if include.texts.hasextraaction == true %}
             <div class="row no-side-margin text-right">
                 <div class= "col-sm-2 col-md-2 extra-action" style="float: right;">
-                    {% if include.texts.sectioncolor == 'blue' %}
-                    <a class="underlined-blue" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
-                    {% elsif include.texts.sectioncolor == 'yellow' %}
-                    <a class="underlined-yellow" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
-                    {% elsif include.texts.sectioncolor == 'red' %}
-                    <a class="underlined-red" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
-                    {% else %}
-                    <a class="underlined-green" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
-                    {% endif %}
+                    <a href="">{{ include.texts.extraaction }}</a>
                 </div>
             </div>
         {% endif %} <!-- Endif hasextraaction -->
