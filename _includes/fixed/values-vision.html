@@ -117,11 +117,19 @@
         {% endif %}
         {% if include.texts.hasextraaction == true %}
             <div class="row no-side-margin text-right">
-                <div class= "col-sm-2 col-md-2 extra-action" style="float: right;">
-                    <a href="">{{ include.texts.extraaction }}</a>
+                <div class= "col-sm-2 col-md-2 extra-action" style="float:right;">
+                    {% if include.texts.sectioncolor == 'blue' %}
+                    <a class="underlined-blue" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
+                    {% elsif include.texts.sectioncolor == 'yellow' %}
+                    <a class="underlined-yellow" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
+                    {% elsif include.texts.sectioncolor == 'red' %}
+                    <a class="underlined-red" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
+                    {% else %}
+                    <a class="underlined-green" target="_blank" href="{{ include.texts.extraactionlink }}">{{ include.texts.extraaction }}</a>
+                    {% endif %}
                 </div>
             </div>
-        {% endif %} <!-- Endif hasextraaction -->
+        {% endif %}  <!-- Endif Extra Action Button -->
         {% endif %} <!-- Endif Orientation condition -->
         {% if include.texts.hasdivisionline == true %}
             <div class="row no-side-margin text-center division-line" data-bottom="margin-top: 300px;" data-top-top="margin-top: 0px;">
