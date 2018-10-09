@@ -1,6 +1,6 @@
 id: "global-initiative"
 sectioncolor: 'red'
-image: 'map-cities.png'
+image: 'uploads/map-cities.png'
 haslargetitle: true
 largetitle: 'A global initiative'
 hassmalltitle: true
