@@ -16,7 +16,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2018
-    latlon: ""
+    coordinates: "45.8150°N 15.9819°E"
   - name: "Bhutan"
     place: left
     id: "bhutan"
@@ -25,7 +25,7 @@ cities:
     orgtype: "Consortium"
     org: "Ministry of Education | Ministry of Labour and Human Resources | Royal University of Bhutan | Ministry of Agriculture | Fablab Bhutan"
     joined: 2016
-    latlon:
+    coordinates: "27.5142°N, 90.4336°E"
   - name: "Shenzhen"
     place: left
     id: "shenzhen"
@@ -34,7 +34,7 @@ cities:
     orgtype: "Consortium"
     org: "Shenzhen Open Innovation Lab | Shenzhen Industrial Design Association"
     joined: 2015
-    latlon:
+    coordinates: "22.5431°N, 114.0579°E"
   - name: "Georgia"
     place: left
     id: "georgia"
@@ -43,7 +43,7 @@ cities:
     orgtype: "Consortium"
     org: "LEPL. Georgia's innovation and technology agency"
     joined: 2015
-    latlon:
+    coordinates: "32.1656°N, 82.9001°W"
   - name: "Curitiba"
     place: left
     id: "Curitiba"
@@ -52,7 +52,7 @@ cities:
     orgtype: "Consortium"
     org: "Agência Curitiba | We Fab | Curitiba City Hall | iCities"
     joined: 2017
-    latlon:
+    coordinates: "25.4809°S, 49.3044°W"
   - name: "Occitanie Region"
     place: left
     id: "occitanie"
@@ -60,8 +60,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
-    latlon:
+    joined: 2017
+    coordinates: "43.8927°N, 3.2828°E"
   - name: "Puebla"
     place: left
     id: "puebla"
@@ -69,8 +69,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
-    latlon:
+    joined: 2018
+    coordinates: "19.0414°N, 98.2063°W"
   - name: "Mexico City"
     place: left
     id: "mexico-df"
@@ -78,8 +78,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
-    latlon:
+    joined: 2018
+    coordinates: "19.4326°N, 99.1332°W"
   - name: "Auvergne-Rhône-Alpes"
     place: left
     id: "auvergne"
@@ -87,8 +87,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
-    latlon:
+    joined: 2018
+    coordinates: "45.4471°N, 4.3853°E"
   - name: "Amsterdam"
     place: left
     id: "amsterdam"
@@ -96,8 +96,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: "Waag Society | Fab Lab Amsterdam | Pakhuis de Zwijger | Metabolic"
-    joined:
-    latlon:
+    joined: 2016
+    coordinates: "52.3680°N, 4.9036°E"
   - name: "Cambridge"
     place: left
     id: "cambridge"
@@ -106,7 +106,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2015
-    latlon:
+    coordinates: "42.3736°N, 71.1097°W"
   - name: "Kerala"
     place: left
     id: "kerala"
@@ -115,7 +115,7 @@ cities:
     orgtype: "Consortium"
     org: "Kerala Startup Mission"
     joined: 2015
-    latlon:
+    coordinates: "10.8505°N, 76.2711°E"
   - name: "Sacramento"
     place: left
     id: "sacramento"
@@ -124,7 +124,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2016
-    latlon:
+    coordinates: "38.5816°N, 121.4944°W"
   - name: "Belo-Horizonte"
     place: right
     id: "belohorizonte"
@@ -132,8 +132,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
-    latlon:
+    joined: 2018
+    coordinates: "19.9173°S, 43.9346°W"
   - name: "Ekurhuleni"
     place: right
     id: "ekurhuleni"
@@ -142,7 +142,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2015
-    latlon:
+    coordinates: "26.1777°S, 28.3462°E"
   - name: "Brest"
     place: right
     id: "Brest"
@@ -151,7 +151,7 @@ cities:
     orgtype: "Consortium"
     org: "Brest Métropol | ADEUPa | UBO Open Factory"
     joined:
-    latlon:
+    coordinates: "48.3904°N, 4.4861°W"
   - name: "Boston"
     place: right
     id: "boston"
@@ -160,7 +160,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2015
-    latlon:
+    coordinates: "42.3601°N, 71.0589°W"
   - name: "Toulouse"
     place: right
     id: "toulouse"
@@ -169,7 +169,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
-    latlon:
+    coordinates: "43.6047°N, 1.4442°E"
   - name: "Paris"
     place: right
     id: "paris"
@@ -178,7 +178,7 @@ cities:
     orgtype: "Consortium"
     org: "Fab City Grand Paris Association | City Council of Paris"
     joined:
-    latlon:
+    coordinates: "48.8566°N, 2.3522°E"
   - name: "Santiago de Chile"
     place: right
     id: "santiago"
@@ -187,7 +187,7 @@ cities:
     orgtype: "Consortium"
     org: "Fab Lab Santiago | SE Santiago | Escuela de Diseño UC | Distributed Design Foundation"
     joined: 2016
-    latlon:
+    coordinates: "33.4489°S, 70.6693°W"
   - name: "Velsen"
     place: right
     id: "velsen"
@@ -195,8 +195,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
-    latlon:
+    joined: 
+    coordinates: "52.4521°N, 4.6306°E"
   - name: "Seoul"
     place: right
     id: "seoul"
@@ -204,8 +204,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
-    latlon:
+    joined: 2018
+    coordinates: "37.5665°N, 126.9780°E"
   - name: "Oakland"
     place: right
     id: "oakland"
@@ -213,8 +213,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
-    latlon:
+    joined: 2018
+    coordinates: "37.8044°N, 122.2711°W"
   - name: "Somerville"
     place: right
     id: "somerville"
@@ -223,7 +223,7 @@ cities:
     orgtype: "Consortium"
     org: "FabVille"
     joined: 2015
-    latlon:
+    coordinates: "42.3876°N, 71.0995°W"
   - name: "Detroit"
     place: right
     id: "detroit"
@@ -232,7 +232,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2016
-    latlon:
+    coordinates: "42.3314°N, 83.0458°W"
   - name: "Kamakura"
     place: right
     id: "kamakura"
@@ -240,8 +240,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
-    latlon:
+    joined: 2018
+    coordinates: "35.3192°N, 139.5467°E"
   - name: "Sorocaba"
     place: right
     id: "sorocaba"
@@ -249,5 +249,5 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined: 
-    latlon: 
+    joined: 2018
+    coordinates: "23.4557°S, 47.4883°W"

@@ -1449,7 +1449,7 @@ section .project-gallery-texts {
     transform: rotate(-90deg);
     transform-origin: left top 0;
     margin-left: 20px;
-    margin-top: 200px;
+    margin-top: 210px;
     color: #e21826; 
 }
 .city-info .city-card .card-close {

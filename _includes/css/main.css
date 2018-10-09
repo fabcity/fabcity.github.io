@@ -1283,7 +1283,7 @@ section .project-gallery-texts {
     transform: rotate(-90deg);
     transform-origin: left top 0;
     margin-left: 20px;
-    margin-top: 200px;
+    margin-top: 210px;
     color: #{{ site.data.template.color.reds }}; 
 }
 .city-info .city-card .card-close {
