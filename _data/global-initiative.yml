@@ -15,7 +15,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
+    joined: 2018
+    latlon: ""
   - name: "Bhutan"
     place: left
     id: "bhutan"
@@ -23,7 +24,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: "Ministry of Education | Ministry of Labour and Human Resources | Royal University of Bhutan | Ministry of Agriculture | Fablab Bhutan"
-    joined:
+    joined: 2016
+    latlon:
   - name: "Shenzhen"
     place: left
     id: "shenzhen"
@@ -31,7 +33,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: "Shenzhen Open Innovation Lab | Shenzhen Industrial Design Association"
-    joined:
+    joined: 2015
+    latlon:
   - name: "Georgia"
     place: left
     id: "georgia"
@@ -39,7 +42,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: "LEPL. Georgia's innovation and technology agency"
-    joined:
+    joined: 2015
+    latlon:
   - name: "Curitiba"
     place: left
     id: "Curitiba"
@@ -47,7 +51,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: "Agência Curitiba | We Fab | Curitiba City Hall | iCities"
-    joined:
+    joined: 2017
+    latlon:
   - name: "Occitanie Region"
     place: left
     id: "occitanie"
@@ -56,6 +61,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Puebla"
     place: left
     id: "puebla"
@@ -64,6 +70,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Mexico City"
     place: left
     id: "mexico-df"
@@ -72,6 +79,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Auvergne-Rhône-Alpes"
     place: left
     id: "auvergne"
@@ -80,6 +88,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Amsterdam"
     place: left
     id: "amsterdam"
@@ -88,6 +97,7 @@ cities:
     orgtype: "Consortium"
     org: "Waag Society | Fab Lab Amsterdam | Pakhuis de Zwijger | Metabolic"
     joined:
+    latlon:
   - name: "Cambridge"
     place: left
     id: "cambridge"
@@ -95,7 +105,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
+    joined: 2015
+    latlon:
   - name: "Kerala"
     place: left
     id: "kerala"
@@ -103,7 +114,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: "Kerala Startup Mission"
-    joined:
+    joined: 2015
+    latlon:
   - name: "Sacramento"
     place: left
     id: "sacramento"
@@ -111,7 +123,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
+    joined: 2016
+    latlon:
   - name: "Belo-Horizonte"
     place: right
     id: "belohorizonte"
@@ -120,6 +133,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Ekurhuleni"
     place: right
     id: "ekurhuleni"
@@ -127,7 +141,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
+    joined: 2015
+    latlon:
   - name: "Brest"
     place: right
     id: "Brest"
@@ -136,6 +151,7 @@ cities:
     orgtype: "Consortium"
     org: "Brest Métropol | ADEUPa | UBO Open Factory"
     joined:
+    latlon:
   - name: "Boston"
     place: right
     id: "boston"
@@ -143,7 +159,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
+    joined: 2015
+    latlon:
   - name: "Toulouse"
     place: right
     id: "toulouse"
@@ -152,6 +169,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Paris"
     place: right
     id: "paris"
@@ -160,6 +178,7 @@ cities:
     orgtype: "Consortium"
     org: "Fab City Grand Paris Association | City Council of Paris"
     joined:
+    latlon:
   - name: "Santiago de Chile"
     place: right
     id: "santiago"
@@ -167,7 +186,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: "Fab Lab Santiago | SE Santiago | Escuela de Diseño UC | Distributed Design Foundation"
-    joined:
+    joined: 2016
+    latlon:
   - name: "Velsen"
     place: right
     id: "velsen"
@@ -176,6 +196,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Seoul"
     place: right
     id: "seoul"
@@ -184,6 +205,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Oakland"
     place: right
     id: "oakland"
@@ -192,6 +214,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Somerville"
     place: right
     id: "somerville"
@@ -199,7 +222,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: "FabVille"
-    joined:
+    joined: 2015
+    latlon:
   - name: "Detroit"
     place: right
     id: "detroit"
@@ -207,7 +231,8 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined:
+    joined: 2016
+    latlon:
   - name: "Kamakura"
     place: right
     id: "kamakura"
@@ -216,6 +241,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined:
+    latlon:
   - name: "Sorocaba"
     place: right
     id: "sorocaba"
@@ -224,3 +250,4 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 
+    latlon: 

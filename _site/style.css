@@ -1419,10 +1419,14 @@ section .project-gallery-texts {
     -webkit-transition: all ease .7s;
     -moz-transition: all ease .7s;
     transition: all ease .7s;
+    max-width: 700px;
 }
 .city-info .city-card {
     padding: 30px;
-    padding-left: 60px;
+    padding-left: 0px;
+}
+.city-info .city-card .left-info {
+    white-space: nowrap;
 }
 .city-info .city-card .city-name {
     font-size: 32px;
@@ -1441,11 +1445,11 @@ section .project-gallery-texts {
 }
 .city-info .city-card .joined-date {
     font-size: 12px;
-    margin-bottom: 0px;
+    margin: 0px;
     transform: rotate(-90deg);
     transform-origin: left top 0;
-    margin-left: -40px;
-    margin-top: 80px;
+    margin-left: 20px;
+    margin-top: 200px;
     color: #e21826; 
 }
 .city-info .city-card .card-close {
