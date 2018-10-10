@@ -35,3 +35,8 @@ $('div.modal').on('show.bs.modal', function() {
         }
     }
 });
+
+$('.cities-left').click(function() {
+  // If we click to Show any city, hide all cities already shown
+  $('.city-info.collapse').removeClass('in');
+});
