@@ -19,15 +19,13 @@
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
-    <!-- Slider CSS
-    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
 </head>
 
   <!-- Navigation -->
@@ -2080,19 +2078,20 @@
     
 
     <!-- jQuery Version 1.11.0 -->
-<!--<script src="/js/jquery-1.11.0.js"></script>-->
+<script src="/js/jquery-1.11.0.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="/js/bootstrap.min.js"></script>
 <!-- Plugin JavaScript 
 <script src="/js/jquery.easing.min.js"></script>
 <script src="/js/classie.js"></script>
-<script src="/js/cbpAnimatedHeader.js"></script>-->
 <!-- Custom Theme JavaScript -->
 <script src="/js/agency.js"></script>
 <!-- Countdown -->
 <script src="/js/jquery.countdown.js"></script>
 <script src="/js/countdown.js"></script>
-<!--slider-->
+<!--Header Video-->
+<script src="/js/header-video.js"></script>
+<!--Project Slider-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
 $('.slidewrapper').slick({
@@ -2101,10 +2100,8 @@ $('.slidewrapper').slick({
   slidesToScroll: 3
 });
 </script>
-
 <!--Parallax Scrolling animations -->
 <script src="/js/skrollr.js"></script>
-
 <!-- Skrollr parrallax animations -->
 <script type="text/javascript">
 $(function () {
@@ -2114,7 +2111,6 @@ $(function () {
     forceHeight: false,
     });
   }
-
   // disable skrollr if the window is resized below 768px wide
   $(window).on('resize', function () {
     if ($(window).width() <= 767) {
@@ -2123,136 +2119,6 @@ $(function () {
   });
 });
 </script>
-
-<script>
-    $(window).load(function() {
-        var viewportWidth = $(window).width();
-        if (viewportWidth < 767) {
-            $(".section-texts").css("height", "auto");
-            $(".section-img-box").css("height", "auto");
-        }
-     });
-    $(window).resize(function () {
-        var viewportWidth = $(window).width();
-        if (viewportWidth < 767) {
-            $(".section-texts").css("height", "auto");
-            $(".section-img-box").css("height", "auto");
-        }
-    });
-</script>
-
-<!--Youtube video -->
-<script type="text/javascript">
-
-var vid = "IswJ3tZyhEM",
-    streams,
-    video_focused = true,
-    video_tag = $("#video"),
-    video_obj = video_tag.get(0);
-$.getJSON("https://query.yahooapis.com/v1/public/yql", {
-    q: "select * from csv where url='https://www.youtube.com/get_video_info?video_id=" + vid + "'",
-    format: "json"
-}, function(data) {
-    if (data.query.results && !data.query.results.row.length) {
-        streams = parse_youtube_meta(data.query.results.row.col0);
-        video_tag.attr({
-            src: streams['1080p'] || streams['720p'] || streams['360p']
-        });
-
-        document.addEventListener("visibilitychange", function() {
-            video_focused = !video_focused ? video_obj.play() : video_obj.pause();
-        });
-    } else {
-            $('pre').text('YQL request error...');
-    }
-});
-
-function parse_youtube_meta(rawdata) {
-    var data = parse_str(rawdata),
-        streams = (data.url_encoded_fmt_stream_map + ',' + data.adaptive_fmts).split(','),
-        result = {};
-    $.each(streams, function(n, s) {
-        var stream = parse_str(s),
-            itag = stream.itag * 1,
-            quality = false,
-            itag_map = {
-                18: '360p',
-                22: '720p',
-                37: '1080p',
-                38: '3072p',
-                82: '360p3d',
-                83: '480p3d',
-                84: '720p3d',
-                85: '1080p3d',
-                133: '240pna',
-                134: '360pna',
-                135: '480pna',
-                136: '720pna',
-                137: '1080pna',
-                264: '1440pna',
-                298: '720p60',
-                299: '1080p60na',
-                160: '144pna',
-                139: "48kbps",
-                140: "128kbps",
-                141: "256kbps"
-            };
-        //if (stream.type.indexOf('o/mp4') > 0) console.log(stream);
-        if (itag_map[itag]) result[itag_map[itag]] = stream.url;
-    });
-    return result;
-};
-
-function parse_str(str) {
-    return str.split('&').reduce(function(params, param) {
-        var paramSplit = param.split('=').map(function(value) {
-            return decodeURIComponent(value.replace('+', ' '));
-        });
-        params[paramSplit[0]] = paramSplit[1];
-        return params;
-    }, {});
-}
-</script>
-
-<script>
-    var $myGroup = $('#myGroup');
-    $myGroup.on('show','.collapse', function() {
-        $myGroup.find('.collapse.in').collapse('hide');
-    });
-</script>
-
-
-<script type="text/javascript">
-// default init
-//$(function () {
-//  $('[data-toggle="popover"]').popover()
-//})
-
-$('[data-toggle="popover"]').popover({
-  html : true, 
-  container : '#btn-share',
-  content: function() {
-    return $('#popoverExampleHiddenContent').html();
-  },
-  template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
-});
-
-$(document).click(function (event) {
-            // hide share button popover
-        if (!$(event.target).closest('#btn-share').length) {
-            $('#btn-share').popover('hide')
-        }
-    });
-
-/*
-$("a.facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + window.location.href);
-*/
-
-/*
-$("a.google-plus").attr("href", "https://plus.google.com/share?url=" + window.location.href);*/
-</script>
-
-
 
 
     </body>
