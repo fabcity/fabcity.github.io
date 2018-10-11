@@ -185,6 +185,7 @@ body {
 .container {
     width: 98%;
     padding-right: 0px;
+    overflow-x: hidden;
 }
 @media (min-width: 768px){
     .container {
@@ -192,10 +193,11 @@ body {
         padding-right: 10px;
     }
 }
-@media (min-width: 1025px){
+@media (min-width: 1024px){
     .container {
         width: 96%;
         padding-right: 30px;
+        overflow-x: unset;
     }
 }
 @media (min-width: 1200px){
