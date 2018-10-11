@@ -8,6 +8,15 @@ smalltitle: 'Fab City Network'
 hasdescription: true
 description: "Core to the initiative is a network of cities, regions and countries that have pledged to work towards producing everything they consume by 2054. Citizens, FabLabs and City officials collaborate locally to implement new urban models through interventions in governance and policy."
 cities:
+  - name: "Barcelona"
+    place: left
+    id: "barcelona"
+    country: "Spain"
+    strategicfocus: "Policy and Governance"
+    orgtype: "Consortium"
+    org: "Fab Lab Barcelona | IAAC | Barcelona City Council"
+    joined: 2014
+    coordinates: "41.3851°N 2.1734°"
   - name: "Zagreb"
     place: left
     id: "zagreb"
