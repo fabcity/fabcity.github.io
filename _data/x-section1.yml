@@ -1,0 +1,30 @@
+id: "example-id"
+orientation: inverted
+sectioncolor: 'blue'
+hascolorbg: true
+image: 'uploads/challenge.jpg'
+imgwidth: '492'
+imgheight: '520'
+haslargetitle: true
+largetitle: 'Example Section'
+hassmalltitle: false
+smalltitle: ''
+hasdescription: true
+description: 'This is a description paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+hasbutton: true
+buttonaction: "Read the"
+buttontitle: "White Paper"
+buttonlink: "uploads/whitepaper.pdf"
+hasdownload: true
+filename: "whitepaper.pdf"
+haslogos: false
+logostitle:
+logos:
+  - name: ""
+    logo: ''
+    url: ""
+hasextraaction: false
+extraaction: ''
+extraactionlink: ''
+hasdivisionline: true
+hasleftcolorblock: false

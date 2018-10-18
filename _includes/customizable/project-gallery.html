@@ -1,0 +1,48 @@
+<section id="{{ include.texts.id }}">
+    <div class="container">
+        <div class="row no-side-margin">
+            <div class="col-md-6 project-gallery-texts float-left" data-bottom-top="margin-top: 300px;" data-top="margin-top: 0px;">
+                <div class="row no-side-margin">
+                    {% if include.texts.hastitle == true %}
+                    <div class="col-md-8 no-side-padding">
+                        {% if include.texts.sectioncolor == 'blue' %}
+                        <div class="intro-line"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(20,4,104);stroke-width:4"></path></svg>
+                        </div>
+                        {% elsif include.texts.sectioncolor == 'red' %}
+                        <div class="intro-line"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(226,24,38);stroke-width:4"></path></svg>
+                        </div>
+                        {% elsif include.texts.sectioncolor == 'green' %}
+                        <div class="intro-line"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(24,165,55);stroke-width:4"></path></svg>
+                        </div>
+                        {% else %}
+                        <div class="intro-line"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="24px"><path d="M0 12 L42 12" style="fill:none; stroke:rgb(255,239,25);stroke-width:4"></path></svg>
+                        {% endif %}
+                        <p class="section-small-title">{{ include.texts.title }}</p>
+                    </div>
+                    {% endif %}
+                    {% if include.texts.hasdescription == true %}
+                    <div class="col-md-8 no-side-padding">
+                        <p class="section-description">{{ include.texts.description }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <!--project slider-->
+        <div class="row no-side-margin">
+            <div class="slidewrapper slide-green" data-bottom-top="background-position: 0% 40%;" data-100-top="background-position: 100% 40%;">
+                {% for project in include.texts.projects %}
+                        <div class="project-box">
+                            <a href="{{ project.url }}" target="_blank">
+                            <div class="project-img img-cover" style="background-image: url('{{ site.baseurl }}/uploads/{{ project.img }}');">
+                            </div>
+                            <div class="project-caption">
+                                <a class="project-title underline">{{ project.title }}</a>
+                            </div>
+                            </a>
+                        </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div> <!--close container -->
+</section>
