@@ -370,7 +370,7 @@ a.active {
 }
 .navbar-default .navbar-logo {
     float: right;
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.4);
     margin-top: 15px;
     margin-right: 10px;
     height: 50px;
@@ -384,7 +384,7 @@ a.active {
     float: right;
     border: solid 2px transparent;
    /*background-color: #f9f8f8;*/
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.4);
     padding: 12px 10px;
     float: right;
 }
@@ -433,7 +433,7 @@ a.active {
         width:100%;
     }
     .navbar-default .navbar-toggle {
-        background-color: transparent;
+        background-color: rgba(255,255,255,0.4);
     }
      .navbar-nav {
         margin: 15% 0 0;
