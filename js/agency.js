@@ -78,10 +78,3 @@ $(document).click(function (event) {
             $('#btn-share').popover('hide')
         }
     });
-
-/*
-$("a.facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + window.location.href);
-*/
-
-/*
-$("a.google-plus").attr("href", "https://plus.google.com/share?url=" + window.location.href);*/
