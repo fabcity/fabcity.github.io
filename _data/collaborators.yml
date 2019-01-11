@@ -14,11 +14,11 @@ logos:
   - name: "Fab Foundation"
     logo: fabfoundation.svg
     url: "http://fabfoundation.org/"
-  - name: "Fab Foundation"
+  - name: "Fab Lab BCN"
     logo: fabfoundation.svg
-    url: "http://fabfoundation.org/"
+    url: "https://fablabbcn.org/"
   - name: "IAAC"
-    logo: iaac-edu.jpg
+    logo: iaac.jpg
     url: "https://iaac.net/"
   - name: "P2P Lab"
     logo: P2P-Lab-Logo1.png
