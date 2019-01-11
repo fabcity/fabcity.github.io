@@ -15,10 +15,10 @@ logos:
     logo: fabfoundation.svg
     url: "http://fabfoundation.org/"
   - name: "Fab Lab BCN"
-    logo: fabfoundation.svg
+    logo: iaac.png
     url: "https://fablabbcn.org/"
   - name: "IAAC"
-    logo: iaac.jpg
+    logo: iaac-edu.jpg
     url: "https://iaac.net/"
   - name: "P2P Lab"
     logo: P2P-Lab-Logo1.png
