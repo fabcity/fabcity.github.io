@@ -26,20 +26,21 @@ cities:
     org: ""
     joined: 2018
     coordinates: "45.8150°N 15.9819°E"
-  - name: "Bhutan"
+  - name: "Thimphu"
     place: left
-    id: "bhutan"
+    id: "thimphu"
     country: Bhutan
-    strategicfocus: ""
+    strategicfocus: "Distributed Manufacturing, Design Decision-making, Artificial Intelligence, Synthetic Biology, Education and Learning, Policy and Governance/Ownership, Citizen Engagement/Grassroots Innovation"
     orgtype: "Consortium"
-    org: "Ministry of Education | Ministry of Labour and Human Resources | Royal University of Bhutan | Ministry of Agriculture | Fablab Bhutan"
+    org: "Ministry of Education | Ministry of Labour and Human Resources | Royal University of Bhutan | Ministry of Agriculture | Fab Lab Bhutan"
     joined: 2016
     coordinates: "27.5142°N, 90.4336°E"
+    website: "http://www.fablab.bt/"
   - name: "Shenzhen"
     place: left
     id: "shenzhen"
     country: China
-    strategicfocus: ""
+    strategicfocus: "Distributed Manufacturing, Distributed Energy Production, Artificial Intelligence, Synthetic Biology, Distributed Food Production, Education and Learning, Circular Economy/Doughnut Economics, Standards and Regulations, Citizen Engagement/Grassroots Innovation"
     orgtype: "Consortium"
     org: "Shenzhen Open Innovation Lab | Shenzhen Industrial Design Association"
     joined: 2015
@@ -48,16 +49,16 @@ cities:
     place: left
     id: "georgia"
     country: Georgia
-    strategicfocus: ""
-    orgtype: "Consortium"
-    org: "LEPL. Georgia's innovation and technology agency"
+    strategicfocus: "Design Decision-making, Education and Learning, Policy and Governance/Ownership"
+    orgtype: "Government Agency"
+    org: "LEPL. Georgia's Innovation and Technology Agency"
     joined: 2015
-    coordinates: "32.1656°N, 82.9001°W"
+    coordinates: "42.3154°N, 43.3569°E"
   - name: "Curitiba"
     place: left
     id: "Curitiba"
     country: Brasil
-    strategicfocus: ""
+    strategicfocus: "Design Decision-making, Artificial Intelligence, Distributed Food Production, Education and Learning, Data Commons, Policy and Governance/Ownership"
     orgtype: "Consortium"
     org: "Agência Curitiba | We Fab | Curitiba City Hall | iCities"
     joined: 2017
@@ -102,7 +103,7 @@ cities:
     place: left
     id: "amsterdam"
     country: Netherlands
-    strategicfocus: ""
+    strategicfocus: "Distributed Manufacturing, Synthetic Biology, Urban Permaculture, Distributed Food Production, Education and Learning, Circular Economy/Doughnut Economics, Data Commons, Policy and Governance/Ownership, Citizen Engagement/Grassroots Innovation"
     orgtype: "Consortium"
     org: "Waag Society | Fab Lab Amsterdam | Pakhuis de Zwijger | Metabolic"
     joined: 2016
@@ -120,7 +121,7 @@ cities:
     place: left
     id: "kerala"
     country: India
-    strategicfocus: ""
+    strategicfocus: "Distributed Manufacturing, Education and Learning"
     orgtype: "Consortium"
     org: "Kerala Startup Mission"
     joined: 2015
@@ -156,10 +157,10 @@ cities:
     place: right
     id: "Brest"
     country: France
-    strategicfocus: ""
+    strategicfocus: "Circular Economy/Doughnut Economics, Citizen Engagement/Grassroots Innovation, Data Commons, Design Decision-making, Distributed Food Production, Distributed Manufacturing, Education and Learning"
     orgtype: "Consortium"
     org: "Brest Métropol | ADEUPa | UBO Open Factory"
-    joined:
+    joined: 2017
     coordinates: "48.3904°N, 4.4861°W"
   - name: "Boston"
     place: right
@@ -183,16 +184,16 @@ cities:
     place: right
     id: "paris"
     country: France
-    strategicfocus: ""
+    strategicfocus: "Distributed Manufacturing, Design Decision-making, Distributed Energy Production, Artificial Intelligence, Synthetic Biology, Cryptocurrencies, Urban Permaculture, Distributed Food Production, Education and Learning, Circular Economy/Doughnut Economics, Data Commons, Standards and Regulations, Metrics, Policy and Governance/Ownership, Citizen Engagement/Grassroots Innovation"
     orgtype: "Consortium"
     org: "Fab City Grand Paris Association | City Council of Paris"
-    joined:
+    joined: 2016
     coordinates: "48.8566°N, 2.3522°E"
-  - name: "Santiago de Chile"
+  - name: "Santiago"
     place: right
     id: "santiago"
     country: Chile
-    strategicfocus: ""
+    strategicfocus: "Distributed Manufacturing, Design Decision-making, Synthetic Biology, Urban Permaculture, Circular Economy/Doughnut Economics, Data Commons, Citizen Engagement/Grassroots Innovation"
     orgtype: "Consortium"
     org: "Fab Lab Santiago | SE Santiago | Escuela de Diseño UC | Distributed Design Foundation"
     joined: 2016
@@ -228,8 +229,8 @@ cities:
     place: right
     id: "somerville"
     country: USA
-    strategicfocus: ""
-    orgtype: "Consortium"
+    strategicfocus: "Education and Learning, Policy and Governance/Ownership, Citizen Engagement/Grassroots Innovation"
+    orgtype: "Government Agency"
     org: "FabVille"
     joined: 2015
     coordinates: "42.3876°N, 71.0995°W"
