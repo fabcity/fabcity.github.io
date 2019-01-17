@@ -17,6 +17,7 @@ cities:
     org: "Fab Lab Barcelona | IAAC | Barcelona City Council"
     joined: 2014
     coordinates: "41.3851°N 2.1734°"
+    webpresence: ""
   - name: "Zagreb"
     place: left
     id: "zagreb"
@@ -26,43 +27,47 @@ cities:
     org: ""
     joined: 2018
     coordinates: "45.8150°N 15.9819°E"
+    webpresence: ""
   - name: "Thimphu"
     place: left
     id: "thimphu"
     country: Bhutan
-    strategicfocus: "Distributed Manufacturing, Design Decision-making, Artificial Intelligence, Synthetic Biology, Education and Learning, Policy and Governance/Ownership, Citizen Engagement/Grassroots Innovation"
+    strategicfocus: ""
     orgtype: "Consortium"
     org: "Ministry of Education | Ministry of Labour and Human Resources | Royal University of Bhutan | Ministry of Agriculture | Fab Lab Bhutan"
     joined: 2016
     coordinates: "27.5142°N, 90.4336°E"
-    website: "http://www.fablab.bt/"
+    webpresence: "http://www.fablab.bt/"
   - name: "Shenzhen"
     place: left
     id: "shenzhen"
     country: China
-    strategicfocus: "Distributed Manufacturing, Distributed Energy Production, Artificial Intelligence, Synthetic Biology, Distributed Food Production, Education and Learning, Circular Economy/Doughnut Economics, Standards and Regulations, Citizen Engagement/Grassroots Innovation"
+    strategicfocus: ""
     orgtype: "Consortium"
     org: "Shenzhen Open Innovation Lab | Shenzhen Industrial Design Association"
     joined: 2015
     coordinates: "22.5431°N, 114.0579°E"
+    webpresence: "http://szoil.org"
   - name: "Georgia"
     place: left
     id: "georgia"
     country: Georgia
-    strategicfocus: "Design Decision-making, Education and Learning, Policy and Governance/Ownership"
+    strategicfocus: ""
     orgtype: "Government Agency"
     org: "LEPL. Georgia's Innovation and Technology Agency"
     joined: 2015
     coordinates: "42.3154°N, 43.3569°E"
+    webpresence: "http://fablab.gov.ge"
   - name: "Curitiba"
     place: left
     id: "Curitiba"
     country: Brasil
-    strategicfocus: "Design Decision-making, Artificial Intelligence, Distributed Food Production, Education and Learning, Data Commons, Policy and Governance/Ownership"
+    strategicfocus: ""
     orgtype: "Consortium"
     org: "Agência Curitiba | We Fab | Curitiba City Hall | iCities"
     joined: 2017
     coordinates: "25.4809°S, 49.3044°W"
+    webpresence: "http://www.agencia.curitiba.pr.gov.br/"
   - name: "Occitanie Region"
     place: left
     id: "occitanie"
@@ -72,6 +77,7 @@ cities:
     org: ""
     joined: 2017
     coordinates: "43.8927°N, 3.2828°E"
+    webpresence: ""
   - name: "Puebla"
     place: left
     id: "puebla"
@@ -81,6 +87,7 @@ cities:
     org: ""
     joined: 2018
     coordinates: "19.0414°N, 98.2063°W"
+    webpresence: ""
   - name: "Mexico City"
     place: left
     id: "mexico-df"
@@ -90,6 +97,7 @@ cities:
     org: ""
     joined: 2018
     coordinates: "19.4326°N, 99.1332°W"
+    webpresence: ""
   - name: "Auvergne-Rhône-Alpes"
     place: left
     id: "auvergne"
@@ -99,15 +107,17 @@ cities:
     org: ""
     joined: 2018
     coordinates: "45.4471°N, 4.3853°E"
+    webpresence: ""
   - name: "Amsterdam"
     place: left
     id: "amsterdam"
     country: Netherlands
-    strategicfocus: "Distributed Manufacturing, Synthetic Biology, Urban Permaculture, Distributed Food Production, Education and Learning, Circular Economy/Doughnut Economics, Data Commons, Policy and Governance/Ownership, Citizen Engagement/Grassroots Innovation"
+    strategicfocus: ""
     orgtype: "Consortium"
     org: "Waag Society | Fab Lab Amsterdam | Pakhuis de Zwijger | Metabolic"
     joined: 2016
     coordinates: "52.3680°N, 4.9036°E"
+    webpresence: ""
   - name: "Cambridge"
     place: left
     id: "cambridge"
@@ -117,15 +127,17 @@ cities:
     org: ""
     joined: 2015
     coordinates: "42.3736°N, 71.1097°W"
+    webpresence: ""
   - name: "Kerala"
     place: left
     id: "kerala"
     country: India
-    strategicfocus: "Distributed Manufacturing, Education and Learning"
+    strategicfocus: ""
     orgtype: "Consortium"
     org: "Kerala Startup Mission"
     joined: 2015
     coordinates: "10.8505°N, 76.2711°E"
+    webpresence: ""
   - name: "Sacramento"
     place: left
     id: "sacramento"
@@ -135,6 +147,7 @@ cities:
     org: ""
     joined: 2016
     coordinates: "38.5816°N, 121.4944°W"
+    webpresence: ""
   - name: "Belo-Horizonte"
     place: right
     id: "belohorizonte"
@@ -144,6 +157,7 @@ cities:
     org: ""
     joined: 2018
     coordinates: "19.9173°S, 43.9346°W"
+    webpresence: ""
   - name: "Ekurhuleni"
     place: right
     id: "ekurhuleni"
@@ -153,15 +167,17 @@ cities:
     org: ""
     joined: 2015
     coordinates: "26.1777°S, 28.3462°E"
+    webpresence: ""
   - name: "Brest"
     place: right
     id: "Brest"
     country: France
-    strategicfocus: "Circular Economy/Doughnut Economics, Citizen Engagement/Grassroots Innovation, Data Commons, Design Decision-making, Distributed Food Production, Distributed Manufacturing, Education and Learning"
+    strategicfocus: ""
     orgtype: "Consortium"
     org: "Brest Métropol | ADEUPa | UBO Open Factory"
     joined: 2017
     coordinates: "48.3904°N, 4.4861°W"
+    webpresence: "https://twitter.com/fabcitybrest"
   - name: "Boston"
     place: right
     id: "boston"
@@ -171,6 +187,7 @@ cities:
     org: ""
     joined: 2015
     coordinates: "42.3601°N, 71.0589°W"
+    webpresence: ""
   - name: "Toulouse"
     place: right
     id: "toulouse"
@@ -180,24 +197,27 @@ cities:
     org: ""
     joined:
     coordinates: "43.6047°N, 1.4442°E"
+    webpresence: ""
   - name: "Paris"
     place: right
     id: "paris"
     country: France
-    strategicfocus: "Distributed Manufacturing, Design Decision-making, Distributed Energy Production, Artificial Intelligence, Synthetic Biology, Cryptocurrencies, Urban Permaculture, Distributed Food Production, Education and Learning, Circular Economy/Doughnut Economics, Data Commons, Standards and Regulations, Metrics, Policy and Governance/Ownership, Citizen Engagement/Grassroots Innovation"
+    strategicfocus: ""
     orgtype: "Consortium"
     org: "Fab City Grand Paris Association | City Council of Paris"
     joined: 2016
     coordinates: "48.8566°N, 2.3522°E"
+    webpresence: "http://fabcity.paris/en/home/"
   - name: "Santiago"
     place: right
     id: "santiago"
     country: Chile
-    strategicfocus: "Distributed Manufacturing, Design Decision-making, Synthetic Biology, Urban Permaculture, Circular Economy/Doughnut Economics, Data Commons, Citizen Engagement/Grassroots Innovation"
+    strategicfocus: ""
     orgtype: "Consortium"
     org: "Fab Lab Santiago | SE Santiago | Escuela de Diseño UC | Distributed Design Foundation"
     joined: 2016
     coordinates: "33.4489°S, 70.6693°W"
+    webpresence: "https://fablabsantiago.org/fab-city-campus-barrio-italia/"
   - name: "Velsen"
     place: right
     id: "velsen"
@@ -207,6 +227,7 @@ cities:
     org: ""
     joined: 
     coordinates: "52.4521°N, 4.6306°E"
+    webpresence: ""
   - name: "Seoul"
     place: right
     id: "seoul"
@@ -216,6 +237,7 @@ cities:
     org: ""
     joined: 2018
     coordinates: "37.5665°N, 126.9780°E"
+    webpresence: ""
   - name: "Oakland"
     place: right
     id: "oakland"
@@ -225,15 +247,17 @@ cities:
     org: ""
     joined: 2018
     coordinates: "37.8044°N, 122.2711°W"
+    webpresence: ""
   - name: "Somerville"
     place: right
     id: "somerville"
     country: USA
-    strategicfocus: "Education and Learning, Policy and Governance/Ownership, Citizen Engagement/Grassroots Innovation"
+    strategicfocus: ""
     orgtype: "Government Agency"
     org: "FabVille"
     joined: 2015
     coordinates: "42.3876°N, 71.0995°W"
+    webpresence: "https://www.fabville.net/"
   - name: "Detroit"
     place: right
     id: "detroit"
@@ -243,6 +267,7 @@ cities:
     org: ""
     joined: 2016
     coordinates: "42.3314°N, 83.0458°W"
+    webpresence: ""
   - name: "Kamakura"
     place: right
     id: "kamakura"
@@ -252,6 +277,7 @@ cities:
     org: ""
     joined: 2018
     coordinates: "35.3192°N, 139.5467°E"
+    webpresence: ""
   - name: "Sorocaba"
     place: right
     id: "sorocaba"
@@ -261,3 +287,4 @@ cities:
     org: ""
     joined: 2018
     coordinates: "23.4557°S, 47.4883°W"
+    webpresence: ""
