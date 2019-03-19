@@ -1,0 +1,29 @@
+<section id="event">
+    <div class="container">
+        <div class="row no-side-margin">
+                <div class="col-md-10 no-side-padding">
+                    <h1 class="section-title">Event</h1>
+                </div>
+        </div>
+        <div class="card-group row">
+            {% for event in site.data.event %}
+            <div class="card d-block col-md-4 container-outlined px-md-3 py-3">
+                <div class="card-body row">
+                    <div class="col-md-8 pl-md-3">
+                        <p class="card-title section-small-title">{{event.title}}</p>
+                    </div>
+                    <div class="col-md-4 pr-md-3">
+                        <ul class="card-text list-unstyled text-center text-md-right">
+                            <li><h2>{{event.start}}</h2></li>
+                            <li><h2>-{{event.end}}</h2></li>
+                            <li>{{event.month}}</li>
+                            <li>{{event.year}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div><a href={{event.url}} class="card-link row pl-md-4">See more</a></div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
