@@ -915,6 +915,7 @@ section .section-small-title {
     line-height: 35px;
     font-family: {{ site.data.template.font.primary }};
 }
+
 section .intro-line {
     float: left;
     left: 0px;
@@ -1597,6 +1598,15 @@ footer .footer-title {
     font-family: {{ site.data.template.font.primary }};
     color: #{{ site.data.template.color.whites }}; 
 }
+
+footer .footer-sub-header {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 20px;
+font-family: {{ site.data.template.font.primary }};
+color: #{{ site.data.template.color.whites }};
+}
+
 footer .footer-link { 
     font-size: 21px;
     font-family: {{ site.data.template.font.primary }};
@@ -1718,5 +1728,9 @@ body {
     padding-right: 10px;
     padding-bottom: 15px;
     margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.fa-margin {
     margin-right: 5px;
 }
