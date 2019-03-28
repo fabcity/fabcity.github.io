@@ -1,18 +1,15 @@
 - title: SPACE10 at The Next Web 2019 Amsterdam
-  start: 09
-  end: 10
+  start_date: "09"
+  end_date: "10"
   month: May
-  year: 2019 - 2019
-  url: "#"
-- title: Future Food Today at SPACE10 Gallery
-  start: 03
-  end: 03
-  month: Apr - May
-  year: 2019 - 2019
-  url: "#"
-- title: Welcome to The World Wide Web - Navigation
-  start: 13
-  end: ""
-  month: Mar
   year: 2019
-  url: "#"
+- title: SPACE10 at The Next Web 2019 Amsterdam
+  start_date: "09"
+  end_date: "10"
+  month: May
+  year: 2019
+- title: SPACE10 at The Next Web 2019 Amsterdam
+  start_date: "09"
+  end_date: "10"
+  month: May
+  year: 2019
