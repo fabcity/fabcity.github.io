@@ -23,3 +23,14 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+collections:
+    events:
+        output: true
+
+defaults:
+- scope:
+      path: ""
+      type: "events"
+      values:
+      layout: "event"

@@ -1,0 +1,10 @@
+---
+layout: event
+title: SPACE10 at The Next Web 2019 Amsterdam
+start_date: "09"
+end_date: "10"
+month: May
+year: 2019 
+---
+
+Lorem ipsum dolo sit amet
