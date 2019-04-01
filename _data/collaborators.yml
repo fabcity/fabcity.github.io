@@ -59,3 +59,15 @@ logos:
   - name: "Copenhagen Maker"
     logo: maker.png
     url: "http://www.copenhagenmaker.com/"
+  - name: "Seeed"
+    logo: seeed-logo.png
+    url: "https://www.seeedstudio.com/"
+  - name: "Szoil"
+    logo: SZOIL-logo.png
+    url: "https://www.szoil.org/"
+  - name: "Seoul Innovation Park"
+    logo: seoul-logo.png
+    url: "https://en.innovationpark.xyz/"
+  - name: "Urbanization"
+    logo: urbanization-logo.png
+    url: "http://urbanization.org/"
