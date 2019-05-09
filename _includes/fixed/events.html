@@ -1,0 +1,29 @@
+<section id="event">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-10">
+                    <h1 class="section-title">Events</h1>
+                </div>
+        </div>
+        <div class="event-group row">
+            {% for event in site.data.events %}
+            <div class="event-box col-md-6 col-lg-4 container-top-separator">
+                <div class="row">
+                    <div class="col-md-8 col-xs-8">
+                        <p class="section-small-title"><a href={{event.url}}>{{event.title}}</a></p>
+                        <p>{{event.location}}</p>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <ul class="list-unstyled text-right text-md-right">
+                            <li><h2>{{event.start_date}}</h2></li>
+                            <li><h2>- {{event.end_date}}</h2></li>
+                            <li>{{event.month}}</li>
+                            <li>{{event.year}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
