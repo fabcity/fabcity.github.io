@@ -71,3 +71,6 @@ logos:
   - name: "Urbanization"
     logo: urbanization-logo.png
     url: "http://urbanization.org/"
+  - name: "Tambour"
+    logo: tambour.png
+    url: "https://www.tambour.ca/"
