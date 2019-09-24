@@ -288,3 +288,70 @@ cities:
     joined: 2018
     coordinates: "23.4557°S, 47.4883°W"
     webpresence: ""
+
+  - name: "Plymouth"
+    place: left
+    id: "plymouth"
+    country: "England"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    coordinates: "50.3755° N, 4.1427° W"
+    webpresence: ""
+
+  - name: "Hamburg"
+    place: left
+    id: "hamburg"
+    country: "Germany"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    coordinates: "53.5511° N, 9.9937° E"
+    webpresence: ""
+
+  - name: "Yucatàn Region"
+    place: left
+    id: "yucatan"
+    country: "Mexico"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    coordinates: "20.7099° N, 89.0943° W"
+    webpresence: ""
+
+  - name: "Rennes"
+    place: right
+    id: "rennes"
+    country: "France"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    coordinates: "48.1173° N, 1.6778° W"
+    webpresence: ""
+
+  - name: "São Paolo"
+    place: right
+    id: "saopaolo"
+    country: "Brazil"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    coordinates: "23.5505° S, 46.6333° W"
+    webpresence: ""
+
+  - name: "Recife"
+    place: right
+    id: "recife"
+    country: "Brazil"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    coordinates: "8.0522° S, 34.9286° W"
+    webpresence: ""
+
