@@ -306,10 +306,10 @@ cities:
     country: "Germany"
     strategicfocus: ""
     orgtype: "Consortium"
-    org: ""
+    org: "The Fab City Hamburg consortium consists of 30+ local labs, organizations and public institutions. For more information please visit:"
     joined: 2019
     coordinates: "53.5511° N, 9.9937° E"
-    webpresence: ""
+    webpresence: "http://fabcity.hamburg"
 
   - name: "Yucatàn Region"
     place: left
