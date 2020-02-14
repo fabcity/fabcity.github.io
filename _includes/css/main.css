@@ -1,8 +1,6 @@
-.fixed-button {
+.btn-fixed {
   position: fixed;
-  bottom: 20em;
-  right: 0;
-  left: 0;
+  margin-left: -5em;
+  z-index: 1020;
   width: 10em;
-  z-index: 1030;
 }
