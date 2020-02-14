@@ -6,7 +6,7 @@ $(function() {
   $('.countdown.styled').countdown({
     date: date,
     render: function(data) {
-      $(this.el).html("<div>" + this.leadingZeros(data.years, 2) + " <span>years</span></div><div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hours</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>minutes</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>seconds</span></div>");
+      $(this.el).html("<div>" + this.leadingZeros(data.years, 2) + " years " + this.leadingZeros(data.days, 3) + " days " + this.leadingZeros(data.hours, 2) + " hours " + this.leadingZeros(data.min, 2) + " minutes " + this.leadingZeros(data.sec, 2) + " seconds");
     }
   });
 
