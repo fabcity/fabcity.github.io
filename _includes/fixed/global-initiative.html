@@ -1,6 +1,6 @@
 <section id="{{ include.texts.id }}">
-    <div class="container" id="worldmap">
-        <!-- <div id="worldmap" style="position: relative; width: 500px; height: 300px;"></div> -->
+    <div class="container" ">
+        <div id="worldmap"></div>
     </div>
         <script>
           var bombMap = new Datamap({
@@ -11,25 +11,25 @@
                   highlightOnHover: false
               },
               fills: {
-                  // 'USA': '#1f77b4',
-                  // 'RUS': '#9467bd',
-                  // 'PRK': '#ff7f0e',
-                  // 'PRC': '#2ca02c',
-                  // 'IND': '#e377c2',
-                  // 'GBR': '#8c564b',
-                  // 'FRA': '#d62728',
-                  // 'PAK': '#7f7f7f',
-                  defaultFill: '#EDDC4E'
+                  'USA': '#1f77b4',
+                  'RUS': '#9467bd',
+                  'PRK': '#ff7f0e',
+                  'PRC': '#2ca02c',
+                  'IND': '#e377c2',
+                  'GBR': '#8c564b',
+                  'FRA': '#d62728',
+                  'PAK': '#7f7f7f',
+                  defaultFill: '#1f77b4'
               },
               data: {
-                  'RUS': {fillKey: 'RUS'},
-                  'PRK': {fillKey: 'PRK'},
-                  'PRC': {fillKey: 'PRC'},
-                  'IND': {fillKey: 'IND'},
-                  'GBR': {fillKey: 'GBR'},
-                  'FRA': {fillKey: 'FRA'},
-                  'PAK': {fillKey: 'PAK'},
-                  'USA': {fillKey: 'USA'}
+                  // 'RUS': {fillKey: 'RUS'},
+                  // 'PRK': {fillKey: 'PRK'},
+                  // 'PRC': {fillKey: 'PRC'},
+                  // 'IND': {fillKey: 'IND'},
+                  // 'GBR': {fillKey: 'GBR'},
+                  // 'FRA': {fillKey: 'FRA'},
+                  // 'PAK': {fillKey: 'PAK'},
+                  // 'USA': {fillKey: 'USA'}
               }
           });
           var bombs = [
@@ -39,7 +39,7 @@
                   city: '{{ city.name }}',
                   country: 'USSR',
                   radius: 10,
-                  fillKey: 'RUS',
+                  fillKey: 'PAK',
                   significance: 'First fusion weapon test by the USSR (not "staged")',
                   date: '1953-08-12',
                   latitude: '{{ city.latitude }}',
