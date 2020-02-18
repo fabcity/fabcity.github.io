@@ -16,7 +16,9 @@ cities:
     orgtype: "Consortium"
     org: "Fab Lab Barcelona | IAAC | Barcelona City Council"
     joined: 2014
-    coordinates: "41.3851°N 2.1734°"
+    latitude: "41.3851"
+    longitude: "2.1734"
+    # coordinates: "41.3851°N 2.1734°"
     webpresence: ""
   - name: "Zagreb"
     place: left
@@ -225,7 +227,7 @@ cities:
     strategicfocus: ""
     orgtype: "Consortium"
     org: ""
-    joined: 
+    joined:
     coordinates: "52.4521°N, 4.6306°E"
     webpresence: ""
   - name: "Seoul"
@@ -354,4 +356,3 @@ cities:
     joined: 2019
     coordinates: "8.0522° S, 34.9286° W"
     webpresence: ""
-

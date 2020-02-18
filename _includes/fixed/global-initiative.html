@@ -1,5 +1,63 @@
 <section id="{{ include.texts.id }}">
-    <div class="container">
+    <div class="container" id="worldmap">
+        <!-- <div id="worldmap" style="position: relative; width: 500px; height: 300px;"></div> -->
+    </div>
+        <script>
+          var bombMap = new Datamap({
+              element: document.getElementById('worldmap'),
+              scope: 'world',
+              geographyConfig: {
+                  popupOnHover: true,
+                  highlightOnHover: false
+              },
+              fills: {
+                  // 'USA': '#1f77b4',
+                  // 'RUS': '#9467bd',
+                  // 'PRK': '#ff7f0e',
+                  // 'PRC': '#2ca02c',
+                  // 'IND': '#e377c2',
+                  // 'GBR': '#8c564b',
+                  // 'FRA': '#d62728',
+                  // 'PAK': '#7f7f7f',
+                  defaultFill: '#EDDC4E'
+              },
+              data: {
+                  'RUS': {fillKey: 'RUS'},
+                  'PRK': {fillKey: 'PRK'},
+                  'PRC': {fillKey: 'PRC'},
+                  'IND': {fillKey: 'IND'},
+                  'GBR': {fillKey: 'GBR'},
+                  'FRA': {fillKey: 'FRA'},
+                  'PAK': {fillKey: 'PAK'},
+                  'USA': {fillKey: 'USA'}
+              }
+          });
+          var bombs = [
+          {% for city in include.texts.cities %}
+              {
+                  name: '{{ city.name }}',
+                  city: '{{ city.name }}',
+                  country: 'USSR',
+                  radius: 10,
+                  fillKey: 'RUS',
+                  significance: 'First fusion weapon test by the USSR (not "staged")',
+                  date: '1953-08-12',
+                  latitude: '{{ city.latitude }}',
+                  longitude: '{{ city.longitude }}'
+                },
+                {% endfor %}
+              ];
+
+          //draw bubbles for bombs
+          bombMap.bubbles(bombs, {
+              popupTemplate: function (geo, data) {
+                return ['<button type="button" class="btn" data-toggle="popover" title="{{ city.name }}" data-content="And heres some amazing content. Its very engaging. Right?">{{ city.name }}</button>'].join('');
+              }
+          });
+        </script>
+
+
+<!--
         <div class="row no-side-margin section-row">
             <div class="plain-bg" style="height: 190px; background-color: rgb(193,15,24); margin-left: -40px;" data-bottom-top="margin-top: 400px; width: 10px" data-top="margin-top:0px; width: 555px;"> </div>
             <div class="col-sm-6 col-md-6 section-texts float-left" data-bottom-top="margin-top: 400px;" data-top="margin-top: 0px;">
@@ -11,7 +69,7 @@
                     {% endif %}
                 </div>
             </div>
-        </div><!--close section content row -->  
+        </div>
         <div id="myGroup">
             <div class="row">
                 <div class= "col-sm-7 col-md-7 no-side-padding">
@@ -34,8 +92,8 @@
                             <div class="col-sm-4 col-md-4 no-side-padding">
                                 <img style="float: right;" src="{{ site.baseurl }}/uploads/bcn-thumb.png">
                             </div>
-                            <a class="card-close" data-toggle="collapse" href="#{{ city.id }}">&times;</a> 
-                        </div> <!--close row-->
+                            <a class="card-close" data-toggle="collapse" href="#{{ city.id }}">&times;</a>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
@@ -59,7 +117,7 @@
                                         <li class="cities-left"><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
                                     {% endif %}
                                 {% endfor %}
-                            </ul> 
+                            </ul>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-6 no-side-padding">
                             <ul class="cities-list">
@@ -73,7 +131,7 @@
                     </div>
                     {% endif %}
                 </div>
-            </div>  <!-- row-->
+            </div>
         </div>
-    </div> <!--close container -->
+    </div> -->
 </section>
