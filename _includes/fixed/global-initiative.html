@@ -1,8 +1,16 @@
 <section id="{{ include.texts.id }}">
-    <div class="container" ">
+    <div class="container" width="100%">
         <div id="worldmap"></div>
     </div>
         <script>
+          $(function () {
+            $('[data-toggle="popover"]').popover()
+          })
+          </script>
+          <script type="text/javascript">
+
+
+
           var bombMap = new Datamap({
               element: document.getElementById('worldmap'),
               scope: 'world',
@@ -38,8 +46,8 @@
                   name: '{{ city.name }}',
                   city: '{{ city.name }}',
                   country: 'USSR',
-                  radius: 10,
-                  fillKey: 'PAK',
+                  radius: 8,
+                  fillKey: 'IND',
                   significance: 'First fusion weapon test by the USSR (not "staged")',
                   date: '1953-08-12',
                   latitude: '{{ city.latitude }}',
@@ -51,7 +59,13 @@
           //draw bubbles for bombs
           bombMap.bubbles(bombs, {
               popupTemplate: function (geo, data) {
-                return ['<button type="button" class="btn" data-toggle="popover" title="{{ city.name }}" data-content="And heres some amazing content. Its very engaging. Right?">{{ city.name }}</button>'].join('');
+                return ['<div type="button" class="card btn btn-primary btn-fixed" title="' + data.city + '" data-content="' + data.name + '' + data.longitude + '' + data.latitude + '">{{ city.name }}</div>'].join('');
+                // return ['<div class="hoverinfo">' + data.city + '<br />' + data.name + '<br />' + data.longitude + '' + data.latitude + '">{{ city.name }}</div>'].join('');
+                // return ['<div class="hoverinfo">' +  data.name,
+                //   '<br/>Payload: ' +  data.yield + ' kilotons',
+                //   '<br/>Country: ' +  data.country + '',
+                //   '<br/>Date: ' +  data.date + '',
+                //   '</div>'].join('');
               }
           });
         </script>

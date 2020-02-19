@@ -71,8 +71,8 @@ cities:
     orgtype: "Consortium"
     org: "Agência Curitiba | We Fab | Curitiba City Hall | iCities"
     joined: 2017
-    latitude: "25.4809"
-    longitude: "49.3044"
+    latitude: "-25.4809"
+    longitude: "-49.3044"
     webpresence: "http://www.agencia.curitiba.pr.gov.br/"
   - name: "Occitanie Region"
     place: left
@@ -94,7 +94,7 @@ cities:
     org: ""
     joined: 2018
     latitude: "19.0414"
-    longitude: "98.2063"
+    longitude: "-98.2063"
     webpresence: ""
   - name: "Mexico City"
     place: left
@@ -105,8 +105,9 @@ cities:
     org: ""
     joined: 2018
     latitude: "19.4326"
-    longitude: "99.1332"
+    longitude: "-99.1332"
     webpresence: ""
+
   - name: "Auvergne-Rhône-Alpes"
     place: left
     id: "auvergne"
@@ -138,7 +139,7 @@ cities:
     org: ""
     joined: 2015
     latitude: "42.3736"
-    longitude: "71.1097"
+    longitude: "-71.1097"
     webpresence: ""
   - name: "Kerala"
     place: left
@@ -160,7 +161,7 @@ cities:
     org: ""
     joined: 2016
     latitude: "38.5816"
-    longitude: "121.4944"
+    longitude: "-121.4944"
     webpresence: ""
   - name: "Belo-Horizonte"
     place: right
@@ -170,8 +171,8 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2018
-    latitude: "19.9173"
-    longitude: "43.9346"
+    latitude: "-19.9173"
+    longitude: "-43.9346"
     webpresence: ""
   - name: "Ekurhuleni"
     place: right
@@ -181,7 +182,7 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2015
-    latitude: "26.1777"
+    latitude: "-26.1777"
     longitude: "28.3462"
     webpresence: ""
   - name: "Brest"
@@ -193,7 +194,7 @@ cities:
     org: "Brest Métropol | ADEUPa | UBO Open Factory"
     joined: 2017
     latitude: "48.3904"
-    longitude: "4.4861"
+    longitude: "-4.4861"
     webpresence: "https://twitter.com/fabcitybrest"
   - name: "Boston"
     place: right
@@ -204,7 +205,7 @@ cities:
     org: ""
     joined: 2015
     latitude: "42.3601"
-    longitude: "71.0589"
+    longitude: "-71.0589"
     webpresence: ""
   - name: "Toulouse"
     place: right
@@ -236,8 +237,8 @@ cities:
     orgtype: "Consortium"
     org: "Fab Lab Santiago | SE Santiago | Escuela de Diseño UC | Distributed Design Foundation"
     joined: 2016
-    latitude: "33.4489"
-    longitude: "70.6693"
+    latitude: "-33.4489"
+    longitude: "-70.6693"
     webpresence: "https://fablabsantiago.org/fab-city-campus-barrio-italia/"
   - name: "Velsen"
     place: right
@@ -270,7 +271,7 @@ cities:
     org: ""
     joined: 2018
     latitude: "37.8044"
-    longitude: "122.2711"
+    longitude: "-122.2711"
     webpresence: ""
   - name: "Somerville"
     place: right
@@ -281,7 +282,7 @@ cities:
     org: "FabVille"
     joined: 2015
     latitude: "42.3876"
-    longitude: "71.0995"
+    longitude: "-71.0995"
     webpresence: "https://www.fabville.net/"
   - name: "Detroit"
     place: right
@@ -292,7 +293,7 @@ cities:
     org: ""
     joined: 2016
     latitude: "42.3314"
-    longitude: "83.0458"
+    longitude: "-83.0458"
     webpresence: ""
   - name: "Kamakura"
     place: right
@@ -313,8 +314,8 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2018
-    latitude: "23.4557"
-    longitude: "47.4883W"
+    latitude: "-23.4557"
+    longitude: "-47.4883"
     webpresence: ""
 
   - name: "Plymouth"
@@ -326,7 +327,7 @@ cities:
     org: ""
     joined: 2019
     latitude: "50.3755"
-    longitude: "4.1427"
+    longitude: "-4.1427"
     webpresence: ""
 
   - name: "Hamburg"
@@ -350,7 +351,7 @@ cities:
     org: ""
     joined: 2019
     latitude: "20.7099"
-    longitude: "89.0943"
+    longitude: "-89.0943"
     webpresence: ""
 
   - name: "Rennes"
@@ -362,7 +363,7 @@ cities:
     org: ""
     joined: 2019
     latitude: "48.1173"
-    longitude: "1.6778"
+    longitude: "-1.6778"
     webpresence: ""
 
   - name: "São Paolo"
@@ -373,8 +374,8 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2019
-    latitude: "23.5505"
-    longitude: "S, 46.6333 W"
+    latitude: "-23.5505"
+    longitude: "-46.6333"
     webpresence: ""
 
   - name: "Recife"
@@ -385,6 +386,6 @@ cities:
     orgtype: "Consortium"
     org: ""
     joined: 2019
-    latitude: "8.0522"
-    longitude: "S, 34.9286 W"
+    latitude: "-8.0522"
+    longitude: "-34.9286"
     webpresence: ""

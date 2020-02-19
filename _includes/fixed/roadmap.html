@@ -1,5 +1,5 @@
 <section id="roadmap">
-    <div class="container">
+    <!-- <div class="container">
         <div class="row" style="margin-bottom:40px;">
             <div class="col-xs-12 col-sm-6 col-md-6 section-texts float-left" style="height: {{ include.texts.imgheight }}px;" data-bottom-top="margin-top: 200px;" data-top="margin-top: 0px;">
                 <div class="row no-side-margin">
@@ -14,7 +14,7 @@
             <div class="col-md-6">
             </div>
         </div>
-        <div class="row no-side-margin">  
+        <div class="row no-side-margin">
             <div class="col-md-9 roadmap-box">
                 <div class="line"></div>
                 <div class="bottom">
@@ -30,5 +30,38 @@
                 </div>
             </div>
         </div>
-    </div><!-- close container-->
+    </div> -->
+
+
+ <div class="container">
+     <div class="row">
+         <div class="col-md-12">
+             <div class="main-timeline">
+               {% for event in include.texts.events %}
+                 <div class="timeline">
+                     <div class="timeline-content">
+                         <div class="timeline-year">
+                             <span>{{ event.year }}</span>
+                         </div>
+                         <h3 class="title">{{ event.title }}</h3>
+                         <div class="row">
+
+                         <div class="col-md-6">
+                         <p class="description">
+                            {{ event.description }}
+                          </p>
+                          </div>
+                          <div class="col-md-6">
+                            <img class="card-img-top" src="{{ site.baseurl }}/uploads/{{ event.img }}">
+                          </div>
+                        </div>
+                     </div>
+                 </div>
+                 {% endfor %}
+             </div>
+         </div>
+     </div>
+ </div>
 </section>
+<br />
+<br />
