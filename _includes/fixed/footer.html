@@ -1,13 +1,14 @@
 <footer>
-    <div class="container">
-        <div class="row" style="margin-bottom: 30px;">
+    <div class="container-fluid bg-dark text-white">
+      <br />
+        <div class="row">
             <div class="col-md-12">
                 <p class="footer-sub-header">Join the Fab City Network</p>
                 <p>Become a partner or collaborator. Is your city ready to join the Fab City network?</p>
             </div>
         </div>
 
-        <div class="row" style="margin-bottom: 30px;">
+        <div class="row">
             <div class="col-md-12">
                 <span>
                     <a href="mailto:info@fab.city" target="blank"><i class="far fa-envelope fa-3x fa-margin"></i></a>
@@ -18,7 +19,7 @@
             </div>
         </div>
 
-        <div class="row" style="margin-bottom: 30px;">
+        <div class="row">
             <div class="col-md-3">
                 {% for link in include.texts.links %}
                 <a href="{{ link.url }}"><p class="footer-link">{{ link.title }}</p></a>
@@ -28,13 +29,13 @@
                 <p class="footer-title">Location</p>
                 {% for a in include.texts.address %}
                 <p>{{ a.line }}</p>
-                {% endfor %} 
+                {% endfor %}
             </div>
             <div class="col-md-4">
                 <p class="footer-title">Powered by:</p>
                 {% for organization in include.texts.poweredby %}
                 <a href="{{ organization.url }}" target="_blank"><p>{{ organization.org }} </p></a>
-                {% endfor %} 
+                {% endfor %}
             </div>
             <div class="col-md-1">
                 <img src="{{ site.baseurl }}/uploads/fabcity_color.svg" class="footer-brand">
@@ -45,6 +46,6 @@
                 <p class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</p>
             </div>
         </div>
-            
+
     </div>
 </footer>

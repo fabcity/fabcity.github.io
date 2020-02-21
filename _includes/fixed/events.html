@@ -7,7 +7,7 @@
             {% for event in site.data.events %}
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <a href={{event.url}}><h5 class="card-title">{{event.title}}</h5></a>
+                <a class="text-dark" href={{event.url}}><h5 class="card-title">{{event.title}}</h5></a>
                 <h6 class="card-subtitle mb-2 text-muted">{{event.location}}</h6>
                 <p class="card-text">{{event.start_date}} / {{event.end_date}} {{event.month}}-{{event.year}}</p>
                 <!-- <a href="#" class="card-link">More info</a>

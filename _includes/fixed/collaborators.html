@@ -1,19 +1,21 @@
 <section id="collaborators">
   <div class="container">
-    <div class="row small-title">
+    <div class="row">
       <div class="col-md-12">
         <h4>Collaborators </h4>
       </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
+
+    <div class="row align-items-center">
+
             {% for organization in include.texts.logos %}
-            <a href="{{ organization.url }}" target="_blank">
-            <div class="col-xs-6 col-sm-4 col-md-2 logo-box" style="background-image: url('{{ site.baseurl }}/uploads/{{ organization.logo }}'); margin-bottom: 50px;">
+            <div class="col-2dot4 col-sm-2dot4 col-md-2dot4 col-lg-2dot4 col-xl-2dot4 collaborators">
+                <a href="{{ organization.url }}" target="_blank">
+              <img src="{{ site.baseurl }}/uploads/{{ organization.logo }}"></img>
+              </a>
             </div>
-             </a>
             {% endfor %}
-        </div>
-     </div>
-  </div><!--close container-->
+    </div>
+
+  </div>
 </section>

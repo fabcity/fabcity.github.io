@@ -1,7 +1,38 @@
 <section id="{{ include.texts.id }}">
-    <div class="container" width="100%">
-        <div id="worldmap"></div>
-    </div>
+    <div class="container align-items-center">
+
+        <div id="worldmap" min-width="100%"></div>
+
+        <div class="row">
+            {% if include.texts.hassmalltitle == true %}
+            <div class="col-6 col-sm-4">
+                <h3>{{ include.texts.smalltitle }}</h3>
+                {% if include.texts.hasdescription == true %}
+                <p class="section-description">{{ include.texts.description }}</p>
+            </div>
+            {% endif %}
+                <div class="col-6 col-sm-4">
+                    <ul class="list-unstyled text-right">
+                        {% for city in include.texts.cities %}
+                             {% if city.place == 'left' %}
+                                <li class=""><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <ul class="list-unstyled">
+                    {% for city in include.texts.cities %}
+                        {% if city.place == 'right' %}
+                            <li class=""><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
         <script>
           $(function () {
             $('[data-toggle="popover"]').popover()
@@ -71,6 +102,8 @@
         </script>
 
 
+
+
 <!--
         <div class="row no-side-margin section-row">
             <div class="plain-bg" style="height: 190px; background-color: rgb(193,15,24); margin-left: -40px;" data-bottom-top="margin-top: 400px; width: 10px" data-top="margin-top:0px; width: 555px;"> </div>
@@ -83,8 +116,8 @@
                     {% endif %}
                 </div>
             </div>
-        </div>
-        <div id="myGroup">
+        </div>-->
+          <!-- <div id="myGroup">
             <div class="row">
                 <div class= "col-sm-7 col-md-7 no-side-padding">
                     <img class="img-left globe-img" src="{{ site.baseurl }}/{{ include.texts.image }}">
@@ -146,6 +179,6 @@
                     {% endif %}
                 </div>
             </div>
-        </div>
-    </div> -->
+        </div> -->
+    <!-- </div>  -->
 </section>
