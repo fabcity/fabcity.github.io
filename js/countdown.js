@@ -1,3 +1,4 @@
+
 $(function() {
 
   var endDate;
@@ -6,7 +7,7 @@ $(function() {
   $('.countdown.styled').countdown({
     date: date,
     render: function(data) {
-      $(this.el).html("<div>" + this.leadingZeros(data.years, 2) + " years " + this.leadingZeros(data.days, 3) + " days " + this.leadingZeros(data.hours, 2) + " hours " + this.leadingZeros(data.min, 2) + " minutes " + this.leadingZeros(data.sec, 2) + " seconds");
+      $(this.el).html("<div>" + this.leadingZeros(data.years, 2) + " <span>years</span>" + this.leadingZeros(data.days, 3) + " <span>days</span>" + this.leadingZeros(data.hours, 2) + " <span>hours</span>" + this.leadingZeros(data.min, 2) + " <span>minutes</span>" + this.leadingZeros(data.sec, 2) + " <span>seconds</span></div>");
     }
   });
 
