@@ -1,20 +1,87 @@
 ---
 layout: default
+title: Home
 ---
 
-{% include fixed/header.html %}
-{% include fixed/takeaction.html %}
-{% include fixed/section.html texts=site.data.header %}
-{% include fixed/section.html texts=site.data.intro %}
-{% include fixed/video-loop.html texts=site.data.video-loop %}
-{% include fixed/section_photo_right.html texts=site.data.challenge %}
-{% include fixed/section_photo_left.html texts=site.data.values-vision %}
-{% include fixed/section_photo_right.html texts=site.data.our-approach %}
-{% include fixed/approaches.html %}
-{% include fixed/global-initiative.html texts=site.data.global-initiative %}
-{% include fixed/people-gallery.html texts=site.data.collective %}
-{% include fixed/roadmap.html texts=site.data.roadmap %}
-{% include fixed/events.html %}
-{% include fixed/subscribe.html %}
-{% include fixed/collaborators.html texts=site.data.collaborators %}
-{% include fixed/footer.html texts=site.data.footer %}
+<!-- <h1 class="text-center">Fab.City</h1> -->
+<header>
+  <div class="background-intro">
+    <div class="dark-gradient">
+<div class="container-fluid">
+  <div class="borderline"></div>
+    <div class="row">
+      <div class="col-xs-5 col-sm-6 col-md-7">
+      <!-- <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> -->
+      <div class="container-fluid">
+        <div class="row countdown" id="countdown"></div>
+      </div>
+    </div>
+      <div class="col-xs-2 col-sm-4 col-md-3">
+        <h3 class="text-sink white">Until cities produce <br/> everything they consume.</h3>
+      </div>
+      <div class="col-xs-1 col-sm-2 col-md-2 take-action">
+        <button type="button" class="btn btn-primary take-button float-right" data-toggle="modal" data-target="#take-action">
+          Take Action
+        </button>
+      </div>
+      </div>
+    <br />
+    <div class="borderline"></div>
+  </div>
+  </div>
+</div>
+</header>
+
+<body>
+  <div class="borderline dark"></div>
+
+  <section>
+  <div class="jumbotron white container">
+      <div class="display-4 uppercase text-center">Locally productive, <br/> globally connected</div>
+      <br />
+      <div class="container">
+        <div class="text-center my-4">
+          Fab City Global Initiative is a collective of civic leaders, makers, urbanists and innovators working on shifting the industrial <br/>
+            urban paradigm to one that better supports life on Earth. A global collaboration with a distributed network of cities <br />
+              prototypes local approaches to meet the challenge of producing everything the city consumes by 2054. </div>
+          </div>
+  </div>
+
+</section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="take-action" tabindex="-1" role="dialog" aria-labelledby="take-action" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="take-action">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

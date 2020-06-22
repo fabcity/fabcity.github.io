@@ -1,11 +1,17 @@
-sections:
-  - title: "The Challenge"
-    link: '#fabcity-challenge'
-  - title: "Values and Vision"
-    link: '#values-vision'   
-  - title: "Our Approach"
-    link: '#our-approach'
-  - title: "Global Initiative"
-    link: '#global-initiative'
-  - title: "Contact Us"
-    link: '#subscribe' 
+# - name: Home
+#   link: /
+  - name: Network
+    link: \#network
+    align: left
+  - name: Discover
+    link: \#discover
+    align: left
+  - name: Community
+    link: \#community
+    align: left
+  - name: Blog
+    link: \#blog
+    align: right
+  - name: Resources
+    link: \#resources
+    align: right

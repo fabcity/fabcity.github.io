@@ -1,29 +1,21 @@
-url:
-baseurl:
-
-# Site settings
-title: Fab City Global Initiative
-tagline: "Locally productive, globally connected cities"
-email: info@fablabbcn.org
-description: ""
 
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: https://twitter.com/fabcityglobal
-  - title: facebook
-    url: https://www.facebook.com/fabcityglobal/
+sass:
+  sass_dir: assets/css
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: "Calle Pujades 102"
-  - line: "Poble Nou, Barcelona 08005 Spain"
+plugins:
+  - jekyll-autoprefixer
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Build settings
-markdown: kramdown
-permalink: pretty
-
-collections:
-    events:
-        output: true
+title: "Fab.City" # the name of your site, e.g. ACME Corp.
+tagline: "LOCALLY PRODUCED, GLOBALLY CONNECTED"
+email: "your.email@gmail.com"
+description: >- # this means to ignore newlines until "baseurl:"
+author: Joris Vos
+url: "Fab.City" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+google_analytics: UA-111111111-1
+twitter:
+  username:
+  card: summary #keep this to generate a twitter share card

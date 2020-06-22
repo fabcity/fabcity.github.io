@@ -1,7 +1,0 @@
-isbanner: false
-banner: 'summit-banner.png'
-iscarousel: true
-carouselbackground: 'summit-banner.png'
-carousel:
-  - img: 'summit-banner.png'
-    url: ''
