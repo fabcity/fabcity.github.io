@@ -34,7 +34,7 @@ title: Home
 
 <body>
   <div class="borderline dark"></div>
-
+<!-- First Section -->
   <section>
   <div class="jumbotron white container">
       <div class="display-4 uppercase text-center">Locally productive, <br/> globally connected</div>
@@ -46,8 +46,115 @@ title: Home
               prototypes local approaches to meet the challenge of producing everything the city consumes by 2054. </div>
           </div>
   </div>
+</section>
+
+<!-- Second section / Map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
+<section id="{{ site.data.global-initiative.id }}">
+    <div class="container align-items-center">
+
+        <div id="worldmap" min-width="100%"></div>
+
+        <div class="row">
+            {% if site.data.global-initiative.hassmalltitle == true %}
+            <div class="col-6 col-sm-4">
+                <h3>{{ site.data.global-initiative.smalltitle }}</h3>
+                {% if site.data.global-initiative.hasdescription == true %}
+                <p class="section-description">{{ site.data.global-initiative.description }}</p>
+            </div>
+            {% endif %}
+                <div class="col-6 col-sm-4">
+                    <ul class="list-unstyled text-right">
+                        {% for city in site.data.global-initiative.cities %}
+                             {% if city.place == 'left' %}
+                                <li class=""><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <ul class="list-unstyled">
+                    {% for city in site.data.global-initiative.cities %}
+                        {% if city.place == 'right' %}
+                            <li class=""><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <script>
+          $(function () {
+            $('[data-toggle="popover"]').popover()
+          })
+          </script>
+          <script type="text/javascript">
+
+
+
+          var bombMap = new Datamap({
+              element: document.getElementById('worldmap'),
+              scope: 'world',
+              geographyConfig: {
+                  popupOnHover: true,
+                  highlightOnHover: false
+              },
+              fills: {
+                  defaultFill: '#1f77b4'
+              },
+              data: {
+                  // 'RUS': {fillKey: 'RUS'},
+                  // 'PRK': {fillKey: 'PRK'},
+                  // 'PRC': {fillKey: 'PRC'},
+                  // 'IND': {fillKey: 'IND'},
+                  // 'GBR': {fillKey: 'GBR'},
+                  // 'FRA': {fillKey: 'FRA'},
+                  // 'PAK': {fillKey: 'PAK'},
+                  // 'USA': {fillKey: 'USA'}
+              }
+          });
+          var bombs = [
+          {% for city in site.data.global-initiative.cities %}
+              {
+                  name: '{{ city.name }}',
+                  city: '{{ city.name }}',
+                  country: 'USSR',
+                  radius: 8,
+                  fillKey: 'IND',
+                  significance: 'First fusion weapon test by the USSR (not "staged")',
+                  date: '1953-08-12',
+                  latitude: '{{ city.latitude }}',
+                  longitude: '{{ city.longitude }}'
+                },
+                {% endfor %}
+              ];
+
+          //draw bubbles for bombs
+          bombMap.bubbles(bombs, {
+              popupTemplate: function (geo, data) {
+                return ['<div type="button" class="card btn btn-primary btn-fixed" title="' + data.city + '" data-content="' + data.name + '' + data.longitude + '' + data.latitude + '">{{ city.name }}</div>'].join('');
+                // return ['<div class="hoverinfo">' + data.city + '<br />' + data.name + '<br />' + data.longitude + '' + data.latitude + '">{{ city.name }}</div>'].join('');
+                // return ['<div class="hoverinfo">' +  data.name,
+                //   '<br/>Payload: ' +  data.yield + ' kilotons',
+                //   '<br/>Country: ' +  data.country + '',
+                //   '<br/>Date: ' +  data.date + '',
+                //   '</div>'].join('');
+              }
+          });
+        </script>
 
 </section>
+
 </body>
 
 

@@ -1,0 +1,391 @@
+id: "global-initiative"
+sectioncolor: 'red'
+image: 'uploads/map-cities.png'
+haslargetitle: true
+largetitle: 'A global initiative'
+hassmalltitle: true
+smalltitle: 'Fab City Network'
+hasdescription: true
+description: "Core to the initiative is a network of cities, regions and countries that have pledged to work towards producing everything they consume by 2054. Citizens, FabLabs and City officials collaborate locally to implement new urban models through interventions in governance and policy."
+cities:
+  - name: "Barcelona"
+    place: left
+    id: "barcelona"
+    country: "Spain"
+    strategicfocus: "Policy and Governance"
+    orgtype: "Consortium"
+    org: "Fab Lab Barcelona | IAAC | Barcelona City Council"
+    joined: 2014
+    latitude: "41.3851"
+    longitude: "2.1734"
+    webpresence: ""
+  - name: "Zagreb"
+    place: left
+    id: "zagreb"
+    country: Croatia
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2018
+    latitude: "45.8150"
+    longitude: "15.9819"
+    webpresence: ""
+  - name: "Thimphu"
+    place: left
+    id: "thimphu"
+    country: Bhutan
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Ministry of Education | Ministry of Labour and Human Resources | Royal University of Bhutan | Ministry of Agriculture | Fab Lab Bhutan"
+    joined: 2016
+    latitude: "27.5142"
+    longitude: "90.4336"
+    webpresence: "http://www.fablab.bt/"
+  - name: "Shenzhen"
+    place: left
+    id: "shenzhen"
+    country: China
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Shenzhen Open Innovation Lab | Shenzhen Industrial Design Association"
+    joined: 2015
+    latitude: "22.5431"
+    longitude: "114.0579"
+    webpresence: "http://szoil.org"
+  - name: "Georgia"
+    place: left
+    id: "georgia"
+    country: Georgia
+    strategicfocus: ""
+    orgtype: "Government Agency"
+    org: "LEPL. Georgia's Innovation and Technology Agency"
+    joined: 2015
+    latitude: "42.3154"
+    longitude: "43.3569"
+    webpresence: "http://fablab.gov.ge"
+  - name: "Curitiba"
+    place: left
+    id: "Curitiba"
+    country: Brasil
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Agência Curitiba | We Fab | Curitiba City Hall | iCities"
+    joined: 2017
+    latitude: "-25.4809"
+    longitude: "-49.3044"
+    webpresence: "http://www.agencia.curitiba.pr.gov.br/"
+  - name: "Occitanie Region"
+    place: left
+    id: "occitanie"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2017
+    latitude: "43.8927"
+    longitude: "3.2828"
+    webpresence: ""
+  - name: "Puebla"
+    place: left
+    id: "puebla"
+    country: Mexico
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2018
+    latitude: "19.0414"
+    longitude: "-98.2063"
+    webpresence: ""
+  - name: "Mexico City"
+    place: left
+    id: "mexico-df"
+    country: Mexico
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2018
+    latitude: "19.4326"
+    longitude: "-99.1332"
+    webpresence: ""
+
+  - name: "Auvergne-Rhône-Alpes"
+    place: left
+    id: "auvergne"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2018
+    latitude: "45.4471"
+    longitude: "4.3853"
+    webpresence: ""
+  - name: "Amsterdam"
+    place: left
+    id: "amsterdam"
+    country: Netherlands
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Waag Society | Fab Lab Amsterdam | Pakhuis de Zwijger | Metabolic"
+    joined: 2016
+    latitude: "52.3680"
+    longitude: "4.9036"
+    webpresence: ""
+  - name: "Cambridge"
+    place: left
+    id: "cambridge"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2015
+    latitude: "42.3736"
+    longitude: "-71.1097"
+    webpresence: ""
+  - name: "Kerala"
+    place: left
+    id: "kerala"
+    country: India
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Kerala Startup Mission"
+    joined: 2015
+    latitude: "10.8505"
+    longitude: "76.2711"
+    webpresence: ""
+  - name: "Sacramento"
+    place: left
+    id: "sacramento"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2016
+    latitude: "38.5816"
+    longitude: "-121.4944"
+    webpresence: ""
+  - name: "Belo-Horizonte"
+    place: right
+    id: "belohorizonte"
+    country: Brasil
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2018
+    latitude: "-19.9173"
+    longitude: "-43.9346"
+    webpresence: ""
+  - name: "Ekurhuleni"
+    place: right
+    id: "ekurhuleni"
+    country: South Africa
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2015
+    latitude: "-26.1777"
+    longitude: "28.3462"
+    webpresence: ""
+  - name: "Brest"
+    place: right
+    id: "Brest"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Brest Métropol | ADEUPa | UBO Open Factory"
+    joined: 2017
+    latitude: "48.3904"
+    longitude: "-4.4861"
+    webpresence: "https://twitter.com/fabcitybrest"
+  - name: "Boston"
+    place: right
+    id: "boston"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2015
+    latitude: "42.3601"
+    longitude: "-71.0589"
+    webpresence: ""
+  - name: "Toulouse"
+    place: right
+    id: "toulouse"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+    latitude: "43.6047"
+    longitude: "1.4442"
+    webpresence: ""
+  - name: "Paris"
+    place: right
+    id: "paris"
+    country: France
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Fab City Grand Paris Association | City Council of Paris"
+    joined: 2016
+    latitude: "48.8566"
+    longitude: "2.3522"
+    webpresence: "http://fabcity.paris/en/home/"
+  - name: "Santiago"
+    place: right
+    id: "santiago"
+    country: Chile
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "Fab Lab Santiago | SE Santiago | Escuela de Diseño UC | Distributed Design Foundation"
+    joined: 2016
+    latitude: "-33.4489"
+    longitude: "-70.6693"
+    webpresence: "https://fablabsantiago.org/fab-city-campus-barrio-italia/"
+  - name: "Velsen"
+    place: right
+    id: "velsen"
+    country: Netherlands
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined:
+    latitude: "52.4521"
+    longitude: "4.6306"
+    webpresence: ""
+  - name: "Seoul"
+    place: right
+    id: "seoul"
+    country: South Korea
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2018
+    latitude: "37.5665"
+    longitude: "126.9780"
+    webpresence: ""
+  - name: "Oakland"
+    place: right
+    id: "oakland"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2018
+    latitude: "37.8044"
+    longitude: "-122.2711"
+    webpresence: ""
+  - name: "Somerville"
+    place: right
+    id: "somerville"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Government Agency"
+    org: "FabVille"
+    joined: 2015
+    latitude: "42.3876"
+    longitude: "-71.0995"
+    webpresence: "https://www.fabville.net/"
+  - name: "Detroit"
+    place: right
+    id: "detroit"
+    country: USA
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2016
+    latitude: "42.3314"
+    longitude: "-83.0458"
+    webpresence: ""
+  - name: "Kamakura"
+    place: right
+    id: "kamakura"
+    country: Japan
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2018
+    latitude: "35.3192"
+    longitude: "139.5467"
+    webpresence: ""
+  - name: "Sorocaba"
+    place: right
+    id: "sorocaba"
+    country: Brasil
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2018
+    latitude: "-23.4557"
+    longitude: "-47.4883"
+    webpresence: ""
+
+  - name: "Plymouth"
+    place: left
+    id: "plymouth"
+    country: "England"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    latitude: "50.3755"
+    longitude: "-4.1427"
+    webpresence: ""
+
+  - name: "Hamburg"
+    place: left
+    id: "hamburg"
+    country: "Germany"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: "The Fab City Hamburg consortium consists of 30+ local labs, organizations and public institutions. For more information please visit:"
+    joined: 2019
+    latitude: "53.5511"
+    longitude: "9.9937"
+    webpresence: "http://fabcity.hamburg"
+
+  - name: "Yucatàn Region"
+    place: left
+    id: "yucatan"
+    country: "Mexico"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    latitude: "20.7099"
+    longitude: "-89.0943"
+    webpresence: ""
+
+  - name: "Rennes"
+    place: right
+    id: "rennes"
+    country: "France"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    latitude: "48.1173"
+    longitude: "-1.6778"
+    webpresence: ""
+
+  - name: "São Paolo"
+    place: right
+    id: "saopaolo"
+    country: "Brazil"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    latitude: "-23.5505"
+    longitude: "-46.6333"
+    webpresence: ""
+
+  - name: "Recife"
+    place: right
+    id: "recife"
+    country: "Brazil"
+    strategicfocus: ""
+    orgtype: "Consortium"
+    org: ""
+    joined: 2019
+    latitude: "-8.0522"
+    longitude: "-34.9286"
+    webpresence: ""
