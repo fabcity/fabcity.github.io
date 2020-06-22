@@ -49,20 +49,18 @@ title: Home
 </section>
 
 <!-- Second section / Map -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin=""/>
 
- <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-   crossorigin=""></script>
+<!-- https://datamaps.github.io/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<script src="{{ '/assets/js/worldmap.js' | relative_url }}"></script>
 
-<section id="{{ site.data.global-initiative.id }}">
-    <div class="container align-items-center">
+<div class="container-fluid dark-bg">
+<div id="container" class="worldmap"></div>
+</div>
 
-        <div id="worldmap" min-width="100%"></div>
-
+<!-- <section>
+  <div class="container align-items-center">
         <div class="row">
             {% if site.data.global-initiative.hassmalltitle == true %}
             <div class="col-6 col-sm-4">
@@ -93,67 +91,57 @@ title: Home
             {% endif %}
         </div>
 
-        <script>
-          $(function () {
-            $('[data-toggle="popover"]').popover()
-          })
-          </script>
-          <script type="text/javascript">
-
-
-
-          var bombMap = new Datamap({
-              element: document.getElementById('worldmap'),
-              scope: 'world',
-              geographyConfig: {
-                  popupOnHover: true,
-                  highlightOnHover: false
-              },
-              fills: {
-                  defaultFill: '#1f77b4'
-              },
-              data: {
-                  // 'RUS': {fillKey: 'RUS'},
-                  // 'PRK': {fillKey: 'PRK'},
-                  // 'PRC': {fillKey: 'PRC'},
-                  // 'IND': {fillKey: 'IND'},
-                  // 'GBR': {fillKey: 'GBR'},
-                  // 'FRA': {fillKey: 'FRA'},
-                  // 'PAK': {fillKey: 'PAK'},
-                  // 'USA': {fillKey: 'USA'}
-              }
-          });
+  </section> -->
+        <script type="text/javascript">
+                var bombMap = new Datamap({
+                    element: document.getElementById('container'),
+                    scope: 'world',
+                    geographyConfig: {
+                        popupOnHover: false,
+                        highlightOnHover: false
+                    },
+                    fills: {
+                        'IND': '#22dba4',
+                        defaultFill: '#393939'
+                    },
+                    // data: {
+                    //     'RUS': {fillKey: 'RUS'},
+                    //     'PRK': {fillKey: 'PRK'},
+                    //     'PRC': {fillKey: 'PRC'},
+                    //     'IND': {fillKey: 'IND'},
+                    //     'GBR': {fillKey: 'GBR'},
+                    //     'FRA': {fillKey: 'FRA'},
+                    //     'PAK': {fillKey: 'PAK'},
+                    //     'USA': {fillKey: 'USA'}
+                    // }
+                });
           var bombs = [
           {% for city in site.data.global-initiative.cities %}
-              {
-                  name: '{{ city.name }}',
+              {   name: '{{ city.name }}',
                   city: '{{ city.name }}',
-                  country: 'USSR',
-                  radius: 8,
+                  country: '{{ city.country }}',
+                  radius: 3,
                   fillKey: 'IND',
-                  significance: 'First fusion weapon test by the USSR (not "staged")',
-                  date: '1953-08-12',
+                  significance: '{{ city.org }}',
+                  date: '{{ city.joined }}',
                   latitude: '{{ city.latitude }}',
                   longitude: '{{ city.longitude }}'
                 },
-                {% endfor %}
+          {% endfor %}
               ];
 
-          //draw bubbles for bombs
+          // draw bubbles for bombs
           bombMap.bubbles(bombs, {
               popupTemplate: function (geo, data) {
-                return ['<div type="button" class="card btn btn-primary btn-fixed" title="' + data.city + '" data-content="' + data.name + '' + data.longitude + '' + data.latitude + '">{{ city.name }}</div>'].join('');
-                // return ['<div class="hoverinfo">' + data.city + '<br />' + data.name + '<br />' + data.longitude + '' + data.latitude + '">{{ city.name }}</div>'].join('');
-                // return ['<div class="hoverinfo">' +  data.name,
-                //   '<br/>Payload: ' +  data.yield + ' kilotons',
-                //   '<br/>Country: ' +  data.country + '',
-                //   '<br/>Date: ' +  data.date + '',
+                return ['<div type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"',
+                'data-content="And heres some amazing content. Its very engaging. Right?">Click to toggle popover</div>'];
+                // return ['<div class="hoverinfo">' + data.city,
+                //   '<br />' + data.name,
+                //   '<br />' + data.longitude + '' + data.latitude + '' + data.city,
                 //   '</div>'].join('');
               }
           });
         </script>
-
-</section>
 
 </body>
 
