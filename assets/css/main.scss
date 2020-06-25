@@ -175,7 +175,11 @@ div.underline {
 }
 
 .borderline.dark {
-  border-color: black;
+  border-color: black !important;
+}
+
+.borderline.thin {
+  border-width: 1px !important;
 }
 
 .jumbotron.white {
@@ -266,24 +270,52 @@ path.datamaps-subunit {
 }
 
 circle.datamaps-bubble{
+  r: 4px !important;
   fill: #22dba4 !important;
+  fill-opacity: 1 !important;
   stroke: #22dba4 !important;
   stroke-width: 0 !important;
-  stroke-opacity: 0 !important;
-  r: 10 !important;
+  stroke-opacity: 1 !important;
+  paint-order: fill !important;
+  fill-rule: evenodd !important;
+
 }
 
-circle.datamaps-bubble:hover{
+circle.datamaps-bubble:hover {
+  r: 5px !important;
   fill: #22dba4 !important;
+  fill-opacity: 1 !important;
   stroke: #22dba4 !important;
-  stroke-width: 30 !important;
+  stroke-width: 20px !important;
   stroke-opacity: 0.5 !important;
+  // paint-order: stroke fill !important;
+  fill-rule: evenodd !important;
 }
 
-circle {
-  radius: 10 !important;
+.card.map {
+  border-radius: 0 !important;
+  background-color: #22dba4;
+}
+.card-body.map {
+  background-color: #22dba4;
+  padding: 0.4em !important;
+}
+
+.btn.btn-primary.map {
+  background-color: transparent !important;
+  color: #000 !important;
+  border: 0;
+  border-radius: 0;
 }
 
 .dark-bg {
   background-color: rgb(24, 24, 24);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5) !important;
 }
