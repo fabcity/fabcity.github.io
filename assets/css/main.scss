@@ -319,3 +319,19 @@ circle.datamaps-bubble:hover {
 .btn-primary:focus, .btn-primary.focus {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5) !important;
 }
+
+.global {
+  text-align: left;
+  padding-top: 3em;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+.dismiss {
+  font-family: IBMPlexSans-Light;
+  font-size: 3rem !important;
+  margin-top: -0.45em !important;
+  cursor: pointer;
+  float: right;
+}

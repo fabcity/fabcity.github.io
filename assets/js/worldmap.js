@@ -12590,8 +12590,8 @@
 
   Datamap.prototype.updatePopup = function (element, d, options) {
     var self = this;
-    element.on('mousemove', null);
-    element.on('mousemove', function() {
+    element.on('click', null);
+    element.on('click', function() { // mouseclick io mousemove
       var position = d3.mouse(self.options.element);
       d3.select(self.svg[0][0].parentNode).select('.datamaps-hoverover')
         .style('top', ( (position[1] + 30)) + "px")
