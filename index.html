@@ -37,9 +37,9 @@ title: Home
 <!-- First Section -->
   <section>
   <div class="jumbotron white container">
-      <div class="display-4 uppercase text-center">Locally productive, <br/> globally connected</div>
       <br />
       <div class="container">
+        <div class="text-center display-4 uppercase">Locally produced, <br/> Globally connected</div>
         <div class="text-center my-4">
           Fab City Global Initiative is a collective of civic leaders, makers, urbanists and innovators working on shifting the industrial <br/>
             urban paradigm to one that better supports life on Earth. A global collaboration with a distributed network of cities <br />
@@ -56,7 +56,22 @@ title: Home
 <script src="{{ '/assets/js/worldmap.js' | relative_url }}"></script>
 
 <div class="container-fluid dark-bg">
-     <div id="container" class="worldmap"></div>
+     <div id="container" class="worldmap">
+       <div class="container-fluid global">
+         <div class="row">
+           <div class="col">
+             <div class="white display-4 uppercase">The Fab City<br/> Network</div>
+           </div>
+           <div class="col">
+             <div class="float-right my-4 white">
+               34 cities who have taken up the challenge to move towards 100% local production by 2054. <br />
+               These cities from across the globe engage in action-research, developing local prototypes for <br />
+                the Fab City. Collectively these cities comprise a global-action network. <br />
+                 </div>
+               </div>
+           </div>
+         </div>
+       </div>
 </div>
 
 <!-- <section>
@@ -130,9 +145,11 @@ title: Home
               popupTemplate: function (geo, data) {
                 // return ['<div type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"',
                 // 'data-content="And heres some amazing content. Its very engaging. Right?">Click to toggle popover</div>'];
-                return ['<div class=\"card map\">',
+                return ['<div id="popup" class=\"card map\">',
                   '<div class=\"card-body map\">',
-                  '<h5 class=\"card-title uppercase map\">' + data.city + '</h5>',
+                  '<h5 class=\"card-title uppercase map\">' + data.city,
+                  '<span class=\"float-right dismiss\" onclick=\"document.getElementById(\'popup\').parentNode.style.display=\'none\';">&times;</span>',
+                  '</h5>',
                   '<div class="borderline dark thin"></div>',
                   '<p class=\"card-text\">' + data.significance +'</p>',
                   '<a href=\"' + data.link + '\" class="btn btn-primary map float-right">See more...</a>',
