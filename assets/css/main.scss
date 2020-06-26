@@ -161,10 +161,10 @@ div.underline {
   width: 20px;
 }
 
-// section {
-//   padding-top: 2em;
-//   top: 2em;
-// }
+section {
+  padding-top: 2em;
+  top: 2em;
+}
 
 .borderline {
   // align-self: center;
@@ -385,4 +385,27 @@ circle.datamaps-bubble:hover {
 .spaced-out {
   display: flex;
   justify-content: space-between !important;
+}
+
+.wide {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+// .crop1 {
+//   max-width: 500px;
+//   // text-indent: -100px;
+//   margin-left: -100px;
+// }
+
+.crop1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.crop1 img {
+    width: 1000px;
+    height: 500px;
+    margin: 0 0 0 -70px;
+    padding: 0 0 0 70px;
 }
