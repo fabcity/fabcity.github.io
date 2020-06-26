@@ -19,6 +19,7 @@ body {
   background: transparent;
   top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
   /* z-index: 1030; */
   /* overflow: hidden; */
@@ -196,10 +197,6 @@ div.underline {
   padding-top: 0.25rem
 }
 
-.navbar-nav {
-  height: 30px;
-}
-
 .nav-item {
   color: white;
 }
@@ -327,11 +324,14 @@ circle.datamaps-bubble:hover {
   z-index: 2;
 }
 
-
 .dismiss {
   font-family: IBMPlexSans-Light;
   font-size: 3rem !important;
   margin-top: -0.45em !important;
   cursor: pointer;
   float: right;
+}
+
+#navbarNavAltMarkup {
+  // height: 266px;
 }
