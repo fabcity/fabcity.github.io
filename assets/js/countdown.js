@@ -18,7 +18,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = "<div class=\"col\"><div class=\"cnums\">" + years + "</div><br/><div class=\"csuf \">years</div></div> <div class=\"col\"><div class=\"cnums\">" + days + "</div><br/><div class=\"csuf\">days</div></div> <div class=\"col\"><div class=\"cnums\">" + hours + "</div><br/><div class=\"csuf \">hours</div></div><div class=\"col\"><div class=\"cnums\">" + minutes + "</div><br/><div class=\"csuf\">minutes</div></div><div class=\"col\"><div class=\"cnums\">" + seconds + "</div><br/><div class=\"csuf\">seconds</div></div>";
+  document.getElementById("countdown").innerHTML = "<div class=\"col-xs-2 col-sm-5 col-md-2 col-lg-2\"><div class=\"cnums\">" + years + "</div><br/><div class=\"csuf \">years</div></div> <div class=\"col-xs-2 col-sm-5 col-md-2 col-lg-2\"><div class=\"cnums\">" + days + "</div><br/><div class=\"csuf\">days</div></div> <div class=\"col-xs-2 col-sm-5 col-md-2 col-lg-2\"><div class=\"cnums\">" + hours + "</div><br/><div class=\"csuf \">hours</div></div><div class=\"col-xs-2 col-sm-5 col-md-2 col-lg-2\"><div class=\"cnums\">" + minutes + "</div><br/><div class=\"csuf\">minutes</div></div><div class=\"col-xs-2 col-sm-5 col-md-2 col-lg-2\"><div class=\"cnums\">" + seconds + "</div><br/><div class=\"csuf\">seconds</div></div>";
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);

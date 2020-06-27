@@ -148,7 +148,6 @@ div.underline {
   bottom: 0 !important;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
-  // margin-top: 2em;
   position: absolute;
 }
 
@@ -459,11 +458,22 @@ a.black:hover {
   padding: 0.7em 0 0 0 !important;
 }
 
+.line-top {
+  border-top: 1px solid rgba(0, 0, 0, 1) !important;
+  padding: 0.7em 0 0 0 !important;
+}
+
 .row:last-of-type {
   border: 0 !important;
 }
 
-
 .medium {
  font-family: IBMPlexSans-Medium;
+}
+
+.padded-right {
+  margin-right: 20px;
+}
+.padded-right:last-of-type {
+  margin-right: 0px !important;
 }

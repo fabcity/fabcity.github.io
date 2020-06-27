@@ -37,16 +37,16 @@ title: FAB.CITY
 <div class="container-fluid">
   <div class="borderline"></div>
     <div class="row">
-      <div class="col-xs-5 col-sm-6 col-md-7">
-      <!-- <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> -->
-      <div class="container">
-        <div class="row countdown" id="countdown"></div>
+      <!-- <div class="col-xs-5 col-sm-6 col-md-7"> -->
+      <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
+        <div class="container">
+          <div class="row countdown" id="countdown"></div>
+        </div>
       </div>
-    </div>
-      <div class="col-xs-2 col-sm-4 col-md-3">
-        <h3 class="text-sink white">Until cities produce <br/> everything they consume.</h3>
+      <div class="col-xs-2 col-sm-4 col-md-3 col-lg-2">
+        <h4 class="text-sink white">Until cities produce <br/> everything they consume.</h4>
       </div>
-      <div class="col-xs-12 col-sm-2 col-md-2 take-action">
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 take-action">
         <button type="button" class="btn btn-primary take-button float-right" data-toggle="modal" data-target="#take-action">
           Take Action
         </button>
@@ -57,6 +57,8 @@ title: FAB.CITY
   </div>
 </header>
 </div>
+<!-- end gradient -->
+<!-- end backdrop -->
 </div>
 
 <body>
@@ -261,7 +263,7 @@ title: FAB.CITY
 {% for item in site.data.latest-news.rows %}
   <div class="row line">
       <div class="col-md-3">
-        <a class="medium fat-letters">{{ item.name }}</a>
+        <a class="medium black fat-letters" href="{{ item.link }}">{{ item.name }}</a>
       </div>
       <div class="col-md-2">
         <a class="small">{{ item.place }}</a>
@@ -285,26 +287,46 @@ title: FAB.CITY
 <div class="borderline dark"></div>
 
 <section>
-  <div class="container">
+  <div class="container blog">
     <div class="row">
       <h1 class="display-4 uppercase">Blog</h1>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      {% for item in site.data.blog.posts %}
+      <div class="col-xs-2 col-md-3 col-lg-2 line-top mr-md-auto">
+
+        <a href="{{ item.link }}">
+        <div id="title" class="medium black">
+          {{ item.title }}
+        </div>
         <figure class="figure">
-          <img src="#" class="figure-img img-fluid" alt="">
+          <figcaption class="small figure-caption text-right">{{ item.date }}</figcaption>
+          <img src="{{ item.image_url }}" class="figure-img img-fluid line" alt="">
         </figure>
+        </a>
       </div>
+      {% endfor %}
+    </div>
+  <div class="row">
+    <div class="col-12"">
+      <button type="button" class="btn wide small btn-action">More Posts</button>
     </div>
   </div>
+</div>
 </section>
 
-
+<script>
+//  $(document).ready(function(){
+//    //$("#button").click(function(){
+//      $("#titel").load("demo_test.txt");
+//    //});
+//  });
+</script>
 
 </body>
 
 
-<!-- Modal -->
+<!-- Take Action Modal -->
 <div class="modal fade" id="take-action" tabindex="-1" role="dialog" aria-labelledby="take-action" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
