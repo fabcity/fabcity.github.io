@@ -82,21 +82,21 @@ title: FAB.CITY
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="{{ '/assets/js/worldmap.js' | relative_url }}"></script>
 
-<div class="container-fluid dark-bg">
-  <div class="container-fluid global">
-    <div class="row">
-      <div class="col">
-        <div class="white display-4 uppercase" style="padding-left:3em;">The Fab City<br/> Network</div>
-      </div>
-      <div class="col">
-        <div class="my-4 white">
-          34 cities who have taken up the challenge to move towards 100% local production by 2054. <br />
-          These cities from across the globe engage in action-research, developing local prototypes for <br />
-          the Fab City. Collectively these cities comprise a global-action network. <br />
-        </div>
+<div class="container global">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="white display-4 uppercase">The Fab City<br/> Network</div>
+    </div>
+    <div class="col-md-6">
+      <div class="my-4 white">
+        34 cities who have taken up the challenge to move towards 100% local production by 2054. <br />
+        These cities from across the globe engage in action-research, developing local prototypes for <br />
+        the Fab City. Collectively these cities comprise a global-action network. <br />
       </div>
     </div>
   </div>
+</div>
+<div class="container-fluid dark-bg">
      <div id="container" class="worldmap"></div>
 </div>
 
@@ -212,17 +212,16 @@ title: FAB.CITY
     </div>
   </div>
 </section>
-
 <!-- THE COMMITMENT -->
-<section class="jumbotron">
+<section class="bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-          <!-- <figure class="figure"> -->
-            <div class="crop1">
-            <img src="assets/images/the-commitment.png" class="figure-img img-fluid" alt="...">
-          </div>
-          <!-- </figure> -->
+        <div class="crop1">
+          <figure class="figure">
+              <img src="assets/images/the-commitment.png" class="figure-img img-fluid" alt="...">
+            </figure>
+            </div>
       </div>
       <div class="col-md-6">
           <h1 class="display-4 uppercase" style="margin-top: -10px;">The Commitment </h1>
@@ -240,6 +239,67 @@ title: FAB.CITY
     </div>
   </div>
 </section>
+<div class="borderline dark"></div>
+<section class="bg-yellow">
+  <div class="container">
+    <h1 class="display-4 uppercase">Latest News</h1>
+    <div class="row">
+      {% for item in site.data.latest-news.columns %}
+        <div class="col-md-3">
+          <div class="card bg-yellow noborder">
+            <div class="card-body" >
+              <h5 class="card-title medium">{{ item.date }}</h5>
+              <p class="small">{{ item.place }}</p>
+              <a class="small black uppercase" href="{{ item.link }}" >{{ item.namelink }} &rarr;</a>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+<br />
+<div class="rows">
+{% for item in site.data.latest-news.rows %}
+  <div class="row line">
+      <div class="col-md-3">
+        <a class="medium fat-letters">{{ item.name }}</a>
+      </div>
+      <div class="col-md-2">
+        <a class="small">{{ item.place }}</a>
+      </div>
+      <div class="col-md-2">
+        <a class="small">{{ item.location }}</a>
+      </div>
+      <div class="col-md-2">
+        <a class="small">{{ item.time }}</a>
+      </div>
+      <div class="col-md-2">
+        <a class="small">{{ item.date }}</a>
+      </div>
+      <div class="col-md-1 float-right contain">
+        <a class="black arrow" href="{{ item.link }}">&rarr;</a>
+      </div>
+    </div>
+{% endfor %}
+</div>
+</section>
+<div class="borderline dark"></div>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <h1 class="display-4 uppercase">Blog</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <figure class="figure">
+          <img src="#" class="figure-img img-fluid" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 </body>
 

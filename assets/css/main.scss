@@ -94,7 +94,10 @@ body {
   font-family: IBMPlexSans-Thin;
   src: url('/assets/fonts/IBMPlexSans-Thin.ttf');
 }
-
+@font-face {
+  font-family: IBMPlexSans-Medium;
+  src: url('/assets/fonts/IBMPlexSans-Medium.ttf');
+}
 .countdown {
   font-family: IBMPlexSans-Regular;
   color: white;
@@ -162,20 +165,18 @@ div.underline {
 }
 
 section {
-  padding-top: 2em;
-  top: 2em;
+  padding-top: 3em;
+  top: 3em;
+  padding-bottom: 3em;
+  bottom: 3em;
 }
 
 .borderline {
-  // align-self: center;
   border-left: 2px !important;
   border-right: 2px !important;
-  // width: 97%;
   border-width: 1px;
   border-color: white !important;
   border-style: solid;
-  // margin-top: 0.1em;
-  margin-bottom: 0.5em;
   z-index: 1030;
 }
 
@@ -234,6 +235,10 @@ section {
 
 .white {
   color: white;
+}
+
+.black {
+  color: black;
 }
 
 .take-action {
@@ -323,12 +328,12 @@ circle.datamaps-bubble:hover {
 }
 
 .global {
-  text-align: left;
-  padding-top: 3em;
-  // overflow: visible;
-  position: absolute;
-  z-index: 200;
-  // width: 80%;
+  margin-top: 7rem;
+
+  margin-bottom: -20rem;
+  // padding-bottom: 3rem;
+  // position: absolute;
+  z-index: 2000;
 }
 
 .dismiss {
@@ -392,20 +397,73 @@ circle.datamaps-bubble:hover {
   padding-right: 50px !important;
 }
 
-// .crop1 {
-//   max-width: 500px;
-//   // text-indent: -100px;
-//   margin-left: -100px;
-// }
-
 .crop1 {
     width: 100%;
     overflow: hidden;
+    height: 100%;
 }
 
 .crop1 img {
-    width: 1000px;
-    height: 500px;
-    margin: 0 0 0 -70px;
-    padding: 0 0 0 70px;
+    height: 120%;
+    // width: 1000px;
+    // margin: 0 0 0 -70px;
+    // padding: 0 0 0 70px;
+}
+
+.bg-yellow{
+  background-color: rgb(232, 162, 42);
+}
+
+.bg-grey {
+  background-color: #e9ecef;
+}
+
+.noborder {
+  border: 0 !important
+}
+
+.card-body {
+  padding: 1.25rem 1.25rem 1.25rem 0.25rem !important;
+}
+
+.card-title {
+ font-weight: bold;
+}
+
+.arrow {
+  font-family: IBMPlexSans-Thin;
+  font-size: 3em;
+  height: 100%;
+  line-height: 0.25em !important;
+  padding: 0 !important;
+  margin: 0;
+  position: static;
+}
+
+a.black:hover {
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+}
+
+.contain {
+  height:100%;
+}
+
+.small {
+  font-size: 0.75rem;
+  margin-bottom: 0.1rem;
+}
+
+.line {
+  border-bottom: 1px solid rgba(0, 0, 0, 1) !important;
+  padding: 0.7em 0 0 0 !important;
+}
+
+.row:last-of-type {
+  border: 0 !important;
+}
+
+
+.medium {
+ font-family: IBMPlexSans-Medium;
 }
