@@ -186,7 +186,7 @@ title: Fab City Global
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 pb-3 pb-sm-3 ">
           <h1 class="display-4 uppercase">Global <br /> Context </h1>
           <p class="lead fat-letters">
             In an ever-changing world innovation
@@ -243,7 +243,7 @@ title: Fab City Global
     <div class="row">
       {% for item in site.data.latest-news.columns %}
         <div class="col-md-3">
-          <div class="card bg-yellow noborder">
+          <div class="card bg-yellow border-0">
             <div class="card-body" >
               <h5 class="card-title medium">{{ item.date }}</h5>
               <p class="small">{{ item.place }}</p>
@@ -272,7 +272,7 @@ title: Fab City Global
       <div class="col-md-2">
         <a class="small">{{ item.date }}</a>
       </div>
-      <div class="col-md-1 float-right contain">
+      <div class="col-md-1 pt-sm-2 pt-3 float-right contain">
         <a class="black arrow" href="{{ item.link }}">&rarr;</a>
       </div>
     </div>
@@ -286,25 +286,25 @@ title: Fab City Global
     <div class="row">
       <h1 class="display-4 uppercase">Blog</h1>
     </div>
-    <div class="row row-cols-4">
+    <div class="row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4">
       {% for item in site.data.blog.posts limit:4 %}
-      <div class="col blog-item line-top mr-md-5 mr-lg-5">
+      <div class="col-sm blog-item line-top mr-1 ml-1 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4">
         <a href="{{ item.link }}">
-        <div class="medium black blog-item-title fat-letters">
+        <div class="medium black blog-item-title fat-letters ">
           {{ item.title }}
         </div>
-          <figure class="figure">
-            <figcaption class="small figure-caption text-right">{{ item.date }}</figcaption>
-            <img src="{{ item.image_url }}" class=" hw-250px figure-img img-fluid mx-auto d-block" alt="">
+          <figure class="pb-xs-2 pt-sm-4 pt-md-3">
+            <figcaption class="small black border-0 figure-caption text-right" >{{ item.date }}</figcaption>
+            <img style="background-image:url('{{ item.image_url }}'); background-size:cover; background-position:center;height:200px;" class="w-100" alt="" />
           </figure>
         </a>
       </div>
       {% endfor %}
     </div>
-      <div class="text-center">
-        <button type="button" class="btn pl-4 pr-4 pl-4 pr-4 small btn-action">More Posts</button>
+      <div class="mt-3 text-center">
+        <button type="button" class="btn pl-4 pr-4 pb-1 pt-1 small btn-action">More Posts</button>
       </div>
-</div>
+  </div>
 </section>
 
 <script>
@@ -314,6 +314,22 @@ title: Fab City Global
 //    //});
 //  });
 </script>
+
+<!-- text with background img -->
+<section  style=" background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ '/assets/images/reinvent-our-cities.png' | relative_url }}'); background-size: cover; background-position:center;">
+  <div class="container-fluid text-center">
+    <div class="h2 white pt-4 pb-4">
+      We need to reinvent our cities and their relationship to people & <br />
+nature by re-localising production so that cities are generative<br />
+rather than extractive, restorative rather than destructive, and<br />
+empowering rather than alienating, where prosperity ourishes, and<br />
+people have purposeful, meaningful work that they enjoy, that<br />
+enables them to use their passion and talent.<br />
+    </div>
+  </div>
+</section>
+
+
 
 </body>
 
@@ -336,9 +352,9 @@ title: Fab City Global
         First, let us know how you are:
       </div>
       <div class="pt-3 pb-3 spaced-out">
-        <button type="button" class="btn pr-4 pl-4 small btn-action">I'm a City</button>
-        <button type="button" class="btn pr-4 pl-4 small btn-action">I'm a person</button>
-        <button type="button" class="btn pr-4 pl-4 small btn-action">I'm a government</button>
+        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a City</button>
+        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a person</button>
+        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a government</button>
       </div>
     </div>
   </div>

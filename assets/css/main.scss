@@ -399,10 +399,6 @@ span.float-right {
   background-color: #e9ecef;
 }
 
-.noborder {
-  border: 0 !important
-}
-
 .card-body {
   padding: 1.25rem 1.25rem 1.25rem 0.25rem !important;
 }
@@ -432,7 +428,7 @@ a.black:hover {
 
 .small {
   font-size: 0.75rem;
-  margin-bottom: 0.1rem;
+  // margin-bottom: 0.1rem;
 }
 
 .line {
@@ -453,16 +449,10 @@ a.black:hover {
  font-family: IBMPlexSans-Medium;
 }
 
-.hw-250px {
-  height: 200px;
-  width: 350px;
-  // clip: rect(0px,60px,200px,0px);
-}
-
 .blog-item-title {
   height: 30px;
 }
 
-.blog-item:last-of-type {
-  margin-right: 0 !important;
-}
+// .blog-item:last-of-type { Works non responsive :/
+//   margin-right: 0 !important;
+// }
