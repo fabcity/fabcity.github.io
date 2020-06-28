@@ -462,3 +462,7 @@ a.black:hover {
 .blog-item-title {
   height: 30px;
 }
+
+.blog-item:last-of-type {
+  margin-right: 0 !important;
+}
