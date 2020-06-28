@@ -433,6 +433,7 @@ a.white:hover {
 
 .contain {
   height:100%;
+  padding: 0 !important;
 }
 
 .small {
@@ -451,7 +452,7 @@ a.white:hover {
   padding: 0.7em 0 0 0 !important;
 }
 
-.row:last-of-type {
+.line.row:last-of-type {
   border: 0 !important;
 }
 
@@ -470,4 +471,8 @@ a.white:hover {
 .arrow.smaller {
    line-height: 0.25em !important;
    font-size: 2em;
+}
+
+.bg-black {
+  background-color: #000;
 }
