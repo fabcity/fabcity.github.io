@@ -417,8 +417,8 @@ span.float-right {
   height: 100%;
   line-height: 0.25em !important;
   // padding: 0 !important;
-  margin: 0;
-  position: static;
+  margin: 0 !important;
+  position: static !important;
 }
 
 a.black:hover {
@@ -475,4 +475,14 @@ a.white:hover {
 
 .bg-black {
   background-color: #000;
+}
+
+.subscribe-newsletter {
+  color: grey;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: grey;
 }

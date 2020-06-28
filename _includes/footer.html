@@ -11,7 +11,69 @@
     <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
       <div class="col ml-3 mr-3 border-white border-bottom"></div>
     </div>
-  </div>
+    <div class="row pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
+      <div class="col-md-6">
+        <div class="row row-cols-4">
+      {% for item in site.data.footer.pages %}
+      <div class="col-md-3">
+        <a class="pt-2 pr-1 pb-1 white float-left" href="{{ item.link }}">{{ item.name }}</a>
+      </div>
+      {% endfor %}
+        </div>
+    </div>
+      <div class="col-md-6 text-right">
+        {% for item in site.data.footer.social %}
+          <a class="nav-item white nav-link svg-icon float-right pl-2" href="{{ item.link }}" ><img class="nav-icon" src="{{ item.image_url }}" /></a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
+      <div class="col ml-3 mr-3 border-white border-bottom"></div>
+    </div>
+    <div class="row spaced-out row-cols-3 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
+      <div class="col-md-5">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="pt-3 white">
+            Sign Up
+          </div>
+        </div>
+        <div class="col-md-6 pt-2">
+         <input class="w-100 subscribe-newsletter rounded-0 border-0 border-light border-bottom bg-black" placeholder="Newsletter Subscription" />
+        </div>
+        <div class="col-md-1">
+          <div class="text-right postion-absolute float-right contain" style="line-height: 73px !important;">
+            <a type="submit" class="white arrow" href="#">&rarr;</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4 white">
+        <div class="pt-3 font-weight-bold">
+          Location
+        </div>
+          <address>
+            Institute for Advanced Architecture of Catalonia, <br />
+            Fab Lab Barcelona <br />
+            Barcelona, <br />
+            Pujades 102, 08005 <br />
+          </address>
+
+        </div>
+      <div class="col-md-2 float-right white">
+        <div class="mr-0 mr-md-0 ml-xl-5 mr-xl-0">
+          <div class="pt-3 font-weight-bold">
+            Contact
+          </div>
+          hello@fab.city
+        </div>
+      </div>
+      </div>
+      <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
+        <div class="col ml-3 mr-3 border-white border-bottom"></div>
+      </div>
+
+    </div>
 
 <section>
 

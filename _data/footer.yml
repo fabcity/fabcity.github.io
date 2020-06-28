@@ -1,0 +1,19 @@
+pages:
+  - name: Community
+    link: \#community
+  - name: About Us
+    link: \#about-us
+  - name: Resources
+    link: \#resources
+  - name: Blog
+    link: \#blog
+social:
+  - name: Github
+    image_url: 'assets/images/github.svg'
+    link: https://github.com/fabcity
+  - name: Podcast
+    image_url: 'assets/images/podcast.svg'
+    link: \#podcast
+  - name: Facebook
+    image_url: 'assets/images/facebook.svg'
+    link: \#resources

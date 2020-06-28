@@ -25,8 +25,8 @@ title: Fab City Global
       <a class="nav-item nav-link" href="{{ item.link }}">{{ item.name }}</a>
       {% endif %}
       {% endfor %}
-      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="assets/images/facebook.svg" /></a>
-      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="assets/images/twitter.svg" /></a>
+      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/facebook.svg' | relative_url }}" /></a>
+      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/twitter.svg' | relative_url }}" /></a>
     </div>
   </div>
 </nav>
@@ -272,7 +272,7 @@ title: Fab City Global
       <div class="col-md-2">
         <a class="small">{{ item.date }}</a>
       </div>
-      <div class="col-md-1 pt-sm-2 pt-3 text-right float-right contain">
+      <div class="col-md-1 pt-sm-2 pt-3 pr-1 mr-xs-3 text-right float-right contain">
         <a class="black arrow" href="{{ item.link }}">&rarr;</a>
       </div>
     </div>
