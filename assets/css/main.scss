@@ -399,6 +399,10 @@ span.float-right {
   background-color: #e9ecef;
 }
 
+.bg-blue {
+  background-color: #002578;
+}
+
 .card-body {
   padding: 1.25rem 1.25rem 1.25rem 0.25rem !important;
 }
@@ -412,7 +416,7 @@ span.float-right {
   font-size: 3em;
   height: 100%;
   line-height: 0.25em !important;
-  padding: 0 !important;
+  // padding: 0 !important;
   margin: 0;
   position: static;
 }
@@ -420,6 +424,11 @@ span.float-right {
 a.black:hover {
   text-decoration: none;
   color: rgb(77, 77, 77);
+}
+
+a.white:hover {
+  text-decoration: none;
+  color: rgb(98, 98, 98);
 }
 
 .contain {
@@ -430,6 +439,7 @@ a.black:hover {
   font-size: 0.75rem;
   // margin-bottom: 0.1rem;
 }
+
 
 .line {
   border-bottom: 1px solid rgba(0, 0, 0, 1) !important;
@@ -456,3 +466,8 @@ a.black:hover {
 // .blog-item:last-of-type { Works non responsive :/
 //   margin-right: 0 !important;
 // }
+
+.arrow.smaller {
+   line-height: 0.25em !important;
+   font-size: 2em;
+}
