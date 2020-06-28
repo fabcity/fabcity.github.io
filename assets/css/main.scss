@@ -380,7 +380,7 @@ span.float-right {
 }
 
 .spaced-out {
-  display: flex;
+  display: flex !important;
   justify-content: space-between !important;
 }
 
