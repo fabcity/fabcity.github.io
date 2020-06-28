@@ -99,28 +99,16 @@ body {
   src: url('/assets/fonts/IBMPlexSans-Medium.ttf');
 }
 .countdown {
-  font-family: IBMPlexSans-Regular;
+  font-family: IBMPlexSans-Thin;
   color: white;
-  // padding-top: 5rem;
-  // padding-right: .5rem;
-  // padding-left: .5rem;
-  // font-weight: lighter;
   z-index: 1030;
   height:auto;
-  text-align: center;
 }
 
-.cnums { // countdown numbers
-  // font-family: IBMPlexSans-Light;
+.cnums { // countdown
+  font-family: IBMPlexSans-Light;
   font-size: 72px;
   color: white;
-}
-
-
-.csuf { // countdown suffix
-  text-transform: uppercase;
-  font-size: 32px;
-  color: white !important;
 }
 
 .uppercase {
@@ -259,16 +247,11 @@ section {
 }
 
 .worldmap {
-  margin: 5rem;
   position: relative;
   width: 80%;
   height: 700px;
-  z-index: 120;
-  padding-top: 2rem !important;
-  align-self: center !important;
-  align-content: center !important;
-  align-items: center !important;
-  float: center;
+  overflow: hidden;
+
 }
 
 path.datamaps-subunit {
@@ -327,20 +310,33 @@ circle.datamaps-bubble:hover {
 }
 
 .global {
-  margin-top: 7rem;
-
-  margin-bottom: -20rem;
-  // padding-bottom: 3rem;
-  // position: absolute;
-  z-index: 2000;
+  position: absolute;
+  margin-bottom: -10rem;
+}
+.z-under {
+  z-index: 1000;
+}
+.bubbles {
+  z-index: 3000 !important;
 }
 
 .dismiss {
-  font-family: IBMPlexSans-Light;
+  font-family: IBMPlexSans-Thin;
   font-size: 3rem !important;
   margin-top: -0.45em !important;
   cursor: pointer;
   float: right;
+
+}
+
+span.float-right {
+
+ line-height: 60px;
+ font-size: 2.2rem;
+ letter-spacing: -0.061em;
+ font-weight: 400;
+ font-size: 3.1rem;
+ font-style: normal;
 }
 
 .modal-content {
@@ -350,10 +346,6 @@ circle.datamaps-bubble:hover {
   padding-left: 25px;
 }
 
-.con {
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
 
 .btn-action {
   border-radius: 0 !important;
@@ -386,20 +378,10 @@ circle.datamaps-bubble:hover {
   padding-bottom: 1rem !important;
   padding-right: 0 !important;
 }
+
 .spaced-out {
   display: flex;
   justify-content: space-between !important;
-}
-
-.wide {
-  padding-left: 50px !important;
-  padding-right: 50px !important;
-}
-
-.crop1 {
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
 }
 
 .crop1 img {
@@ -469,11 +451,4 @@ a.black:hover {
 
 .medium {
  font-family: IBMPlexSans-Medium;
-}
-
-.padded-right {
-  margin-right: 20px;
-}
-.padded-right:last-of-type {
-  margin-right: 0px !important;
 }
