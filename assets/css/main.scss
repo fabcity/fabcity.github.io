@@ -452,3 +452,13 @@ a.black:hover {
 .medium {
  font-family: IBMPlexSans-Medium;
 }
+
+.hw-250px {
+  height: 200px;
+  width: 350px;
+  // clip: rect(0px,60px,200px,0px);
+}
+
+.blog-item-title {
+  height: 30px;
+}

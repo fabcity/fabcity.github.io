@@ -288,17 +288,15 @@ title: Fab City Global
     </div>
     <div class="row">
       {% for item in site.data.blog.posts limit:4 %}
-      <div class="col-xs-2 col-md-3 col-lg-2 line-top mr-md-auto">
+      <div class="col-xs-2 col-md-3 col-lg-2 line-top mr-md-5 mr-lg-5">
         <a href="{{ item.link }}">
-        <div id="title" class="medium black">
+        <div class="medium black blog-item-title fat-letters">
           {{ item.title }}
         </div>
-        <div class="card-body">
           <figure class="figure">
             <figcaption class="small figure-caption text-right">{{ item.date }}</figcaption>
-            <img src="{{ item.image_url }}" class="figure-img img-fluid line" alt="">
+            <img src="{{ item.image_url }}" class=" hw-250px figure-img img-fluid mx-auto d-block" alt="">
           </figure>
-        </div>
         </a>
       </div>
       {% endfor %}
