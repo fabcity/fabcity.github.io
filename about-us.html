@@ -1,0 +1,212 @@
+---
+layout: default
+title: About Us
+---
+
+<body>
+  <div class="borderline dark"></div>
+<!-- First Section -->
+  <section class="bg-black">
+      <br />
+      <div class="container-fluid white">
+        <div class="row row-cols-2 spaced-out">
+          <div class="col-md-5">
+            <div class="display-4 uppercase pl-4 ml-4 ">About <br/> Fab City</div>
+          </div>
+          <div class="col-md-6 ml-4 mr-4">
+            <div class="my-4">
+              Fab City Global Initiative is a collective of civic leaders, makers, urbanists and innovators <br />
+              working on shifting the industrial urban paradigm to one that better supports life on Earth. A<br />
+              global collaboration with a distributed network of cities prototypes local approaches to meet<br />
+              the challenge of producing everything the city consumes by 2054.<br />
+            </div>
+            <div class="my-4">
+              FAb City takes the ideals of the Fab Lab - the connectivity, culture and creativity - and scales <br />
+              it to the City. It is a new urban model of transforming and shaping cities that shifts how they<br />
+              source and use materials from ‘Products In Trash Out’ (PITO) to ‘Data In Data Out’ (DIDO).<br />
+            </div>
+          </div>
+          </div>
+
+          <div class="row row-cols-2 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5">
+            <div class="col ml-3 mr-3 border-white border-bottom"></div>
+          </div>
+          <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
+            <div class="col-md-5">
+              <div class="font-weight-bold medium h4">
+                The Manifesto
+              </div>
+              <div class="my-4">
+                We embrace strategies in circular economy and digital social <br />
+                innovation, and foster collaboration between a global network of <br />
+                European and worldwide cities and territories to meet the planetary <br />
+                challenges presented by climate change and social inequalities. <br />
+              </div>
+              <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-white rounded-0 pr-3 pl-3 pt-1 pb-1">See more</button>
+            </div>
+            <div class="col-md-2">
+              <div class="my-3 smaller text-uppercase">Ecological</div>
+              <div class="my-3 smaller text-uppercase">Inclusive</div>
+              <div class="my-3 smaller text-uppercase">Glocalism</div>
+              <div class="my-3 smaller text-uppercase">Locally<br /> Prodcutive</div>
+            </div>
+            <div class="col-md-2">
+              <div class="my-3 smaller text-uppercase">PARTICIPATORY</div>
+              <div class="my-3 smaller text-uppercase">Economic growth <br />& Employment</div>
+              <div class="my-3 smaller text-uppercase">People-Centered</div>
+              <div class="my-3 smaller text-uppercase">Holistic</div>
+            </div>
+            <div class="col-md-2">
+              <div class="my-3 smaller text-uppercase">Open Source <br /> Philosophy</div>
+              <div class="my-3 smaller text-uppercase">Experimental</div>
+            </div>
+
+          </div>
+          <div class="row row-cols-2 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5">
+            <div class="col ml-3 mr-3 border-white border-bottom"></div>
+          </div>
+
+        </div>
+</section>
+
+<!-- background img -->
+<section class="p-5" style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.6) 80%), url('{{ 'assets/images/fab-group-photo.png' | relative_url }}'); background-size: cover; background-position:center;">
+  <div class="p-5" style="height:600px;">
+  </div>
+</section>
+
+<!-- THE COMMITMENT -->
+<section class="bg-blue">
+  <div class="container">
+    <h1 class="display-4 uppercase">Fab city <br/> Collective</h1>
+    <div class="row">
+      {% for item in site.data.latest-news.columns %}
+        <div class="col-md-3">
+          <div class="card bg-yellow border-0">
+            <div class="card-body" >
+              <h5 class="card-title medium">{{ item.date }}</h5>
+              <p class="small">{{ item.place }}</p>
+              <a class="small black uppercase" href="{{ item.link }}" >{{ item.namelink }} &rarr;</a>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+<br />
+<div class="rows">
+{% for item in site.data.latest-news.rows %}
+  <div class="row line">
+      <div class="col-md-3">
+        <a class="medium black fat-letters" href="{{ item.link }}">{{ item.name }}</a>
+      </div>
+      <div class="col-md-2">
+        <a class="small">{{ item.place }}</a>
+      </div>
+      <div class="col-md-2">
+        <a class="small">{{ item.location }}</a>
+      </div>
+      <div class="col-md-2">
+        <a class="small">{{ item.time }}</a>
+      </div>
+      <div class="col-md-2">
+        <a class="small">{{ item.date }}</a>
+      </div>
+      <div class="col-md-1 pt-sm-2 pt-3 pr-1 mr-xs-3 text-right float-right contain">
+        <a class="black arrow" href="{{ item.link }}">&rarr;</a>
+      </div>
+    </div>
+{% endfor %}
+</div>
+</section>
+<div class="borderline dark"></div>
+
+<section>
+  <div class="container blog">
+    <div class="row">
+      <h1 class="display-4 uppercase">Blog</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4">
+      {% for item in site.data.blog.posts limit:4 %}
+      <div class="col-sm blog-item line-top mr-1 ml-1 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4">
+        <a href="{{ item.link }}">
+        <div class="medium black blog-item-title fat-letters ">
+          {{ item.title }}
+        </div>
+          <figure class="pb-xs-2 pt-sm-4 pt-md-3">
+            <figcaption class="small black border-0 figure-caption text-right" >{{ item.date }}</figcaption>
+            <img style="background-image:url('{{ item.image_url }}'); background-size:cover; background-position:center;height:200px;" class="w-100" alt="" />
+          </figure>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+      <div class="mt-3 text-center">
+        <button type="button" class="btn pl-4 pr-4 pb-1 pt-1 small btn-action">More Posts</button>
+      </div>
+  </div>
+</section>
+
+<script>
+//  $(document).ready(function(){
+//    //$("#button").click(function(){
+//      $("#titel").load("demo_test.txt");
+//    //});
+//  });
+</script>
+
+<!-- text with background img -->
+<section  style=" background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ '/assets/images/reinvent-our-cities.png' | relative_url }}'); background-size: cover; background-position:center;">
+  <div class="container-fluid text-center">
+    <div class="h2 white pt-4 pb-4">
+      We need to reinvent our cities and their relationship to people & <br />
+nature by re-localising production so that cities are generative<br />
+rather than extractive, restorative rather than destructive, and<br />
+empowering rather than alienating, where prosperity ourishes, and<br />
+people have purposeful, meaningful work that they enjoy, that<br />
+enables them to use their passion and talent.<br />
+    </div>
+  </div>
+</section>
+
+<!-- Ready to join? -->
+
+<section class="bg-blue">
+  <div class="container-fluid text-left">
+    <div class="h2 white mt-1 ml-xl-5 ml-lg-5 mb-1 ">
+      Is your city ready to join <br />
+      the Fab City network?
+    <div class="float-right text-right">
+      <a class="arrow smaller pt-5 pr-md-5 pr-md-5 white display-3" href="#">&rarr;</a>
+    </div>
+  </div>
+  </div>
+</section>
+
+</body>
+
+
+<!-- Take Action Modal -->
+<div class="modal fade" id="take-action" tabindex="-1" role="dialog" aria-labelledby="take-action" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header con">
+        <h5 class="modal-title h2 text-white uppercase" id="take-action">Take Action</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="dismiss-modal text-white" aria-hidden="true">&times;</span>
+        </button>
+        <div class="borderline"></div>
+      </div>
+      <div class="pt-3 pb-3 fat-letters text-white">
+        Do you want to take part on this? become a member on the Fab City <br/> Network.
+        <br />
+        <br />
+        First, let us know how you are:
+      </div>
+      <div class="pt-3 pb-3 spaced-out">
+        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a City</button>
+        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a person</button>
+        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a government</button>
+      </div>
+    </div>
+  </div>
+</div>

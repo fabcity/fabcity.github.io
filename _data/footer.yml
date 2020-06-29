@@ -2,7 +2,7 @@ pages:
   - name: Community
     link: \#community
   - name: About Us
-    link: \#about-us
+    link: about-us.html
   - name: Resources
     link: \#resources
   - name: Blog

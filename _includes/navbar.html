@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-white">
+ <a class="navbar-brand" href="#"><img class="svg-black" src="assets/images/fabcitylogo-09.svg" width="120px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      {% for item in site.data.navbar %}
+      {% if item.align == "left" %}
+      <a class="nav-item nav-link text-dark" href="{{ item.link }}">{{ item.name }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="navbar-nav ml-auto hidden-xs hidden-md">
+      {% for item in site.data.navbar %}
+      {% if item.align == "right" %}
+      <a class="nav-item nav-link text-dark" href="{{ item.link }}">{{ item.name }}</a>
+      {% endif %}
+      {% endfor %}
+      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/facebook-black.svg' | relative_url }}" /></a>
+      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/twitter-black.svg' | relative_url }}" /></a>
+    </div>
+  </div>
+</nav>
