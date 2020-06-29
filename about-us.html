@@ -75,95 +75,43 @@ title: About Us
   </div>
 </section>
 
-<!-- THE COMMITMENT -->
+<!-- Collective -->
 <section class="bg-blue">
   <div class="container">
-    <h1 class="display-4 uppercase">Fab city <br/> Collective</h1>
-    <div class="row">
-      {% for item in site.data.latest-news.columns %}
-        <div class="col-md-3">
-          <div class="card bg-yellow border-0">
-            <div class="card-body" >
-              <h5 class="card-title medium">{{ item.date }}</h5>
-              <p class="small">{{ item.place }}</p>
-              <a class="small black uppercase" href="{{ item.link }}" >{{ item.namelink }} &rarr;</a>
+    <div class="row row-cols-1 spaced-out">
+    <h1 class="display-4 white uppercase pb-3">Fab city <br/> Collective</h1>
+    </div>
+    <div class="row spaced-out row-cols-6">
+      {% for item in site.data.collective.members %}
+        <div class="col-md-2 pl-0">
+          <div class="rounded-0 border-0 text-center">
+              <img src="{{ item.img }}" alt="{{ item.name }}" class="img-thumbnail rounded-0 p-0 border-0 h-100" style="width:200px;filter:grayscale(100%);">
+              <div class="white text-uppercase text-weight-bold pt-3">{{ item.name }}</div>
+              <h5 class="small text-muted pt-2">{{ item.position }}</h5>
           </div>
         </div>
-    </div>
     {% endfor %}
   </div>
-<br />
-<div class="rows">
-{% for item in site.data.latest-news.rows %}
-  <div class="row line">
-      <div class="col-md-3">
-        <a class="medium black fat-letters" href="{{ item.link }}">{{ item.name }}</a>
-      </div>
-      <div class="col-md-2">
-        <a class="small">{{ item.place }}</a>
-      </div>
-      <div class="col-md-2">
-        <a class="small">{{ item.location }}</a>
-      </div>
-      <div class="col-md-2">
-        <a class="small">{{ item.time }}</a>
-      </div>
-      <div class="col-md-2">
-        <a class="small">{{ item.date }}</a>
-      </div>
-      <div class="col-md-1 pt-sm-2 pt-3 pr-1 mr-xs-3 text-right float-right contain">
-        <a class="black arrow" href="{{ item.link }}">&rarr;</a>
-      </div>
-    </div>
-{% endfor %}
-</div>
-</section>
-<div class="borderline dark"></div>
-
-<section>
-  <div class="container blog">
-    <div class="row">
-      <h1 class="display-4 uppercase">Blog</h1>
-    </div>
-    <div class="row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4">
-      {% for item in site.data.blog.posts limit:4 %}
-      <div class="col-sm blog-item line-top mr-1 ml-1 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4">
-        <a href="{{ item.link }}">
-        <div class="medium black blog-item-title fat-letters ">
-          {{ item.title }}
-        </div>
-          <figure class="pb-xs-2 pt-sm-4 pt-md-3">
-            <figcaption class="small black border-0 figure-caption text-right" >{{ item.date }}</figcaption>
-            <img style="background-image:url('{{ item.image_url }}'); background-size:cover; background-position:center;height:200px;" class="w-100" alt="" />
-          </figure>
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-      <div class="mt-3 text-center">
-        <button type="button" class="btn pl-4 pr-4 pb-1 pt-1 small btn-action">More Posts</button>
-      </div>
   </div>
 </section>
+<!-- <div class="borderline dark"></div> -->
 
-<script>
-//  $(document).ready(function(){
-//    //$("#button").click(function(){
-//      $("#titel").load("demo_test.txt");
-//    //});
-//  });
-</script>
-
-<!-- text with background img -->
-<section  style=" background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ '/assets/images/reinvent-our-cities.png' | relative_url }}'); background-size: cover; background-position:center;">
-  <div class="container-fluid text-center">
-    <div class="h2 white pt-4 pb-4">
-      We need to reinvent our cities and their relationship to people & <br />
-nature by re-localising production so that cities are generative<br />
-rather than extractive, restorative rather than destructive, and<br />
-empowering rather than alienating, where prosperity ourishes, and<br />
-people have purposeful, meaningful work that they enjoy, that<br />
-enables them to use their passion and talent.<br />
+<!-- ROADMAP -->
+<section class="bg-grey">
+  <div class="container-fluid ">
+    <div class="row row-cols-2 ml-5">
+      <div class="col-md-6">
+            <div class="display-4 uppercase ">Roadmap</div>
+          </div>
+          <div class="col-md-6">
+            <div class="my-4">
+              Our Roadmap is unique. Launched in 2011 by the City of Barcelona, it is now in constant <br />
+development thanks to the distributed network of cities, individual advocates, NGOs, <br />
+academics and industry partners. We employ a collective approach of ‘learning-by-doing’ <br />
+to constantly prototype, experiment, succeed and fail in our quest to produce everything <br />
+we consume by 2054.
+            </div>
+          </div>
     </div>
   </div>
 </section>
