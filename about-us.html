@@ -98,23 +98,56 @@ title: About Us
 
 <!-- ROADMAP -->
 <section class="bg-grey">
-  <div class="container-fluid ">
-    <div class="row row-cols-2 ml-5">
+  <div class="container-fluid">
+    <div class="row row-cols-2 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
       <div class="col-md-6">
             <div class="display-4 uppercase ">Roadmap</div>
           </div>
-          <div class="col-md-6">
-            <div class="my-4">
+          <div class="col-md-6 mt-0">
+            <div class="mt-2 mb-3">
               Our Roadmap is unique. Launched in 2011 by the City of Barcelona, it is now in constant <br />
-development thanks to the distributed network of cities, individual advocates, NGOs, <br />
-academics and industry partners. We employ a collective approach of ‘learning-by-doing’ <br />
-to constantly prototype, experiment, succeed and fail in our quest to produce everything <br />
-we consume by 2054.
+              development thanks to the distributed network of cities, individual advocates, NGOs, <br />
+              academics and industry partners. We employ a collective approach of ‘learning-by-doing’ <br />
+              to constantly prototype, experiment, succeed and fail in our quest to produce everything <br />
+              we consume by 2054.
             </div>
           </div>
     </div>
-  </div>
-</section>
+    <div class="row row-cols-1 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
+      <div class="col-md-12">
+    <div class="fadeinout" style="display:inline-block;width:100%;overflow-y:auto; scroll:none;">
+					<ul class="timeline timeline-horizontal">
+            {% for item in site.data.roadmap.events %}
+						<li class="timeline-item">
+              <div class="timeline-badge primary" onclick="ShoworHide()"></div>
+							<div class="timeline-panel" onclick="ShoworHide()">
+								<div class="timeline-heading">
+									<div class="h4 timeline-title text-weight-bold fat-letters pl-3 pr-3 pb-1">{{ item.year }}</div>
+                  <div class="pl-3 pb-1"><small>{{ item.location }}</small></div>
+									<div class="pl-3 pb-2 mr-5 text-uppercase text-wrap"><small>{{ item.title }}</small></div>
+								</div>
+								<div id="{{ item.title }}" class="timeline-body small mr-5 pl-3 pr-5 hidden">
+									<p>{{ item.description }}</p>
+								</div>
+							</div>
+						</li>
+            <script type="text/javascript">
+              function ShoworHide() {
+                var x = document.getElementById("{{ item.title }}");
+                if (x.style.display === "none") {
+                  x.style.display = "block";
+                } else {
+                  x.style.display = "none";
+                }
+              }
+            </script>
+            {% endfor %}
+					</ul>
+        </div>
+				</div>
+      </div>
+				</div>
+  </section>
 
 <!-- Ready to join? -->
 
