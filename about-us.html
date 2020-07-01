@@ -113,16 +113,16 @@ title: About Us
             </div>
           </div>
     </div>
-    <div class="row row-cols-1 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
+    <div class="row w-100 row-cols-1">
       <div class="col-md-12">
-    <div class="fadeinout" style="display:inline-block;width:100%;overflow-y:auto; scroll:none;">
+        <div id="timeline" class="fadeinout" onscroll="scrollPosi()" style="display:inline-block;width:100%;overflow-y:auto;">
 					<ul class="timeline timeline-horizontal">
             {% for item in site.data.roadmap.events %}
-						<li class="timeline-item">
-              <div class="timeline-badge primary" onclick="ShoworHide()"></div>
-							<div class="timeline-panel" onclick="ShoworHide()">
+						<li id="{{ item.number }}" class="timeline-item"> <!-- becomes active -->
+              <div class="timeline-badge primary"></div>
+							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<div class="h4 timeline-title text-weight-bold fat-letters pl-3 pr-3 pb-1">{{ item.year }}</div>
+									<div id="{{ item.title }}" class="h4 timeline-title text-weight-bold fat-letters pl-3 pr-3 pb-1">{{ item.year }}</div>
                   <div class="pl-3 pb-1"><small>{{ item.location }}</small></div>
 									<div class="pl-3 pb-2 mr-5 text-uppercase text-wrap"><small>{{ item.title }}</small></div>
 								</div>
@@ -131,23 +131,68 @@ title: About Us
 								</div>
 							</div>
 						</li>
-            <script type="text/javascript">
-              function ShoworHide() {
-                var x = document.getElementById("{{ item.title }}");
-                if (x.style.display === "none") {
-                  x.style.display = "block";
-                } else {
-                  x.style.display = "none";
-                }
-              }
-            </script>
             {% endfor %}
 					</ul>
         </div>
 				</div>
       </div>
 				</div>
+        <p id="demo"></p>
+        <p id="width"></p>
+        <p id="client"></p>
+        <p id="section"></p>
   </section>
+
+<script type="text/javascript">
+  function scrollPosi() {
+    var elmnt = document.getElementById("timeline");
+    var x = elmnt.scrollLeft;
+    var w = elmnt.scrollWidth;
+    var c = elmnt.clientWidth;
+    var s = x / ((w - c) / 7);
+    // document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px";
+    // document.getElementById ("width").innerHTML = "width: " + w + "px";
+    // document.getElementById ("section").innerHTML = "section: " + s + "px";
+    // document.getElementById ("client").innerHTML = "client: " + c + "px";
+    switch(true) {
+      case (s < 1):
+        document.getElementById("0").classList.add("active");
+        document.getElementById("1").classList.remove("active");
+        break;
+      case (s < 2):
+        document.getElementById("1").classList.add("active");
+        document.getElementById("2").classList.remove("active");
+        document.getElementById("0").classList.remove("active");
+        break;
+      case (s < 3):
+        document.getElementById("2").classList.add("active");
+        document.getElementById("1").classList.remove("active");
+        document.getElementById("3").classList.remove("active");
+        break;
+      case (s < 4):
+        document.getElementById("3").classList.add("active");
+        document.getElementById("2").classList.remove("active");
+        document.getElementById("4").classList.remove("active");
+        break;
+      case (s < 5):
+        document.getElementById("4").classList.add("active");
+        document.getElementById("3").classList.remove("active");
+        document.getElementById("5").classList.remove("active");
+        break;
+      case (s < 6):
+        document.getElementById("5").classList.add("active");
+        document.getElementById("4").classList.remove("active");
+        document.getElementById("6").classList.remove("active");
+        break;
+      case (s <= 7):
+        document.getElementById("6").classList.add("active");
+        document.getElementById("5").classList.remove("active");
+        break;
+      default:
+        break;
+    }
+  }
+</script>
 
 <!-- Ready to join? -->
 

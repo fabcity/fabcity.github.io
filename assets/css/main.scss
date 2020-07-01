@@ -506,6 +506,12 @@ a.white:hover {
   padding: 20px;
   position: relative;
 }
+
+#timeline::-webkit-scrollbar, #timeline::before::-webkit-scrollbar  {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .timeline:before {
   // top: 40px;
   bottom: 0;
@@ -548,26 +554,20 @@ a.white:hover {
   background-color: #1bc28f;
 }
 
-.timeline .timeline-item:hover .timeline-badge {
-  color: #fff;
-  width: 7px;
-  height: 7px;
-  line-height: 52px !important;
-  font-size: 22px;
-  text-align: center;
-  position: absolute;
-  top: 3px;
+.active .timeline-badge{
   background-color: #1bc28f;
   box-shadow: 0px 0px 0px 8px rgba(#1aa179,0.3); // WOOW noice transparent border
-  z-index: 100;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
+  z-index: 400 !important;
 }
+
+.active .timeline-panel .timeline-heading , .active .timeline-panel .timeline-body{
+  z-index: 400 !important;
+  position: relative;
+}
+
 .timeline .timeline-item .timeline-panel {
   position: relative;
-  width: 46%;
+  width: 200px;
   min-height: 300px;
   float: left;
   right: 16px;
@@ -575,21 +575,13 @@ a.white:hover {
 }
 
 .timeline .timeline-item .timeline-panel:before {
-  // position: absolute;
-  // top: 26px;
-  // right: -16px;
   display: inline-block;
-  // border-top: 16px solid transparent;
-  // border-left: 16px solid #777;
-  // border-right: 0 solid #777;
-  // border-bottom: 16px solid transparent;
-  // content: " ";
 }
-.timeline .timeline-item .timeline-panel .timeline-title {
-  margin-top: -10px;
-  padding: 15px 0 0 0;
-  color: inherit;
-  border-top: 1px solid black;
+
+.timeline .timeline-item .timeline-panel {
+    margin-top: 6px;
+    padding: 15px 0 0 0;
+    border-top: 1px solid black;
 }
 
 // .timeline .timeline-item .timeline-panel .timeline-body > p,
@@ -664,7 +656,6 @@ a.white:hover {
   // top: auto;
   bottom: 0px;
   left: 60px;
-
 }
 
 .fadeinout {
@@ -672,11 +663,11 @@ a.white:hover {
 }
 
 .fadeinout::before {
-  background-image: linear-gradient(to right, rgba(#e9ecef, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(#e9ecef, 1));
+  background-image: linear-gradient(to right, rgba(#e9ecef, 1), rgba(#e9ecef, 0), rgba(#e9ecef, 0),  rgba(#e9ecef, 0), rgba(#e9ecef, 1));
   position: absolute;
   z-index: 200;
   bottom: 0;
   height: 100%;
-  width: 98%;
+  width: 100%;
   content: "";
 }
