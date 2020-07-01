@@ -301,6 +301,7 @@ circle.datamaps-bubble:hover {
   background-color: rgb(24, 24, 24);
 }
 
+
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0 transparent !important;
 }
@@ -401,6 +402,10 @@ span.float-right {
 
 .bg-blue {
   background-color: #002578;
+}
+
+.bg-red {
+  background-color: #b0251c;
 }
 
 .card-body {
@@ -670,4 +675,109 @@ a.white:hover {
   height: 100%;
   width: 100%;
   content: "";
+}
+
+.high-lines {
+  line-height: 1.5em !important;
+}
+
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    /* max-width: 20%; */
+}
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        /* max-width: 20%; */
+    }
+}
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+
+.col-1dot5,
+.col-sm-1dot5,
+.col-md-1dot5,
+.col-lg-1dot5,
+.col-xl-1dot5 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-1dot5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 13%;
+    flex: 0 0 13%;
+    /* max-width: 13%; */
+}
+@media (min-width: 540px) {
+    .col-sm-1dot5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 13%;
+        flex: 0 0 13%;
+        /* max-width: 13%; */
+    }
+}
+@media (min-width: 720px) {
+    .col-md-1dot5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 13%;
+        flex: 0 0 13%;
+        max-width: 13%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-1dot5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 13%;
+        flex: 0 0 13%;
+        max-width: 13%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-1dot5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 13%;
+        flex: 0 0 13%;
+        max-width: 13%;
+    }
 }

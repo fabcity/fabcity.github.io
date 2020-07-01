@@ -126,7 +126,7 @@ title: About Us
                   <div class="pl-3 pb-1"><small>{{ item.location }}</small></div>
 									<div class="pl-3 pb-2 mr-5 text-uppercase text-wrap"><small>{{ item.title }}</small></div>
 								</div>
-								<div id="{{ item.title }}" class="timeline-body small mr-5 pl-3 pr-5 hidden">
+								<div id="{{ item.title }}" class="timeline-body small high-lines pt-3 mr-5 pl-3 pr-5 hidden">
 									<p>{{ item.description }}</p>
 								</div>
 							</div>
@@ -193,20 +193,58 @@ title: About Us
     }
   }
 </script>
-
-<!-- Ready to join? -->
-
-<section class="bg-blue">
-  <div class="container-fluid text-left">
-    <div class="h2 white mt-1 ml-xl-5 ml-lg-5 mb-1 ">
-      Is your city ready to join <br />
-      the Fab City network?
+<!-- Collaborators -->
+<section>
+  <div class="container-fluid">
+    <div class="row row-cols-1">
+      <div class="col-md-12 text-center">
+        <div class="display-4 mt-1 mb-1 text-uppercase text-wrap w-100 text-truncate">
+          Collaborators
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-6 align-items-center ml-5">
+      {% for item in site.data.collaborators.logos %}
+      <div class="col-md-1dot5">
+      <!-- <div class="col-2dot4 col-sm-2dot4 col-md-2dot4 col-lg-2dot4 col-xl-2dot4"> -->
+        <a href="{{ item.url }}" target="_blank">
+            <img src="{{ item.logo }}" class="p-3 align-self-center" style="max-width: 8em; filter:grayscale(100%)" />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
     <div class="float-right text-right">
       <a class="arrow smaller pt-5 pr-md-5 pr-md-5 white display-3" href="#">&rarr;</a>
     </div>
   </div>
-  </div>
 </section>
+<section class="bg-red">
+  <div class="container-fluid">
+    <div class="row row-cols-2 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
+      <div class="col-md-6">
+            <div class="display-4 uppercase ">Media Kit</div>
+          </div>
+          <div class="col-md-6 mt-0">
+            <div class="mt-2 mb-3 small white">
+              Our Roadmap is unique. Launched in 2011 by the City of Barcelona, it is now in constant
+              development thanks to the distributed network of cities, individual advocates, NGOs,
+              academics and industry partners. We employ a collective approach of ‘learning-by-doing’
+              to constantly prototype, experiment, succeed and fail in our quest to produce everything
+              we consume by 2054.
+            </div>
+            <button type="button" class="float-right btn pr-lg-4 pl-lg-4 small btn-action">Download All</button>
+          </div>
+        </div>
+        <div class="row row-cols-3 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
+        </div>
+        <div class="row row-cols-3 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
+        </div>
+        <div class="row row-cols-3 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
+        </div>
+    </div>
+
+</section>
+
 
 </body>
 
