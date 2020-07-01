@@ -226,20 +226,18 @@ title: About Us
           </div>
           <div class="col-md-6 mt-0">
             <div class="mt-2 mb-3 small white">
-              Our Roadmap is unique. Launched in 2011 by the City of Barcelona, it is now in constant
-              development thanks to the distributed network of cities, individual advocates, NGOs,
-              academics and industry partners. We employ a collective approach of ‘learning-by-doing’
-              to constantly prototype, experiment, succeed and fail in our quest to produce everything
-              we consume by 2054.
+              Fab City members, cities, regions and countries, agree to commit efforts and
+              resources in order to achieve the 2054 challenge for cities to produce at least
+              50% of the energy, food and products they consume.
             </div>
             <button type="button" class="float-right btn pr-lg-4 pl-lg-4 small btn-action">Download All</button>
           </div>
         </div>
-        <div class="row row-cols-3 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
-        </div>
-        <div class="row row-cols-3 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
-        </div>
-        <div class="row row-cols-3 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
+        <div class="row ml-lg-5 pt-3 ml-xl-5 mr-lg-5 mr-xl-5 spaced-out">
+          {% for item in site.data.media-kit.photos %}
+          <div class="col-md-3 w-100" style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url({{ item.img }}); background-size: cover; background-position:center; height:300px;">
+          </div>
+          {% endfor %}
         </div>
     </div>
 
