@@ -4,7 +4,7 @@ pages:
   - name: About Us
     link: about-us.html
   - name: Resources
-    link: \#resources
+    link: /resources.html
   - name: Blog
     link: \#blog
 social:
