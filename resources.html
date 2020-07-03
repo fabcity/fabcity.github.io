@@ -1,0 +1,65 @@
+---
+layout: default
+title: Resources
+---
+
+<body>
+<!-- First Section -->
+  <section class="bg-green">
+      <br />
+      <div class="container-fluid black">
+        <div class="row d-flex flex-colums row-cols-2 spaced-out mr-xl-4 mr-lg-4">
+          <div class="col-md-5">
+            <div class="display-4 uppercase pl-xl-4 ml-xl-4 ">Resources</div>
+          </div>
+          </div>
+          <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
+            <div class="col-md-5">
+                <div class="border-black border-top pb-4 "></div>
+              <div class="my-4">
+                {{ site.data.resources.text }}
+              </div>
+            </div>
+            <div class="col-md-7">
+              {% for item in site.data.resources.items %}
+              <div class="border-black border-top pb-1"></div>
+                <div class="my-3 medium fat-letters text-uppercase">{{ item.title }}
+                  {% if item.arrow != 'download' %}
+                  <a class="arrow float-right black display-3" href="{{item.link}}">&rarr;</a>
+                  {% endif %}
+                </div>
+              {% if item.text %}
+              <div class="row pt-3 pb-3 spaced-out pr-2">
+              <div class="col-md-5">
+                <div class="my-3 small">
+                  {{ item.text }}
+                </div>
+              </div>
+              {% endif %}
+              {% if item.img %}
+              <div class="col-md-5">
+                <div class="my-3 medium fat-letters text-uppercase">
+                  <img class="w-100" src="{{ item.img }}" />
+                </div>
+              </div>
+              {% endif %}
+              {% if item.arrow == 'download' %}
+                <div class="col-md-1 mt-lg-5 mr-lg-2 d-flex justify-self-end">
+                  <table class="h-100">
+                    <tbody>
+                      <tr>
+                        <td class="align-bottom">
+                          <a class="arrow black border-black border-bottom high-lines" href="{{item.link}}">&darr;</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              {% endif %}
+
+              {% endfor %}
+            </div>
+        </div>
+</section>
+</body>

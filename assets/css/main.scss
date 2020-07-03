@@ -410,6 +410,10 @@ span.float-right {
   background-color: #b0251c;
 }
 
+.bg-green {
+  background-color: #1f9555;
+}
+
 .card-body {
   padding: 1.25rem 1.25rem 1.25rem 0.25rem !important;
 }
@@ -457,6 +461,10 @@ a.white:hover {
 .line-top {
   border-top: 1px solid rgba(0, 0, 0, 1) !important;
   padding: 0.7em 0 0 0 !important;
+}
+
+.border-black {
+    border-color: #000 !important;
 }
 
 .line.row:last-of-type {

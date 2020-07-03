@@ -1,0 +1,30 @@
+text: ' Here you find a selection of the Fab City’s most
+efficient and thoroughly tested tools that you can use
+in your work and as a source of inspiration. Read
+about the methods, see the instructions, and print
+the materials.'
+items:
+  - title: Fab City White Paper
+    link: #
+  - title: Fab City Manifesto
+    link: \#
+  - title: The Full Stack
+    text: 'The purpose of this tool is to explore
+            and understand the ecosystem of
+            your platform, business or project.
+            <br />
+            <br />
+            The aim is to map out the interaction
+            between you and your stakeholders,
+            as well as the interaction directly
+            between your stakeholders (actors),
+            without you being involved'
+    link: \#
+    img: '/assets/images/full-stack.png'
+    arrow: download 
+  - title: The Handbook
+    link: \#
+  - title: Prototype your City
+    link: \#
+  - title: Productive Cities Toolkit
+    link: \#
