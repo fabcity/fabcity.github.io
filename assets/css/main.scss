@@ -6,6 +6,8 @@
 
 * {
   font-family: IBMPlexSans-Regular;
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -478,6 +480,11 @@ a.white:hover {
    font-size: 2em;
 }
 
+.arrow.big {
+   line-height: 0.25em !important;
+   font-size: 4em;
+}
+
 .bg-black {
   background-color: #000;
 }
@@ -512,9 +519,10 @@ a.white:hover {
   position: relative;
 }
 
-#timeline::-webkit-scrollbar, #timeline::before::-webkit-scrollbar  {
+#timeline::-webkit-scrollbar, #timeline {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  display: none;
 }
 
 .timeline:before {
@@ -681,6 +689,14 @@ a.white:hover {
   line-height: 1.5em !important;
 }
 
+.clickable {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
 .col-2dot4,
 .col-sm-2dot4,
 .col-md-2dot4,
@@ -738,7 +754,7 @@ a.white:hover {
 .col-lg-1dot5,
 .col-xl-1dot5 {
     position: relative;
-    width: 100%;
+    // width: 100%;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;

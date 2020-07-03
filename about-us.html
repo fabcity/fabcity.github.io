@@ -9,11 +9,11 @@ title: About Us
   <section class="bg-black">
       <br />
       <div class="container-fluid white">
-        <div class="row row-cols-2 spaced-out">
+        <div class="row row-cols-2 spaced-out mr-xl-4">
           <div class="col-md-5">
-            <div class="display-4 uppercase pl-4 ml-4 ">About <br/> Fab City</div>
+            <div class="display-4 uppercase pl-xl-4 ml-xl-4 ">About <br/> Fab City</div>
           </div>
-          <div class="col-md-6 ml-4 mr-4">
+          <div class="col-md-6 ml-xl-4 mr-xl-4">
             <div class="my-4">
               Fab City Global Initiative is a collective of civic leaders, makers, urbanists and innovators <br />
               working on shifting the industrial urban paradigm to one that better supports life on Earth. A<br />
@@ -135,25 +135,41 @@ title: About Us
 					</ul>
         </div>
 				</div>
+        <div class="row w-100 row-cols-2 ml-0 p-3 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5 d-flex justify-content-around">
+          <div class="col-md-6 col-xs-1 col">
+            <a class="arrow black big clickable" onclick="toRight()">&larr;</a>
+          </div>
+          <div class="col-md-6 col-xs-1 col float-right text-right">
+            <a class="arrow black big clickable" onclick="toLeft()">&rarr;</a>
+          </div>
+        </div>
       </div>
-				</div>
-        <p id="demo"></p>
-        <p id="width"></p>
-        <p id="client"></p>
-        <p id="section"></p>
-  </section>
+    </div>
+</section>
 
 <script type="text/javascript">
+  function toLeft() {
+    var elmnt = document.getElementById("timeline");
+    var x = elmnt.scrollLeft;
+    var w = elmnt.scrollWidth;
+    var c = elmnt.clientWidth;
+    var s = (w - c) / 6 ;
+    elmnt.scrollLeft += s;
+  }
+  function toRight() {
+    var elmnt = document.getElementById("timeline");
+    var x = elmnt.scrollLeft;
+    var w = elmnt.scrollWidth;
+    var c = elmnt.clientWidth;
+    var s = (w - c) / -7;
+    elmnt.scrollLeft += s;
+  }
   function scrollPosi() {
     var elmnt = document.getElementById("timeline");
     var x = elmnt.scrollLeft;
     var w = elmnt.scrollWidth;
     var c = elmnt.clientWidth;
     var s = x / ((w - c) / 7);
-    // document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px";
-    // document.getElementById ("width").innerHTML = "width: " + w + "px";
-    // document.getElementById ("section").innerHTML = "section: " + s + "px";
-    // document.getElementById ("client").innerHTML = "client: " + c + "px";
     switch(true) {
       case (s < 1):
         document.getElementById("0").classList.add("active");
@@ -193,6 +209,7 @@ title: About Us
     }
   }
 </script>
+
 <!-- Collaborators -->
 <section>
   <div class="container-fluid">
@@ -203,7 +220,7 @@ title: About Us
         </div>
       </div>
     </div>
-    <div class="row row-cols-6 align-items-center ml-5">
+    <div class="row row-cols-6 align-self-center ml-xl-5 mr-xl-5 spaced-out">
       {% for item in site.data.collaborators.logos %}
       <div class="col-md-1dot5">
       <!-- <div class="col-2dot4 col-sm-2dot4 col-md-2dot4 col-lg-2dot4 col-xl-2dot4"> -->
@@ -233,9 +250,9 @@ title: About Us
             <button type="button" class="float-right btn pr-lg-4 pl-lg-4 small btn-action">Download All</button>
           </div>
         </div>
-        <div class="row ml-lg-5 pt-3 ml-xl-5 mr-lg-5 mr-xl-5 spaced-out">
+        <div class="row ml-lg-5 pt-3 ml-xl-5 mr-lg-5 mr-xl-5 d-flex justify-content-between">
           {% for item in site.data.media-kit.photos %}
-          <div class="col-md-3 w-100" style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url({{ item.img }}); background-size: cover; background-position:center; height:300px;">
+          <div class="col-md-3 m-2 " style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url({{ item.img }}); background-size: cover; background-position:center; height:300px;">
           </div>
           {% endfor %}
         </div>
