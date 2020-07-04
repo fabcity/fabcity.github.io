@@ -3,60 +3,54 @@ layout: home
 title: Fab City Global
 ---
 
-<div class="background-intro">
-<div class="dark-gradient">
-<nav class="navbar navbar-expand-lg navbar-transparent">
- <a class="navbar-brand" href="{{ '/' | relative_url }}"><img class="svg-white" src="assets/images/fabcitylogo-07.svg" width="120px" /></a>
+<div class="background-intro" style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;">
+<nav class="navbar navbar-expand-lg navbar-transparent ">
+ <a class="navbar-brand pl-5" href="{{ '/' | relative_url }}"><img class="svg-white" src="assets/images/fabcitylogo-07.svg" width="120px" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       {% for item in site.data.navbar %}
-      {% if item.align == "left" %}
-      <a class="nav-item nav-link" href="{{ item.link }}">{{ item.name }}</a>
-      {% endif %}
+      <a class="nav-item nav-link p-3" href="{{ item.link }}">{{ item.name }}</a>
       {% endfor %}
     </div>
-    <div class="navbar-nav ml-auto hidden-xs hidden-md">
-      {% for item in site.data.navbar %}
-      {% if item.align == "right" %}
-      <a class="nav-item nav-link" href="{{ item.link }}">{{ item.name }}</a>
-      {% endif %}
-      {% endfor %}
+    <div class="navbar-nav ml-auto pr-5 hidden-xs hidden-md">
+      <button type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#take-action">
+        Take Action
+      </button>
       <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/facebook.svg' | relative_url }}" /></a>
       <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/twitter.svg' | relative_url }}" /></a>
     </div>
   </div>
 </nav>
 
-
 {% include countdown.html %}
-<!-- <header>
-<div class="container-fluid pr-auto pl-auto">
-  <div class="borderline"></div>
-    <div class="row spaced-out">
-      <div class="col-xs-12 col-md-6 col-lg-8">
-          <div class="pl-2 row text-center row-cols-5 countdown" id="countdown"></div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 ">
-        <div class="d-inline-flex flex-column">
-            <h5 class="pt-5 pb-0 h-100 text-white">Until cities produce <br /> everything they consume.</h5>
-        </div>
-      </div>
-      <div class="m-3 col-md-2 take-action mx-auto d-block">
-          <button type="button" class="w-100 btn btn-primary take-button float-right" data-toggle="modal" data-target="#take-action">
-            Take Action
-          </button>
-      </div>
-      </div>
-    <div class="borderline"></div>
+<div class="ml-xl-5 ml-lg-5 w-50 position-absolute">
+  <table class="h-100">
+    <tbody>
+      <tr>
+        <td class="align-bottom">
+  <div class="display-4 text-uppercase white">
+    Fab City Summit
   </div>
-</header> -->
+  <div class="my-3 high-lines white">
+    Public Institutions, Industry and Society
+    meet in Paris to define the path towards the
+    future of Productive Cities
+  </div>
+  <button type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#get-tickets">
+    Get Your tickets now
+  </button>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-<!-- end gradient -->
 <!-- end backdrop -->
 </div>
+
+
 
 <body>
   <div class="borderline dark"></div>
@@ -64,12 +58,12 @@ title: Fab City Global
   <section>
       <br />
       <div class="container">
-        <div class="text-center display-4 uppercase">Locally produced, <br/> Globally connected</div>
-        <div class="text-center my-4">
+        <div class="text-center display-4 fat-letters">Locally produced, <br/> Globally connected</div>
+        <div class="text-center my-4 high-lines">
           Fab City Global Initiative is a collective of civic leaders, makers, urbanists and innovators working on shifting the industrial <br/>
             urban paradigm to one that better supports life on Earth. A global collaboration with a distributed network of cities <br />
               prototypes local approaches to meet the challenge of producing everything the city consumes by 2054. </div>
-          </div>
+      </div>
 </section>
 
 <!-- Second section / Map -->
@@ -82,13 +76,13 @@ title: Fab City Global
 <div class="w-100 global pt-5 pr-5 pl-5">
   <div class="row">
     <div class="col-md-6 z-under">
-      <div class="white display-4 uppercase">The Fab City<br/> Network</div>
+      <div class="white display-4 text-uppercase">The Network</div>
     </div>
     <div class="col-md-6 z-under">
-      <div class="pt-3 pr-3 text-white">
-        34 cities who have taken up the challenge to move towards 100% local production by 2054. <br />
-        These cities from across the globe engage in action-research, developing local prototypes for <br />
-        the Fab City. Collectively these cities comprise a global-action network. <br />
+      <div class="pt-3 pr-3 text-white high-lines">
+        34 cities who have taken up the challenge to move towards 100% local production by 2054.
+        These cities from across the globe engage in action-research, developing local prototypes for
+        the Fab City. Collectively these cities comprise a global-action network.
       </div>
     </div>
   </div>

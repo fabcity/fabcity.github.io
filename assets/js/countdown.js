@@ -18,7 +18,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = "<div class=\"col\"><div class=\"cnums\">" + years + "</div><br/><div class=\"uppercase h3 \">years</div></div> <div class=\"col\"><div class=\"cnums\">" + days + "</div><br/><div class=\"uppercase h3\">days</div></div> <div class=\"col\"><div class=\"cnums\">" + hours + "</div><br/><div class=\"uppercase h3 \">hours</div></div><div class=\"col\"><div class=\"cnums\">" + minutes + "</div><br/><div class=\"uppercase h3\">minutes</div></div><div class=\"col\"><div class=\"cnums\">" + seconds + "</div><br/><div class=\"uppercase h3\">seconds</div></div>";
+  document.getElementById("countdown").innerHTML = "<div class=\"col\"><div class=\"cnums\">" + years + "</div><div class=\"text-uppercase h3 \">years</div></div> <div class=\"col\"><div class=\"cnums\">" + days + "</div><div class=\"text-uppercase h3\">days</div></div> <div class=\"col\"><div class=\"cnums\">" + hours + "</div><div class=\"text-uppercase h3 \">hours</div></div><div class=\"col\"><div class=\"cnums\">" + minutes + "</div><div class=\"text-uppercase h3\">minutes</div></div><div class=\"col\"><div class=\"cnums\">" + seconds + "</div><div class=\"text-uppercase h3\">seconds</div></div>";
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
