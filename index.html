@@ -3,9 +3,9 @@ layout: home
 title: Fab City Global
 ---
 
-<div class="background-intro" style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;">
+<div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;">
 <nav class="navbar navbar-expand-lg navbar-transparent ">
- <a class="navbar-brand pl-5" href="{{ '/' | relative_url }}"><img class="svg-white" src="assets/images/fabcitylogo-07.svg" width="120px" /></a>
+ <a class="navbar-brand pl-xl-5 pl-lg-5" href="{{ '/' | relative_url }}"><img class="svg-white" src="assets/images/fabcitylogo-07.svg" width="120px" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,28 +26,23 @@ title: Fab City Global
 </nav>
 
 {% include countdown.html %}
-<div class="ml-xl-5 ml-lg-5 w-50 position-absolute">
-  <table class="h-100">
-    <tbody>
-      <tr>
-        <td class="align-bottom">
+
+<div class="container-fluid h-50 mt-5 mt-xl-4 mt-lg-4 d-flex align-items-center">
+<div class="ml-xl-5 ml-lg-5">
   <div class="display-4 text-uppercase white">
     Fab City Summit
   </div>
   <div class="my-3 high-lines white">
-    Public Institutions, Industry and Society
-    meet in Paris to define the path towards the
+    Public Institutions, Industry and Society <br class="d-none d-sm-block" />
+    meet in Paris to define the path towards the <br class="d-none d-sm-block" />
     future of Productive Cities
   </div>
   <button type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#get-tickets">
     Get Your tickets now
   </button>
-</td>
-</tr>
-</tbody>
-</table>
 </div>
 <!-- end backdrop -->
+</div>
 </div>
 
 
@@ -57,13 +52,15 @@ title: Fab City Global
 <!-- First Section -->
   <section>
       <br />
-      <div class="container">
+      <div class="container-fluid">
         <div class="text-center display-4 fat-letters">Locally produced, <br/> Globally connected</div>
-        <div class="text-center my-4 high-lines">
-          Fab City Global Initiative is a collective of civic leaders, makers, urbanists and innovators working on shifting the industrial <br/>
-            urban paradigm to one that better supports life on Earth. A global collaboration with a distributed network of cities <br />
-              prototypes local approaches to meet the challenge of producing everything the city consumes by 2054. </div>
-      </div>
+          <div class="text-center my-4 high-lines">
+            Fab City Global Initiative is a collective of civic leaders, makers,
+            urbanists and innovators working on shifting the industrial
+            urban paradigm to one that better supports life on Earth.
+          </div>
+        </div>
+
 </section>
 
 <!-- Second section / Map -->
@@ -80,9 +77,10 @@ title: Fab City Global
     </div>
     <div class="col-md-6 z-under">
       <div class="pt-3 pr-3 text-white high-lines">
-        34 cities who have taken up the challenge to move towards 100% local production by 2054.
-        These cities from across the globe engage in action-research, developing local prototypes for
-        the Fab City. Collectively these cities comprise a global-action network.
+        34 cities who have taken up the challenge to move
+        towards 100% local production by 2054. These cities
+        from across the globe engage in action- research,
+        developing local prototypes for the Fab City.
       </div>
     </div>
   </div>
@@ -90,40 +88,6 @@ title: Fab City Global
 <div class="container-fluid dark-bg">
      <div id="container" class="ml-1 ml-xs-1 ml-md-5 ml-lg-5 ml-xl-5 mr-1 mr-xs-1 mr-md-5 mr-lg-5 mr-xl-5 container-fluid worldmap"></div>
 </div>
-
-<!-- <section>
-  <div class="container align-items-center">
-        <div class="row">
-            {% if site.data.global-initiative.hassmalltitle == true %}
-            <div class="col-6 col-sm-4">
-                <h3>{{ site.data.global-initiative.smalltitle }}</h3>
-                {% if site.data.global-initiative.hasdescription == true %}
-                <p class="section-description">{{ site.data.global-initiative.description }}</p>
-            </div>
-            {% endif %}
-                <div class="col-6 col-sm-4">
-                    <ul class="list-unstyled text-right">
-                        {% for city in site.data.global-initiative.cities %}
-                             {% if city.place == 'left' %}
-                                <li class=""><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-4">
-                    <ul class="list-unstyled">
-                    {% for city in site.data.global-initiative.cities %}
-                        {% if city.place == 'right' %}
-                            <li class=""><a class="" data-toggle="collapse" href="#{{ city.id }}" role="button" aria-expanded="false" aria-controls="{{ city.id }}">{{ city.name }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            {% endif %}
-        </div>
-
-  </section> -->
 
         <script type="text/javascript">
                 var bombMap = new Datamap({
@@ -163,13 +127,13 @@ title: Fab City Global
                 // return ['<div type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"',
                 // 'data-content="And heres some amazing content. Its very engaging. Right?">Click to toggle popover</div>'];
                 return ['<div id="popup" class=\"card map popup\">',
-                  '<div class=\"card-body map\">',
-                  '<h5 class=\"card-title uppercase map\">' + data.city,
+                  '<div class=\"mb-3 map\">',
+                  '<div class=\" h4 medium pl-3 pr-3 pt-3 card-title fat-letters map\">' + data.city,
                   '<span class=\"float-right dismiss\" onclick=\"d3.selectAll(\'.popup\').style(\'display\', \'none\');">&times;</span>',
-                  '</h5>',
-                  '<div class="borderline dark thin"></div>',
-                  '<p class=\"pt-1 card-text\">' + data.significance +'</p>',
-                  '<a href=\"' + data.link + '\" class="btn btn-primary map float-right">See more...</a>',
+                  '</div>',
+                  '<div class="borderline dark w-100 thin"></div>',
+                  '<p class=\"p-3 card-text\">' + data.significance +'</p>',
+                  '<a href=\"' + data.link + '\" class="p-3 black map">Read more &rarr;</a>',
                   '</div>',
                   '</div>'].join('');
               }
@@ -177,59 +141,42 @@ title: Fab City Global
         </script>
 
 <!-- GLOBAL CONTEXT -->
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 pb-3 pb-sm-3 ">
-          <h1 class="display-4 uppercase">Global <br /> Context </h1>
-          <p class="lead fat-letters">
+    <div class="row row-cols-2 m-0  w-100 h-100">
+      <div class="col-md-6 p-0">
+          <img src="assets/images/global-context.png" class="w-100" alt="">
+      </div>
+      <div class="col-md-6 p-5">
+          <h1 class="display-4 light-letters text-weight-light text-uppercase">Global Context </h1>
+          <p class="lead fat-letters medium">
             In an ever-changing world innovation
             <br />
             is not an option, it is a necessity.</p>
-            <p> Climate change and social exclusion require us to reinvent the fundamental <br/>
+            <p class="small high-lines"> Climate change and social exclusion require us to reinvent the fundamental <br/>
               systems which we depend upon, a task which requires courage, coherence and <br />
               long-term thinking. <br />
               The rate at which humans consume planetary resources is putting the systems of <br />
               our planet and ourselves at risk. In order to revert the consequences of rapid <br />
               urbanization, we need a deep transformation of how we organize production and <br />
               consumption in cities.</p>
-        <button type="button" class="btn btn-action pl-4 pr-4">Whitepaper</button>
-      </div>
-      <div class="col-md-6">
-        <figure class="figure">
-          <img src="assets/images/global-context.png" class="figure-img img-fluid" alt="...">
-        </figure>
+        <button type="button" class="btn btn-infill pl-3 pr-3 text-uppercase">Read more</button>
       </div>
     </div>
-  </div>
-</section>
 <!-- THE COMMITMENT -->
-<section class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <!-- <div class="crop1"> -->
-          <figure class="figure">
-              <img src="assets/images/the-commitment.png" class="figure-img img-fluid mh-50" alt="...">
-            </figure>
-            <!-- </div> -->
+    <div class="row h-100 w-100 p-0 m-0">
+      <div class="col-md-6 p-5">
+          <h1 class="display-4 light-letters uppercase p-0" style="margin-top: -10px;">THE FAB CITY <br /> COMMITMENT</h1>
+            <p class="small high-lines"> Fab City members, cities, regions and countries, agree to commit efforts and
+              resources in order to achieve the 2054 challenge for cities to produce at least
+              50% of the energy, food and products they consume, and to deploy circular
+              economy strategies for the relocalisation of production, and the technological
+              empowerment of citizens.
+            </p>
+        <button type="button" class="btn btn-infill pl-3 pr-3 text-uppercase">Start the commitment</button>
       </div>
-      <div class="col-md-6">
-          <h1 class="display-4 uppercase" style="margin-top: -10px;">The Commitment </h1>
-            <p> Fab City members, cities, regions and countries, agree to commit efforts and <br />
-              resources in order to achieve the 2054 challenge for cities to produce at least 50% <br />
-              of the energy, food and products they consume, and to deploy circular economy<br />
-              strategies for the relocalisation of production, and the technological empowerment<br />
-              of citizens.<br /><br />
-              The core Fab City strategy is development of a global network of cities that are part<br />
-              of a sustainable ecosystem of production and knowledge: from the 3d printer at<br />
-              home, to the neighborhood Fab Lab, to the city factory to global production<br />
-              infrastructure.</p>
-        <button type="button" class="btn btn-action pl-4 pr-4">Handbook</button>
+      <div class="col-md-6 p-0 m-0">
+          <img src="assets/images/the-fab-city-commitment.png" class=" w-100 p-0" alt="...">
       </div>
     </div>
-  </div>
-</section>
 <!-- LATEST NEWS -->
 <div class="borderline dark"></div>
 <section class="bg-yellow">
