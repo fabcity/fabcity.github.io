@@ -2,7 +2,6 @@
 layout: home
 title: Fab City Global
 ---
-
 <div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;">
 <nav class="navbar navbar-expand-lg navbar-transparent ">
  <a class="navbar-brand pl-xl-5 pl-lg-5" href="{{ '/' | relative_url }}"><img class="svg-white" src="assets/images/fabcitylogo-07.svg" width="120px" /></a>
@@ -177,78 +176,28 @@ title: Fab City Global
           <img src="assets/images/the-fab-city-commitment.png" class=" w-100 p-0" alt="...">
       </div>
     </div>
-<!-- LATEST NEWS -->
+<!-- Upcoming -->
 <div class="borderline dark"></div>
 <section class="bg-yellow">
-  <div class="container">
-    <h1 class="display-4 uppercase">Latest News</h1>
+  <div class="container-fluid">
+    <h1 class="display-4 fat-letters ">Upcoming</h1>
     <div class="row">
       {% for item in site.data.latest-news.columns %}
         <div class="col-md-3">
-          <div class="card bg-yellow border-0">
-            <div class="card-body" >
-              <h5 class="card-title medium">{{ item.date }}</h5>
-              <p class="small">{{ item.place }}</p>
-              <a class="small black uppercase" href="{{ item.link }}" >{{ item.namelink }} &rarr;</a>
+          <div class="card rounded-0 border-0">
+            <div class="card-body">
+              <div class="small">{{ item.date }} <div class="float-right small">&rarr; {{ item.place }}</div></div>
+              <h5 class="card-title">{{ item.title }}</h5>
+              <a class="small black uppercase" href="{{ item.link }}" >{{ item.namelink }}</a>
           </div>
         </div>
     </div>
     {% endfor %}
   </div>
 <br />
-<div class="rows">
-{% for item in site.data.latest-news.rows %}
-  <div class="row line">
-      <div class="col-md-3">
-        <a class="medium black fat-letters" href="{{ item.link }}">{{ item.name }}</a>
-      </div>
-      <div class="col-md-2">
-        <a class="small">{{ item.place }}</a>
-      </div>
-      <div class="col-md-2">
-        <a class="small">{{ item.location }}</a>
-      </div>
-      <div class="col-md-2">
-        <a class="small">{{ item.time }}</a>
-      </div>
-      <div class="col-md-2">
-        <a class="small">{{ item.date }}</a>
-      </div>
-      <div class="col-md-1 pt-sm-2 pt-3 pr-1 mr-xs-3 text-right float-right contain">
-        <a class="black arrow" href="{{ item.link }}">&rarr;</a>
-      </div>
-    </div>
-{% endfor %}
-</div>
 </section>
 <div class="borderline dark"></div>
-<!-- BLOG -->
-<!-- <section>
-  <div class="container blog">
-    <div class="row">
-      <h1 class="display-4 uppercase">Blog</h1>
-    </div>
-    <div class="row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4"> -->
-      <!-- Blog CONTENT -->
-      <!-- {% for item in site.data.blog.posts limit:4 %}
-      <div class="col-sm blog-item line-top mr-1 ml-1 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4">
-        <a href="{{ item.link }}">
-        <div class="medium black blog-item-title fat-letters ">
-          {{ item.title }}
-        </div>
-          <figure class="pb-xs-2 pt-sm-4 pt-md-3">
-            <figcaption class="small black border-0 figure-caption text-right" >{{ item.date }}</figcaption>
-            <img style="background-image:url('{{ item.image_url }}'); background-size:cover; background-position:center;height:200px;" class="w-100" alt="" />
-          </figure>
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-      <div class="mt-3 text-center">
-        <button type="button" class="btn pl-4 pr-4 pb-1 pt-1 small btn-action">More Posts</button>
-      </div>
-  </div>
-</section> -->
+
 <!-- BLOG FROM API -->
 <section>
   <div class="container blog">
