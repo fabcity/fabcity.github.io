@@ -304,8 +304,7 @@ section {
   position: relative;
   width: 80%;
   height: 700px;
-  overflow: hidden;
-
+  // overflow: hidden;
 }
 
 path.datamaps-subunit {
@@ -710,7 +709,8 @@ a.white:hover {
   display: table-cell;
   min-height: 400px;
   width: 20%;
-  min-width: 320px;
+  min-width: 280px;
+  // min-width: 320px; // default
   float: none !important;
   padding-left: 0px;
   // padding-right: 20px;

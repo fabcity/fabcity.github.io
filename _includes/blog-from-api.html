@@ -1,0 +1,62 @@
+<!-- BLOG FROM API -->
+<section>
+  <div class="container blog ml-xs-2 mr-xs-2">
+    <div class="row">
+      <h1 class="h1 fat-letters pb-xl-4">Blog</h1>
+    </div>
+    <div id="blog">
+<!-- BLOG CONTENT -->
+    </div>
+      <div class="mt-3 text-center">
+        <button type="button" href="https://blog.fab.city/feed" class="btn pl-4 pr-4 pb-1 pt-1 small btn-action">More Posts</button>
+      </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+    var content = document.getElementById('blog');
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function(){
+        if (xhr.readyState==4 && xhr.status==200)
+        {
+            var data = JSON.parse(xhr.responseText);
+            var itemsContainer = document.createElement('DIV');
+            itemsContainer.setAttribute('class' , 'row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4');
+            if(data.status == 'ok'){
+                for( var i=0, t=4 ; i < t ; ++i ){
+                    var item = data.items[i];
+                    var itemImageContainer = document.createElement('FIGURE');
+                    var itemContainer = document.createElement('DIV');
+                    var itemLinkElement = document.createElement('A');
+                    var itemTitleElement = document.createElement('DIV');
+                    var itemImageElement = document.createElement('IMG');
+                    itemImageElement.setAttribute('src' , item.thumbnail);
+                    itemImageElement.setAttribute('class' , 'w-100');
+                    itemImageElement.setAttribute('style' , 'display:block; height:150px;');
+                    itemLinkElement.setAttribute('href' , item.link);
+                    itemTitleElement.setAttribute('class' , 'black blog-item-title medium-lines');
+                    itemTitleElement.innerText = item.title;
+                    itemImageContainer.setAttribute('class' , 'pb-xs-2 pt-sm-4 pt-xl-5 pt-md-3');
+                    itemContainer.setAttribute('class' , 'col-sm blog-item line-top mr-1 ml-1 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4');
+                    itemImageContainer.appendChild(itemImageElement);
+                    itemLinkElement.appendChild(itemTitleElement);
+                    itemLinkElement.appendChild(itemImageContainer);
+                    itemContainer.appendChild(itemLinkElement);
+                    // itemContainer.appendChild(itemLinkElement);
+                    // note : make sure the content is XSS safe before using innerHTML
+                    itemsContainer.appendChild(itemContainer);
+                }
+                content.appendChild(itemsContainer);
+            }
+        }
+    };
+    xhr.open(
+        'GET',
+        'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.fab.city%2Ffeed',
+        true
+    );
+    xhr.send();
+
+</script>

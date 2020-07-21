@@ -28,7 +28,7 @@ title: Fab City Global
 
 <div class="container-fluid h-50 mt-5 mt-xl-4 mt-lg-4 d-flex align-items-center">
 <div class="ml-xl-5 ml-lg-5">
-  <div class="display-4 text-uppercase white">
+  <div class="h1 text-uppercase white">
     Fab City Summit
   </div>
   <div class="my-3 high-lines white">
@@ -49,18 +49,17 @@ title: Fab City Global
 <body>
   <div class="borderline dark"></div>
 <!-- First Section -->
-  <section>
-      <br />
-      <div class="container-fluid">
-        <div class="text-center display-4 fat-letters">Locally produced, <br/> Globally connected</div>
-          <div class="text-center my-4 high-lines">
-            Fab City Global Initiative is a collective of civic leaders, makers,
-            urbanists and innovators working on shifting the industrial
-            urban paradigm to one that better supports life on Earth.
-          </div>
-        </div>
-
-</section>
+ <section>
+  <br />
+  <div class="container-fluid">
+    <div class="text-center h1 fat-letters">Locally produced, <br/> Globally connected</div>
+      <div class="text-center my-4 high-lines text-wrap">
+        Fab City Global Initiative is a collective of civic leaders, makers,
+        urbanists and innovators working on shifting the industrial
+        urban paradigm to one that better supports life on Earth.
+      </div>
+    </div>
+  </section>
 
 <!-- Second section / Map -->
 
@@ -72,7 +71,7 @@ title: Fab City Global
 <div class="w-100 global pt-5 pr-5 pl-5">
   <div class="row">
     <div class="col-md-6 z-under">
-      <div class="white display-4 text-uppercase">The Network</div>
+      <div class="white h1 text-uppercase">The Network</div>
     </div>
     <div class="col-md-6 z-under">
       <div class="pt-3 pr-3 text-white high-lines">
@@ -115,7 +114,7 @@ title: Fab City Global
                   date: '{{ city.joined }}',
                   latitude: '{{ city.latitude }}',
                   longitude: '{{ city.longitude }}',
-                  link: '#',
+                  link: '{{ city.webpresence }}',
                 },
           {% endfor %}
               ];
@@ -125,7 +124,7 @@ title: Fab City Global
               popupTemplate: function (geo, data) {
                 // return ['<div type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"',
                 // 'data-content="And heres some amazing content. Its very engaging. Right?">Click to toggle popover</div>'];
-                return ['<div id="popup" class=\"card map popup\">',
+                return ['<div id="popup" class=\"card map popup\" style="min-width:250px;position:absolute; z-index:3000;">',
                   '<div class=\"mb-3 map\">',
                   '<div class=\" h4 medium pl-3 pr-3 pt-3 card-title fat-letters map\">' + data.city,
                   '<span class=\"float-right dismiss\" onclick=\"d3.selectAll(\'.popup\').style(\'display\', \'none\');">&times;</span>',
@@ -162,9 +161,9 @@ title: Fab City Global
     </div>
 <!-- THE COMMITMENT -->
     <div class="row h-100 w-100 p-0 m-0">
-      <div class="col-md-6 p-1 pb-2 p-xl-5">
-          <h1 class="display-4 light-letters p-0 text-wrap" style="margin-top: -10px;">THE FAB CITY COMMITMENT</h1>
-            <p class="small high-lines"> Fab City members, cities, regions and countries, agree to commit efforts and
+        <div class="col-md-6 p-1 pb-2 p-xl-5">
+            <h1 class="display-4 light-letters p-0 text-wrap" style="margin-top: -10px;">THE FAB CITY COMMITMENT</h1>
+            <p class="small high-lines text-wrap"> Fab City members, cities, regions and countries, agree to commit efforts and
               resources in order to achieve the 2054 challenge for cities to produce at least
               50% of the energy, food and products they consume, and to deploy circular
               economy strategies for the relocalisation of production, and the technological
@@ -182,7 +181,7 @@ title: Fab City Global
 <!-- Upcoming -->
 <!-- <section class="bg-yellow">
   <div class="container-fluid">
-    <h1 class="display-4 fat-letters pb-xl-4">Upcoming</h1>
+    <h1 class="h4 fat-letters pb-xl-4">Upcoming</h1>
     <div class="row">
       {% for item in site.data.upcoming %}
         <div class="col-md-3">
@@ -206,8 +205,20 @@ title: Fab City Global
 <!-- Upcoming scrollbar -->
 <section class="bg-yellow">
   <div class="container">
-    <div class="row row-cols-2 ml-3 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
-      <h1 class="display-4 fat-letters pb-xl-4">Upcoming</h1>
+    <div class="row spaced-out row-cols-2 ml-3 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
+      <div class="col-6 pl-0">
+        <h1 class="h1 fat-letters pb-xl-4 text-left">Upcoming</h1>
+      </div>
+      <div class="col d-block d-sm-none">
+        <div class="row row-cols-2 spaced-out float-right pr-3">
+          <div class="col-3">
+            <a class="arrow black big clickable align-bottom" onclick="toRight_upcoming()">&#8249;</a>
+          </div>
+          <div class="col-3 float-right text-right">
+            <a class="arrow black big clickable align-bottom" onclick="toLeft_upcoming()">&#8250;</a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row w-100 row-cols-1 ml-1 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
       <div class="col-md-12">
@@ -215,14 +226,15 @@ title: Fab City Global
 					<ul class="timeline timeline-horizontal">
             {% for item in site.data.upcoming %}
 						    <li id="{{ item.number }}" class="timeline-item"> <!-- becomes active -->
-                  <div class="card rounded-0 border-0 h-100" style="max-width:265px">
+                  <div class="card rounded-0 border-0 h-100" style="max-width:200px">
                     <div class="m-3">
                       <div class="border-bottom border-1 border-black mb-2"></div>
                       <div class="small">{{ item.date }} <div class="float-right small">&rarr; {{ item.place }}</div></div>
-                      <a class="black medium-lines text-wrap" href="{{ item.link }}" height="50px" ><div class="pt-3">{{ item.namelink }}</div></a>
+                      <a class="black medium-lines text-wrap" href="{{ item.link }}" height="50px" ><div class="pt-3">{{ item.namelink }}</div>
                       <div class="pt-3">
                         <img src="{{ item.image }}"  style="display:block;height:150px;max-width:240px" class="w-100" alt="" />
                       </div>
+                      </a>
                   </div>
                 </div>
                 </li>
@@ -260,115 +272,132 @@ title: Fab City Global
     var s = (w - c) / -7;
     elmnt.scrollLeft += s;
   }
-  function scrollPosi_upcoming() {
-    var elmnt = document.getElementById("upcoming");
-    var x = elmnt.scrollLeft;
-    var w = elmnt.scrollWidth;
-    var c = elmnt.clientWidth;
-    var s = x / ((w - c) / 7);
-    switch(true) {
-      case (s < 1):
-        document.getElementById("0").classList.add("active");
-        document.getElementById("1").classList.remove("active");
-        break;
-      case (s < 2):
-        document.getElementById("1").classList.add("active");
-        document.getElementById("2").classList.remove("active");
-        document.getElementById("0").classList.remove("active");
-        break;
-      case (s < 3):
-        document.getElementById("2").classList.add("active");
-        document.getElementById("1").classList.remove("active");
-        document.getElementById("3").classList.remove("active");
-        break;
-      case (s < 4):
-        document.getElementById("3").classList.add("active");
-        document.getElementById("2").classList.remove("active");
-        document.getElementById("4").classList.remove("active");
-        break;
-      case (s < 5):
-        document.getElementById("4").classList.add("active");
-        document.getElementById("3").classList.remove("active");
-        document.getElementById("5").classList.remove("active");
-        break;
-      case (s < 6):
-        document.getElementById("5").classList.add("active");
-        document.getElementById("4").classList.remove("active");
-        document.getElementById("6").classList.remove("active");
-        break;
-      case (s <= 7):
-        document.getElementById("6").classList.add("active");
-        document.getElementById("5").classList.remove("active");
-        break;
-      default:
-        break;
-    }
-  }
 </script>
 
-<!-- BLOG FROM API -->
-<section>
-  <div class="container blog">
-    <div class="row">
-      <h1 class="display-4 fat-letters pb-xl-4">Blog</h1>
-    </div>
-    <div id="blog">
-<!-- BLOG CONTENT -->
-    </div>
-      <div class="mt-3 text-center">
-        <button type="button" href="https://blog.fab.city/feed" class="btn pl-4 pr-4 pb-1 pt-1 small btn-action">More Posts</button>
+
+
+
+<!-- Blog scrollbar -->
+<section class="bg-white">
+  <div class="container">
+    <div class="row spaced-out row-cols-2 ml-3 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
+      <div class="col-6 pl-0">
+        <h1 class="h1 fat-letters pb-xl-4 text-left">Blog</h1>
       </div>
-  </div>
+      <div class="col d-block d-sm-none">
+        <div class="row row-cols-2 spaced-out float-right pr-3">
+          <div class="col-3">
+            <a class="arrow black big clickable align-bottom" onclick="toRight_blog()">&#8249;</a>
+          </div>
+          <div class="col-3 float-right text-right">
+            <a class="arrow black big clickable align-bottom" onclick="toLeft_blog()">&#8250;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row w-100 row-cols-1 ml-1 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
+      <div class="col-md-12">
+        <div class="nobar" id="blog" style="display:inline-block;width:100%;overflow-y:auto;">
+					<ul class="timeline timeline-horizontal">
+            <div id="blog_scrollable">
+            </div>
+					</ul>
+        </div>
+				</div>
+      </div>
+    </div>
+    <div class="row position-absolute spaced-out w-100" style="margin-top: -13em">
+      <div class="col ml-5">
+        <a class="position-absolute arrow black big clickable align-middle d-none d-sm-block" onclick="toRight_blog()">&#8249;</a>
+      </div>
+
+      <div class="col float-right text-right">
+        <a class="arrow black big clickable align-middle d-none d-sm-block" onclick="toLeft_blog()">&#8250;</a>
+      </div>
+    </div>
 </section>
 
+
+
 <script type="text/javascript">
-    var content = document.getElementById('blog');
+    var content1 = document.getElementById('blog_scrollable');
 
-    var xhr = new XMLHttpRequest();
+    var xhr1 = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function(){
-        if (xhr.readyState==4 && xhr.status==200)
+    xhr1.onreadystatechange = function(){
+        if (xhr1.readyState==4 && xhr1.status==200)
         {
-            var data = JSON.parse(xhr.responseText);
-            var itemsContainer = document.createElement('DIV');
-            itemsContainer.setAttribute('class' , 'row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4');
+            var data = JSON.parse(xhr1.responseText);
+            var itemsContainer1 = document.createElement('UL');
+            itemsContainer1.setAttribute('class' , 'timeline timeline-horizontal');
             if(data.status == 'ok'){
-                for( var i=0, t=4 ; i < t ; ++i ){
-                    var item = data.items[i];
-                    var itemImageContainer = document.createElement('FIGURE');
-                    var itemContainer = document.createElement('DIV');
-                    var itemLinkElement = document.createElement('A');
-                    var itemTitleElement = document.createElement('DIV');
-                    var itemImageElement = document.createElement('IMG');
-                    itemImageElement.setAttribute('src' , item.thumbnail);
-                    itemImageElement.setAttribute('class' , 'w-100');
-                    itemImageElement.setAttribute('style' , 'display:block; height:150px;');
-                    itemLinkElement.setAttribute('href' , item.link);
-                    itemTitleElement.setAttribute('class' , 'black blog-item-title medium-lines');
-                    itemTitleElement.innerText = item.title + " &rarr;" ;
-                    itemImageContainer.setAttribute('class' , 'pb-xs-2 pt-sm-4 pt-xl-5 pt-md-3');
-                    itemContainer.setAttribute('class' , 'col-sm blog-item line-top mr-1 ml-1 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4');
-                    itemImageContainer.appendChild(itemImageElement);
-                    itemLinkElement.appendChild(itemTitleElement);
-                    itemLinkElement.appendChild(itemImageContainer);
-                    itemContainer.appendChild(itemLinkElement);
-                    // itemContainer.appendChild(itemLinkElement);
+                for( var i=0, t=7 ; i < t ; ++i ){
+                    var item1 = data.items[i];
+                    var itemContainer1 = document.createElement('LI');
+                    itemContainer1.setAttribute('id' , i);
+                    itemContainer1.setAttribute('class' , 'timeline-item');
+                    var itemContainer2 = document.createElement('DIV');
+                    itemContainer2.setAttribute('class' , 'card rounded-0 border-0 h-100');
+                    itemContainer2.setAttribute('style' , 'max-width:200px');
+                    var itemContainer3 = document.createElement('DIV');
+                    itemContainer3.setAttribute('class' , 'm-3');
+                    var itemContainerBorder = document.createElement('DIV');
+                    itemContainerBorder.setAttribute('class' , 'border-top border-1 border-black mb-2');
+                    var itemLinkElement1 = document.createElement('A');
+                    itemLinkElement1.setAttribute('href' , item1.link);
+                    itemLinkElement1.setAttribute('class' , 'black medium-lines text-wrap');
+                    itemLinkElement1.setAttribute('style' , 'height:50px;');
+                    var itemImageElement1 = document.createElement('IMG');
+                    itemImageElement1.setAttribute('src' , item1.thumbnail);
+                    itemImageElement1.setAttribute('class' , 'w-100');
+                    itemImageElement1.setAttribute('style' , 'display:block;height:150px;max-width:240px');
+                    var itemTitleElement1 = document.createElement('DIV');
+                    itemTitleElement1.setAttribute('class' , 'pt-3');
+                    itemTitleElement1.innerText = item1.title;
+                    // itemImageContainer1.setAttribute('class' , 'pb-xs-2 pt-sm-4 pt-xl-5 pt-md-3');
+                    // itemImageContainer1.appendChild(itemImageElement1);
+
+                    itemsContainer1.appendChild(itemContainer1);
+                    itemContainer1.appendChild(itemContainer2);
+                    itemContainer2.appendChild(itemContainer3);
+                    itemContainer3.appendChild(itemContainerBorder);
+                    itemContainer3.appendChild(itemLinkElement1);
+                    itemLinkElement1.appendChild(itemTitleElement1);
+                    itemLinkElement1.appendChild(itemImageElement1);
+                    // itemContainer1.appendChild(itemLinkElement);
                     // note : make sure the content is XSS safe before using innerHTML
-                    itemsContainer.appendChild(itemContainer);
                 }
-                content.appendChild(itemsContainer);
+                content1.appendChild(itemsContainer1);
             }
         }
     };
-    xhr.open(
+    xhr1.open(
         'GET',
         'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.fab.city%2Ffeed',
         true
     );
-    xhr.send();
+    xhr1.send();
 
 </script>
-
+<!-- BLOG SCROLL CONTROL -->
+<script type="text/javascript">
+  function toLeft_blog() {
+    var elmnt = document.getElementById("blog");
+    var x = elmnt.scrollLeft;
+    var w = elmnt.scrollWidth;
+    var c = elmnt.clientWidth;
+    var s = (w - c) / 6 ;
+    elmnt.scrollLeft += s;
+  }
+  function toRight_blog() {
+    var elmnt = document.getElementById("blog");
+    var x = elmnt.scrollLeft;
+    var w = elmnt.scrollWidth;
+    var c = elmnt.clientWidth;
+    var s = (w - c) / -7;
+    elmnt.scrollLeft += s;
+  }
+</script>
 <!-- text with background img -->
 <section  style=" background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ '/assets/images/reinvent-our-cities.png' | relative_url }}'); background-size: cover; background-position:center;">
   <div class="container-fluid text-center">
