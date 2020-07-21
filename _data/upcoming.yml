@@ -3,18 +3,40 @@
   namelink: 'Finding the weak <br />signals'
   link: '#'
   image: '/assets/images/upcoming/1.png'
+  number: 0
 - date: '20.02.20'
   place: Barcelona
   namelink: 'Life without <br />energy'
   link: '#'
   image: '/assets/images/upcoming/2.png'
+  number: 1
 - date: '27.02.20'
   place: Barcelona
   namelink: 'Future<br />Archeology'
   link: '#'
   image: '/assets/images/upcoming/3.png'
+  number: 2
 - date: '03.02.20'
   place: Barcelona
   namelink: 'Creating the <br />world'
   link: '#'
   image: '/assets/images/upcoming/4.png'
+  number: 3
+- date: '03.02.20'
+  place: Barcelona
+  namelink: 'Finding the weak <br />signals'
+  link: '#'
+  image: '/assets/images/upcoming/1.png'
+  number: 4
+- date: '20.02.20'
+  place: Barcelona
+  namelink: 'Life without <br />energy'
+  link: '#'
+  image: '/assets/images/upcoming/2.png'
+  number: 5
+- date: '27.02.20'
+  place: Barcelona
+  namelink: 'Future<br />Archeology'
+  link: '#'
+  image: '/assets/images/upcoming/3.png'
+  number: 6

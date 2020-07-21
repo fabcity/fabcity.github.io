@@ -761,6 +761,10 @@ a.white:hover {
   line-height: 1.5em !important;
 }
 
+.medium-lines {
+  line-height: 1.25em !important;
+}
+
 .clickable {
   cursor: pointer;
   -webkit-user-select: none; /* Safari */
@@ -768,6 +772,55 @@ a.white:hover {
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
+
+
+.chevron {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.vertical-center {
+    vertical-align: baseline;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.nobar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.nobar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .col-2dot4,
