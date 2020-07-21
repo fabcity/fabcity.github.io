@@ -176,19 +176,24 @@ title: Fab City Global
           <img src="assets/images/the-fab-city-commitment.png" class=" w-100 p-0" alt="...">
       </div>
     </div>
+
+<div class="border-bottom border-1 border-black"></div>
+
 <!-- Upcoming -->
-<div class="borderline dark"></div>
 <section class="bg-yellow">
-  <div class="container-fluid">
-    <h1 class="display-4 fat-letters ">Upcoming</h1>
+  <div class="container">
+    <h1 class="display-4 fat-letters pb-xl-4">Upcoming</h1>
     <div class="row">
-      {% for item in site.data.latest-news.columns %}
+      {% for item in site.data.upcoming %}
         <div class="col-md-3">
-          <div class="card rounded-0 border-0">
-            <div class="card-body">
+          <div class="card rounded-0 border-0 h-100">
+            <div class="m-3">
+              <div class="border-bottom border-1 border-black mb-2"></div>
               <div class="small">{{ item.date }} <div class="float-right small">&rarr; {{ item.place }}</div></div>
-              <h5 class="card-title">{{ item.title }}</h5>
-              <a class="small black uppercase" href="{{ item.link }}" >{{ item.namelink }}</a>
+              <a class="black uppercase" href="{{ item.link }}" height="50px" ><div class="pt-3">{{ item.namelink }}</div></a>
+              <div class="pt-3">
+                <img src="{{ item.image }}"  style="display:block;height:150px;" class="w-100" alt="" />
+              </div >
           </div>
         </div>
     </div>
@@ -196,13 +201,13 @@ title: Fab City Global
   </div>
 <br />
 </section>
-<div class="borderline dark"></div>
+<div class="border-bottom border-1 border-black"></div>
 
 <!-- BLOG FROM API -->
 <section>
   <div class="container blog">
     <div class="row">
-      <h1 class="display-4 uppercase">Blog</h1>
+      <h1 class="display-4 fat-letters pb-xl-4">Blog</h1>
     </div>
     <div id="blog">
 <!-- BLOG CONTENT -->
@@ -212,8 +217,6 @@ title: Fab City Global
       </div>
   </div>
 </section>
-
-
 
 <script type="text/javascript">
     var content = document.getElementById('blog');
@@ -236,11 +239,11 @@ title: Fab City Global
                     var itemImageElement = document.createElement('IMG');
                     itemImageElement.setAttribute('src' , item.thumbnail);
                     itemImageElement.setAttribute('class' , 'w-100');
-                    itemImageElement.setAttribute('style' , 'display:block; width: auto; height: auto; height:200px; clip-path: rect(60px at center);');
+                    itemImageElement.setAttribute('style' , 'display:block; height:150px;');
                     itemLinkElement.setAttribute('href' , item.link);
-                    itemTitleElement.setAttribute('class' , 'medium black blog-item-title fat-letters');
+                    itemTitleElement.setAttribute('class' , 'black blog-item-title');
                     itemTitleElement.innerText = item.title;
-                    itemImageContainer.setAttribute('class' , 'pb-xs-2 pt-sm-4 pt-md-3');
+                    itemImageContainer.setAttribute('class' , 'pb-xs-2 pt-sm-4 pt-xl-5 pt-md-3');
                     itemContainer.setAttribute('class' , 'col-sm blog-item line-top mr-1 ml-1 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4');
                     itemImageContainer.appendChild(itemImageElement);
                     itemLinkElement.appendChild(itemTitleElement);
