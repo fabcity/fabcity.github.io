@@ -802,23 +802,47 @@ a.white:hover {
   scrollbar-width: none;  /* Firefox */
 }
 
+// .block-with-text {
+//   overflow: hidden;
+//   display: -webkit-box;
+//   -webkit-line-clamp: 2;
+//   -webkit-box-orient: vertical;
+// }
+//
+// .block-with-text::after {
+//   content: '&rarr;';
+//   position:absolute;
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* styles for '...' */
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.5em;
+  /* place for '...' */
+  // margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.block-with-text::before {
+  /* points in the end */
+  content: '\2192';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  // bottom: 0;
+}
 
 
 

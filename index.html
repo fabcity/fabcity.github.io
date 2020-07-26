@@ -226,11 +226,12 @@ title: Fab City Global
 					<ul class="timeline timeline-horizontal">
             {% for item in site.data.upcoming %}
 						    <li id="{{ item.number }}" class="timeline-item"> <!-- becomes active -->
-                  <div class="card rounded-0 border-0 h-100" style="max-width:200px">
+                  <div class="card rounded-0 border-0 h-100" style="max-width:230px">
                     <div class="m-3">
                       <div class="border-bottom border-1 border-black mb-2"></div>
                       <div class="small">{{ item.date }} <div class="float-right small">&rarr; {{ item.place }}</div></div>
-                      <a class="black medium-lines text-wrap" href="{{ item.link }}" height="50px" ><div class="pt-3">{{ item.namelink }}</div>
+                      <a class="black medium-lines text-wrap" href="{{ item.link }}" height="50px">
+                      <div class="pt-3">{{ item.namelink }}</div>
                       <div class="pt-3">
                         <img src="{{ item.image }}"  style="display:block;height:150px;max-width:240px" class="w-100" alt="" />
                       </div>
@@ -273,8 +274,6 @@ title: Fab City Global
     elmnt.scrollLeft += s;
   }
 </script>
-
-
 
 
 <!-- Blog scrollbar -->
@@ -335,14 +334,14 @@ title: Fab City Global
                     var item1 = data.items[i];
                     var itemContainer1 = document.createElement('LI');
                     itemContainer1.setAttribute('id' , i);
-                    itemContainer1.setAttribute('class' , 'timeline-item');
+                    itemContainer1.setAttribute('class' , 'timeline-item align-baseline');
                     var itemContainer2 = document.createElement('DIV');
                     itemContainer2.setAttribute('class' , 'card rounded-0 border-0 h-100');
-                    itemContainer2.setAttribute('style' , 'max-width:200px');
+                    itemContainer2.setAttribute('style' , 'max-width:230px');
                     var itemContainer3 = document.createElement('DIV');
                     itemContainer3.setAttribute('class' , 'm-3');
                     var itemContainerBorder = document.createElement('DIV');
-                    itemContainerBorder.setAttribute('class' , 'border-top border-1 border-black mb-2');
+                    itemContainerBorder.setAttribute('class' , 'border-bottom border-1 border-black mb-2');
                     var itemLinkElement1 = document.createElement('A');
                     itemLinkElement1.setAttribute('href' , item1.link);
                     itemLinkElement1.setAttribute('class' , 'black medium-lines text-wrap');
@@ -352,18 +351,23 @@ title: Fab City Global
                     itemImageElement1.setAttribute('class' , 'w-100');
                     itemImageElement1.setAttribute('style' , 'display:block;height:150px;max-width:240px');
                     var itemTitleElement1 = document.createElement('DIV');
-                    itemTitleElement1.setAttribute('class' , 'pt-3');
+                    itemTitleElement1.setAttribute('class' , 'pt-3 block-with-text');
+                    itemTitleElement1.setAttribute('style' , 'height:70px');
                     itemTitleElement1.innerText = item1.title;
+                    var itemImageContainer1 = document.createElement('DIV');
+                    itemImageContainer1.setAttribute('class' , 'pt-3');
                     // itemImageContainer1.setAttribute('class' , 'pb-xs-2 pt-sm-4 pt-xl-5 pt-md-3');
                     // itemImageContainer1.appendChild(itemImageElement1);
 
                     itemsContainer1.appendChild(itemContainer1);
-                    itemContainer1.appendChild(itemContainer2);
                     itemContainer2.appendChild(itemContainer3);
+                    itemContainer1.appendChild(itemContainer2);
                     itemContainer3.appendChild(itemContainerBorder);
-                    itemContainer3.appendChild(itemLinkElement1);
-                    itemLinkElement1.appendChild(itemTitleElement1);
-                    itemLinkElement1.appendChild(itemImageElement1);
+                    itemContainer3.appendChild(itemTitleElement1); //div.m-3
+                    itemLinkElement1.appendChild(itemTitleElement1); //a.black.medium > text
+                    itemLinkElement1.appendChild(itemImageContainer1); //a.black.medium > img
+                    itemImageContainer1.appendChild(itemImageElement1); //div.pt-3 > img
+                    itemContainer3.appendChild(itemLinkElement1); // div.m-3
                     // itemContainer1.appendChild(itemLinkElement);
                     // note : make sure the content is XSS safe before using innerHTML
                 }
