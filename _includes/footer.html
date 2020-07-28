@@ -1,17 +1,24 @@
 <section class="bg-black pb-1">
   <div class="container-fluid">
-    <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-      <div class="col h3 fat-letters white text-left">
-          Join the Fab City <br /> Network
+    <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4 pb-3">
+      <div class="col-md-1 white text-left">
+        <img class="svg-white" src="assets/images/fabcitylogo-08.svg" width="60px" />
+      </div>
+      <div class="col-md-4 white text-justify text-left">
+        Collective of civic leaders, makers, urbanists and
+        innovators working on shifting the industrial urban
+        paradigm to one that better supports life on Earth.
       </div>
       <div class="col text-right">
-        <img class="svg-white" src="assets/images/fabcitylogo-08.svg" width="60px" />
+        {% for item in site.data.footer.social %}
+          <a class="nav-item white nav-link svg-icon float-right pl-3" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url }}" /></a>
+        {% endfor %}
       </div>
     </div>
     <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
       <div class="col ml-3 mr-3 border-white border-bottom"></div>
     </div>
-    <div class="row pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
+    <div class="row pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4 pb-1">
       <div class="col-md-6">
         <div class="row row-cols-4">
       {% for item in site.data.footer.pages %}
@@ -21,17 +28,12 @@
       {% endfor %}
         </div>
     </div>
-      <div class="col-md-6 text-right">
-        {% for item in site.data.footer.social %}
-          <a class="nav-item white nav-link svg-icon float-right pl-2" href="{{ item.link }}" ><img class="nav-icon" src="{{ item.image_url }}" /></a>
-        {% endfor %}
-      </div>
     </div>
     <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
       <div class="col ml-3 mr-3 border-white border-bottom"></div>
     </div>
     <div class="row spaced-out row-cols-3 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-      <div class="col-md-4 white">
+      <div class="col-md-3 white">
         <div class="pt-3 pb-1 font-weight-bold">
           Location
         </div>
@@ -43,19 +45,20 @@
           </address>
         </div>
       <div class="col-md-2 white">
-        <div class="float-right mr-0 mr-md-0 ml-xl-5 mr-xl-0">
+        <div class="float-left">
           <div class="pt-3 pb-1 font-weight-bold">
             Contact
           </div>
           hello@fab.city
         </div>
       </div>
-      <div class="col-md-4 white">
+      <div class="col-md-3 white">
         <div class="pt-3 pb-1 font-weight-bold">
           Sign up
         </div>
-        <input class="subscribe-newsletter rounded-0 border-0 border-light border-bottom bg-black" placeholder="Newsletter Subscription"/>
+          <input class="subscribe-newsletter rounded-0 border-0 border-light border-bottom bg-black" placeholder="Newsletter Subscription" />
             <a type="submit" class="white arrow-two" href="#" >&rarr;</a>
+
         </div>
       </div>
       <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
