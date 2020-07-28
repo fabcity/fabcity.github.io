@@ -140,7 +140,6 @@ title: About Us
       <div class="col-md-6">
             <div class="display-4 uppercase white text-uppercase">Roadmap</div>
       </div>
-
           <div class="col-md-6 mt-0">
             <div class="mt-2 mb-3 white h5">
               Our Roadmap is unique. Launched in 2011 by the City of
@@ -182,14 +181,6 @@ title: About Us
 					</ul>
         </div>
 				</div>
-        <!-- <div class="row w-100 row-cols-2 ml-0 p-3 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5 d-flex justify-content-around">
-          <div class="col-md-6 col-xs-1 col">
-            <a class="arrow black big clickable" onclick="toRight()">&larr;</a>
-          </div>
-          <div class="col-md-6 col-xs-1 col float-right text-right">
-            <a class="arrow black big clickable" onclick="toLeft()">&rarr;</a>
-          </div>
-        </div> -->
       </div>
     </div>
 </section>
@@ -285,58 +276,27 @@ title: About Us
     </div>
   </div>
 </section>
+
+<div class="borderline dark"></div>
+
 <!-- MEDIA kit -->
-<section class="bg-red">
+<section class="bg-grey">
   <div class="container-fluid">
     <div class="row row-cols-2 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
-      <div class="col-md-6">
-            <div class="display-4 uppercase ">Media Kit</div>
-          </div>
-          <div class="col-md-6 mt-0">
-            <div class="mt-2 mb-3 small white">
-              Fab City members, cities, regions and countries, agree to commit efforts and
-              resources in order to achieve the 2054 challenge for cities to produce at least
-              50% of the energy, food and products they consume.
+      <div class="col-md-4">
+            <div class="display-4 fat-letters">Media Kit</div>
+            <div class="mt-2 mb-3 small">
+              We have gathered all the necessary assets in case you wanted to write
+              something about us. You can download all of them together or just get
+              the one you need.
             </div>
-            <button type="button" class="float-right btn pr-lg-4 pl-lg-4 small btn-action">Download All</button>
+            <button type="button" class="d-block d-sm-none btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Download complete kit</button>
           </div>
+        <div class="col-md-8 pt-5">
+          <button type="button" class="d-none d-sm-block float-right btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Download complete kit</button>
         </div>
-        <div class="row ml-lg-5 pt-3 ml-xl-5 mr-lg-5 mr-xl-5 d-flex justify-content-between">
-          {% for item in site.data.media-kit.photos %}
-          <div class="col-md-3 m-2 " style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url({{ item.img }}); background-size: cover; background-position:center; height:300px;">
-          </div>
-          {% endfor %}
-        </div>
+      </div>
     </div>
-
 </section>
 
-
 </body>
-
-
-<!-- Take Action Modal -->
-<div class="modal fade" id="take-action" tabindex="-1" role="dialog" aria-labelledby="take-action" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header con">
-        <h5 class="modal-title h2 text-white uppercase" id="take-action">Take Action</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="dismiss-modal text-white" aria-hidden="true">&times;</span>
-        </button>
-        <div class="borderline"></div>
-      </div>
-      <div class="pt-3 pb-3 fat-letters text-white">
-        Do you want to take part on this? become a member on the Fab City <br/> Network.
-        <br />
-        <br />
-        First, let us know how you are:
-      </div>
-      <div class="pt-3 pb-3 spaced-out">
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a City</button>
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a person</button>
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a government</button>
-      </div>
-    </div>
-  </div>
-</div>
