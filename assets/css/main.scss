@@ -642,13 +642,13 @@ a.white:hover {
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
-  background-color: #1bc28f;
+  background-color: white;
 }
 
-.active .timeline-badge{
-  background-color: #1bc28f;
-  box-shadow: 0px 0px 0px 8px rgba(#1aa179,0.3); // WOOW noice transparent border
-  z-index: 400 !important;
+.active .timeline-badge {
+  background-color: white;
+  box-shadow: 0px 0px 0px 8px rgba(#fff,0.3); // WOOW noice transparent border
+  // z-index: 400 !important;
 }
 
 .active .timeline-panel .timeline-heading , .active .timeline-panel .timeline-body{
@@ -672,7 +672,7 @@ a.white:hover {
 .timeline .timeline-item .timeline-panel {
     margin-top: 6px;
     padding: 15px 0 0 0;
-    border-top: 1px solid black;
+    border-top: 0.5px solid white;
 }
 
 // .timeline .timeline-item .timeline-panel .timeline-body > p,
