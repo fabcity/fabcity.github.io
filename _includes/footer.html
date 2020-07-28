@@ -4,14 +4,14 @@
       <div class="col-md-1 white text-left">
         <img class="svg-white" src="assets/images/fabcitylogo-08.svg" width="60px" />
       </div>
-      <div class="col-md-4 white text-justify text-left">
+      <div class="col-md-3 white text-justify text-left pt-2">
         Collective of civic leaders, makers, urbanists and
         innovators working on shifting the industrial urban
         paradigm to one that better supports life on Earth.
       </div>
-      <div class="col text-right">
+      <div class="col d-none d-sm-block text-right">
         {% for item in site.data.footer.social %}
-          <a class="nav-item white nav-link svg-icon float-right pl-3" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url }}" /></a>
+          <a class="nav-item white nav-link float-right pt-4" style="padding-right:0 !important;" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url }}" /></a>
         {% endfor %}
       </div>
     </div>
@@ -22,13 +22,28 @@
       <div class="col-md-6">
         <div class="row row-cols-4">
       {% for item in site.data.footer.pages %}
-      <div class="col-md-3">
+      <div class="col-md-3 col">
         <a class="pt-2 pr-1 pb-1 white float-left" href="{{ item.link }}">{{ item.name }}</a>
       </div>
       {% endfor %}
         </div>
     </div>
     </div>
+    <!-- only visible on mobile screens -->
+    <div class="d-block d-sm-none">
+    <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
+      <div class="col ml-3 mr-3 border-white border-bottom"></div>
+    </div>
+      <div class="row row-cols-2 text-center pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
+        <div class="col text-right">
+          {% for item in site.data.footer.social %}
+            <a class="nav-item white nav-link p-3" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url }}" /></a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!-- //only visible on mobile screens -->
+
     <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
       <div class="col ml-3 mr-3 border-white border-bottom"></div>
     </div>
@@ -52,7 +67,7 @@
           hello@fab.city
         </div>
       </div>
-      <div class="col-md-3 white">
+      <div class="col-md-3 white pb-2">
         <div class="pt-3 pb-1 font-weight-bold">
           Sign up
         </div>
@@ -84,18 +99,30 @@
       <div class="row row-cols-2">
         <div class="col border-white border-bottom"></div>
       </div>
-      <div class="row row-cols-2 pt-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-        <div class="col-md-6">
-          <div class="row row-cols-2">
-            <div class=" pl-3 pr-0">
-              <img class="nav-icon" style="margin: -3px 0 5px 0;" src="{{ '/assets/images/rainbow.png' | relative_url }}" height="10px">
+      <div class="row row-cols-2 w-100 pt-2 pl-0 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
+        <div class="col-md-1 m-0 pr-0">
+
+          <!-- only visible on mobile screens -->
+          <div class="row row-cols-3 pl-2 spaced-out">
+            <div class="col-xs-1">
+              <img class="d-block d-sm-none p-0" style="margin: -1px 0 5px 0;" src="{{ '/assets/images/rainbow.png' | relative_url }}" height="10px !important">
             </div>
-            <div class="col-md-9 ml-0 pl-0">
-              <div class="white happiness uppercase font-weight-bold pl-1"> Made With happiness</div>
+            <div class="col-xs-4">
+              <div class="white smallest d-block p-0 d-sm-none text-uppercase font-weight-bold"> Made With happiness</div>
+            </div>
+            <div class="col-xs-4 d-block d-sm-none white small float-right text-right">
+              © Fab City, Terms, Legal, Privacy
             </div>
           </div>
+          <!-- // only visible on mobile screens -->
+
+          <img class="d-none d-sm-block pr-0" style="margin: 0px -100px 5px 0px;" src="{{ '/assets/images/rainbow.png' | relative_url }}" height="20px !important">
         </div>
-        <div class="col-md-6 text-right white small float-right">
+        <div class="col-md-3 pl-0" style="margin-left:-65px;">
+          <div class="white pl-0 text-left d-none d-sm-block happiness text-uppercase high-lines font-weight-bold"> Made With happiness</div>
+        </div>
+
+        <div class="col-md-8 text-right float-right white small float-right high-lines d-none d-sm-block p-0 m-0">
           © Fab City, Terms, Legal, Privacy
         </div>
       </div>

@@ -1,19 +1,19 @@
 pages:
-  - name: Community
-    link: \#community
-  - name: About Us
-    link: about-us.html
-  - name: Resources
-    link: /resources.html
+  - name: About
+    link: about.html
+  - name: Network
+    link: \#network
   - name: Blog
     link: \#blog
+  - name: Resources
+    link: /resources.html
 social: # order is reversed
   - name: Podcast
     image_url: 'assets/images/podcast.svg'
     link: \#podcast
   - name: Facebook
     image_url: 'assets/images/facebook.svg'
-    link: \#resources
+    link: \#facebook-url
   - name: Github
     image_url: 'assets/images/github.svg'
     link: https://github.com/fabcity
