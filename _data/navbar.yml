@@ -1,7 +1,7 @@
 # - name: Home
 #   link: /
   - name: About
-    link: \#about
+    link: /about.html
   - name: Network
     link: \#network
   - name: Blog

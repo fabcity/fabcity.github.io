@@ -1,20 +1,11 @@
 ---
-layout: default
+layout: home
 title: About Us
 ---
-
-<body>
-  <div class="borderline dark"></div>
-<!-- First Section -->
-  <section style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.6) 80%), url('{{ 'assets/images/fab-group-photo.png' | relative_url }}'); background-size: cover; background-position:center;">
-      <br />
+  <div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.6) 80%), url('{{ 'assets/images/fab-group-photo.png' | relative_url }}'); background-size: cover; background-position:center;">
+    {% include navbar.html %}
       <div class="container-fluid white">
         <div class="row row-cols-2 spaced-out mr-xl-4">
-          <div class="col-md-5">
-            <div class="display-4 uppercase pl-xl-4 ml-xl-4 ">
-              <!-- About <br/> Fab City -->
-            </div>
-          </div>
           <div class="col-md-6 ml-xl-4 mr-xl-4">
             <div class="my-4">
               <div class="placeholder" style="height:300px">
@@ -24,7 +15,7 @@ title: About Us
           </div>
           <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
             <div class="col-md-5">
-              <div class="display-4 text-uppercase">
+              <div class="display-4 text-uppercase light-letters">
                 About Fab City
               </div>
               <div class="h5">
@@ -37,7 +28,9 @@ title: About Us
             </div>
           </div>
         </div>
-</section>
+</div>
+<body>
+
 <section class="bg-grey">
   <div class="container-fluid">
     <div class="row row-cols-2">
@@ -64,15 +57,35 @@ title: About Us
   <div class="p-5" style="height:600px;">
   </div>
 </section> -->
+<!-- Manifesto -->
+<div class="borderline dark d-none d-sm-block"></div>
+      <div class="row row-cols-2 m-0  w-100 h-100">
+        <div class="col-md-6 p-0">
+            <img src="assets/images/manifesto.png" class="w-100" alt="">
+        </div>
+        <div class="col-md-6 pt-1 pb-1 pr-2 pl-2 pb-2 p-xl-5">
+            <h1 class="display-4 light-letters text-weight-light text-uppercase">The Fab city <br /> Manifesto </h1>
+              <div class="h6">
+                We embrace strategies in circular economy and
+                digital social innovation, and foster collaboration
+                between a global network of European and
+                worldwide cities and territories to meet the
+                planetary challenges presented by climate
+                change and social inequalities.
+            </div>
+            <button type="button" class="d-none d-sm-block btn btn-infill pl-3 pr-3 text-uppercase">Read more</button>
+          <button type="button" class="d-block d-sm-none btn btn-infill pl-3 pr-3 text-uppercase">Download the manifesto</button>
+        </div>
+      </div>
 
 <!-- Fab Lab Foundation -->
 <section class="bg-blue">
   <div class="container">
     <div class="row row-cols-2 spaced-out">
       <div class="col-md-6 pl-sm-2 pl-xl-0">
-        <h1 class="display-4 white uppercase pb-3 ">Fab city <br/> Foundation</h1>
+        <h1 class="display-4 white text-uppercase light-letters pb-3 ">Fab Lab <br/> Foundation</h1>
       </div>
-      <div class="col-md-6 pl-sm-2 pl-xl-0">
+      <div class="col-md-6 pl-sm-2 pl-xl-0 pt-2">
         <div class="h5 white">
           The Fab City Foundation has been established as a legal
           and organizational structure in Estonia to enable the
@@ -105,7 +118,8 @@ title: About Us
   <div class="container">
     <div class="row row-cols-2 spaced-out">
       <div class="col-md-6 pl-sm-2 pl-xl-0">
-        <h1 class="display-4 text-uppercase pb-3 ">Fab city <br/> Collective</h1>
+        <h1 class="display-4 d-none d-sm-block text-uppercase pb-3 light-letters ">Fab Lab Collective</h1>
+        <h1 class="display-4 d-block d-sm-none text-uppercase pb-3 light-letters ">Fab Lab <br /> Collective</h1>
       </div>
       <div class="col-md-6 pl-sm-2 pl-xl-0">
       </div>
@@ -138,7 +152,7 @@ title: About Us
   <div class="container-fluid">
     <div class="row row-cols-2 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
       <div class="col-md-6">
-            <div class="display-4 uppercase white text-uppercase">Roadmap</div>
+            <div class="display-4 uppercase white text-uppercase light-letters">Roadmap</div>
       </div>
           <div class="col-md-6 mt-0">
             <div class="mt-2 mb-3 white h5">
@@ -253,10 +267,10 @@ title: About Us
   <div class="container-fluid">
     <div class="row row-cols-1">
       <div class="col-md-12">
-        <div class="display-4 d-none d-sm-block mt-1 mb-1 text-uppercase text-wrap w-100">
+        <div class="display-4 light-letters d-none d-sm-block mt-1 mb-3 text-uppercase text-wrap w-100">
           Collaborators
         </div>
-        <div class="display-4 d-block d-sm-none mt-1 mb-1 text-uppercase text-wrap w-100">
+        <div class="display-4 light-letters d-block d-sm-none mt-1 mb-1 text-uppercase text-wrap w-100">
           Collabo-<br/>rators
         </div>
       </div>

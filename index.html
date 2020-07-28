@@ -3,50 +3,38 @@ layout: home
 title: Fab City Global
 ---
 <div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;">
-<nav class="navbar navbar-expand-lg navbar-transparent ">
- <a class="navbar-brand pl-xl-5 pl-lg-5" href="{{ '/' | relative_url }}"><img class="svg-white" src="assets/images/fabcitylogo-07.svg" width="120px" /></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      {% for item in site.data.navbar %}
-      <a class="nav-item nav-link p-3" href="{{ item.link }}">{{ item.name }}</a>
-      {% endfor %}
+  {% include navbar.html %}
+
+  {% include countdown.html %}
+  <div class="container-fluid white">
+    <div class="row row-cols-2 spaced-out mr-xl-4">
+      <div class="col-md-6 ml-xl-4 mr-xl-4">
+        <div class="my-4">
+          <div class="placeholder" style="height:100px">
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
+        <div class="col-md-5">
+          <div class="display-4 text-uppercase light-letters">
+            Fab City Summit
+          </div>
+          <div class="h5">
+            Public Institutions, Industry and Society <br class="d-none d-sm-block" />
+            meet in Paris to define the path towards the <br class="d-none d-sm-block" />
+            future of Productive Cities
+          </div>
+          <button type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#get-tickets">
+            Get Your tickets now
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="navbar-nav ml-auto pr-5 hidden-xs hidden-md">
-      <button type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#take-action">
-        Take Action
-      </button>
-      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/facebook.svg' | relative_url }}" /></a>
-      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/twitter.svg' | relative_url }}" /></a>
-    </div>
-  </div>
-</nav>
 
-{% include countdown.html %}
-
-<div class="container-fluid h-50 mt-5 mt-xl-4 mt-lg-4 d-flex align-items-center">
-<div class="ml-xl-5 ml-lg-5">
-  <div class="h1 text-uppercase white">
-    Fab City Summit
-  </div>
-  <div class="my-3 high-lines white">
-    Public Institutions, Industry and Society <br class="d-none d-sm-block" />
-    meet in Paris to define the path towards the <br class="d-none d-sm-block" />
-    future of Productive Cities
-  </div>
-  <button type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#get-tickets">
-    Get Your tickets now
-  </button>
-</div>
-<!-- end backdrop -->
-</div>
 </div>
 
 
-
-<body>
   <div class="borderline dark"></div>
 <!-- First Section -->
  <section>
@@ -405,72 +393,19 @@ title: Fab City Global
     elmnt.scrollLeft += s;
   }
 </script>
-<!-- text with background img -->
-<!-- <section  style=" background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ '/assets/images/reinvent-our-cities.png' | relative_url }}'); background-size: cover; background-position:center;">
-  <div class="container-fluid text-center">
-    <div class="h2 white pt-4 pb-4">
-      We need to reinvent our cities and their relationship to people & <br />
-      nature by re-localising production so that cities are generative<br />
-      rather than extractive, restorative rather than destructive, and<br />
-      empowering rather than alienating, where prosperity ourishes, and<br />
-      people have purposeful, meaningful work that they enjoy, that<br />
-      enables them to use their passion and talent.<br />
-    </div>
-  </div>
-</section> -->
-
-<!-- Ready to join? -->
-
-<!-- <section class="bg-blue">
-  <div class="container-fluid text-left">
-    <div class="h2 white mt-1 ml-xl-5 ml-lg-5 mb-1 ">
-      Is your city ready to join <br />
-      the Fab City network?
-    <div class="float-right text-right">
-      <a class="arrow smaller pt-5 pr-md-5 pr-md-5 white display-3" href="#">&rarr;</a>
-    </div>
-  </div>
-  </div>
-</section> -->
 <div class="borderline dark"></div>
 
+<!-- Ready to join? -->
 <section class="bg-grey">
- <div class="container-fluid text-left">
-   <div class="h1 display-4 fat-letters black mt-1 ml-xl-5 ml-lg-5 mb-1 ">
-     Is your city ready to join <br />
-     the Fab City network?
-     <div class="float-right text-right" style="margin-top: -1rem;">
-       <a class="mr-5 ml-5 mb-5 mt-0 d-flex justify-content-begin" href="https://blog.fab.city/" target="_blank"><button type="button" class="btn pl-4 pr-4 btn-action text-uppercase">Starts Now</button></a>
-     </div>
-   </div>
- </div>
-</section>
-
-</body>
-
-
-<!-- Take Action Modal -->
-<div class="modal fade" id="take-action" tabindex="-1" role="dialog" aria-labelledby="take-action" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header con">
-        <h5 class="modal-title h2 text-white uppercase" id="take-action">Take Action</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="dismiss-modal text-white" aria-hidden="true">&times;</span>
-        </button>
-        <div class="borderline"></div>
-      </div>
-      <div class="pt-3 pb-3 fat-letters text-white">
-        Do you want to take part on this? become a member on the Fab City <br/> Network.
-        <br />
-        <br />
-        First, let us know how you are:
-      </div>
-      <div class="pt-3 pb-3 spaced-out">
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a City</button>
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a person</button>
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a government</button>
+  <div class="container-fluid">
+    <div class="row row-cols-2 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
+      <div class="col-md-4 mr-3">
+            <div class="h3 fat-letters">Is your city ready to join the Fab City Network?</div>
+            <button type="button" class="d-block d-sm-none btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start now</button>
+          </div>
+        <div class="col-md-8 pt-5 d-none d-sm-block">
+          <button type="button" class="d-none d-sm-block float-right btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start now</button>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+</section>

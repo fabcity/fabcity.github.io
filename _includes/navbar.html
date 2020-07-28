@@ -1,24 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-white">
- <a class="navbar-brand" href="{{ '/' | relative_url }}"><img class="svg-black" src="assets/images/fabcitylogo-09.svg" width="120px"></a>
+<nav class="navbar navbar-expand-lg navbar-transparent ">
+ <a class="navbar-brand pl-xl-5 pl-lg-5" href="{{ '/' | relative_url }}"><img class="svg-white" src="assets/images/fabcitylogo-07.svg" width="120px" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       {% for item in site.data.navbar %}
-      {% if item.align == "left" %}
-      <a class="nav-item nav-link text-dark" href="{{ item.link }}">{{ item.name }}</a>
-      {% endif %}
+      <a class="nav-item nav-link p-3" href="{{ item.link }}">{{ item.name }}</a>
       {% endfor %}
     </div>
-    <div class="navbar-nav ml-auto hidden-xs hidden-md">
-      {% for item in site.data.navbar %}
-      {% if item.align == "right" %}
-      <a class="nav-item nav-link text-dark" href="{{ item.link }}">{{ item.name }}</a>
-      {% endif %}
-      {% endfor %}
-      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/facebook-black.svg' | relative_url }}" /></a>
-      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/twitter-black.svg' | relative_url }}" /></a>
+    <div class="navbar-nav ml-auto pr-5 hidden-xs hidden-md">
+      <button type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#take-action">
+        Take Action
+      </button>
+      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/facebook.svg' | relative_url }}" /></a>
+      <a class="nav-item nav-link svg-icon" href="#" ><img class="nav-icon" src="{{ 'assets/images/twitter.svg' | relative_url }}" /></a>
     </div>
   </div>
 </nav>
+<div class="border-1 border-bottom border-white d-none d-sm-block"></div>
