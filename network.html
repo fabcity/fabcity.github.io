@@ -4,13 +4,11 @@ title: Fab City Global
 ---
 <div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;">
   {% include navbar.html %}
-
-  {% include countdown.html %}
   <div class="container-fluid white">
     <div class="row row-cols-2 spaced-out mr-xl-4">
       <div class="col-md-6 ml-xl-4 mr-xl-4">
         <div class="my-4">
-          <div class="placeholder" style="height:100px">
+          <div class="placeholder" style="height:300px">
           </div>
         </div>
       </div>
@@ -18,33 +16,28 @@ title: Fab City Global
       <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
         <div class="col-md-5">
           <div class="display-4 text-uppercase light-letters">
-            Fab City Summit
+            Fab City Network
           </div>
           <div class="h5">
-            Public Institutions, Industry and Society <br class="d-none d-sm-block" />
-            meet in Paris to define the path towards the <br class="d-none d-sm-block" />
-            future of Productive Cities
+            The cities network share working practices and<br class="d-none d-sm-block" />
+            knowledge with the wider network as well as a<br class="d-none d-sm-block" />
+            deep alignment of purpose and culture.
           </div>
-          <button type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#get-tickets">
-            Get Your tickets now
-          </button>
         </div>
       </div>
     </div>
-
 </div>
-
 
   <div class="borderline dark"></div>
 <!-- First Section -->
  <section>
   <br />
-  <div class="container-fluid">
-    <div class="text-center h1 fat-letters">Locally produced, <br/> Globally connected</div>
-      <div class="text-center my-4 high-lines text-wrap">
-        Fab City Global Initiative is a collective of civic leaders, makers,
-        urbanists and innovators working on shifting the industrial
-        urban paradigm to one that better supports life on Earth.
+  <div class="container">
+      <div class="text-center h2 text-wrap">
+        Fab Cities, Regions and Countries all have the same goal: to
+        locally produce energy, food and products in order to
+        reduce their environmental and social impact on the planet,
+        and globally share best practices through open networks.
       </div>
     </div>
   </section>
@@ -56,21 +49,6 @@ title: Fab City Global
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="{{ '/assets/js/worldmap.js' | relative_url }}"></script>
 
-<div class="w-100 global pt-5 pr-5 pl-5">
-  <div class="row">
-    <div class="col-md-6 z-under">
-      <div class="white h1 text-uppercase">The Network</div>
-    </div>
-    <div class="col-md-6 z-under">
-      <div class="pt-3 pr-3 text-white high-lines">
-        34 cities who have taken up the challenge to move
-        towards 100% local production by 2054. These cities
-        from across the globe engage in action- research,
-        developing local prototypes for the Fab City.
-      </div>
-    </div>
-  </div>
-</div>
 <div class="container-fluid dark-bg">
      <div id="container" class="ml-1 ml-xs-1 ml-md-5 ml-lg-5 ml-xl-5 mr-1 mr-xs-1 mr-md-5 mr-lg-5 mr-xl-5 container-fluid worldmap"></div>
 </div>
@@ -126,69 +104,8 @@ title: Fab City Global
           });
         </script>
 
-<!-- GLOBAL CONTEXT -->
-    <div class="row row-cols-2 m-0  w-100 h-100">
-      <div class="col-md-6 p-0">
-          <img src="assets/images/global-context.png" class="w-100" alt="">
-      </div>
-      <div class="col-md-6 p-1 pb-2 p-xl-5">
-          <h1 class="display-4 light-letters text-weight-light text-uppercase">Global Context </h1>
-          <p class="lead fat-letters medium">
-            In an ever-changing world innovation
-            <br />
-            is not an option, it is a necessity.</p>
-            <p class="small high-lines"> Climate change and social exclusion require us to reinvent the fundamental
-              systems which we depend upon, a task which requires courage, coherence and
-              long-term thinking.
-              The rate at which humans consume planetary resources is putting the systems of
-              our planet and ourselves at risk. In order to revert the consequences of rapid
-              urbanization, we need a deep transformation of how we organize production and
-              consumption in cities.</p>
-        <button type="button" class="btn btn-infill pl-3 pr-3 text-uppercase">Read more</button>
-      </div>
-    </div>
-<!-- THE COMMITMENT -->
-    <div class="row h-100 w-100 p-0 m-0">
-        <div class="col-md-6 p-1 pb-2 p-xl-5">
-            <h1 class="display-4 light-letters p-0 text-wrap" style="margin-top: -10px;">THE FAB CITY COMMITMENT</h1>
-            <p class="small high-lines text-wrap"> Fab City members, cities, regions and countries, agree to commit efforts and
-              resources in order to achieve the 2054 challenge for cities to produce at least
-              50% of the energy, food and products they consume, and to deploy circular
-              economy strategies for the relocalisation of production, and the technological
-              empowerment of citizens.
-            </p>
-        <button type="button" class="btn btn-infill pl-3 pr-3 text-uppercase">Start the commitment</button>
-      </div>
-      <div class="col-md-6 p-0 m-0">
-          <img src="assets/images/the-fab-city-commitment.png" class=" w-100 p-0" alt="...">
-      </div>
-    </div>
-
 <div class="border-bottom border-1 border-black"></div>
 
-<!-- Upcoming -->
-<!-- <section class="bg-yellow">
-  <div class="container-fluid">
-    <h1 class="h4 fat-letters pb-xl-4">Upcoming</h1>
-    <div class="row">
-      {% for item in site.data.upcoming %}
-        <div class="col-md-3">
-          <div class="card rounded-0 border-0 h-100">
-            <div class="m-3">
-              <div class="border-bottom border-1 border-black mb-2"></div>
-              <div class="small">{{ item.date }} <div class="float-right small">&rarr; {{ item.place }}</div></div>
-              <a class="black uppercase" href="{{ item.link }}" height="50px" ><div class="pt-3">{{ item.namelink }}</div></a>
-              <div class="pt-3">
-                <img src="{{ item.image }}"  style="display:block;height:150px;max-width:240px" class="w-100" alt="" />
-              </div >
-          </div>
-        </div>
-    </div>
-    {% endfor %}
-  </div>
-<br />
-</section>
-<div class="border-bottom border-1 border-black"></div> -->
 
 <!-- Upcoming scrollbar -->
 <section class="bg-yellow">
@@ -263,148 +180,19 @@ title: Fab City Global
   }
 </script>
 
-
-<!-- Blog scrollbar -->
-<section class="bg-white">
-  <div class="container">
-    <div class="row spaced-out row-cols-2 ml-3 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
-      <div class="col-6 pl-0">
-        <h1 class="h1 fat-letters pb-xl-4 text-left">Blog</h1>
-      </div>
-      <div class="col d-block d-sm-none">
-        <div class="row row-cols-2 spaced-out float-right pr-3">
-          <div class="col-3">
-            <a class="arrow black big clickable align-bottom" onclick="toRight_blog()">&#8249;</a>
-          </div>
-          <div class="col-3 float-right text-right">
-            <a class="arrow black big clickable align-bottom" onclick="toLeft_blog()">&#8250;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row w-100 row-cols-1 ml-1 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
-      <div class="col-md-12">
-        <div class="nobar" id="blog" style="display:inline-block;width:100%;overflow-y:auto;">
-					<ul class="timeline timeline-horizontal">
-            <div id="blog_scrollable">
-            </div>
-					</ul>
-        </div>
-				</div>
-      </div>
-    </div>
-    <div class="row position-absolute spaced-out w-100" style="margin-top: -13em">
-      <div class="col ml-5">
-        <a class="position-absolute arrow black big clickable align-middle d-none d-sm-block" onclick="toRight_blog()">&#8249;</a>
-      </div>
-
-      <div class="col float-right text-right">
-        <a class="arrow black big clickable align-middle d-none d-sm-block" onclick="toLeft_blog()">&#8250;</a>
-      </div>
-    </div>
-    <div class="mt-3 text-center">
-      <a href="https://blog.fab.city/" target="_blank"><button type="button" class="btn pl-4 pr-4 pb-1 pt-1 small btn-action">More Stories</button></a>
-    </div>
-</section>
-
-
-
-<script type="text/javascript">
-    var content1 = document.getElementById('blog_scrollable');
-
-    var xhr1 = new XMLHttpRequest();
-
-    xhr1.onreadystatechange = function(){
-        if (xhr1.readyState==4 && xhr1.status==200)
-        {
-            var data = JSON.parse(xhr1.responseText);
-            var itemsContainer1 = document.createElement('UL');
-            itemsContainer1.setAttribute('class' , 'timeline timeline-horizontal');
-            if(data.status == 'ok'){
-                for( var i=0, t=7 ; i < t ; ++i ){
-                    var item1 = data.items[i];
-                    var itemContainer1 = document.createElement('LI');
-                    itemContainer1.setAttribute('id' , i);
-                    itemContainer1.setAttribute('class' , 'timeline-item align-baseline');
-                    var itemContainer2 = document.createElement('DIV');
-                    itemContainer2.setAttribute('class' , 'card rounded-0 border-0 h-100');
-                    itemContainer2.setAttribute('style' , 'max-width:230px');
-                    var itemContainer3 = document.createElement('DIV');
-                    itemContainer3.setAttribute('class' , 'm-3');
-                    var itemContainerBorder = document.createElement('DIV');
-                    itemContainerBorder.setAttribute('class' , 'border-bottom border-1 border-black mb-2');
-                    var itemLinkElement1 = document.createElement('A');
-                    itemLinkElement1.setAttribute('href' , item1.link);
-                    itemLinkElement1.setAttribute('class' , 'black medium-lines text-wrap');
-                    itemLinkElement1.setAttribute('style' , 'height:50px;');
-                    var itemImageElement1 = document.createElement('IMG');
-                    itemImageElement1.setAttribute('src' , item1.thumbnail);
-                    itemImageElement1.setAttribute('class' , 'w-100');
-                    itemImageElement1.setAttribute('style' , 'display:block;height:150px;max-width:240px');
-                    var itemTitleElement1 = document.createElement('DIV');
-                    itemTitleElement1.setAttribute('class' , 'pt-3 block-with-text');
-                    itemTitleElement1.setAttribute('style' , 'height:70px');
-                    itemTitleElement1.innerText = item1.title;
-                    var itemImageContainer1 = document.createElement('DIV');
-                    itemImageContainer1.setAttribute('class' , 'pt-3');
-                    // itemImageContainer1.setAttribute('class' , 'pb-xs-2 pt-sm-4 pt-xl-5 pt-md-3');
-                    // itemImageContainer1.appendChild(itemImageElement1);
-
-                    itemsContainer1.appendChild(itemContainer1);
-                    itemContainer2.appendChild(itemContainer3);
-                    itemContainer1.appendChild(itemContainer2);
-                    itemContainer3.appendChild(itemContainerBorder);
-                    itemContainer3.appendChild(itemTitleElement1); //div.m-3
-                    itemLinkElement1.appendChild(itemTitleElement1); //a.black.medium > text
-                    itemLinkElement1.appendChild(itemImageContainer1); //a.black.medium > img
-                    itemImageContainer1.appendChild(itemImageElement1); //div.pt-3 > img
-                    itemContainer3.appendChild(itemLinkElement1); // div.m-3
-                    // itemContainer1.appendChild(itemLinkElement);
-                    // note : make sure the content is XSS safe before using innerHTML
-                }
-                content1.appendChild(itemsContainer1);
-            }
-        }
-    };
-    xhr1.open(
-        'GET',
-        'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.fab.city%2Ffeed',
-        true
-    );
-    xhr1.send();
-
-</script>
-<!-- BLOG SCROLL CONTROL -->
-<script type="text/javascript">
-  function toLeft_blog() {
-    var elmnt = document.getElementById("blog");
-    var x = elmnt.scrollLeft;
-    var w = elmnt.scrollWidth;
-    var c = elmnt.clientWidth;
-    var s = (w - c) / 6 ;
-    elmnt.scrollLeft += s;
-  }
-  function toRight_blog() {
-    var elmnt = document.getElementById("blog");
-    var x = elmnt.scrollLeft;
-    var w = elmnt.scrollWidth;
-    var c = elmnt.clientWidth;
-    var s = (w - c) / -7;
-    elmnt.scrollLeft += s;
-  }
-</script>
 <div class="borderline dark"></div>
+
 
 <!-- Ready to join? -->
 <section class="bg-grey">
   <div class="container-fluid">
     <div class="row row-cols-2 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
-      <div class="col-md-4 mr-3">
-            <div class="h3 fat-letters">Is your city ready to join the Fab City Network?</div>
-            <button type="button" class="d-block d-sm-none btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start now</button>
+      <div class="col-md-6">
+            <div class="display-4 fat-letters">Is your city ready to join the Fab City Network?</div>
+            <button type="button" class="d-block d-sm-none btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start Now</button>
           </div>
-        <div class="col-md-8 pt-5 d-none d-sm-block">
-          <button type="button" class="d-none d-sm-block float-right btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start now</button>
+        <div class="col-md-6 pt-5">
+          <button type="button" class="d-none d-sm-block float-right btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start Now</button>
         </div>
       </div>
     </div>
