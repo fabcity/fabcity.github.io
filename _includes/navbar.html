@@ -6,7 +6,11 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       {% for item in site.data.navbar %}
-      <a class="nav-item nav-link p-3" href="{{ item.link }}">{{ item.name }}</a>
+        {% if page.title == item.name %}
+        <a class="nav-item nav-link p-3 " href="{{ item.link }}"><div class="pb-1 border-1 border-bottom border-white rounded-0">{{ item.name }}</div></a>
+        {% else %}
+        <a class="nav-item nav-link p-3" href="{{ item.link }}">{{ item.name }}</a>
+        {% endif %}
       {% endfor %}
     </div>
     <div class="navbar-nav ml-auto pr-5 hidden-xs hidden-md">
