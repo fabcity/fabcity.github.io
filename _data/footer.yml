@@ -20,3 +20,8 @@ social: # order is reversed
   - name: Twitter
     image_url: 'assets/images/twitter.svg'
     link: https://twitter.com/fabcity
+powered:
+  - image_url: '/assets/images/rainbow.png'
+  - image_url: '/assets/images/rainbow.png'
+  - image_url: '/assets/images/rainbow.png'
+  - image_url: '/assets/images/rainbow.png'
