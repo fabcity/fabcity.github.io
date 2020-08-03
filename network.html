@@ -4,7 +4,10 @@ title: Fab City Global
 ---
 <div class="dark-bg">
   {% include navbar.html %}
-  <div id="container" class="" style="height:700px;">
+
+  <!-- <div class="d-block d-sm-none" style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;"> -->
+
+  <div id="container" class="d-none d-sm-block w-75 worldmap" style="margin-left: 100px; height:700px;">
   <div class="container-fluid white position-absolute">
     <div class="row row-cols-2 spaced-out mr-xl-4">
       <div class="col-md-6 ml-xl-4 mr-xl-4">
@@ -20,14 +23,15 @@ title: Fab City Global
             Fab City Network
           </div>
           <div class="h5">
-            The cities network share working practices and<br class="d-none d-sm-block" />
-            knowledge with the wider network as well as a<br class="d-none d-sm-block" />
+            The cities network share working practices and
+            knowledge with the wider network as well as a
             deep alignment of purpose and culture.
           </div>
         </div>
       </div>
     </div>
     </div>
+  </div>
 </div>
 
   <div class="borderline dark"></div>
@@ -107,77 +111,48 @@ title: Fab City Global
 
 
 <!-- Upcoming scrollbar -->
-<section class="bg-yellow">
-  <div class="container">
+<section class="bg-green d-flex justify-content-center">
+  <div class="container-fluid">
     <div class="row spaced-out row-cols-2 ml-3 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
-      <div class="col-6 pl-0">
-        <h1 class="h1 fat-letters pb-xl-4 text-left">Upcoming</h1>
+      <div class="col-md-5 pl-0">
+        <h1 class="text-uppercase h1 light-letters pb-xl-4 text-left d-block d-sm-none">Cities from the network</h1>
+        <h1 class="text-uppercase display-4 light-letters pb-xl-4 text-left d-none d-sm-block">Cities from the network</h1>
       </div>
-      <div class="col d-block d-sm-none">
-        <div class="row row-cols-2 spaced-out float-right pr-3">
-          <div class="col-3">
-            <a class="arrow black big clickable align-bottom" onclick="toRight_upcoming()">&#8249;</a>
-          </div>
-          <div class="col-3 float-right text-right">
-            <a class="arrow black big clickable align-bottom" onclick="toLeft_upcoming()">&#8250;</a>
-          </div>
+      <div class="col-md-6 pl-0">
+        <div class="pb-xl-4 pb-4 pt-4">
+          We embrace strategies in circular economy and digital social
+          innovation, and foster collaboration between a global
+          network of European and worldwide cities and territories to
+          meet the planetary challenges presented by climate change
+          and social inequalities.
         </div>
       </div>
-    </div>
-    <div class="row w-100 row-cols-1 ml-1 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
-      <div class="col-md-12">
-        <div class="nobar" id="upcoming" onscroll="scrollPosi_upcoming()" style="display:inline-block;width:100%;overflow-y:auto;">
-					<ul class="timeline timeline-horizontal">
-            {% for item in site.data.upcoming %}
-						    <li id="{{ item.number }}" class="timeline-item"> <!-- becomes active -->
-                  <div class="card rounded-0 border-0 h-100" style="max-width:230px">
+    <div class="row row-cols-lg-4 mr-0 ml-0 ml-lg-0 ml-xl-0 mr-lg-5 mr-xl-5">
+            {% for item in site.data.cities %}
+            <div class="col-md-3 mx-0 mb-4 pr-lg-5">
+                  <div class="card rounded-0 border-0" style="width:280px">
                     <div class="m-3">
                       <div class="border-bottom border-1 border-black mb-2"></div>
-                      <div class="small">{{ item.date }} <div class="float-right small">&rarr; {{ item.place }}</div></div>
+                      <div class="small">Since {{ item.since }} <div class="float-right small">{{ item.country }}</div></div>
                       <a class="black medium-lines text-wrap" href="{{ item.link }}" height="50px">
-                      <div class="pt-3">{{ item.namelink }}</div>
+                      <div class="pt-3">{{ item.place }}</div>
                       <div class="pt-3">
-                        <img src="{{ item.image }}"  style="display:block;height:150px;max-width:240px" class="w-100" alt="" />
+                        <img src="{{ item.image }}"  style="display:block;height:150px;max-width:255px" class="w-100" alt="" />
+                      </div>
+                      <div class="h6 pt-2 pb-4">
+                        {{ item.description }}
+                      </div>
+                      <div class="h6">
+                      Read more &rarr;
                       </div>
                       </a>
                   </div>
                 </div>
-                </li>
+              </div>
               {% endfor %}
-					</ul>
-        </div>
 				</div>
       </div>
-    </div>
-    <div class="row position-absolute spaced-out w-100" style="margin-top: -13em">
-      <div class="col ml-5">
-        <a class="position-absolute arrow black big clickable align-middle d-none d-sm-block" onclick="toRight_upcoming()">&#8249;</a>
-      </div>
-
-      <div class="col float-right text-right">
-        <a class="arrow black big clickable align-middle d-none d-sm-block" onclick="toLeft_upcoming()">&#8250;</a>
-      </div>
-    </div>
 </section>
-
-<script type="text/javascript">
-  function toLeft_upcoming() {
-    var elmnt = document.getElementById("upcoming");
-    var x = elmnt.scrollLeft;
-    var w = elmnt.scrollWidth;
-    var c = elmnt.clientWidth;
-    var s = (w - c) / 6 ;
-    elmnt.scrollLeft += s;
-  }
-  function toRight_upcoming() {
-    var elmnt = document.getElementById("upcoming");
-    var x = elmnt.scrollLeft;
-    var w = elmnt.scrollWidth;
-    var c = elmnt.clientWidth;
-    var s = (w - c) / -7;
-    elmnt.scrollLeft += s;
-  }
-</script>
 
 <div class="borderline dark"></div>
 

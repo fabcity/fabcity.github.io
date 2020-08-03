@@ -1,8 +1,8 @@
 pages:
   - name: About
-    link: about.html
+    link: /about.html
   - name: Network
-    link: \#network
+    link: /network.html
   - name: Blog
     link: \#blog
   - name: Resources
