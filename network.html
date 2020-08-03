@@ -2,9 +2,10 @@
 layout: home
 title: Fab City Global
 ---
-<div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;">
+<div class="dark-bg">
   {% include navbar.html %}
-  <div class="container-fluid white">
+  <div id="container" class="" style="height:700px;">
+  <div class="container-fluid white position-absolute">
     <div class="row row-cols-2 spaced-out mr-xl-4">
       <div class="col-md-6 ml-xl-4 mr-xl-4">
         <div class="my-4">
@@ -13,7 +14,7 @@ title: Fab City Global
         </div>
       </div>
       </div>
-      <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
+      <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3 mb-3">
         <div class="col-md-5">
           <div class="display-4 text-uppercase light-letters">
             Fab City Network
@@ -25,6 +26,7 @@ title: Fab City Global
           </div>
         </div>
       </div>
+    </div>
     </div>
 </div>
 
@@ -49,9 +51,6 @@ title: Fab City Global
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="{{ '/assets/js/worldmap.js' | relative_url }}"></script>
 
-<div class="container-fluid dark-bg">
-     <div id="container" class="ml-1 ml-xs-1 ml-md-5 ml-lg-5 ml-xl-5 mr-1 mr-xs-1 mr-md-5 mr-lg-5 mr-xl-5 container-fluid worldmap"></div>
-</div>
 
         <script type="text/javascript">
                 var bombMap = new Datamap({
