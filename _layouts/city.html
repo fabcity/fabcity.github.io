@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  {% seo %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/{{ page.title }}.png'); background-size: cover; background-position:center; height:600px;">
+  {% include navbar.html %}
+  <div class="container-fluid white">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-5 text-center d-flex justify-content-center">
+
+    <table style="height: 500px;">
+          <tbody>
+            <tr>
+              <td>
+          <div class="d-block d-sm-none h2 align-middle text-uppercase text-center light-letters">
+            {{ page.title }}
+          </div>
+          <h1 class="d-none d-sm-block big-letters align-middle text-uppercase text-center light-letters">
+            {{ page.title }}
+          </h1>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+
+        </div>
+      </div>
+    </div>
+</div>
+
+  {{ content }}
+
+  <div class="row row-cols-2 m-0 spaced-out bg-grey">
+    <div class="col-md-6 p-1 pb-2 p-xl-5">
+      <h1 class="display-4 light-letters text-weight-light text-uppercase">{{ page.title }}'s approach </h1>
+      <p class="lead medium">
+        {{ site.data.cities_content[page.title].approach }}
+      </p>
+      <!-- <button type="button" class="btn btn-infill pl-3 pr-3 text-uppercase">Read more</button> -->
+    </div>
+    <div class="col-md-6 p-5">
+        <img src="{{ site.data.cities_content[page.title].approach_img }}" class="w-75" alt="">
+    </div>
+  </div>
+
+  <div class="borderline dark"></div>
+
+  <!-- CITY ECOSYSTEM -->
+  <section>
+    <div class="container blog">
+      <div class="row">
+        <div class="col-md-6 pl-xl-0">
+          <h1 class="display-4 text-uppercase ">city <br /> ecosystem</h1>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+              <p class="lead fat-letters medium">
+                Spaces
+              </p>
+            </div>
+            <div class="row">
+              {% for item in site.data.cities_content[page.title].ecosystem.spaces %}
+              <div class="col-md-3 pl-xl-0">
+                  {{ item.icon }} {{ item.type }}
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      <div class="row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4">
+        <!-- Blog CONTENT -->
+        {% for item in site.data.blog.posts limit:4 %}
+        <div class="col-sm blog-item line-top mr-1 ml-1 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4">
+          <a href="{{ item.link }}">
+          <div class="medium black blog-item-title fat-letters ">
+            {{ item.title }}
+          </div>
+            <figure class="pb-xs-2 pt-sm-4 pt-md-3">
+              <figcaption class="small black border-0 figure-caption text-right" >{{ item.date }}</figcaption>
+              <img style="background-image:url('{{ item.image_url }}'); background-size:cover; background-position:center;height:200px;" class="w-100" alt="" />
+            </figure>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+        <div class="mt-3 text-center">
+          <button type="button" class="btn pl-4 pr-4 pb-1 pt-1 small btn-action">More Posts</button>
+        </div>
+    </div>
+  </section>
+
+
+  {% include footer.html %}
+</body>
+{% include take-action.html %}
+</html>
