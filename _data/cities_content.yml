@@ -3,11 +3,38 @@ Barcelona:
   approach_img: '/assets/images/fab-group-photo.png'
   ecosystem:
     spaces:
-      - type: Materials
-        icon: '&#10066;'
-      - type: Food
-        icon: '&#9868;'
-      - type: Fabrication
-        icon: '&#8945;'
-      - type: Energy
-        icon: '&#10507;'
+      Materials: ' &#10066;'
+      Food: ' &#9868;'
+      Fabrication: ' &#8945;'
+      Energy: ' &#10507;'
+    places:
+      - number: '01'
+        type: 'Energy'
+        neighbourhood: Poblenou
+        name: Design Hub BCN
+        img: '/assets/images/cities/barcelona/design-hub-bcn.png'
+      - number: '02'
+        type: 'Materials'
+        neighbourhood: Poblenou
+        name: Atta 33
+        img: '/assets/images/cities/barcelona/atta-33.png'
+      - number: '03'
+        type: 'Fabrication'
+        neighbourhood: Clot
+        name: Medio Design
+        img: '/assets/images/cities/barcelona/medio-design.png'
+      - number: '04'
+        type: 'Food'
+        neighbourhood: Poblenou
+        name: Fab Lab Barcelona
+        img: '/assets/images/cities/barcelona/fab-lab-barcelona.png'
+      - number: '05'
+        type: 'Fabrication'
+        neighbourhood: Clot
+        name: Medio Design
+        img: '/assets/images/cities/barcelona/medio-design.png'
+      - number: '06'
+        type: 'Materials'
+        neighbourhood: Poblenou
+        name: Atta 33
+        img: '/assets/images/cities/barcelona/atta-33.png'

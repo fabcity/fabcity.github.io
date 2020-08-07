@@ -59,16 +59,16 @@
         <div class="col-md-6 pl-xl-0">
           <h1 class="display-4 text-uppercase ">city <br /> ecosystem</h1>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 ">
             <div class="row">
-              <p class="lead fat-letters medium">
+              <p class="lead fat-letters medium pl-xl-0 pl-lg-0">
                 Spaces
               </p>
             </div>
             <div class="row">
               {% for item in site.data.cities_content[page.title].ecosystem.spaces %}
               <div class="col-md-3 pl-xl-0">
-                  {{ item.icon }} {{ item.type }}
+                  {{ item }}
               </div>
               {% endfor %}
             </div>
@@ -76,23 +76,27 @@
         </div>
       <div class="row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4">
         <!-- Blog CONTENT -->
-        {% for item in site.data.blog.posts limit:4 %}
-        <div class="col-sm blog-item line-top mr-1 ml-1 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4">
+        {% for item in site.data.cities_content[page.title].ecosystem.places limit:4 %}
+        <div class="col-sm blog-item mr-1 ml-sm-1 ml-xl-0 ml-lg-0 pl-lg-0 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4">
+          <div class="border-bottom border-1 border-black mb-2"></div>
+          <div class="small">{{ item.number }}
+            {% assign icon = site.data.cities_content[page.title].ecosystem.spaces %}
+            {{ icon[item.type] }}
+            <div class="float-right small">&rarr; {{ item.neighbourhood }}</div></div>
           <a href="{{ item.link }}">
-          <div class="medium black blog-item-title fat-letters ">
-            {{ item.title }}
+          <div class="medium black medium-lines pt-2">
+            {{ item.name }}
           </div>
             <figure class="pb-xs-2 pt-sm-4 pt-md-3">
-              <figcaption class="small black border-0 figure-caption text-right" >{{ item.date }}</figcaption>
-              <img style="background-image:url('{{ item.image_url }}'); background-size:cover; background-position:center;height:200px;" class="w-100" alt="" />
+              <img style="background-image:url('{{ item.img }}'); background-size:cover; background-position:center;height:200px;" class="w-100" alt="" />
             </figure>
           </a>
         </div>
         {% endfor %}
       </div>
-        <div class="mt-3 text-center">
+        <!-- <div class="mt-3 text-center">
           <button type="button" class="btn pl-4 pr-4 pb-1 pt-1 small btn-action">More Posts</button>
-        </div>
+        </div> -->
     </div>
   </section>
 
