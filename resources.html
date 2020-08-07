@@ -1,26 +1,48 @@
 ---
-layout: default
+layout: home
 title: Resources
 ---
 
+<div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.6) 80%), url('{{ 'assets/images/resources-intro.png' | relative_url }}'); background-size: cover; background-position:center;">
+  {% include navbar.html %}
+    <div class="container-fluid white">
+      <div class="row row-cols-2 spaced-out mr-xl-4">
+        <div class="col-md-6 ml-xl-4 mr-xl-4">
+          <div class="my-4">
+            <div class="placeholder" style="height:300px">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
+          <div class="col-md-5">
+            <div class="display-4 text-uppercase light-letters">
+              Resources
+            </div>
+            <div class="h5">
+              Read about the methods, see the
+              instruction and print the materials
+            </div>
+            <!-- <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-white rounded-0 pr-3 pl-3 pt-1 pb-1">See more</button> -->
+          </div>
+        </div>
+      </div>
+</div>
 <body>
 <!-- First Section -->
-  <section class="bg-green">
+  <section class="bg-yellow">
       <br />
       <div class="container-fluid black">
-        <div class="row d-flex flex-colums row-cols-2 spaced-out mr-xl-4 mr-lg-4">
-          <div class="col-md-5">
-            <div class="display-4 uppercase pl-xl-4 ml-xl-4 ">Resources</div>
-          </div>
-          </div>
           <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
-            <div class="col-md-5">
-                <div class="border-black border-top pb-4 "></div>
-              <div class="my-4">
+            <div class="col-md-6">
+              <div class="h3">
                 {{ site.data.resources.text }}
               </div>
             </div>
-            <div class="col-md-7">
+          </div>
+          <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
+
+            <div class="col-md-12">
               {% for item in site.data.resources.items %}
               <div class="border-black border-top pb-1"></div>
                 <div class="my-3 medium fat-letters text-uppercase">{{ item.title }}
@@ -29,7 +51,7 @@ title: Resources
                   {% endif %}
                 </div>
               {% if item.text %}
-              <div class="row pt-3 pb-3 spaced-out pr-2">
+              <div class="row pb-3 spaced-out pr-2">
               <div class="col-md-5">
                 <div class="my-3 small">
                   {{ item.text }}
