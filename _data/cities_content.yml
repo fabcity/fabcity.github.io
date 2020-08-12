@@ -8,33 +8,39 @@ Barcelona:
       Fabrication: ' &#8945;'
       Energy: ' &#10507;'
     places:
-      - number: '01'
+      - number: 1
         type: 'Energy'
         neighbourhood: Poblenou
         name: Design Hub BCN
         img: '/assets/images/cities/barcelona/design-hub-bcn.png'
-      - number: '02'
+        longlat: 2.0715387,41.3889195
+      - number: 2
         type: 'Materials'
         neighbourhood: Poblenou
         name: Atta 33
         img: '/assets/images/cities/barcelona/atta-33.png'
-      - number: '03'
+        longlat: 2.1872978,41.4001652
+      - number: 3
         type: 'Fabrication'
         neighbourhood: Clot
         name: Medio Design
         img: '/assets/images/cities/barcelona/medio-design.png'
-      - number: '04'
+        longlat: 2.1875473,41.395396
+      - number: 4
         type: 'Food'
         neighbourhood: Poblenou
         name: Fab Lab Barcelona
         img: '/assets/images/cities/barcelona/fab-lab-barcelona.png'
-      - number: '05'
+        longlat: 2.192125,41.3967077
+      - number: 5
         type: 'Fabrication'
         neighbourhood: Clot
         name: Medio Design
         img: '/assets/images/cities/barcelona/medio-design.png'
-      - number: '06'
+        longlat: 2.1684749,41.3739545
+      - number: 6
         type: 'Materials'
         neighbourhood: Poblenou
         name: Atta 33
         img: '/assets/images/cities/barcelona/atta-33.png'
+        longlat: 2.1521064,41.3832779
