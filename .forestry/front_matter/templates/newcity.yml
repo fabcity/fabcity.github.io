@@ -8,3 +8,143 @@ fields:
     required: false
   label: Name city
   description: Name of the city
+- name: approach
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: approach
+  description: City's approach
+- name: approach_img
+  type: file
+  config:
+    maxSize: 64
+  label: approach_img
+- name: ecosystem
+  type: field_group
+  config: {}
+  fields:
+  - name: map
+    type: field_group
+    config: {}
+    fields:
+    - name: longlat_center
+      type: text
+      config:
+        required: false
+      label: longlat center
+      description: longitude and latitude of center of map under Ecosystem
+    - name: zoom
+      type: text
+      config:
+        required: false
+      label: zoom
+      description: Amount of zoom on map
+    label: map
+  - name: spaces
+    type: field_group
+    config: {}
+    fields:
+    - name: materials
+      type: list
+      config:
+        use_select: false
+        min: 
+        max: 
+      label: Materials
+    - name: food
+      type: text
+      config:
+        required: false
+      label: Food
+    - name: fabrication
+      type: text
+      config:
+        required: false
+      label: Fabrication
+    - name: energy
+      type: text
+      config:
+        required: false
+      label: Energy
+    label: spaces
+  - name: places
+    type: field_group
+    config: {}
+    fields:
+    - name: place
+      type: field_group_list
+      fields:
+      - name: name
+        type: text
+        config:
+          required: false
+        label: name
+      - name: number
+        type: number
+        label: number
+        description: ''
+        default: 0
+        required: true
+        config:
+          min: 
+          max: 
+          step: 
+      - name: type
+        type: text
+        config:
+          required: false
+        label: type
+        description: Kind of space
+      - name: neighbourhood
+        type: text
+        config:
+          required: false
+        label: neighbourhood
+      - name: longlat
+        type: text
+        config:
+          required: false
+        label: longlat
+        description: 'Location in longitude and lattitude.<br>Format example: 2.1748859327708487,41.40282224448359'
+      - name: img
+        type: file
+        config:
+          maxSize: 64
+        label: img
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: place
+    label: places
+  label: ecosystem
+- name: consortium
+  type: field_group
+  config: {}
+  fields:
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: description
+  - name: logos
+    type: field_group
+    config: {}
+    fields:
+    - name: image_url
+      type: list
+      config:
+        use_select: false
+        min: 
+        max: 
+      label: image url
+    label: logos
+  label: consortium
