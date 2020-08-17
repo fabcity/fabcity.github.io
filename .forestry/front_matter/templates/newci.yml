@@ -75,14 +75,15 @@ fields:
     - type: textarea
       name: description
       label: description
-    - type: field_group_list
-      name: logos
-      label: logos
+    - name: logos
+      type: field_group
+      config: {}
       fields:
       - name: image_url
         type: image_gallery
         config: {}
         label: image url
+      label: logos
   - type: field_group
     name: strategies
     label: strategies
@@ -111,5 +112,4 @@ fields:
   description: Name of the city
   hidden: true
 pages:
-- _cities/Fabtasy.html
 - _cities/Fabtasy.html
