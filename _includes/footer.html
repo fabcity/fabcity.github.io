@@ -85,7 +85,7 @@
         </div>
         {% for item in site.data.footer.powered %}
         <div class="col-md-2">
-          <img class="nav-icon" style="margin: 10px 0 20px 0;" src="{{ item.image_url }}" height="50px">
+          <img class="nav-icon" style="margin: 10px 0 20px 0;" src="{{ item.image_url | relative_url }}" height="50px">
         </div>
         {% endfor %}
       </div>

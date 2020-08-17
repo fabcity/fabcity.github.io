@@ -14,10 +14,10 @@ email: "your.email@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
 author: Fab City
 coder: j0r15
-url: "Fab.City" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://j0r15.github.com/newfabcity" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl:  # the subpath of your site, e.g. /blog
 google_analytics: UA-111111111-1
-
+markdown: kramdown
 social:
   - title: twitter
     url: https://twitter.com/fabcityglobal
