@@ -1,25 +1,30 @@
-
-
+---
+title: Fab.City
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 sass:
   sass_dir: assets/css
-
 plugins:
-  - jekyll-autoprefixer
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-title: "Fab.City" # the name of your site, e.g. ACME Corp.
-tagline: "LOCALLY PRODUCED, GLOBALLY CONNECTED"
-email: "your.email@gmail.com"
-description: >- # this means to ignore newlines until "baseurl:"
+- jekyll-autoprefixer
+- jekyll-seo-tag
+- jekyll-sitemap
+tagline: LOCALLY PRODUCED, GLOBALLY CONNECTED
+email: your.email@gmail.com
+description: ''
 author: Fab City
 coder: j0r15
-url: "https://j0r15.github.com/newfabcity" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl:  # the subpath of your site, e.g. /blog
+url: https://j0r15.github.com/newfabcity
+baseurl: 
 google_analytics: UA-111111111-1
 markdown: kramdown
 social:
-  - title: twitter
-    url: https://twitter.com/fabcityglobal
-  - title: facebook
-    url: https://www.facebook.com/fabcityglobal/
+- title: twitter
+  url: https://twitter.com/fabcityglobal
+- title: facebook
+  url: https://www.facebook.com/fabcityglobal/
