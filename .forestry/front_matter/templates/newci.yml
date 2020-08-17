@@ -109,3 +109,5 @@ fields:
   label: City
   description: Name of the city
   hidden: true
+pages:
+- _cities/Fabtasy.html
