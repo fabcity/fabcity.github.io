@@ -2,6 +2,9 @@
 title: Fab.City
 timezone: UTC
 collections:
+  cities:
+    title: Cities
+    output: true
   posts:
     title: Posts
     output: true
