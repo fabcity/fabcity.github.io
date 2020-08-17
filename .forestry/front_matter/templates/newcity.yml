@@ -1,4 +1,10 @@
 ---
 label: NewCity
 hide_body: false
-fields: []
+fields:
+- name: name_city
+  type: text
+  config:
+    required: false
+  label: Name city
+  description: Name of the city
