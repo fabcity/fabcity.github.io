@@ -10,8 +10,6 @@ sections:
   create: documents
   match: "**"
   new_doc_ext: html
-  templates:
-  - newcity
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
