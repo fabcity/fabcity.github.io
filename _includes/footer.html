@@ -23,7 +23,7 @@
         <div class="row row-cols-4">
       {% for item in site.data.footer.pages %}
       <div class="col-md-3 col">
-        <a class="pt-2 pr-1 pb-1 white float-left" href="{{ item.link }}">{{ item.name }}</a>
+        <a class="pt-2 pr-1 pb-1 white float-left" href="{{ item.link | relative_url }}">{{ item.name }}</a>
       </div>
       {% endfor %}
         </div>
@@ -37,7 +37,7 @@
       <div class="row row-cols-2 text-center pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
         <div class="col text-right">
           {% for item in site.data.footer.social %}
-            <a class="nav-item white nav-link p-3" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url }}" /></a>
+            <a class="nav-item white nav-link p-3" href="{{ item.link | relative_url }}"><img class="nav-icon" src="{{ item.image_url }}" /></a>
           {% endfor %}
         </div>
       </div>
