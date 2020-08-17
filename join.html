@@ -135,7 +135,7 @@ title: Join The Network
     <div class="row row-cols-3">
       {% for item in site.data.benefits.columns %}
       <div class="col-md-4 text-center">
-        <img src="{{ item.image }}" style="height:200px; filter:contrast(200%);"/>
+        <img src="{{ item.image | relative_url }}" style="height:200px; filter:contrast(200%);"/>
         <div class="h4 font-weight-bold fat-letters">
           {{ item.title }}
         </div>
@@ -168,7 +168,7 @@ title: Join The Network
     <!-- <button type="button" class="d-block d-sm-none btn btn-infill pl-3 pr-3 text-uppercase">Download the manifesto</button> -->
   </div>
   <div class="col-md-6 p-0 d-none d-sm-block">
-      <img src="assets/images/who-can-pledge.png" class="w-100" alt="">
+      <img src="{{ 'assets/images/who-can-pledge.png' |relative_url }}" class="w-100" alt="">
   </div>
 </div>
 
@@ -194,3 +194,4 @@ title: Join The Network
       </div>
     </div>
 </section>
+  
