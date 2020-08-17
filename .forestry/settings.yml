@@ -9,7 +9,7 @@ sections:
   label: Cities
   create: documents
   match: "**"
-  new_doc_ext: ".html"
+  new_doc_ext: html
   templates:
   - newcity
 upload_dir: uploads
