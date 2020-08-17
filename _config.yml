@@ -16,7 +16,7 @@ plugins:
 - jekyll-sitemap
 tagline: LOCALLY PRODUCED, GLOBALLY CONNECTED
 email: your.email@gmail.com
-description: ''
+description: 
 author: Fab City
 coder: j0r15
 url: https://j0r15.github.com/newfabcity
