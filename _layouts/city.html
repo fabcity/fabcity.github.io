@@ -11,7 +11,7 @@
 
 </head>
 <body>
-  <div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/{{ page.title }}.png'); background-size: cover; background-position:center; height:600px;">
+  <div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('{{ page.title | prepend: '/assets/images/' | append: '.png' | relative_url }}'); background-size: cover; background-position:center; height:600px;">
   {% include navbar.html %}
   <div class="container-fluid white">
       <div class="row d-flex justify-content-center">
@@ -48,7 +48,7 @@
       <!-- <button type="button" class="btn btn-infill pl-3 pr-3 text-uppercase">Read more</button> -->
     </div>
     <div class="col-md-6 p-5">
-        <img src="{{ site.data.cities_content[page.title].approach_img }}" class="w-75" alt="">
+        <img src="{{ site.data.cities_content[page.title].approach_img | relative_url }}" class="w-75" alt="">
     </div>
   </div>
 
@@ -89,7 +89,7 @@
             {{ item.name }}
           </div>
             <figure class="pb-xs-2 pt-sm-4 pt-md-3">
-              <img style="background-image:url('{{ item.img }}'); background-size:cover; background-position:center;height:200px;" class="w-100" alt="" />
+              <img style="background-image:url('{{ item.img | relative_url }}'); background-size:cover; background-position:center;height:200px;" class="w-100" alt="" />
             </figure>
           </a>
         </div>
@@ -118,7 +118,7 @@
     <div class="row align-self-center">
           {% for item in site.data.cities_content[page.title].consortium.logos %}
           <div class="col-md-2 pl-xl-0 align-self-center">
-              <img class="align-self-center p-4 mt-2 w-100" src="{{ item.image_url }}" style="background-blend-mode: lighten;"/>
+              <img class="align-self-center p-4 mt-2 w-100" src="{{ item.image_url | relative_url }}" style="background-blend-mode: lighten;"/>
           </div>
           {% endfor %}
         </div>
@@ -129,7 +129,7 @@
 <div class="borderline dark"></div>
 <div class="row row-cols-2 m-0  w-100 h-100">
   <div class="col-md-6 p-0">
-      <img src="assets/images/strategies.png" class="w-100" alt="">
+      <img src="{{ 'assets/images/strategies.png' | relative_url }}" class="w-100" alt="">
   </div>
   <div class="col-md-6 p-1 pb-2 p-xl-5">
       <h1 class="display-4 light-letters text-weight-light text-uppercase">strategies </h1>
