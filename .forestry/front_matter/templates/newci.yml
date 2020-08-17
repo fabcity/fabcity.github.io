@@ -112,4 +112,5 @@ fields:
   description: Name of the city
   hidden: true
 pages:
+- _cities/Barcelona.html
 - _cities/Fabtasy.html
