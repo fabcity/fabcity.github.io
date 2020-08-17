@@ -148,3 +148,5 @@ fields:
       label: image url
     label: logos
   label: consortium
+pages:
+- _cities/amsterdam.html
