@@ -103,7 +103,7 @@ title: About
       {% for item in site.data.collective.members %}
         <div class="col-md-2 pl-0">
           <div class="rounded-0 border-0 text-center">
-              <img src="{{ item.img }}" alt="{{ item.name }}" class="img-thumbnail rounded-0 p-0 border-0 h-100" style="width:200px;filter:grayscale(100%);">
+              <img src="{{ item.img | relative_url }}" alt="{{ item.name }}" class="img-thumbnail rounded-0 p-0 border-0 h-100" style="width:200px;filter:grayscale(100%);">
               <div class="white text-uppercase text-weight-bold pt-3">{{ item.name }}</div>
               <h5 class="small text-muted pt-2">{{ item.position }}</h5>
           </div>
@@ -133,7 +133,7 @@ title: About
       {% for item in site.data.collective.members %}
         <div class="col-md-2 pl-0">
           <div class="rounded-0 border-0 text-center">
-              <img src="{{ item.img }}" alt="{{ item.name }}" class="img-thumbnail rounded-0 p-0 border-0 h-100" style="width:200px;filter:grayscale(100%);">
+              <img src="{{ item.img | relative_url }}" alt="{{ item.name }}" class="img-thumbnail rounded-0 p-0 border-0 h-100" style="width:200px;filter:grayscale(100%);">
               <div class=" text-uppercase text-weight-bold pt-3">{{ item.name }}</div>
               <h5 class="small text-muted pt-2">{{ item.position }}</h5>
           </div>
