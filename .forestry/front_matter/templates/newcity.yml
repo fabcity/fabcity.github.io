@@ -1,6 +1,6 @@
 ---
 label: NewCity
-hide_body: false
+hide_body: true
 fields:
 - name: name_city
   type: text
