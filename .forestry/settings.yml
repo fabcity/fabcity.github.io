@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: ''
+  label: Root
+  create: all
+  match: "**/*"
+- type: directory
   path: _cities
   label: Cities
   create: documents
