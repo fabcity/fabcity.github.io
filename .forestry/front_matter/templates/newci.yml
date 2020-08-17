@@ -3,9 +3,13 @@ label: Newci
 hide_body: true
 fields:
 - type: field_group
-  name: Barcelona
-  label: Barcelona
+  name: City
   fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: title
   - type: textarea
     name: approach
     label: approach
@@ -102,3 +106,6 @@ fields:
       - type: text
         name: subtitle
         label: subtitle
+  label: City
+  description: Name of the city
+  hidden: true
