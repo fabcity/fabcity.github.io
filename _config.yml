@@ -7,10 +7,10 @@ collections:
     output: true
   posts:
     title: Posts
-    output: true
+    output: false
   uploads:
     title: Uploads
-    output: true
+    output: false
 sass:
   sass_dir: assets/css
 plugins:
@@ -19,11 +19,11 @@ plugins:
 - jekyll-sitemap
 tagline: LOCALLY PRODUCED, GLOBALLY CONNECTED
 email: your.email@gmail.com
-description: 
+description:
 author: Fab City
 coder: j0r15
 url: https://j0r15.github.com/newfabcity
-baseurl: 
+baseurl:
 google_analytics: UA-111111111-1
 markdown: kramdown
 social:
