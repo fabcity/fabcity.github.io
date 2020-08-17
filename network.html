@@ -6,7 +6,7 @@ title: Network
 <div class="dark-bg">
   {% include navbar.html %}
 
-  <!-- <div class="d-block d-sm-none" style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;"> -->
+  <!-- <div class="d-block d-sm-none" style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('{{ /assets/images/intro.png | relative_url }}'); background-size: cover; background-position:center; height:700px;"> -->
 
   <div id="container" class="d-none d-sm-block w-75 worldmap" style="margin-left: 100px; height:700px;">
   <div class="container-fluid white position-absolute">
@@ -138,7 +138,7 @@ title: Network
                       <a class="black medium-lines text-wrap" href="{{ item.link }}" height="50px">
                       <div class="pt-3">{{ item.place }}</div>
                       <div class="pt-3">
-                        <img src="{{ item.image }}"  style="display:block;height:150px;max-width:255px" class="w-100" alt="" />
+                        <img src="{{ item.image | relative_url }}"  style="display:block;height:150px;max-width:255px" class="w-100" alt="" />
                       </div>
                       <div class="h6 pt-2 pb-4">
                         {{ item.description }}

@@ -2,7 +2,7 @@
 layout: home
 title: Fab City Global
 ---
-<div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('/assets/images/intro.png'); background-size: cover; background-position:center; height:700px;">
+<div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('{{ /assets/images/intro.png | relative_url }}'); background-size: cover; background-position:center; height:700px;">
   {% include navbar.html %}
 
   {% include countdown.html %}
@@ -221,7 +221,7 @@ title: Fab City Global
                       <a class="black medium-lines text-wrap" href="{{ item.link }}" height="50px">
                       <div class="pt-3">{{ item.namelink }}</div>
                       <div class="pt-3">
-                        <img src="{{ item.image }}"  style="display:block;height:150px;max-width:240px" class="w-100" alt="" />
+                        <img src="{{ item.image | relative_url }}"  style="display:block;height:150px;max-width:240px" class="w-100" alt="" />
                       </div>
                       </a>
                   </div>

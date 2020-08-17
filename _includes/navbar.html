@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-transparent ">
- <a class="navbar-brand pl-xl-5 pl-lg-5" href="{{ '/' | relative_url }}"><img class="svg-white" src="assets/images/fabcitylogo-07.svg" width="120px" /></a>
+ <a class="navbar-brand pl-xl-5 pl-lg-5" href="{{ '/' | relative_url }}"><img class="svg-white" src="{{assets/images/fabcitylogo-07.svg | relative_url }}" width="120px" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,9 +7,9 @@
     <div class="navbar-nav">
       {% for item in site.data.navbar %}
         {% if page.title == item.name %}
-        <a class="nav-item nav-link p-3 " href="{{ item.link }}"><div class="pb-1 border-1 border-bottom border-white rounded-0">{{ item.name }}</div></a>
+        <a class="nav-item nav-link p-3 " href="{{ item.link | relative_url }}"><div class="pb-1 border-1 border-bottom border-white rounded-0">{{ item.name }}</div></a>
         {% else %}
-        <a class="nav-item nav-link p-3" href="{{ item.link }}">{{ item.name }}</a>
+        <a class="nav-item nav-link p-3" href="{{ item.link | relative_url }}">{{ item.name }}</a>
         {% endif %}
       {% endfor %}
     </div>
