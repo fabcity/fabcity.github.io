@@ -3,54 +3,38 @@
   description: 'Barcelona is a world-leading city in the field of urbanism. The city’s iconic urban model.'
   place: Barcelona
   image: '/assets/images/cities/barcelona.png'
-  link: 'barcelona.html'
-  number: 0
 - since: '218'
   country: ''
   description: 'Barcelona is a world-leading city in the field of urbanism. The city’s iconic urban model.'
   place: 'Thimphu'
   image: '/assets/images/cities/thimphu.png'
-  link: '#'
-  number: 1
 - since: '2018'
-  country: 'Chine'
+  country: 'China'
   description: 'Barcelona is a world-leading city in the field of urbanism. The city’s iconic urban model.'
   place: Shenzhen
   image: '/assets/images/cities/shenzhen.png'
-  link: '#'
-  number: 2
 - since: '2018'
   country: 'Georgia'
   description: 'Barcelona is a world-leading city in the field of urbanism. The city’s iconic urban model.'
   place: 'Georgia'
   image: '/assets/images/cities/georgia.png'
-  link: '#'
-  number: 3
 - since: '2018'
   country: 'Spain'
   description: 'Barcelona is a world-leading city in the field of urbanism. The city’s iconic urban model.'
   place: 'Curitiba'
   image: '/assets/images/cities/curitiba.png'
-  link: '#'
-  number: 4
 - since: '2018'
   country: 'The Netherlands'
   description: 'Barcelona is a world-leading city in the field of urbanism. The city’s iconic urban model.'
   place: 'Amsterdam'
   image: '/assets/images/cities/amsterdam.png'
-  link: '#'
-  number: 5
 - since: '2018'
   country: 'China'
   description: 'Barcelona is a world-leading city in the field of urbanism. The city’s iconic urban model.'
   place: 'Puebla'
   image: '/assets/images/cities/puebla.png'
-  link: '#'
-  number: 6
 - since: '2018'
   country: 'England'
   description: 'Barcelona is a world-leading city in the field of urbanism. The city’s iconic urban model.'
   place: 'Cambrigde'
   image: '/assets/images/cities/cambrigde.png'
-  link: '#'
-  number: 7
