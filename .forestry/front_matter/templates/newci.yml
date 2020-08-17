@@ -110,7 +110,7 @@ fields:
         label: subtitle
   label: City
   description: Name of the city
-  hidden: true
+  hidden: false
 pages:
 - _cities/Barcelona.html
-- _cities/Fabtasy.html
+- _cities/Barcelona.html
