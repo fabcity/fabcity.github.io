@@ -79,9 +79,10 @@ fields:
       name: logos
       label: logos
       fields:
-      - type: file
-        name: image_url
-        label: image_url
+      - name: image_url
+        type: image_gallery
+        config: {}
+        label: image url
   - type: field_group
     name: strategies
     label: strategies
