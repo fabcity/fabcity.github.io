@@ -3,13 +3,7 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections:
-- type: directory
-  path: ''
-  label: Cities
-  create: documents
-  match: "**"
-  new_doc_ext: html
+sections: 
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
