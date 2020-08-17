@@ -11,7 +11,7 @@
 
 </head>
 <body>
-  <div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('{{ page.title | prepend: assets/images/ | append: .png | relative_url }}'); background-size: cover; background-position:center; height:600px;">
+  <div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 80%), url('{{ page.title | prepend: '/assets/images/' | append: '.png' | relative_url }}'); background-size: cover; background-position:center; height:600px;">
   {% include navbar.html %}
   <div class="container-fluid white">
       <div class="row d-flex justify-content-center">
