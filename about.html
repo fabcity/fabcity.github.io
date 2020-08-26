@@ -290,7 +290,7 @@ layout: home
       <div class="col-md-1dot5">
       <!-- <div class="col-2dot4 col-sm-2dot4 col-md-2dot4 col-lg-2dot4 col-xl-2dot4"> -->
         <a href="{{ item.url }}" target="_blank">
-            <img src="{{ item.logo }}" class="p-2 align-self-center" style="max-width: 8em; filter:grayscale(100%)" />
+            <img src="{{ item.logo | relative_url }}" class="p-2 align-self-center" style="max-width: 8em; filter:grayscale(100%)" />
         </a>
       </div>
       {% endfor %}
