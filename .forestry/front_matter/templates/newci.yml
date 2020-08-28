@@ -90,7 +90,7 @@ fields:
     label: description
 - type: field_group
   name: city-goals
-  label: city-goals
+  label: City
   fields:
   - type: text
     name: title
@@ -105,7 +105,6 @@ fields:
     - type: text
       name: subtitle
       label: subtitle
-  label: City
   description: Name of the city
   hidden: false
 pages:
