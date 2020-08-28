@@ -60,15 +60,19 @@ fields:
     - type: text
       name: Materials
       label: Materials
+      default: "●"
     - type: text
       name: Food
       label: Food
+      default: Ω
     - type: text
       name: Fabrication
       label: Fabrication
+      default: µ
     - type: text
       name: Energy
       label: Energy
+      default: Δ
   - type: field_group_list
     name: places
     label: places
