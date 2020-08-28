@@ -47,6 +47,9 @@ fields:
     name: places
     label: places
     fields:
+    - type: text
+      name: name
+      label: name
     - type: number
       name: number
       label: number
@@ -56,9 +59,6 @@ fields:
     - type: text
       name: neighbourhood
       label: neighbourhood
-    - type: text
-      name: name
-      label: name
     - type: file
       name: img
       label: img
