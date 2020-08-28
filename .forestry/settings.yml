@@ -15,8 +15,8 @@ sections:
   create: documents
   match: "**"
   new_doc_ext: html
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: images
+public_path: "/assets/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"

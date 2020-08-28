@@ -7,32 +7,6 @@ fields:
   config:
     required: false
   label: title
-- name: country
-  type: text
-  config:
-    required: false
-  label: country
-  description: What is the country of the city?
-- name: since
-  type: number
-  label: since
-  description: Since when is your city part of FabCity?
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
-- name: description
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: description
-  description: one liner about your city
 - type: textarea
   name: approach
   label: approach
@@ -60,26 +34,19 @@ fields:
     - type: text
       name: Materials
       label: Materials
-      default: "●"
     - type: text
       name: Food
       label: Food
-      default: Ω
     - type: text
       name: Fabrication
       label: Fabrication
-      default: µ
     - type: text
       name: Energy
       label: Energy
-      default: Δ
   - type: field_group_list
     name: places
     label: places
     fields:
-    - type: text
-      name: name
-      label: name
     - type: number
       name: number
       label: number
@@ -89,6 +56,9 @@ fields:
     - type: text
       name: neighbourhood
       label: neighbourhood
+    - type: text
+      name: name
+      label: name
     - type: file
       name: img
       label: img
@@ -137,12 +107,6 @@ fields:
       label: subtitle
   hidden: false
   description: City goals / 3 columns
-- name: image_preview
-  type: file
-  config:
-    maxSize: 64
-  label: image preview
-  description: Small image preview seen on Fab.City/network
 pages:
 - _cities/Barcelona.html
-- _cities/whooo.html
+- _cities/newci-tempalte.html
