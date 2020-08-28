@@ -41,7 +41,7 @@
 
   <div class="row row-cols-2 m-0 spaced-out bg-grey">
     <div class="col-md-6 p-1 pb-2 p-xl-5">
-      <h1 class="display-4 light-letters text-weight-light text-uppercase">{{ page.title }}'s approach </h1>
+      <h1 class="display-4 light-letters text-weight-light text-uppercase">{{ page.title | append: '&#39;s approach' }} </h1>
       <p class="lead medium">
         {{ site.data.cities_content[page.title].approach }}
       </p>
