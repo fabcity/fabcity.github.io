@@ -4,7 +4,7 @@ pages:
   - name: Network
     link: /network.html
   - name: Blog
-    link: \#blog
+    link: blog.fab.city
   - name: Resources
     link: /resources.html
 social: # order is reversed
