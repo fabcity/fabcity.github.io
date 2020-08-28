@@ -134,7 +134,7 @@ layout: home
                     <div class="m-3">
                       <div class="border-bottom border-1 border-black mb-2"></div>
                       <div class="small">Since {{ item.since }} <div class="float-right small">{{ item.country }}</div></div>
-                      <a class="black medium-lines text-wrap" href="{{ site.cities.url }}" height="50px">
+                      <a class="black medium-lines text-wrap" href="{{ item.url }}" height="50px">
                       <div class="pt-3">{{ item.place }}</div>
                       <div class="pt-3">
                         <img src="{{ item.image | relative_url }}"  style="display:block;height:150px;max-width:255px" class="w-100" alt="" />
@@ -150,6 +150,28 @@ layout: home
                 </div>
               </div>
               {% endfor %}
+              {% for item in site.cities %}
+              <div class="col-md-3 mb-4">
+                    <div class="card rounded-0 border-0" style="width:280px">
+                      <div class="m-3">
+                        <div class="border-bottom border-1 border-black mb-2"></div>
+                        <div class="small">Since {{ item.since }} <div class="float-right small">{{ item.country }}</div></div>
+                        <a class="black medium-lines text-wrap" href="{{ item.url }}" height="50px">
+                        <div class="pt-3">{{ item.title }}</div>
+                        <div class="pt-3">
+                          <img src="{{ item.image | relative_url }}"  style="display:block;height:150px;max-width:255px" class="w-100" alt="" />
+                        </div>
+                        <div class="h6 pt-2 pb-4">
+                          {{ item.description }}
+                        </div>
+                        <div class="h6">
+                        Read more &rarr;
+                        </div>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
 				</div>
       </div>
 </section>
