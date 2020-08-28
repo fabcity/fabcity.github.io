@@ -107,6 +107,13 @@ fields:
       label: subtitle
   hidden: false
   description: City goals / 3 columns
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  default: city
+  hidden: true
 pages:
 - _cities/Barcelona.html
 - _cities/newci-tempalte.html
