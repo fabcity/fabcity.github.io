@@ -3,10 +3,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>{{ page.title }} - {{ site.title }}</title>
+  <title>{{ page.title }} - {{ page.title }}</title>
   {% seo %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' }}">
   {% include fonts.html %}
 
 </head>
@@ -16,22 +16,20 @@
   <div class="container-fluid white">
       <div class="row d-flex justify-content-center">
         <div class="col-md-5 text-center d-flex justify-content-center">
-
-    <table style="height: 500px;">
-          <tbody>
-            <tr>
-              <td>
-          <div class="d-block d-sm-none h2 align-middle text-uppercase text-center light-letters">
-            {{ page.title }}
-          </div>
-          <h1 class="d-none d-sm-block big-letters align-middle text-uppercase text-center light-letters">
-            {{ page.title }}
-          </h1>
-        </td>
-        </tr>
-      </tbody>
-    </table>
-
+          <table style="height: 500px;">
+                <tbody>
+                  <tr>
+                    <td>
+                <div class="d-block d-sm-none h2 align-middle text-uppercase text-center light-letters">
+                  {{ page.title }}
+                </div>
+                <h1 class="d-none d-sm-block big-letters align-middle text-uppercase text-center light-letters">
+                  {{ page.title }}
+                </h1>
+              </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -43,12 +41,12 @@
     <div class="col-md-6 p-1 pb-2 p-xl-5">
       <h1 class="display-4 light-letters text-weight-light text-uppercase">{{ page.title | append: '&#39;s approach' }} </h1>
       <p class="lead medium">
-        {{ site.data.cities[page.title].approach }}
+        {{ page.approach }}
       </p>
       <!-- <button type="button" class="btn btn-infill pl-3 pr-3 text-uppercase">Read more</button> -->
     </div>
     <div class="col-md-6 p-5">
-        <img src="{{ site.data.cities[page.title].approach_img | relative_url }}" class="w-75" alt="">
+        <img src="{{ page.approach_img | relative_url }}" class="w-75" alt="">
     </div>
   </div>
 
@@ -68,7 +66,7 @@
               </p>
             </div>
             <div class="row">
-              {% for item in site.data.cities[page.title].ecosystem.spaces %}
+              {% for item in page.ecosystem.spaces %}
               <div class="col-md-3 pl-xl-0">
                   {{ item }}
               </div>
@@ -77,11 +75,11 @@
           </div>
         </div>
       <div class="row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4">
-        {% for item in site.data.cities[page.title].ecosystem.places limit:4 %}
+        {% for item in page.ecosystem.places limit:4 %}
         <div class="col-sm blog-item mr-1 ml-sm-1 ml-xl-0 ml-lg-0 pl-lg-0 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4">
           <div class="border-bottom border-1 border-black mb-2"></div>
           <div class="small">0{{ item.number }}
-            {% assign icon = site.data.cities[page.title].ecosystem.spaces %}
+            {% assign icon = page.ecosystem.spaces %}
             {{ icon[item.type] }}
             <div class="float-right small">&rarr; {{ item.neighbourhood }}</div></div>
           <a href="{{ item.link }}">
@@ -102,7 +100,7 @@
   </section>
 
 <section class="pt-0 text-center d-none d-sm-block">
-  <img height="400" src="https://maps.geoapify.com/v1/staticmap?style=positron&width=1300&height=400&center=lonlat:{{ site.data.cities[page.title].ecosystem.map.longlat_center }}&zoom={{ site.data.cities[page.title].ecosystem.map.zoom }}&marker={% for item in site.data.cities[page.title].ecosystem.places %}lonlat:{{ item.longlat }};type:circle;color:%23000000;icon:cloud;icontype:awesome;text:{{ item.number }};whitecircle:no{% if item.size != item.number %}|{%endif%}{% endfor %}&apiKey=cd3e8baa00114ecebd21bfd8675800f4" alt="Pj Font, 21, 8013 Barcelona, Spain">
+  <img height="400" src="https://maps.geoapify.com/v1/staticmap?style=positron&width=1300&height=400&center=lonlat:{{ page.ecosystem.map.longlat_center }}&zoom={{ page.ecosystem.map.zoom }}&marker={% for item in page.ecosystem.places %}lonlat:{{ item.longlat }};type:circle;color:%23000000;icon:cloud;icontype:awesome;text:{{ item.number }};whitecircle:no{% if item.size != item.number %}|{%endif%}{% endfor %}&apiKey=cd3e8baa00114ecebd21bfd8675800f4" alt="Pj Font, 21, 8013 Barcelona, Spain">
 </section>
 
 <section class="bg-yellow">
@@ -112,11 +110,11 @@
       <h1 class="display-4 text-uppercase light-letters pt-0">Consortium</h1>
     </div>
     <div class="col-md-6 pl-xl-0 pt-0">
-      <h4 class="h4">{{ site.data.cities[page.title].consortium.description }}</h4>
+      <h4 class="h4">{{ page.consortium.description }}</h4>
     </div>
     </div>
     <div class="row align-self-center">
-          {% for item in site.data.cities[page.title].consortium.logos %}
+          {% for item in page.consortium.logos %}
           <div class="col-md-2 pl-xl-0 align-self-center">
               <img class="align-self-center p-4 mt-2 w-100" src="{{ item.image_url | relative_url }}" style="background-blend-mode: lighten;"/>
           </div>
@@ -134,7 +132,7 @@
   <div class="col-md-6 p-1 pb-2 p-xl-5">
       <h1 class="display-4 light-letters text-weight-light text-uppercase">strategies </h1>
       <h4>
-        {{ site.data.cities[page.title].strategies.description}}
+        {{ page.strategies.description}}
       </h4>
     <!-- <button type="button" class="btn btn-infill pl-3 pr-3 text-uppercase">Read more</button> -->
   </div>
@@ -149,15 +147,15 @@
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center">
         <div class="display-4 d-none d-sm-block text-uppercase white light-letters">
-          {{ site.data.cities[page.title].city-goals.title }}
+          {{ page.citygoals.title }}
         </div>
         <div class="h2 d-block d-sm-none text-uppercase white light-letters">
-          {{ site.data.cities[page.title].city-goals.title }}
+          {{ page.citygoals.title }}
         </div>
       </div>
     </div>
     <div class="row row-cols-3 mt-3 spaced-out">
-      {% for item in site.data.cities[page.title].city-goals.columns %}
+      {% for item in page.citygoals.columns %}
       <div class="col-md-3 text-center">
         <div class="h4 font-weight-bold white fat-letters">
           {{ item.title }}

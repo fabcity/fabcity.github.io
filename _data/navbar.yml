@@ -5,6 +5,6 @@
   - name: Network
     link: /network.html
   - name: Blog
-    link: \#blog #to external blog or section below?
+    link: /#blog #to external blog or section below?
   - name: Resources
     link: /resources.html
