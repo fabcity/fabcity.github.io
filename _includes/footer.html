@@ -37,7 +37,7 @@
       <div class="row row-cols-2 text-center pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
         <div class="col text-right">
           {% for item in site.data.footer.social %}
-            <a class="nav-item white nav-link p-3" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url }}" /></a>
+            <a class="nav-item white nav-link p-3" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url | relative_url }}" /></a>
           {% endfor %}
         </div>
       </div>
