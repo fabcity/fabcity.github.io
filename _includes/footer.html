@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4 pb-3">
       <div class="col-md-1 white text-left">
-        <img class="svg-white" src="assets/images/fabcitylogo-08.svg" width="60px" />
+        <img class="svg-white" src="/assets/images/fabcitylogo-08.svg" width="60px" />
       </div>
       <div class="col-md-3 white text-justify text-left pt-2">
         Collective of civic leaders, makers, urbanists and
@@ -23,7 +23,7 @@
         <div class="row row-cols-4">
       {% for item in site.data.footer.pages %}
       <div class="col-md-3 col">
-        <a class="pt-2 pr-1 pb-1 white float-left" href="{{ item.link | relative_url }}">{{ item.name }}</a>
+        <a class="pt-2 pr-1 pb-1 white float-left" href="{{ item.link }}">{{ item.name }}</a>
       </div>
       {% endfor %}
         </div>
@@ -37,7 +37,7 @@
       <div class="row row-cols-2 text-center pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
         <div class="col text-right">
           {% for item in site.data.footer.social %}
-            <a class="nav-item white nav-link p-3" href="{{ item.link | relative_url }}"><img class="nav-icon" src="{{ item.image_url }}" /></a>
+            <a class="nav-item white nav-link p-3" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url }}" /></a>
           {% endfor %}
         </div>
       </div>
@@ -85,7 +85,7 @@
         </div>
         {% for item in site.data.footer.powered %}
         <div class="col-md-2">
-          <img class="nav-icon" style="margin: 10px 0 20px 0;" src="{{ item.image_url | relative_url }}" height="50px">
+          <img class="nav-icon" style="margin: 10px 0 20px 0;" src="{{ item.image_url }}" height="50px">
         </div>
         {% endfor %}
       </div>
@@ -98,7 +98,7 @@
           <!-- only visible on mobile screens -->
           <div class="row row-cols-3 pl-2 spaced-out">
             <div class="col-xs-1">
-              <img class="d-block d-sm-none p-0" style="margin: -1px 0 5px 0;" src="{{ '/assets/images/rainbow.png' | relative_url }}" height="10px !important">
+              <img class="d-block d-sm-none p-0" style="margin: -1px 0 5px 0;" src="{{ '/assets/images/rainbow.png' }}" height="10px !important">
             </div>
             <div class="col-xs-4">
               <div class="white smallest d-block p-0 d-sm-none text-uppercase font-weight-bold"> Made With happiness</div>
@@ -109,7 +109,7 @@
           </div>
           <!-- // only visible on mobile screens -->
 
-          <img class="d-none d-sm-block pr-0" style="margin: 0px -100px 5px 0px;" src="{{ '/assets/images/rainbow.png' | relative_url }}" height="20px !important">
+          <img class="d-none d-sm-block pr-0" style="margin: 0px -100px 5px 0px;" src="{{ '/assets/images/rainbow.png' }}" height="20px !important">
         </div>
         <div class="col-md-3 pl-0" style="margin-left:-65px;">
           <div class="white pl-0 text-left d-none d-sm-block happiness text-uppercase high-lines font-weight-bold"> Made With happiness</div>

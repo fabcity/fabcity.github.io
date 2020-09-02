@@ -4,7 +4,7 @@ timezone: UTC
 collections:
   cities:
     title: Cities
-    output: true
+    output: false
   posts:
     title: Posts
     output: false

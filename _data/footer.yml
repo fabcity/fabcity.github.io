@@ -9,16 +9,16 @@ pages:
     link: /resources.html
 social: # order is reversed
   - name: Podcast
-    image_url: 'assets/images/podcast.svg'
+    image_url: '/assets/images/podcast.svg'
     link: \#podcast
   - name: Facebook
-    image_url: 'assets/images/facebook.svg'
+    image_url: '/assets/images/facebook.svg'
     link: \#facebook-url
   - name: Github
-    image_url: 'assets/images/github.svg'
+    image_url: '/assets/images/github.svg'
     link: https://github.com/fabcity
   - name: Twitter
-    image_url: 'assets/images/twitter.svg'
+    image_url: '/assets/images/twitter.svg'
     link: https://twitter.com/fabcity
 powered:
   - image_url: '/assets/images/rainbow.png'
