@@ -114,6 +114,3 @@ fields:
   label: layout
   default: city
   hidden: true
-pages:
-- _cities/Barcelona.html
-- _cities/newci-tempalte.html
