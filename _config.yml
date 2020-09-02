@@ -23,7 +23,7 @@ description:
 author: Fab City
 coder: j0r15
 url: https://j0r15.github.com/fabcity/
-baseurl: fabcity/
+baseurl: /
 google_analytics: UA-111111111-1
 markdown: kramdown
 social:
