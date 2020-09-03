@@ -10,15 +10,15 @@
         <div class="borderline"></div>
       </div>
       <div class="pt-3 pb-3 fat-letters text-white">
-        {{ site.data.take-action.title }}
+        {{ site.data.take_action.title }}
         <br />
         <br />
-        {{ site.data.take-action.line2 }}
+        {{ site.data.take_action.line2 }}
       </div>
       <div class="pt-3 pb-3 spaced-out">
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">{{ site.data.take-action.button_left }}</button>
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">{{ site.data.take-action.button_middle }}</button>
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">{{ site.data.take-action.button_right }}</button>
+        <a href="{{ site.data.take_action.link | relative_url }}"><button type="button"  class="btn pr-lg-4 pl-lg-4 small btn-action">{{ site.data.take_action.button_left }}</button></a>
+        <a href="{{ site.data.take_action.link | relative_url }}"><button type="button"  class="btn pr-lg-4 pl-lg-4 small btn-action">{{ site.data.take_action.button_middle }}</button></a>
+        <a href="{{ site.data.take_action.link | relative_url }}"><button type="button"  class="btn pr-lg-4 pl-lg-4 small btn-action">{{ site.data.take_action.button_right }}</button></a>
       </div>
     </div>
   </div>

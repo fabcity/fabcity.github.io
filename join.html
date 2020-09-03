@@ -99,14 +99,9 @@ layout: home
             <img src="assets/images/what-is-the-pledge.png" class="w-100" alt="">
         </div>
         <div class="col-md-6 pt-1 pb-1 pr-2 pl-2 pb-2 p-xl-5">
-            <h1 class="display-4 light-letters text-weight-light text-uppercase">What is the <br /> pledge? </h1>
+            <h1 class="display-4 light-letters text-weight-light text-uppercase">{{ site.data.pledge.title }}</h1>
               <div class="h6">
-                The cities network share working practices and
-                knowledge with the wider network as well as a
-                deep alignment of purpose and culture. Believing
-                the efforts of their own city can be enhanced and
-                their own sustainability can be better achieved
-                through collaboration.
+                {{ site.data.pledge.description }}
             </div>
             <!-- <button type="button" class="d-none d-sm-block btn btn-infill pl-3 pr-3 text-uppercase">Read more</button> -->
           <!-- <button type="button" class="d-block d-sm-none btn btn-infill pl-3 pr-3 text-uppercase">Download the manifesto</button> -->
@@ -152,14 +147,9 @@ layout: home
       <img src="assets/images/who-can-pledge.png" class="w-100" alt="">
   </div>
   <div class="col-md-6 pt-1 pb-1 pr-2 pl-2 pb-2 p-xl-5">
-      <h1 class="display-4 light-letters text-weight-light text-uppercase">Who can pledge? </h1>
+      <h1 class="display-4 light-letters text-weight-light text-uppercase">{{ site.data.pledge.who-can-pledge-title }}</h1>
         <div class="h6">
-          The cities network share working practices and
-          knowledge with the wider network as well as a
-          deep alignment of purpose and culture. Believing
-          the efforts of their own city can be enhanced and
-          their own sustainability can be better achieved
-          through collaboration.
+          {{ site.data.pledge.who-can-pledge-description }}
       </div>
       <!-- <button type="button" class="d-none d-sm-block btn btn-infill pl-3 pr-3 text-uppercase">Read more</button> -->
     <!-- <button type="button" class="d-block d-sm-none btn btn-infill pl-3 pr-3 text-uppercase">Download the manifesto</button> -->
@@ -176,17 +166,14 @@ layout: home
   <div class="container-fluid">
     <div class="row row-cols-2 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
       <div class="col-md-4">
-            <div class="display-4 fat-letters">Join for 2021</div>
+            <div class="display-4 fat-letters">{{ site.data.join_for_2021.title }}</div>
             <div class="mt-2 mb-3 small">
-              New cities may join the Fab City network on a yearly basis
-              at the annual gathering of the Fab City global community.
-              If you would like your city to join the network you can begin
-              the journey here.
+              {{ site.data.join_for_2021.description }}
             </div>
-            <button type="button" class="d-block d-sm-none btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start Now</button>
+            <button type="button" class="d-block d-sm-none btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">{{ site.data.join_for_2021.button_text }}</button>
           </div>
         <div class="col-md-8 pt-5">
-          <button type="button" class="d-none d-sm-block float-right btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start Now</button>
+          <button type="button" class="d-none d-sm-block float-right btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">{{ site.data.join_for_2021.button_text }}</button>
         </div>
       </div>
     </div>
