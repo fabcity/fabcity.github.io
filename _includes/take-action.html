@@ -10,15 +10,15 @@
         <div class="borderline"></div>
       </div>
       <div class="pt-3 pb-3 fat-letters text-white">
-        Do you want to take part on this? become a member on the Fab City <br/> Network.
+        {{ site.data.take-action.title }}
         <br />
         <br />
-        First, let us know how you are:
+        {{ site.data.take-action.line2 }}
       </div>
       <div class="pt-3 pb-3 spaced-out">
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a City</button>
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a person</button>
-        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">I'm a government</button>
+        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">{{ site.data.take-action.button_left }}</button>
+        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">{{ site.data.take-action.button_middle }}</button>
+        <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-action">{{ site.data.take-action.button_right }}</button>
       </div>
     </div>
   </div>
