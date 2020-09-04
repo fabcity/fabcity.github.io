@@ -1,0 +1,121 @@
+---
+label: better
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: number
+  name: since
+  label: since
+- type: file
+  name: image_preview
+  label: image_preview
+- type: file
+  name: image
+  label: image
+- type: text
+  name: country
+  label: country
+- type: text
+  name: description
+  label: description
+- type: textarea
+  name: approach
+  label: approach
+- type: file
+  name: approach_img
+  label: approach_img
+- type: field_group
+  name: ecosystem
+  label: ecosystem
+  fields:
+  - type: field_group
+    name: map
+    label: map
+    fields:
+    - type: text
+      name: longlat_center
+      label: longlat_center
+    - type: number
+      name: zoom
+      label: zoom
+  - type: field_group
+    name: spaces
+    label: spaces
+    fields:
+    - type: text
+      name: Materials
+      label: Materials
+    - type: text
+      name: Food
+      label: Food
+    - type: text
+      name: Fabrication
+      label: Fabrication
+    - type: text
+      name: Energy
+      label: Energy
+  - type: field_group_list
+    name: places
+    label: places
+    fields:
+    - type: number
+      name: number
+      label: number
+    - type: text
+      name: type
+      label: type
+    - type: text
+      name: neighbourhood
+      label: neighbourhood
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: img
+      label: img
+    - type: text
+      name: longlat
+      label: longlat
+- type: field_group
+  name: consortium
+  label: consortium
+  fields:
+  - type: textarea
+    name: description
+    label: description
+  - type: field_group_list
+    name: logos
+    label: logos
+    fields:
+    - type: file
+      name: image_url
+      label: image_url
+- type: field_group
+  name: strategies
+  label: strategies
+  fields:
+  - type: textarea
+    name: description
+    label: description
+- type: field_group
+  name: citygoals
+  label: citygoals
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: columns
+    label: columns
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: subtitle
+      label: subtitle
