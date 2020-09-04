@@ -8,7 +8,7 @@ sections:
   path: ''
   label: Cities
   create: all
-  match: Barcelona/*,
+  match: Barcelona/*
   new_doc_ext: ".html"
 - type: directory
   path: _data
