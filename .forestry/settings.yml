@@ -9,7 +9,7 @@ sections:
   label: Cities
   create: all
   match: Barcelona/*
-  new_doc_ext: ".html"
+  new_doc_ext: html
 - type: directory
   path: _data
   label: Content of General pages

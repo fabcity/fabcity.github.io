@@ -1,6 +1,7 @@
-title: 'Do you want to take part on this? become a member on the Fab City <br/> Network.'
+---
+title: Do you want to take part on this? become a member on the Fab City <br/> Network.
 line2: 'First, let us know how you are:'
-button_left: 'I&#39;m a City'
-button_middle: 'I&#39;m a person'
-button_right: 'I&#39;m a government'
-link: '/join.html'
+button_left: I'm a City
+button_middle: I'm a person
+button_right: I'm a government
+link: "/join.html"
