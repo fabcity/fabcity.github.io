@@ -95,6 +95,8 @@ fields:
     - type: file
       name: image_url
       label: image_url
+    config:
+      max: 7
 - type: field_group
   name: strategies
   label: strategies
@@ -119,3 +121,6 @@ fields:
     - type: text
       name: subtitle
       label: subtitle
+    config:
+      max: 3
+      min: 0
