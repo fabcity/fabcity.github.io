@@ -37,17 +37,12 @@ layout: home
     <div class="row row-cols-2">
       <div class="col-md-6">
         <div class="h5">
-        It is a new urban model of transforming and
-        shaping cities that shifts how they source and use
-        materials from ‘Products In Trash Out’ (PITO) to
-        ‘Data In Data Out’ (DIDO).
+          {{ site.data.datainout.left-section }}
         </div>
       </div>
       <div class="col-md-6">
         <div class="h5">
-        The Fab City takes the ideals of the Fab Lab such as
-        the connectivity, culture, glocalism and creativity
-        and scales it to the City.
+        {{ site.data.datainout.right-section }}
         </div>
       </div>
     </div>
@@ -65,33 +60,25 @@ layout: home
             <img src="assets/images/manifesto.png" class="w-100" alt="">
         </div>
         <div class="col-md-6 pt-1 pb-1 pr-2 pl-2 pb-2 p-xl-5">
-            <h1 class="display-4 light-letters text-weight-light text-uppercase">The Fab city <br /> Manifesto </h1>
+            <h1 class="display-4 light-letters text-weight-light text-uppercase">{{ site.data.manifesto.title }}</h1>
               <div class="h6">
-                We embrace strategies in circular economy and
-                digital social innovation, and foster collaboration
-                between a global network of European and
-                worldwide cities and territories to meet the
-                planetary challenges presented by climate
-                change and social inequalities.
+                {{ site.data.manifesto.subtitle }}
             </div>
-            <button type="button" class="d-none d-sm-block btn btn-infill pl-3 pr-3 text-uppercase">Read more</button>
-          <button type="button" class="d-block d-sm-none btn btn-infill pl-3 pr-3 text-uppercase">Download the manifesto</button>
+            <a href="{{ site.data.manifesto.readmore-link }}"><button type="button" class="d-none d-sm-block btn btn-infill pl-3 pr-3 text-uppercase">Read more</button></a>
+          <a href="{{ site.data.manifesto.download-link }}"><button type="button" class="d-block d-sm-none btn btn-infill pl-3 pr-3 text-uppercase">Download the manifesto</button></a>
         </div>
       </div>
 
 <!-- Fab Lab Foundation -->
-<!-- <section class="bg-blue">
+<section class="bg-blue">
   <div class="container">
     <div class="row row-cols-2 spaced-out">
       <div class="col-md-6 pl-sm-2 pl-xl-0">
-        <h1 class="display-4 white text-uppercase light-letters pb-3 ">Fab Lab <br/> Foundation</h1>
+        <h1 class="display-4 white text-uppercase light-letters pb-3 ">{{ site.data.foundation.title }}</h1>
       </div>
       <div class="col-md-6 pl-sm-2 pl-xl-0 pt-2">
         <div class="h5 white">
-          The Fab City Foundation has been established as a legal
-          and organizational structure in Estonia to enable the
-          location-independent work of the globally distributed
-          Fab City community.
+          {{ site.data.foundation.subtitle }}
         </div>
       </div>
     </div>
@@ -112,10 +99,10 @@ layout: home
     {% endfor %}
   </div>
   </div>
-</section> -->
+</section>
 <!-- <div class="borderline dark"></div> -->
 <!-- Fab Lab collective -->
-<!-- <section class="bg-white">
+<section class="bg-white">
   <div class="container">
     <div class="row row-cols-2 spaced-out">
       <div class="col-md-6 pl-sm-2 pl-xl-0">
@@ -145,22 +132,19 @@ layout: home
     <a href="#collective" target="_blank"><button type="button" class="btn pl-4 pr-4 pb-1 pt-1 small bg-white border-1 border-black black rounded-0 text-uppercase">View the collective</button></a>
   </div>
   </div>
-</section> -->
-<!-- <div class="borderline dark"></div> -->
+</section>
+<div class="borderline dark"></div>
 
 <!-- ROADMAP -->
 <section class="bg-red">
   <div class="container" >
     <div class="row row-cols-2 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
       <div class="col-md-6">
-            <div class="display-4 uppercase white text-uppercase light-letters">Roadmap</div>
+            <div class="display-4 uppercase white text-uppercase light-letters">{{ site.data.roadmap.title }}</div>
       </div>
           <div class="col-md-6 mt-0">
             <div class="mt-2 mb-3 white h5">
-              Our Roadmap is unique. Launched in 2011 by the City of
-              Barcelona, it is now in constant development thanks to the
-              distributed network of cities, individual advocates, NGOs,
-              academics and industry partners.
+              {{ site.data.roadmap.subtitle }}
             </div>
           </div>
           <div class="col white d-block d-sm-none">
@@ -178,7 +162,8 @@ layout: home
       <div class="col-md-12">
         <div id="timeline" onscroll="scrollPosi()" style="display:inline-block;width:100%;overflow-y:auto;">
 					<ul class="timeline timeline-horizontal">
-            {% for item in site.data.roadmap.events %}
+            {% assign events = site.data.roadmap.events | sort: "year" | reverse %}
+            {% for item in events %}
 						<li id="{{ item.number }}" class="timeline-item"> <!-- becomes active -->
               <div class="timeline-badge primary"></div>
 							<div class="timeline-panel">
@@ -210,12 +195,14 @@ layout: home
 </section>
 
 <script type="text/javascript">
+  {% assign events = site.data.roadmap.events | sort: "year" %}
+
   function toLeft() {
     var elmnt = document.getElementById("timeline");
     var x = elmnt.scrollLeft;
     var w = elmnt.scrollWidth;
     var c = elmnt.clientWidth;
-    var s = (w - c) / 6;
+    var s = (w - c) / {{ events.last.number }};
     elmnt.scrollLeft += s;
   }
   function toRight() {
@@ -223,7 +210,7 @@ layout: home
     var x = elmnt.scrollLeft;
     var w = elmnt.scrollWidth;
     var c = elmnt.clientWidth;
-    var s = (w - c) / -6;
+    var s = (w - c) / {{ events.last.number | prepend: "-" }};
     elmnt.scrollLeft += s;
   }
   function scrollPosi() {
@@ -231,41 +218,18 @@ layout: home
     var x = elmnt.scrollLeft;
     var w = elmnt.scrollWidth;
     var c = elmnt.clientWidth;
-    var s = x / ((w - c) / 7);
+    var s = x / ((w - c) / {{ events.last.number | plus: 1 }});
+
+
     switch(true) {
-      case (s < 1):
-        document.getElementById("0").classList.add("active");
-        document.getElementById("1").classList.remove("active");
-        break;
-      case (s < 2):
-        document.getElementById("1").classList.add("active");
-        document.getElementById("2").classList.remove("active");
-        document.getElementById("0").classList.remove("active");
-        break;
-      case (s < 3):
-        document.getElementById("2").classList.add("active");
-        document.getElementById("1").classList.remove("active");
-        document.getElementById("3").classList.remove("active");
-        break;
-      case (s < 4):
-        document.getElementById("3").classList.add("active");
-        document.getElementById("2").classList.remove("active");
-        document.getElementById("4").classList.remove("active");
-        break;
-      case (s < 5):
-        document.getElementById("4").classList.add("active");
-        document.getElementById("3").classList.remove("active");
-        document.getElementById("5").classList.remove("active");
-        break;
-      case (s < 6):
-        document.getElementById("5").classList.add("active");
-        document.getElementById("4").classList.remove("active");
-        document.getElementById("6").classList.remove("active");
-        break;
-      case (s <= 7):
-        document.getElementById("6").classList.add("active");
-        document.getElementById("5").classList.remove("active");
-        break;
+    {% assign events2 = site.data.roadmap.events | sort: "year" | reverse %}
+    {% for item in events2 %}
+      // case (s < {{ item.number | plus: 1 }}):
+      //   document.getElementById("{{ item.number }}").classList.add("active");
+      //   document.getElementById("{{ item.number | plus: 1 | at_most: events.count }}").classList.remove("active");
+      //   document.getElementById("{{ item.number | minus: 1 | at_least: 0 }}").classList.remove("active");
+      //   break;
+    {% endfor %}
       default:
         break;
     }

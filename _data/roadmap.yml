@@ -1,3 +1,8 @@
+title: Roadmap
+subtitle: 'Our Roadmap is unique. Launched in 2011 by the City of
+Barcelona, it is now in constant development thanks to the
+distributed network of cities, individual advocates, NGOs,
+academics and industry partners.'
 events:
   - year: "2011"
     title: "Fab7 International Conference"
@@ -34,3 +39,13 @@ events:
     description: "14th International Fab Lab Conference: Fab14: Fabricating Resilience / Fab City Campus Parc de La Villete / Fab City Summit Paris"
     location: Paris
     number: 6
+  - year: "2019"
+    title: 'FAB CITY SUMMIT AT THE WE MAKE THE CITY FESTIVAL'
+    description: "The Fab City Summit was held in Amsterdam at  Urban Conference We Make The City Festival in June 2019."
+    location: Amsterdam
+    number: 7
+  - year: "2020"
+    title: 'FAB CITY SUMMIT AT THE WE MAKE THE CITY FESTIVAL'
+    description: "The Distributed Fab City Summit 2020, from Emergency to Resilience - broadcasting from Barcelona takes place on the 14+15 October 2020!"
+    location: Online
+    number: 8

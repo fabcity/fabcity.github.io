@@ -639,7 +639,7 @@ a.white:hover {
   background-color: white;
 }
 
-.active .timeline-badge {
+.active .timeline-badge, .timeline-item:hover .timeline-badge { // if hover over .timeline-item then .timeline-badge with get the css below
   background-color: white;
   box-shadow: 0px 0px 0px 8px rgba(#fff,0.3); // WOOW noice transparent border
   // z-index: 400 !important;

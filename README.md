@@ -2,10 +2,10 @@
 
 # Todo :
 
-Add upcoming for city seperate
+Add upcoming for city seperate ->
 
-add blog posts for city seperate
+add blog posts for city seperate ->
 
-add collective and foundation
+add collective and foundation ->
 
 resources collapse
