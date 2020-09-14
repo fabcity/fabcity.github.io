@@ -13,13 +13,13 @@ sections:
 - type: directory
   path: Cities
   label: Cities
-  create: documents
-  match: Barcelona, Amsterdam, Paris, Santiago, Shenzhen, Ekurhuleni, Thimphu, Georgia,
+  create: all
+  match: Barcelona/ Amsterdam/ Paris, Santiago, Shenzhen, Ekurhuleni, Thimphu, Georgia,
     Sacramento, Detroit, Somerville, Boston, Cambridge, Kerala, Toulouse, Occitanie-Region,
     Brest, Curitiba, Kamakura, Sorocaba, Mexico-city, Seoul, Zagreb, Velsen, Puebla
     Belo-Horizonte, Auvergne-rhone-alpes, Oakland, Sao-paulo, Yucatan, Hamburg, Rennes,
     Plymouth, Recife
-  new_doc_ext: ".html"
+  new_doc_ext: html
 upload_dir: images
 public_path: "/assets/images"
 front_matter_path: ''
