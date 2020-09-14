@@ -19,16 +19,14 @@ layout: home
       <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
         <div class="col-md-5">
           <div class="display-4 text-uppercase light-letters">
-            Fab City Summit
+            {{ site.data.fab_city_summit_action_button.title }}
           </div>
           <div class="h5">
-            Public Institutions, Industry and Society <br class="d-none d-sm-block" />
-            meet in Paris to define the path towards the <br class="d-none d-sm-block" />
-            future of Productive Cities
+            {{ site.data.fab_city_summit_action_button.subtitle }}
           </div>
-          <button type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#get-tickets">
-            Get Your tickets now
-          </button>
+          <a type="button" class="btn btn-primary take-button p-3 text-uppercase" data-toggle="modal" data-target="#get-tickets">
+            {{ site.data.fab_city_summit_action_button.button-text }}
+          </a>
         </div>
       </div>
     </div>
