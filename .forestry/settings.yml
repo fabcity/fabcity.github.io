@@ -5,17 +5,17 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: ''
-  label: Cities
-  create: all
-  match: Barcelona/*
-  new_doc_ext: html
-- type: directory
   path: _data
-  label: Content of General pages
+  label: Data
   create: documents
   match: "**/*"
-  new_doc_ext: yml
+  new_doc_ext: ".yml"
+- type: directory
+  path: Barcelona
+  label: Cities
+  create: documents
+  match: "*"
+  new_doc_ext: html
 upload_dir: images
 public_path: "/assets/images"
 front_matter_path: ''
