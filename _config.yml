@@ -1,10 +1,10 @@
 ---
 title: Fab.City
-timezone: UTC
+timezone: UTC+1
 collections:
   cities:
     title: Cities
-    output: false
+    output: true
   posts:
     title: Posts
     output: false
@@ -22,7 +22,7 @@ email: your.email@gmail.com
 description:
 author: Fab City
 coder: j0r15
-url: https://j0r15.github.com/fabcity/
+url: https://fabcity.github.io/
 baseurl:
 google_analytics: UA-111111111-1
 markdown: kramdown
