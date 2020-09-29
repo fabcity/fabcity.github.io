@@ -9,7 +9,7 @@ sections:
   label: Cities
   create: all
   match: "**/*"
-  new_doc_ext: ".html"
+  new_doc_ext: html
   templates:
   - better
 - type: directory
