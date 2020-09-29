@@ -141,3 +141,5 @@ fields:
     config:
       max: 3
       min: 0
+pages:
+- cities/Curitiba/index.html
