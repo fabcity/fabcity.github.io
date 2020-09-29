@@ -12,7 +12,7 @@ sections:
     Sacramento Detroit Somerville Boston Cambridge Kerala Toulouse Occitanie-Region
     Brest Curitiba Kamakura Sorocaba Mexico-city Seoul Zagreb Velsen PueblaBelo-Horizonte
     Auvergne-rhone-alpes Oakland Sao-paulo Yucatan Hamburg Rennes Plymouth Recife]"
-  exclude: "**"
+  exclude: "*"
 - type: directory
   path: _data
   label: Data
