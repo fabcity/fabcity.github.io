@@ -7,6 +7,13 @@ fields:
   label: layout
   default: city
   hidden: true
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: permalink
+  hidden: true
+  default: "/cities/"
 - type: text
   name: title
   label: title
@@ -126,12 +133,5 @@ fields:
     config:
       max: 3
       min: 0
-- name: permalink
-  type: text
-  config:
-    required: false
-  label: permalink
-  hidden: true
-  default: "/cities/"
 pages:
 - cities/Amsterdam/amsterdam.html
