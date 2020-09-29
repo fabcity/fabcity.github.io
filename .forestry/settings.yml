@@ -18,7 +18,7 @@ sections:
     Sacramento| Detroit| Somerville| Boston| Cambridge| Kerala| Toulouse| Occitanie-Region|
     Brest| Curitiba| Kamakura| Sorocaba| Mexico-city| Seoul| Zagreb| Velsen| Puebla
     Belo-Horizonte| Auvergne-rhone-alpes| Oakland| Sao-paulo| Yucatan| Hamburg| Rennes|
-    Plymouth| Recife)"
+    Plymouth| Recife)/*"
   new_doc_ext: html
 upload_dir: images
 public_path: "/assets/images"
