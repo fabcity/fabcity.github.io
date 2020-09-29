@@ -12,7 +12,7 @@ fields:
   config:
     required: false
   label: permalink
-  hidden: true
+  hidden: false
   default: "/Amsterdam/"
   description: 'Should look like: /city-name/'
 - type: text
