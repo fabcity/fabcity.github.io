@@ -126,5 +126,12 @@ fields:
     config:
       max: 3
       min: 0
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: permalink
+  hidden: true
+  default: "/cities/"
 pages:
 - cities/Amsterdam/amsterdam.html
