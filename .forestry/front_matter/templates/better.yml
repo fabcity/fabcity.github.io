@@ -16,8 +16,8 @@ fields:
   default: "/Amsterdam/"
   description: 'Should look like: /city-name/'
 - type: text
-  name: title
-  label: title
+  name: city_name
+  label: city name
 - type: number
   name: since
   label: since
