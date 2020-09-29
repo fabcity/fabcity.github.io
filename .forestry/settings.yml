@@ -5,10 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: "*"
+  path: ''
   label: Cities
   create: all
-  match: "*(Barcelona|Amsterdam|Paris|Santiago|Shenzhen|Ekurhuleni|Thimphu|Georgia|Sacramento|Detroit|Somerville|Boston|Cambridge|Kerala|Toulouse|Occitanie-Region|Brest|Curitiba|Kamakura|Sorocaba|Mexico-city|Seoul|Zagreb|Velsen|PueblaBelo-Horizonte|Auvergne-rhone-alpes|Oakland|Sao-paulo|Yucatan|Hamburg|Rennes|Plymouth|Recife)"
+  match: "?(Barcelona|Amsterdam|Paris|Santiago|Shenzhen|Ekurhuleni|Thimphu|Georgia|Sacramento|Detroit|Somerville|Boston|Cambridge|Kerala|Toulouse|Occitanie-Region|Brest|Curitiba|Kamakura|Sorocaba|Mexico-city|Seoul|Zagreb|Velsen|PueblaBelo-Horizonte|Auvergne-rhone-alpes|Oakland|Sao-paulo|Yucatan|Hamburg|Rennes|Plymouth|Recife)"
 - type: directory
   path: _data
   label: Data
