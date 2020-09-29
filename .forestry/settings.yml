@@ -9,6 +9,8 @@ sections:
   label: Cities
   create: all
   match: "**/*"
+  templates:
+  - better
 - type: directory
   path: _data
   label: Data
