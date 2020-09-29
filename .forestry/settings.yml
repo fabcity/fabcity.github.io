@@ -8,10 +8,10 @@ sections:
   path: ''
   label: Cities
   create: documents
-  match: "/[Barcelona Amsterdam Paris Santiago Shenzhen Ekurhuleni Thimphu Georgia
+  match: "*[Barcelona Amsterdam Paris Santiago Shenzhen Ekurhuleni Thimphu Georgia
     Sacramento Detroit Somerville Boston Cambridge Kerala Toulouse Occitanie-Region
     Brest Curitiba Kamakura Sorocaba Mexico-city Seoul Zagreb Velsen PueblaBelo-Horizonte
-    Auvergne-rhone-alpes Oakland Sao-paulo Yucatan Hamburg Rennes Plymouth Recife]"
+    Auvergne-rhone-alpes Oakland Sao-paulo Yucatan Hamburg Rennes Plymouth Recife]/"
 - type: directory
   path: _data
   label: Data
