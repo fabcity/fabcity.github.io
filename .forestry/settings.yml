@@ -1,7 +1,7 @@
 ---
-new_page_extension: md
+new_page_extension: html
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: directory
@@ -14,11 +14,11 @@ sections:
   path: Cities
   label: Cities
   create: all
-  match: "/*(Barcelona|Amsterdam| Paris| Santiago| Shenzhen| Ekurhuleni| Thimphu|
-    Georgia| Sacramento| Detroit| Somerville| Boston| Cambridge| Kerala| Toulouse|
-    Occitanie-Region| Brest| Curitiba| Kamakura| Sorocaba| Mexico-city| Seoul| Zagreb|
-    Velsen| Puebla Belo-Horizonte| Auvergne-rhone-alpes| Oakland| Sao-paulo| Yucatan|
-    Hamburg| Rennes| Plymouth| Recife)"
+  match: "*(Barcelona|Amsterdam| Paris| Santiago| Shenzhen| Ekurhuleni| Thimphu| Georgia|
+    Sacramento| Detroit| Somerville| Boston| Cambridge| Kerala| Toulouse| Occitanie-Region|
+    Brest| Curitiba| Kamakura| Sorocaba| Mexico-city| Seoul| Zagreb| Velsen| Puebla
+    Belo-Horizonte| Auvergne-rhone-alpes| Oakland| Sao-paulo| Yucatan| Hamburg| Rennes|
+    Plymouth| Recife)"
   new_doc_ext: html
 upload_dir: images
 public_path: "/assets/images"
