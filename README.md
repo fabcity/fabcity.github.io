@@ -1,6 +1,6 @@
 # Fab.City
 
-Testing:<https://github.io/fabcity/fabcity.github.io>
+Testing:<https://fabcity.github.io/>
 
 
 # Todo :
