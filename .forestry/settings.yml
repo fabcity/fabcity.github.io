@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: ''
   label: Cities
-  create: all
+  create: documents
   match: "*[Barcelona Amsterdam Paris Santiago Shenzhen Ekurhuleni Thimphu Georgia
     Sacramento Detroit Somerville Boston Cambridge Kerala Toulouse Occitanie-Region
     Brest Curitiba Kamakura Sorocaba Mexico-city Seoul Zagreb Velsen PueblaBelo-Horizonte
