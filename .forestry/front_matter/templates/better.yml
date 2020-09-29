@@ -5,6 +5,8 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: city
+  hidden: true
 - type: text
   name: title
   label: title
