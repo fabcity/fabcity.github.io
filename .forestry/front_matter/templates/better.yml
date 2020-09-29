@@ -13,7 +13,8 @@ fields:
     required: false
   label: permalink
   hidden: true
-  default: "/cities/"
+  default: "/Amsterdam/"
+  description: 'Should look like: /city-name/'
 - type: text
   name: title
   label: title
