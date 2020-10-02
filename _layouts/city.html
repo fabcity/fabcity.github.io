@@ -100,7 +100,7 @@
   </section>
 
 <section class="pt-0 text-center d-none d-sm-block">
-  <img height="400" src="https://maps.geoapify.com/v1/staticmap?style=positron&width=1300&height=400&center=lonlat:{{ page.ecosystem.map.longlat_center }}&zoom={{ page.ecosystem.map.zoom }}&marker={% for item in page.ecosystem.places %}lonlat:{{ item.longlat }};type:circle;color:%23000000;icon:cloud;icontype:awesome;text:{{ item.number }};whitecircle:no{% if item.size != item.number %}|{%endif%}{% endfor %}&apiKey=cd3e8baa00114ecebd21bfd8675800f4" alt="Pj Font, 21, 8013 Barcelona, Spain">
+  <img height="400" src="https://maps.geoapify.com/v1/staticmap?style=positron&width=1300&height=400&center=lonlat:{{ page.ecosystem.map.longlat_center }}&zoom={{ page.ecosystem.map.zoom }}&marker={% for item in page[city_name].ecosystem.places %}lonlat:{{ item.longlat }};type:circle;color:%23000000;icon:cloud;icontype:awesome;text:{{ item.number }};whitecircle:no{% if item.size != item.number %}|{%endif%}{% endfor %}&apiKey=cd3e8baa00114ecebd21bfd8675800f4" alt="Pj Font, 21, 8013 Barcelona, Spain">
 </section>
 
 <section class="bg-yellow">
