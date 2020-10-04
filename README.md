@@ -12,3 +12,7 @@ add blog posts for city seperate ->
 add collective and foundation ->
 
 resources collapse
+
+add collective text
+
+text under collective
