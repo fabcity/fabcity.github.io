@@ -53,21 +53,38 @@ layout: home
   <div class="p-5" style="height:600px;">
   </div>
 </section> -->
-<!-- Manifesto -->
-<div class="borderline dark d-none d-sm-block"></div>
-      <div class="row row-cols-2 m-0  w-100 h-100">
-        <div class="col-md-6 p-0">
-            <img src="assets/images/manifesto.png" class="w-100" alt="">
-        </div>
-        <div class="col-md-6 pt-1 pb-1 pr-2 pl-2 pb-2 p-xl-5">
-            <h1 class="display-4 light-letters text-weight-light text-uppercase">{{ site.data.manifesto.title }}</h1>
-              <div class="h6">
-                {{ site.data.manifesto.subtitle }}
-            </div>
-            <a href="{{ site.data.manifesto.readmore-link }}"><button type="button" class="d-none d-sm-block btn btn-infill pl-3 pr-3 text-uppercase">Read more</button></a>
-          <a href="{{ site.data.manifesto.download-link }}"><button type="button" class="d-block d-sm-none btn btn-infill pl-3 pr-3 text-uppercase">Download the manifesto</button></a>
-        </div>
+
+<!-- Fab Lab Network -->
+<section class="bg-blue">
+  <div class="container">
+    <div class="row row-cols-2 spaced-out">
+      <div class="col-md-6 pl-sm-2 pl-xl-0">
+        <h1 class="display-4 white text-uppercase light-letters pb-3 ">{{ site.data.foundation.title }}</h1>
       </div>
+      <div class="col-md-6 pl-sm-2 pl-xl-0 pt-2">
+        <!-- <div class="h5 white">
+          {{ site.data.foundation.subtitle }}
+        </div> -->
+      </div>
+    </div>
+    <div class="row row-cols-1 spaced-out">
+      <div class="col-md-6 pl-sm-2 pl-xl-0">
+        <div class="h4 white pb-3 font-weight-bold">{{ site.data.foundation.text }}</div>
+      </div>
+    </div>
+    <!-- <div class="row spaced-out row-cols-6">
+      {% for item in site.data.collective.members %}
+        <div class="col-md-2 pl-0">
+          <div class="rounded-0 border-0 text-center">
+              <img src="{{ item.img | relative_url }}" alt="{{ item.name }}" class="img-thumbnail rounded-0 p-0 border-0 h-100" style="width:200px;filter:grayscale(100%);">
+              <div class="white text-uppercase text-weight-bold pt-3">{{ item.name }}</div>
+              <h5 class="small text-muted pt-2">{{ item.position }}</h5>
+          </div>
+        </div>
+    {% endfor %}
+  </div> -->
+  </div>
+</section>
 
 <!-- Fab Lab Foundation -->
 <section class="bg-blue">
@@ -265,6 +282,22 @@ layout: home
   </div>
 </section>
 
+<!-- Manifesto -->
+<div class="borderline dark d-none d-sm-block"></div>
+      <div class="row row-cols-2 m-0  w-100 h-100">
+        <div class="col-md-6 p-0">
+            <img src="assets/images/manifesto.png" class="w-100" alt="">
+        </div>
+        <div class="col-md-6 pt-1 pb-1 pr-2 pl-2 pb-2 p-xl-5">
+            <h1 class="display-4 light-letters text-weight-light text-uppercase">{{ site.data.manifesto.title }}</h1>
+              <div class="h6">
+                {{ site.data.manifesto.subtitle }}
+            </div>
+            <a href="{{ site.data.manifesto.readmore-link }}"><button type="button" class="d-none d-sm-block btn btn-infill pl-3 pr-3 text-uppercase">Read more</button></a>
+          <a href="{{ site.data.manifesto.download-link }}"><button type="button" class="d-block d-sm-none btn btn-infill pl-3 pr-3 text-uppercase">Download the manifesto</button></a>
+        </div>
+      </div>
+
 <div class="borderline dark"></div>
 
 <!-- MEDIA kit -->
@@ -274,14 +307,12 @@ layout: home
       <div class="col-md-4">
             <div class="display-4 fat-letters">Media Kit</div>
             <div class="mt-2 mb-3 small">
-              We have gathered all the necessary assets in case you wanted to write
-              something about us. You can download all of them together or just get
-              the one you need.
+              {{ site.data.media-kit.text }}
             </div>
-            <button type="button" class="d-block d-sm-none btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">View the complete kit</button>
+            <a class="d-block d-sm-none btn pr-lg-4 pl-lg-4 small btn-action text-uppercase" href="{{ site.data.media-kit.download-link }}">View the complete kit</a>
           </div>
         <div class="col-md-8 pt-5">
-          <button type="button" class="d-none d-sm-block float-right btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">View the complete kit</button>
+          <a class="d-none d-sm-block float-right btn pr-lg-4 pl-lg-4 small btn-action text-uppercase" href="{{ site.data.media-kit.download-link }}">View the complete kit</a>
         </div>
       </div>
     </div>
