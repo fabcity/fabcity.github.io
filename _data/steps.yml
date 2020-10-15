@@ -1,23 +1,30 @@
-title: 'steps to join the fab city network'
-description: 'The Fab City Foundation has been established as a legal and organizational structure in Estonia to enable the location-independent work of the globally distributed Fab City community.'
+---
+title: steps to join the fab city network
+description: The Fab City Foundation has been established as a legal and organizational
+  structure in Estonia to enable the location-independent work of the globally distributed
+  Fab City community.
 steps:
-  - number: 1
-    name: before starting
-    text: 'The process begins by understanding of the Fab City vision, manifesto and connections between the Innitiative with the Network.'
-    namelink: 'Read More'
-    link: '#'
-  - number: 2
-    name: 'find your consortium'
-    text: 'The process begins by understanding of the Fab City vision, manifesto and connections between the Innitiative with the Network.'
-    namelink: 'Read More'
-    link: '#'
-  - number: 3
-    name: 'map your ecosystem'
-    text: 'The process begins by understanding of the Fab City vision, manifesto and connections between the Innitiative with the Network.'
-    namelink: 'Read More'
-    link: '#'
-  - number: 4
-    name: 'talk to the initiative'
-    text: 'The process begins by understanding of the Fab City vision, manifesto and connections between the Innitiative with the Network.'
-    namelink: 'Read More'
-    link: '#'
+- number: "1"
+  name: before starting
+  text: The process begins by understanding of the Fab City vision, manifesto and
+    connections between the Initiative with the Network.
+  namelink: Read More
+  link: "#"
+- number: "2"
+  name: find your consortium
+  text: Fab City pledges are made by local consortiums who represent the ecosystem
+    of the city.
+  namelink: Read More
+  link: "#"
+- number: "3"
+  name: map your ecosystem
+  text: The process begins by understanding of the Fab City vision, manifesto and
+    connections between the Innitiative with the Network.
+  namelink: Read More
+  link: "#"
+- number: "4"
+  name: talk to the initiative
+  text: The process begins by understanding of the Fab City vision, manifesto and
+    connections between the Innitiative with the Network.
+  namelink: Read More
+  link: "#"
