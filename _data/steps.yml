@@ -18,10 +18,10 @@ steps:
   link: "#"
 - number: "3"
   name: map your ecosystem
-  text: The process begins by understanding of the Fab City vision, manifesto and
-    connections between the Innitiative with the Network.
+  text: To understand how a city can be made more productive, first it is vital to
+    know the status of the city's local manufacturing ecosystem.
   namelink: Read More
-  link: "#"
+  link: https://fabcity.gitbook.io/handbook/guides/guide-for-member-cities
 - number: "4"
   name: talk to the initiative
   text: The process begins by understanding of the Fab City vision, manifesto and
