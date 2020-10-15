@@ -13,11 +13,4 @@ add collective and foundation ->
 
 resources collapse
 
-add collective text
-
-text under collective
-
-
-media kit add download
-
-column for Collaborators squares and list 
+column for Collaborators squares and list
