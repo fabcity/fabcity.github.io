@@ -1,51 +1,69 @@
+---
 title: Roadmap
-subtitle: 'Our Roadmap is unique. Launched in 2011 by the City of
-Barcelona, it is now in constant development thanks to the
-distributed network of cities, individual advocates, NGOs,
-academics and industry partners.'
+subtitle: Our Roadmap is unique. Launched in 2011 by the City of Barcelona, it is
+  now in constant development thanks to the distributed network of cities, individual
+  advocates, NGOs, academics and industry partners. We employ a collective approach
+  of ‘learning-by-doing’ to constantly prototype, experiment, succeed and fail in
+  our quest to produce everything we consume by 2054.
 events:
-  - year: "2011"
-    title: "Fab7 International Conference"
-    description: "The Fab City project is launched by the Institut d’Arquitectura Avançada de Catalunya, the MIT Center for Bits and Atoms, the Fab Foundation and the Barcelona City Council."
-    location: Paris
-    number: 0
-  - year: "2014"
-    title: 'Fab10 International Conference'
-    description: "Barcelona launches officially the FAB City project / Mayor Trias commit to the 40 year challenge / The first public network of Fab Labs in a city is launched"
-    location: Paris
-    number: 1
-  - year: "2015"
-    title: 'Fab11 International Fab Lab Conference'
-    description: "The Fab City becomes a global initiative / The cities of Boston, Ekurhuleni, Cambridge, Shenzhen, Somerville join / The state of Kerala (India) joins / The country of Georgia joins"
-    location: Paris
-    number: 2
-  - year: "2015"
-    title: 'Amsterdam Fab City Campus'
-    description: "Europe by People: The Netherlands host the presidency of the European Union / The first Fab City experts summit in Amsterdam / The City of Amsterdam commits to the Fab City global initiative-"
-    location: Paris
-    number: 3
-  - year: "2016"
-    title: 'Shenzhen: The silicon valley of Hardware'
-    description: "12th International Fab Lab Conference / Cities joining the Fab City global initiative: Detroit, Paris, Santiago de Chile, Bhutan, Occitanie, Sacramento, Toulouse."
-    location: Paris
-    number: 4
-  - year: "2017"
-    title: 'Chile. Fab13: Fabricating Society'
-    description: "13th International Fab Lab Conference: Fab13: Fabricating Society / Fab City Campus Santiago de Chile / Fab City Summit Copenhagen"
-    location: Paris
-    number: 5
-  - year: "2018"
-    title: 'France. Fab14: Fabricating Resilience'
-    description: "14th International Fab Lab Conference: Fab14: Fabricating Resilience / Fab City Campus Parc de La Villete / Fab City Summit Paris"
-    location: Paris
-    number: 6
-  - year: "2019"
-    title: 'FAB CITY SUMMIT AT THE WE MAKE THE CITY FESTIVAL'
-    description: "The Fab City Summit was held in Amsterdam at  Urban Conference We Make The City Festival in June 2019."
-    location: Amsterdam
-    number: 7
-  - year: "2020"
-    title: 'FAB CITY SUMMIT AT THE WE MAKE THE CITY FESTIVAL'
-    description: "The Distributed Fab City Summit 2020, from Emergency to Resilience - broadcasting from Barcelona takes place on the 14+15 October 2020!"
-    location: Online
-    number: 8
+- year: "2011"
+  title: Fab7 International Conference
+  description: The Fab City project is launched by the Institut d’Arquitectura Avançada
+    de Catalunya, the MIT Center for Bits and Atoms, the Fab Foundation and the Barcelona
+    City Council.
+  location: Paris
+  number: "0"
+- year: "2014"
+  title: Fab10 International Conference
+  description: Barcelona launches officially the FAB City project / Mayor Trias commit
+    to the 40 year challenge / The first public network of Fab Labs in a city is launched
+  location: Paris
+  number: "1"
+- year: "2015"
+  title: Fab11 International Fab Lab Conference
+  description: The Fab City becomes a global initiative / The cities of Boston, Ekurhuleni,
+    Cambridge, Shenzhen, Somerville join / The state of Kerala (India) joins / The
+    country of Georgia joins
+  location: Paris
+  number: "2"
+- year: "2015"
+  title: Amsterdam Fab City Campus
+  description: 'Europe by People: The Netherlands host the presidency of the European
+    Union / The first Fab City experts summit in Amsterdam / The City of Amsterdam
+    commits to the Fab City global initiative-'
+  location: Paris
+  number: "3"
+- year: "2016"
+  title: 'Shenzhen: The silicon valley of Hardware'
+  description: '12th International Fab Lab Conference / Cities joining the Fab City
+    global initiative: Detroit, Paris, Santiago de Chile, Bhutan, Occitanie, Sacramento,
+    Toulouse.'
+  location: Paris
+  number: "4"
+- year: "2017"
+  title: 'Chile. Fab13: Fabricating Society'
+  description: '13th International Fab Lab Conference: Fab13: Fabricating Society
+    / Fab City Campus Santiago de Chile / Fab City Summit Copenhagen'
+  location: Paris
+  number: "5"
+- year: "2018"
+  title: 'France. Fab14: Fabricating Resilience'
+  description: '14th International Fab Lab Conference: Fab14: Fabricating Resilience
+    / Fab City Campus Parc de La Villete / Fab City Summit Paris'
+  location: Paris
+  number: "6"
+- year: "2019"
+  title: FAB CITY SUMMIT AT THE WE MAKE THE CITY FESTIVAL
+  description: The Fab City Summit was held in Amsterdam at  Urban Conference We Make
+    The City Festival in June 2019.
+  location: Amsterdam
+  number: "7"
+- year: "2020"
+  title: The Distributed Fab City Summit 2020, from Emergency to Resilience - Broadcasting
+    from Barcelona!
+  description: It welcomes city representatives from across the globe to a dedicated
+    two-day program of talks and workshops. As the annual meeting of the Fab City
+    Global Initiative, it is also the yearly opportunity for new cities to pledge
+    to join the Fab City Network.
+  location: Online
+  number: "8"
