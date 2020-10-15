@@ -16,7 +16,7 @@ items:
   img: "/assets/images/full-stack.png"
   arrow: download
 - title: The Handbook
-  link: "\\#"
+  link: https://fabcity.gitbook.io/handbook/
 - title: Prototype your City
   link: "\\#"
 - title: Productive Cities Toolkit
