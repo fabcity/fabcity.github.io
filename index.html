@@ -298,11 +298,15 @@ layout: home
             var itemsContainer1 = document.createElement('UL');
             itemsContainer1.setAttribute('class' , 'timeline timeline-horizontal');
             if(data.status == 'ok'){
-                for( var i=0, t=7 ; i < t ; ++i ){
+                for( var i=0, t=7 ; i < t ; ++i ){ // For each individual article from the blog do :
                     var item1 = data.items[i];
+                    // Creates list element
                     var itemContainer1 = document.createElement('LI');
+                    // adds the number of interation to the id attribute
                     itemContainer1.setAttribute('id' , i);
+                    // adds css classes to the Tag from itemContainer1 will output so far <li id="0" class="timeline-item align-baseline">
                     itemContainer1.setAttribute('class' , 'timeline-item align-baseline');
+
                     var itemContainer2 = document.createElement('DIV');
                     itemContainer2.setAttribute('class' , 'card rounded-0 border-0 h-100');
                     itemContainer2.setAttribute('style' , 'max-width:230px');
