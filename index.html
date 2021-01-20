@@ -91,7 +91,7 @@ layout: home
                 });
           var bombs = [
             {% for city in site.data.global-initiative.cities %} // Begin for loop for implementing Liquid, generates items for each city in _data/global-initiative.yml
-                                                                 // This library puts the cities according to the coordinates the right spot
+                                                                 // This Worldmap  library puts the cities according to the coordinates the right spot
               {   name: '{{ city.name }}',
                   city: '{{ city.name }}',
                   country: '{{ city.country }}',
@@ -109,7 +109,7 @@ layout: home
           // draw bubbles for bombs
           bombMap.bubbles(bombs, {
               popupTemplate: function (geo, data) {
-                // HTML output format
+                // HTML output format ! Watch it! Variables below are written in JS from the Worldmap library so don't use Liquid
                 return ['<div id="popup" class=\"card map popup\" style="min-width:250px;position:absolute; z-index:3000;">',
                   '<div class=\"mb-3 map\">',
                   '<div class=\" h4 medium pl-3 pr-3 pt-3 card-title fat-letters map\">' + data.city,
