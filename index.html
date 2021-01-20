@@ -73,6 +73,7 @@ layout: home
 </div>
 
         <script type="text/javascript">
+              // Initializes Map
                 var bombMap = new Datamap({
                     element: document.getElementById('container'),
                     scope: 'world',
@@ -89,7 +90,8 @@ layout: home
                     },
                 });
           var bombs = [
-          {% for city in site.data.global-initiative.cities %}
+            {% for city in site.data.global-initiative.cities %} // Begin for loop for implementing Liquid, generates items for each city in _data/global-initiative.yml
+                                                                 // This library puts the cities according to the coordinates the right spot
               {   name: '{{ city.name }}',
                   city: '{{ city.name }}',
                   country: '{{ city.country }}',
@@ -101,14 +103,13 @@ layout: home
                   longitude: '{{ city.longitude }}',
                   link: '{{ city.webpresence }}',
                 },
-          {% endfor %}
+          {% endfor %} // End for loop
               ];
 
           // draw bubbles for bombs
           bombMap.bubbles(bombs, {
               popupTemplate: function (geo, data) {
-                // return ['<div type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"',
-                // 'data-content="And heres some amazing content. Its very engaging. Right?">Click to toggle popover</div>'];
+                // HTML output format
                 return ['<div id="popup" class=\"card map popup\" style="min-width:250px;position:absolute; z-index:3000;">',
                   '<div class=\"mb-3 map\">',
                   '<div class=\" h4 medium pl-3 pr-3 pt-3 card-title fat-letters map\">' + data.city,
@@ -283,10 +284,13 @@ layout: home
 
 
 <script type="text/javascript">
+    // Select HTML Tag for ouput
     var content1 = document.getElementById('blog_scrollable');
 
+    // Create variable for HttpRequest
     var xhr1 = new XMLHttpRequest();
 
+    // Loads the requested data and puts it in the right HTML tags with css classes
     xhr1.onreadystatechange = function(){
         if (xhr1.readyState==4 && xhr1.status==200)
         {
@@ -320,8 +324,6 @@ layout: home
                     itemTitleElement1.innerText = item1.title;
                     var itemImageContainer1 = document.createElement('DIV');
                     itemImageContainer1.setAttribute('class' , 'pt-3');
-                    // itemImageContainer1.setAttribute('class' , 'pb-xs-2 pt-sm-4 pt-xl-5 pt-md-3');
-                    // itemImageContainer1.appendChild(itemImageElement1);
 
                     itemsContainer1.appendChild(itemContainer1);
                     itemContainer2.appendChild(itemContainer3);
@@ -332,13 +334,14 @@ layout: home
                     itemLinkElement1.appendChild(itemImageContainer1); //a.black.medium > img
                     itemImageContainer1.appendChild(itemImageElement1); //div.pt-3 > img
                     itemContainer3.appendChild(itemLinkElement1); // div.m-3
-                    // itemContainer1.appendChild(itemLinkElement);
                     // note : make sure the content is XSS safe before using innerHTML
                 }
                 content1.appendChild(itemsContainer1);
             }
         }
     };
+
+    // Requests HTTP in XML format
     xhr1.open(
         'GET',
         'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.fab.city%2Ffeed',
