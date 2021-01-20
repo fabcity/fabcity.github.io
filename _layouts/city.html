@@ -75,10 +75,12 @@
           </div>
         </div>
       <div class="row row-cols-1 row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4">
+ <!-- For each place in _cites/<pagename for example : Barcelona.yml> for dynamic use of layouts with limited number of 4 -->
         {% for item in page.ecosystem.places limit:4 %}
         <div class="col-sm blog-item mr-1 ml-sm-1 ml-xl-0 ml-lg-0 pl-lg-0 mr-xs-1 mr-md-3 mr-lg-3 mr-xl-4">
           <div class="border-bottom border-1 border-black mb-2"></div>
           <div class="small">0{{ item.number }}
+            <!-- Assigns icon for reiteratiion of list in YML  -->
             {% assign icon = page.ecosystem.spaces %}
             {{ icon[item.type] }}
             <div class="float-right small">&rarr; {{ item.neighbourhood }}</div></div>
@@ -100,6 +102,7 @@
   </section>
 
 <section class="pt-0 text-center d-none d-sm-block">
+  <!-- API request with all places with correct numbers in the right places -->
   <img height="400" src="https://maps.geoapify.com/v1/staticmap?style=positron&width=1300&height=400&center=lonlat:{{ page.ecosystem.map.longlat_center }}&zoom={{ page.ecosystem.map.zoom }}&marker={% for item in page.ecosystem.places %}lonlat:{{ item.longlat }};type:circle;color:%23000000;icon:cloud;icontype:awesome;text:{{ item.number }};whitecircle:no{% if page.ecosystem.places.size != item.number %}|{%endif%}{% endfor %}&apiKey=cd3e8baa00114ecebd21bfd8675800f4">
 </section>
 
