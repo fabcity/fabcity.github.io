@@ -1,40 +1,55 @@
 - since: '2018'
-  country:  'Spain'
+  country: 'Spain'
   description: 'Barcelona is a world-leading city in the field of urbanism. The city’s iconic urban model.'
-  place: Barcelona
+  place: "Barcelona"
   image: '/assets/images/cities/barcelona.png'
+  link: ""
+
 - since: '2018'
-  country: ''
+  country: 'Butan'
   description: ''
   place: 'Thimphu'
   image: '/assets/images/cities/thimphu.png'
+  link: ""
+
 - since: '2018'
   country: 'China'
   description: ''
-  place: Shenzhen
+  place: "Shenzhen"
   image: '/assets/images/cities/shenzhen.png'
-- since: '2018'
-  country: 'Georgia'
-  description: ''
-  place: 'Georgia'
-  image: '/assets/images/cities/georgia.png'
-- since: '2018'
-  country: 'Spain'
-  description: ''
-  place: 'Curitiba'
-  image: '/assets/images/cities/curitiba.png'
+  link: ""
+
 - since: '2016'
   country: 'The Netherlands'
   description: ''
   place: 'Amsterdam'
   image: '/assets/images/cities/amsterdam.png'
+  link: ""
+
 - since: '2018'
-  country: 'China'
+  country: 'Brazil'
+  description: ''
+  place: 'Curitiba'
+  image: '/assets/images/cities/curitiba.png'
+  link: ""
+
+- since: '2018'
+  country: 'Georgia'
+  description: ''
+  place: 'Georgia'
+  image: '/assets/images/cities/georgia.png'
+  link: ""
+
+- since: '2018'
+  country: 'Mexico'
   description: ''
   place: 'Puebla'
   image: '/assets/images/cities/puebla.png'
+  link: ""
+
 - since: '2018'
   country: 'England'
   description: ''
   place: 'Cambrigde'
   image: '/assets/images/cities/cambrigde.png'
+  link: ""

@@ -1,126 +1,95 @@
-<section class="bg-black pb-1">
-  <div class="container-fluid">
-    <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4 pb-3">
-      <div class="col-md-1 white text-left">
-        <img class="svg-white" src="{{ '/assets/images/fabcitylogo-08.svg' | relative_url }}" width="60px" />
-      </div>
-      <div class="col-md-3 white text-justify text-left pt-2">
-        Collective of civic leaders, makers, urbanists and
-        innovators working on shifting the industrial urban
-        paradigm to one that better supports life on Earth.
-      </div>
-      <div class="col d-none d-sm-block text-right">
-        {% for item in site.data.footer.social %}
-          <a class="nav-item white nav-link float-right pt-4" style="padding-right:0 !important;" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url | relative_url }}" /></a>
-        {% endfor %}
-      </div>
+<div class="footer container-fluid bg-black fabcity-pb-50 fabcity-pt-20">
+  <div class="row fabcity-mb-20">
+    <div class="col-md-6 footer-header-content position-relative">
+      <span class="logo-footer">
+        <img class="svg-white" src="{{ '/assets/images/fabcity-logo-color.png' | relative_url }}" style="width: 60px; margin-right: 20px;"/>
+      </span>
+      <span class="text-justify text-white no-margin" style="width: auto">
+        Collective of civic leaders, makers, urbanists and innovators working on shifting the industrial urban paradigm to one that better supports life on Earth.
+      </span>
     </div>
-    <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-      <div class="col ml-3 mr-3 border-white border-bottom"></div>
+  </div>
+
+  <div class="flex nav-footer space-between align-items-center no-footer-mobile">
+    {% for item in site.data.footer.pages %}
+    <div>
+      <a class="text-white" href="{{ item.link }}">{{ item.name }}</a>
     </div>
-    <div class="row pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4 pb-1">
-      <div class="col-md-6">
-        <div class="row row-cols-4">
-      {% for item in site.data.footer.pages %}
-      <div class="col-md-3 col">
-        <a class="pt-2 pr-1 pb-1 white float-left" href="{{ item.link }}">{{ item.name }}</a>
-      </div>
+    {% endfor %}
+
+    <div class="footer-social-icons flex">
+      {% for item in site.data.footer.social %}
+      <a class="white nav-link" href="{{ item.link }}" target="_blank">
+        <img class="nav-icon" src="{{ item.image_url | relative_url }}" />
+      </a>
       {% endfor %}
-        </div>
     </div>
-    </div>
-    <!-- only visible on mobile screens -->
-    <div class="d-block d-sm-none">
-    <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-      <div class="col ml-3 mr-3 border-white border-bottom"></div>
-    </div>
-      <div class="row row-cols-2 text-center pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-        <div class="col text-right">
-          {% for item in site.data.footer.social %}
-            <a class="nav-item white nav-link p-3" href="{{ item.link }}"><img class="nav-icon" src="{{ item.image_url | relative_url }}" /></a>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-    <!-- //only visible on mobile screens -->
+  </div>
 
-    <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-      <div class="col ml-3 mr-3 border-white border-bottom"></div>
-    </div>
-    <div class="row spaced-out row-cols-3 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-      <div class="col-md-3 white">
-        <div class="pt-3 pb-1 font-weight-bold">
-          Location
-        </div>
-          <address>
-            Institute for Advanced Architecture of Catalonia, <br />
-            Fab Lab Barcelona <br />
-            Barcelona, <br />
-            Pujades 102, 08005 <br />
-          </address>
-        </div>
-      <div class="col-md-2 white">
-        <div class="float-left">
-          <div class="pt-3 pb-1 font-weight-bold">
-            Contact
-          </div>
-          hello@fab.city
-        </div>
-      </div>
-      <div class="col-md-3 white pb-2">
-        <div class="pt-3 pb-1 font-weight-bold">
-          Sign up
-        </div>
-          <input class="subscribe-newsletter rounded-0 border-0 border-light border-bottom bg-black" placeholder="Newsletter Subscription" />
-            <a type="submit" class="white arrow-two" href="#" >&rarr;</a>
 
-        </div>
-      </div>
-      <div class="row row-cols-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-        <div class="col ml-3 mr-3 border-white border-bottom"></div>
-      </div>
-      <div class="row spaced-out row-cols-5 pt-2 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-        <div class="col-md-2">
-          <div class="white">Powered by</div>
-        </div>
-        {% for item in site.data.footer.powered %}
-        <div class="col-md-2">
-          <img class="nav-icon" style="margin: 10px 0 20px 0;" src="{{ item.image_url | relative_url }}" height="50px">
-        </div>
+
+  <div class="flex mobile-footer-nav nav-footer space-between fabcity-pb-30 fabcity-pt-10">
+
+      <div class="width-50 flex flex-column">
+        {% for item in site.data.footer.pages %}
+          {% if item.position == "left" %}
+            <a class="text-white display-block fabcity-mt-20" href="{{ item.link }}">{{ item.name }}</a>
+          {% endif %}
         {% endfor %}
       </div>
-      <div class="row row-cols-2">
-        <div class="col border-white border-bottom"></div>
-      </div>
-      <div class="row row-cols-2 w-100 pt-2 pl-0 pl-xl-4 pl-lg-4 pr-xl-4 pr-lg-4">
-        <div class="col-md-1 m-0 pr-0">
 
-          <!-- only visible on mobile screens -->
-          <div class="row row-cols-3 pl-2 spaced-out">
-            <div class="col-xs-1">
-              <img class="d-block d-sm-none p-0" style="margin: -1px 0 5px 0;" src="{{ '/assets/images/rainbow.png' | relative_url }}" height="10px !important">
-            </div>
-            <div class="col-xs-4">
-              <div class="white smallest d-block p-0 d-sm-none text-uppercase font-weight-bold"> Made With happiness</div>
-            </div>
-            <div class="col-xs-4 d-block d-sm-none white small float-right text-right">
-              © Fab City, Terms, Legal, Privacy
-            </div>
+      <div class="width-50 flex flex-column align-items-end">
+        <div class="flex flex-column height-100">
+          {% for item in site.data.footer.pages %}
+            {% if item.position == "right" %}
+            <a class="fabcity-ml-20 text-white display-block fabcity-mt-20" href="{{ item.link }}">{{ item.name }}</a>
+            {% endif %}
+          {% endfor %}
+
+          <div class="footer-social-icons flex">
+            {% for item in site.data.footer.social %}
+            <a class="white nav-link" href="{{ item.link }}" target="_blank">
+              <img class="nav-icon" src="{{ item.image_url | relative_url }}" />
+            </a>
+            {% endfor %}
           </div>
-          <!-- // only visible on mobile screens -->
-
-          <img class="d-none d-sm-block pr-0" style="margin: 0px -100px 5px 0px;" src="{{ '/assets/images/rainbow.png' | relative_url }}" height="20px !important">
-        </div>
-        <div class="col-md-3 pl-0" style="margin-left:-65px;">
-          <div class="white pl-0 text-left d-none d-sm-block happiness text-uppercase high-lines font-weight-bold"> Made With happiness</div>
         </div>
 
-        <div class="col-md-8 text-right float-right white small float-right high-lines d-none d-sm-block p-0 m-0">
-          © Fab City, Terms, Legal, Privacy
-        </div>
       </div>
+  </div>
+
+  <div class="flex fabcity-m-tb-20 footer-contact space-between align-items-end fabcity-pb-20">
+    <div>
+      <p class="fabcity-mb-15 text-white fabcity-font-size-18">Location</p>
+      <p class="text-white fabcity-font-size-18">
+        SA Fab City Foundation</br>
+        Järveotsa tee 39-70</br>
+        13520 Tallinn, Estonia
+      </p>
     </div>
-</section>
+    <div>
+      <p class="text-white fabcity-font-size-18">
+        info@fab.city</br>
+        Reg. code: 90014922</br>
+        VAT number: EE102339491</br>
+        Bank account: EE282200221072680677
+      </p>
+    </div>
+    <div class="no-footer-mobile footer-partners">
+      <img src="{{ '/assets/images/footer/fab_lab_bcn.png' | relative_url }}" alt="">
+      <img src="{{ '/assets/images/footer/iaac.png' | relative_url }}" alt="">
+      <img src="{{ '/assets/images/footer/mit.png' | relative_url }}" alt="">
+      <img src="{{ '/assets/images/footer/fab_foundation.png' | relative_url }}" alt="">
+    </div>
+  </div>
+  <div class="mobile-footer-partners footer-partners flex space-between">
+    <img src="{{ '/assets/images/footer/fab_lab_bcn.png' | relative_url }}" alt="">
+    <img src="{{ '/assets/images/footer/iaac.png' | relative_url }}" alt="">
+    <img src="{{ '/assets/images/footer/mit.png' | relative_url }}" alt="">
+    <img src="{{ '/assets/images/footer/fab_foundation.png' | relative_url }}" alt="">
+  </div>
+
+</div>
 
 <!-- JS -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>

@@ -1,0 +1,123 @@
+// Height of Elements
+
+.height- {
+  &1 {
+    height: 1px;
+  }
+  &50 {
+    height: 50% !important;
+  }
+
+  &100 {
+    height: 100% !important;
+  }
+}
+
+// Width of Elements
+
+.width- {
+  &50 {
+    width: 50% !important;
+  }
+
+  &100 {
+    width: 100% !important;
+  }
+}
+
+.min-width-100 {
+  min-width: 100%;
+}
+
+// Margin and Padding
+
+$properties: padding, margin;
+
+$sides: top, right, bottom, left;
+
+$step: 5;
+
+$prefix: fabcity;
+
+$unit: px;
+
+@each $property in $properties {
+  $prop_selector: str-slice($property, 0, 1);
+
+  @for $i from 0 through 16 {
+    $value_selector: $i * $step;
+    $value: $value_selector;
+    $selector: #{$prefix}-#{$prop_selector}-#{$value_selector};
+    $selector_top_bottom: #{$prefix}-#{$prop_selector}-tb-#{$value_selector};
+    $selector_left_right: #{$prefix}-#{$prop_selector}-lr-#{$value_selector};
+
+    .#{$selector} {
+      #{$property}: #{$value}#{$unit} !important;
+    }
+
+    .#{$selector_top_bottom} {
+      #{$property}-top: #{$value}#{$unit} !important;
+      #{$property}-bottom: #{$value}#{$unit} !important;
+    }
+
+    .#{$selector_left_right} {
+      #{$property}-left: #{$value}#{$unit} !important;
+      #{$property}-right: #{$value}#{$unit} !important;
+    }
+  }
+
+  @each $side in $sides {
+    $side_selector: str-slice($side, 0, 1);
+
+    @for $i from 0 through 16 {
+      $value_selector: $i * $step;
+      $value: $value_selector;
+      $selector: #{$prefix}-#{$prop_selector}#{$side_selector}-#{$value_selector};
+
+      .#{$selector} {
+        #{$property}-#{$side}: #{$value}#{$unit} !important;
+      }
+    }
+  }
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-side-margin {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+// Display
+
+.display- {
+  &block { display: block; }
+  &inline { display: inline-block; }
+}
+
+// Overflow
+
+.overflow- {
+  &auto { overflow: auto; }
+  &x-hidden { overflow-x: hidden; }
+  &x-auto { overflow-x: auto; }
+  &y-auto { overflow-y: auto; }
+  &y-hidden { overflow-y: hidden; }
+  &scroll { overflow: scroll; }
+  &hidden { overflow: hidden; }
+}
+
+// MeqiaQueries
+
+
+@media (max-width: 767px) {
+  .mobile-row-separator {
+    margin-bottom: 30px;
+  }
+}

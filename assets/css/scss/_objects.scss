@@ -1,0 +1,508 @@
+.with-line-separator {
+  border: solid black;
+  border-width: 2px 0;
+}
+
+.with-line-underneath {
+  border: solid black;
+  border-width: 0 0 2px 0;
+}
+
+.line-separator {
+  height: 1px;
+  display: block;
+  background: $black;
+
+  &.white {
+    background: $color-white;
+  }
+}
+
+// Images
+
+.mix-blend-mode-multiply {
+  mix-blend-mode: multiply;
+}
+
+// Blog
+.article-item {
+  .line-separator {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+  }
+
+  .article-surtitle {
+    padding: 24px 15px 0 15px;
+    // border-top: 1px solid $black;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .article-title {
+    //height: 80px;
+    padding: 0 15px;
+
+    // slick
+    margin-bottom: 20px;
+  }
+
+  .article-thumbnail {
+    padding: 0 15px;
+  }
+}
+
+// Countdown
+
+#countdown {
+  border: 1px solid $white;
+  border-width: 1px 0 0 0;
+
+  div.cnums {
+    font-size: 40px;
+    padding-bottom: 5px;
+  }
+
+  div.countdown-item {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+// Cities
+
+.cities-container {
+  .city-card {
+    .image-city {
+      width: 100%;
+      height: 160px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+// Countdown {
+.countdown {
+  & > div {
+    padding-right: 50px !important;
+
+    &:last-child {
+      padding-right: 0 !important;
+    }
+  }
+
+  .cnums {
+    font-size: 40px;
+  }
+  
+  .csuf {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+
+// People
+
+.people-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
+
+  .person-card {
+    margin-top: 25px;
+    width: 200px;
+    margin-right: 20px;
+
+    span {
+      max-width: 200px;
+    }
+  }
+
+  .picture-person {
+    display: block;
+    width: 200px;
+    height: 200px;
+    //width: 100%;
+    //height: 0;
+    //padding-bottom: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    // mmdi page style
+    border-radius: 12px;
+  }
+
+  p.person-name {
+    font-family: "Big Caslon", Serif;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 135.94%;
+  }
+
+  i {
+    width: 200px;
+    height: 0;
+  }
+}
+
+// Programs and Projects
+
+.projects-container {
+  .project-card {
+    margin-top: 25px;
+  }
+
+  .project-cover {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+// Organizations-container
+
+.organizations-container {
+  .organizations-image {
+    flex: 0 14.285714285714285714285714285714%;
+  }
+
+  i {
+    width: 14.285714285714285714285714285714%;
+    height: 0;
+  }
+}
+
+// Roadmap
+
+.roadmap-component {
+  position: relative;
+  border-top: 1px solid #000000;
+}
+
+.timeline-control {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &.back {
+    left: -50px;
+    justify-content: center;
+  }
+
+  &.next {
+    right: -30px;
+    justify-content: flex-end;
+  }
+
+  .arrow {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid $color-white;
+    border-right: 2px solid $color-white;
+
+    &.black {
+      border-top: 2px solid $color-black;
+      border-right: 2px solid $color-black;
+    }
+  }
+
+  .arrow-right {
+    transform: rotate(45deg);
+  }
+
+  .arrow-left {
+    transform: rotate(-135deg);
+  }
+}
+
+.timeline-container {
+  color: $color-black;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  display: flex;
+
+  .timelime-item {
+    width: 260px;
+    display: inline-flex;
+    flex-basis: 320px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-right: 60px;
+    padding-top: 30px;
+    position: relative;
+
+    &:first-child {
+      margin-left: 60px;
+    }
+
+    &:last-child {
+      margin-right: 60px;
+    }
+
+    .timeline-item-header {
+      font-size: 20px;
+    }
+
+    .timelime-item-description {
+      font-size: 12px;
+    }
+
+    .timeline-dot {
+      width: 5px;
+      height: 5px;
+      background: $color-black;
+      border-radius: 20px;
+      position: absolute;
+      top: -2.5px;
+      left: 0;
+    }
+  }
+}
+
+// fabcity-collapsable
+
+.fabcity-collapsable {
+  .collapse-item {
+    border-top: 1px solid $color-black;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px 25px 0;
+    position: relative;
+
+    &:last-child {
+      border-bottom: 1px solid $color-black;
+    }
+
+    .collapse-item-title {
+      margin: 0;
+    }
+
+    .collapse-item-content {
+      margin-top: 10px;
+      flex-grow: inherit;
+      font-size: 14px;
+      line-height: 19.03px;
+
+      &.show {
+        padding-bottom: 40px;
+      }
+    }
+
+    .collapse-icon {
+      width: 22px;
+      height: 20px;
+      align-self: flex-end;
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      cursor: pointer;
+      transform: translateY(0);
+      transition: .2s ease-in-out;
+      background: url("../../assets/images/icons/cross.png");
+      background-size: contain !important;
+
+      &.collapsed {
+        //align-self: flex-end; // center To try
+        top: 50%;
+        transform: translateY(-50%);
+        background: url("../../assets/images/icons/arrow.png");
+      }
+    }
+  }
+
+  .collapse-item-link {
+    width: 22px;
+    height: 20px;
+    //background: $color-black;
+    align-self: flex-end;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    transition: all .2s ease-in-out;
+  }
+
+  .collapse-extra-link {
+    color: $color-black;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  div.collapse-item-content {
+    &.show {
+      .collapse-item-link {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.get-involved-data {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+
+  .item-number {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .item-title {
+    font-size: 25px;
+  }
+}
+
+.home-banner {
+  border: 1px solid black;
+  text-align: center;
+  border-left: 0;
+  border-right: 0;
+  background: $color-beige;
+  height: 50px;
+
+  .home-banner-container {
+    justify-content: space-between;
+    height: 50px;
+    overflow: hidden;
+
+    div {
+      display: inline-flex;
+      line-height: 30px;
+      padding: 0 20px;
+      border: 1px solid $color-black;
+      border-top: 0;
+      border-bottom: 0;
+      margin-top: 10px;
+      font-size: 14px;
+
+      a {
+        cursor: pointer;
+        color: $color-black;
+        margin-left: 3px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:first-child {
+        border-right: 0;
+      }
+
+      &:last-child {
+        border-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .home-banner {
+    .home-banner-container {
+      div {
+        &:last-child {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 916px) {
+  .home-banner {
+    .home-banner-container {
+      div {
+        font-size: 12px;
+        &:first-child {
+          border: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.sticky-summary {
+  height: fit-content;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+
+  & > div {
+    padding: 20px 30px;
+    border: 1px solid $color-black;
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      border-bottom: 1px solid $color-black;
+      padding-bottom: 10px;
+      margin-top: 20px;
+
+      a {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        span:last-child {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  .summary-btn {
+    height: 40px;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+
+    button {
+      height: 40px;
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sticky-summary {
+    display: none !important;
+  }
+}
+
+

@@ -16,7 +16,7 @@ body {
 }
 
 @import 'bootstrap/bootstrap';
-@import 'scss/_header.scss'; // Main file for fabcity styles
+@import 'scss/_main.scss'; // Main file for fabcity styles
 // @import 'fontawesome5/scss/fontawesome';
 
 .navbar-transparent {
@@ -80,7 +80,7 @@ body {
 
 
 .nav-item {
-  padding-right: 2em !important;
+  padding-right: 35px !important;
   padding-left: 2em !important;
   float: left;
 }
@@ -228,11 +228,6 @@ section {
   border-radius: 0 !important;
 }
 
-.navbar {
-  padding: 0 1rem !important;
-  padding-top: 0.25rem
-}
-
 .nav-item {
   color: white;
 }
@@ -291,48 +286,6 @@ section {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.worldmap {
-  position: relative;
-  width: 80%;
-  height: 700px;
-  // overflow: hidden;
-}
-
-path.datamaps-subunit {
-  stroke: rgb(24, 24, 24) !important;
-}
-
-circle.datamaps-bubble{
-  r: 4px !important;
-  fill: #22dba4 !important;
-  fill-opacity: 1 !important;
-  stroke: #22dba4 !important;
-  stroke-width: 0 !important;
-  stroke-opacity: 1 !important;
-  paint-order: fill !important;
-  fill-rule: evenodd !important;
-
-}
-
-circle.datamaps-bubble:hover {
-  r: 5px !important;
-  fill: #22dba4 !important;
-  fill-opacity: 1 !important;
-  stroke: #22dba4 !important;
-  stroke-width: 20px !important;
-  stroke-opacity: 0.5 !important;
-  // paint-order: stroke fill !important;
-  fill-rule: evenodd !important;
-}
-
-.card.map {
-  border-radius: 0 !important;
-  background-color: #22dba4;
-}
-.card-body.map {
-  background-color: #22dba4;
-  padding: 0.4em !important;
-}
 
 .btn.btn-primary.map {
   background-color: transparent !important;
@@ -452,20 +405,8 @@ span.float-right {
   background-color: #e9ecef;
 }
 
-.bg-blue {
-  background-color: #002578;
-}
-
 .bg-red {
   background-color: #b0251c;
-}
-
-.bg-green {
-  background-color: #1f9555;
-}
-
-.bg-white {
-  background-color: #fff;
 }
 
 .card-body {
@@ -716,7 +657,7 @@ a.white:hover {
   float: none !important;
   padding-left: 0px;
   // padding-right: 20px;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 .timeline-horizontal .timeline-item .timeline-panel {
   top: 0;

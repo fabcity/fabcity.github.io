@@ -1,0 +1,181 @@
+
+body, html {
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+// Update with size device
+.container-fluid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+// landing-her
+
+.landing-hero {
+  width: 100%;
+  height: 700px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center;
+  color: #ffffff;
+  padding: 0 50px;
+}
+
+.landing-page {
+  .landing-hero {
+    background: url("../../assets/images/backgrounds/landing_01.jpg");
+  }
+}
+
+.about-page {
+  .landing-hero {
+    background: url("../../assets/images/backgrounds/about.jpg") center;
+  }
+
+  .landing-headline {
+    padding-top: 200px;
+  }
+}
+
+.network-page {
+  .landing-hero {
+    background: url("../../assets/images/backgrounds/network.jpg");
+  }
+}
+
+.collective-page {
+  .landing-collective {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.foundation-page {
+  .landing-hero {
+    background: url("../../assets/images/backgrounds/foundation.jpg");
+  }
+}
+
+.events-page {
+  .landing-events {
+    padding-top: 100px;
+  }
+}
+
+.city-page {
+  .landing-city {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.resources-page {
+  .landing-resources {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.contact-page {
+  .landing-contact {
+    margin-top: 50px;
+  }
+}
+
+
+// MDDI Page
+
+.mddi-page {
+  .landing-mddi {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .mddi-title-content {
+    margin-bottom: 100px;
+  }
+
+  .mddi-sub-title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    display: block;
+  }
+}
+
+.summary {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.mddi-basic-info-content {
+  padding-bottom: 25px;
+
+  .line-separator {
+    margin-bottom: 25px;
+    padding: 0 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+#faculty {
+  .picture-person {
+    border-radius: 12px;
+  }
+}
+
+#competences {
+  .competence-title {
+    display: block;
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  .competence-detail {
+    font-size: 14px;
+  }
+}
+
+#student-profile {
+  .card-container {
+    flex-wrap: initial;
+    display: flex;
+  }
+
+  .student-card {
+    display: block;
+    background: $color-white;
+    height: 100%;
+
+    p {
+      padding: 10px;
+      margin: 0;
+      line-height: 115.94%;
+    }
+
+    span {
+      padding: 0 10px 20px 10px;
+      display: block;
+      line-height: 115.94%;
+    }
+  }
+}
+
+#partners {
+  img {
+    max-width: 200px;
+    max-height: 80px;
+  }
+}
+
+#faqs {
+  span {
+    line-height: 125.62%;
+  }
+}

@@ -1,0 +1,140 @@
+<nav class="fabcity-header flex container-fluid dark-header" id="fabcity-header">
+
+  <a class="header-logo header-page-link mobile-only" href="{{ '/' | relative_url }}"></a>
+
+  <div class="header-link-container header-right-container mobile-only">
+    <div class="mobile-nav-opener" id="mobile-nav-opener" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="header-link-container">
+    <a class="header-logo header-page-link" href="{{ '/' | relative_url }}">
+      <img class="svg-white" src="{{ '/assets/images/fabcitylogo-07.svg' | relative_url }}" width="120px"  alt="Fab City"/>
+    </a>
+
+    {% for item in site.data.navbar %}
+    {% if item.position == "left" %}
+    {% if page.title == item.name %}
+    <a class="header-page-link" href="{{ item.link | relative_url }}">
+      {{ item.name }}
+    </a>
+    {% else %}
+    <a class="header-page-link" href="{{ item.link | relative_url }}">
+      {{ item.name }}
+    </a>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="header-link-container header-right-container">
+    {% for item in site.data.navbar %}
+    {% if item.position == "right" %}
+    {% if page.title == item.name %}
+    <a class="header-page-link" href="{{ item.link | relative_url }}">
+      {{ item.name }}
+    </a>
+    {% else %}
+    <a class="header-page-link" href="{{ item.link | relative_url }}">
+      {{ item.name }}
+    </a>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    <a class="header-social-link" href="https://web.facebook.com/fabcityglobal/" target="_blank">
+      <img class="nav-icon" src="{{ '/assets/images/facebook-black.svg' | relative_url }}"  alt="Fab City Facebook"/>
+    </a>
+    <a class="header-social-link" href="https://twitter.com/fabcityglobal" target="_blank">
+      <img class="nav-icon" src="{{ '/assets/images/twitter-black.svg' | relative_url }}" alt="Fab City Twitter" />
+    </a>
+    <a class="header-social-link" href="https://github.com/fabcity" target="_blank">
+      <img class="nav-icon" src="{{ '/assets/images/icons/github-black.svg' | relative_url }}" alt="Fab City Github" />
+    </a>
+  </div>
+
+</nav>
+
+<div class="mobile-menu-container container-fluid bg-beige" id="mobile-menu-container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mobile-link-container">
+        {% for item in site.data.navbar %}
+        {% if item.position == "left" %}
+        {% if page.title == item.name %}
+        <a class="header-page-link" href="{{ item.link | relative_url }}">
+          {{ item.name }} <div class="float-right">→</div>
+        </a>
+        {% else %}
+        <a class="header-page-link" href="{{ item.link | relative_url }}">
+          {{ item.name }} <div class="float-right">→</div>
+        </a>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="d-block d-md-none menu-separator">
+
+    </div>
+
+    <div class="col-md-6">
+      <div class="mobile-link-container">
+        {% for item in site.data.navbar %}
+        {% if item.position == "right" %}
+        {% if page.title == item.name %}
+        <a class="header-page-link" href="{{ item.link | relative_url }}">
+          {{ item.name }} <div class="float-right">→</div>
+        </a>
+        {% else %}
+        <a class="header-page-link" href="{{ item.link | relative_url }}">
+          {{ item.name }} <div class="float-right">→</div>
+        </a>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+        <div class="mobile-social-links">
+          <a class="header-social-link" href="https://web.facebook.com/fabcityglobal/" target="_blank">
+            <img class="nav-icon" src="{{ '/assets/images/facebook-black.svg' | relative_url }}"  alt="Fab City Facebook"/>
+          </a>
+          <a class="header-social-link" href="https://twitter.com/fabcityglobal" target="_blank">
+            <img class="nav-icon" src="{{ '/assets/images/twitter-black.svg' | relative_url }}" alt="Fab City Twitter" />
+          </a>
+          <a class="header-social-link" href="https://github.com/fabcity" target="_blank">
+            <img class="nav-icon" src="{{ '/assets/images/icons/github-black.svg' | relative_url }}" alt="Fab City Github" />
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<script>
+  function toggleMenu() {
+    let navOpener = document.getElementById("mobile-nav-opener");
+    let fabCityHeader = document.getElementById("fabcity-header");
+    let mobileMenuContainer = document.getElementById("mobile-menu-container");
+
+    navOpener.classList.toggle("opened");
+    fabCityHeader.classList.toggle("opened");
+    mobileMenuContainer.classList.toggle("opened");
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1200) {
+        navOpener.classList.remove("opened");
+        fabCityHeader.classList.remove("opened");
+        mobileMenuContainer.classList.remove("opened");
+      }
+    });
+  }
+</script>
+
+

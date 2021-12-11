@@ -1,0 +1,129 @@
+
+groups:
+  - group-id: understanding
+    groupName: Understanding Fab City
+    items:
+        - title: Fab City Glossary
+          content: The main concepts and definitions from the Fab City ecosystem.
+          id: item-1
+
+        - title: Fab City Whitepaper
+          content: How the Fab City project aims to build a new economy based on distributed data and manufacturing infrastructure.
+          download-link: "/assets/documents/FabCity_Whitepaper.pdf"
+          id: item-2
+
+        - title: Fab City Manifesto
+          content: The principles and values that underpin the Fab City Global Initiative. To become a Fab City, cities must commit themselves to these principles towards locally productive and globally connected cities.
+          image: '/assets/images/pages/resources/collapsable/manifesto.jpg'
+          id-image: item-image-3
+          download-link: "/assets/documents/FabCity_Manifesto.pdf"
+          id: item-3
+
+        - title: Fab City Book
+          content: The principles and values that underpin the Fab City Global Initiative. To become a Fab City, cities must commit themselves to these principles towards locally productive and globally connected cities.
+          image: '/assets/images/pages/resources/collapsable/Whitepaper-3.png'
+          id-image: item-image-4
+          download-link: "/assets/documents/FabCity_Book.pdf"
+          id: item-4
+
+        - title: Videos
+          content: Informative and inspirational videos regarding Fab City. Follow us on
+          content-link-text: youtube
+          content-extra-link: "https://www.youtube.com/channel/UCNI09f77WVBInvzrD4emrVg"
+          image: '/assets/images/pages/resources/collapsable/videos.png'
+          id-image: item-image-5
+          link: "https://www.youtube.com/channel/UCNI09f77WVBInvzrD4emrVg"
+          id: item-5
+
+  - group-id: becoming
+    groupName: Becoming a Fab City
+    items:
+      - title: Fab City Pledge guide
+        content: Step-by-step guidance on how to pledge to become a Fab City and join the Fab City network. If you are a local champion, you can take some concrete actions to start setting up your journey to becoming a Fab City.
+        link: https://www.canva.com/design/DAEvPxy4VsY/u_XKsO8IdGTAQVKVxqJdrg/view?utm_content=DAEvPxy4VsY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+        id: item-6
+
+      - title: Events
+        content: The Fab City Foundation hosts guidance sessions and other events to help you gain knowledge and pledge to become part of the Fab City Network. Keep an eye on the Events [link] page for more information or subscribe to our Newsletter [link].
+        image: '/assets/images/pages/resources/collapsable/events.png'
+        id: item-7
+
+      - title: Fab City Handbook
+        content: All the information and tools to be a member of the Fab City Network. Step-by-step guidance and documentation for recently pledged cities.
+        id-image: item-image-8
+        link: https://fabcity.gitbook.io/handbook/
+        id: item-8
+
+      - title: Helpdesk
+        content: Support via email and informative meetings for potential new cities and existing Fab Cities. It functions as a dedicated support channel available for cities and bioregions to send requests or inquiries about the submission process or other topics dedicated to Fab City.
+        id-image: item-image-9
+        id: item-9
+
+  - group-id: upscaling
+    groupName: Becoming a Fab City
+    items:
+      - title: Fab City Full Stack
+        image: '/assets/images/pages/resources/collapsable/full-stack.png'
+        content: The Full Stack is Fab City's Strategic Action Plan (SAP), a framework to guide cities to explore, identify and prototype local productivity that reflects and benefits their corresponding bioregion.
+        id: item-10
+
+      - title: Fab City Bootcamp
+        image: '/assets/images/pages/resources/collapsable/bootcamp.png'
+        content: The Fab City Bootcamp is designed around the Fab City Full Stack, meaning local training contributes to and is guided by the global Fab City agenda. It consists of short training videos, tools and exercises, and exchange and networking sessions between cities.
+        id: item-11
+
+      - title: Fab City online learning platform
+        content: The Fab City Online Learning Platform aims to generate a community by learning from workshops, seminars, and NOOCS (Nano Open Online Courses) to higher-level studying programs like the Master in Design X Distributed Innovation
+        image: '/assets/images/pages/resources/collapsable/learning-platform.png'
+        id-image: item-image-12
+        id: item-12
+
+      - title: Events
+        content: The Fab City Foundation hosts Focus Groups,
+          Working Groups, and Round Tables to discuss trending
+          topics and work intensely on specific issues
+          (e.g. community building, global knowledge sharing through digital ecosystem, distributed infrastructure for local production).
+          Keep an eye on the Events <a href='events.html' class="collapse-extra-link">[link]</a> page for more information or subscribe to our Newsletter.
+        image: '/assets/images/pages/resources/collapsable/events-02.png'
+        id-image: item-image-12
+        id: item-13
+
+  - group-id: take-action
+    groupName: Take action in your community
+    items:
+      - title: Find your local Fab Lab
+        content: The Fab Lab sits at the heart of Fab City as a place to make, learn and inspire. Find out about Fab Labs and find one local to you at fablabs.io<br/><a href='https://www.fablabs.io/' target="_blank" class="collapse-extra-link">(LINK)</a>
+        link: 'https://www.fablabs.io/'
+        id: item-14
+
+      - title: Learn about Fab Citizenship
+        content: Explore how you can become a ‘Fab Citizen’ through the experiences of others on the Fab City blog <a href='https://blog.fab.city/' target="_blank" class="collapse-extra-link">[link]</a>. Here you can learn more about local productivity, personal roadmap to Fab City living and ways to build and foster local productive communities.
+        link: 'https://blog.fab.city/'
+        id: item-15
+        image: '/assets/images/pages/resources/collapsable/citizenship.png'
+
+      - title: Bring people together
+        content: If you want to kick-start local production and global connectivity in your city, why not host an event to start a local conversation? Here you can find an event pack to help you get started.
+        id: item-16
+
+      - title: Join our ecosystem
+        content: Fab City Foundation collaborates with a global ecosystem that is enabling
+          the shift to local production and global connection, led by people like you.
+          Take a look at some of the platforms in our global network for education, design,
+          and community such as the distributed Academy program <a href='https://fabacademy.org/' target="_blank" class="collapse-extra-link">[link]</a>,
+          Distributed Design Platform <a href='http://www.distributeddesign.eu/' target="_blank" class="collapse-extra-link">[link]</a> Emergent Futures community <a href='https://community.emergentfutures.io/' target="_blank" class="collapse-extra-link">[link]</a>.
+        id: item-17
+
+      - title: Learn with Fab City
+        content: The Fab City Online Learning Platform aims to generate a community by learning from workshops, seminars, and NOOCS (Nano Open Online Courses)
+          to higher-level studying programs like the Master in Design X Distributed Innovation <a href='https://fabacademy.org/' target="_blank" class="collapse-extra-link">[link]</a>.
+        id: item-18
+
+      - title: Join an event or follow us
+        content: You can follow the Fab City Global Initiative on <a href='https://www.instagram.com/fabcityglobal/' target="_blank" class="collapse-extra-link">Instagram</a>,
+          <a href="https://twitter.com/fabcityglobal" target="_blank" class="collapse-extra-link">Twitter</a>,
+          <a href="https://www.youtube.com/channel/UCNI09f77WVBInvzrD4emrVg" target="_blank" class="collapse-extra-link">YouTube</a>,
+          <a href="https://www.facebook.com/fabcityglobal/?_rdc=1&_rdr" target="_blank" class="collapse-extra-link">Facebook</a>,
+          <a href="https://www.linkedin.com/company/fab-city/" target="_blank" class="collapse-extra-link">LinkedIn</a>, or <a href='http://fabcity.slack.com/' target="_blank" class="collapse-extra-link">Slack</a>,
+          or, join one of our events.
+        id: item-19

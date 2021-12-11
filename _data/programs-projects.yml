@@ -1,0 +1,41 @@
+projects:
+  - name: "REFLOW EU Project →"
+    link: "https://reflowproject.eu"
+    image: '/assets/images/programs_projects/Reflow.jpg'
+
+  - name: "Centrinno EU project →"
+    link: "https://centrinno.eu/"
+    image: '/assets/images/programs_projects/Centrinno.jpg'
+
+  - name: "Cosmolocalism ERC Project →"
+    link: "https://www.cosmolocalism.eu/"
+    image: '/assets/images/programs_projects/Cosmolocalism.jpg'
+
+  - name: "Distributed Design Platform →"
+    link: "https://distributeddesign.eu/"
+    image: '/assets/images/programs_projects/DDplatform.jpg'
+
+programs:
+  - name: "Circular Maker Academy →"
+    link: "https://fablabbcn.org/projects/pop-machina"
+    image: '/assets/images/programs_projects/Circular_Maker_Academy.jpg'
+
+  - name: "Fab Academy →"
+    link: "https://fabacademy.org/"
+    image: '/assets/images/programs_projects/Fab_Academy.jpg'
+
+  - name: "Fabricademy →"
+    link: "https://textile-academy.org/"
+    image: '/assets/images/programs_projects/Fabricademy.jpg'
+
+  - name: "Driven by Volumes →"
+    link: "https://drivenbyvolumes.io/"
+    image: '/assets/images/programs_projects/Driven_by_volumes.jpg'
+
+  - name: "Master in Design for Emergent Future →"
+    link: "https://iaac.net/educational-programmes/masters-programmes/master-in-design-for-emergent-futures-mdef/"
+    image: '/assets/images/programs_projects/MDEF.jpg'
+
+  - name: "Distributed Design Academy →"
+    link: "https://distributeddesign.eu/"
+    image: '/assets/images/programs_projects/DD_Academy.jpg'

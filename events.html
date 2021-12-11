@@ -1,0 +1,117 @@
+---
+title: Events
+layout: dark
+---
+
+<div class="events-page page-content">
+  <div class="bg-beige container-fluid landing-events">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="assets/images/pages/events/landing_events.jpg" alt="" class="img-fluid min-width-100">
+      </div>
+    </div>
+    <div class="row fabcity-mt-40">
+      <h2 class="col-md-6">
+        Annual Fab<br/>City Summit
+      </h2>
+      <div class="col-md-6">
+        <p>
+          The Summit brings together city leaders, enthusiasts, industry and policy-makers to debate and explore innovations in productive cities.
+          Historically hosted by a Network member, the Summit is a chance for new Network members to pledge to join,
+          and existing members to exchange learnings and advance our collective roadmap. The Summit, consisting of keynote talks,
+          panels and workshops is complemented by the Fab City Campus, a pop-up Fab City demonstrator that shows-off various citizen-led approaches
+          to local circularity and productivity of food, energy and materials.
+        </p>
+      </div>
+    </div>
+
+    <div class="width-100 position-relative fabcity-mt-50">
+      <div id="roadmap-component" class="roadmap-component timeline-component overflow-x-hidden">
+        <ul class="timeline-container width-100 align-items-start">
+          {% assign events = site.data.roadmap.events | sort: "year" %}
+          {% for item in events %}
+          <li class="timelime-item flex-column">
+            <div class="timeline-dot"></div>
+            <div class="timeline-item-header fabcity-mb-20">
+              {{item.year}} – {{item.location}}
+            </div>
+            <h4 class="timelime-item-title fabcity-mb-20">
+              {{item.title}}
+            </h4>
+            <div class="timelime-item-description">
+              {{item.description}}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="timeline-control back" onclick="toRight()">
+        <div class="arrow arrow-left black"></div>
+      </div>
+      <div class="timeline-control next" onclick="toLeft()">
+        <div class="arrow arrow-right black"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="fabcity-p-tb-50 container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/images/pages/events/join-the-network.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+      </div>
+      <div class="col-md-6">
+        <img src="assets/images/pages/events/join-the-summit.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+  {% assign events = site.data.roadmap.events | sort: "year" %}
+
+  function toLeft() {
+    let elmnt = document.getElementById("roadmap-component");
+    let x = elmnt.scrollLeft;
+    let w = elmnt.scrollWidth;
+    let c = elmnt.clientWidth;
+    let s = (w - c) / {{ events.last.number }};
+    elmnt.scrollLeft += 320;
+  }
+
+  function toRight() {
+    let elmnt = document.getElementById("roadmap-component");
+    let x = elmnt.scrollLeft;
+    let w = elmnt.scrollWidth;
+    let c = elmnt.clientWidth;
+    let s = (w - c) / {{ events.last.number | prepend: "-" }};
+    elmnt.scrollLeft -= 320;
+  }
+
+  function scrollPosi() {
+    let elmnt = document.getElementById("roadmap-component");
+    let x = elmnt.scrollLeft;
+    let w = elmnt.scrollWidth;
+    let c = elmnt.clientWidth;
+    let s = x / ((w - c) / {{ events.last.number | plus: 1 }});
+
+
+    switch(true) {
+      {% assign events2 = site.data.roadmap.events | sort: "year" | reverse %}
+    {% for item in events2 %}
+    // case (s < {{ item.number | plus: 1 }}):
+    //   document.getElementById("{{ item.number }}").classList.add("active");
+    //   document.getElementById("{{ item.number | plus: 1 | at_most: events.count }}").classList.remove("active");
+    //   document.getElementById("{{ item.number | minus: 1 | at_least: 0 }}").classList.remove("active");
+    //   break;
+    {% endfor %}
+  default:
+    break;
+    }
+  }
+</script>

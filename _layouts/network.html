@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.png">
+
+  <title>{{ page.title }} - {{ site.title }}</title>
+  {% seo %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% include fonts.html %}
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="{{ '/assets/js/jquery.countdown.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/countdown.js' | relative_url }}"></script>
+
+<body>
+
+  {% include navbar.html %}
+  {{ content }}
+  {% include footer.html %}
+
+</body>
+{% include take-action.html %}
+</html>

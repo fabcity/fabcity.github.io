@@ -1,0 +1,24 @@
+#blog-container.slick-initialized {
+  .slick-track {
+    display: flex;
+    justify-content: center;
+
+    .article-item .article-thumbnail {
+      display: flex;
+      align-self: flex-start;
+      margin-top: auto;
+    }
+  }
+
+  .slick-slide {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    height: auto !important;
+  }
+
+  .slick-next.slick-arrow {
+    position: absolute;
+    right: -45px;
+  }
+}

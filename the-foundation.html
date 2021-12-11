@@ -1,0 +1,252 @@
+---
+title: the Foundation
+layout: default
+---
+
+
+<div class="foundation-page page-content">
+  <div class="landing-hero flex align-content-center">
+    <div class="col-sm-12 col-md-6">
+      <h1 class="landing-headline fabcity-mb-25">
+        The Fab City Foundation
+      </h1>
+      <h5>
+        The Fab City Foundation supports the global initiative through the development of projects and educational programs that are focused on building the capacity
+        of cities and their communities. Based in e-Estonia,
+        the Foundation is location independent and supports distributed programs and projects the world over.
+      </h5>
+    </div>
+  </div>
+
+  <div class="projects bg-orange container-fluid fabcity-p-tb-50">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>
+          Projects
+        </h2>
+      </div>
+    </div>
+
+    <div class="row fabcity-m-tb-50">
+      <div class="col-md-6">
+        <p>
+          The Fab City Foundation develops and supports programs to advance the global Fab City agenda.
+          We work with leaders from cities, municipalities, businesses and international institutions
+          to develop unique implementation projects, pilots and strategic planning.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          Our prototyping approach unfolds a design-centred process through the identification of global trends,
+          analysis and mapping of local impacts and opportunities, and the real-world co-design and piloting of situated solutions.
+          We work closely with our partners, but never in silo, as every project feeds our Network’s global commons.
+          The Fab City Foundation welcomes and reviews all requests for collaboration that aligns with our manifesto
+          and strategic action plan. We are currently particularly interested in unfolding projects in the southern hemisphere.
+        </p>
+      </div>
+    </div>
+
+    <div class="line-separator"></div>
+
+    <div class="row flex align-items-center fabcity-m-tb-50">
+      <div class="col-md-6">
+        <h3 class="fabcity-mb-30">
+          Our projects
+        </h3>
+        <p>
+          The Fab City Foundation is currently involved in the following projects
+        </p>
+        <a href="https://www.fabcity.hamburg/en/fab-city-os-projekt-interfacer" target="_blank" class="fab-city-link">
+          INTERFACER React-EU Project →
+        </a>
+      </div>
+    </div>
+
+    <div class="line-separator"></div>
+
+    <div class="row flex align-items-center fabcity-mt-50">
+      <div class="col-md-12">
+        <h3 class="fabcity-mb-10">
+          Projects we support
+        </h3>
+        <a href="/contact.html" class="fab-city-link">
+          Contact us →
+        </a>
+      </div>
+    </div>
+
+    <div class="row projects-container">
+      {% for project in site.data.programs-projects.projects %}
+      <div class="project-card col-md-3 fabcity-mt-40">
+        <div class="project-cover fabcity-mb-30" style="background-image:url({{ project.image | relative_url }})"></div>
+        <a href="{{project.link}}" target="_blank" class="fab-city-link">
+          {{project.name}}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="programs container-fluid fabcity-p-tb-50">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>
+          Programs
+        </h2>
+      </div>
+    </div>
+
+    <div class="row fabcity-m-tb-50">
+      <div class="col-md-6">
+        <p>
+          Fab City Foundation invests in education and training for transformational change. Making use
+          of the Strategic Action Plan       and Fab City Network
+          to facilitate Distributed Learning Platforms. Educational programs aim to support the next generation of entrepreneurs, executives and policymakers through lifelong learning and training
+          of trainers. We envisage a global community of leaders driving change in their local communities.
+        </p>
+        <a href="/contact.html" class="fab-city-link">Contact us →</a>
+      </div>
+      <div class="col-md-6">
+        <p>
+          We collaborate on tailor-made training solutions for cities and regions looking to become more resilient, sustainable and inclusive. Our programs respond to and inspire real-world solutions through prototyping and community engagement.  They are supported by the Future Learning team at Fab Lab Barcelona.
+        </p>
+        <p>
+          To work with the Fab City Foundation on local programs, contact our Distributed Learning lead Tomas Vivanco: info@fab.city
+        </p>
+      </div>
+    </div>
+
+    <div class="line-separator"></div>
+
+    <div class="row flex align-items-center fabcity-m-tb-50">
+      <div class="col-md-12">
+        <h3 class="fabcity-mb-40">
+          Our programs
+        </h3>
+      </div>
+      <div class="col-md-6">
+        <img src="assets/images/programs_projects/MDEF_master.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+      </div>
+      <div class="col-md-6">
+        <img src="assets/images/programs_projects/Vietnam_Unesco.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+      </div>
+    </div>
+
+    <div class="line-separator"></div>
+
+    <div class="row flex align-items-center fabcity-mt-50">
+      <div class="col-md-12">
+        <h3 class="fabcity-mb-10">
+          Programs we support
+        </h3>
+      </div>
+    </div>
+
+    <div class="row projects-container fabcity-mb-50">
+      {% for program in site.data.programs-projects.programs %}
+      <div class="project-card col-md-3 fabcity-mt-40">
+        <div class="project-cover fabcity-mb-30" style="background-image:url({{ program.image | relative_url }})"></div>
+        <a href="{{program.link}}" target="_blank" class="fab-city-link">
+          {{program.name}}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="line-separator"></div>
+
+    <div class="fabcity-pt-50">
+      <div class="row">
+        <div class="col-md-6 flex">
+          <div>
+            <h2 class="fabcity-mb-20">
+              Online Learning
+            </h2>
+            <p class="col-md-10 fabcity-pl-0 fabcity-mb-20">
+              Fab City invests in life-long learning.
+              Join the platform to access our education programs.
+            </p>
+          </div>
+          <a href="/mddi.html" class="fab-city-link align-self-flex-end fabcity-pb-20">
+            Learn more →
+          </a>
+        </div>
+        <div class="col-md-6 flex align-items-center">
+          <img src="assets/images/pages/foundation/online_learning.jpg" alt="" class="img-fluid min-width-100">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="with-line-separator bg-blue fabcity-p-tb-50 container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="fabcity-mb-30">
+          People
+        </h2>
+      </div>
+    </div>
+    {% for group in site.data.people.groups %}
+      <div class="row">
+          <h3 class="col-md-12">
+            {{ group.groupName }}
+          </h3>
+      </div>
+        <div class="row fabcity-mb-50">
+          <div class="col-md-12 people-container fabcity-mt-20">
+            {% for person in group.people %}
+            <div class="person-card flex-column flex align-items-center text-center">
+              <div class="picture-person fabcity-mb-30" style="background-image:url({{person.picture | relative_url }})"></div>
+              <p class="person-name display-block">
+                {{person.name}}
+              </p>
+              <span class="display-block fabcity-font-size-14">{{person.position}}</span>
+              {% if person.second-position %}
+              <span class="display-block fabcity-font-size-14">{{person.second-position}}</span>
+              {% endif %}
+            </div>
+          {% endfor %}
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+          </div>
+        </div>
+        {% if group.group-id != "team"%}
+          <div class="line-separator fabcity-mb-50"></div>
+        {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="organizations-container fabcity-p-tb-50 container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>
+          Organisations we work with
+        </h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 fabcity-mt-35 flex space-between flex-wrap">
+        {% for image in site.static_files %}
+          {% if image.path contains 'assets/images/organizations' %}
+            <div class="organizations-image">
+              <img src="{{ image.path }}" alt="">
+            </div>
+          {% endif %}
+        {% endfor %}
+        <i aria-hidden="true"></i>
+        <i aria-hidden="true"></i>
+        <i aria-hidden="true"></i>
+        <i aria-hidden="true"></i>
+        <i aria-hidden="true"></i>
+        <i aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

@@ -1,5 +1,229 @@
+// HEADER DESIGN
+// Desktop Design
 
 .fabcity-header {
-  // display: none;
-  // position: sticky;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ffffff;
+  justify-content: space-between;
+
+  .mobile-nav-opener {
+    display: none;
+  }
+
+  .header-link-container {
+    flex-direction: row;
+    justify-items: center;
+    display: flex;
+
+    &.mobile-only {
+      display: none;
+    }
+  }
+
+  .header-page-link {
+    font-size: 18px;
+    margin-right: 35px;
+    display: flex;
+    align-self: center;
+  }
+
+  .header-right-container {
+    .header-page-link {
+      margin-right: 20px;
+    }
+  }
+
+  .header-social-link {
+    display: flex;
+    align-self: center;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a.header-logo {
+    height: 30px;
+    width: 120px;
+    margin-right: 35px;
+    background-size: contain;
+    background: url("../../assets/images/fabcitylogo-07.svg") no-repeat center;
+
+    img {
+      height: 100%;
+      display: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.mobile-only {
+      display: none;
+    }
+  }
+
+  a {
+    color: $color-white;
+  }
+
+  &.dark-header {
+    border-bottom: 1px solid $color-black;
+
+    a {
+      color: $color-black;
+    }
+
+    a.header-logo {
+      background: url("../../assets/images/fabcitylogo-09.svg") no-repeat center;
+    }
+
+    .mobile-nav-opener div {
+      background: $color-black;
+    }
+  }
+}
+
+.mobile-menu-container {
+  display: none;
+}
+
+.fabcity-header.navbar-dark {
+  //padding-bottom: 40px;
+  padding: 0 50px;
+  border-top: 1px solid #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+
+  a {
+    color: #000 !important;
+  }
+}
+
+// Mobile Design
+
+@media (max-width: 1200px) {
+  .mobile-menu-container {
+    display: none;
+    height: 0;
+    width: 100%;
+    transition: all .4s ease-in-out;
+    margin-top: 50px;
+  }
+
+  .header-logo.mobile-only {
+    display: flex !important;
+  }
+
+  .header-link-container {
+    display: none !important;
+
+    &.mobile-only {
+      display: flex !important;
+    }
+  }
+
+
+  .fabcity-header {
+    &.opened {
+      background-color: $color-beige;
+      color: $color-black;
+      border-bottom: 1px solid $color-black;
+
+      a.header-logo {
+        background: url("../../assets/images/fabcitylogo-09.svg") no-repeat center;
+      }
+    }
+
+    .mobile-nav-opener {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      align-self: center;
+
+      div {
+        height: 1px;
+        width: 30px;
+        display: flex;
+        background-color: $color-white;
+        transform: rotate(0);
+      }
+
+      &.opened {
+        div {
+          background-color: $color-black;
+          transition: all .2s ease-in-out;
+          transform: translateY(0) rotate(45deg);
+          opacity: 0;
+
+          &:first-child,
+          &:last-child {
+            display: flex;
+          }
+
+          &:first-child {
+            transform: translateY(10px) rotate(45deg);
+            opacity: 1;
+          }
+
+          &:last-child {
+            opacity: 1;
+            transform: translateY(-9px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+    .mobile-menu-container {
+      display: none;
+      height: auto;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding-bottom: 30px;
+
+      &.opened {
+        opacity: 1;
+        display: block;
+      }
+
+      .mobile-link-container {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          color: $color-black;
+          text-decoration: none;
+          line-height: 25px;
+          margin-top: 25px;
+        }
+
+        .header-page-link {
+          border-bottom: 1px solid $color-black;
+        }
+      }
+
+      .mobile-social-links {
+        margin-top: 25px;
+
+        a {
+          margin-right: 20px;
+        }
+      }
+
+      .menu-separator {
+        height: 60px;
+        width: 100%;
+      }
+    }
 }

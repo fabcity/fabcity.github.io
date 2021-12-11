@@ -1,87 +1,373 @@
 ---
 title: Resources
-layout: home
+layout: dark
 ---
 
-<div style="background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.6) 80%), url('{{ 'assets/images/resources-intro.png' | relative_url }}'); background-size: cover; background-position:center;">
-  {% include navbar.html %}
-    <div class="container-fluid white">
-      <div class="row row-cols-2 spaced-out mr-xl-4">
-        <div class="col-md-6 ml-xl-4 mr-xl-4">
-          <div class="my-4">
-            <div class="placeholder" style="height:300px">
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
-          <div class="col-md-5">
-            <div class="display-4 text-uppercase light-letters">
-              Resources
-            </div>
-            <div class="h5">
-              Read about the methods, see the
-              instruction and print the materials
-            </div>
-            <!-- <button type="button" class="btn pr-lg-4 pl-lg-4 small btn-white rounded-0 pr-3 pl-3 pt-1 pb-1">See more</button> -->
-          </div>
-        </div>
+
+<div class="resources-page page-content" xmlns="http://www.w3.org/1999/html">
+  <div class="container-fluid landing-resources">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="assets/images/pages/collective/landing_collective.jpg" alt="" class="img-fluid min-width-100">
       </div>
-</div>
-<body>
-<!-- First Section -->
-  <section class="bg-yellow">
-      <br />
-      <div class="container-fluid black">
-          <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
-            <div class="col-md-6">
-              <div class="h3">
-                {{ site.data.resources.text }}
+    </div>
+    <div class="row fabcity-mt-40">
+      <h2 class="col-md-6">
+        Barcelona
+      </h2>
+      <div class="col-md-6">
+        <p>
+          Statement of the City, Thanks to these individuals, who are the current and past powerhouses in bringing the Fab City vision to its current state.
+          You can read posts from the Collective on our blog.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-blue fabcity-p-tb-50">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>
+          Knowledge Hub
+        </h2>
+      </div>
+    </div>
+
+    <div class="row text-center fabcity-mt-40 flex align-items-end">
+      <div class="col-sm-3">
+        <img src="assets/images/pages/resources/FabCity_resourcepage-16.png" class="img-fluid" alt="">
+        <a href="#understanding" class="fab-city-link display-block fabcity-mt-25">
+          Understanding<br/>
+          Fab City →
+        </a>
+      </div>
+      <div class=" col-sm-3">
+        <img src="assets/images/pages/resources/FabCity_resourcepage-17.png" class="img-fluid" alt="">
+        <a href="#becoming" class="fab-city-link display-block fabcity-mt-25">
+          Becoming<br/>
+          Fab City →
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <img src="assets/images/pages/resources/FabCity_resourcepage-18.png" class="img-fluid" alt="">
+        <a href="#upscale" class="fab-city-link display-block fabcity-mt-25">
+          Upscale<br/>
+          Fab City →
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <img src="assets/images/pages/resources/FabCity_resourcepage-19.png" class="img-fluid" alt="">
+        <a href="#take-action" class="fab-city-link display-block fabcity-mt-25">
+          Take action<br/>
+          locally →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="understanding-fabcity container-fluid bg-beige fabcity-p-tb-50" id="understanding">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="fabcity-mb-30">
+          Understanding Fab City
+        </h3>
+      </div>
+    </div>
+    <div class="row fabcity-mb-25">
+      <div class="col-md-6">
+        <p>
+          Here you find a selection of the Fab City’s most efficient and thoroughly tested tools
+          that you can use in your work and as a source of inspiration.
+          Read about the methods, see the instructions, and print the materials.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="fabcity-collapsable">
+
+      {% for group in site.data.resources-collapsable.groups %}
+      {% if group.group-id == "understanding" %}
+      {% for item in group.items %}
+        <div class="row collapse-item">
+          <div class="col-md-6 flex collapse-item-content-container position-relative">
+            <div>
+              <p class="collapse-item-title display-block">
+                {{item.title}}
+              </p>
+              <div class="collapse-item-content  {{item.id}} collapse" id="{{item.id}}">
+                {{item.content}}
+
+                {% if item.content-link-text %}
+                  <a href="{{item.content-extra-link}}" target="_blank" class="collapse-extra-link">
+                    {{item.content-link-text}}
+                  </a>.
+                {% endif %}
+
+                {% if item.link %}
+                <a class="collapse-item-link icon ic-arrow" target="_blank" href="{{item.link}}">
+                </a>
+                {% endif %}
+
+                {% if item.download-link %}
+                <a class="collapse-item-link icon ic-download" target="_blank" href="{{item.download-link}}">
+                </a>
+                {% endif %}
               </div>
+            </div>
+
+          </div>
+
+          {% if item.image %}
+          <div  class="col-md-6 collapse {{item.id}} text-right" id="{{item.id-image}}">
+            <img src="{{item.image}}" alt="" class="align-self-flex-end">
+          </div>
+          {% endif %}
+
+          <a class="collapse-icon collapsed" data-toggle="collapse"
+             data-target=".{{item.id}}" aria-expanded="false"
+             aria-controls="{{item.id}} {{item-id-image}}">
+          </a>
+        </div>
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="understanding-fabcity container-fluid bg-green fabcity-p-tb-50" id="becoming">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="fabcity-mb-30">
+          Becoming a Fab City
+        </h3>
+      </div>
+    </div>
+    <div class="row fabcity-mb-25">
+      <div class="col-md-6">
+        <p>
+          Interested in understanding the steps your city needs to take to become a Fab City?
+          Here are some practical tools and resources to help you on this journey.
+        </p>
+      </div>
+    </div>
+
+    <div class="fabcity-collapsable">
+
+      {% for group in site.data.resources-collapsable.groups %}
+      {% if group.group-id == "becoming" %}
+      {% for item in group.items %}
+      <div class="row collapse-item">
+        <div class="col-md-6 flex collapse-item-content-container position-relative">
+          <div>
+            <p class="collapse-item-title display-block">
+              {{item.title}}
+            </p>
+            <div class="collapse-item-content  {{item.id}} collapse" id="{{item.id}}">
+              {{item.content}}
+
+              {% if item.content-link-text %}
+              <a href="{{item.content-extra-link}}" target="_blank" class="collapse-extra-link">
+                {{item.content-link-text}}
+              </a>.
+              {% endif %}
+
+              {% if item.link %}
+              <a class="collapse-item-link icon ic-arrow" target="_blank" href="{{item.link}}">
+              </a>
+              {% endif %}
+
+              {% if item.download-link %}
+              <a class="collapse-item-link icon ic-download" target="_blank" href="{{item.download-link}}">
+              </a>
+              {% endif %}
             </div>
           </div>
-          <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3">
 
-            <div class="col-md-12">
-              {% for item in site.data.resources.items %}
-              <div class="border-black border-top pb-1"></div>
-                <div class="my-3 medium fat-letters text-uppercase">{{ item.title }}
-                  {% if item.arrow != 'download' %}
-                  <a class="arrow float-right black display-3" href="{{item.link}}">&rarr;</a>
-                  {% endif %}
-                </div>
-              {% if item.text %}
-              <div class="row pb-3 spaced-out pr-2">
-              <div class="col-md-5">
-                <div class="my-3 small">
-                  {{ item.text }}
-                </div>
-              </div>
-              {% endif %}
-              {% if item.img %}
-              <div class="col-md-5">
-                <div class="my-3 medium fat-letters text-uppercase">
-                  <img class="w-100" src="{{ item.img }}" />
-                </div>
-              </div>
-              {% endif %}
-              {% if item.arrow == 'download' %}
-                <div class="col-md-1 mt-lg-5 mr-lg-2 d-flex justify-self-end">
-                  <table class="h-100">
-                    <tbody>
-                      <tr>
-                        <td class="align-bottom">
-                          <a class="arrow black border-black border-bottom high-lines" href="{{item.link}}">&darr;</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              {% endif %}
-
-              {% endfor %}
-            </div>
         </div>
-</section>
-</body>
+
+        {% if item.image %}
+        <div  class="col-md-6 collapse {{item.id}} text-right" id="{{item.id-image}}">
+          <img src="{{item.image}}" alt="" class="align-self-flex-end">
+        </div>
+        {% endif %}
+
+        <a class="collapse-icon collapsed" data-toggle="collapse"
+           data-target=".{{item.id}}" aria-expanded="false"
+           aria-controls="{{item.id}} {{item-id-image}}">
+        </a>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="upscaling-fabcity container-fluid fabcity-p-tb-50" id="upscale">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="fabcity-mb-30" >
+          Upscaling Fab City
+        </h3>
+      </div>
+    </div>
+    <div class="row fabcity-mb-25">
+      <div class="col-md-6">
+        <p>
+          Looking for resources, ideas, tools to scale up the circular economy and digital social
+          innovation strategies to boost the productivity of your city or region?
+        </p>
+      </div>
+    </div>
+
+    <div class="fabcity-collapsable">
+
+      {% for group in site.data.resources-collapsable.groups %}
+      {% if group.group-id == "upscaling" %}
+      {% for item in group.items %}
+      <div class="row collapse-item">
+        <div class="col-md-6 flex collapse-item-content-container position-relative">
+          <div>
+            <p class="collapse-item-title display-block">
+              {{item.title}}
+            </p>
+            <div class="collapse-item-content  {{item.id}} collapse" id="{{item.id}}">
+              {{item.content}}
+
+              {% if item.content-link-text %}
+              <a href="{{item.content-extra-link}}" target="_blank" class="collapse-extra-link">
+                {{item.content-link-text}}
+              </a>.
+              {% endif %}
+
+              {% if item.link %}
+              <a class="collapse-item-link icon ic-arrow" target="_blank" href="{{item.link}}">
+              </a>
+              {% endif %}
+
+              {% if item.download-link %}
+              <a class="collapse-item-link icon ic-download" target="_blank" href="{{item.download-link}}">
+              </a>
+              {% endif %}
+            </div>
+          </div>
+
+        </div>
+
+        {% if item.image %}
+        <div  class="col-md-6 collapse {{item.id}} text-right" id="{{item.id-image}}">
+          <img src="{{item.image}}" alt="" class="align-self-flex-end">
+        </div>
+        {% endif %}
+
+        <a class="collapse-icon collapsed" data-toggle="collapse"
+           data-target=".{{item.id}}" aria-expanded="false"
+           aria-controls="{{item.id}} {{item-id-image}}">
+        </a>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="upscaling-fabcity container-fluid bg-orange fabcity-p-tb-50" id="take-action">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="fabcity-mb-30">
+          Take action in your community
+        </h3>
+      </div>
+    </div>
+    <div class="row fabcity-mb-25">
+      <div class="col-md-6">
+        <p>
+          Our actions matter. If you want to get involved with the Fab City vision and principles,
+          you can take some concrete actions in your community.
+        </p>
+      </div>
+    </div>
+
+    <div class="fabcity-collapsable">
+
+      {% for group in site.data.resources-collapsable.groups %}
+      {% if group.group-id == "take-action" %}
+      {% for item in group.items %}
+      <div class="row collapse-item">
+        <div class="col-md-6 flex collapse-item-content-container position-relative">
+          <div>
+            <p class="collapse-item-title display-block">
+              {{item.title}}
+            </p>
+            <div class="collapse-item-content  {{item.id}} collapse" id="{{item.id}}">
+              {{item.content}}
+
+              {% if item.content-link-text %}
+              <a href="{{item.content-extra-link}}" target="_blank" class="collapse-extra-link">
+                {{item.content-link-text}}
+              </a>.
+              {% endif %}
+
+              {% if item.link %}
+              <a class="collapse-item-link icon ic-arrow" target="_blank" href="{{item.link}}">
+              </a>
+              {% endif %}
+
+              {% if item.download-link %}
+              <a class="collapse-item-link icon ic-download" target="_blank" href="{{item.download-link}}">
+              </a>
+              {% endif %}
+            </div>
+          </div>
+
+        </div>
+
+        {% if item.image %}
+        <div  class="col-md-6 collapse {{item.id}} text-right" id="{{item.id-image}}">
+          <img src="{{item.image}}" alt="" class="align-self-flex-end">
+        </div>
+        {% endif %}
+
+        <a class="collapse-icon collapsed" data-toggle="collapse"
+           data-target=".{{item.id}}" aria-expanded="false"
+           aria-controls="{{item.id}} {{item-id-image}}">
+        </a>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="container-fluid fabcity-p-tb-50">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-black">
+          Get involved
+        </h3>
+      </div>
+    </div>
+
+    <div class="row get-involved-data fabcity-mt-20 fabcity-mb-50">
+      <div class="line-separator width-100 fabcity-mb-20"></div>
+      {% for item in site.data.get-involved %}
+        <div class="col">
+          <div class="flex-column flex align-items-center text-center">
+            <p class="item-number display-block">
+              {{item.number}}
+            </p>
+            <span class="display-block item-title">{{item.title}}</br>{{item.subtitle}}</span>
+          </div>
+
+        </div> {% endfor %}
+    </div>
+
+    <div class="display-block text-center">
+      <a href="/contact.html">
+        <button class="fabcity-btn text-center">
+          Get together
+        </button>
+      </a>
+    </div>
+  </div>
+
+</div>

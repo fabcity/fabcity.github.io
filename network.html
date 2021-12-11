@@ -1,237 +1,104 @@
 ---
 title: Network
-layout: home
+layout: network
 ---
 
-<div class="dark-bg">
-  {% include navbar.html %}
 
+<div class="network-page page-content">
+  <div class="landing-hero flex align-content-center">
+    <div class="col-sm-12">
+      <h1 class="landing-headline text-justify">
+        Fab City Network
+      </h1>
+    </div>
+    <div class="col-sm-12 col-md-12 fabcity-mt-45">
+      <div class="text-center countdown inline-flex fabcity-pt-20" id="countdown"></div>
+    </div>
+  </div>
 
-  <div id="container" class="d-none d-sm-block w-75 worldmap" style="margin-left: 100px; height:700px;">
-  <div class="container-fluid white position-absolute">
-    <div class="row row-cols-2 spaced-out mr-xl-4">
-      <div class="col-md-6 ml-xl-4 mr-xl-4">
-        <div class="my-4">
-          <div class="placeholder" style="height:300px">
-          </div>
+  <div class="cities-container bg-green with-line-separator fabcity-p-tb-50">
+    <div class="container-fluid">
+      <div class="row fabcity-mb-30">
+        <div class="col-md-6">
+          <p>
+            In 2014, the then mayor of Barcelona challenged cities to produce everything they consume by 2054. Since then, Fab Cities, Regions and Countries have pledged to join the Fab City Network. They all have the same goal: to locally produce energy, food and materials in order to reduce their environmental and social impact on the planet, and globally share best practices through open networks.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Each locality represents a local effort by city leaders, community groups, Fab Labs and civic organisations who collaborate in their territories, and at distance with the network, to meet the planetary challenges presented by the climate crisis and social inequality.
+          </p>
         </div>
       </div>
-      </div>
-      <div class="row d-flex flex-colums row-cols-4 pt-3 pl-xl-5 pl-lg-5 pr-xl-5 pr-lg-5 pb-3 mb-3">
-        <div class="col-md-5">
-          <div class="display-4 text-uppercase light-letters">
-            Fab City Network
+
+      <div class="row">
+        {% for city in site.data.cities %}
+          <div class="col-md-3 fabcity-mb-30">
+            <div class="city-card fabcity-p-tb-15 bg-white fabcity-p-lr-10">
+
+              <div class="city-card-header flex space-between">
+                <span class="fabcity-font-size-14">{{city.place}}</span>
+                <span class="fabcity-font-size-14">Since {{city.since}}</span>
+              </div>
+              <p class="fabcity-mt-30">
+                {{city.place}}
+              </p>
+              <div class="image-city fabcity-m-tb-15" style="background-image:url({{city.image | relative_url }})"></div>
+              <a href="{{city.link}}" class="fabcity-font-size-14 fab-city-link display-block">
+                Read more →
+              </a>
+            </div>
+
           </div>
-          <div class="h5">
-            The cities network share working practices and
-            knowledge with the wider network as well as a
-            deep alignment of purpose and culture.
-          </div>
-        </div>
+          {{ item.place }}
+        {% endfor %}
       </div>
     </div>
+  </div>
+
+  <!-- RESOURCES -->
+  <div class="container-fluid fabcity-p-tb-50 with-line-underneath">
+    <div class="row">
+      <div class="col-md-6 flex">
+        <div>
+          <h2 class="fabcity-mb-20">
+            Network Resources
+          </h2>
+          <p class="col-md-10 fabcity-pl-0 fabcity-mb-20">
+            The Fab City Handbook is an open resource to guide your engagement with the global initiative. You can find it hosted on GitBook. See more resources in our resources page.          </p>
+        </div>
+        <a href="https://fabcity.gitbook.io/handbook" target="_blank" class="fab-city-link align-self-flex-end">
+          See the Handbook →
+        </a>
+      </div>
+      <div class="col-md-6 flex align-items-center">
+        <img src="assets/images/pages/network/network_resources.jpg" alt="" class="img-fluid min-width-100">
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-beige fabcity-p-tb-50">
+    <div class="container ">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-8">
+          <h2 class="text-center fabcity-mb-50">
+            Join the Network
+          </h2>
+          <p class="fabcity-mb-40 text-center fabcity-font-size-20">
+            We welcome new cities to the Network at the annual Fab City Summit and work
+            side-by-side with Network members throughout the year to develop local strategies
+            to implement the Fab City Strategic Action Plan.
+            The Network shares working practices and knowledge as well as a deep alignment of purpose and culture.
+          </p>
+          <div class="display-block text-center">
+            <a href="/contact.html" class="">
+              <button class="fabcity-btn text-center">
+                Contact us
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-  <div class="borderline dark"></div>
-<!-- First Section -->
- <section>
-  <br />
-  <div class="container">
-      <div class="text-center h2 text-wrap">
-        Fab Cities, Regions and Countries all have the same goal: to
-        locally produce energy, food and products in order to
-        reduce their environmental and social impact on the planet,
-        and globally share best practices through open networks.
-      </div>
-    </div>
-  </section>
-
-<!-- Second section / Map -->
-
-<!-- https://datamaps.github.io/ -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-<script src="{{ '/assets/js/worldmap.js' | relative_url }}"></script>
-
-
-        <script type="text/javascript">
-                var bombMap = new Datamap({
-                    element: document.getElementById('container'),
-                    scope: 'world',
-                    geographyConfig: {
-                        popupOnHover: false,
-                        highlightOnHover: false,
-                        borderWidth: 1,
-                        borderOpacity: 1,
-                        borderColor: '#2e2e2e'
-                    },
-                    fills: {
-                        'IND': '#22dba4',
-                        defaultFill: '#2e2e2e'
-                    },
-                });
-          var bombs = [
-          {% for city in site.data.global-initiative.cities %}
-              {   name: '{{ city.name }}',
-                  city: '{{ city.name }}',
-                  country: '{{ city.country }}',
-                  radius: 8,
-                  fillKey: 'IND',
-                  significance: '{{ city.org }}',
-                  date: '{{ city.joined }}',
-                  latitude: '{{ city.latitude }}',
-                  longitude: '{{ city.longitude }}',
-                  link: '{{ city.webpresence }}',
-                },
-          {% endfor %}
-              ];
-
-          // draw bubbles for bombs
-          bombMap.bubbles(bombs, {
-              popupTemplate: function (geo, data) {
-                // return ['<div type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"',
-                // 'data-content="And heres some amazing content. Its very engaging. Right?">Click to toggle popover</div>'];
-                return ['<div id="popup" class=\"card map popup\" style="min-width:250px;position:absolute; z-index:3000;">',
-                  '<div class=\"mb-3 map\">',
-                  '<div class=\" h4 medium pl-3 pr-3 pt-3 card-title fat-letters map\">' + data.city,
-                  '<span class=\"float-right dismiss\" onclick=\"d3.selectAll(\'.popup\').style(\'display\', \'none\');">&times;</span>',
-                  '</div>',
-                  '<div class="borderline dark w-100 thin"></div>',
-                  '<p class=\"p-3 card-text\">' + data.significance +'</p>',
-                  '<a href=\"' + data.link + '\" class="p-3 black map">Read more &rarr;</a>',
-                  '</div>',
-                  '</div>'].join('');
-              }
-          });
-        </script>
-
-<div class="border-bottom border-1 border-black"></div>
-
-
-<!-- Cities from the network -->
-<section class="bg-green">
-  <div class="container">
-    <div class="row spaced-out p-3 p-xs-3 p-sm-3 p-xl-0 p-lg-0 row-cols-2 ">
-      <div class="col-md-5 pl-0">
-        <h1 class="text-uppercase h1 light-letters pb-xl-4 text-left d-block d-sm-none">Cities from the network</h1>
-        <h1 class="text-uppercase display-4 light-letters pb-xl-4 text-left d-none d-sm-block">Cities from the network</h1>
-      </div>
-      <div class="col-md-6 pl-0">
-        <div class="pb-xl-4 pb-4 pt-4">
-          We embrace strategies in circular economy and digital social
-          innovation, and foster collaboration between a global
-          network of European and worldwide cities and territories to
-          meet the planetary challenges presented by climate change
-          and social inequalities.
-        </div>
-      </div>
-    <div class="row row-cols-lg-4 m-3 m-xs-2 m-lg-0 m-sm-2 pl-0 pl-xl-0 pl-lg-0 pl-sm-2 ml-lg-0 ml-xl-0 mr-lg-0 mr-xl-0">
-            {% for item in site.data.cities %}
-            <div class="col-md-3 mb-4">
-                  <div class="card rounded-0 border-0" style="width:280px">
-                    <div class="m-3">
-                      <div class="border-bottom border-1 border-black mb-2"></div>
-                      <div class="small">Since {{ item.since }} <div class="float-right small">{{ item.country }}</div></div>
-                      <a class="black medium-lines text-wrap" href="{{ item.place | prepend: '/' }}" height="50px">
-                      <div class="pt-3">{{ item.place }}</div>
-                      <div class="pt-3">
-                        <img src="{{ item.image | relative_url }}"  style="display:block;height:150px;max-width:255px" class="w-100" alt="" />
-                      </div>
-                      <div class="h6 pt-2 pb-4">
-                        {{ item.description }}
-                      </div>
-                      <div class="h6">
-                      Read more &rarr;
-                      </div>
-                      </a>
-                  </div>
-                </div>
-              </div>
-              {% endfor %}
-              {% for item in site.cities %}
-              <!-- <div class="col-md-3 mb-4">
-                    <div class="card rounded-0 border-0" style="width:280px">
-                      <div class="m-3">
-                        <div class="border-bottom border-1 border-black mb-2"></div>
-                        <div class="small">Since {{ item.since }} <div class="float-right small">{{ item.country }}</div></div>
-                        <a class="black medium-lines text-wrap" href="{{ item.title | append: '.html' | relative_url }}" height="50px">
-                        <div class="pt-3">{{ item.title }}</div>
-                        <div class="pt-3">
-                          <img src="{{ item.image_preview }}"  style="display:block;height:150px;max-width:255px" class="w-100" alt="" />
-                        </div>
-                        <div class="h6 pt-2 pb-4">
-                          {{ item.description }}
-                        </div>
-                        <div class="h6">
-                        Read more &rarr;
-                        </div>
-                        </a>
-                    </div>
-                  </div>
-                </div> -->
-                {% endfor %}
-				</div>
-      </div>
-</section>
-
-<div class="borderline dark"></div>
-<!-- <a class="black medium-lines text-wrap" href="{{ item.link | relative_url }}" height="50px"> -->
-
-
-<!-- COUNTER cities regions etc -->
-<section class="">
-  <div class="container">
-    <div class="pl-lg-2 pl-xl-2 pt-3 pb-3 row text-center row-cols-4 spaced-out">
-        <div class="col col-xs-1dot5 p-0">
-          <div class="cnums black">
-            {{ site.data.global-initiative.cities.size }}
-          </div>
-          <div class="text-uppercase csuf ">
-            Cities
-          </div>
-        </div>
-        <div class="col col-xs-1dot5 p-0">
-          <div class="cnums black">
-            {{ site.data.counter.regions }}
-          </div>
-          <div class="text-uppercase csuf ">
-            Regions
-          </div>
-        </div>
-        <div class="col col-xs-1dot5 p-0">
-          <div class="cnums black">
-            {{ site.data.roadmap.events.size }}
-          </div>
-          <div class="text-uppercase csuf ">
-            summits
-          </div>
-        </div>
-        <div class="col col-xs-1dot5 p-0">
-          <div class="cnums black">
-            {{ site.data.counter.years }}
-          </div>
-          <div class="text-uppercase csuf ">
-            Years
-          </div>
-        </div>
-    </div>
-</section>
-
-<div class="borderline dark"></div>
-
-<!-- Ready to join? -->
-<section class="bg-grey">
-  <div class="container-fluid">
-    <div class="row row-cols-2 ml-lg-5 ml-xl-5 mr-lg-5 mr-xl-5">
-      <div class="col-md-6">
-            <div class="display-4 fat-letters">Is your city ready to join the Fab City Network?</div>
-            <button type="button" target="/join.html" class="d-block d-sm-none btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start Now</button>
-          </div>
-        <div class="col-md-6 pt-5">
-          <a href="/join.html" class="d-none white d-sm-block float-right btn pr-lg-4 pl-lg-4 small btn-action text-uppercase">Start Now</a>
-        </div>
-      </div>
-    </div>
-</section>
