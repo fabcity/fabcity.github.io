@@ -1,0 +1,52 @@
+
+groups:
+  - group-id: directors
+    groupName: Team
+    people:
+        - name: Tomás Vivanco
+          department: Advisory Board
+          picture: '/assets/images/people/julie_hjort.jpg'
+          position: Director of Fab Lab
+          second-position: Barcelona Strategy
+
+        - name: Tomas Diez
+          department: Advisory Board
+          picture: '/assets/images/people/tomas_diez.jpg'
+          position: Chairman of the IAAC
+          second-position: Board of Directors
+
+  - group-id: sub-directors
+    groupName: Team
+    people:
+      - name: Martin Tironi
+        picture: '/assets/images/people/julie_hjort.jpg'
+        position: Director of Fab Lab
+        second-position: Barcelona Strategy
+
+      - name: Santiago Fuentemilla
+        picture: '/assets/images/people/tomas_diez.jpg'
+        position: Chairman of the IAAC
+        second-position: Board of Directors
+
+      - name: Benito Juarez
+        picture: '/assets/images/people/tomas_diez.jpg'
+        position: Chairman of the IAAC
+        second-position: Board of Directors
+
+      - name: Elizabeth Henaff
+        picture: '/assets/images/people/tomas_diez.jpg'
+        position: Chairman of the IAAC
+        second-position: Board of Directors
+
+      - name: Guillem Camprodon
+        picture: '/assets/images/people/julie_hjort.jpg'
+        position: Director of Fab Lab
+        second-position: Barcelona Strategy
+
+      - name: Flavia, Liza and Paulo
+        picture: '/assets/images/people/tomas_diez.jpg'
+        position: We flow International
+
+      - name: Elizabeth Corbin
+        picture: '/assets/images/people/tomas_diez.jpg'
+        position: Materiom

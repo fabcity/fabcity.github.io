@@ -6,13 +6,16 @@
 
   var defaultOptions = {
     scope: 'world',
-    responsive: false,
+
+    //responsive: false,
+    responsive: true,
+
     aspectRatio: 0.5625,
     setProjection: setProjection,
     projection: 'equirectangular',
     dataType: 'json',
     data: {},
-    done: function() {},
+    done() {},
     fills: {
       defaultFill: '#ABDDA4'
     },

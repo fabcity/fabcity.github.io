@@ -1,0 +1,246 @@
+---
+title: City
+layout: city
+---
+
+<div class="city-page page-content">
+  <div class="bg-beige container-fluid landing-city">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="assets/images/pages/collective/landing_collective.jpg" alt="" class="img-fluid min-width-100">
+      </div>
+    </div>
+    <div class="row fabcity-mt-40">
+      <h2 class="col-md-6">
+        Barcelona
+      </h2>
+      <div class="col-md-6">
+        <p>
+          Statement of the City, Thanks to these individuals, who are the current and past powerhouses in bringing the Fab City vision to its current state.
+          You can read posts from the Collective on our blog.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-green fabcity-p-tb-50 container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>
+          Organisations we work with
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 fabcity-mt-35 flex space-between flex-wrap">
+        {% for image in site.static_files %}
+        {% if image.path contains 'assets/images/pages/city/organizations' %}
+        <div class="organizations-image">
+          <img src="{{ image.path }}" class="mix-blend-mode-multiply" alt="">
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="fabcity-pt-50 container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>
+          Online Links
+        </h3>
+      </div>
+    </div>
+    <div class="row text-center fabcity-mb-25">
+      <div class="col-md-6 fabcity-m-tb-25">
+        <a href="https://reflowproject.eu/" target="_blank" class="fab-city-link display-block">
+          REFLOW EU Project →
+        </a>
+      </div>
+      <div class="col-md-6 fabcity-m-tb-25">
+        <a href="https://www.cosmolocalism.eu/" target="_blank" class="fab-city-link display-block">
+          Cosmolocalism ERC Project →
+        </a>
+      </div>
+      <div class="col-md-6 fabcity-m-tb-25">
+        <a href="https://centrinno.eu/" target="_blank" class="fab-city-link display-block">
+          Centrinno EU Project →
+        </a>
+      </div>
+      <div class="col-md-6 fabcity-m-tb-25">
+        <a href="https://distributeddesign.eu/" class="fab-city-link display-block">
+          Distributed Design Platform →
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="fabcity-p-tb-50 container-fluid bg-red">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/images/pages/city/01.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+      </div>
+      <div class="col-md-6">
+        <img src="assets/images/pages/city/02.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog -->
+  <div class="container-fluid fabcity-p-tb-50">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-black">
+          Blog post from the Network
+        </h3>
+      </div>
+    </div>
+
+    <div id="blog-container" class="row fabcity-m-tb-35"></div>
+
+    <div class="row" >
+      <div class="col-md-12 text-center fabcity-mt-35">
+        <a href="https://blog.fab.city/" target="_blank" class="">
+          <button class="fabcity-btn">
+            More Stories
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Select HTML Tag for ouput
+  let blogContainer = document.getElementById('blog-container');
+
+  // Create variable for HttpRequest
+  let xhr1 = new XMLHttpRequest();
+
+  // Loads the requested data and puts it in the right HTML tags with css classes
+  xhr1.onreadystatechange = function() {
+    if (xhr1.readyState === 4 && xhr1.status === 200) {
+
+      let data = JSON.parse(xhr1.responseText);
+
+      if (data.status === 'ok') {
+        let i = 0, t = 10; // t = number of articles
+        for (; i < t; ++i ){ // For each individual article from the blog do :
+          let item = data.items[i];
+
+          // Creates list element
+          let article = document.createElement('div');
+          article.setAttribute('id' , i);
+          article.setAttribute('class' , 'article-item');
+          article.setAttribute('style' , 'width: 200px;');
+
+          // Separator
+          let itemSeparator = document.createElement('div');
+          itemSeparator.setAttribute('class' , 'line-separator');
+
+
+          // Surtitle
+          let itemSurtitleContainer = document.createElement('div');
+          itemSurtitleContainer.setAttribute('class' , 'flex article-surtitle');
+
+          let itemDate = document.createElement('p');
+          itemDate.setAttribute('class' , 'article-date');
+          let date = new Date(item.pubDate);
+          let day = ("0" + date.getDate()).slice(-2)
+          let month = ("0" + (date.getMonth() + 1)).slice(-2)
+          let year = date.getFullYear();
+          year = year.toString().substr(-2)
+
+          itemDate.innerText = `${day}-${month}-${year}`;
+
+          let itemPlace = document.createElement('p');
+          itemPlace.setAttribute('class' , 'article-place');
+          //itemPlace.innerText = "Barcelona";
+          itemPlace.innerText = "";
+
+          // Title
+          let itemTitle = document.createElement('a');
+          itemTitle.setAttribute('class' , 'fab-city-link display-block article-title');
+          itemTitle.setAttribute('href' , item.link);
+          itemTitle.innerText = `${item.title} →`;
+
+          // Thumbnail
+          let thumbnail = document.createElement('img');
+          thumbnail.setAttribute('src' , item.thumbnail);
+          thumbnail.setAttribute('class', 'img-fluid article-thumbnail');
+
+
+          blogContainer.appendChild(article); // PUSHING
+          article.appendChild(itemSeparator)
+          article.appendChild(itemSurtitleContainer); // PUSHING
+          itemSurtitleContainer.appendChild(itemDate); // PUSHING
+          itemSurtitleContainer.appendChild(itemPlace); // PUSHING
+          article.appendChild(itemTitle); // PUSHING
+          article.appendChild(thumbnail) // PUSHING
+        }
+
+        setTimeout(() => {
+          initSlider()
+        }, 500);
+      }
+    }
+  };
+
+  // Requests HTTP in XML format
+  xhr1.open(
+    'GET',
+    'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.fab.city%2Ffeed',
+    true
+  );
+  xhr1.send();
+
+
+
+  function initSlider() {
+    $('#blog-container').slick({
+      dots: false,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      prevArrow: false,
+      nextArrow: false,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+          }
+        },
+        {
+          breakpoint: 820,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  }
+
+</script>

@@ -1,0 +1,82 @@
+---
+title: Collective
+layout: dark
+---
+
+<div class="collective-page page-content">
+  <div class="bg-beige container-fluid landing-collective">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="assets/images/pages/collective/landing_collective.jpg" alt="" class="img-fluid min-width-100">
+      </div>
+    </div>
+    <div class="row fabcity-mt-40">
+      <h2 class="col-md-6">
+        The Collective
+      </h2>
+      <div class="col-md-6">
+        <p>
+          The collective represents individuals and organisations
+          who have been instrumental in establishing the goals and objectives of Fab City.
+          Thanks to these individuals, who are the current and past powerhouses in bringing the Fab City vision to its current state. You can read posts from the Collective on our blog.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="with-line-separator fabcity-p-tb-50 container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>
+          Collective Representatives
+        </h3>
+      </div>
+    </div>
+      {% for group in site.data.people.groups %}
+        {% if group.group-id == "advisory-board" %}
+          <div class="row fabcity-mt-15 fabcity-mb-50">
+            <div class="col-md-12 people-container">
+              {% for person in group.people %}
+              <div class="person-card flex-column flex align-items-center text-center">
+                <div class="picture-person fabcity-mb-30" style="background-image:url({{person.picture | relative_url }})"></div>
+                <p class="person-name display-block">
+                  {{person.name}}
+                </p>
+                <span class="display-block fabcity-font-size-14">{{person.position}}</span>
+                {% if person.second-position %}
+                <span class="display-block fabcity-font-size-14">{{person.second-position}}</span>
+                {% endif %}
+              </div>
+              {% endfor %}
+              <i aria-hidden="true"></i>
+              <i aria-hidden="true"></i>
+              <i aria-hidden="true"></i>
+              <i aria-hidden="true"></i>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+  </div>
+
+  <div class="fabcity-p-tb-50 container-fluid bg-red">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/images/pages/collective/blog-01.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+      </div>
+      <div class="col-md-6">
+        <img src="assets/images/pages/collective/blog-02.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-md-12 text-center">
+        <a href="https://blog.fab.city/" target="_blank" class="">
+          <button class="fabcity-btn">
+            Read the Blog
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</div>

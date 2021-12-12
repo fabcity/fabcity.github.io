@@ -1,0 +1,33 @@
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
+
+  &.large {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.ic-email {
+  background: url("../../assets/images/icons/mailto.png");
+}
+
+.ic-location {
+  background: url("../../assets/images/icons/location.png");
+}
+
+.ic-download {
+  background: url("../../assets/images/icons/location.png");
+}
+
+.ic-arrow {
+  background: url("../../assets/images/icons/arrow.png");
+}
+
+.ic-download {
+  background: url("../../assets/images/icons/download.png");
+}

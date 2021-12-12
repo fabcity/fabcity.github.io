@@ -3,6 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.png">
   <title>{{ page.title }} - {{ site.title }}</title>
   {% seo %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,9 +11,9 @@
   {% include fonts.html %}
 </head>
 <body>
- {% include navbar.html %}
-  {{ content }}
-{% include footer.html %}
+    {% include navbar.html %}
+    {{ content }}
+    {% include footer.html %}
 </body>
 {% include take-action.html %}
 </html>

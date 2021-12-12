@@ -34,3 +34,5 @@ social:
   url: https://twitter.com/fabcityglobal
 - title: facebook
   url: https://www.facebook.com/fabcityglobal/
+exclude:
+  - _compress_images_cache.yml

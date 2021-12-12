@@ -1,0 +1,46 @@
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-green: #268060;
+$color-dark-green: #368060;
+$color-beige: #ECE5DB;
+$color-red: #E73F3E;
+$color-orange: #F2BD4E;
+$color-blue: #4E81D5 ;
+
+
+// Color Text
+
+.text- {
+  &white {
+    color: $color-white;
+  }
+
+  &black {
+    color: $color-black;
+  }
+}
+
+// Color Background
+
+.bg- {
+  &beige {
+    background: $color-beige;
+  }
+
+  &orange {
+    background: $color-orange;
+  }
+
+  &blue {
+    background: $color-blue;
+  }
+
+  &green {
+    background: $color-dark-green;
+  }
+
+  &red {
+    background: $color-red;
+  }
+}
