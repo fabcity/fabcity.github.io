@@ -5,48 +5,51 @@ groups:
     people:
         - name: Tomás Vivanco
           department: Advisory Board
-          picture: '/assets/images/people/julie_hjort.jpg'
-          position: Director of Fab Lab
-          second-position: Barcelona Strategy
+          picture: '/assets/images/people/tomas_vivanco.jpg'
+          position: Co-directed Distributed Design
+          second-position: Foundation and Fab Lab Santiago
 
         - name: Tomas Diez
           department: Advisory Board
           picture: '/assets/images/people/tomas_diez.jpg'
-          position: Chairman of the IAAC
-          second-position: Board of Directors
+          position: Fab Lab Barcelona Director / Fab City Global
+          second-position: Instigator / MDEF Director / Board of Trustees
+          third-position: Member / MaCT Theory Guest Faculty
 
   - group-id: sub-directors
     groupName: Team
     people:
-      - name: Martin Tironi
-        picture: '/assets/images/people/julie_hjort.jpg'
+      - name: Guillem Camprodon
+        picture: '/assets/images/people/guillem_camprodon.jpg'
         position: Director of Fab Lab
         second-position: Barcelona Strategy
 
       - name: Santiago Fuentemilla
-        picture: '/assets/images/people/tomas_diez.jpg'
-        position: Chairman of the IAAC
-        second-position: Board of Directors
+        picture: '/assets/images/people/santiago_fuentemilla.jpg'
+        position: Future Learning Unit Coordinator
+        second-position: / Fab Academy Guru
 
       - name: Benito Juarez
-        picture: '/assets/images/people/tomas_diez.jpg'
-        position: Chairman of the IAAC
-        second-position: Board of Directors
+        picture: '/assets/images/people/benito_juarez.jpg'
+        position: Founder and director of fab.pe
 
-      - name: Elizabeth Henaff
-        picture: '/assets/images/people/tomas_diez.jpg'
-        position: Chairman of the IAAC
-        second-position: Board of Directors
+      - name: Liz Corbin
+        picture: '/assets/images/people/liz_corbin.jpg'
+        position: Research Director, Metabolic Institute
 
-      - name: Guillem Camprodon
-        picture: '/assets/images/people/julie_hjort.jpg'
-        position: Director of Fab Lab
-        second-position: Barcelona Strategy
+      - name: Liza Valença
+        picture: '/assets/images/people/liza_valenca.jpg'
+        position: Governance and Public Policies Master / ESG, Impact Evaluation and Advocacy
 
-      - name: Flavia, Liza and Paulo
-        picture: '/assets/images/people/tomas_diez.jpg'
+
+      - name: Giovanna Danies
+        picture: '/assets/images/people/giovanna_danies.jpg'
         position: We flow International
 
-      - name: Elizabeth Corbin
-        picture: '/assets/images/people/tomas_diez.jpg'
-        position: Materiom
+      - name: Marion Real
+        picture: '/assets/images/people/marion_real.jpg'
+        position: Systemic design researcher, Fab Lab Barcelona
+
+      - name: Ruby Reed
+        picture: '/assets/images/people/ruby_reed.jpg'
+        position: "Social entrepreneur: Transformative Education and Human Ecology"

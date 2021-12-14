@@ -1,0 +1,31 @@
+
+groups:
+  - group-id: advisory-board
+    groupName: Advisory Board
+    people:
+      - name: Nat Hunter
+        department: Advisory Board
+        picture: '/assets/images/people/nat-hunter.jpg'
+        position: Director of Fab Lab
+        second-position: Barcelona Strategy
+
+      - name: Vincent Guimas
+        department: Advisory Board
+        picture: '/assets/images/people/vincent-guimas.jpg'
+        position: Chairman of the IAAC
+        second-position: Board of Directors
+
+      - name: Minh Man Nguyễn
+        department: Advisory Board
+        picture: '/assets/images/people/minh-man-nguyen.jpg'
+        position: Co-founder of P2P Lab
+
+      - name: James Tooze
+        department: Advisory Board
+        picture: '/assets/images/people/james-tooze.jpg'
+        position: President and CEO of Fab Foundation
+
+      - name: Gareth Owen Lloyd
+        department: Advisory Board
+        picture: '/assets/images/people/gareth-owen-lloyd.jpg'
+        position: Legal governance
