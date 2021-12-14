@@ -1,127 +1,85 @@
 
 groups:
-  - group-id: advisory-board
-    groupName: Advisory Board
-    people:
-        - name: Nat Hunter
-          department: Advisory Board
-          picture: '/assets/images/people/nat-hunter.jpg'
-          position: Director of Fab Lab
-          second-position: Barcelona Strategy
-
-        - name: Vincent Guimas
-          department: Advisory Board
-          picture: '/assets/images/people/vincent-guimas.jpg'
-          position: Chairman of the IAAC
-          second-position: Board of Directors
-
-        - name: Minh Man Nguyễn
-          department: Advisory Board
-          picture: '/assets/images/people/minh-man-nguyen.jpg'
-          position: Co-founder of P2P Lab
-
-        - name: James Tooze
-          department: Advisory Board
-          picture: '/assets/images/people/james-tooze.jpg'
-          position: President and CEO of Fab Foundation
-
-        - name: Gareth Owen Lloyd
-          department: Advisory Board
-          picture: '/assets/images/people/gareth-owen-lloyd.jpg'
-          position: Legal governance
-
-  - group-id: supervisory-board
-    groupName: Supervisory Board
-    people:
-        - name: Julie Hjort
-          department: Advisory Board
-          picture: '/assets/images/people/julie_hjort.jpg'
-          position: Chair of the Board Danish Design Centre
-
-        - name: Liz Corbin
-          department: Advisory Board
-          picture: '/assets/images/people/liz_corbin.jpg'
-          position: CCo-Chair of the Board Metabolic
-
-        - name: Sherry Lassiter
-          department: Advisory Board
-          picture: '/assets/images/people/sherry_lassiter.jpg'
-          position:  Fab Foundation
-
-        - name: Vicente Guallart
-          department: Advisory Board
-          picture: '/assets/images/people/vicente_guallart.jpg'
-          position: IAAC
-
-        - name: Francesco Cingolani
-          department: Advisory Board
-          picture: '/assets/images/people/francesco_cingolani.jpg'
-          position: Fab City Grand Paris
-
-        - name: Vasilis Niaros
-          department: Advisory Board
-          picture: '/assets/images/people/vasilis_niaros.jpg'
-          position: P2P Lab
-
-        - name: Erkki Karo
-          department: Advisory Board
-          picture: '/assets/images/people/advisory-board/nat-hunter.jpg'
-          position: TalTech
-
   - group-id: management-board
     groupName: Management Board
     people:
         - name: Lucas Lemos
-          department: Advisory Board
+          department: Management Board
           picture: '/assets/images/people/lucas_lemo.png'
           position: General Manager and Administrator
 
         - name: Kate Armstrong
-          department: Advisory Board
+          department: Management Board
           picture: '/assets/images/people/kate_armstrong.jpg'
           position: Outreach and Communication
 
         - name: Tomas Diez
-          department: Advisory Board
+          department: Management Board
           picture: '/assets/images/people/tomas_diez.jpg'
-          position: Director
+          position: Executive Director
 
   - group-id: team
     groupName: Team
     people:
+        - name: Ida Jusic
+          department: Team
+          picture: '/assets/images/people/ida_jusic.jpg'
+          position: Network Coordinator
+
+        - name: Norella Coronell
+          department: Team
+          picture: '/assets/images/people/norella_coronell.jpg'
+          position: Community Coordinator
+
+        - name: Tomas Vivanco
+          department: Team
+          picture: '/assets/images/people/tomas_vivanco.jpg'
+          position: Distributed Learning Coordinator
+
+        - name: Carolina Ferro
+          department: Team
+          picture: '/assets/images/people/carolina_ferro.jpg'
+          position: Knowledge Coordinator
+
+        - name: Pablo Zuloaga
+          department: Team
+          picture: '/assets/images/people/pablo_zuloaga.jpg'
+          position: Marketing Coordinator
+          
+  - group-id: supervisory-board
+    groupName: Supervisory Board
+    people:
         - name: Julie Hjort
-          department: Advisory Board
+          department: Supervisory Board
           picture: '/assets/images/people/julie_hjort.jpg'
-          position: Chair of the Board Danish Design Centre
-          second-position: Danish Design Center
+          position: Danish Design Centre (Chair of the Board)
 
         - name: Liz Corbin
-          department: Advisory Board
+          department: Supervisory Board
           picture: '/assets/images/people/liz_corbin.jpg'
-          position: Co-Chair of the Board Metabolic
+          position: Metabolic (Co-Chair of the Board)
 
         - name: Sherry Lassiter
-          department: Advisory Board
+          department: Supervisory Board
           picture: '/assets/images/people/sherry_lassiter.jpg'
           position:  Fab Foundation
 
         - name: Vicente Guallart
-          department: Advisory Board
+          department: Supervisory Board
           picture: '/assets/images/people/vicente_guallart.jpg'
           position: IAAC
 
         - name: Francesco Cingolani
-          department: Advisory Board
+          department: Supervisory Board
           picture: '/assets/images/people/francesco_cingolani.jpg'
           position: Fab City Grand Paris
-          second-position: Barcelona Strategy
 
         - name: Vasilis Niaros
-          department: Advisory Board
+          department: Supervisory Board
           picture: '/assets/images/people/vasilis_niaros.jpg'
           position: P2P Lab
 
         - name: Erkki Karo
-          department: Advisory Board
-          picture: '/assets/images/people/erkki_karo.png'
+          department: Supervisory Board
+          picture: '/assets/images/people/advisory-board/nat-hunter.jpg'
           position: TalTech
