@@ -9,26 +9,30 @@
     link: /network.html
     position: left
 
-  - name: The Collective
+  - name: Collective
     link: /collective.html
     position: left
 
-  - name: The Foundation
+  - name: Foundation
     link: /the-foundation.html
     position: left
 
-  - name: Events
+  - name: Programs
+    link: /mddi.html
+    position: left
+
+  - name: Summit
     link: /events.html
     position: left
+
+  - name: Resources
+    link: /resources.html
+    position: right
 
   - name: Blog
     link: https://blog.fab.city/
     position: right
     target: _blank
-
-  - name: Resources
-    link: /resources.html
-    position: right
 
   - name: Contact
     link: /contact.html

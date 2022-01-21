@@ -16,33 +16,57 @@
     </a>
 
     {% for item in site.data.navbar %}
-    {% if item.position == "left" %}
-    {% if page.title == item.name %}
-    <a class="header-page-link" href="{{ item.link | relative_url }}">
-      {{ item.name }}
-    </a>
-    {% else %}
-    <a class="header-page-link" href="{{ item.link | relative_url }}">
-      {{ item.name }}
-    </a>
-    {% endif %}
-    {% endif %}
+      {% if item.position == "left" %}
+        {% if page.title == item.name %}
+          {% if item.target %}
+            <a class="header-page-link text-underline" target="_blank" href="{{ item.link | relative_url }}">
+              {{ item.name }}
+            </a>
+          {% else %}
+            <a class="header-page-link text-underline" href="{{ item.link | relative_url }}">
+              {{ item.name }}
+            </a>
+          {% endif %}
+        {% else %}
+          {% if item.target %}
+            <a class="header-page-link" target="_blank" href="{{ item.link | relative_url }}">
+              {{ item.name }}
+            </a>
+          {% else %}
+            <a class="header-page-link" href="{{ item.link | relative_url }}">
+              {{ item.name }}
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endif %}
     {% endfor %}
   </div>
 
   <div class="header-link-container header-right-container">
     {% for item in site.data.navbar %}
-    {% if item.position == "right" %}
-    {% if page.title == item.name %}
-    <a class="header-page-link" href="{{ item.link | relative_url }}">
-      {{ item.name }}
-    </a>
-    {% else %}
-    <a class="header-page-link" href="{{ item.link | relative_url }}">
-      {{ item.name }}
-    </a>
-    {% endif %}
-    {% endif %}
+      {% if item.position == "right" %}
+        {% if page.title == item.name %}
+          {% if item.target %}
+            <a class="header-page-link text-underline" target="_blank" href="{{ item.link | relative_url }}">
+              {{ item.name }}
+            </a>
+          {% else %}
+            <a class="header-page-link text-underline" href="{{ item.link | relative_url }}">
+              {{ item.name }}
+            </a>
+          {% endif %}
+        {% else %}
+          {% if item.target %}
+            <a class="header-page-link" target="_blank" href="{{ item.link | relative_url }}">
+              {{ item.name }}
+            </a>
+          {% else %}
+            <a class="header-page-link" href="{{ item.link | relative_url }}">
+              {{ item.name }}
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endif %}
     {% endfor %}
 
     <a class="header-social-link" href="https://web.facebook.com/fabcityglobal/" target="_blank">
@@ -135,6 +159,26 @@
       }
     });
   }
+
+  function stickyHeader() {
+    let stickyHeader = document.getElementById("fabcity-header");
+    let mobileMenuContainer = document.getElementById("mobile-menu-container");
+
+    let showStickyHeader = function() {
+      let y = window.scrollY;
+      if (y >= 100) {
+        stickyHeader.classList.add("show-header");
+        mobileMenuContainer.classList.add("show-header");
+      } else if (y < 100) {
+        stickyHeader.classList.remove("show-header");
+        mobileMenuContainer.classList.remove("show-header");
+      }
+    };
+
+    window.addEventListener("scroll", showStickyHeader);
+  }
+
+  stickyHeader();
 </script>
 
 

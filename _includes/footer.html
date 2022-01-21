@@ -4,7 +4,7 @@
       <span class="logo-footer">
         <img class="svg-white" src="{{ '/assets/images/fabcity-logo-color.png' | relative_url }}" style="width: 60px; margin-right: 20px;"/>
       </span>
-      <span class="text-justify text-white no-margin" style="width: auto">
+      <span class="text-justify text-white no-margin" style="width: auto; line-height: 125.62%;">
         Collective of civic leaders, makers, urbanists and innovators working on shifting the industrial urban paradigm to one that better supports life on Earth.
       </span>
     </div>
@@ -13,7 +13,11 @@
   <div class="flex nav-footer space-between align-items-center no-footer-mobile">
     {% for item in site.data.footer.pages %}
     <div>
-      <a class="text-white" href="{{ item.link }}">{{ item.name }}</a>
+      {% if item.target %}
+        <a class="text-white" target="_blank" href="{{ item.link }}">{{ item.name }}</a>
+      {% else %}
+        <a class="text-white" href="{{ item.link }}">{{ item.name }}</a>
+      {% endif %}
     </div>
     {% endfor %}
 
@@ -33,7 +37,11 @@
       <div class="width-50 flex flex-column">
         {% for item in site.data.footer.pages %}
           {% if item.position == "left" %}
-            <a class="text-white display-block fabcity-mt-20" href="{{ item.link }}">{{ item.name }}</a>
+            {% if item.target %}
+              <a class="text-white display-block fabcity-mt-20" target="_blank" href="{{ item.link }}">{{ item.name }}</a>
+            {% else %}
+              <a class="text-white display-block fabcity-mt-20" href="{{ item.link }}">{{ item.name }}</a>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </div>
@@ -42,7 +50,11 @@
         <div class="flex flex-column height-100">
           {% for item in site.data.footer.pages %}
             {% if item.position == "right" %}
-            <a class="fabcity-ml-20 text-white display-block fabcity-mt-20" href="{{ item.link }}">{{ item.name }}</a>
+              {% if item.target %}
+                <a class="text-white display-block fabcity-mt-20" target="_blank" href="{{ item.link }}">{{ item.name }}</a>
+              {% else %}
+                <a class="text-white display-block fabcity-mt-20" href="{{ item.link }}">{{ item.name }}</a>
+              {% endif %}
             {% endif %}
           {% endfor %}
 

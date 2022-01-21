@@ -13,6 +13,7 @@
 
 body {
   line-height: 1 !important;
+  //color: #000000 !important;
 }
 
 @import 'bootstrap/bootstrap';
@@ -395,18 +396,6 @@ span.float-right {
     // width: 1000px;
     // margin: 0 0 0 -70px;
     // padding: 0 0 0 70px;
-}
-
-.bg-yellow{
-  background-color: rgb(232, 173, 42);
-}
-
-.bg-grey {
-  background-color: #e9ecef;
-}
-
-.bg-red {
-  background-color: #b0251c;
 }
 
 .card-body {
