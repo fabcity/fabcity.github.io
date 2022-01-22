@@ -204,6 +204,11 @@ select {
   animation-play-state: running;
   opacity: 1;
   transition-duration: 1000s;
+
+  span a {
+    color: $color-black;
+    text-decoration: underline;
+  }
 }
 
 .menu__item-link:hover ~ .marquee .marquee__inner {

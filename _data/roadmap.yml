@@ -62,3 +62,7 @@ events:
   description: The global pandemic forces the annual Fab City Summit online. Participants join from over eight time zones in a distributed two-day program.
   location: Online
   number: "8"
+- year: "2021"
+  title: Fabricating the Commons
+  location: Montreal
+  number: "9"

@@ -8,7 +8,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Noto Serif', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
@@ -72,4 +72,8 @@ p {
   &20 {
     font-size: 20px;
   }
+}
+
+.text-underline {
+  text-decoration: underline;
 }
