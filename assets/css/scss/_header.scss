@@ -89,9 +89,21 @@
     }
   }
 
+  .show-header-scroll {
+    display: none;
+  }
+
   &.show-header {
     background-color: $color-white !important;
     transition: all .2s linear;
+
+    .header-social-link.show-header-scroll {
+      display: flex;
+    }
+
+    .header-social-link.hide-header-scroll {
+      display: none;
+    }
   }
 }
 

@@ -1,7 +1,28 @@
 ---
-title: Programs
+title: MDDI
 layout: home
 ---
+
+<div class="popup-zone popup-people quit-zone" id="popup-people">
+  <div class="pop-up">
+    <div class="pop-up-container flex flex-row">
+      <div class="flex-column ">
+        <img src="assets/images/icons/cross.png" alt="" class="close-modal-cross mobile-version" onclick="hidePopup(this)">
+        <div class="img-person" id="img-person"></div>
+        <div class="fabcity-mt-10 fabcity-mb-20" id="person-social-links"></div>
+      </div>
+      <div class="flex-column popup-person-details">
+        <div class="position-relative">
+          <p class="person-name" id="person-name">Thomas V</p>
+          <img src="assets/images/icons/cross.png" alt="" class="close-modal-cross desktop-version" onclick="hidePopup(this)">
+        </div>
+        <p class="person-description fabcity-mb-15 fabcity-pr-50" id="person-description-short">Fab Lab Austral UC Director and Professor School of Design Pontifical Catholic University of Chile</p>
+        <div class="line-separator"></div>
+        <p class="fabcity-mt-15 person-description" id="person-description-full">Tomas is an Architect, Master in Advanced Architecture from the Institute of Advanced Architecture of Catalonia (IAAC), Master in Advanced Design from ELISAVA, and PhD (c) in Architecture & Urban Planning, Digital Futures group from Tongji University in Shanghai. He co-founded and co-directed Distributed Design Foundation and Fab Lab Santiago, one of the pioneers Fab Labs in Chile. He also co-hosted the 13th International Fab Lab Conference and Symposium - Fabricating Society in Santiago de Chile, and several Conferences, events and programs in Chile and Latin America.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="mddi-page page-content">
   <div class="bg-black container-fluid landing-mddi">
@@ -275,7 +296,10 @@ layout: home
               <div class="col-md-12 people-container">
                 {% for person in group.people %}
                 <div class="person-card flex-column flex align-items-center text-center">
-                  <div class="picture-person fabcity-mb-30" style="background-image:url({{person.picture | relative_url }})"></div>
+                  <div id="{{person.id}}"
+                       class="picture-person fabcity-mb-30 cursor-pointer"
+                       onclick="displayPopup(this)"
+                       style="background-image:url({{person.picture | relative_url }})"></div>
                   <p class="person-name display-block">
                     {{person.name}}
                   </p>
@@ -312,7 +336,10 @@ layout: home
               <div class="col-md-12 people-container">
                 {% for person in group.people %}
                 <div class="person-card flex-column flex align-items-center text-center">
-                  <div class="picture-person fabcity-mb-30" style="background-image:url({{person.picture | relative_url }})"></div>
+                  <div class="picture-person fabcity-mb-30 cursor-pointer"
+                       id="{{person.id}}"
+                       onclick="displayPopup(this)"
+                       style="background-image:url({{person.picture | relative_url }})"></div>
                   <p class="person-name display-block">
                     {{person.name}}
                   </p>
@@ -495,12 +522,13 @@ layout: home
     <div class="container-fluid fabcity-pt-50 fabcity-pb-30 with-line-underneath bg-orange" id="faqs">
       <div class="row fabcity-pt-30 text-black">
         <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9">
-          <h2 class="display-block fabcity-mb-40">
+          <h2 class="display-block fabcity-mb-30">
             FAQs
           </h2>
+          <div class="line-separator fabcity-mb-50"></div>
         </div>
       </div>
-      <div class="row">
+      <div class="row questions">
         <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9 fabcity-mb-50">
           <h5 class=" fabcity-mb-20 cursor-pointer text-underline" data-toggle="collapse" href="#faq-01" role="button" aria-expanded="false" aria-controls="faq-01">
             What is Distributed Education?
@@ -508,13 +536,16 @@ layout: home
           <span id="faq-01" class="faq-01 collapse">
             Distributed Education is a blended methodology that mixes online and in-person education formats that use physically distributed and digitally interconnected global infrastructure nodes, like Fab Labs, that become classrooms. Students practice synchronously and asynchronously, creating a global and distributed campus.Whilst the approach is similar to distance education, it takes the concept a step further, distributing the development and circulation of content between the nodes as well.
           </span>
+          <div class="line-separator"></div>
         </div>
         <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9 fabcity-mb-50">
           <h5 class=" fabcity-mb-20 cursor-pointer text-underline" data-toggle="collapse" href="#faq-02" role="button" aria-expanded="false" aria-controls="faq-02">
             What if there is no node in my city?
           </h5>
           <span id="faq-02" class="faq-02 collapse">
-            You can fill in the form and let us know where you are based. The MDDI coordination team will get in touch with you to see if it's possible to connect you to a node or Fab Lab close to you. If for any reason we can’t connect your city to the program, we’ll endeavour to help you to join your closest existing node.          </span>
+            You can fill in the form and let us know where you are based. The MDDI coordination team will get in touch with you to see if it's possible to connect you to a node or Fab Lab close to you. If for any reason we can’t connect your city to the program, we’ll endeavour to help you to join your closest existing node.
+          </span>
+          <div class="line-separator"></div>
         </div>
         <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9 fabcity-mb-50">
           <h5 class=" fabcity-mb-20 cursor-pointer text-underline" data-toggle="collapse" href="#faq-03" role="button" aria-expanded="false" aria-controls="faq-03">
@@ -523,6 +554,7 @@ layout: home
           <span id="faq-03" class="faq-03 collapse">
             Each MDDI node offers students access to the local community and networks to deploy their projects in a bottom-up approach. This is important in reaching the goals of the Fab City global initiative. It all starts with building ecosystems within cities and developing sustainable initiatives that will shape the new global production paradigm.
           </span>
+          <div class="line-separator"></div>
         </div>
         <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9 fabcity-mb-50">
           <h5 class=" fabcity-mb-20 cursor-pointer text-underline" data-toggle="collapse" href="#faq-04" role="button" aria-expanded="false" aria-controls="faq-04">
@@ -531,6 +563,7 @@ layout: home
           <span id="faq-04" class="faq-04 collapse">
             We don’t require any specific technical skills. We look for diverse student profiles, with different backgrounds and expertise. MDDI is designed for everyone interested in design,  sustainability, technologies, ecologies and cities.
           </span>
+          <div class="line-separator"></div>
         </div>
         <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9 fabcity-mb-50">
           <h5 class=" fabcity-mb-20 cursor-pointer text-underline" data-toggle="collapse" href="#faq-05" role="button" aria-expanded="false" aria-controls="faq-05">
@@ -539,6 +572,7 @@ layout: home
           <span id="faq-05" class="faq-05 collapse">
             Because our student profile includes different backgrounds and disciplines, every application will be evaluated under its individual merits. To apply you only need a professional diploma, a letter of interest and a portfolio or a project-based CV.
           </span>
+          <div class="line-separator"></div>
         </div>
         <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9 fabcity-mb-50">
           <h5 class=" fabcity-mb-20 cursor-pointer text-underline" data-toggle="collapse" href="#faq-06" role="button" aria-expanded="false" aria-controls="faq-06">
@@ -554,3 +588,184 @@ layout: home
 
   </div>
 </div>
+
+<script type="text/javascript">
+
+  let MEMBERS = {
+    tomas_vivanco: {
+      name: "Tomás Vivanco",
+      description: "Fab Lab Austral UC Director and Professor School of Design Pontifical Catholic University of Chile",
+      fullDescription: "Tomas is an Architect, Master in Advanced Architecture from the Institute of Advanced Architecture of Catalonia (IAAC), Master in Advanced Design from ELISAVA, and PhD (c) in Architecture & Urban Planning, Digital Futures group from Tongji University in Shanghai. He co-founded and co-directed Distributed Design Foundation and Fab Lab Santiago, one of the pioneers Fab Labs in Chile. He also co-hosted the 13th International Fab Lab Conference and Symposium - Fabricating Society in Santiago de Chile, and several Conferences, events and programs in Chile and Latin America.",
+      picture: '/assets/images/people/tomas_vivanco.jpg',
+      social: {
+        instagram: "https://www.instagram.com/tomas.vivanco/",
+        twitter: "https://twitter.com/tvivancol",
+        linkedin: "www.linkedin.com/in/tomasviv"
+      }
+    },
+    tomas_diez: {
+      name: "Tomas Diez",
+      description: "Fab Lab Barcelona Director, Fab City executive Director and  MDEF co-director",
+      fullDescription: "He is co-director and member of the board  at the Institute for Advanced Architecture of Catalonia, where he also is a senior researcher and tutor. He collaborates in projects, events, and programs with the Fab Foundation, such as Fab City, Fab Conferences and Fab Academy worldwide. He is now the Strategic Director of Fab Lab Barcelona at IAAC, co-director of the Master in Design for Emergent Futures, as well as the founding partner and Executive Director of the Fab City Foundation, and the Meaningful Design Group Bali.",
+      picture: '/assets/images/people/tomas_diez.jpg',
+      social: {
+        twitter: "https://twitter.com/tomasdiez",
+        linkedin: "https://www.linkedin.com/in/tomas-diez-2b37aa11"
+      }
+    },
+    guillem_camprodon: {
+      name: "Guillem Camprodon",
+      description: "Research Lead - Fab Lab Barcelona",
+      fullDescription: "Guillem Camprodon is the research lead at Fab Lab Barcelona. Funded by IAAC in 2007, it is the first Fab Lab in the European Union and a benchmark in the network of over 1800 Fab Labs. Over the last ten years, he helped scale Fab Lab Barcelona from a digital prototyping facility into an established research and innovation laboratory." +
+        "He has long experience working in projects bridging the gap between emergent technologies and grassroots communities, such as Smart Citizen, a platform to empower communities to better understand their environment.",
+      picture: '/assets/images/people/guillem_camprodon.jpg',
+      social: {
+        twitter: "https://twitter.com/pral2a",
+        linkedin: "https://www.linkedin.com/in/guillemcamprodon/"
+      }
+    },
+    santiago_fuentemilla: {
+      name: "Guillem Camprodon",
+      description: "Future Learning Unit Coordinator  and Fab Academy Guru",
+      fullDescription: "As a professional, Santi has worked in various architectural firms carrying out projects at an international level in the last 10 years. He is currently design director at OPR (Other People’s Rooms) in Barcelona, a multidisciplinary studio based on architectural concept design for enhanced user experiences. Since 2013, he has been part of the FabLab BCN team, participating in a diversity of educational and professional ventures." +
+        "Santi is the co-creator and current coordinator of the POPUPLAB project (Mobile FabLab) aimed at disseminating the concept of digital manufacturing in our society: “Digital Fabrication Everywhere”.",
+      picture: '/assets/images/people/santiago_fuentemilla.jpg',
+      social: {
+        twitter: "https://twitter.com/santifu",
+        linkedin: "https://www.linkedin.com/in/santi-fuentemilla-garriga-7877892b/"
+      }
+    },
+    benito_juarez: {
+      name: "Benito Juarez",
+      description: "Architect, fabber and explorer",
+      fullDescription: "Founder and director of fab.pe | fab.lat | floatingfab.org | simbiocreacion.com | imi.technology\n" +
+        "\n" +
+        "Pioneer in digital manufacturing technologies in Peru and Latin America. Co-founder of the Latin American Fab Labs Network. Creator of the Floating Fab Amazon project, selected by the United Nations for the global launch of the 17ODS (NYC, 2015). Creator of the SimbioCreación methodology, which promotes the culture of Exponential Collaborative Creativity.\n",
+      picture: '/assets/images/people/benito_juarez.jpg',
+      social: {
+        twitter: "https://twitter.com/beno_fab",
+        linkedin: "https://www.linkedin.com/in/benojuarez",
+        mail: "mailto:beno@fablablima.org"
+      }
+    },
+    liz_corbin: {
+      name: "Liz Corbin",
+      description: "Academic/ Professional expertise: Research Director, Metabolic Institute",
+      fullDescription: "Liz is Metabolic’s Research Director, leading the activities of our think tank, the Metabolic Institute. Prior to joining Metabolic, Liz spent her time between University College London and the Royal College of Art where she both researched and taught. Liz’s research expertise lies within materials design and engineering, systems analysis, redistributed manufacturing, and digital innovation. Liz holds a BA in Design and an MA in Material Culture and Design.",
+      picture: '/assets/images/people/liz_corbin.jpg',
+      social: {
+        linkedin: "https://www.linkedin.com/in/liz-corbin-39067163/"
+      }
+    },
+    liza_valenca: {
+      name: "Liza Valença Ramos",
+      description: "Governance and Public Policies Master and ESG, Impact Evaluation and Advocacy",
+      fullDescription: "ESG Portfolio Manager and Consultant, Liza has over 10 years of experience in Social and Environmental Impact, working for companies, governmental institutions and nonprofits in Brazil, Germany, Poland and UK. Currently acts as Sustainability and ISO 14001 Consultant for CBRE and as Portfolio Manager and partner in We.Flow. Her academic track includes a Master in Governance and Public Policy from the Willy Brandt School (Erfurt / Germany), a Bachelor’s degree in Law and another in International Relations, both obtained in Brazil.",
+      picture: '/assets/images/people/liza_valenca.jpg',
+      social: {
+        linkedin: "https://www.linkedin.com/in/lizavalencaramos/"
+      }
+    },
+    giovanna_danies: {
+      name: "Giovanna Danies",
+      description: "Academic/ Professional expertise: Research Director, Metabolic Institute",
+      fullDescription: "Giovanna Danies is a Biologist and Microbiologist with a master's degree in Biological Sciences from the Universidad de los Andes in Bogotá, Colombia. In 2015 she received her PhD in Plant Pathology from Cornell University in Ithaca, NY, United States. She was selected by the graduate school directors to receive the Barbara McClintock award. Currently Giovanna works as an associate professor in the Department of Design at Universidad de los Andes, where she is creating an emphasis on Biodesign. Together with her students Giovanna, has won four first places in the Biodesign Challenge and in 2019 she received the L’Oreal Unesco award for Women in Sciences with the Biodesign for High Schools project.",
+      picture: '/assets/images/people/giovanna_danies.jpg',
+      social: {
+        instagram: "https://www.instagram.com/giovanna_danies/",
+        twitter: "https://twitter.com/gd243",
+        linkedin: "https://www.linkedin.com/in/giovanna-danies-turano/",
+      }
+    },
+    marion_real: {
+      name: "Marion Real",
+      description: "Systemic design reseacher, Fab Lab Barcelona and Associate researcher centre for circular design, London.",
+      fullDescription: "Marion Real is a systemic design researcher exploring co-creation processes in the territorial transformations toward circular economies and cosmopolitan localism. She is currently working at Fab Lab Barcelona at IAAC where she is working at the crossroads of the productive cities and material & textiles research areas, in various projects touching circular design such as Siscode, Remix el Barrio, Shemakes and Centrinno. She is also associate researcher at Estia for the Chaire Bali and Centre for Circular Design in London.",
+      picture: '/assets/images/people/marion_real.jpg',
+      social: {
+        linkedin: "https://www.linkedin.com/in/marion-real-01428935",
+      }
+    },
+    ruby_reed: {
+      name: "Ruby Reed",
+      description: "Social entrepreneur: Transformative Education and Human Ecology",
+      fullDescription: "Ruby’s work revolves around a vision of a world where people, economies and nature thrive together. She co-founded transformative education platform Advaya in 2015, environmental justice campaign EcoResolution in 2019, and the ecosystem restoration and community revitalisation charity Initiative Earth in 2021. She is a Trustee of Resurgence Trust, Talks Curator for Medicine Festival, and part of BeTheEarth Foundation’s flow-funding network. In 2018-2020 she supported Extinction Rebellion Regenerative Culture and founded UK Rebel Retreats.",
+      picture: '/assets/images/people/ruby_reed.jpg',
+      social: {
+        website: "https://www.initiativeearth.org/",
+        instagram: "https://www.instagram.com/advaya.co",
+        web: "https://www.ecoresolution.earth",
+        inst: "https://www.instagram.com/ecoresolution",
+        http: "https://www.initiativeearth.org"
+      }
+    },
+    paulo_robertoa_raujo_cruz_filho: {
+      name: "Paulo Roberto Araujo Cruz Filho",
+      description: "Strategic Management, Weflow Global.",
+      fullDescription: "Facilitator, consultant and researcher in the field of social enterprises and third sector at CRCÉS (Canada Research Chair on Social Economy) and EMES (International Research Network on Social Enterprises), as well as coordinator in Brazil of the global project ICSEM (International Comparative Social Enterprise Models) chapter Social Impact Enterprises.  Formation in Flow Mastery Mentorship and Coaching, Integral Approach, Theory U, Self-healing, Innovation and Social Impact, among others. \n" +
+        "Voluntary board member and mentor of non-profit organizations and social businesses.",
+      picture: '/assets/images/people/paulo_robertoa_raujo_cruz_filho.png',
+      social: {
+        mail: "mailto:paulo@weflow.global",
+        website: "http://weflow.global/paulocruzfilho",
+      }
+    }
+  }
+
+  function displayPopup(card) {
+    let id = card.getAttribute("id");
+    let person = MEMBERS[id];
+
+    if (person) {
+      let namePlaceholder = document.getElementById("person-name");
+      namePlaceholder.innerHTML = person.name;
+
+
+      let description = document.getElementById("person-description-short");
+      description.innerHTML = person.description;
+
+      let descriptionFull = document.getElementById("person-description-full");
+      descriptionFull.innerHTML = person.fullDescription;
+
+      let imgPerson = document.getElementById("img-person");
+      imgPerson.style.background = `url(${person.picture})`;
+
+      let personSocialLinks = document.getElementById('person-social-links');
+      let personSocialsTypes = Object.keys(person.social);
+
+      if (personSocialsTypes.length) {
+        let i = 0, l = personSocialsTypes.length;
+        let personSocials = person.social;
+
+        for (; i < l; i++) {
+          let a = document.createElement('a');
+          a.href = personSocials[personSocialsTypes[i]];
+          a.target= "_blank";
+          a.classList.add('person-social-icons');
+
+          let img = document.createElement('img');
+          img.src = `/assets/images/icons/${personSocialsTypes[i]}.svg`
+          img.classList.add("nav-icon")
+          a.appendChild(img);
+
+          personSocialLinks.appendChild(a);
+        }
+      }
+
+      // Display popup
+      setTimeout(() => {
+        let popup = document.getElementById("popup-people");
+        popup.classList.toggle("show-popup");
+      }, 200)
+    }
+  }
+
+  function hidePopup() {
+    let popup = document.getElementById("popup-people");
+    popup.classList.remove("show-popup");
+    let personSocialLinks = document.getElementById('person-social-links');
+    personSocialLinks.innerHTML = "";
+  }
+
+
+</script>

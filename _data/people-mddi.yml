@@ -4,12 +4,14 @@ groups:
     groupName: Team
     people:
         - name: Tomás Vivanco
+          id: tomas_vivanco
           department: Advisory Board
           picture: '/assets/images/people/tomas_vivanco.jpg'
           position: Co-directed Distributed Design
           second-position: Foundation and Fab Lab Santiago
 
         - name: Tomas Diez
+          id: tomas_diez
           department: Advisory Board
           picture: '/assets/images/people/tomas_diez.jpg'
           position: Fab Lab Barcelona Director / Fab City Global
@@ -20,36 +22,49 @@ groups:
     groupName: Team
     people:
       - name: Guillem Camprodon
+        id: guillem_camprodon
         picture: '/assets/images/people/guillem_camprodon.jpg'
         position: Director of Fab Lab
         second-position: Barcelona Strategy
 
       - name: Santiago Fuentemilla
+        id: santiago_fuentemilla
         picture: '/assets/images/people/santiago_fuentemilla.jpg'
         position: Future Learning Unit Coordinator
         second-position: / Fab Academy Guru
 
       - name: Benito Juarez
+        id: benito_juarez
         picture: '/assets/images/people/benito_juarez.jpg'
         position: Founder and director of fab.pe
 
       - name: Liz Corbin
+        id: liz_corbin
         picture: '/assets/images/people/liz_corbin.jpg'
         position: Research Director, Metabolic Institute
 
       - name: Liza Valença
+        id: liza_valenca
         picture: '/assets/images/people/liza_valenca.jpg'
         position: Governance and Public Policies Master / ESG, Impact Evaluation and Advocacy
 
 
       - name: Giovanna Danies
+        id: giovanna_danies
         picture: '/assets/images/people/giovanna_danies.jpg'
         position: We flow International
 
       - name: Marion Real
+        id: marion_real
         picture: '/assets/images/people/marion_real.jpg'
         position: Systemic design researcher, Fab Lab Barcelona
 
       - name: Ruby Reed
+        id: ruby_reed
         picture: '/assets/images/people/ruby_reed.jpg'
         position: "Social entrepreneur: Transformative Education and Human Ecology"
+
+      - name: Paulo Roberto Araujo Cruz Filho
+        id: paulo_robertoa_raujo_cruz_filho
+        picture: '/assets/images/people/paulo_robertoa_raujo_cruz_filho.png'
+        position: Strategic Management, Weflow Global

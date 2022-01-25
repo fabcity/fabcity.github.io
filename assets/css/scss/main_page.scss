@@ -32,7 +32,7 @@ body, html {
 
 .about-page {
   .landing-hero {
-    background: url("../../assets/images/backgrounds/about.jpg") center;
+    background: url("../../assets/images/backgrounds/about.png") center;
   }
 
   .landing-headline {
@@ -177,5 +177,11 @@ body, html {
 #faqs {
   span {
     line-height: 125.62%;
+  }
+
+  .questions {
+    .line-separator {
+      margin-top: 55px;
+    }
   }
 }
