@@ -224,6 +224,7 @@ layout: home
       </div>
     </div>
 
+
     <div class="container-fluid fabcity-pt-30">
       <div class="row fabcity-pb-30">
         <div class="text-black">
@@ -240,32 +241,33 @@ layout: home
             <p class="fabcity-font-size-18 fabcity-m-tb-20">
               MDDI combines the internationality of the Fab City Foundation with the pedagogical expertise of Fab Lab Barcelona and the Institute of Advanced Architecture of Catalonia. With the support of the Fab Lab Network, the program delivers the next frontier in global education: project driven, context aware, and hands on. The distributed learning model allows scholars to learn and practice in their own context, whilst giving access to lectures, experiences and knowledge online, delivered by a global network of experts, institutions and peers. By establishing projects within their own communities, MDDI students are part of personal and real-world transformation, while being part of a global network of changemakers who are navigating complex systems in order to bring about a paradigm shift in our current socio-economic model. The program follows ethical principles that guide both the academic curriculum and extended impact of the program:
             </p>
-            <div class="line-separator"></div>
-            <p class="fabcity-font-size-18 fabcity-m-tb-20">
-              Trasformative focused on supporting and developing local leadership to enable transformation at the local scale, while contributing to and learning from -and with- global networks.
-            </p>
-            <div class="line-separator"></div>
-            <p class="fabcity-font-size-18 fabcity-m-tb-20">
-              Planet Centered using design, technology and innovation to address environmental and social challenges focusing on the stability of the planet.
-            </p>
-            <div class="line-separator"></div>
-            <p class="fabcity-font-size-18 fabcity-m-tb-20">
-              Distributed sharing global knowledge and applying it locally. Supported by the global Fab Lab Network and associated cities of Fab City Global Initiative. Realised through coordinated nodes hosting groups of students and tutors.
-            </p>
-            <div class="line-separator"></div>
-            <p class="fabcity-font-size-18 fabcity-m-tb-20">
-              Inclusive and just recognising our global differences and learning from them. Promoting respect to diverse cultures, backgrounds, and worldviews.            </p>
-            <div class="line-separator"></div>
-            <p class="fabcity-font-size-18 fabcity-m-tb-20">
-              Collaborative connecting diverse actors from local ecosystems by transferring capacities and knowledge, and sharing common objectives globally.
-            </p>
-            <div class="line-separator"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid fabcity-pt-30">
+      <div class="row fabcity-pb-30 fabcity-p-lr-0 offset-md-4 col-md-8 offset-lg-3 col-lg-9">
+        {% for project in site.data.mddi-distributed-design.projects %}
+
+        <div class="project-card col-md-4 fabcity-mt-40">
+          <img src="{{ project.image | relative_url }}" alt="" class="fabcity-mb-40 img-fluid width-100">
+          <p class="fabcity-font-size-18 text-underline no-margin">{{project.name}}</p>
+          <p class="fabcity-font-size-18">{{project.text}}</p>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="container-fluid fabcity-pt-30">
+      <div class="row fabcity-pb-30">
+        <div class="text-black">
+          <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9">
             <p class="fabcity-font-size-18 fabcity-m-tb-20">
               MDDI is designed using the The Fab City Full Stack multiscale approach outlined by the Fab City global initiative. This layered approach forms the basis of the program, framing the methodological approach to conceptualising transformational change. The full stack is a working taxonomy developed by the Fab City Foundation to organise and implement projects at different scales. Composed of complementary and non-linear layers for cities, regions and towns, to make the Fab City implementation in a multiscalar and ecosystemic approach operational. Each interconnected layer is a space of practice and deployment, scaling Fab Lab experiences to a bioregional level in a systemic approach.
             </p>
-
             <img src="assets/images/pages/mddi/board.jpg" alt="" class="img-fluid min-width-100 fabcity-mb-50">
-
           </div>
         </div>
       </div>
