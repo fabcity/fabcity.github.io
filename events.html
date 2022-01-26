@@ -23,7 +23,7 @@ layout: dark
       </div>
     </div>
 
-    <div class="width-100 position-relative fabcity-mt-50">
+    <div class="width-100 position-relative fabcity-m-tb-50">
       <div id="roadmap-component" class="roadmap-component timeline-component overflow-x-hidden">
         <ul class="timeline-container width-100 align-items-start">
           {% assign events = site.data.roadmap.events | sort: "year" %}
@@ -33,12 +33,18 @@ layout: dark
             <div class="timeline-item-header fabcity-mb-20">
               {{item.year}} – {{item.location}}
             </div>
-            <h4 class="timelime-item-title fabcity-mb-20">
-              {{item.title}}
+
+            {% for text in item.text %}
+            <h4 class="timelime-item-title fabcity-mb-10 display-block">
+              {{text}}
             </h4>
-            <div class="timelime-item-description">
-              {{item.description}}
-            </div>
+            {% endfor %}
+
+            {% if item.link %}
+              <a href="{{item.link}}" class="fab-city-link" target="_blank">
+                <h4 class="fabcity-font-size-20 text-underline">{{item.link-text}}</h4>
+              </a>
+            {% endif %}
           </li>
           {% endfor %}
         </ul>
@@ -64,15 +70,13 @@ layout: dark
     <div class="row">
       <div class="col-md-6">
         <img src="assets/images/pages/events/bali.png" alt="" class="img-fluid fabcity-mb-35 min-width-100">
-        <a href="/mddi.html" class="fab-city-link display-block">
-          Bali 2022 →
-        </a>
+        <p>Bali 2022</p>
       </div>
       <div class="col-md-6">
         <img src="assets/images/pages/events/mexico.png" alt="" class="img-fluid fabcity-mb-35 min-width-100">
-        <a href="/mddi.html" class="fab-city-link display-block">
-          Mexico 2023 →
-        </a>
+        <p>
+          Mexico 2023
+        </p>
       </div>
     </div>
   </div>
