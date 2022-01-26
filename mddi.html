@@ -208,8 +208,8 @@ layout: home
             </p>
           </div>
 
-          <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9">
-            <img src="assets/images/pages/mddi/board.jpg" alt="" class="img-fluid min-width-100 fabcity-mb-50">
+          <div class="video-container fabcity-m-tb-40 offset-md-4 col-md-8 offset-lg-3 col-lg-9">
+            <iframe class="video" src="https://www.youtube.com/embed/FPI4h934G0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
           <div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9">
@@ -250,7 +250,7 @@ layout: home
       <div class="row fabcity-pb-30 fabcity-p-lr-0 offset-md-4 col-md-8 offset-lg-3 col-lg-9">
         {% for project in site.data.mddi-distributed-design.projects %}
 
-        <div class="project-card col-md-4 fabcity-mt-40">
+        <div class="project-card col-sm-6 col-md-4   fabcity-mt-40">
           <img src="{{ project.image | relative_url }}" alt="" class="fabcity-mb-40 img-fluid width-100">
           <p class="fabcity-font-size-18 text-underline no-margin">{{project.name}}</p>
           <p class="fabcity-font-size-18">{{project.text}}</p>
@@ -513,7 +513,7 @@ layout: home
       </div>
       <div class="row">
         <div class="container offset-md-4 col-md-8 offset-lg-3 col-lg-9">
-          <img src="/assets/images/pages/mddi/methodology.png" class="img-fluid width-100" alt="">
+          <img src="/assets/images/pages/mddi/methodology.svg" class="img-fluid width-100" alt="">
         </div>
       </div>
     </div>
