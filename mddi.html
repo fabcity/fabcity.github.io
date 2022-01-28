@@ -55,13 +55,7 @@ layout: home
                 </li>
                 <li>
                   <a href="#faculty" class="fab-city-link">
-                    <span>Faculty</span>
-                    <span>→</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#competences" class="fab-city-link">
-                    <span>Competences</span>
+                    <span>International Faculty and Guests</span>
                     <span>→</span>
                   </a>
                 </li>
@@ -72,8 +66,20 @@ layout: home
                   </a>
                 </li>
                 <li>
+                  <a href="#competences" class="fab-city-link">
+                    <span>Competences</span>
+                    <span>→</span>
+                  </a>
+                </li>
+                <li>
                   <a href="#partners" class="fab-city-link">
-                    <span>Partners</span>
+                    <span>Leading Partners</span>
+                    <span>→</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#methodology" class="fab-city-link">
+                    <span>Methodology</span>
                     <span>→</span>
                   </a>
                 </li>
@@ -696,9 +702,12 @@ layout: home
       social: {
         website: "https://www.initiativeearth.org/",
         instagram: "https://www.instagram.com/advaya.co",
+        /*
         web: "https://www.ecoresolution.earth",
         inst: "https://www.instagram.com/ecoresolution",
         http: "https://www.initiativeearth.org"
+
+         */
       }
     },
     paulo_robertoa_raujo_cruz_filho: {
@@ -753,11 +762,8 @@ layout: home
         }
       }
 
-      // Display popup
-      setTimeout(() => {
-        let popup = document.getElementById("popup-people");
-        popup.classList.toggle("show-popup");
-      }, 200)
+      let popup = document.getElementById("popup-people");
+      popup.classList.toggle("show-popup");
     }
   }
 

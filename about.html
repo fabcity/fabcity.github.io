@@ -236,18 +236,22 @@ layout: home
     <div class="width-100 position-relative fabcity-mt-50">
       <div id="roadmap-component" class="roadmap-component timeline-component overflow-x-hidden">
         <ul class="timeline-container width-100 align-items-start">
-          {% assign events = site.data.roadmap.events | sort: "year" %}
+          {% assign events = site.data.roadmap.about | sort: "year" %}
           {% for item in events %}
           <li class="timelime-item flex-column">
             <div class="timeline-dot"></div>
             <div class="timeline-item-header fabcity-mb-20">
-              {{item.year}} – {{item.location}}
+              {{item.year}}
             </div>
 
-            {% for text in item.text %}
-            <h4 class="timelime-item-title fabcity-mb-10 display-block">
-              {{text}}
+            <h4 class="timelime-item-title fabcity-mb-20">
+              {{item.title}}
             </h4>
+
+            {% for text in item.text %}
+            <div class="timelime-item-description fabcity-mb-10 display-block">
+              {{text}}
+            </div>
             {% endfor %}
 
             {% if item.link %}

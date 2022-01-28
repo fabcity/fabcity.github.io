@@ -1,15 +1,16 @@
 messages:
-  - text: Apply now 👉 Master in Design X Distributed Innovation
-    text-link:
-    link:
+  - text: Apply now 👉
+    text-link: Master in Design X Distributed Innovation
+    link: "/mddi.html"
     second-text:
 
   - text: 🎧 Listen to the new episode of
     text-link: Future Talks
-    link: https://fablabbcn.org/podcast
+    link: https://blog.fab.city/
+    new-tab: true
     second-text:
 
   - text: 🌿
     text-link: Fab Academy 2022
-    link: https://fablabbcn.org/education/academies/fab-academy-barcelona
+    link: "/events.html"
     second-text:

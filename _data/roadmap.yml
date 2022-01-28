@@ -64,3 +64,31 @@ events:
   number: "5"
 
 
+about:
+
+- year: "2011-2014"
+  title: Awareness
+  text:
+    - Launched in Fab7 Lima.
+    - Fab City starts to be in the agenda of the Fab Lab Network.
+  number: "0"
+
+- year: "2014-2018"
+  title: Launch
+  text:
+    - At the Fab10 Barcelona closing event, the Mayor announces the 2054 challenge.
+  number: "1"
+
+- year: "2018-2020"
+  title: Consolidation
+  text:
+    - The Fab City Foundation is founded in e-Estonia.
+    - The Full Stack is launched.
+  number: "2"
+
+- year: "2021-2025"
+  title: Growth
+  text:
+    - The strategic action plan based on the Full Stack is developed with the global initiative.
+    - Products and programs of the Foundation are expanded to meet the global challenge.
+  number: "3"
