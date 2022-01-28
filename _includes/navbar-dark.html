@@ -133,7 +133,6 @@
             <img class="nav-icon" src="{{ '/assets/images/icons/github-black.svg' | relative_url }}" alt="Fab City Github" />
           </a>
         </div>
-
       </div>
     </div>
   </div>
@@ -166,10 +165,10 @@
 
     let showStickyHeader = function() {
       let y = window.scrollY;
-      if (y >= 100) {
+      if (y >= 60) {
         stickyHeader.classList.add("show-header");
         mobileMenuContainer.classList.add("show-header");
-      } else if (y < 100) {
+      } else if (y < 60) {
         stickyHeader.classList.remove("show-header");
         mobileMenuContainer.classList.remove("show-header");
       }

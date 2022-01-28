@@ -18,34 +18,35 @@ layout: home
     </div>
   </div>
 
+
   <div class="marquee-container ">
     <div class="menu__item">
       <div class="marquee">
         <div class="marquee__inner" aria-hidden="true">
-          <span>Apply now 👉 Master in Design X Distributed  Innovation</span>
-          <span>🎧 Listen to the new episode of <a href="https://fablabbcn.org/podcast" target="_blank">Future Talks</a></span>
-          <span>🌿 <a href="https://fablabbcn.org/education/academies/fab-academy-barcelona" target="_blank">Fab Academy 2022</a></span>
-          <span>Apply now 👉 Master in Design X Distributed  Innovation</span>
-          <span>🎧 Listen to the new episode of <a href="https://fablabbcn.org/podcast" target="_blank">Future Talks</a></span>
-          <span>🌿 <a href="https://fablabbcn.org/education/academies/fab-academy-barcelona" target="_blank">Fab Academy 2022</a></span>
-          <span>Apply now 👉 Master in Design X Distributed  Innovation</span>
-          <span>🎧 Listen to the new episode of <a href="https://fablabbcn.org/podcast" target="_blank">Future Talks</a></span>
-          <span>🌿 <a href="https://fablabbcn.org/education/academies/fab-academy-barcelona" target="_blank">Fab Academy 2022</a></span>
-          <span>Apply now 👉 Master in Design X Distributed  Innovation</span>
-          <span>🎧 Listen to the new episode of <a href="https://fablabbcn.org/podcast" target="_blank">Future Talks</a></span>
-          <span>🌿 <a href="https://fablabbcn.org/education/academies/fab-academy-barcelona" target="_blank">Fab Academy 2022</a></span>
-          <span>Apply now 👉 Master in Design X Distributed  Innovation</span>
-          <span>🎧 Listen to the new episode of <a href="https://fablabbcn.org/podcast" target="_blank">Future Talks</a></span>
-          <span>🌿 <a href="https://fablabbcn.org/education/academies/fab-academy-barcelona" target="_blank">Fab Academy 2022</a></span>
-          <span>Apply now 👉 Master in Design X Distributed  Innovation</span>
-          <span>🎧 Listen to the new episode of <a href="https://fablabbcn.org/podcast" target="_blank">Future Talks</a></span>
-          <span>🌿 <a href="https://fablabbcn.org/education/academies/fab-academy-barcelona" target="_blank">Fab Academy 2022</a></span>
-          <span>Apply now 👉 Master in Design X Distributed  Innovation</span>
-          <span>🎧 Listen to the new episode of <a href="https://fablabbcn.org/podcast" target="_blank">Future Talks</a></span>
-          <span>🌿 <a href="https://fablabbcn.org/education/academies/fab-academy-barcelona" target="_blank">Fab Academy 2022</a></span>
-          <span>Apply now 👉 Master in Design X Distributed  Innovation</span>
-          <span>🎧 Listen to the new episode of <a href="https://fablabbcn.org/podcast" target="_blank">Future Talks</a></span>
-          <span>🌿 <a href="https://fablabbcn.org/education/academies/fab-academy-barcelona" target="_blank">Fab Academy 2022</a></span>
+          {% for message in site.data.home-banner.messages %}
+            <span>{{message.text}}{% if message.link %} <a href="{{message.link}}" {% if message.new-tab %}target="_blank"{% endif%}>{{message.text-link}}</a>{% endif %}{% if message.second-text %} {{message.second-text}}{% endif %}</span>
+          {% endfor %}
+          {% for message in site.data.home-banner.messages %}
+          <span>{{message.text}}{% if message.link %} <a href="{{message.link}}" {% if message.new-tab %}target="_blank"{% endif%}>{{message.text-link}}</a>{% endif %}{% if message.second-text %} {{message.second-text}}{% endif %}</span>
+          {% endfor %}
+          {% for message in site.data.home-banner.messages %}
+          <span>{{message.text}}{% if message.link %} <a href="{{message.link}}" {% if message.new-tab %}target="_blank"{% endif%}>{{message.text-link}}</a>{% endif %}{% if message.second-text %} {{message.second-text}}{% endif %}</span>
+          {% endfor %}
+          {% for message in site.data.home-banner.messages %}
+          <span>{{message.text}}{% if message.link %} <a href="{{message.link}}" {% if message.new-tab %}target="_blank"{% endif%}>{{message.text-link}}</a>{% endif %}{% if message.second-text %} {{message.second-text}}{% endif %}</span>
+          {% endfor %}
+          {% for message in site.data.home-banner.messages %}
+          <span>{{message.text}}{% if message.link %} <a href="{{message.link}}" {% if message.new-tab %}target="_blank"{% endif%}>{{message.text-link}}</a>{% endif %}{% if message.second-text %} {{message.second-text}}{% endif %}</span>
+          {% endfor %}
+          {% for message in site.data.home-banner.messages %}
+          <span>{{message.text}}{% if message.link %} <a href="{{message.link}}" {% if message.new-tab %}target="_blank"{% endif%}>{{message.text-link}}</a>{% endif %}{% if message.second-text %} {{message.second-text}}{% endif %}</span>
+          {% endfor %}
+          {% for message in site.data.home-banner.messages %}
+          <span>{{message.text}}{% if message.link %} <a href="{{message.link}}" {% if message.new-tab %}target="_blank"{% endif%}>{{message.text-link}}</a>{% endif %}{% if message.second-text %} {{message.second-text}}{% endif %}</span>
+          {% endfor %}
+          {% for message in site.data.home-banner.messages %}
+          <span>{{message.text}}{% if message.link %} <a href="{{message.link}}" {% if message.new-tab %}target="_blank"{% endif%}>{{message.text-link}}</a>{% endif %}{% if message.second-text %} {{message.second-text}}{% endif %}</span>
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -90,7 +91,6 @@ layout: home
           <p>
             Central to the global initiative is a network of cities,
             regions and settlements who have taken up the challenge to move towards local production by 2054.
-            New members are welcomed to the Network at the annual Fab City Summit.
           </p>
         </div>
       </div>

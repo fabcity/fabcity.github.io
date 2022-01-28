@@ -1,5 +1,45 @@
 
 groups:
+  - group-id: supervisory-board
+    groupName: Supervisory Board
+    people:
+      - name: Julie Hjort
+        department: Supervisory Board
+        picture: '/assets/images/people/julie_hjort.jpg'
+        position: Chair of the Board
+        second-position: Danish Design Centre
+
+      - name: Liz Corbin
+        department: Supervisory Board
+        picture: '/assets/images/people/liz_corbin.jpg'
+        position: Co-chair of the Board
+        second-position: Metabolic, Materiom
+
+      - name: Sherry Lassiter
+        department: Supervisory Board
+        picture: '/assets/images/people/sherry_lassiter.jpg'
+        position: Fab Foundation
+
+      - name: Vicente Guallart
+        department: Supervisory Board
+        picture: '/assets/images/people/vicente_guallart.jpg'
+        position: IAAC
+
+      - name: Francesco Cingolani
+        department: Supervisory Board
+        picture: '/assets/images/people/francesco_cingolani.jpg'
+        position: Fab City Grand Paris
+
+      - name: Vasilis Niaros
+        department: Supervisory Board
+        picture: '/assets/images/people/vasilis_niaros.jpg'
+        position: P2P Lab
+
+      - name: Erkki Karo
+        department: Supervisory Board
+        picture: '/assets/images/people/erkki_karo.png'
+        position: TalTech
+
   - group-id: management-board
     groupName: Management Board
     people:
@@ -10,7 +50,7 @@ groups:
 
         - name: Kate Armstrong
           department: Management Board
-          picture: '/assets/images/people/kate_armstrong.jpg'
+          picture: '/assets/images/people/kate_armstrong.png'
           position: Outreach and Communication
 
         - name: Tomas Diez
@@ -21,6 +61,16 @@ groups:
   - group-id: team
     groupName: Team
     people:
+        - name: Tomas Vivanco
+          department: Team
+          picture: '/assets/images/people/tomas_vivanco.jpg'
+          position: Distributed Learning Lead
+
+        - name: Pablo Zuloaga
+          department: Team
+          picture: '/assets/images/people/pablo_zuloaga.jpg'
+          position: Distributed Learning Assistant
+
         - name: Ida Jusic
           department: Team
           picture: '/assets/images/people/ida_jusic.jpg'
@@ -28,58 +78,17 @@ groups:
 
         - name: Norella Coronell
           department: Team
-          picture: '/assets/images/people/Norella_coronell.png'
+          picture: '/assets/images/people/norella_coronell.jpg'
           position: Community Coordinator
-
-        - name: Tomas Vivanco
-          department: Team
-          picture: '/assets/images/people/tomas_vivanco.jpg'
-          position: Distributed Learning Coordinator
 
         - name: Carolina Ferro
           department: Team
           picture: '/assets/images/people/carolina_ferro.jpg'
           position: Knowledge Coordinator
 
-        - name: Pablo Zuloaga
+        - name: Manuela Reyes
           department: Team
-          picture: '/assets/images/people/pablo_zuloaga.jpg'
-          position: Marketing Coordinator
-          
-  - group-id: supervisory-board
-    groupName: Supervisory Board
-    people:
-        - name: Julie Hjort
-          department: Supervisory Board
-          picture: '/assets/images/people/julie_hjort.jpg'
-          position: Danish Design Centre (Chair of the Board)
+          picture: '/assets/images/people/manuela_reyes.jpg'
+          position: Visual Designer
 
-        - name: Liz Corbin
-          department: Supervisory Board
-          picture: '/assets/images/people/liz_corbin.jpg'
-          position: Metabolic (Co-Chair of the Board)
 
-        - name: Sherry Lassiter
-          department: Supervisory Board
-          picture: '/assets/images/people/sherry_lassiter.jpg'
-          position:  Fab Foundation
-
-        - name: Vicente Guallart
-          department: Supervisory Board
-          picture: '/assets/images/people/vicente_guallart.jpg'
-          position: IAAC
-
-        - name: Francesco Cingolani
-          department: Supervisory Board
-          picture: '/assets/images/people/francesco_cingolani.jpg'
-          position: Fab City Grand Paris
-
-        - name: Vasilis Niaros
-          department: Supervisory Board
-          picture: '/assets/images/people/vasilis_niaros.jpg'
-          position: P2P Lab
-
-        - name: Erkki Karo
-          department: Supervisory Board
-          picture: '/assets/images/people/advisory-board/nat-hunter.jpg'
-          position: TalTech

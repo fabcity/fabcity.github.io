@@ -20,6 +20,16 @@ button.fabcity-btn {
   *:focus {
     outline: none;
   }
+
+  &.secondary {
+    background: $color-white;
+    color: $color-black;
+
+    &:hover {
+      background: $color-black;
+      color: $color-white;
+    }
+  }
 }
 
 // Links

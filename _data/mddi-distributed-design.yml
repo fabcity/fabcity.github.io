@@ -1,0 +1,20 @@
+projects:
+  - name: "Transformative"
+    text: "Focused on supporting and developing local leadership to enable transformation at the local scale, while contributing to and learning from -and with- global networks."
+    image: '/assets/images/pages/mddi/transformative.png'
+
+  - name: "Planet Centered"
+    text: "Using design, technology and innovation to address environmental and social challenges focusing on the stability of the planet."
+    image: '/assets/images/pages/mddi/planet_centered.png'
+
+  - name: "Distributed"
+    text: "Sharing global knowledge and applying it locally. Supported by the global Fab Lab Network and associated cities of Fab City Global Initiative. Realised through coordinated nodes hosting groups of students and tutors."
+    image: '/assets/images/pages/mddi/distributed.png'
+
+  - name: "Inclusive and just"
+    text: "Recognising our global differences and learning from them. Promoting respect to diverse cultures, backgrounds, and worldviews."
+    image: '/assets/images/pages/mddi/inclusive.png'
+
+  - name: "Collaborative"
+    text: "Connecting diverse actors from local ecosystems by transferring capacities and knowledge, and sharing common objectives globally."
+    image: '/assets/images/pages/mddi/collaborative.png'

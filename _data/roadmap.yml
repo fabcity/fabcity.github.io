@@ -4,65 +4,91 @@ subtitle: Our Roadmap is unique. Launched in 2011 by the City of Barcelona, it i
   now in constant development thanks to our distributed network. We employ a collective approach
   of ‘learning-by-doing’ to constantly prototype, experiment, succeed and fail on the path towards our goals.
 events:
+
 - year: "2011"
-  title: Fab7 International Conference
-  description: The Fab City project is launched by the Institut d’Arquitectura Avançada
-    de Catalunya, the MIT Center for Bits and Atoms, the Fab Foundation and the Barcelona
-    City Council.
-  location: Paris
+  text:
+    - Fab7 International Conference
+    - Fab City launch
+  location: Lima
   number: "0"
+
 - year: "2014"
-  title: Fab10 International Conference
-  description: Barcelona launches officially the FAB City project / Mayor Trias commit
-    to the 40 year challenge / The first public network of Fab Labs in a city is launched
-  location: Paris
+  text:
+    - "Fab 10 - 'From Fab Labs to Fab Cities'"
+    - First City Pledge
+  location: Barcelona
   number: "1"
-- year: "2015"
-  title: Fab11 International Fab Lab Conference
-  description: The Fab City becomes a global initiative / The cities of Boston, Ekurhuleni,
-    Cambridge, Shenzhen, Somerville join / The state of Kerala (India) joins / The
-    country of Georgia joins
-  location: Paris
+
+- year: "2016"
+  text:
+    - Fab City Summit
+    - First Fab City Campus
+  location: Amsterdam
   number: "2"
-- year: "2015"
-  title: Amsterdam Fab City Campus
-  description: 'Europe by People: The Netherlands host the presidency of the European
-    Union / The first Fab City experts summit in Amsterdam / The City of Amsterdam
-    commits to the Fab City global initiative-'
+
+- year: "2018"
+  text:
+    - Fab City Summit
+  link: https://summit.fabcity.paris/
+  link-text: summit.fabcity.paris
   location: Paris
   number: "3"
-- year: "2016"
-  title: 'Shenzhen: The silicon valley of Hardware'
-  description: '12th International Fab Lab Conference / Cities joining the Fab City
-    global initiative: Detroit, Paris, Santiago de Chile, Bhutan, Occitanie, Sacramento,
-    Toulouse.'
-  location: Paris
-  number: "4"
-- year: "2017"
-  title: 'Chile. Fab13: Fabricating Society'
-  description: '13th International Fab Lab Conference: Fab13: Fabricating Society
-    / Fab City Campus Santiago de Chile / Fab City Summit Copenhagen'
-  location: Paris
-  number: "5"
-- year: "2018"
-  title: 'France. Fab14: Fabricating Resilience'
-  description: '14th International Fab Lab Conference: Fab14: Fabricating Resilience
-    / Fab City Campus Parc de La Villete / Fab City Summit Paris'
-  location: Paris
-  number: "6"
+
 - year: "2019"
-  title: FAB CITY SUMMIT AT THE WE MAKE THE CITY FESTIVAL
-  description: The Fab City Summit was held in Amsterdam at  Urban Conference We Make
-    The City Festival in June 2019.
+  text:
+    - We Make the City Festival
+    - Fab City Symposium
   location: Amsterdam
-  number: "7"
+  number: "4"
+
 - year: "2020"
-  title: The Distributed Fab City Summit 2020, from Emergency to Resilience - Broadcasting
-    from Barcelona!
-  description: The global pandemic forces the annual Fab City Summit online. Participants join from over eight time zones in a distributed two-day program.
-  location: Online
-  number: "8"
+  text:
+    - Fab City Summit online
+  location: Distributed
+  number: "5"
+
 - year: "2021"
-  title: Fabricating the Commons
+  text:
+    - Fab City Summit
+    - Fabricating the Commons
+  link: https://summit.fabcity-montreal.quebec/
+  link-text: summit.fabcity-montreal.quebec
   location: Montreal
-  number: "9"
+  number: "6"
+
+- year: "2022"
+  text:
+    - Fab City Summit
+    - First distributed Fab City Campus
+  location: Bali
+  number: "5"
+
+
+about:
+
+- year: "2011-2014"
+  title: Awareness
+  text:
+    - Launched in Fab7 Lima.
+    - Fab City starts to be in the agenda of the Fab Lab Network.
+  number: "0"
+
+- year: "2014-2018"
+  title: Launch
+  text:
+    - At the Fab10 Barcelona closing event, the Mayor announces the 2054 challenge.
+  number: "1"
+
+- year: "2018-2020"
+  title: Consolidation
+  text:
+    - The Fab City Foundation is founded in e-Estonia.
+    - The Full Stack is launched.
+  number: "2"
+
+- year: "2021-2025"
+  title: Growth
+  text:
+    - The strategic action plan based on the Full Stack is developed with the global initiative.
+    - Products and programs of the Foundation are expanded to meet the global challenge.
+  number: "3"

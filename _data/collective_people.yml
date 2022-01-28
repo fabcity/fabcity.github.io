@@ -6,26 +6,25 @@ groups:
       - name: Nat Hunter
         department: Advisory Board
         picture: '/assets/images/people/nat-hunter.jpg'
-        position: Director of Fab Lab
-        second-position: Barcelona Strategy
+        position: Other Today
 
       - name: Vincent Guimas
         department: Advisory Board
         picture: '/assets/images/people/vincent-guimas.jpg'
-        position: Chairman of the IAAC
-        second-position: Board of Directors
+        position: Co-founder at Fab City Grand Paris Association and Les Arts Codés, Nouvelle Fabrique and Ars Longa
 
       - name: Minh Man Nguyễn
         department: Advisory Board
         picture: '/assets/images/people/minh-man-nguyen.jpg'
-        position: Co-founder of P2P Lab
+        position: President of Fab City Grand Paris
+        second-position: Co-founder of WoMa
 
       - name: James Tooze
         department: Advisory Board
         picture: '/assets/images/people/james-tooze.jpg'
-        position: President and CEO of Fab Foundation
+        position: Senior Tutor and researcher at  Royal College of Arts, London
 
       - name: Gareth Owen Lloyd
         department: Advisory Board
         picture: '/assets/images/people/gareth-owen-lloyd.jpg'
-        position: Legal governance
+        position: Other Today

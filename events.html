@@ -33,12 +33,18 @@ layout: dark
             <div class="timeline-item-header fabcity-mb-20">
               {{item.year}} – {{item.location}}
             </div>
-            <h4 class="timelime-item-title fabcity-mb-20">
-              {{item.title}}
+
+            {% for text in item.text %}
+            <h4 class="timelime-item-title fabcity-mb-10 display-block">
+              {{text}}
             </h4>
-            <div class="timelime-item-description">
-              {{item.description}}
-            </div>
+            {% endfor %}
+
+            {% if item.link %}
+              <a href="{{item.link}}" class="fab-city-link" target="_blank">
+                <h4 class="fabcity-font-size-20 text-underline">{{item.link-text}}</h4>
+              </a>
+            {% endif %}
           </li>
           {% endfor %}
         </ul>
@@ -63,10 +69,14 @@ layout: dark
     </div>
     <div class="row">
       <div class="col-md-6">
-        <img src="assets/images/pages/events/join-the-network.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+        <img src="assets/images/pages/events/bali.png" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+        <p>Bali 2022</p>
       </div>
       <div class="col-md-6">
-        <img src="assets/images/pages/events/join-the-summit.jpg" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+        <img src="assets/images/pages/events/mexico.png" alt="" class="img-fluid fabcity-mb-35 min-width-100">
+        <p>
+          Mexico 2023
+        </p>
       </div>
     </div>
   </div>

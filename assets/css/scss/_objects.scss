@@ -180,7 +180,17 @@
   }
 }
 
-// Programs and Projects
+.mddi-page {
+  .picture-person {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+  // Programs and Projects
 
 .projects-container {
   .project-card {
@@ -288,7 +298,7 @@
     }
 
     .timelime-item-description {
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .timeline-dot {
@@ -445,6 +455,171 @@
   transition: .2s ease-in-out;
 }
 
+// POPUP Styling
+
+.popup-zone {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba($color-black, .3);
+  display: none;
+
+  .pop-up {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s ease-in-out;
+  }
+
+  &.show-popup {
+    display: flex;
+    z-index: 999999990;
+
+    .pop-up {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999999999;
+      visibility: visible;
+      opacity: 1;
+
+      background: $color-white;
+      box-shadow: 0 2px 6px 0 rgba(202, 202, 202, .25);
+    }
+  }
+
+  .close-modal-cross {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: -2px;
+    cursor: pointer;
+  }
+
+  #person-social-links img {
+    width: 20px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .popup-zone {
+    &.show-popup {
+      .pop-up {
+        max-width: 95%;
+
+        .pop-up-container {
+          flex-wrap: wrap;
+        }
+
+        .popup-person-details {
+          margin-left: 0;
+        }
+
+        .img-person {
+          margin-right: 50px;
+        }
+
+        .close-modal-cross.desktop-version {
+          display: none;
+        }
+
+        .close-modal-cross.mobile-version {
+          display: flex;
+          top: 30px;
+          right: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .popup-zone {
+    &.show-popup {
+      .pop-up {
+        width: 90%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1110px) {
+  .popup-zone {
+    &.show-popup {
+      .pop-up {
+        max-width: 80%;
+
+        .pop-up-container {
+          flex-wrap: nowrap;
+        }
+
+        .popup-person-details {
+          margin-left: 30px;
+        }
+
+        .close-modal-cross.desktop-version {
+          display: flex;
+        }
+
+        .close-modal-cross.mobile-version {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.popup-people {
+
+  .pop-up {
+    padding: 30px;
+
+    .img-person {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      background-position: center !important;
+      display: flex;
+
+     // background: url('../../assets/images/people/tomas_vivanco.jpg');
+    }
+
+    .person-social-icons {
+      width: 20px;
+      max-height: 20px;
+      height: auto;
+      margin-right: 10px;
+
+      &:hover {
+        text-decoration: none;
+        border: 0;
+      }
+
+      &:last-child {
+        margin-right: 0 !important;
+      }
+    }
+
+    .person-name {
+      font-size: 20px;
+      margin-bottom: 5px;
+      padding-right: 50px;
+    }
+
+    .person-description {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
 @media (max-width: 1150px) {
   .home-banner {
     .home-banner-container {
@@ -474,8 +649,9 @@
   height: fit-content;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0;
   padding-top: 20px;
+  top: 80px;
+  margin-bottom: 50px;
 
   & > div {
     padding: 20px 30px;
@@ -524,6 +700,25 @@
 @media (max-width: 767px) {
   .sticky-summary {
     display: none !important;
+  }
+}
+
+
+// MDDI Video
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 36.25%;
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0 15px;
   }
 }
 

@@ -1,0 +1,16 @@
+messages:
+  - text: Apply now 👉
+    text-link: Master in Design X Distributed Innovation
+    link: "/mddi.html"
+    second-text:
+
+  - text: 🎧 Listen to the new episode of
+    text-link: Future Talks
+    link: https://blog.fab.city/
+    new-tab: true
+    second-text:
+
+  - text: 🌿
+    text-link: Fab Academy 2022
+    link: "/events.html"
+    second-text:

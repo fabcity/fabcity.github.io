@@ -106,7 +106,7 @@ layout: home
 
       <div class="row fabcity-mb-30">
         <div class="col-md-12">
-          <img src="assets/images/pages/about/bioregion-01.jpg" alt="" class="img-fluid min-width-100">
+          <img src="assets/images/pages/about/bioregion-01.png" alt="" class="img-fluid min-width-100">
         </div>
       </div>
 
@@ -154,13 +154,17 @@ layout: home
           </p>
         </div>
         <div class="col-md-6">
-          <a href="/network.html" class="fab-city-link">
-            Meet the Network →
+          <a href="/network.html" class="">
+            <button class="fabcity-btn secondary">
+              Meet the Network →
+            </button>
           </a>
         </div>
         <div class="col-md-6">
-          <a href="https://form.typeform.com/to/Fo8Sbf" target="_blank" class="fab-city-link">
-            Join the Network →
+          <a href="https://form.typeform.com/to/Fo8Sbf" class="">
+            <button class="fabcity-btn secondary">
+              Join the Network →
+            </button>
           </a>
         </div>
       </div>
@@ -184,8 +188,10 @@ layout: home
           </p>
         </div>
         <div class="col-md-12">
-          <a href="/collective.html" class="fab-city-link">
-            Meet the Collective →
+          <a href="/collective.html" class="">
+            <button class="fabcity-btn secondary">
+              Meet the Collective →
+            </button>
           </a>
         </div>
       </div>
@@ -203,8 +209,10 @@ layout: home
           </p>
         </div>
         <div class="col-md-12">
-          <a href="/the-foundation.html" class="fab-city-link">
-            About the Foundation →
+          <a href="/the-foundation.html" class="">
+            <button class="fabcity-btn secondary">
+              About the Foundation →
+            </button>
           </a>
         </div>
       </div>
@@ -225,32 +233,42 @@ layout: home
       </div>
     </div>
 
-    <div class="width-100 position-relative">
+    <div class="width-100 position-relative fabcity-mt-50">
       <div id="roadmap-component" class="roadmap-component timeline-component overflow-x-hidden">
         <ul class="timeline-container width-100 align-items-start">
-          {% assign events = site.data.roadmap.events | sort: "year" %}
+          {% assign events = site.data.roadmap.about | sort: "year" %}
           {% for item in events %}
           <li class="timelime-item flex-column">
             <div class="timeline-dot"></div>
             <div class="timeline-item-header fabcity-mb-20">
-              {{item.year}} – {{item.location}}
+              {{item.year}}
             </div>
+
             <h4 class="timelime-item-title fabcity-mb-20">
               {{item.title}}
             </h4>
-            <div class="timelime-item-description">
-              {{item.description}}
+
+            {% for text in item.text %}
+            <div class="timelime-item-description fabcity-mb-10 display-block">
+              {{text}}
             </div>
+            {% endfor %}
+
+            {% if item.link %}
+            <a href="{{item.link}}" class="fab-city-link" target="_blank">
+              <h4 class="fabcity-font-size-20 text-underline">{{item.link-text}}</h4>
+            </a>
+            {% endif %}
           </li>
           {% endfor %}
         </ul>
       </div>
 
       <div class="timeline-control back" onclick="toRight()">
-        <div class="arrow arrow-left"></div>
+        <div class="arrow arrow-left black"></div>
       </div>
       <div class="timeline-control next" onclick="toLeft()">
-        <div class="arrow arrow-right"></div>
+        <div class="arrow arrow-right black"></div>
       </div>
     </div>
   </div>
