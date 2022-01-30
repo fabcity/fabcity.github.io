@@ -131,16 +131,21 @@
 // People
 
 .people-container {
-  display: flex;
+  //display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   text-align: center;
   flex-wrap: wrap;
 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 5fr));
+  //justify-content: space-between;
+
   .person-card {
     margin-top: 25px;
     width: 200px;
-    margin-right: 60px;
+    margin-bottom: 20px;
+    //margin-right: 60px;
 
     span {
       max-width: 200px;
@@ -177,6 +182,12 @@
 
   .person-card:last-of-type {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 954px) {
+  .people-container {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 5fr));
   }
 }
 
@@ -265,6 +276,18 @@
 
   .arrow-left {
     transform: rotate(-135deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-control {
+    &.back {
+      left: -20px;
+    }
+
+    &.next {
+      right: 0;
+    }
   }
 }
 
