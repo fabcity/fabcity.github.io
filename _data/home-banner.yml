@@ -4,13 +4,13 @@ messages:
     link: "/mddi.html"
     second-text:
 
-  - text: 🎧 Listen to the new episode of
-    text-link: Future Talks
+  - text:
+    text-link: Read the latest on the Blog
     link: https://blog.fab.city/
     new-tab: true
     second-text:
 
   - text: 🌿
-    text-link: Fab Academy 2022
+    text-link: Fab City Summit
     link: "/events.html"
     second-text:
