@@ -12,6 +12,8 @@ body, html {
 }
 
 
+
+
 // landing-her
 
 .landing-hero {
@@ -23,6 +25,21 @@ body, html {
   color: #ffffff;
   padding: 0 50px;
 }
+
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .landing-hero {
+    padding: 0 20px;
+  }
+}
+
+
+
 
 .landing-page {
   .landing-hero {
