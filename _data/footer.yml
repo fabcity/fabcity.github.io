@@ -46,6 +46,9 @@ social: # order is reversed
   - name: Github
     image_url: '/assets/images/github.svg'
     link: https://github.com/fabcity
+  - name: Instagram
+    image_url: '/assets/images/icons/instagram_white.svg'
+    link: https://www.instagram.com/fabcityglobal/
 
 powered:
   - image_url: '/assets/images/rainbow.png'
