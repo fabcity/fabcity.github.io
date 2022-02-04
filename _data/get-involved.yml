@@ -1,15 +1,14 @@
-- number: 41
-  title: Pledged cities
-  subtitle: in the Network
+- number: 33
+  title: Cities pledged
+  subtitle: to the Network
 
-- number: 5
-  title: Pledged regions
-  subtitle: in the Network
+- number: 2
+  title: Countries pledged
+  subtitle: to the Network
+
+- number: 6
+  title: Regions pledged
+  subtitle: to the Network
 
 - number: 7
-  title: Fab City
-  subtitle: Summits
-
-- number: 34
-  title: Years left to the
-  subtitle: Fab City Challenge
+  title: Fab City Summits

@@ -68,3 +68,8 @@ groups:
         id: paulo_robertoa_raujo_cruz_filho
         picture: '/assets/images/people/paulo_robertoa_raujo_cruz_filho.png'
         position: Strategic Management, Weflow Global
+
+      - name:  Lorenzo Patuzzo
+        id:  lorenzo_patuzzo
+        picture: '/assets/images/people/lorenzo_patuzzo.png'
+        position: Social Entrepreneur | Designer | Hacktivist
